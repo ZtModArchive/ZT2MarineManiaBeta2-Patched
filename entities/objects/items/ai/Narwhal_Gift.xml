@@ -1,0 +1,30 @@
+<BFTypedBinder binderType="Narwhal_Gift">
+   <types>
+      <entity>
+         <item>
+            <Narwhal_Gift/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_Narwhal_Gift.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Narwhal_Gift"/>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_MarineGift="true"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/Items/Gifts/Narwhal_Gift" scale="1.0" switch="0 36"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

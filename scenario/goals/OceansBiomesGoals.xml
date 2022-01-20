@@ -1,0 +1,103 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="false" sticky="true" optional="false">
+	<info locid="MarineAnimals:OceansBiomesIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/OceansBiomes.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup name="OverallGoals" state="0" chain="false" allsuccess="true" sticky="true">
+			<info type="primary" >
+				<neutral locid="MarineAnimals:OceansBiomesOverallGoal" overview="MarineAnimals:OceansBiomesOverview"/>
+				<success locid="MarineAnimals:OceansBiomesOverallGoalDone" overview="MarineAnimals:OceansBiomesSuccess" />
+			</info>		
+			<children>
+				<BFScenarioRule name="MainGoal" state="0" sticky="true">
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/OceansBiomes.lua" entry="evalOverallGoal" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/OceansBiomes.lua" entry="completeOverallGoal" />
+					</success>					
+				</BFScenarioRule>				
+				<BFScenarioRule name="Pelagic" hidden="0" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:OceansBiomesPelagic" />
+						<success locid="MarineAnimals:OceansBiomesPelagicDone"/>						
+					</info>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Reef" hidden="0" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:OceansBiomesReef" />
+						<success locid="MarineAnimals:OceansBiomesReefDone"/>								
+					</info>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Benthic" hidden="0" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:OceansBiomesBenthic" />
+						<success locid="MarineAnimals:OceansBiomesBenthicDone"/>														
+					</info>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Coastal" hidden="0" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:OceansBiomesCoastal" />
+						<success locid="MarineAnimals:OceansBiomesCoastalDone"/>																				
+					</info>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Tundra" hidden="0" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:OceansBiomesTundra" />
+						<success locid="MarineAnimals:OceansBiomesTundraDone"/>																				
+					</info>
+				</BFScenarioRule>								
+			</children>
+		</BFScenarioGroup>		
+		<BFScenarioGroup name="OptionalShowGoals" hidden="1" state="2" chain="false" allsuccess="true" sticky="true">
+			<info type="primary" >
+				<neutral locid="MarineAnimals:OceansBiomesPirateShowGoal" overview="MarineAnimals:OceansBiomesPirateShow"/>
+				<success locid="MarineAnimals:OceansBiomesPirateShowGoalDone" overview="MarineAnimals:OceansBiomesPirateShowSuccess" />
+				<failure locid="MarineAnimals:OceansBiomesPirateShowFailure" />
+			</info>
+			<children>
+				<BFScenarioRule name="ShowGoal" state="0" sticky="true">
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/OceansBiomes.lua" entry="evalSeeShow" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/OceansBiomes.lua" entry="completeSeeShow" />
+					</success>
+				</BFScenarioRule>				
+			</children>
+		</BFScenarioGroup>
+		<BFScenarioGroup name="OptionalViewGoals" hidden="1" state="2" chain="false" allsuccess="true" sticky="true">
+			<info type="primary" >
+				<neutral locid="MarineAnimals:OceansBiomesPirateViewGoal" overview="MarineAnimals:OceansBiomesPirateView"/>
+				<success locid="MarineAnimals:OceansBiomesPirateViewGoalDone" overview="MarineAnimals:OceansBiomesPirateViewSuccess" />
+				<failure locid="MarineAnimals:OceansBiomesPirateViewFailure" />				
+			</info>
+			<children>
+				<BFScenarioRule name="ViewAnimal" state="0" sticky="true">
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/OceansBiomes.lua" entry="evalViewAnimal" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/OceansBiomes.lua" entry="completeViewAnimal" />
+					</success>
+					<failure>
+						<BFScenarioScriptAction script="scenario/scripts/OceansBiomes.lua" entry="failViewAnimal" />
+					</failure>					
+				</BFScenarioRule>	
+				<BFScenarioRule name="OneAnimalSeen" state="1" hidden="1" sticky="true">
+					<info type="primary" >
+						<success locid="MarineAnimals:OceansBiomesPirateViewOneSeen"/>
+					</info>				
+				</BFScenarioRule>	
+				<BFScenarioRule name="TwoAnimalsSeen" state="1" hidden="1" sticky="true">
+					<info type="primary" >
+						<success locid="MarineAnimals:OceansBiomesPirateViewTwoSeen"/>
+					</info>				
+				</BFScenarioRule>						
+			</children>
+		</BFScenarioGroup>		
+	</children>
+</ZTScenarioMgr>

@@ -1,0 +1,87 @@
+<BFTypedBinder binderType="KelpForest_Coastal">
+	<types>
+		<entity>
+			<foliage>
+				<marineplant>
+					<KelpForest_Coastal />
+				</marineplant>
+			</foliage>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="live" rottype="use" postype="use" attachnode="autoroot" />
+				<parentObj parent="mainObj" child="dead" rottype="use" postype="use" attachnode="autoroot" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 -0.070264 0.323747" icon3Dscale="0.38" autoFootprint="false">
+			<cfootprint width="1" height="1" />
+			<dfootprint width="2" height="2" />
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\foliage\KelpForest\KelpForest_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:KelpForest_Coastal" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="KelpForest_Coastal" />
+			</on>
+		</UIToggleButton>
+		<BFGBiomeData location="coastal_warm_oceans_worldwide">
+			<coastal />
+		</BFGBiomeData>
+		<BFAIEntityDataShared b_ReceiveUpdates="true" s_Product="Marine" s_Zoopedia="zoopedia:zoopedia_kelpforest:entry" f_FameReq="20" />
+		<ZTTourData>
+			<biome_coastal value="1" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFTerrainPaintComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="live" required="1">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities\objects\foliage\KelpForest\KelpForest" switch="0 25 50" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="dead" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities\objects\foliage\KelpForest\KelpForest_Dry" switch="0 25 50" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<ZTWitheredPlantComponent MinDepth="1">
+					<Underwater>
+						<live />
+					</Underwater>
+					<DryLand>
+						<dead />
+					</DryLand>
+				</ZTWitheredPlantComponent>
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="40">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

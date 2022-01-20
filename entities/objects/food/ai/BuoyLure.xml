@@ -1,0 +1,93 @@
+﻿<BFTypedBinder binderType="BuoyLure" abstract="true">
+	<types>
+		<entity>
+			<food>
+				<BuoyLure />
+			</food>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTPlacementData randomRotate="false" gridSnap="true" landPlacement="false" waterPlacement="true" tankPlacement="true" autoFootprint="true" icon3Doffset="0 -0.117578 0.521680" icon3Dscale="1.109186" minimumDepth="1">
+			<stompData>
+				<allow>
+					<bush />
+					<grass />
+					<wildflowers />
+					<thicket />
+					<fungi />
+					<watersurfacefoliage />
+				</allow>
+			</stompData>
+		</ZTPlacementData>
+		<BFAIEntityDataShared s_uisort="b" s_Container="BuoyLure" s_Zoopedia="zoopedia:zoopedia_buoylure:entry" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainobj">
+			<instance>
+				<BFPhysObj>
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_01 parentNode="AutoRoot" x="0" y=".65" z="-1.5" yaw="0" />
+						<Dock_02 parentNode="AutoRoot" x="-.65" y="0" z="-1.45" yaw="90" />
+						<Dock_03 parentNode="AutoRoot" x=".65" y="0" z="-1.55" yaw="-90" />
+						<Dock_04 parentNode="AutoRoot" x="0" y="-.65" z="-1.5" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Eat">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterBuoyLure" useBehSet="UseBuoyLure" exitBehSet="ExitBuoyLure" targetNode="Dock_01" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBuoyLure" useBehSet="UseBuoyLure" exitBehSet="ExitBuoyLure" targetNode="Dock_02" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBuoyLure" useBehSet="UseBuoyLure" exitBehSet="ExitBuoyLure" targetNode="Dock_03" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBuoyLure" useBehSet="UseBuoyLure" exitBehSet="ExitBuoyLure" targetNode="Dock_04" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="full">
+			<instance>
+				<BFPhysObj>
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="twothird">
+			<instance>
+				<BFPhysObj>
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="onethird">
+			<instance>
+				<BFPhysObj>
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="empty">
+			<instance>
+				<BFPhysObj>
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<ZTAIStaffRequestController attribName="f_FoodLevel" thresholdValue="25" testType="1" cancelThresholdValue="50" cancelTestType="2">
+					<ZTStaffRequestData tokenKey="t_FillFoodContainer" subjectType="Keeper" priority="3" />
+				</ZTAIStaffRequestController>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

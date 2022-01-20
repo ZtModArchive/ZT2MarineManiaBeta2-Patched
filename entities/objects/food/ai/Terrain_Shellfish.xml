@@ -1,0 +1,94 @@
+<BFTypedBinder binderType="Terrain_Shellfish">
+	<types>
+		<entity>
+			<food>
+				<TerrainFood>
+					<Terrain_Shellfish />
+				</TerrainFood>
+			</food>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 0.567645" icon3Dscale="1.000000" waterPlacement="true" tankPlacement="true" landPlacement="false" minimumDepth="1"/>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\food\Terrain\Terrain_Shellfish_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:Terrain_Shellfish" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Terrain_Shellfish" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared s_FoodType="Shellfish" s_contents="Terrain_Shellfish" s_Product="Marine" b_ShellfishEaterFood="true" s_prop="Shellfish_Prop"/> s_Zoopedia="zoopedia:zoopedia_Shellfish:entry" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="full" required="1">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/food/Terrain/Terrain_Shellfish_mm_Full" switch="0 18 36" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="20" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="twothird" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/food/Terrain/Terrain_Shellfish_mm_66" switch="0 18 36" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="10" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="onethird" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/food/Terrain/Terrain_Shellfish_mm_33" switch="0 18 36" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="empty" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/food/Terrain/Terrain_Shellfish_mm_Empty" switch="0 18 36" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance f_FoodLevel="100" />
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIFadeController attribName="f_FoodLevel" currState="full" fadePeriod="1">
+					<stateList>
+						<full physObj="full" minRange="66" maxRange="101" />
+						<twothird physObj="twothird" minRange="33" maxRange="66" />
+						<onethird physObj="onethird" minRange="1" maxRange="33" />
+						<empty physObj="empty" minRange="-101" maxRange="1" />
+					</stateList>
+				</BFAIFadeController>
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="100">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="refill" cost="100" type="credit" category="animal_upkeep" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="WhaleHall_collision_proxy">
+   <types>
+      <entity>
+         <collision_proxy>
+            <WhaleHall_collision_proxy/>
+         </collision_proxy>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTPlacementData autoFootprint="false" gridSnap="false">
+         <stompData>
+            <allow>
+               <BlueWhaleHall_mm/>
+            </allow>
+         </stompData>
+         <cfootprint width="1" height="8" />
+		 <dfootprint width="1" height="11" />
+      </ZTPlacementData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent modelfile="entities\objects\misc\BlueWhaleHall_ABV.nif"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,98 @@
+<BFTypedBinder binderType="FoodBox_Squid">
+	<types>
+		<entity>
+			<food>
+				<FoodBox>
+					<FoodBox_Squid />
+				</FoodBox>
+			</food>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\food\FoodBox\FoodBox_Squid_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:FoodBox_Squid" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="FoodBox_Squid" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared f_FameReq="20" s_FoodType="Squid" s_contents="Terrain_Squid" s_Product="Marine" b_SquidEaterFood="true" s_prop="Squid_Prop" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/food/FoodBox/FoodBox_mm" switch="0 9 18" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="full" required="1">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/FoodBox/FoodBox_Squid_mm_Full" />
+					<BFGroundFitComponent heightOffset="-0.15" maxTilt="90" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="20" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="twothird" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/FoodBox/FoodBox_Squid_mm_66"/>
+					<BFGroundFitComponent heightOffset="-0.15" maxTilt="90" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="onethird" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/FoodBox/FoodBox_Squid_mm_33"/>
+					<BFGroundFitComponent heightOffset="-0.15" maxTilt="90" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="empty" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/FoodBox/FoodBox_Squid_mm_Empty"/>
+					<BFGroundFitComponent heightOffset="-0.15" maxTilt="90" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance f_FoodLevel="100" />
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIFadeController attribName="f_FoodLevel" currState="full" fadePeriod="1">
+					<stateList>
+						<full physObj="full" minRange="66" maxRange="101" />
+						<twothird physObj="twothird" minRange="33" maxRange="66" />
+						<onethird physObj="onethird" minRange="1" maxRange="33" />
+						<empty physObj="empty" minRange="-101" maxRange="1" />
+					</stateList>
+				</BFAIFadeController>
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="250">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="refill" cost="75" type="credit" category="animal_upkeep" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

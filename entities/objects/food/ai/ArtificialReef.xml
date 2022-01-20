@@ -1,0 +1,122 @@
+﻿<BFTypedBinder binderType="ArtificialReef" abstract="true">
+	<types>
+		<entity>
+			<food>
+				<ArtificialReef />
+			</food>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\food\ArtificialReef\ArtificialReef_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:ArtificialReef" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="ArtificialReef" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData icon3Dscale="1.0" icon3Doffset="0 .0 .55" randomRotate="false" gridSnap="true" waterPlacement="true" tankPlacement="true" autoFootprint="true" terrainFlatten="true" protectedPlacement="false" minimumDepth="1">
+			<stompData>
+				<delete>
+					<treat />
+					<bush />
+					<grass />
+					<wildflowers />
+					<fungi />
+					<watersurfacefoliage />
+				</delete>
+				<prevent />
+			</stompData>
+		</ZTPlacementData>
+		<BFAIEntityDataShared s_Container="ArtificialReef" f_FameReq="40" s_uisort="g" b_Sniffable="true" s_Zoopedia="zoopedia:zoopedia_artificialreef:entry" bFood="false" bFood="true" />
+		<BFGCollisionData isPassable="false" isStatic="true" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="footprint" width="4" length="1" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/food/MetalArtificialReef/MetalArtificialReef" switch="0 15 30" />
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="50" />
+					<BFTerrainPaintComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_01 parentNode="AutoRoot" x="-1" y="0" z="1.25" yaw="-90" />
+						<Dock_02 parentNode="AutoRoot" x="0" y="1" z="1.25" yaw="0" />
+						<Dock_03 parentNode="AutoRoot" x="1" y="0" z="1.25" yaw="90" />
+						<Dock_04 parentNode="AutoRoot" x="0" y="-1" z="1.25" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Eat">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="UseArtificialReef" exitBehSet="ExitArtificialReef" targetNode="Dock_01" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="UseArtificialReef" exitBehSet="ExitArtificialReef" targetNode="Dock_02" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="UseArtificialReef" exitBehSet="ExitArtificialReef" targetNode="Dock_03" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="UseArtificialReef" exitBehSet="ExitArtificialReef" targetNode="Dock_04" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Sniff">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="Sniff" exitBehSet="ExitArtificialReef" targetNode="Dock_01" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="Sniff" exitBehSet="ExitArtificialReef" targetNode="Dock_02" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="Sniff" exitBehSet="ExitArtificialReef" targetNode="Dock_03" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="Sniff" exitBehSet="ExitArtificialReef" targetNode="Dock_04" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Eat">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="UseArtificialReef" exitBehSet="ExitArtificialReef" targetNode="Dock_01" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="UseArtificialReef" exitBehSet="ExitArtificialReef" targetNode="Dock_02" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Sniff">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="Sniff" exitBehSet="ExitArtificialReef" targetNode="Dock_01" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterArtificialReef" useBehSet="Sniff" exitBehSet="ExitArtificialReef" targetNode="Dock_02" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<ZTAIStaffRequestController attribName="f_FoodLevel" thresholdValue="25" testType="1" cancelThresholdValue="50" cancelTestType="2">
+					<ZTStaffRequestData tokenKey="t_FillFoodContainer" subjectType="Keeper" priority="3" />
+				</ZTAIStaffRequestController>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

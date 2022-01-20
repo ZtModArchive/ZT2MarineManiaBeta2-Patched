@@ -1,0 +1,33 @@
+<ZT2Strings>
+   <staffactions>
+      <!--Staff Actions-->
+      <GiveTreat>Giving %s a treat</GiveTreat>
+      <ConductShow>Conducting a show</ConductShow>
+      <WaitShow>Waiting until the next show</WaitShow>
+      <PreShow>Preparing for the next show</PreShow>
+      <PostShow>Cleaning up after a show</PostShow>
+      <GoTrain>Going to train %s</GoTrain>
+      <Train_Animal>Training %s</Train_Animal>
+      <Train_Jump>Training %s the jump trick</Train_Jump>
+      <Train_JumpFallSide>Training %s the jump straight up trick</Train_JumpFallSide>
+      <Train_StraightUpJump>Training %s the jump and fall to the side trick</Train_StraightUpJump>
+      <Train_DiveJump>Training %s the dive jump trick</Train_DiveJump>
+      <Train_FlipForward>Training %s the front flip trick</Train_FlipForward>
+      <Train_FlipBack>Training %s the backflip trick</Train_FlipBack>
+      <Train_FlipperSplash>Training %s the flipper splash trick</Train_FlipperSplash>
+      <Train_Spyhop>Training %s the spyhop trick</Train_Spyhop>
+      <Train_TailSplash>Training %s the tail splash trick</Train_TailSplash>
+      <Train_CorkscrewTwist>Training %s the corkscrew twist trick</Train_CorkscrewTwist>
+      <Train_RamOutOfWater>Training %s the ram out of the water trick</Train_RamOutOfWater>
+      <Train_WaterWalk>Training %s the water walk trick</Train_WaterWalk>
+      <Train_Squirt>Training %s the squirt trick</Train_Squirt>
+      <Train_JumpHoop>Training %s the jump through a hoop trick</Train_JumpHoop>
+      <Train_NudgeBall>Training %s the nudge a ball trick</Train_NudgeBall>
+      <Train_JumpFlukeSwipeTetherBall>Training %s the jump and swipe a tetherball with a buoy trick</Train_JumpFlukeSwipeTetherBall>
+   </staffactions>
+   <superstaff>
+      <tankgate>Press SPACEBAR to climb the ladder</tankgate>
+      <sitonbleacher>Press SPACEBAR to sit in the %s</sitonbleacher>
+      <getoffbleacher>Press SPACEBAR to get out of the %s</getoffbleacher>
+   </superstaff>
+</ZT2Strings>

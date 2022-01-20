@@ -1,0 +1,20 @@
+<BFScenarioGroup name="piratevisitrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="piratevisitphoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHPirateVisitShort" overview="PhotoChallengetext:PHPirateVisit" />
+				<success locid="PhotoChallengetext:PHPirateVisitSuccessShort" overview="PhotoChallengetext:PHPirateVisitSuccess" />
+				<failure locid="PhotoChallengetext:PHPirateVisitFailureShort" overview="PhotoChallengetext:PHPirateVisitFailure" />				
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/PirateVisit.lua" entry="evalpiratevisit" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/PirateVisit.lua" entry="completepiratevisit" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/PirateVisit.lua" entry="failpiratevisit" />
+			</failure>	
+		</BFScenarioRule>		
+	 </children>
+</BFScenarioGroup>

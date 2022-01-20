@@ -1,0 +1,10 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Ponytail1} snd 'FlukeSwipeJumpSuccess'"/>
+   <key time="0" text="{Bip01 Ponytail1} snd 'FlukeSwipeJumpSuccess_uw'"/>
+   <key time="0.1" text="{Bip01 Head} runspr strength=.25"/>
+   <key time="0.43" text="whap 90"/>
+   <key time="0.6" text="{Bip01 Head} snd 'splash_large' "/>
+   <key time="0.6" text="{Bip01 Head} snd 'splash_large_uw' "/>
+   <key time="0.6" text="{Bip01 Tail4} splash directed_large"/>
+   <key time="0.77" text="{Bip01 Ponytail2} runspr strength=.15"/>
+</TEXTKEY>

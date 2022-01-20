@@ -1,0 +1,68 @@
+<BFTypedBinder binderType="tankportalsegment">
+   <types>
+      <entity>
+         <fence>
+            <tankwallsegment>
+               <tankportalsegment/>
+            </tankwallsegment>
+         </fence>
+      </entity>
+   </types>
+   <shared>
+     <ZTPlacementData placeable="true" s_GatePlacementRules="portalgate" tankPlacement="true">
+       <draggableData>
+         <tfence90/>
+         <tfence45/>
+         <fence90/>
+         <fence45/>
+         <gate_animation/>
+         <portalEdge90/>
+         <portalEdge45/>
+       </draggableData>
+     </ZTPlacementData>
+     <BFAIEntityDataShared b_ReceiveUpdates="true" f_Height="1.0" f_FameReq="0" s_showIcon="MarineShow"/>
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTTankSegment support="tankpost_mm" middleSupport="tanksupport_mm" maxUnsupportedSpan="1" maxUnsupportedDiagSpan="1" hasCurves="false" skipPostsOnStraight="true"/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="90">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+
+
+     <BFNamedBinder required="0" binderName="portalEdge90">
+       <instance>
+         <BFPhysObj>
+           <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\AnimalTank_Gate\AnimalTank_Gate_vert"/>
+         </BFPhysObj>
+       </instance>
+     </BFNamedBinder>
+     <BFNamedBinder required="0" binderName="portalEdge45">
+       <instance>
+         <BFPhysObj>
+           <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\AnimalTank_Gate\AnimalTank_Gate_diag"/>
+         </BFPhysObj>
+       </instance>
+     </BFNamedBinder>
+     <BFNamedBinder required="1" binderName="gate_animation">
+       <instance>
+         <BFPhysObj>
+           <BFActorComponent actorfile="entities\objects\fences\AnimalTank_Gate\AnimalTank_Gate_anim.bfm" updateWhenNotVisible="true" scale="1.5"/>
+         </BFPhysObj>
+       </instance>
+     </BFNamedBinder>
+     <BFBinder>
+       <instance>
+         <ZTTankPortal openDistance="4" closeDistance="6" pollFreq="0.1" physObj="gate_animation" openAnim="Bip01_open" closeAnim="Bip01_close" openForEntityType="Staff" cover90="portalEdge90" cover45="portalEdge45" gateHeight="3.0" waterSurfaceOffset="0.2" />
+       </instance>
+     </BFBinder>
+   </binder>
+</BFTypedBinder>

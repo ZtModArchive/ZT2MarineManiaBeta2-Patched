@@ -1,0 +1,30 @@
+<BFTypedBinder binderType="PenguinRockhopper_Gift">
+   <types>
+      <entity>
+         <item>
+            <PenguinRockhopper_Gift/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_PenguinRockhopper_Gift.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:PenguinRockhopper_Gift"/>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_MarineGift="true"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/Items/Gifts/PenguinRockhopper_Gift" scale="1.0" switch="0 36"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

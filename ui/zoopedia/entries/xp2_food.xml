@@ -1,0 +1,12 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry entry="zoopedia_food">
+         <BFHelpEntry entry="zoopedia_chum"/>
+         <BFHelpEntry entry="zoopedia_jellyfish"/>         
+         <BFHelpEntry entry="zoopedia_seaweed"/>
+         <BFHelpEntry entry="zoopedia_shellfish"/>
+         <BFHelpEntry entry="zoopedia_squid"/>
+         <BFHelpEntry entry="zoopedia_plankton" order="zoopedia_zooplankton"/>         
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

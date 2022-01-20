@@ -1,0 +1,5 @@
+<TEXTKEY>
+   <key frame="0" text="{Bip01 Head} snd 'GuestAttack_GreatWhite'"/>
+   <key frame="6" text = "{Node_Eat} attach object"/>
+   <key frame="31" text = "{Node_Eat} detach object"/>
+</TEXTKEY>

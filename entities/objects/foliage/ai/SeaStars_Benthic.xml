@@ -1,0 +1,70 @@
+﻿<BFTypedBinder binderType="SeaStars_Benthic">
+	<types>
+		<entity>
+			<foliage>
+				<marineplant>
+					<SeaStars_Benthic />
+				</marineplant>
+			</foliage>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 -0.07 0.62" icon3Dscale="0.24" autoFootprint="false">
+			<cfootprint width="0" height="0" />
+			<dfootprint width="1" height="1" />
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\foliage\SeaStars\SeaStars_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:SeaStars_Benthic" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SeaStars_Benthic" />
+			</on>
+		</UIToggleButton>
+		<BFGBiomeData location="benthic_warm_oceans_worldwide">
+			<benthic />
+		</BFGBiomeData>
+		<BFAIEntityDataShared s_Product="Marine" s_Zoopedia="zoopedia:zoopedia_seastar:entry" f_FameReq="80" />
+		<ZTTourData>
+			<biome_benthic value="1" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="false" modelfile="entities\objects\foliage\SeaStars\SeaStars" switch="0 15 30 40" scale=".1" />
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFTerrainPaintComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedRandomTextureInfo>
+					<replacementSet>
+						<group weight="1">
+							<item material="SeaStar_A" image="shared\SeaStar_A.dds" layer="base" />
+						</group>
+						<group weight="1">
+							<item material="SeaStar_A" image="shared\SeaStar_B.dds" layer="base" />
+						</group>
+						<group weight="1">
+							<item material="SeaStar_A" image="shared\SeaStars_C.dds" layer="base" />
+						</group>
+					</replacementSet>
+				</BFSharedRandomTextureInfo>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="30">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

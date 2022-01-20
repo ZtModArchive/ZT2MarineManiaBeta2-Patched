@@ -1,0 +1,341 @@
+<Tricks>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaJump" locname="tricknames:Jump" icon="UI/trick_icons/trick_icon_jump_SeaLion.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_F/>
+		</Animals>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Jump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Jump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_JumpFailure"/>
+		<Success token="t_JumpSuccess"/>
+		<Critical token="t_JumpCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaJump_Male" locname="tricknames:Jump" defaultTrick="SeaLionCaliforniaJump" icon="UI/trick_icons/trick_icon_jump_SeaLion.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_M/>
+		</Animals>
+		<ZTAITrickTargetData Prop="TrickArea_mm_Male"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaSlide" locname="tricknames:SlideOn" icon="UI/trick_icons/trick_icon_UseSealSlide.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_F/>
+		</Animals>
+		<ZTAITrickTargetData Prop="SealSlide"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Slide_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Slide_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Slide_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Slide_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Slide_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Slide_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Slide_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Slide_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Slide_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Slide_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_SlideFailure"/>
+		<Success token="t_SlideSuccess"/>
+		<Critical token="t_SlideCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaSlide_Male" locname="tricknames:SlideOn" defaultTrick="SeaLionCaliforniaSlide" icon="UI/trick_icons/trick_icon_UseSealSlide.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_M/>
+		</Animals>
+		<ZTAITrickTargetData Prop="SealSlide_Male"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Slide_Male_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Slide_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Slide_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Slide_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Slide_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Slide_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Slide_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Slide_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Slide_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Slide_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaSwing" locname="tricknames:SwingOn" icon="UI/trick_icons/trick_icon_UseSealSwing.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_F/>
+		</Animals>
+                <Prerequisite name="SeaLionCaliforniaSlide" minScore="100"/>
+		<ZTAITrickTargetData Prop="SealSwing"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Swing_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Swing_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Swing_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Swing_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Swing_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Swing_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Swing_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Swing_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Swing_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Swing_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_SwingFailure"/>
+		<Success token="t_SwingSuccess"/>
+		<Critical token="t_SwingCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaSwing_Male" locname="tricknames:SwingOn" defaultTrick="SeaLionCaliforniaSwing" icon="UI/trick_icons/trick_icon_UseSealSwing.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_M/>
+		</Animals>
+                <Prerequisite name="SeaLionCaliforniaSlide_Male" minScore="100"/>
+		<ZTAITrickTargetData Prop="SealSwing_Male"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Swing_Male_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Swing_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Swing_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Swing_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Swing_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Swing_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Swing_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Swing_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Swing_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Swing_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaSeat" locname="tricknames:SeatOn" icon="UI/trick_icons/trick_icon_SitOnSealSeat.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_F/>
+		</Animals>
+		<ZTAITrickTargetData Prop="SealSeat"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Seat_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Seat_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_SeatFailure"/>
+		<Success token="t_SeatSuccess"/>
+		<Critical token="t_SeatCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaSeat_Male" locname="tricknames:SeatOn" defaultTrick="SeaLionCaliforniaSeat" icon="UI/trick_icons/trick_icon_SitOnSealSeat.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_M/>
+		</Animals>
+		<ZTAITrickTargetData Prop="SealSeat_Male"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Seat_Male_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Seat_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Seat_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Seat_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Seat_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Seat_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Seat_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Seat_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Seat_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Seat_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaHorns" locname="tricknames:Playing" icon="UI/trick_icons/trick_icon_UseHorns.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_F/>
+		</Animals>
+                <Prerequisite name="SeaLionCaliforniaSeat" minScore="100"/>
+		<ZTAITrickTargetData Prop="Horns_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Horns_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Horns_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Horns_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Horns_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Horns_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Horns_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Horns_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Horns_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Horns_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Horns_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_HornsFailure"/>
+		<Success token="t_HornsSuccess"/>
+		<Critical token="t_HornsCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaHorns_Male" locname="tricknames:Playing" defaultTrick="SeaLionCaliforniaHorns" icon="UI/trick_icons/trick_icon_UseHorns.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_M/>
+		</Animals>
+                <Prerequisite name="SeaLionCaliforniaSeat_Male" minScore="100"/>
+		<ZTAITrickTargetData Prop="Horns_mm_Male"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Horns_Male_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Horns_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Horns_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Horns_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Horns_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Horns_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Horns_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Horns_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Horns_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Horns_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaBall" locname="tricknames:BalanceOnNose" icon="UI/trick_icons/trick_icon_HoldBallOnNose.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_F/>
+		</Animals>
+		<ZTAITrickTargetData Prop="SealBall"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Ball_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Ball_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Ball_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Ball_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Ball_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Ball_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Ball_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Ball_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Ball_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Ball_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_BallFailure"/>
+		<Success token="t_BallSuccess"/>
+		<Critical token="t_BallCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaBall_Male" locname="tricknames:BalanceOnNose" defaultTrick="SeaLionCaliforniaBall" icon="UI/trick_icons/trick_icon_HoldBallOnNose.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_M/>
+		</Animals>
+		<ZTAITrickTargetData Prop="SealBall_Male"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Ball_Male_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Ball_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Ball_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Ball_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Ball_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Ball_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Ball_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Ball_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Ball_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Ball_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaTrampoline" locname="tricknames:JumpOn" icon="UI/trick_icons/trick_icon_UseSealTrampoline.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_F/>
+		</Animals>
+                <Prerequisite name="SeaLionCaliforniaJump" minScore="100"/>
+		<ZTAITrickTargetData Prop="SealTrampoline"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Trampoline_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Trampoline_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Trampoline_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Trampoline_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Trampoline_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Trampoline_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Trampoline_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Trampoline_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Trampoline_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Trampoline_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_TrampolineFailure"/>
+		<Success token="t_TrampolineSuccess"/>
+		<Critical token="t_TrampolineCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaTrampoline_Male" locname="tricknames:JumpOn" defaultTrick="SeaLionCaliforniaTrampoline" icon="UI/trick_icons/trick_icon_UseSealTrampoline.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_M/>
+		</Animals>
+                <Prerequisite name="SeaLionCaliforniaJump_Male" minScore="100"/>
+		<ZTAITrickTargetData Prop="SealTrampoline_Male"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Trampoline_Male_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Trampoline_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Trampoline_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Trampoline_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Trampoline_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Trampoline_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Trampoline_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Trampoline_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Trampoline_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Trampoline_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaBasketball" locname="tricknames:PlayingBasketball" icon="UI/trick_icons/trick_icon_UseBasketballHoop.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_F/>
+		</Animals>
+                <Prerequisite name="SeaLionCaliforniaBall" minScore="100"/>
+		<ZTAITrickTargetData Prop="BasketballHoop_Small_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Basketball_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Basketball_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Basketball_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Basketball_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Basketball_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Basketball_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Basketball_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Basketball_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Basketball_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Basketball_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_BasketballFailure"/>
+		<Success token="t_BasketballSuccess"/>
+		<Critical token="t_BasketballCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="SeaLionCaliforniaBasketball_Male" locname="tricknames:PlayingBasketball" defaultTrick="SeaLionCaliforniaBasketball" icon="UI/trick_icons/trick_icon_UseBasketballHoop.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<SeaLionCalifornia_Adult_M/>
+		</Animals>
+		<ZTAITrickTargetData Prop="BasketballHoop_Small_mm_Male"/>
+                <Prerequisite name="SeaLionCaliforniaBall_Male" minScore="100"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Basketball_Male_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Basketball_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Basketball_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Basketball_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Basketball_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Basketball_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Basketball_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Basketball_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Basketball_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Basketball_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+	</ZTAITrickData>
+</Tricks>

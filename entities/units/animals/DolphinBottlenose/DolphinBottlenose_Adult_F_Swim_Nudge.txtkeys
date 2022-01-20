@@ -1,0 +1,7 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Ponytail1} snd 'Nudge'"/>
+   <key time="0" text="{Bip01 Ponytail1} snd 'Nudge_uw'"/>
+   <key time="0" text="{Bip01_Dorsal} runspl"/>
+   <key time="0.9" text="whap 90"/>
+   <key time="1" text="{Bip01_Dorsal} runspl"/>
+</TEXTKEY>

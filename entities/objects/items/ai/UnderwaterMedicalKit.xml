@@ -1,0 +1,29 @@
+<BFTypedBinder binderType="UnderwaterMedicalKit">
+   <types>
+      <entity>
+         <item>
+            <UnderwaterMedicalKit/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_Broom.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Broom"/>
+      </UIToggleButton>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\Items\UnderwaterMedicalKit\UnderwaterMedicalKit" scale="1.0" switch="0 36"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

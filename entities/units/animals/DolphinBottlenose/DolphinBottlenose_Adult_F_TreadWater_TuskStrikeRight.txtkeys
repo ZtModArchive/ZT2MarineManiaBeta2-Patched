@@ -1,0 +1,7 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Ponytail1} snd 'TuskStrike'"/>
+   <key time="0" text="{Bip01 Ponytail1} snd 'TuskStrike_uw'"/>
+   <key time="0" text="{Bip01_Dorsal} runspl"/>
+   <key time="0.97" text="whap 45"/>
+   <key time="1.3" text="{Bip01 Tail4} runspr strength=.15"/>
+</TEXTKEY>

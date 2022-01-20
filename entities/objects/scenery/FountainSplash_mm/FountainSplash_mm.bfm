@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\scenery\FountainSplash_mm\FountainSplash_mm.nif">
+  <animation anim="entities\objects\scenery\FountainSplash_mm\FountainSplash_mm_Idle_Idle.bf" animName="Idle_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\scenery\FountainSplash_mm\FountainSplash_mm_Idle_Splash.bf" animName="Idle_Splash" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="FountainSplash_mm" version="1">
+    <node name="Idle">
+      <table>
+        <Idle_Idle />
+        <Idle_Splash />
+      </table>
+    </node>
+  </Graph>
+</BFM>

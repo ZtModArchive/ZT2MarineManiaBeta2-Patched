@@ -1,0 +1,100 @@
+<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_chum:entry"  >Chum</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_chum:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/Terrain/Terrain_Chum_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/BuoyNet/BuoyNet_Chum_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/FoodBox/FoodBox_Chum_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <p/>Chum is a name for chopped fish and fish parts. Marine predators, such as the great white shark and the orca, enjoy eating chum.    
+                  <p/>Chum can be placed directly on the ground, or in a net buoy or food box.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_jellyfish:entry"  >Jellyfish</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_jellyfish:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/BuoyLure/BuoyLure_Jellyfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                 
+                  <p/>Most animals avoid jellyfish because of their stinging tentacles. Some sea turtles, though, make jellyfish a staple of their diet because they are resistant to the stings.
+               </color>   
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_plankton:entry"  >Zooplankton</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_plankton:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/FoodBox/FoodBox_Plankton_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/ArtificialReef/ArtificialReef_Plankton_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <p/>Zooplankton are tiny, usually microscopic, marine animals that drift with the ocean's current. Zooplankton include many different animal types, from microscopic protozoa to tiny crustaceans to fish eggs. Another major type of plankton is phytoplankton, which consists of small floating plants.
+                  <p/>Filter-feeding marine animals, such as manta rays, whale sharks, and the massive blue whale, live entirely on plankton. 
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_shellfish:entry"  >Shellfish</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_shellfish:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/Terrain/Terrain_Shellfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/BuoyNet/BuoyNet_Shellfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Shellfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/ArtificialReef/ArtificialReef_Shellfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <p/>Shellfish is a broad category of food that includes crabs, scallops, and oysters. Many marine animals, like dolphins and sea otters, make shellfish a staple of their diet, even though it takes considerable effort to free the food from its shell.    
+                  <p/>Shellfish can be placed directly on the ground, or in a net buoy, substrate pile, or artificial reef.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_seaweed:entry"  >Seaweed</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_seaweed:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/Terrain/Terrain_Seaweed_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/FoodBox/FoodBox_Seaweed_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Seaweed_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <p/>Seaweed is the common name given to various kinds of large marine algae. Marine animals, like the manatee and green sea turtle, enjoy eating seaweed.    
+                  <p/>Seaweed can be placed directly on the ground, or in a food box or substrate pile.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_squid:entry"  >Squid</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_squid:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/BuoyLure/BuoyLure_Squid_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/ArtificialReef/ArtificialReef_Squid_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <p/>Tender and tasty, squid are a desirable treat for many different types of marine animals.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+
+</ZT2Strings>

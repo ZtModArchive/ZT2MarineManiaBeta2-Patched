@@ -1,0 +1,9 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Ponytail1} snd 'JumpRamSuperSuccess'"/>
+   <key time="0" text="{Bip01 Ponytail1} snd 'JumpRamSuperSuccess_uw'"/>
+   <key time="0.8" text="{Bip01 Head} runsns strength=.25"/>
+   <key time="0.8" text="whap 90"/>
+   <key time="1.5" text="{Bip01 Head} snd 'splash_small' "/>
+   <key time="1.5" text="{Bip01 Head} snd 'splash_small_uw' "/>
+   <key time="1.5" text="{Bip01 Head} splash directed_small"/>
+</TEXTKEY>

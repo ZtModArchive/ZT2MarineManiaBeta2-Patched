@@ -1,0 +1,86 @@
+<BFTypedBinder binderType="TurtleSeaGreen_Adult_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Reptilia>
+                  <Testudines>
+                     <Cheloniidae>
+                        <TurtleSeaGreen>
+                           <TurtleSeaGreen_Adult>
+                              <TurtleSeaGreen_Adult_M/>
+                           </TurtleSeaGreen_Adult>
+                        </TurtleSeaGreen>
+                     </Cheloniidae>
+                  </Testudines>
+               </Reptilia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_M_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TurtleSeaGreen_Adult_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+   <binder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<attribList>
+						<health />
+						<hygiene />
+					</attribList>
+					<stateList>
+						<sickanddirty>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+								<hygiene minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="TurtleSeaGreen_Adult_M" image="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_M_Sick_Dirty.dds" />
+							</textureData>
+						</sickanddirty>
+						<sick>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="TurtleSeaGreen_Adult_M" image="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_M_Sick.dds" />
+							</textureData>
+						</sick>
+						<dirty>
+							<attribData>
+								<hygiene minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="TurtleSeaGreen_Adult_M" image="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_M_Dirty.dds" />
+							</textureData>
+						</dirty>
+						<well>
+							<textureData>
+								<mainObj material="TurtleSeaGreen_Adult_M" image="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_M.dds" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/units/animals/TurtleSeaGreen/TurtleSeaGreen_Adult_F.bfm" scale="0.9"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

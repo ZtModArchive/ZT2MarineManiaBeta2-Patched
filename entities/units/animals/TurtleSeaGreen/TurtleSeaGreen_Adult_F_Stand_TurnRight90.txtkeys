@@ -1,0 +1,5 @@
+<TEXTKEY>
+   <!-- Blinking /-->
+   <key time=".1" text="dc_enabled 1"/>
+   <key frame="1" text="{Bip01 Head} snd 'Ram_u' "/>
+</TEXTKEY>

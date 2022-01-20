@@ -1,0 +1,56 @@
+<BFTypedBinder binderType="TankPlatform">
+   <types>
+      <entity>
+         <building>
+            <TankPlatform/>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="FitSurfacePick"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_HasEntityFittingSurface="true"/>
+      <BFGCollisionData isTraversable="true">
+         <typeScores Staff="0"/>
+      </BFGCollisionData>
+      <ZTPlacementData autoFootprint="false" deletable="false" moveable="false" selectable="false" placeable="false" minimumDepth="2" waterPlacement="true" landPlacement="true" tankPlacement="true" showTankPlacement="true" randomRotate="false" gridSnap="true" terrainFlatten="false">
+         <excludedIconObjs>
+            <FitSurfacePick/>
+         </excludedIconObjs>
+      </ZTPlacementData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <shared>
+            <BFSharedPhysVars noCaustics="true" splashScale="0.2">
+               <virtualNodes>
+                  <Node_Trainer x="0" y="0" z="0" yaw="0" pitch="0" roll="0"/>
+                  <Dock_Staff x="0" y="2" z="0" yaw="0" pitch="0" roll="0"/>
+               </virtualNodes>
+            </BFSharedPhysVars>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="FitSurfacePick">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/fences/Platform_Regular_mm/Platform_Regular_PathGeometry"/>
+               <BFGFittingSurfaceComponent heightOffset="0.15"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+   <BFNamedBinder binderName="Trainer" repopulateMethod="byName">
+      <instance>
+         <BFGEntityContainer>
+            <slots>
+               <BFGEntityContainerSlot targetNode="Node_Trainer" capacity="1"/>
+            </slots>
+         </BFGEntityContainer>
+      </instance>
+   </BFNamedBinder>
+</BFTypedBinder>

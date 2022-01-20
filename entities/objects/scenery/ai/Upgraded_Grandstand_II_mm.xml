@@ -1,0 +1,85 @@
+<BFTypedBinder binderType="Upgraded_Grandstand_II_mm">
+	<types>
+		<entity>
+			<scenery>
+				<Grandstand>
+					<Upgraded_Grandstand_II_mm />
+				</Grandstand>
+			</scenery>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\scenery\Upgraded_Grandstand_II_mm\Upgraded_Grandstand_II_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:Upgraded_Grandstand_II_mm" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Upgraded_Grandstand_II_mm" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData terrainFlatten="true" dockArrowStyle="special" dockArrowSize=".75" icon3Doffset="0 -0.02 0.46" icon3Dscale="0.35" autoFootprint="false">
+			<dfootprint width="2" height="2" />
+			<cfootprint width="1" height="1" />
+		</ZTPlacementData>
+		<BFAIEntityDataShared s_Product="Marine" s_uisort="e" s_Zoopedia="zoopedia:zoopedia_grandstand_upgraded_mm:entry" s_ObjectType="Seating" b_ViewingArea="true" f_ViewingDistance="9.0" f_ViewPriority="1" f_ViewCone="180" s_GameLock="upgradedgrandstandIIlock" b_lockFromCampaigns="true"/>
+		<BFGCollisionData isStatic="true" isPassable="false" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/scenery/Upgraded_Grandstand_II_mm/Upgraded_Grandstand_II_mm" switch="0 15 25 35" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Aisle_In y="-2" yaw="180" />
+						<Dock_Aisle_Out_1 y="-2" x="0.25" />
+						<Dock_Aisle_Out_2 y="-2.25" yaw="15" x="0.75" />
+						<Dock_Aisle_Out_3 y="-2" yaw="-15" x="-0.25" />
+						<Dock_Aisle_Out_4 y="-2.25" yaw="30" x="-0.75" />
+						<Dock_Aisle_Out_5 y="-2" yaw="-30" x="0.25" />
+						<Dock_Aisle_Out_6 y="-2.25" x="0.75" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="footprint" width="4" length="1.5" intensity="0.25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Use_Seating">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterGrandstand" useBehSet="UseGrandstand" exitBehSet="ExitGrandstand" targetNode="Node Guest01" exclusiveID="Grandstand_Seat_1" />
+						<BFGEntityContainerSlot enterBehSet="EnterGrandstand" useBehSet="UseGrandstand" exitBehSet="ExitGrandstand" targetNode="Node Guest02" exclusiveID="Grandstand_Seat_2" />
+						<BFGEntityContainerSlot enterBehSet="EnterGrandstand" useBehSet="UseGrandstand" exitBehSet="ExitGrandstand" targetNode="Node Guest03" exclusiveID="Grandstand_Seat_3" />
+						<BFGEntityContainerSlot enterBehSet="EnterGrandstand" useBehSet="UseGrandstand" exitBehSet="ExitGrandstand" targetNode="Node Guest04" exclusiveID="Grandstand_Seat_4" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="400">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

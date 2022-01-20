@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\animals\Beluga\Beluga_Adult_F.nif">
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Beach_2Swim.bf" animName="Beach_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Beach_Bite.bf" animName="Beach_Bite" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Beach_Pose.bf" animName="Beach_Pose" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="false" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Beach_SquirmFailure.bf" animName="Beach_SquirmFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Beach_SquirmSuccess.bf" animName="Beach_SquirmSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Beach_SquirmSuperSuccess.bf" animName="Beach_SquirmSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_DorsalFinSplashLeft.bf" animName="DorsalFinSplashLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_DorsalFinSplashRight.bf" animName="DorsalFinSplashRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Float_2Sleep.bf" animName="Float_2Sleep" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Float_2Swim.bf" animName="Float_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Float_2TreadWater.bf" animName="Float_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Float_Idle.bf" animName="Float_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Float_Idle_single.bf" animName="Float_Idle_single" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Float_Nurse.bf" animName="Float_Nurse" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_OnLand_2Swim.bf" animName="OnLand_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_OnLand_Idle.bf" animName="OnLand_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_OnLand_SquirmAhead.bf" animName="OnLand_SquirmAhead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_OnLand_SquirmLeft.bf" animName="OnLand_SquirmLeft" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_OnLand_SquirmRight.bf" animName="OnLand_SquirmRight" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_OpenMouth.bf" animName="OpenMouth" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Secondary_BendDown.bf" animName="Secondary_BendDown" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Secondary_BendLeft.bf" animName="Secondary_BendLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Secondary_BendRight.bf" animName="Secondary_BendRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Secondary_BendUp.bf" animName="Secondary_BendUp" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Secondary_Headlook.bf" animName="Secondary_Headlook" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Sleep_2Float.bf" animName="Sleep_2Float" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Sleep_Idle.bf" animName="Sleep_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Spyhop_Failure.bf" animName="Spyhop_Failure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Spyhop_Success.bf" animName="Spyhop_Success" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Squirm_Ahead.bf" animName="Squirm_Ahead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Swim_2Beach.bf" animName="Swim_2Beach" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Swim_2float.bf" animName="Swim_2Float" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Swim_2OnLand.bf" animName="Swim_2OnLand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\DolphinBottlenose_Adult_M_Swim_2SwimFast.bf" animName="Swim_2SwimFast" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Swim_2SwimGlide.bf" animName="Swim_2SwimGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Swim_2SwimSub.bf" animName="Swim_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Swim_2TreadWater.bf" animName="Swim_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_Swim_Ahead.bf" animName="Swim_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\DolphinBottlenose_Adult_M_SwimFast_2Swim.bf" animName="SwimFast_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\DolphinBottlenose_Adult_M_SwimFast_Ahead.bf" animName="SwimFast_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\DolphinBottlenose_Adult_M_SwimFast_JumpSuccess.bf" animName="SwimFast_JumpSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimGlide_2Swim.bf" animName="SwimGlide_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimGlide_Ahead.bf" animName="SwimGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_2Swim.bf" animName="SwimSub_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_2TreadWaterSub.bf" animName="SwimSub_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_2WaterWalk.bf" animName="SwimSub_2WaterWalk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_Ahead.bf" animName="SwimSub_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_Bite.bf" animName="SwimSub_Bite" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_Caress.bf" animName="SwimSub_Caress" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_CorkscrewTwist.bf" animName="SwimSub_CorkscrewTwist" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_CorkscrewTwistFailure.bf" animName="SwimSub_CorkscrewTwistFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_CorkscrewTwistSuccess.bf" animName="SwimSub_CorkscrewTwistSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_CorkscrewTwistSuperSuccess.bf" animName="SwimSub_CorkscrewTwistSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_DiveJumpFailure.bf" animName="SwimSub_DiveJumpFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_DiveJumpFailureFull.bf" animName="SwimSub_DiveJumpFailureFull" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_DiveJumpSuccess.bf" animName="SwimSub_DiveJumpSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_DiveJumpSuccessFull.bf" animName="SwimSub_DiveJumpSuccessFull" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_DiveJumpSuperSuccess.bf" animName="SwimSub_DiveJumpSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_Eat.bf" animName="SwimSub_Eat" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_Echolocate.bf" animName="SwimSub_Echolocate" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_FlipBackFailure.bf" animName="SwimSub_FlipBackFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_FlipBackSuccess.bf" animName="SwimSub_FlipBackSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_FlipBackSuperSuccess.bf" animName="SwimSub_FlipBackSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_FlipForwardFailure.bf" animName="SwimSub_FlipForwardFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_FlipForwardSuccess.bf" animName="SwimSub_FlipForwardSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_FlipForwardSuperSuccess.bf" animName="SwimSub_FlipForwardSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_FlukeSwipeJumpFailure.bf" animName="SwimSub_FlukeSwipeJumpFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_FlukeSwipeJumpSuccess.bf" animName="SwimSub_FlukeSwipeJumpSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_FlukeSwipeJumpSuperSuccess.bf" animName="SwimSub_FlukeSwipeJumpSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_JumpFailure.bf" animName="SwimSub_JumpFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_JumpFallSideFailure.bf" animName="SwimSub_JumpFallSideFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_JumpFallSideSuccessLeft.bf" animName="SwimSub_JumpFallSideSuccessLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_JumpFallSideSuccessRight.bf" animName="SwimSub_JumpFallSideSuccessRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_JumpFallSideSuperSuccessLeft.bf" animName="SwimSub_JumpFallSideSuperSuccessLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_JumpFallSideSuperSuccessRight.bf" animName="SwimSub_JumpFallSideSuperSuccessRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_JumpSuccess.bf" animName="SwimSub_JumpSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_JumpSuperSuccess.bf" animName="SwimSub_JumpSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_RamFailure.bf" animName="SwimSub_RamFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_RamSuccess.bf" animName="SwimSub_RamSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_RamSuperSuccess.bf" animName="SwimSub_RamSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_StraightJumpFailure.bf" animName="SwimSub_StraightJumpFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_StraightUpJumpSuccess.bf" animName="SwimSub_StraightUpJumpSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_StraightUpJumpSuperSuccess.bf" animName="SwimSub_StraightUpJumpSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_Swallow.bf" animName="SwimSub_Swallow" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_TurnDown90.bf" animName="SwimSub_TurnDown90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_TurnLeft90.bf" animName="SwimSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_TurnRight180.bf" animName="SwimSub_TurnRight180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_TurnRight90.bf" animName="SwimSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSub_TurnUp90.bf" animName="SwimSub_TurnUp90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSubGlide_2SwimSub.bf" animName="SwimSubGlide_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_SwimSubGlide_Ahead.bf" animName="SwimSubGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_2Float.bf" animName="TreadWater_2Float" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_2Swim.bf" animName="TreadWater_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_2Swim_Nudge.bf" animName="TreadWater_2Swim_Nudge" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_2SwimSub.bf" animName="TreadWater_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_2SwimSub_LobTail.bf" animName="TreadWater_2SwimSub_LobTail" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Call.bf" animName="TreadWater_Call" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_ChinScratch.bf" animName="TreadWater_ChinScratch" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Confused.bf" animName="TreadWater_Confused" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_DorsalFinSlap.bf" animName="TreadWater_DorsalFinSlap" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_DorsalFinSplashLeft.bf" animName="TreadWater_DorsalFinSplashLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_DorsalFinSplashRight.bf" animName="TreadWater_DorsalFinSplashRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Eat.bf" animName="TreadWater_Eat" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_EatTreat.bf" animName="TreadWater_EatTreat" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_ExpressionAngry.bf" animName="TreadWater_ExpressionAngry" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_ExpressionConfused.bf" animName="TreadWater_ExpressionConfused" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_ExpressionHappy.bf" animName="TreadWater_ExpressionHappy" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_FlipperSlapLeft.bf" animName="TreadWater_FlipperSlapLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_FlipperSlapRight.bf" animName="TreadWater_FlipperSlapRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_FlipperSplashFailure.bf" animName="TreadWater_FlipperSplashFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_FlipperSplashSuccess.bf" animName="TreadWater_FlipperSplashSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_FlipperSplashSuperSuccess.bf" animName="TreadWater_FlipperSplashSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_FlukeSwipe.bf" animName="TreadWater_FlukeSwipe" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_GuestAttack.bf" animName="TreadWater_GuestAttack" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_GuestAttack_both.bf" animName="TreadWater_GuestAttack_both" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_HeadScratch.bf" animName="TreadWater_HeadScratch" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_HeadSplash.bf" animName="TreadWater_HeadSplash" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Idle.bf" animName="TreadWater_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Nudge.bf" animName="TreadWater_Nudge" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Nudge_2Swim.bf" animName="TreadWater_Nudge_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_OpenMouth.bf" animName="TreadWater_OpenMouth" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Report.bf" animName="TreadWater_Report" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_SpyhopFailure.bf" animName="TreadWater_SpyhopFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_SpyhopSuccess.bf" animName="TreadWater_SpyhopSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_SpyhopSuperSuccess.bf" animName="TreadWater_SpyhopSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Squawk.bf" animName="TreadWater_Squawk" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_SquirtWaterFailure.bf" animName="TreadWater_SquirtWaterFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_SquirtWaterSuccess.bf" animName="TreadWater_SquirtWaterSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_SquirtWaterSuperSuccess.bf" animName="TreadWater_SquirtWaterSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Swallow.bf" animName="TreadWater_Swallow" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TailSlap.bf" animName="TreadWater_TailSlap" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TailSplashFailure.bf" animName="TreadWater_TailSplashFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TailSplashSuccess.bf" animName="TreadWater_TailSplashSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TailSplashSuperSuccess.bf" animName="TreadWater_TailSplashSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TrainingConfused.bf" animName="TreadWater_TrainingConfused" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TrainingNodLeftRight.bf" animName="TreadWater_TrainingNodLeftRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TrainingNodUpDown.bf" animName="TreadWater_TrainingNodUpDown" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Turn180.bf" animName="TreadWater_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TurnLeft90.bf" animName="TreadWater_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TurnRight90.bf" animName="TreadWater_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TuskStrikeLeft.bf" animName="TreadWater_TuskStrikeLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_TuskStrikeRight.bf" animName="TreadWater_TuskStrikeRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWater_Whistle.bf" animName="TreadWater_Whistle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWaterSub_2SwimSub.bf" animName="TreadWaterSub_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWaterSub_Idle.bf" animName="TreadWaterSub_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWaterSub_RubBeak.bf" animName="TreadWaterSub_RubBeak" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWaterSub_RubTusk.bf" animName="TreadWaterSub_RubTusk" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWaterSub_Turn180.bf" animName="TreadWaterSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWaterSub_TurnLeft90.bf" animName="TreadWaterSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_TreadWaterSub_TurnRight90.bf" animName="TreadWaterSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_WaterWalk_2SwimSub_Failure.bf" animName="WaterWalk_2SwimSub_Failure" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_WaterWalk_2SwimSub_Success.bf" animName="WaterWalk_2SwimSub_Success" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_WaterWalk_2SwimSub_SuperSuccess.bf" animName="WaterWalk_2SwimSub_SuperSuccess" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\Beluga\Beluga_Adult_F_WaterWalk_IdleSuccess.bf" animName="WaterWalk_IdleSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="Beluga_Adult_F" version="1">
+    <node name="Beach">
+      <table>
+        <Beach_Bite />
+        <Beach_Pose />
+        <Beach_SquirmFailure />
+        <Beach_SquirmSuccess />
+        <Beach_SquirmSuperSuccess />
+      </table>
+      <edge name="Swim">
+        <table>
+          <Beach_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="DorsalFinSplashLeft">
+      <table>
+        <DorsalFinSplashLeft />
+      </table>
+    </node>
+    <node name="DorsalFinSplashRight">
+      <table>
+        <DorsalFinSplashRight />
+      </table>
+    </node>
+    <node name="Float">
+      <table>
+        <Float_Idle />
+        <Float_Idle_single />
+        <Float_Nurse />
+      </table>
+      <edge name="Swim">
+        <table>
+          <Float_2Swim />
+        </table>
+      </edge>
+      <edge name="Sleep">
+        <table>
+          <Float_2Sleep />
+        </table>
+      </edge>
+      <edge name="TreadWater">
+        <table>
+          <Float_2TreadWater />
+        </table>
+      </edge>
+    </node>
+    <node name="OnLand">
+      <table>
+        <OnLand_Idle />
+        <OnLand_SquirmAhead />
+        <OnLand_SquirmLeft />
+        <OnLand_SquirmRight />
+      </table>
+      <edge name="Swim">
+        <table>
+          <OnLand_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="OpenMouth">
+      <table>
+        <OpenMouth />
+      </table>
+    </node>
+    <node name="Secondary">
+      <table>
+        <Secondary_BendDown />
+        <Secondary_BendLeft />
+        <Secondary_BendRight />
+        <Secondary_BendUp />
+        <Secondary_Headlook />
+      </table>
+    </node>
+    <node name="Sleep">
+      <table>
+        <Sleep_Idle />
+      </table>
+      <edge name="Float">
+        <table>
+          <Sleep_2Float />
+        </table>
+      </edge>
+    </node>
+    <node name="Spyhop">
+      <table>
+        <Spyhop_Failure />
+        <Spyhop_Success />
+      </table>
+    </node>
+    <node name="Squirm">
+      <table>
+        <Squirm_Ahead />
+      </table>
+    </node>
+    <node name="Swim">
+      <table>
+        <Swim_Ahead />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <Swim_2SwimSub />
+        </table>
+      </edge>
+      <edge name="SwimFast">
+        <table>
+          <Swim_2SwimFast />
+        </table>
+      </edge>
+      <edge name="Beach">
+        <table>
+          <Swim_2Beach />
+        </table>
+      </edge>
+      <edge name="OnLand">
+        <table>
+          <Swim_2OnLand />
+        </table>
+      </edge>
+      <edge name="SwimGlide">
+        <table>
+          <Swim_2SwimGlide />
+        </table>
+      </edge>
+      <edge name="Float">
+        <table>
+          <Swim_2Float />
+        </table>
+      </edge>
+      <edge name="TreadWater">
+        <table>
+          <Swim_2TreadWater />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimFast">
+      <table>
+        <SwimFast_Ahead />
+        <SwimFast_JumpSuccess />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimFast_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimGlide">
+      <table>
+        <SwimGlide_Ahead />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimGlide_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSub">
+      <table>
+        <SwimSub_Ahead />
+        <SwimSub_Bite />
+        <SwimSub_Caress />
+        <SwimSub_CorkscrewTwist />
+        <SwimSub_CorkscrewTwistFailure />
+        <SwimSub_CorkscrewTwistSuccess />
+        <SwimSub_CorkscrewTwistSuperSuccess />
+        <SwimSub_DiveJumpFailure />
+        <SwimSub_DiveJumpFailureFull />
+        <SwimSub_DiveJumpSuccess />
+        <SwimSub_DiveJumpSuccessFull />
+        <SwimSub_DiveJumpSuperSuccess />
+        <SwimSub_Eat />
+        <SwimSub_Echolocate />
+        <SwimSub_FlipBackFailure />
+        <SwimSub_FlipBackSuccess />
+        <SwimSub_FlipBackSuperSuccess />
+        <SwimSub_FlipForwardFailure />
+        <SwimSub_FlipForwardSuccess />
+        <SwimSub_FlipForwardSuperSuccess />
+        <SwimSub_FlukeSwipeJumpFailure />
+        <SwimSub_FlukeSwipeJumpSuccess />
+        <SwimSub_FlukeSwipeJumpSuperSuccess />
+        <SwimSub_JumpFailure />
+        <SwimSub_JumpFallSideFailure />
+        <SwimSub_JumpFallSideSuccessLeft />
+        <SwimSub_JumpFallSideSuccessRight />
+        <SwimSub_JumpFallSideSuperSuccessLeft />
+        <SwimSub_JumpFallSideSuperSuccessRight />
+        <SwimSub_JumpSuccess />
+        <SwimSub_JumpSuperSuccess />
+        <SwimSub_RamFailure />
+        <SwimSub_RamSuccess />
+        <SwimSub_RamSuperSuccess />
+        <SwimSub_StraightJumpFailure />
+        <SwimSub_StraightUpJumpSuccess />
+        <SwimSub_StraightUpJumpSuperSuccess />
+        <SwimSub_Swallow />
+        <SwimSub_TurnDown90 />
+        <SwimSub_TurnLeft90 />
+        <SwimSub_TurnRight180 />
+        <SwimSub_TurnRight90 />
+        <SwimSub_TurnUp90 />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimSub_2Swim />
+        </table>
+      </edge>
+      <edge name="WaterWalk">
+        <table>
+          <SwimSub_2WaterWalk />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <SwimSub_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubGlide">
+      <table>
+        <SwimSubGlide_Ahead />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <SwimSubGlide_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWater">
+      <table>
+        <TreadWater_Call />
+        <TreadWater_ChinScratch />
+        <TreadWater_Confused />
+        <TreadWater_DorsalFinSlap />
+        <TreadWater_DorsalFinSplashLeft />
+        <TreadWater_DorsalFinSplashRight />
+        <TreadWater_Eat />
+        <TreadWater_EatTreat />
+        <TreadWater_ExpressionAngry />
+        <TreadWater_ExpressionConfused />
+        <TreadWater_ExpressionHappy />
+        <TreadWater_FlipperSlapLeft />
+        <TreadWater_FlipperSlapRight />
+        <TreadWater_FlipperSplashFailure />
+        <TreadWater_FlipperSplashSuccess />
+        <TreadWater_FlipperSplashSuperSuccess />
+        <TreadWater_FlukeSwipe />
+        <TreadWater_GuestAttack />
+        <TreadWater_GuestAttack_both />
+        <TreadWater_HeadScratch />
+        <TreadWater_HeadSplash />
+        <TreadWater_Idle />
+        <TreadWater_Nudge />
+        <TreadWater_Nudge_2Swim />
+        <TreadWater_OpenMouth />
+        <TreadWater_Report />
+        <TreadWater_SpyhopFailure />
+        <TreadWater_SpyhopSuccess />
+        <TreadWater_SpyhopSuperSuccess />
+        <TreadWater_Squawk />
+        <TreadWater_SquirtWaterFailure />
+        <TreadWater_SquirtWaterSuccess />
+        <TreadWater_SquirtWaterSuperSuccess />
+        <TreadWater_Swallow />
+        <TreadWater_TailSlap />
+        <TreadWater_TailSplashFailure />
+        <TreadWater_TailSplashSuccess />
+        <TreadWater_TailSplashSuperSuccess />
+        <TreadWater_TrainingConfused />
+        <TreadWater_TrainingNodLeftRight />
+        <TreadWater_TrainingNodUpDown />
+        <TreadWater_Turn180 />
+        <TreadWater_TurnLeft90 />
+        <TreadWater_TurnRight90 />
+        <TreadWater_TuskStrikeLeft />
+        <TreadWater_TuskStrikeRight />
+        <TreadWater_Whistle />
+      </table>
+      <edge name="Swim">
+        <table>
+          <TreadWater_2Swim />
+          <TreadWater_2Swim_Nudge />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <TreadWater_2SwimSub />
+          <TreadWater_2SwimSub_LobTail />
+        </table>
+      </edge>
+      <edge name="Float">
+        <table>
+          <TreadWater_2Float />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterSub">
+      <table>
+        <TreadWaterSub_Idle />
+        <TreadWaterSub_RubBeak />
+        <TreadWaterSub_RubTusk />
+        <TreadWaterSub_Turn180 />
+        <TreadWaterSub_TurnLeft90 />
+        <TreadWaterSub_TurnRight90 />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <TreadWaterSub_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="WaterWalk">
+      <table>
+        <WaterWalk_IdleSuccess />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <WaterWalk_2SwimSub_Failure />
+          <WaterWalk_2SwimSub_Success />
+          <WaterWalk_2SwimSub_SuperSuccess />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

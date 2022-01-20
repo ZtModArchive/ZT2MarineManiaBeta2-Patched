@@ -1,0 +1,116 @@
+<BehaviorSets>
+   <Swim_Idle>
+      <subjects>
+         <Remora/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Ahead" interruptFlag="true"/>
+      </behaviors>
+   </Swim_Idle>
+   <Attach>
+      <subjects>
+         <Remora/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_2Attach"/>
+         <BFBehAnimate targetAnim="Attach_Idle" loopFlag="true"/>
+      </behaviors>
+   </Attach>
+   <AttachedToAnimal>
+      <subjects>
+         <Remora/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Attach_Idle" loopFlag="true"/>
+      </behaviors>
+   </AttachedToAnimal>
+   <LeaveAttach>
+      <subjects>
+         <Remora/>
+      </subjects>
+      <behaviors>
+         <BFBehEvasion evasionRadius="12" locoSpeed="fast"/>
+         <BFBehKill killSubject="true" fadeOutPeriod="2"/>
+      </behaviors>
+   </LeaveAttach>
+   <Rendezvous>
+      <subjects>
+         <Remora/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit locoSpeed="fast"/>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetNode="DOCK_CLEANERFISH" targetAnim="Swim_2Attach"/>
+      </behaviors>
+   </Rendezvous>
+   <RendezvousRemora>
+      <subjects>
+         <Cetacea/>
+         <Testudines/>
+         <Myliobatidae/>
+         <Chondrichthyes/>
+	 <Elasmobranchii/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit/>
+      </behaviors>
+   </RendezvousRemora>
+   <RemoraPickup>
+      <subjects>
+         <Cetacea/>
+         <Testudines/>
+         <Myliobatidae/>
+         <Chondrichthyes/>
+	 <Elasmobranchii/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject subjectNode="DOCK_CLEANERFISH" targetNode="Node_Mouth" targetAnim="Swim_Ahead" detachAction="dropitem" targetBehSet="AttachedToAnimal"/>
+      </behaviors>
+   </RemoraPickup>
+   <DetachRemora>
+      <subjects>
+         <Cetacea/>
+         <Testudines/>
+         <Myliobatidae/>
+         <Chondrichthyes/>
+	 <Elasmobranchii/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="1" maxPlayTime="3" avoidLand="true" locoSpeed="fast" minDepth="3" maxDepth="10" avoidEntityRadius="6">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+         <BFBehSyncSet subjectBehSet="KickRemora" targetBehSet="Swing" resetPhase="true"/>
+         <BFBehPlaySet behSet="KickRemora"/>
+      </behaviors>
+   </DetachRemora>
+   <KickRemora>
+      <subjects>
+         <Testudines/>
+         <Myliobatidae/>
+         <Chondrichthyes/>
+	 <Elasmobranchii/>
+      </subjects>
+      <behaviors>
+         <BFBehDetachObject detachEntity="Remora" detachAction="dropitem"/>
+         <BFBehWander minPlayTime="1" maxPlayTime="3" avoidLand="true" locoSpeed="fast" minDepth="3" maxDepth="10" avoidEntityRadius="6">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </KickRemora>
+   <KickRemora>
+      <subjects>
+         <Cetacea/>
+      </subjects>
+      <behaviors>
+         <BFBehDetachObject detachEntity="Remora" detachAction="dropitem"/>
+         <BFBehWander minPlayTime="1" maxPlayTime="3" avoidLand="true" locoSpeed="fast" minDepth="3" maxDepth="10" avoidEntityRadius="6">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </KickRemora>
+</BehaviorSets>

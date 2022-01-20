@@ -1,0 +1,19 @@
+<BFScenarioGroup name="pinnipedtrainersquarterlyrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="pinnipedtrainersquarterlyphoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHPinnipedTrainersQuarterlyShort" overview="PhotoChallengetext:PHPinnipedTrainersQuarterly" />
+				<success locid="PhotoChallengetext:PHPinnipedTrainersQuarterlySuccessShort" overview="PhotoChallengetext:PHPinnipedTrainersQuarterlySuccess" />
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/PinnipedTrainersQuarterly.lua" entry="evalpinnipedtrainersquarterly" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/PinnipedTrainersQuarterly.lua" entry="completepinnipedtrainersquarterly" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/PinnipedTrainersQuarterly.lua" entry="failpinnipedtrainersquarterly" />
+			</failure>	
+		</BFScenarioRule>		
+	 </children>
+</BFScenarioGroup>

@@ -1,0 +1,502 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="RockIslandBasic_Rest" reserveTag="Rest" UniqueID="RockIsland_shelter:RockIslandBasic_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandBasic_Privacy" reserveTag="Rest" UniqueID="RockIsland_shelter:RockIslandBasic_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandMedium_Rest" reserveTag="Rest" UniqueID="RockIsland_shelter:RockIslandMedium_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandMedium_Privacy" reserveTag="Rest" UniqueID="RockIsland_shelter:RockIslandMedium_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandAdvanced_Rest" reserveTag="Rest" UniqueID="RockIsland_shelter:RockIslandAdvanced_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandAdvanced_Privacy" reserveTag="Rest" UniqueID="RockIsland_shelter:RockIslandAdvanced_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandElite_Rest" reserveTag="Rest" UniqueID="RockIsland_shelter:RockIslandElite_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandElite_Privacy" reserveTag="Rest" UniqueID="RockIsland_shelter:RockIslandElite_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandBasic_Birth" reserveTag="Birth" UniqueID="RockIsland_shelter:RockIslandBasic_Birth">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+        <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandMedium_Birth" reserveTag="Birth" UniqueID="RockIsland_shelter:RockIslandMedium_Birth">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+        <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandAdvanced_Birth" reserveTag="Birth" UniqueID="RockIsland_shelter:RockIslandAdvanced_Birth">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+        <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RockIslandElite_Birth" reserveTag="Birth" UniqueID="RockIsland_shelter:RockIslandElite_Birth">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_RockIslandUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RockIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+        <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

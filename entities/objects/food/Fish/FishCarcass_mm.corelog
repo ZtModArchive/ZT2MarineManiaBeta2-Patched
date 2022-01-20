@@ -1,0 +1,65 @@
+************************************************************
+Date: 04/03/2006
+Time: 21:00
+************************************************************
+Compiled object 1: Carcass_LODGroup
+Compiled object 2: LOD0
+Compiled object 3: Carcass_mm_LOD0
+Compiled object 4: LOD1
+Compiled object 5: Carcass_mm_LOD1
+Compiled object 6: LOD2
+Compiled object 7: Carcass_mm_LOD2
+Compiled object 8: FishFood_Full_LODGroup
+Compiled object 9: LOD0
+Compiled object 10: FishFood_mm_LOD1
+Compiled object 11: FishFood_mm_LOD05
+Compiled object 12: FishFood_mm_LOD09
+Compiled object 13: LOD1
+Compiled object 14: FishFood_mm_LOD2
+Compiled object 15: FishFood_mm_LOD06
+Compiled object 16: FishFood_mm_LOD10
+Compiled object 17: LOD2
+Compiled object 18: FishFood_mm_LOD3
+Compiled object 19: FishFood_mm_LOD07
+Compiled object 20: FishFood_mm_LOD11
+Compiled object 21: FishFood_66_LODGroup
+Compiled object 22: LOD03
+Compiled object 23: FishFood_mm_LOD12
+Compiled object 24: FishFood_mm_LOD13
+Compiled object 25: LOD04
+Compiled object 26: FishFood_mm_LOD15
+Compiled object 27: FishFood_mm_LOD16
+Compiled object 28: LOD05
+Compiled object 29: FishFood_mm_LOD18
+Compiled object 30: FishFood_mm_LOD19
+Compiled object 31: FishFood_33_LODGroup
+Compiled object 32: LOD06
+Compiled object 33: FishFood_mm_LOD20
+Compiled object 34: LOD07
+Compiled object 35: FishFood_mm_LOD22
+Compiled object 36: LOD08
+Compiled object 37: FishFood_mm_LOD24
+Compiled object 38: FishFood_Empty_LODGroup
+Compiled object 39: LOD0
+Compiled object 40: FishFood_mm_LOD0
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 959 
+Vertex Count: 766 
+Vertex Memory: 24 kb
+Material Count: 3 
+Texture Count: 2 
+Texture Memory: 255 kb
+Num LODs: 3 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 959 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 937ms
+XML File Translation: total time = 757ms
+Data Output: total time = 4ms
+************************************************************

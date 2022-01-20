@@ -1,0 +1,20 @@
+<BFScenarioGroup name="hireeducatorsrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="hireeducators" state="0" sticky="true" optional="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHHireEducatorsShort" overview="Challengetext:CHHireEducators" />
+				<success locid="Challengetext:CHHireEducatorsSuccessShort" overview="Challengetext:CHAnimalAssistanceSuccess" />
+				<failure locid="Challengetext:CHHireEducatorsFailureShort" overview="Challengetext:CHHireEducatorsFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/HireEducators.lua" entry="evalHireEducators" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/HireEducators.lua" entry="completeHireEducators" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/HireEducators.lua" entry="failHireEducators" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

@@ -1,0 +1,196 @@
+<BehaviorSets>
+   <Idle>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateSwitch>
+            <animTable>
+               <Walk anim="Swim_Ahead" minAnimSpeed="0.6" maxAnimSpeed="0.7"/>
+               <Run anim="Swim_Ahead" />
+               <Stand anim="Swim_Ahead"/>
+               <default anim="Swim_Ahead" minAnimSpeed="0.6" maxAnimSpeed="0.7"/>
+            </animTable>
+         </BFBehAnimateSwitch>
+      </behaviors>
+   </Idle>
+   <Ambient>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehPlaySet behSet="WanderSub"/>
+      </behaviors>
+   </Ambient>
+   <Stand>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Ahead" minAnimSpeed="0.6" maxAnimSpeed="0.7"/>
+      </behaviors>
+   </Stand>
+   <Swim_Idle>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Ahead" minAnimSpeed="0.6" maxAnimSpeed="0.7"/>
+      </behaviors>
+   </Swim_Idle>
+   <TreadWaterSub_Idle>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </TreadWaterSub_Idle>
+   <RunStraight>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Ahead" playTime="30"/>
+      </behaviors>
+   </RunStraight>
+   <Wander>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub weight="80"/>
+               <WanderSurf weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Wander>
+   <WanderSurf>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="33"/>
+               <WanderSurf_Med weight="33"/>
+               <WanderSurf_Slow weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidObstacleRadius="2"/>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidObstacleRadius="2"/>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidObstacleRadius="2"/>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSub>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="33"/>
+               <WanderSub_Med weight="33"/>
+               <WanderSub_Slow weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidObstacleRadius="2" minDepth="3" maxDepth="12"/>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidObstacleRadius="2" minDepth="3" maxDepth="12"/>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidObstacleRadius="2" minDepth="3" maxDepth="12"/>
+      </behaviors>
+   </WanderSub_Slow>
+   <Surface_Submerge>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove depthBelowSurface="4"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <ambient_water/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove depthBelowSurface="0"/>
+      </behaviors>
+   </Surface>
+</BehaviorSets>

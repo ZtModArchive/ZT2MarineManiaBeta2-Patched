@@ -1,0 +1,7 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01} snd 'Stand_2SwimSub_SwingSuccess'"/>
+   <key time="0" text="{Bip01} snd 'Stand_2SwimSub_SwingSuccess_uw'"/>   
+   <key time="8.07" text="{Bip01 Head} snd 'splash_small'"/>
+   <key time="8.07" text="{Bip01 Head} snd 'splash_small_uw'"/>
+   <key time="8.07" text="{Bip01 Head} splash directed_small"/>
+</TEXTKEY>

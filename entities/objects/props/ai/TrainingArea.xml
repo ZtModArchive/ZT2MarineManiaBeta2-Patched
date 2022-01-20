@@ -1,0 +1,72 @@
+﻿<BFTypedBinder binderType="TrainingArea">
+	<types>
+		<entity>
+			<TrainingArea />
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\props\TrainingArea\TrainingArea_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:TrainingArea" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TrainingArea" />
+			</on>
+		</UIToggleButton>
+		<BFGCollisionData isPassable="true" isTraversable="true" />
+		<ZTEntitySelector parentName="mainObj" nodeName="" animationTime="0.4" useFootprint="true">
+			<BFPhysObj allowHighlight="false">
+				<BFTerrainDecalComponent imageName="UI/fx/selection/object.tga" alphaBlend="true">
+					<lighting emmisiveColor="255 255 255" specularColor="255 255 255" diffuseColor="255 255 255" ambientColor="255 255 255" />
+				</BFTerrainDecalComponent>
+			</BFPhysObj>
+		</ZTEntitySelector>
+		<ZTPlacementData landPlacement="false" waterPlacement="true" tankPlacement="true" showTankPlacement="false" moveable="true" randomRotate="false" gridSnap="true" autoFootprint="false" icon3Doffset="0 0 0.82">
+			<cfootprint width="3" height="6" />
+			<dfootprint width="3" height="8" />
+			<stompData>
+				<delete>
+					<Poop />
+				</delete>
+				<allow>
+					<prop />
+				</allow>
+			</stompData>
+		</ZTPlacementData>
+		<BFAIEntityDataShared s_uisort="fa" s_Zoopedia="zoopedia:zoopedia_trainingarea:entry" s_GenerateName="byType" f_FameReq="40" s_Product="Marine" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities\objects\props\TrainingArea\TrainingArea" />
+					<BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="65" />
+					<BFCollisionComponent grid="Grid" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<ZTPhotoAnalysisComponent />
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<BFAIEntityDataInstance s_name="TrainingArea" />
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="200">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

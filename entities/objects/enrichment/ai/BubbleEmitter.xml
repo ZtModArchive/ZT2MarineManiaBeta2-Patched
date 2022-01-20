@@ -1,0 +1,129 @@
+<BFTypedBinder binderType="BubbleEmitter">
+	<types>
+		<entity>
+			<enrichment>
+				<BubbleEmitter />
+			</enrichment>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting mergeKey="child">
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\enrichment\BubbleEmitter\BubbleEmitter_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:BubbleEmitter" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="BubbleEmitter" />
+			</on>
+		</UIToggleButton>
+		<UIToggleButton template="researchentity">
+			<UIAspect>
+				<default image="entities\objects\enrichment\BubbleEmitter\BubbleEmitter_icon.dds"/>
+			</UIAspect>
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="BubbleEmitter"/>
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData icon3Dscale="0.43" icon3Doffset="0 -.03 .7" terrainFlatten="true" landPlacement="false" tankPlacement="true" waterPlacement="true" minimumDepth="1" autoFootprint="false">
+			<excludedIconObjs>
+				<bubbles />
+			</excludedIconObjs>
+			<dfootprint width="1" height="1" />
+			<cfootprint width="1" height="1" />
+		</ZTPlacementData>
+		<BFAIEntityDataShared b_Researchable="true" s_uisort="ta" s_Product="Marine" s_Zoopedia="zoopedia:zoopedia_bubbleemitter:entry" b_ReceiveUpdates="true" f_researchUnlockTime="45" f_researchCost="200" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="footprint" width="2" length="1.5" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/objects/enrichment/BubbleEmitter/BubbleEmitter.bfm" pruneOffscreenUpdates="true" activeSequenceName="Idle_Idle" activeSequenceLoop="true" switch="0 30 60" scale=".75" />
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" waterOffset="0.0" />
+					<BFCollisionComponent grid="Bip01" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_North parentNode="Bip01" x="0" y="-.65" z="2.5" />
+						<Dock_East parentNode="Bip01" x="-.65" y="0" z="2.5" yaw="-90" />
+						<Dock_West parentNode="Bip01" x=".65" y="0" z="2.5" yaw="90" />
+						<Dock_South parentNode="Bip01" x="0" y=".65" z="2.5" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFBehaviorMgr behaviorVersion="1">
+					<subBehaviors>
+						<BFBehAnimate targetAnim="Idle_Idle" loopFlag="true"/>
+					</subBehaviors>
+				</BFBehaviorMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAICognitiveMgr>
+					<Sensors>
+						<ZTAISensor />
+						<BFAISensorSelf />
+					</Sensors>
+					<TaskThinkers>
+						<ZTAITaskThinker />
+					</TaskThinkers>
+				</BFAICognitiveMgr>
+			</instance>
+			<shared>
+				<BFAICogShared>
+					<BFAINoPerceive>
+						<fence/>
+						<path/>
+						<building/>
+						<scenery/>
+						<entrance/>
+						<AnimalCrate/>
+						<item/>
+						<food/>
+						<foliage/>
+						<rock/>
+					</BFAINoPerceive>
+				</BFAICogShared>
+			</shared>
+		</BFBinder>
+		<BFNamedBinder binderName="Play">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterBubbleEmitter" useBehSet="UseBubbleEmitter" exitBehSet="ExitBubbleEmitter" targetNode="Dock_North" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBubbleEmitter" useBehSet="UseBubbleEmitter" exitBehSet="ExitBubbleEmitter" targetNode="Dock_East" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBubbleEmitter" useBehSet="UseBubbleEmitter" exitBehSet="ExitBubbleEmitter" targetNode="Dock_West" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBubbleEmitter" useBehSet="UseBubbleEmitter" exitBehSet="ExitBubbleEmitter" targetNode="Dock_South" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="500">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

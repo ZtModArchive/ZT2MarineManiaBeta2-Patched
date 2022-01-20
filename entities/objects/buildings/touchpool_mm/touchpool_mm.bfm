@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\buildings\touchpool_mm\touchpool_animals_mm.nif">
+  <animation anim="entities\objects\buildings\touchpool_mm\touchpool_animals_mm_Bip01_Horseshoe_Bip01_Secondary_Horseshoe.bf" animName="Secondary_Horseshoe" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\buildings\touchpool_mm\touchpool_animals_mm_Bip01_SeaCuke_Bip01_Secondary_SeaCuke.bf" animName="Secondary_SeaCuke" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\buildings\touchpool_mm\touchpool_animals_mm_Bip01_Stand_Idle.bf" animName="Stand_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="touchpool_animals_mm" version="1">
+    <node name="Secondary">
+      <table>
+        <Secondary_Horseshoe />
+        <Secondary_SeaCuke />
+      </table>
+    </node>
+    <node name="Stand">
+      <table>
+        <Stand_Idle />
+      </table>
+    </node>
+  </Graph>
+</BFM>

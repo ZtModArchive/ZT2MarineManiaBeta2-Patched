@@ -1,0 +1,94 @@
+<BFTypedBinder binderType="Cannon">
+	<types>
+		<entity>
+			<scenery>
+				<Cannon />
+			</scenery>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="live" rottype="use" postype="use" attachnode="Bone03" />
+				<parentObj parent="mainObj" child="dead" rottype="use" postype="use" attachnode="Bone03" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 0.47" icon3Dscale="0.4" waterPlacement="true" tankPlacement="true" autoFootprint="false" minimumHeadroom="3">
+			<cfootprint width="1" height="1" />
+			<dfootprint height="2" width="2" />
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\scenery\Cannon\Cannon_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:Cannon" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Cannon" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_ReceiveUpdates="true" s_ObjectType="Misc" s_Product="Marine" s_uisort="ef" s_Zoopedia="zoopedia:zoopedia_cannon:entry" f_FameReq="40" />
+		<ZTTourData>
+			<theme_marine value="4" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="ShadowNode_01" width="6" length="6" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFTerrainPaintComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="live" required="1">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/objects/scenery/Cannon/Cannon.bfm" pruneOffscreenUpdates="true" activeSequenceName="Idle" activeSequenceLoop="true" switch="0 5000 5001" />
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" waterOffset="0.0" />
+					<BFCollisionComponent grid="Bip01" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="dead" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/objects/scenery/Cannon/Cannon.bfm" pruneOffscreenUpdates="true" switch="0 5000 5001" />
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" waterOffset="0.0" />
+					<BFCollisionComponent grid="Bip01" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<ZTWitheredPlantComponent MinDepth="1">
+					<Underwater>
+						<live />
+					</Underwater>
+					<DryLand>
+						<dead />
+					</DryLand>
+				</ZTWitheredPlantComponent>
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="1200">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="upkeep" cost="100" period="monthly" type="debit" category="upkeep" />
+					<ZTTransaction name="add_user" cost="1" type="addUser" category="user" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

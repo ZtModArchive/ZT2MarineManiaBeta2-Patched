@@ -1,0 +1,84 @@
+﻿<BFTypedBinder binderType="KelpBed_Shelter">
+	<types>
+		<entity>
+			<shelters>
+				<KelpBed_Shelter />
+			</shelters>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 1.0" icon3Dscale=".25" autoFootprint="true" landPlacement="false" tankPlacement="true" waterPlacement="true" minimumHeadroom="8.0">
+			<cfootprint width="3" height="3" />
+			<dfootprint width="4" height="4" />
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\shelters\KelpBed_Shelter\KelpBed_Shelter_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:KelpBed" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="KelpBed_Shelter" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared s_uisort="ay" s_Product="Marine" s_Zoopedia="zoopedia:zoopedia_kelpbed:entry" />
+		<BFGCollisionData isStatic="false" />
+		<ZTTourData>
+			<shelter value="1" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/shelters/KelpBed_Shelter/KelpBed" scale="1" switch="0 20 40" />
+					<BFGroundFitComponent heightOffset="0.16" floatOnWater="true" waterOffset="0.1" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Top01 parentNode="AutoRoot" x="1" y=".5" z=".1" yaw="0" />
+						<Dock_Top02 parentNode="AutoRoot" x="-.5" y="-.25" z=".1" yaw="180" />
+						<Dock_Node1 parentNode="AutoRoot" x=".85" y="0" z="-1.75" yaw="90" />
+						<Dock_Node2 parentNode="AutoRoot" x="0" y=".85" z="-1.95" yaw="0" />
+						<Dock_Node3 parentNode="AutoRoot" x="0" y="-.85" z="-1.75" yaw="180" />
+						<Dock_Node4 parentNode="AutoRoot" x="-.85" y="0" z="-1.95" yaw="-90" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Rest">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterKelpBed" useBehSet="UseKelpBed" exitBehSet="ExitKelpBed" targetNode="Dock_Node1" capacity="1" exclusiveID="KelpBedUnder1" />
+						<BFGEntityContainerSlot enterBehSet="EnterKelpBed" useBehSet="UseKelpBed" exitBehSet="ExitKelpBed" targetNode="Dock_Node2" capacity="1" exclusiveID="KelpBedUnder2" />
+						<BFGEntityContainerSlot enterBehSet="EnterKelpBed" useBehSet="UseKelpBed" exitBehSet="ExitKelpBed" targetNode="Dock_Node3" capacity="1" exclusiveID="KelpBedUnder3" />
+						<BFGEntityContainerSlot enterBehSet="EnterKelpBed" useBehSet="UseKelpBed" exitBehSet="ExitKelpBed" targetNode="Dock_Node4" capacity="1" exclusiveID="KelpBedUnder4" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="RestTop">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterKelpBed" useBehSet="UseKelpBed" exitBehSet="ExitKelpBed" targetNode="Dock_Top01" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterKelpBed" useBehSet="UseKelpBed" exitBehSet="ExitKelpBed" targetNode="Dock_Top02" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="400">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

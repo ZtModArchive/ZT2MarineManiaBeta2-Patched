@@ -1,0 +1,50 @@
+<BFTypedBinder binderType="Canopy">
+   <types>
+      <entity>
+         <scenery>
+            <Canopy/>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIButton name="overviewicon">
+         <UIAspect>
+            <default image="ui/zoomap/icon_staff.dds"/>
+         </UIAspect>
+      </UIButton>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\buildings\Platform_Show_mm\Platform_Show_Upgraded_mm_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Canopy"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Canopy"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Zoopedia="zoopedia:zoopedia_showplatform_upgraded:entry" s_Product="Marine" b_Eyedropper="false"/>
+      <ZTPlacementData icon3Doffset="0 0 0.918257" icon3Dscale="0.11" minimumDepth="3" waterPlacement="false" landPlacement="false" showTankPlacement="true" randomRotate="false" gridSnap="true" terrainFlatten="false"/>
+      <ZTDevComponent/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/buildings/Platform_Show_mm/Platform_ShowUpgraded_mm" switch="0 20 40"/>
+               <BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="400">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="25" period="monthly" type="debit" category="upkeep"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

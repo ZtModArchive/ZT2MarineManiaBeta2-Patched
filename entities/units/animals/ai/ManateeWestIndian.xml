@@ -1,0 +1,209 @@
+<BFTypedBinder binderType="ManateeWestIndian" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Sirenia>
+							<Trichechidae>
+								<ManateeWestIndian />
+							</Trichechidae>
+						</Sirenia>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\ManateeWestIndian\ManateeWestIndian_Adult_F_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo ids="entityname:ManateeWestIndian" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="ManateeWestIndian_Adult_F" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData waterPlacement="true" landPlacement="false" tankPlacement="true" icon3Doffset="0 0 1.25" icon3Dscale=".64" iconAnim="TreadWater_Idle" />
+		<BFAIEntityDataShared s_Product="Marine" f_BaseDonationAmount="100" f_MaxTourValue="35" s_DonateToken="t_DonateManateeWestIndian" s_Species="ManateeWestIndian" s_Endangerment="Vulnerable" b_Medium="true" p_NurseNode="0 -1 90" p_PoleRopeNode="0 -2.5 180" f_ResponseRadius="35" b_RespondToCursor="true" s_KeeperEatType="FoodBox_Seaweed" b_LargeAnimal="true" f_adoptRemoveTime="0" f_adoptRarity="30" s_Zoopedia="zoopedia:zoopedia_ManateeWestIndian:entry" f_RequiredInitialSpace="320" f_RequiredAdditionalSpace="80" p_PursuitBallNode="0 -3 180" p_FightOffset="0 -2.75 180" p_PreyOffset="0 1 0" b_KelpBedUser="true" b_MarineAnimal="true" b_Fucivore="true" b_CoastalAnimal="true" b_Pees="false">
+			<BFAINeedAdjusts privacy="0.1" thirst="0" />
+		</BFAIEntityDataShared>
+		<BFGBiomeData location="coastal_carribean_atlantic_ocean" locationSensitivity="10">
+			<alpine sensitivity="-5" />
+			<borealforest sensitivity="-5" />
+			<coastal sensitivity="10" primary="true" />
+			<desert sensitivity="-10" />
+			<grassland sensitivity="-2" />
+			<pelagic sensitivity="-2" />
+			<reef sensitivity="0" />
+			<temperateforest sensitivity="-10" />
+			<tropicalrainforest sensitivity="-10" />
+			<tundra sensitivity="-10" />
+			<savannah sensitivity="-5" />
+			<scrub sensitivity="-5" />
+			<wetlands sensitivity="5" />
+		</BFGBiomeData>
+		<ZTUserStaffAction>
+			<SetAttribute name="hygiene" value="0" threshold="20" locid="superstaff:animal_groom" effect="SuperStaffGroom" />
+			<SetAttribute name="health" value="0" threshold="20" locid="superstaff:animal_heal" />
+		</ZTUserStaffAction>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFShadowLODComponent numLevels="2" switchingDists="18.0 60.0" />
+					<BFActorComponent actorfile="entities/units/animals/ManateeWestIndian/ManateeWestIndian_Adult_F.bfm" scale="1" />
+					<BF2LegsGroundFitComponent heightOffset="0" seabedOffset="1" fitRadius=".15" frontBuoyancyNode="Node_Buoy" allowRollOnWater="true" />
+					<BFForwardMovingComponent />
+					<BFRotYawMovingComponent />
+					<BFSpineBendComponent spineBase="Bip01 Spine" spineBone1="Bip01 Spine1" spineBone2="Bip01 Spine2" tailBone1="Bip01 Tail" tailBone2="Bip01 Tail1" bendDegree="89" bendTime="0.5" />
+					<BFCollisionComponent grid="Bip01 Spine1" />
+					<BFGridCollisionComponent />
+					<BFDecalTextureCycleComponent materialName="ManateeWestIndian_Adult_F">
+						<Step imageName="entities/units/animals/shared/tiger_blink_blank.dds" hold="3.0" variance="0.5" />
+						<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+						<Step imageName="entities/units/animals/shared/tiger_blink.dds" hold="0.1" variance="" />
+						<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+					</BFDecalTextureCycleComponent>
+					<BFHeadLookComponent leftRightAnimName="Secondary_HeadLook" lookDirNode="Bip01 Head" lookDirVector="0 1 0" gain_z="-2" fov_extreme_lr="90.0" />
+					<BFSwimComponent waterInDistance="0.50" waterOutDistance="0.1" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars floorNode="Floor" isWaterDisplacer="true" waterDisplacement="0.25 0.5 0.25">
+					<virtualNodes>
+						<Node_Floor x="0" y="-2" z="-.25" yaw="0" pitch="0" roll="0" />
+						<Node_Follow x="2" />
+						<Node_Attacked y="4" />
+						<Node_Guest y="-1" />
+						<Node_RamWall y="-3.5" />
+						<Node_Hug y="-3" />
+						<Node_KelpBed y="-3" />
+						<Node_Lure y="-4.25" z="0.75" />
+						<Node_Box y="-6.25" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+			<BFSharedPhysVars floorNode="Floor" />
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<BFAICognitiveMgr>
+					<StateThinkers>
+						<ZTAIStateThinker>
+							<BFAIStateVar Name="thirst" ValueMin="0" ValueMax="0" />
+						</ZTAIStateThinker>
+					</StateThinkers>
+				</BFAICognitiveMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFBehaviorMgr behaviorVersion="1">
+					<subBehaviors>
+						<BFBehLocoSwitchSet loopFlag="true">
+							<behaviorTable>
+								<ground behSet="Idle" />
+								<water behSet="Idle" />
+								<underwater behSet="Idle" />
+							</behaviorTable>
+						</BFBehLocoSwitchSet>
+					</subBehaviors>
+				</BFBehaviorMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="1">
+					<instance>
+						<BFLocoAnimate version="1" stationaryAnim="OnLand_Idle">
+							<stop name="OnLand" />
+							<slow name="OnLand" />
+							<medium name="OnLand" />
+							<fast name="OnLand" />
+							<evade name="OnLand" minAnimSpeed=".8" maxAnimSpeed="1.4" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="water" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="TreadWater" />
+							<slow name="Swim" minAnimSpeed="0.75" maxAnimSpeed="1.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_2Swim" yaw="0.5" />
+								<anim name="Swim_Ahead" yaw="0.5" pitch="0.25" />
+							</slow>
+							<medium name="Swim" minAnimSpeed="0.85" maxAnimSpeed="1.1" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_2Swim" yaw="0.5" />
+								<anim name="Swim_Ahead" yaw="0.5" pitch="0.25" />
+							</medium>
+							<fast name="Swim" minAnimSpeed="0.95" maxAnimSpeed="1.2" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_2Swim" yaw="0.5" />
+								<anim name="Swim_Ahead" yaw="0.5" pitch="0.25" />
+							</fast>
+							<glide name="SwimGlide" flapAnim="Swim_2SwimGlide" minAnimSpeed="0.5" maxAnimSpeed="1.5" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimGlide_Ahead" yaw="0.5" pitch="0.25" acceleration="-0.1" />
+								<anim name="Swim_2SwimGlide" yaw="0.5" pitch="0.25" />
+							</glide>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="underwater" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="TreadWaterSub" />
+							<slow name="SwimSub" minAnimSpeed="0.75" maxAnimSpeed="1.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_2SwimSub" yaw="0.5" />
+								<anim name="SwimSub_Ahead" yaw="0.5" pitch="0.25" />
+							</slow>
+							<medium name="SwimSub" minAnimSpeed="0.85" maxAnimSpeed="1.1" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_2SwimSub" yaw="0.5" />
+								<anim name="SwimSub_Ahead" yaw="0.5" pitch="0.25" />
+							</medium>
+							<fast name="SwimSub" minAnimSpeed="0.95" maxAnimSpeed="1.2" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_2SwimSub" yaw="0.5" />
+								<anim name="SwimSub_Ahead" yaw="0.5" pitch="0.25" />
+							</fast>
+							<glide name="SwimSubGlide" flapAnim="SwimSub_2SwimSubGlide" minAnimSpeed="0.5" maxAnimSpeed="1.5" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSubGlide_Ahead" yaw="0.5" pitch="0.25" acceleration="-0.1" />
+								<anim name="SwimSub_2SwimSubGlide" yaw="0.5" pitch="0.25" />
+							</glide>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFNamedBinder binderName="mouth" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="foodprop" repopulateMethod="byName" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="3000">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

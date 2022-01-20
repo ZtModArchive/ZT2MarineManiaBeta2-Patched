@@ -1,0 +1,203 @@
+<ZTScenarioMgr interval="1" name="mgr" state="0" chain="true" allsuccess="true" sticky="true" optional="false">
+   <info locid="Tutorialtext:xp2_T1"/>
+   <children>
+      <BFScenarioRule hidden="1" name="blinktutorialring" state="0" sticky="false" updateWhenPaused="true">
+         <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/tutorial_1.lua" entry="blinktutorialring"/>
+         </evaluate>
+      </BFScenarioRule>
+      <BFScenarioGroup name="tutorialinit" state="0" chain="true" allsuccess="true" sticky="true">
+         <children>
+            <BFScenarioRule hidden="1" name="setinitialtutorialstate" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="setinitialtutorialstate"/>
+               </evaluate>
+            </BFScenarioRule>
+         </children>
+      </BFScenarioGroup>
+      <BFScenarioGroup name="tutorialhybridtank" state="0" chain="true" allsuccess="true" sticky="true" updateWhenPaused="true">
+         <children>
+            <BFScenarioRule hidden="0" name="welcome" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial2:opengoalpanel" overview="Tutoriallabels:xp2_T1overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="welcome"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="welcomesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="hybridTankIntro" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial2:opengoalpanel" overview="Tutoriallabels:xp2_T1overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="hybridTankIntro"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="hybridTankIntroSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="scrollToCoastal" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial2:opengoalpanel" overview="Tutoriallabels:xp2_T1overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="scrolltocoastal"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="scrolltocoastalsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="openlandscapingpanel" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid="tutorial2:opengoalpanelcompleted"/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="openlandscapingpanel"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="openlandscapingpanelsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="paintwater" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid="tutorial2:opengoalpanelcompleted"/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="paintwater"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="paintwatersuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="selectHabitat" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid="tutorial2:opengoalpanelcompleted"/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="selecthabitat"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="selecthabitatsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="selectDitch" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid="tutorial2:opengoalpanelcompleted"/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="selectditch"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="selectditchsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="scrollToPelagic" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial2:opengoalpanel" overview="Tutoriallabels:xp2_T1overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="scrolltopelagic"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="scrolltopelagicsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="pullDownTankWall" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial2:opengoalpanel" overview="Tutoriallabels:xp2_T1overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="pulldowntankwall"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="pulldowntankwallsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="endscenario" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="endscenario"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial2.lua" entry="endscenariosuccess"/>
+               </success>
+            </BFScenarioRule>
+         </children>
+      </BFScenarioGroup>
+   </children>
+</ZTScenarioMgr>

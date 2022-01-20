@@ -1,0 +1,102 @@
+<BFParticleDictionary>
+   <BelugaEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Beluga\BelugaEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </BelugaEmote>
+   <DolphinBottlenoseEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\DolphinBottlenose\DolphinBottlenoseEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </DolphinBottlenoseEmote>
+   <ManateeWestIndianEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\ManateeWestIndian\ManateeWestIndianEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </ManateeWestIndianEmote>
+   <MarlinBlueEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\MarlinBlue\MarlinBlueEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </MarlinBlueEmote>
+   <NarwhalEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Narwhal\NarwhalEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </NarwhalEmote>
+   <OtterSeaEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\OtterSea\OtterSeaEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </OtterSeaEmote>
+   <PenguinRockhopperEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\PenguinRockhopper\PenguinRockhopperEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </PenguinRockhopperEmote>
+   <RayMantaEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\RayManta\RayMantaEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </RayMantaEmote>
+   <SeaLionCaliforniaEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\SeaLionCalifornia\SeaLionCaliforniaEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </SeaLionCaliforniaEmote>
+   <SharkGoblinEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\SharkGoblin\SharkGoblinEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </SharkGoblinEmote>
+   <SharkHammerheadScallopedEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\SharkHammerheadScalloped\SharkHammerheadScallopedEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </SharkHammerheadScallopedEmote>
+   <SharkReefBlackTipEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\SharkReefBlacktip\SharkReefBlackTipEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </SharkReefBlackTipEmote>
+   <SharkWhaleEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\SharkWhale\SharkWhaleEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </SharkWhaleEmote>
+   <SharkWhiteEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\SharkWhite\SharkWhiteEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </SharkWhiteEmote>
+   <TurtleLeatherbackEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\TurtleLeatherback\TurtleLeatherbackEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </TurtleLeatherbackEmote>
+   <TurtleSeaGreenEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\TurtleSeaGreen\TurtleSeaGreenEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </TurtleSeaGreenEmote>
+   <WalrusPacificEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\WalrusPacific\WalrusPacificEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </WalrusPacificEmote>
+   <WhaleFalseKillerEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\WhaleFalseKiller\WhaleFalseKillerEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </WhaleFalseKillerEmote>
+   <WhaleOrcaEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\WhaleOrca\WhaleOrcaEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </WhaleOrcaEmote>
+   <WhalePilotShortFinnedEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\WhalePilotShortFinned\WhalePilotShortFinnedEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </WhalePilotShortFinnedEmote>
+</BFParticleDictionary>

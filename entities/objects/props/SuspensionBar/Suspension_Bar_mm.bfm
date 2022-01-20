@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\props\SuspensionBar\Suspension_Bar_mm.nif">
+  <animation anim="entities\objects\props\SuspensionBar\Suspension_Bar_mm_Float_2KnockedOver.bf" animName="Float_2KnockedOver" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\props\SuspensionBar\Suspension_Bar_mm_Float_Idle.bf" animName="Float_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\props\SuspensionBar\Suspension_Bar_mm_KnockedOver_2Float.bf" animName="KnockedOver_2Float" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\props\SuspensionBar\Suspension_Bar_mm_KnockedOver_Idle.bf" animName="KnockedOver_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="Suspension_Bar_mm" version="1">
+    <node name="Float">
+      <table>
+        <Float_Idle />
+      </table>
+      <edge name="KnockedOver">
+        <table>
+          <Float_2KnockedOver />
+        </table>
+      </edge>
+    </node>
+    <node name="KnockedOver">
+      <table>
+        <KnockedOver_Idle />
+      </table>
+      <edge name="Float">
+        <table>
+          <KnockedOver_2Float />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

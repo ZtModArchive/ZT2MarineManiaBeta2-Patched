@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\animals\SharkWhale\SharkWhale_Adult_F.nif">
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_EatSwimSub_2EatSwimSubGlide.bf" animName="EatSwimSub_2EatSwimSubGlide" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_EatSwimSub_2SwimSub.bf" animName="EatSwimSub_2SwimSub" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_EatSwimSub_SuckInFood.bf" animName="EatSwimSub_SuckInFood" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_EatSwimSubGlide_2EatSwimSub.bf" animName="EatSwimSubGlide_2EatSwimSub" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_EatSwimSubGlide_Ahead.bf" animName="EatSwimSubGlide_Ahead" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_FloatSub_2SwimSub.bf" animName="FloatSub_2SwimSub" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_FloatSub_Idle.bf" animName="FloatSub_Idle" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_OnLand_2Swim.bf" animName="OnLand_2Swim" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_OnLand_Dying.bf" animName="OnLand_Dying" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_OnLand_Idle.bf" animName="OnLand_Idle" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_OnLand_Twitch.bf" animName="OnLand_Twitch" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_2SwimGlide.bf" animName="Swim_2SwimGlide" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_2SwimSub.bf" animName="Swim_2SwimSub" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_Ahead.bf" animName="Swim_Ahead" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_Bite.bf" animName="Swim_Bite" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_BiteLunge.bf" animName="Swim_BiteLunge" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_BiteLungeVicious.bf" animName="Swim_BiteLungeVicious" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_BiteVicious.bf" animName="Swim_BiteVicious" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_Idle.bf" animName="Swim_Idle" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_InvestigateBite.bf" animName="Swim_InvestigateBite" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_RubObject.bf" animName="Swim_RubObject" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_ShakeObject.bf" animName="Swim_ShakeObject" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_ShakeObjectVicious.bf" animName="Swim_ShakeObjectVicious" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_Turn180.bf" animName="Swim_Turn180" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_TurnLeft90.bf" animName="Swim_TurnLeft90" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_Swim_TurnRight90.bf" animName="Swim_TurnRight90" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimGlide_2Swim.bf" animName="SwimGlide_2Swim" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimGlide_Ahead.bf" animName="SwimGlide_Ahead" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_2EatSwimSub.bf" animName="SwimSub_2EatSwimSub" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_2FloatSub.bf" animName="SwimSub_2FloatSub" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_2Swim.bf" animName="SwimSub_2Swim" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_2SwimSubGlide.bf" animName="SwimSub_2SwimSubGlide" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_Ahead.bf" animName="SwimSub_Ahead" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_Chew.bf" animName="SwimSub_Chew" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_EatNibble.bf" animName="SwimSub_EatNibble" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_EatTear.bf" animName="SwimSub_EatTear" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_EatVoracious.bf" animName="SwimSub_EatVoracious" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_GuestAttack.bf" animName="SwimSub_GuestAttack" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_InvestigateBite.bf" animName="SwimSub_InvestigateBite" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_Nibble.bf" animName="SwimSub_Nibble" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_RiseBite.bf" animName="SwimSub_RiseBite" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_RiseBiteBreach.bf" animName="SwimSub_RiseBiteBreach" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_RubGround.bf" animName="SwimSub_RubGround" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_RubObject.bf" animName="SwimSub_RubObject" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_ShakeObject.bf" animName="SwimSub_ShakeObject" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_ShakeObjectVicious.bf" animName="SwimSub_ShakeObjectVicious" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_SlashRight.bf" animName="SwimSub_SlashRight" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_Turn180.bf" animName="SwimSub_Turn180" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_TurnDown90.bf" animName="SwimSub_TurnDown90" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_TurnLeft90.bf" animName="SwimSub_TurnLeft90" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_TurnRight90.bf" animName="SwimSub_TurnRight90" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSub_TurnUp90.bf" animName="SwimSub_TurnUp90" debug="false" animSpeed="0.35" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSubGlide_2SwimSub.bf" animName="SwimSubGlide_2SwimSub" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SharkReefBlackTip\SharkReefBlackTip_Adult_F_SwimSubGlide_Ahead.bf" animName="SwimSubGlide_Ahead" debug="false" animSpeed="0.35" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="SharkWhale_Adult_F" version="1">
+    <node name="EatSwimSub">
+      <table>
+        <EatSwimSub_SuckInFood />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <EatSwimSub_2SwimSub />
+        </table>
+      </edge>
+      <edge name="EatSwimSubGlide">
+        <table>
+          <EatSwimSub_2EatSwimSubGlide />
+        </table>
+      </edge>
+    </node>
+    <node name="EatSwimSubGlide">
+      <table>
+        <EatSwimSubGlide_Ahead />
+      </table>
+      <edge name="EatSwimSub">
+        <table>
+          <EatSwimSubGlide_2EatSwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="FloatSub">
+      <table>
+        <FloatSub_Idle />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <FloatSub_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="OnLand">
+      <table>
+        <OnLand_Dying />
+        <OnLand_Idle />
+        <OnLand_Twitch />
+      </table>
+      <edge name="Swim">
+        <table>
+          <OnLand_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="Swim">
+      <table>
+        <Swim_Ahead />
+        <Swim_Bite />
+        <Swim_BiteLunge />
+        <Swim_BiteLungeVicious />
+        <Swim_BiteVicious />
+        <Swim_Idle />
+        <Swim_InvestigateBite />
+        <Swim_RubObject />
+        <Swim_ShakeObject />
+        <Swim_ShakeObjectVicious />
+        <Swim_Turn180 />
+        <Swim_TurnLeft90 />
+        <Swim_TurnRight90 />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <Swim_2SwimSub />
+        </table>
+      </edge>
+      <edge name="SwimGlide">
+        <table>
+          <Swim_2SwimGlide />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimGlide">
+      <table>
+        <SwimGlide_Ahead />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimGlide_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSub">
+      <table>
+        <SwimSub_Ahead />
+        <SwimSub_Chew />
+        <SwimSub_EatNibble />
+        <SwimSub_EatTear />
+        <SwimSub_EatVoracious />
+        <SwimSub_GuestAttack />
+        <SwimSub_InvestigateBite />
+        <SwimSub_Nibble />
+        <SwimSub_RiseBite />
+        <SwimSub_RiseBiteBreach />
+        <SwimSub_RubGround />
+        <SwimSub_RubObject />
+        <SwimSub_ShakeObject />
+        <SwimSub_ShakeObjectVicious />
+        <SwimSub_SlashRight />
+        <SwimSub_Turn180 />
+        <SwimSub_TurnDown90 />
+        <SwimSub_TurnLeft90 />
+        <SwimSub_TurnRight90 />
+        <SwimSub_TurnUp90 />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimSub_2Swim />
+        </table>
+      </edge>
+      <edge name="SwimSubGlide">
+        <table>
+          <SwimSub_2SwimSubGlide />
+        </table>
+      </edge>
+      <edge name="FloatSub">
+        <table>
+          <SwimSub_2FloatSub />
+        </table>
+      </edge>
+      <edge name="EatSwimSub">
+        <table>
+          <SwimSub_2EatSwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubGlide">
+      <table>
+        <SwimSubGlide_Ahead />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <SwimSubGlide_2SwimSub />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

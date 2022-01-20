@@ -1,0 +1,19 @@
+﻿<Campaign>
+   <campaign>tutorial.xml</campaign>
+   <campaign>cp1_tutorial.xml</campaign>   
+   <campaign>xp1_tutorial.xml</campaign>
+   <campaign>xp2_tutorial.xml</campaign>   
+   <campaign>zookeepertrainingcampaign.xml</campaign>
+   <campaign>testcampaign.xml</campaign>
+   <campaign>campaign2.xml</campaign>
+   <campaign>worldcampaign.xml</campaign>
+   <campaign>speciessurvivalcampaign.xml</campaign>
+   <campaign>pandacampaign.xml</campaign>
+   <campaign>cp1_africacampaign.xml</campaign>   
+   <campaign>xp1_transportationcampaign.xml</campaign>
+   <campaign>xp1_photosafaricampaign.xml</campaign>
+   <campaign>xp1_endangeredanimalscampaign.xml</campaign>
+   <campaign>xp2_marineanimalscampaign.xml</campaign>
+   <campaign>xp2_marineshowscampaign.xml</campaign>
+   <campaign>pdlc1_dinocampaign.xml</campaign>   
+</Campaign>

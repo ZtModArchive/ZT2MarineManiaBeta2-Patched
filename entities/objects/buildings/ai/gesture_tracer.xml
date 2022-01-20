@@ -1,0 +1,42 @@
+<BFTypedBinder binderType="gesture_tracer">
+	<types>
+		<entity>
+			<gesture_tracer/>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<BFGCollisionData isPassable="true" />
+		<BFAIEntityDataShared s_Product="Marine" s_uisort="ea" b_Sniffable="true" s_Zoopedia="zoopedia:zoopedia_durianfruit:entry" f_FameReq="90" />
+		<ZTDevComponent/>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="footprint" width="1" intensity="0.3"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj allowHighlight="true">
+                    <BFSimpleLODComponent isBFR="true" modelfile="UI/fx/traininggestures/gesture_tracker_ring.nif" switch="0 18 36" scale="1.0"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+        <BFNamedBinder binderName="gestureArrowObj">
+			<instance>
+				<BFPhysObj allowHighlight="true">
+					<BFSimpleLODComponent isBFR="true" modelfile="UI/fx/traininggestures/gesturetracker_pointer.nif" switch="0 18 36" scale="1.0"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

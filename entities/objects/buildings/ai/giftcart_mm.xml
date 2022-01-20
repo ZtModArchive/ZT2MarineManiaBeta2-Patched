@@ -1,0 +1,108 @@
+<BFTypedBinder binderType="giftcart_mm">
+   <types>
+      <entity>
+         <building>
+            <giftcart_mm/>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="Vendor" rottype="use" postype="use" attachnode="Link_Vendor"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTPlacementData icon3Doffset="0 -0.079102 0.15" icon3Dscale="0.35" moveable="true" dockArrowStyle="special" dockArrowSize="1.0" iconAnim="Stand_Idle"/>
+      <UIButton name="overviewicon">
+         <UIAspect>
+            <default image="ui/zoomap/icon_gift.dds"/>
+         </UIAspect>
+      </UIButton>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\buildings\giftcart_mm\giftcart_mm_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:giftcart_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="giftcart_mm"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Product="Marine" s_uisort="gg" s_ObjectType="Cart" s_ItemsSold="RayManta_Gift RayManta_Gift_Adult" b_CommerceBuilding="true" b_DonationAcceptor="false" s_Zoopedia="zoopedia:zoopedia_giftcart_mm:entry" f_FameReq="20"/>
+      <ZTTourData>
+         <theme_marine value="5" />
+      </ZTTourData>
+      <ZTItemFilter>
+      	<Include_OR b_Gift="E true" b_MarineGift="E true"/>
+      </ZTItemFilter>
+      <ZTTriggeredEventsComponent>
+         <Buy_Item>
+            <nonbroadcast>
+               <event msg="BFSND_PLAY_FROM_ENTITY" data="BFString" string="cash_register"/>
+            </nonbroadcast>
+         </Buy_Item>
+      </ZTTriggeredEventsComponent>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob.tga" baseNode="footprint" width="4.5" minLength="4.5" maxLength="8" minOffset="0" maxOffset="1.5"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/buildings/giftcart_mm/giftcart_mm" scale=".85"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Vendor">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities\units\guests\AdultMale\Vendor_M.bfm" switch="0 6 13 22 33" minSwitch="0 0 0 7 14"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars minDrawSetting="1"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Use_Cart">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot targetNode="Dock_Adult" capacity="1"/>
+               </slots>
+               <queue>
+                  <BFGEntityContainerSlot targetNode="Dock_Adult" capacity="5"/>
+               </queue>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="350">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="15" period="monthly" type="debit" category="upkeep"/>
+               <ZTTransaction name="Buy_Item" costIndex="1" costChoice="10 20 30" type="debit" category="concessions_gifts" nextTransaction="add_user"/>
+               <ZTTransaction name="add_user" cost="1" type="addUser" category="user"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr behaviorVersion="1" physObj="Vendor">
+               <subBehaviors>
+                  <BFBehAnimate interruptible="true" physObj="Vendor" targetAnim="Stand_Idle" interruptFlag="true" loopFlag="true"/>
+               </subBehaviors>
+            </BFBehaviorMgr>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

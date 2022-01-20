@@ -1,0 +1,138 @@
+<BFTypedBinder binderType="JellyfishMoon">
+   <types>
+      <entity>
+         <actor>
+            <ambient>
+               <ambient_water>
+                  <JellyfishMoon/>
+               </ambient_water>
+            </ambient>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared s_Species="JellyfishMoon" f_sensorRadius="48" b_ReceiveUpdates="1" f_InterpolationDistance="6" f_InterpolationConeBegin="45" f_InterpolationConeEnd="180" f_ResponseRadius="20"/>
+      <ZTPlacementData waterPlacement="true" landPlacement="false" tankPlacement="true" showTankPlacement="false" minimumDepth="2" iconAnim="TreadWaterSub_Idle"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/units/animals/JellyfishMoon/JellyfishMoon_Adult_F.bfm"/>
+               <BFShadowLODComponent numLevels="1" switchingDists="60.0"/>
+               <BF2LegsGroundFitComponent seabedOffset="0.5" heightOffset="0"  fitRadius=".15" frontBuoyancyNode="Node_Buoy" allowRollOnWater="true"/>
+               <BFSwimComponent waterInDistance="0.50" waterOutDistance="0.1"/>
+               <BFRotYawMovingComponent/>
+               <BFCollisionComponent grid="Bip01"/>
+               <BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\blob_animal_final.tga" baseNode="Bip01 Head" width="0.5" minLength="0.5" maxLength="1.0" minOffset="0" maxOffset="0.75"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+	 <instance>
+	    <BFBehaviorMgr behaviorVersion="1">
+	       <subBehaviors>
+		  <BFBehLocoSwitchSet loopFlag="true">
+		     <behaviorTable>
+		        <ground behSet="TreadWaterSub_Idle" />
+		        <water behSet="TreadWaterSub_Idle" />
+		        <underwater behSet="TreadWaterSub_Idle" />
+		     </behaviorTable>
+		  </BFBehLocoSwitchSet>
+	       </subBehaviors>
+	    </BFBehaviorMgr>
+	 </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFLocomotionMgr/>
+         </instance>
+         <binder>
+            <BFNamedBinder binderName="water" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="TreadWaterSub"/>
+                     <slow name="SwimSub">
+                        <anim name="SwimSub_Ahead" yaw="2" roll="0.25"/>
+                     </slow>
+                     <medium name="SwimSub" animSpeed="1.5">
+                        <anim name="SwimSub_Ahead" yaw="2" roll="0.5"/>
+                     </medium>
+                     <fast name="SwimSub" animSpeed="2.0">
+                        <anim name="SwimSub_Ahead" yaw="2" roll="0.5"/>
+                     </fast>
+                     <glide name="SwimSubGlide" animSpeed="1.5" flapAnim="SwimSub_2SwimGlide" minFlapPeriod="4" maxFlapPeriod="6">
+                        <anim name="SwimSubGlide_Ahead" yaw="1.5" roll="0.25" acceleration="-0.1" minSpeed="0.5" maxSpeed="1.5"/>
+                        <anim name="SwimSub_2SwimGlide" yaw="1.5" roll="0.25" acceleration="-0.1" minSpeed="0.5" maxSpeed="1.5"/>
+                     </glide>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+            <BFNamedBinder binderName="underwater" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="TreadWaterSub"/>
+                     <slow name="SwimSub">
+                        <anim name="SwimSub_Ahead" yaw="2" pitch="0.5"/>
+                     </slow>
+                     <medium name="SwimSub" animSpeed="1.5">
+                        <anim name="SwimSub_Ahead" yaw="2" pitch="0.5"/>
+                     </medium>
+                     <fast name="SwimSub" animSpeed="2.0">
+                        <anim name="SwimSub_Ahead" yaw="2" pitch="0.5"/>
+                     </fast>
+                     <glide name="SwimSubGlide" animSpeed="1.5" flapAnim="SwimSub_2SwimGlide" minFlapPeriod="4" maxFlapPeriod="6">
+                        <anim name="SwimSubGlide_Ahead" yaw="1.5" pitch="0.5" acceleration="-0.1" minSpeed="0.5" maxSpeed="1.5"/>
+                        <anim name="SwimSub_2SwimGlide" yaw="1.5" pitch="0.5"/>
+                     </glide>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+            <BFNamedBinder binderName="ground" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="TreadWaterSub"/>
+                     <slow name="SwimSub">
+                        <anim name="SwimSub_Ahead" yaw="2" pitch="0.5"/>
+                     </slow>
+                     <medium name="SwimSub" animSpeed="1.5">
+                        <anim name="SwimSub_Ahead" yaw="2" pitch="0.5"/>
+                     </medium>
+                     <fast name="SwimSub" animSpeed="2.0">
+                        <anim name="SwimSub_Ahead" yaw="2" pitch="0.5"/>
+                     </fast>
+                     <glide name="SwimSubGlide" animSpeed="1.5" flapAnim="SwimSub_2SwimGlide" minFlapPeriod="4" maxFlapPeriod="6">
+                        <anim name="SwimSubGlide_Ahead" yaw="1.5" pitch="0.5" acceleration="-0.1" minSpeed="0.5" maxSpeed="1.5"/>
+                        <anim name="SwimSub_2SwimGlide" yaw="1.5" pitch="0.5"/>
+                     </glide>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+         </binder>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester radius="0.25" motionClass="swimmer" maxSlope="0.75" wadeDepth="2" waterScore="0" landScore="1000"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1" repopulateMethod="byType">
+         <instance>
+            <BFGCollisionHandler factorMin="0.1" factorStepUp="0.1" factorStepDown="0.05"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,40 @@
+<BFTypedBinder binderType="Narwhal_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Monodontidae>
+                        <Narwhal>
+                           <Narwhal_Adult>
+                              <Narwhal_Adult_F/>
+                           </Narwhal_Adult>
+                        </Narwhal>
+                     </Monodontidae>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0"/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\Narwhal\Narwhal_Adult_F_icon.dds" />
+         </UIAspect>
+      </UIToggleButton>
+      <ZTPlacementData icon3Doffset="0 0 .92" icon3Dscale=".64" />
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,112 @@
+<BFTypedBinder binderType="JarWithFish_Closed">
+	<types>
+		<entity>
+			<enrichment>
+				<toy>
+					<JarWithFish_Closed />
+				</toy>
+			</enrichment>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\enrichment\JarWithFish\JarWithFish_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:JarWithFish" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="JarWithFish_Closed" />
+			</on>
+		</UIToggleButton>
+		<UIToggleButton template="researchentity">
+			<UIAspect>
+				<default image="entities\objects\enrichment\JarWithFish\JarWithFish_icon.dds" />
+			</UIAspect>
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="JarWithFish_Closed" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Researchable="true" s_Product="Marine" s_uisort="ca" s_Zoopedia="zoopedia:zoopedia_jarwithfish:entry" f_researchUnlockTime="60" f_researchCost="600" f_FameReq="40" b_ReceiveUpdates="true" />
+		<ZTPlacementData waterPlacement="true" moveable="true" randomRotate="false" gridSnap="true" autoFootprint="true" icon3Doffset="0 -0.043408 1.1" icon3Dscale="1.8" minimumHeadroom="1.35">
+			<cfootprint width="1" height="1" />
+			<dfootprint width="1" height="1" />
+		</ZTPlacementData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob.tga" baseNode="footprint" width="1.5" minLength="1.5" maxLength="3.25" minOffset="0" maxOffset=".5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/JarWithFish/JarWithFish_Closed" />
+					<BFRealPhysicsComponent shapeType="cylinder" shapeRadius="0.42" shapeHeight=".8" rollFrictionCoef="0.05" bounceCoef="0.25" />
+					<BFGroundFitComponent heightOffset="0.5" maxTilt="50" floatOnWater="true" waterOffset="-0.1" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_01 parentNode="autoroot" x=".85" y="0" z="0" />
+						<Dock_02 parentNode="autoroot" x="0" y=".85" z="0" yaw="90" />
+						<Dock_03 parentNode="autoroot" x="0" y="-.85" z="0" yaw="-90" />
+						<Dock_04 parentNode="autoroot" x="-.85" y="0" z="0" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Play">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterJarWithFish" useBehSet="UseJarWithFish_Whap" exitBehSet="ExitJarWithFish" capacity="1" exclusiveID="JarWithFish1" />
+						<BFGEntityContainerSlot enterBehSet="EnterJarWithFish" useBehSet="UseJarWithFish_Whap" exitBehSet="ExitJarWithFish" capacity="1" exclusiveID="JarWithFish1" />
+						<BFGEntityContainerSlot enterBehSet="EnterJarWithFish" useBehSet="UseJarWithFish_Whap" exitBehSet="ExitJarWithFish" capacity="1" exclusiveID="JarWithFish1" />
+						<BFGEntityContainerSlot enterBehSet="EnterJarWithFish" useBehSet="UseJarWithFish_Whap" exitBehSet="ExitJarWithFish" capacity="1" exclusiveID="JarWithFish1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Open">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterJarWithFish" useBehSet="OpenJarWithFish" exitBehSet="ExitJarWithFish" capacity="1" exclusiveID="JarWithFish1" />
+						<BFGEntityContainerSlot enterBehSet="EnterJarWithFish" useBehSet="OpenJarWithFish" exitBehSet="ExitJarWithFish" capacity="1" exclusiveID="JarWithFish1" />
+						<BFGEntityContainerSlot enterBehSet="EnterJarWithFish" useBehSet="OpenJarWithFish" exitBehSet="ExitJarWithFish" capacity="1" exclusiveID="JarWithFish1" />
+						<BFGEntityContainerSlot enterBehSet="EnterJarWithFish" useBehSet="OpenJarWithFish" exitBehSet="ExitJarWithFish" capacity="1" exclusiveID="JarWithFish1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="320">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Moving="false" f_Damage="0" b_Opened="false" />
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester maxSlope=".01" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

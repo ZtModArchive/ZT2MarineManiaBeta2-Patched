@@ -1,0 +1,182 @@
+﻿<BFTypedBinder binderType="ManateeWestIndian_Young" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Sirenia>
+							<Trichechidae>
+								<ManateeWestIndian>
+									<ManateeWestIndian_Young />
+								</ManateeWestIndian>
+							</Trichechidae>
+						</Sirenia>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj2" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj3" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj4" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj5" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj6" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 .98" icon3Dscale="0.40" />
+		<ZTDevComponent />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\ManateeWestIndian\ManateeWestIndian_Adult_F_icon.dds" />
+			</UIAspect>
+		</UIToggleButton>
+		<BFAIEntityDataShared f_viewBonus="25" b_Adult="0" b_MediumPrey="true">
+			<BFAINeedAdjusts health="0.25" stimulation="0.33" exercise="0.33" reproduction="0" />
+		</BFAIEntityDataShared>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 L Toe0" width="0.35" intensity="0.2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 R Toe0" width="0.35" intensity="0.2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="0" shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="Bip01 R Finger0" width="0.35" intensity="0.2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj4">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 L Finger0" width="0.35" intensity="0.2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj5">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="1" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Neck" width="0.6" length="1" intensity="0.35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj6">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="1" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Spine" width="0.7" length="1" intensity="0.4" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/ManateeWestIndian/ManateeWestIndian_Adult_F.bfm" scale="0.7" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<attribList>
+						<health />
+						<hygiene />
+					</attribList>
+					<stateList>
+						<sickanddirty>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+								<hygiene minRange="80" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="ManateeWestIndian_Adult_F" image="entities\units\animals\ManateeWestIndian\ManateeWestIndian_Adult_F_Sick_Dirty.dds" />
+							</textureData>
+						</sickanddirty>
+						<sick>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="ManateeWestIndian_Adult_F" image="entities\units\animals\ManateeWestIndian\ManateeWestIndian_Adult_F_Sick.dds" />
+							</textureData>
+						</sick>
+						<dirty>
+							<attribData>
+								<hygiene minRange="80" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="ManateeWestIndian_Adult_F" image="entities\units\animals\ManateeWestIndian\ManateeWestIndian_Adult_F_Dirty.dds" />
+							</textureData>
+						</dirty>
+						<well>
+							<textureData>
+								<mainObj material="ManateeWestIndian_Adult_F" image="entities\units\animals\ManateeWestIndian\ManateeWestIndian_Adult_F.dds" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAICognitiveMgr>
+					<Sensors>
+						<ZTAISensor />
+						<BFAISensorSelf />
+						<ZTAISensorLand />
+						<ZTAISensorTA sensorTag="habitat" />
+					</Sensors>
+					<StateThinkers>
+						<ZTAIStateThinker mergeKey="Name">
+							<BFAIStateVar Name="reproduction" Value="" ValueMin="0" ValueMax="0" CessationThreshold="90" TriggerThreshold="90" CriticalThreshold="90" Advanced="true" />
+						</ZTAIStateThinker>
+					</StateThinkers>
+					<TaskThinkers>
+						<ZTAITaskThinker />
+					</TaskThinkers>
+				</BFAICognitiveMgr>
+			</instance>
+			<shared>
+				<BFAICogShared>
+					<BFAINoPerceive>
+						<fence />
+						<path />
+						<entrance />
+					</BFAINoPerceive>
+				</BFAICogShared>
+			</shared>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.1875" radius=".375" motionClass="swimmer" waterScore="0" landScore="0" maxSlope=".75" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="checkup" required="1">
+			<instance>
+				<ZTAIStaffRequestController attribName="health" thresholdValue="30" testType="4" cancelThresholdValue="20" cancelTestType="1">
+					<ZTStaffRequestData tokenKey="t_CheckupBaby" subjectType="Keeper" priority="5" />
+				</ZTAIStaffRequestController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance f_needPointsGood="50" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

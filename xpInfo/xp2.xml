@@ -1,0 +1,16 @@
+<ZTExpansionInfo index="2" key="1.2" extraAdoptionSlots="1" purchaseIcon="ui/shared/marine_icon.dds" playedAttribute="b_playedXP2">
+<tutorialInfo questionString="mainmenu:tutorial_intro_text_marine" tutorialName="scenario\campaign\xp2_tutorial.xml"/>   
+   <paths p1="..\xp2data"/>
+   <zips z1="x200_000.z2f"/>
+   <icon>
+      <UIStatic>
+         <UIRegion x="0" y="0" w="171" h="95" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIAspect>
+            <default image="xp/MarineMania_icon.dds">
+               <BFRect x="12" y="0" w="230" h="128"/>
+            </default>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="mainmenu:mm_installed"/>
+      </UIStatic>
+   </icon>
+</ZTExpansionInfo>

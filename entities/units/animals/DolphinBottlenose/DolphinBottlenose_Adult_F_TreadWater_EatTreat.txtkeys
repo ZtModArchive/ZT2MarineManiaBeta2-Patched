@@ -1,0 +1,8 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Ponytail1} snd 'EatTreat'"/>
+   <key time="0" text="{Bip01 Ponytail1} snd 'EatTreat_uw'"/>
+   <key time="0" text="{Bip01_Dorsal} runspl"/>
+   <key time="0.83" text="{Node_Eat} attach object"/>
+   <key time="2.0" text="{Bip01_Dorsal} runspl"/>
+   <key time="2.67" text="{Node_Eat} detach object"/>
+</TEXTKEY>

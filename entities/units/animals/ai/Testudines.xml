@@ -1,0 +1,16 @@
+<BFTypedBinder binderType="Testudines" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Reptilia>
+						<Testudines />
+					</Reptilia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+</BFTypedBinder>

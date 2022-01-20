@@ -1,0 +1,29 @@
+<BFTypedBinder binderType="SharkWhale_Gift_Adult">
+   <types>
+      <entity>
+         <item>
+            <SharkWhale_Gift_Adult/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_SharkWhale_Gift.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:SharkWhale_Gift_Adult"/>
+      </UIToggleButton>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/Items/Gifts/SharkWhale_Gift_Adult" scale="1.0" switch="0 36"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

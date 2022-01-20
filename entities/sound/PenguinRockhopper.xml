@@ -1,0 +1,74 @@
+<soundtags>
+   <!--Adult-->
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Adult_AlarmCall">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Adult_AlarmCallA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Adult_Attack">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Adult_AttackA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Adult_Attacked">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Adult_AttackedA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Adult_Eat">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Adult_EatA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Adult_M_MatingCall">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Adult_M_MatingCallA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Adult_MutualCall">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Adult_MutualCallA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Adult_SlayGuest">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Adult_SlayGuestA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Young_AlarmCall">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Young_AlarmCallA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Young_Attack">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Young_AttackA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Young_Attacked">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Young_AttackedA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Young_Eat">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Young_EatA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Young_FoodCall">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Young_FoodCallA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Young_MutualCall">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Young_MutualCallA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="PenguinRockhopper_Young_SlayGuest">
+         <snd name="entities/units/animals/PenguinEmperor/sound/PenguinEmperor_Young_SlayGuestA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

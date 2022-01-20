@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\props\Hoop_mm\Hoop.nif">
+  <animation anim="entities\objects\props\Hoop_mm\Hoop_Idle.bf" animName="Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+  <Graph name="Hoop" version="1" />
+</BFM>

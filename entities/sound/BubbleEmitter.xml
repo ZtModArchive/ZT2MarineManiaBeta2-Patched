@@ -1,0 +1,15 @@
+<soundtags>
+   <!--UNDERWATER-->
+   <BFSoundtag>
+      <BF3DSndFactory name="BubbleEmitter_uw">
+         <snd name="entities/objects/enrichment/BubbleEmitter/sound/BubbleEmitter.wav" volume="1" mindist="4" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="BubbleEmitter_uw2">
+         <snd name="entities/objects/enrichment/BubbleEmitter/sound/BubbleEmitter2.wav" volume="1" mindist="4" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="BubbleEmitter_uw3">
+         <snd name="entities/objects/enrichment/BubbleEmitter/sound/BubbleEmitter3.wav" volume="1" mindist="4" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>
+</soundtags>   
+  

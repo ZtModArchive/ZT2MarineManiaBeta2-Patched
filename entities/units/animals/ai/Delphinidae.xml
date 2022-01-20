@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Delphinidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Delphinidae/>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

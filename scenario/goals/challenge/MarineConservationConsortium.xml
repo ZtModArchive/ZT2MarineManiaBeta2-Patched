@@ -1,0 +1,20 @@
+<BFScenarioGroup name="marineconservationconsortiumrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="marineconservationconsortium" state="0" sticky="true" optional="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHMarineConservationConsortiumShort" overview="Challengetext:CHMarineConservationConsortium" />
+				<success locid="Challengetext:CHMarineConservationConsortiumSuccessShort" overview="Challengetext:CHAnimalAssistanceSuccess" />
+				<failure locid="Challengetext:CHMarineConservationConsortiumFailureShort" overview="Challengetext:CHMarineConservationConsortiumFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/marineconservationconsortium.lua" entry="evalMarineConservationConsortium" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/marineconservationconsortium.lua" entry="completeMarineConservationConsortium" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/marineconservationconsortium.lua" entry="failMarineConservationConsortium" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

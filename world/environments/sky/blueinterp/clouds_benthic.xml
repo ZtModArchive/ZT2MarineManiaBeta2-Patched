@@ -1,0 +1,4 @@
+<BFPhysObj>
+   <BFRSceneGraphComponent modelfile="world/environments/sky/blueinterp/clouds_benthic"/>
+   <BFRotYawMovingComponent moveSpeed="0.0025f" updateRate="0" totalDist="100" infiniteMoving="true"/>
+</BFPhysObj>

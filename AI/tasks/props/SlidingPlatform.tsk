@@ -1,0 +1,178 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Training" Priority="85" reserveTag="Training" UniqueID="SlidingPlatform:Training">
+     <BFAICreateData>
+       <Subjects>
+          <DolphinBottlenose_Adult/>
+          <WhaleFalseKiller_Adult/>
+          <WhaleOrca_Adult/>
+         <Qualifiers isSwimming="true"/>
+       </Subjects>
+       <Targets>
+         <fromToken/>
+         <Qualifiers_AND inWater="true"/>
+       </Targets>
+       <Objects>
+         <t_FPTSummonDolphinBeachSlidingPlatform/>
+         <t_FPTSummonWhaleFalseKillerBeachSlidingPlatform/>
+         <t_FPTSummonWhaleOrcaBeachSlidingPlatform/>
+       </Objects>
+     </BFAICreateData>
+     <BFAIEvalData fixedScore="95"/>
+     <BFBehExecTask>
+       <BFBehEnter/>
+     </BFBehExecTask>
+     <BFAICompletionData/>
+     <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Training_Teleport" Priority="86" reserveTag="Training_Teleport" UniqueID="SlidingPlatform:Training_Teleport">
+     <BFAICreateData>
+       <Subjects>
+          <DolphinBottlenose_Adult/>
+          <WhaleFalseKiller_Adult/>
+          <WhaleOrca_Adult/>
+         <Qualifiers isSwimming="true"/>
+       </Subjects>
+       <Targets>
+         <fromToken/>
+         <Qualifiers_AND inWater="true"/>
+       </Targets>
+       <Objects>
+         <t_fptTeleportDolphinBeachSlidingPlatform/>
+         <t_fptTeleportWhaleFalseKillerBeachSlidingPlatform/>
+         <t_fptTeleportWhaleOrcaBeachSlidingPlatform/>
+       </Objects>
+     </BFAICreateData>
+     <BFAIEvalData fixedScore="95"/>
+     <BFBehExecTask>
+       <BFBehEnter/>
+     </BFBehExecTask>
+     <BFAICompletionData/>
+     <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Beach_Failure" reserveTag="Beach_Failure" UniqueID="SlidingPlatform:Beach_Failure">
+     <BFAICreateData>
+       <Subjects>
+         <DolphinBottlenose_Adult/>
+         <WhaleFalseKiller_Adult/>
+         <WhaleOrca_Adult/>
+         <Qualifiers isSwimming="true"/>
+       </Subjects>
+       <Targets>
+         <fromToken/>
+         <Qualifiers inWater="true"/>
+       </Targets>
+       <Objects>
+         <t_BeachSlidingPlatformFailure/>
+       </Objects>
+     </BFAICreateData>
+     <BFAIEvalData fixedScore="2000"/>
+     <BFBehExecTask>
+       <BFBehEnter/>
+       <BFBehPlaySet behSet="useContainer"/>
+     </BFBehExecTask>
+     <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-5" stimulation="-5"/>
+       <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowBad"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+          <BFBehSendToken>
+              <BFAITokenList>
+                 <BFAIToken Name="t_FailureReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+              </BFAITokenList>
+           </BFBehSendToken>
+        </BFBehExecTask>
+     </BFAICompletionData>
+     <BFAIFailureData>
+       <BFBehExecTask>
+         <BFBehPlaySet behSet="FailureSet"/>
+       </BFBehExecTask>
+     </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Beach_Success" reserveTag="Beach_Success" UniqueID="SlidingPlatform:Beach_Success">
+      <BFAICreateData>
+         <Subjects>
+            <DolphinBottlenose_Adult/>
+            <WhaleFalseKiller_Adult/>
+            <WhaleOrca_Adult/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_BeachSlidingPlatformSuccess/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+         <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+          <BFBehSendToken>
+              <BFAITokenList>
+                 <BFAIToken Name="t_SuccessReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+              </BFAITokenList>
+           </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Beach_Critical" reserveTag="Beach_Critical" UniqueID="SlidingPlatform:Beach_Critical">
+      <BFAICreateData>
+         <Subjects>
+            <DolphinBottlenose_Adult/>
+            <WhaleFalseKiller_Adult/>
+            <WhaleOrca_Adult/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_BeachSlidingPlatformCritical/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+         <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowVeryGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+          <BFBehSendToken>
+              <BFAITokenList>
+                 <BFAIToken Name="t_CriticalReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+              </BFAITokenList>
+           </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

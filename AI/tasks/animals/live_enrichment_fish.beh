@@ -1,0 +1,219 @@
+<BehaviorSets>
+   <Idle>
+      <subjects>
+         <live_enrichment_fish/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateSwitch>
+            <animTable>
+               <Walk anim="Swim_Ahead"/>
+               <Run anim="Swim_Ahead"/>
+               <Stand anim="Swim_Ahead"/>
+               <default anim="Swim_Ahead"/>
+            </animTable>
+         </BFBehAnimateSwitch>
+      </behaviors>
+   </Idle>
+   <Swim_Idle>
+      <subjects>
+         <live_enrichment_fish/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Ahead"/>
+      </behaviors>
+   </Swim_Idle>
+   <DockAttacked>
+      <subjects>
+         <live_enrichment_fish/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="p_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <live_enrichment_fish/>
+      </subjects>
+      <behaviors>
+         <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Attacked>
+   <ChasePreyWater>
+      <subjects>
+         <Felidae/>
+         <CrocodileNile/>
+         <BearPolar/>
+         <BearGrizzly/>
+         <BearBlackAsiatic/>
+         <PenguinEmperor/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="medium"/>
+      </behaviors>
+   </ChasePreyWater>
+   <WaitAttackWater>
+      <subjects>
+         <Felidae/>
+         <CrocodileNile/>
+         <PenguinEmperor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttackWater>
+   <WaitAttackIdle>
+      <subjects>
+         <Felidae/>
+         <CrocodileNile/>
+         <PenguinEmperor/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WaitAttack"/>
+               <water behSet="WaitAttackWater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </WaitAttackIdle>
+   <AttackPreySwitch>
+      <subjects>
+         <Felidae/>
+         <CrocodileNile/>
+         <PenguinEmperor/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="AttackPreyDry"/>
+               <water behSet="AttackPreyWater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </AttackPreySwitch>
+   <AttackPreyWater>
+      <subjects>
+         <Felidae/>
+      </subjects>
+      <behaviors>
+       <BFBehAnimate targetAnim="TreadWater_Attack"/>
+       <BFBehAnimate targetAnim="TreadWater_Idle" playTime="3"/>
+      </behaviors>
+   </AttackPreyWater>
+   <AttackPreyDry>
+      <subjects>
+         <Felidae/>
+      </subjects>
+      <behaviors>
+       <BFBehAnimate targetAnim="Stand_SwipeLeft"/>
+      </behaviors>
+   </AttackPreyDry>
+   <AttackPreyDry>
+      <subjects>
+         <CrocodileNile/>
+      </subjects>
+      <behaviors>
+       <BFBehAnimate targetAnim="Stand_Bite"/>
+      </behaviors>
+   </AttackPreyDry>
+   <AttackPreyDry>
+      <subjects>
+         <PenguinEmperor/>
+      </subjects>
+      <behaviors>
+       <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </AttackPreyDry>
+   <AttackPreyWater>
+      <subjects>
+         <CrocodileNile/>
+      </subjects>
+      <behaviors>
+       <BFBehAnimate targetAnim="TreadWater_Bite"/>
+       <BFBehAnimate targetAnim="TreadWater_Idle" playTime="3"/>
+      </behaviors>
+   </AttackPreyWater>
+   <AttackPreyWater>
+      <subjects>
+         <PenguinEmperor/>
+      </subjects>
+      <behaviors>
+       <BFBehAnimate targetAnim="Swim_Ahead"/>
+      </behaviors>
+   </AttackPreyWater>
+   <AttackPreyWater>
+      <subjects>
+         <BearPolar/>
+         <BearGrizzly/>
+         <BearBlackAsiatic/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_AttackHigh"/>
+         <BFBehAnimate targetAnim="Stand_AttackLow" playTime="3"/>
+      </behaviors>
+   </AttackPreyWater>
+   <AttackPreyFish>
+      <subjects>
+         <BearPolar/>
+         <BearGrizzly/>
+         <BearBlackAsiatic/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <AttackPreyWater weight="50"/>
+               <Fish weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </AttackPreyFish>
+   <Fish>
+      <subjects>
+         <BearPolar/>
+         <BearGrizzly/>
+         <BearBlackAsiatic/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Fish_Idle"/>
+         <BFBehAttachObject attachEntity="target" targetAnim="Fish_2Stand_WithFish" targetNode="FootFrontRight" detachAction="killitem"/>
+      </behaviors>
+   </Fish>
+   <Fishin>
+      <subjects>
+         <Felidae/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="4">
+            <randomSets>
+               <SwatWater weight="50"/>
+               <Listen weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Fishin>
+   <SwatWater>
+      <subjects>
+         <Felidae/>
+      </subjects>
+      <behaviors>
+       <BFBehAnimate targetAnim="Stand_SwatWater"/>
+      </behaviors>
+   </SwatWater>
+   <MarineAttackPreyFish>
+      <subjects>
+            <Delphinidae/>
+            <Carcharhinidae/>
+            <TurtleSeaGreen_Young/>
+            <Monodontidae/>
+            <Otariidae/>
+            <Lamnidae/>
+            <Sphyrnidae/>
+            <Mitsukurinidae/>
+            <Istiophoridae/>            
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Bite"/>
+      </behaviors>
+   </MarineAttackPreyFish>
+</BehaviorSets>

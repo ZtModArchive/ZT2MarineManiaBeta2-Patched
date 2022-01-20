@@ -1,0 +1,51 @@
+<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_benthicrocks:entry"  >Benthic Rocks</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_benthicrocks:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/rocks/benthic/Rock_Benthic_Small_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/rocks/benthic/Rock_Benthic_Medium_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/rocks/benthic/Rock_Benthic_Large_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>Use benthic rocks in tanks that feature such benthic marine animals as the whale shark or the goblin shark. You can also use these rocks in public areas to add a marine look and feel.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_reefrocks:entry"  >Reef Rocks</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_reefrocks:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/rocks/reef/Rock_Reef_Small_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/rocks/reef/Rock_Reef_Medium_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/rocks/reef/Rock_Reef_Large_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>Use reef rocks in exhibits that feature such reef marine animals as the manta ray or the black tip reef shark. You can also use these rocks in public areas to add a marine look and feel.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_coastalrocks:entry"  >Coastal Rocks</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_coastalrocks:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/rocks/coastal/Rock_Coastal_Small_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/rocks/coastal/Rock_Coastal_Medium_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/rocks/coastal/Rock_Coastal_Large_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>Use coastal rocks in exhibits that feature such coastal marine animals as the California sea lion or the rockhopper penguin. You can also use these rocks in public areas to add a marine look and feel.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+
+</ZT2Strings>

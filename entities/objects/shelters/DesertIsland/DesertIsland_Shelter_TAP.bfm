@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\shelters\DesertIsland\DesertIsland_Shelter_TAP.nif">
+  <animation anim="entities\objects\shelters\DesertIsland\DesertIsland_Shelter_TAP_Bip01_DockNode00_Left_EnterA.bf" animName="Left_EnterA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\shelters\DesertIsland\DesertIsland_Shelter_TAP_Bip01_DockNode02_Left_ExitA.bf" animName="Left_ExitA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="DesertIsland_Shelter_TAP" version="1">
+    <node name="Left">
+      <table>
+        <Left_EnterA />
+        <Left_ExitA />
+      </table>
+    </node>
+  </Graph>
+</BFM>

@@ -1,0 +1,61 @@
+<BFTypedBinder binderType="TurtleSeaGreen_Young" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Reptilia>
+                  <Testudines>
+                     <Cheloniidae>
+                        <TurtleSeaGreen>
+                           <TurtleSeaGreen_Young/>
+                        </TurtleSeaGreen>
+                     </Cheloniidae>
+                  </Testudines>
+               </Reptilia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="shadowObj2" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Adult="0" f_viewBonus="5" b_Cancrivorous="true" b_Piscivore="false" b_JellyfishEater="true" b_SmallPrey="true">
+         <BFAINeedAdjusts health="0.25" stimulation="0.33" exercise="0.33" reproduction="0"/>
+      </BFAIEntityDataShared>
+      <ZTDevComponent />
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/units/animals/TurtleSeaGreen/TurtleSeaGreen_Young_F.bfm" scale="0.4" switch="0 15 30 60"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Head" width="0.75" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj2">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Spine2" width="2.2" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester escapeBuffer="0.375" radius=".75" motionClass="swimmer" waterScore="0" landScore="0" maxSlope=".75"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

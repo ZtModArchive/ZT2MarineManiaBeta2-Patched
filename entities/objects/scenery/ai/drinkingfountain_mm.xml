@@ -1,0 +1,93 @@
+<BFTypedBinder binderType="drinkingfountain_mm">
+  <types>
+    <entity>
+      <scenery>
+        <Fountain>
+          <drinkingfountain>
+            <drinkingfountain_mm />
+          </drinkingfountain>
+        </Fountain>
+      </scenery>
+    </entity>
+  </types>
+  <instance>
+    <BFGEntity entityVersion="1">
+      <physObjParenting>
+        <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+      </physObjParenting>
+    </BFGEntity>
+  </instance>
+  <shared>
+    <ZTPlacementData icon3Doffset="0 0 0.21" icon3Dscale=".93" autoFootprint="false" dockArrowStyle="special" dockArrowSize="1.0">
+      <cfootprint width="0" height="0" />
+      <dfootprint width="1" height="1" />
+    </ZTPlacementData>
+    <UIToggleButton template="adopt">
+      <UIAspect>
+        <default image="entities\objects\scenery\drinkingfountain_mm\drinkingfountain_mm_icon.dds" />
+      </UIAspect>
+      <UIHelpInfo name="" short="" long="" help="" ids="entityname:drinkingfountain_mm" />
+      <on>
+        <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="drinkingfountain_mm" />
+      </on>
+    </UIToggleButton>
+    <UIToggleButton template="researchentity">
+      <UIAspect>
+        <default image="entities\objects\scenery\drinkingfountain_mm\drinkingfountain_mm_icon.dds" />
+      </UIAspect>
+      <on>
+        <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="drinkingfountain_mm" />
+      </on>
+    </UIToggleButton>
+    <BFAIEntityDataShared b_Researchable="true" f_FameReq="60" s_Product="Marine" s_uisort="p" s_Zoopedia="zoopedia:zoopedia_drinkingfountain_mm:entry" f_researchUnlockTime="70" f_researchCost="300" />
+    <ZTTourData>
+       <theme_marine value="3" />
+    </ZTTourData>
+  </shared>
+  <binder>
+    <BFNamedBinder binderName="shadowObj">
+      <instance>
+        <BFPhysObj>
+          <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob.tga" baseNode="footprint" width="1" length="1.75" offwidth="0" offlength="0" intensity="0.3" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="mainObj">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent modelfile="entities/objects/scenery/drinkingfountain_mm/drinkingfountain_mm.nif" switch="0 18 50" initialTextKey="snd &quot;drinking_fountain&quot; looping"/>
+          <BFGroundFitComponent heightOffset="0.0" />
+          <BFHasParticleComponent />
+          <BFForceUpdateWhenVisibleComponent />
+        </BFPhysObj>
+      </instance>
+      <shared>
+        <BFSharedPhysVars>
+          <virtualNodes>
+            <Dock_Guest parentNode="Scene Root" x="0.0" y="-.8" z=".1" yaw="-180" />
+          </virtualNodes>
+        </BFSharedPhysVars>
+      </shared>
+    </BFNamedBinder>
+    <BFBinder>
+      <instance>
+        <ZTEconomyComponent cost="400">
+          <ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+          <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+        </ZTEconomyComponent>
+      </instance>
+    </BFBinder>
+    <BFNamedBinder binderName="Use_DrinkingFountain">
+      <instance>
+        <BFGEntityContainer>
+          <slots>
+            <BFGEntityContainerSlot targetNode="Dock_Guest" capacity="1" />
+          </slots>
+          <queue>
+            <BFGEntityContainerSlot targetNode="Dock_Guest" capacity="5" />
+          </queue>
+        </BFGEntityContainer>
+      </instance>
+    </BFNamedBinder>
+  </binder>
+</BFTypedBinder>

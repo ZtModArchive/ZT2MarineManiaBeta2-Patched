@@ -1,0 +1,7 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Head} snd 'UseShakerToySuccess'"/>
+   <key time="0" text="{Bip01} runspl"/>
+   <key time="1.55" text="{Bip01 R Hand} detach object"/>
+   <key time="1.56" text="{Bip01 R Hand} attach object"/>
+   <key time="2.0" text="{Bip01} runspl"/>
+</TEXTKEY>

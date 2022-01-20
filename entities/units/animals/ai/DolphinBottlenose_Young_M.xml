@@ -1,0 +1,35 @@
+<BFTypedBinder binderType="DolphinBottlenose_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Delphinidae>
+                        <DolphinBottlenose>
+                           <DolphinBottlenose_Young>
+                              <DolphinBottlenose_Young_M/>
+                           </DolphinBottlenose_Young>
+                        </DolphinBottlenose>
+                     </Delphinidae>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\DolphinBottlenose\DolphinBottlenose_Adult_M_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DolphinBottlenose_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

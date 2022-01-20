@@ -1,0 +1,109 @@
+<BFTypedBinder binderType="Statue_mm">
+	<types>
+		<entity>
+			<scenery>
+				<Statue>
+					<Statue_mm />
+				</Statue>
+			</scenery>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj2" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="biomedetail_01" rottype="ignore" postype="use" attachnode="biomedetail_01" />
+				<parentObj parent="mainObj" child="biomedetail_02" rottype="ignore" postype="use" attachnode="biomedetail_02" />
+				<parentObj parent="mainObj" child="biomedetail_03" rottype="ignore" postype="use" attachnode="biomedetail_03" />
+				<parentObj parent="mainObj" child="biomedetail_04" rottype="ignore" postype="use" attachnode="biomedetail_04" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 0.223169" icon3Dscale="0.472429" />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\scenery\Statue_mm\Statue_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:Statue_mm" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Statue_mm" />
+			</on>
+		</UIToggleButton>
+		<UIToggleButton template="researchentity">
+			<UIAspect>
+				<default image="entities\objects\scenery\Statue_mm\Statue_mm_icon.dds"/>
+			</UIAspect>
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Statue_mm"/>
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Researchable="true" s_uisort="oc" s_Zoopedia="zoopedia:zoopedia_themedstatue:entry" s_Product="Marine" f_FameReq="20" f_researchUnlockTime="60" f_researchCost="400"/>
+		<ZTTourData>
+			<theme_marine value="7" />
+			<statue value="7" />
+			<cool value="4" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="footprint" width="2.5" intensity="0.25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="footprint" width="1.5" length="4" offlength="-1" intensity="0.25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/scenery/Statue_mm/Statue_mm" switch="0 20 40" minSwitch="0 0 20" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_01">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_02">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_03">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_04">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="420">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

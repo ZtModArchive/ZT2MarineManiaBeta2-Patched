@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="PenguinRockhopper_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Aves>
+                  <Sphenisciformes>
+                     <Spheniscidae>
+                        <PenguinRockhopper>
+                           <PenguinRockhopper_Young>
+                              <PenguinRockhopper_Young_F/>
+                           </PenguinRockhopper_Young>
+                        </PenguinRockhopper>
+                     </Spheniscidae>
+                  </Sphenisciformes>
+               </Aves>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="PenguinRockhopper_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

@@ -1,0 +1,28 @@
+<ZT2Strings>
+      <LOC_STRING _locID="staffactions:GiveTreat"  >Giving %s a treat</LOC_STRING>
+      <LOC_STRING _locID="staffactions:ConductShow"  >Conducting a show</LOC_STRING>
+      <LOC_STRING _locID="staffactions:WaitShow"  >Waiting until the next show</LOC_STRING>
+      <LOC_STRING _locID="staffactions:PreShow"  >Preparing for the next show</LOC_STRING>
+      <LOC_STRING _locID="staffactions:PostShow"  >Cleaning up after a show</LOC_STRING>
+      <LOC_STRING _locID="staffactions:GoTrain"  >Going to train %s</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_Animal"  >Training %s</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_Jump"  >Training %s the jump trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_JumpFallSide"  >Training %s the jump straight up trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_StraightUpJump"  >Training %s the jump and fall to the side trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_DiveJump"  >Training %s the dive jump trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_FlipForward"  >Training %s the front flip trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_FlipBack"  >Training %s the backflip trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_FlipperSplash"  >Training %s the flipper splash trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_Spyhop"  >Training %s the spyhop trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_TailSplash"  >Training %s the tail splash trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_CorkscrewTwist"  >Training %s the corkscrew twist trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_RamOutOfWater"  >Training %s the ram out of the water trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_WaterWalk"  >Training %s the water walk trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_Squirt"  >Training %s the squirt trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_JumpHoop"  >Training %s the jump through a hoop trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_NudgeBall"  >Training %s the nudge a ball trick</LOC_STRING>
+      <LOC_STRING _locID="staffactions:Train_JumpFlukeSwipeTetherBall"  >Training %s the jump and swipe a tetherball with a buoy trick</LOC_STRING>
+      <LOC_STRING _locID="superstaff:tankgate"  >Press SPACEBAR to climb the ladder</LOC_STRING>
+      <LOC_STRING _locID="superstaff:sitonbleacher"  >Press SPACEBAR to sit in the %s</LOC_STRING>
+      <LOC_STRING _locID="superstaff:getoffbleacher"  >Press SPACEBAR to get out of the %s</LOC_STRING>
+</ZT2Strings>

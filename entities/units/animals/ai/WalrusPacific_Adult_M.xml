@@ -1,0 +1,97 @@
+<BFTypedBinder binderType="WalrusPacific_Adult_M">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Carnivora>
+							<Odobenidae>
+								<WalrusPacific>
+									<WalrusPacific_Adult>
+										<WalrusPacific_Adult_M />
+									</WalrusPacific_Adult>
+								</WalrusPacific>
+							</Odobenidae>
+						</Carnivora>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="WalrusPacific_Adult_M" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="1" f_adoptCount="rand(1,1)" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/WalrusPacific/WalrusPacific_Adult_M.bfm" scale="1.75"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<attribList>
+						<health />
+						<hygiene />
+					</attribList>
+					<stateList>
+						<sickanddirty>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+								<hygiene minRange="80" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="WalrusPacific_Adult_F" image="entities\units\animals\WalrusPacific\WalrusPacific_Adult_F_SickDirty.dds" />
+							</textureData>
+						</sickanddirty>
+						<sick>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="WalrusPacific_Adult_F" image="entities\units\animals\WalrusPacific\WalrusPacific_Adult_F_Sick.dds" />
+							</textureData>
+						</sick>
+						<dirty>
+							<attribData>
+								<hygiene minRange="80" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="WalrusPacific_Adult_F" image="entities\units\animals\WalrusPacific\WalrusPacific_Adult_F_Dirty.dds" />
+							</textureData>
+						</dirty>
+						<well>
+							<textureData>
+								<mainObj material="WalrusPacific_Adult_F" image="entities\units\animals\WalrusPacific\WalrusPacific_Adult_F.dds" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <ZTAITrickComponent/>
+         </instance>
+         <shared>
+            <ZTAITrickComponentData>
+               <Knowledge>
+                  <WalrusPacificJump_Male minScore="10" maxScore="10"/>
+                  <WalrusPacificSeat_Male minScore="0" maxScore="0"/>
+                  <WalrusPacificBellow_Male minScore="0" maxScore="0"/>
+               </Knowledge>
+            </ZTAITrickComponentData>
+         </shared>
+      </BFBinder>
+	</binder>
+</BFTypedBinder>

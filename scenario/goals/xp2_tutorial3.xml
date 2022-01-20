@@ -1,0 +1,432 @@
+<ZTScenarioMgr interval="1" name="mgr" state="0" chain="true" allsuccess="true" sticky="true" optional="false">
+   <info locid="Tutorialtext:xp2_T3"/>
+   <children>
+      <BFScenarioRule hidden="1" name="blinktutorialring" state="0" sticky="false" updateWhenPaused="true">
+         <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/tutorial_1.lua" entry="blinktutorialring"/>
+         </evaluate>
+      </BFScenarioRule>
+      <BFScenarioGroup name="tutorialinit" state="0" chain="true" allsuccess="true" sticky="true">
+         <children>
+            <BFScenarioRule hidden="1" name="setinitialtutorialstate" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="setinitialtutorialstate"/>
+               </evaluate>
+            </BFScenarioRule>
+         </children>
+      </BFScenarioGroup>
+      <BFScenarioGroup name="tutorialtraining" state="0" chain="true" allsuccess="true" sticky="true" updateWhenPaused="true">
+         <children>
+            <BFScenarioRule hidden="0" name="welcome" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="welcome"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="welcomeSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="Intro" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="intro"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="introSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>            
+            <BFScenarioRule hidden="0" name="selectDolphin" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="selectDolphin"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="selectDolphinSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="openTraining" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="openTraining"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="openTrainingSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="placeTrainingArea" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="placeTrainingArea"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="placeTrainingAreaSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="selectJump" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="selectJump"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="selectJumpSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>  
+            <BFScenarioRule hidden="0" name="gestureIntro" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="gestureIntro"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="gestureIntroSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule> 
+            <BFScenarioRule hidden="0" name="makeGestureOne" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="makeGestureOne"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="makeGestureOneSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule> 
+            <BFScenarioRule hidden="0" name="checkRewardText" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="checkRewardText"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="checkRewardTextSuccess"/>
+               </success>
+            </BFScenarioRule>            
+            <BFScenarioRule hidden="0" name="rewardDolphinOne" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="rewardDolphinOne"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="rewardDolphinOneSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule> 
+            <BFScenarioRule hidden="0" name="selectJumpTwo" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="selectJumpTwo"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="selectJumpTwoSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule> 
+            <BFScenarioRule hidden="0" name="makeGestureTwo" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="makeGestureTwo"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="makeGestureTwoSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule> 
+            <BFScenarioRule hidden="0" name="checkRewardText" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="checkRewardText"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="checkRewardTextSuccess"/>
+               </success>
+            </BFScenarioRule>            
+            <BFScenarioRule hidden="0" name="rewardDolphinTwo" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="rewardDolphinTwo"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="rewardDolphinTwoSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>              
+            <BFScenarioRule hidden="0" name="closePanel" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="closePanel"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="closePanelSuccess"/>
+               </success>
+            </BFScenarioRule>
+         </children>
+      </BFScenarioGroup>
+      <BFScenarioGroup name="tutorialstafftraining" state="0" chain="true" allsuccess="true" sticky="true" updateWhenPaused="true">
+         <children> 
+            <BFScenarioRule hidden="0" name="openStaffPanel" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="openStaffPanel"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="openStaffPanelSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="placeTrainer" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="placeTrainer"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="placeTrainerSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="selectTrainer" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="selectTrainer"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="selectTrainerSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="selectTrainingTab" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="selectTrainingTab"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="selectTrainingTabSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>            
+            <BFScenarioRule hidden="0" name="clickAddAssignment" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="clickAddAssignment"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="clickAddAssignmentSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="clickDolphin" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="clickDolphin"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="clickDolphinSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>            
+            <BFScenarioRule hidden="0" name="clickAnimalButton" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="clickAnimalButton"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="clickAnimalButtonSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="0" name="trainingMultipleAnimals" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="xp2_tutorial3:opengoalpanel" overview="Tutoriallabels:xp2_T3overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="trainingMultipleAnimals"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="trainingMultipleAnimalsSuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>            
+            
+            <BFScenarioRule hidden="1" name="endscenario" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="endscenario"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/xp2_tutorial3.lua" entry="endscenariosuccess"/>
+               </success>
+            </BFScenarioRule>            
+         </children>
+      </BFScenarioGroup>         
+   </children>
+</ZTScenarioMgr>            

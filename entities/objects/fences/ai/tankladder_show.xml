@@ -1,0 +1,54 @@
+<BFTypedBinder binderType="tankladder_show">
+   <types>
+      <entity>
+         <scenery>
+            <tankladder>
+               <tankladder_show/>
+            </tankladder>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\fences\Platform_Regular_mm\Platform_Ladder_mm_base"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="expandoPiece1" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\fences\Platform_Regular_mm\Platform_Ladder_mm_middle"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="top" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\fences\Platform_Regular_mm\Platform_Ladder_mm_top"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTTankSupport height="10" heightAbsolute="true" rotateTop="true">
+               <Base binderName="mainObj" height="0.02f" attachSelfNode="" attachOthersNode="Link_Base01"/>
+               <Top>
+                  <TopPiece1 binderName="top" height="1.5f" attachSelfNode="Link_Segment01" attachOthersNode=""/>
+               </Top>
+               <Expando>
+                  <Piece1 binderName="expandoPiece1" height="1.5f" attachSelfNode="Link_Segment01" attachOthersNode="Link_Segment02"/>
+               </Expando>
+            </ZTTankSupport>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

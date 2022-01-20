@@ -1,0 +1,96 @@
+﻿<BFTypedBinder binderType="SealPreyDummy">
+	<types>
+		<entity>
+			<enrichment>
+				<toy>
+					<SealPreyDummy />
+				</toy>
+			</enrichment>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting />
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\enrichment\Seal_Prey_Dummy\SealPreyDummy_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:SealPreyDummy" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SealPreyDummy" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared s_uisort="hu" s_Zoopedia="zoopedia:zoopedia_sealpreydummy:entry" f_FameReq="100" s_Product="Marine" />
+		<ZTPlacementData randomRotate="false" gridSnap="true" autoFootprint="false" icon3Doffset="0 -.02 0.82" icon3Dscale="0.99" protectedPlacement="false" tankPlacement="true" waterPlacement="true" landPlacement="false" minimumHeadroom="0.85" minimumDepth="1">
+			<cfootprint width="1" height="1" />
+			<dfootprint width="1" height="1" />
+		</ZTPlacementData>
+		<BFGCollisionData isPassable="false" isStatic="true" />
+		<ZTUserStaffAction>
+			<Kick locid="superstaff:kick_obj" />
+		</ZTUserStaffAction>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="Grid" width="3.5" length="2" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>www
+					<BFSimpleLODComponent isBFR="true" modelfile="entities\objects\enrichment\Seal_Prey_Dummy\Seal_Prey_Dummy" />
+					<BFRealPhysicsComponent shapeType="cylinder" shapeRadius="0.86" shapeHeight="0.32" rollFrictionCoef="0.4" bounceCoef="0.4" />
+					<BFGroundFitComponent heightOffset="0.16" floatOnWater="true" waterOffset="-0.001" />
+					<BFCollisionComponent grid="footprint" />
+					<BFGridCollisionComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Hit_TopRight parentNode="autoroot" x="-.25" z=".1" yaw="90" pitch="45" />
+						<Hit_TopLeft parentNode="autoroot" x=".25" z=".1" yaw="-90" pitch="45" />
+						<Hit_UnderRight parentNode="autoroot" x="-.25" z=".1" yaw="90" pitch="-45" />
+						<Hit_UnderLeft parentNode="autoroot" x=".25" z=".1" yaw="-90" pitch="-45" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Play">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterSealPreyDummy" useBehSet="UseSealPreyDummy" exitBehSet="ExitSealPreyDummy" targetNode="Hit_TopRight" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterSealPreyDummy" useBehSet="UseSealPreyDummy" exitBehSet="ExitSealPreyDummy" targetNode="Hit_TopLeft" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterSealPreyDummy" useBehSet="UseSealPreyDummy" exitBehSet="ExitSealPreyDummy" targetNode="Hit_UnderRight" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterSealPreyDummy" useBehSet="UseSealPreyDummy" exitBehSet="ExitSealPreyDummy" targetNode="Hit_UnderLeft" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Moving="false" />
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester maxSlope=".01" />
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="1500">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

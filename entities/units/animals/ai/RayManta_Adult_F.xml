@@ -1,0 +1,39 @@
+<BFTypedBinder binderType="RayManta_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Chondrichthyes>
+                  <Rajiformes>
+                     <Myliobatidae>
+                        <RayManta>
+                           <RayManta_Adult>
+                              <RayManta_Adult_F/>
+                           </RayManta_Adult>
+                        </RayManta>
+                     </Myliobatidae>
+                  </Rajiformes>
+               </Chondrichthyes>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)"/>
+      <UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\RayManta\RayManta_Adult_F_icon.dds" />
+			</UIAspect>
+      </UIToggleButton>
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

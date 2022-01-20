@@ -1,0 +1,52 @@
+﻿<BFTypedBinder binderType="TableCoral_Reef">
+	<types>
+		<entity>
+			<foliage>
+				<marineplant>
+					<TableCoral_Reef />
+				</marineplant>
+			</foliage>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 -0.01 0.64" icon3Dscale="0.5" />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\foliage\TableCoral\TableCoral_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:TableCoral_Reef" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TableCoral_Reef" />
+			</on>
+		</UIToggleButton>
+		<BFGBiomeData location="reef_warm_oceans_worldwide">
+			<reef />
+		</BFGBiomeData>
+		<BFAIEntityDataShared s_Product="Marine" s_Zoopedia="zoopedia:zoopedia_coral:entry" f_FameReq="40" />
+		<ZTTourData>
+			<biome_reef value="1" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities\objects\foliage\TableCoral\TableCoral" switch="0 15 30 40" />
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFTerrainPaintComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="30">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

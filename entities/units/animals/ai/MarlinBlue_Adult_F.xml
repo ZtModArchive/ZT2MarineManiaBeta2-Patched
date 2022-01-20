@@ -1,0 +1,51 @@
+﻿<BFTypedBinder binderType="MarlinBlue_Adult_F">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Actinopterygii>
+						<Perciformes>
+							<Istiophoridae>
+								<MarlinBlue>
+									<MarlinBlue_Adult>
+										<MarlinBlue_Adult_F />
+									</MarlinBlue_Adult>
+								</MarlinBlue>
+							</Istiophoridae>
+						</Perciformes>
+					</Actinopterygii>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<BFAIEntityDataShared b_Male="0" />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\MarlinBlue\MarlinBlue_Adult_F_icon.dds" />
+			</UIAspect>
+		</UIToggleButton>
+	</shared>
+	<binder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Pregnant="false" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj />
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Node_GuestAttack y="-6.5" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

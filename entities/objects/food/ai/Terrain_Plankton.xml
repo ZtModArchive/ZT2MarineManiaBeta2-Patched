@@ -1,0 +1,25 @@
+<BFTypedBinder binderType="Terrain_Plankton" abstract="true">
+   <types>
+      <entity>
+         <food>
+            <TerrainFood>
+               <Terrain_Plankton/>
+            </TerrainFood>
+         </food>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image=""/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Terrain_Plankton"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Terrain_Plankton"/>
+         </on>
+      </UIToggleButton>
+   </shared>
+</BFTypedBinder>

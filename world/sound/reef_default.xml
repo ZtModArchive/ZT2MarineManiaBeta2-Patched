@@ -1,0 +1,7 @@
+<ambient loop="reef_loop">
+   <ambients>
+      <snds>
+         <snd name="re_ambients01"/>
+      </snds>
+   </ambients>
+</ambient>

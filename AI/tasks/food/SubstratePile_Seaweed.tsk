@@ -1,0 +1,226 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Eat" reserveTag="Eat" UniqueID="substratepile_Seaweed:Eat">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Fucivore/>
+            <b_SubstratePileEater/>
+            <b_Basic/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <SubstratePile_Seaweed/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEatContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:EatingContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="30"/>
+         <BFAITargetData f_FoodLevel="-40"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Chew" GiveTo="subject" Timein="30" Timeout="180"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Eat" reserveTag="Eat" UniqueID="substratepile_Seaweed:Eat:1">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Fucivore/>
+            <b_SubstratePileEater/>
+            <b_Medium/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <SubstratePile_Seaweed/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEatContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:EatingContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEatContainerGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="30"/>
+         <BFAITargetData f_FoodLevel="-40"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Chew" GiveTo="subject" Timein="30" Timeout="180"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Eat" reserveTag="Eat" UniqueID="substratepile_Seaweed:Eat:2">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Fucivore/>
+            <b_SubstratePileEater/>
+            <b_Advanced/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <SubstratePile_Seaweed/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEatContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:EatingContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEatContainerGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="30"/>
+         <BFAITargetData f_FoodLevel="-40"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Chew" GiveTo="subject" Timein="30" Timeout="180"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Eat" reserveTag="Eat" UniqueID="substratepile_Seaweed:Eat:3">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Fucivore/>
+            <b_SubstratePileEater/>
+            <b_Elite/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <SubstratePile_Seaweed/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEatContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:EatingContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEatContainerGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="30"/>
+         <BFAITargetData f_FoodLevel="-40"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Chew" GiveTo="subject" Timein="30" Timeout="180"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

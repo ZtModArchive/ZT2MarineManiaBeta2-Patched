@@ -1,0 +1,134 @@
+<BFTypedBinder binderType="SeaLionCalifornia_Adult" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Carnivora>
+							<Otariidae>
+								<SeaLionCalifornia>
+									<SeaLionCalifornia_Adult />
+								</SeaLionCalifornia>
+							</Otariidae>
+						</Carnivora>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj2" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj3" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj4" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj5" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj6" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTEntitySelector>
+			<BFPhysObj>
+				<BFTerrainDecalComponent imageName="UI/fx/selection/showanimal.dds" alphaBlend="true"/>
+			</BFPhysObj>
+      </ZTEntitySelector>	
+		<BFAIEntityDataShared f_viewBonus="25" b_ShowAnimal="true" s_showIcon="MarineShow" b_Adult="1" p_PredatorOffset="0 -2 0" b_PicksUpRubberToy="true" b_PicksUpRattleBall="true" b_PicksUpBall="true" b_Territorial="false" s_MorphMessage="zoomessages:AnimalPuberty" f_MorphMessagePriority="1" f_MorphMessageDuration="30" b_MediumPredator="true">
+			<BFAINeedAdjusts hunger="0.33" thirst="0.1" rest="0.33" bathroom="0" hygiene="0" exercise="0.33" lifespan="0.0075" privacy="-0.01" reproduction="0.25" social="0.5" stimulation="0.5" breath="-0.50"/>
+			<BFAINeedAdjusts Name="firstPersonTraining" hunger="0" thirst="0" rest="0" bathroom="0" hygiene="0" exercise="0" lifespan="0" privacy="0" reproduction="0" social="0" stimulation="0" breath="0"/>
+		</BFAIEntityDataShared>
+		<ZTPlacementData icon3Doffset="0 0 .85" icon3Dscale="1.09" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 L Toe0" width="0.85" intensity="0.2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 R Toe0" width="0.85" intensity="0.2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 R Finger0" width="0.85" intensity="0.2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj4">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 L Finger0" width="0.85" intensity="0.2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj5">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="1" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Neck" width="2" length="2.5" intensity="0.35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj6">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent minLODLevel="0" maxLODLevel="1" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Spine" width="2" length="2.5" intensity="0.4" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<attribList>
+						<health />
+						<hygiene />
+					</attribList>
+					<stateList>
+						<sickanddirty>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+								<hygiene minRange="80" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="SeaLionCalifornia_Adult_F" image="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SickDirty.dds" />
+							</textureData>
+						</sickanddirty>
+						<sick>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="SeaLionCalifornia_Adult_F" image="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Sick.dds" />
+							</textureData>
+						</sick>
+						<dirty>
+							<attribData>
+								<hygiene minRange="80" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="SeaLionCalifornia_Adult_F" image="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Dirty.dds" />
+							</textureData>
+						</dirty>
+						<well>
+							<textureData>
+								<mainObj material="SeaLionCalifornia_Adult_F" image="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F.dds" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.3125" radius=".625" motionClass="swimmer" waterScore="0" landScore="0" maxSlope=".75" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

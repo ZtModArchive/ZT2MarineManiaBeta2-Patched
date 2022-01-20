@@ -1,0 +1,68 @@
+<BFTypedBinder binderType="MC_Adult_M_01">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Staff>
+                  <MC>
+                     <MC_Adult_M>
+                     	<MC_Adult_M_01/>
+                     </MC_Adult_M>
+                  </MC>
+               </Staff>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+   	<ZTPlacementData placeable="true"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+        <shared>
+            <BFSharedRandomTextureInfo>
+               <replacementSet>
+                  <group weight="1">
+                     <item material="body" image="entities\units\staff\MC\staff_MC_01.dds" layer="base"/>
+                  </group>
+               </replacementSet>
+            </BFSharedRandomTextureInfo>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="headObj">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\units\guests\AdultMale\Head_Adult_M.nif" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedRandomTextureInfo>
+               <replacementSet>
+                  <group weight="1">
+                     <item material="guest_adult_m_head" image="entities\units\guests\shared\guest_adult_m_head_01_happy.dds" layer="base"/>
+                     <item material="guest_m_head" image="entities\units\guests\shared\guest_adult_m_headlo_01.dds" layer="base"/>
+                  </group>
+                  <group weight="1">
+                     <item material="guest_adult_m_head" image="entities\units\guests\shared\guest_adult_m_head_03_happy.dds" layer="base"/>
+                     <item material="guest_m_head" image="entities\units\guests\shared\guest_adult_m_headlo_03.dds" layer="base"/>
+                  </group>
+                  <group weight="1">
+                     <item material="guest_adult_m_head" image="entities\units\guests\shared\guest_adult_m_head_04_happy.dds" layer="base"/>
+                     <item material="guest_m_head" image="entities\units\guests\shared\guest_adult_m_headlo_04.dds" layer="base"/>
+                  </group>
+                  <group weight="1">
+                     <item material="guest_adult_m_head" image="entities\units\guests\shared\guest_adult_m_head_05_happy.dds" layer="base"/>
+                     <item material="guest_m_head" image="entities\units\guests\shared\guest_adult_m_headlo_04.dds" layer="base"/>
+                  </group>
+               </replacementSet>
+            </BFSharedRandomTextureInfo>
+         </shared>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

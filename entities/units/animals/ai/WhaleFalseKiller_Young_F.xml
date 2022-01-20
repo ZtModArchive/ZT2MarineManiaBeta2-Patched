@@ -1,0 +1,36 @@
+<BFTypedBinder binderType="WhaleFalseKiller_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Delphinidae>
+                        <WhaleFalseKiller>
+                           <WhaleFalseKiller_Young>
+                              <WhaleFalseKiller_Young_F/>
+                           </WhaleFalseKiller_Young>
+                        </WhaleFalseKiller>
+                     </Delphinidae>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\WhaleFalseKiller\WhaleFalseKiller_Adult_F_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="WhaleFalseKiller_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+   <binder/>
+</BFTypedBinder>

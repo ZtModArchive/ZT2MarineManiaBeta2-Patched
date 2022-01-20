@@ -1,0 +1,19 @@
+<BFScenarioGroup name="internationaloceanographerrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="internationaloceanographerphoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHInternationalOceanographerShort" overview="PhotoChallengetext:PHInternationalOceanographer" />
+				<success locid="PhotoChallengetext:PHInternationalOceanographerSuccessShort" overview="PhotoChallengetext:PHInternationalOceanographerSuccess" />
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/InternationalOceanographer.lua" entry="evalinternationaloceanographer" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/InternationalOceanographer.lua" entry="completeinternationaloceanographer" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/InternationalOceanographer.lua" entry="failinternationaloceanographer" />
+			</failure>	
+		</BFScenarioRule>		
+	 </children>
+</BFScenarioGroup>

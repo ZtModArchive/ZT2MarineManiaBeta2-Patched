@@ -1,0 +1,11 @@
+<BehaviorSets>
+   <Swing>
+      <subjects>
+         <SealSwing/>
+         <SealSwing_Male/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swing_Used"/>
+      </behaviors>
+   </Swing>
+</BehaviorSets>

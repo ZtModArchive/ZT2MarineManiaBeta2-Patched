@@ -1,0 +1,8 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Ponytail1} snd 'FlipperSlap'"/>
+   <key time="0" text="{Bip01 Ponytail1} snd 'FlipperSlap_uw'"/>
+   <key time="0" text="{Bip01_Dorsal} runspl"/>
+   <key time="0.63" text="{Bip01 Head} snd 'splash_small' "/>
+   <key time="0.63" text="{Bip01 Head} snd 'splash_small_uw' "/>
+   <key time="0.63" text="{Bip01 L Forearm} splash directed_small"/>
+</TEXTKEY>

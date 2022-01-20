@@ -1,0 +1,4 @@
+<TEXTKEY>
+   <key time="0.0" text="LieBelly2Stand, Standy2Walky, Walky"/>
+   <key percent="90" text="!anim 'Walk_2Swim' blend 0.5 advance_cur_t, dis, exit"/>
+</TEXTKEY> 

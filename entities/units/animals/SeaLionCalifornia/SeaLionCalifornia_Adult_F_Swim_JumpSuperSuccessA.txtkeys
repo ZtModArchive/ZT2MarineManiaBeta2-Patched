@@ -1,0 +1,8 @@
+<TEXTKEY>
+   <key time="0" text="gf 0"/>
+   <key time="0.99" text="{Bip01 Head} runsns"/>
+   <key time="2.10" text="{Bip01 Head} snd 'splash_small'"/>
+   <key time="2.10" text="{Bip01 Head} snd 'splash_small_uw'"/>
+   <key time="2.10" text="{Bip01 Head} splash directed_small"/>
+   <key percent="100" text="gf 1"/>
+</TEXTKEY>

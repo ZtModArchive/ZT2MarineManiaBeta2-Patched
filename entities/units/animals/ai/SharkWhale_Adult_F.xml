@@ -1,0 +1,39 @@
+<BFTypedBinder binderType="SharkWhale_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Chondrichthyes>
+                  <Orectolobiformes>
+                     <Rhiniodontidae>
+                        <SharkWhale>
+                           <SharkWhale_Adult>
+                              <SharkWhale_Adult_F/>
+                           </SharkWhale_Adult>
+                        </SharkWhale>
+                     </Rhiniodontidae>
+                  </Orectolobiformes>
+               </Chondrichthyes>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0"/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\SharkWhale\SharkWhale_Adult_F_icon.dds" />
+         </UIAspect>
+      </UIToggleButton>
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

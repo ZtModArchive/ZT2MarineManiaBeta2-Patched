@@ -1,0 +1,6 @@
+<TEXTKEY>
+   <!-- Blinking /-->
+   <key time=".1" text="dc_enabled 1"/>
+   <key time=".3" text="{Bip01 L Finger02} runspl"/>
+   <key time=".3" text="{Bip01 R Finger02} runspl"/>
+</TEXTKEY>

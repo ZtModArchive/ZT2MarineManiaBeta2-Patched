@@ -1,0 +1,1682 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\guests\AdultFemale\Guest_Adult_F_Photographer.nif">
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Attacked_2Stand.bf" animName="Attacked_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Attacked_Giraffe.bf" animName="Attacked_Giraffe" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Attacked_Gorilla.bf" animName="Attacked_Gorilla" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Attacked_Rhino.bf" animName="Attacked_Rhino" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Camera_2Stand.bf" animName="Camera_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Camera_Idle.bf" animName="Camera_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Camera_TakePhoto.bf" animName="Camera_TakePhoto" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Camera_ViewPhoto.bf" animName="Camera_ViewPhoto" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_CaptainStand_2Stand.bf" animName="CaptainStand_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_CaptainStand_Idle.bf" animName="CaptainStand_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_CleanTankWater_2TreadWater.bf" animName="CleanTankWater_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_CleanTankWater_Ahead.bf" animName="CleanTankWater_Ahead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ClimbDown_2Stand.bf" animName="ClimbDown_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ClimbDown_Idle.bf" animName="ClimbDown_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ClimbLadderDown_2TreadWater.bf" animName="ClimbLadderDown_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ClimbLadderDown_2Walk.bf" animName="ClimbLadderDown_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ClimbLadderDown_Idle.bf" animName="ClimbLadderDown_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ClimbLadderUp_2Walk.bf" animName="ClimbLadderUp_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ClimbLadderUp_Idle.bf" animName="ClimbLadderUp_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ClimbUp_2Stand.bf" animName="ClimbUp_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ClimbUp_Idle.bf" animName="ClimbUp_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_CoverEyes_2Stand.bf" animName="CoverEyes_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_CoverEyes_Idle.bf" animName="CoverEyes_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Dance_2Stand.bf" animName="Dance_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Dance_Idle.bf" animName="Dance_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_DistributeHoney_2StandItem.bf" animName="DistributeHoney_2StandItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_DistributeHoney_Idle.bf" animName="DistributeHoney_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_DistributeInsects_2StandItem.bf" animName="DistributeInsects_2StandItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_DistributeInsects_Idle.bf" animName="DistributeInsects_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Drown_2TreadWater.bf" animName="Drown_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Drown_Idle.bf" animName="Drown_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_EnterCar_2SitCar.bf" animName="EnterCar_2SitCar" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_EnterCar_Idle.bf" animName="EnterCar_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ExitCar_2Stand.bf" animName="ExitCar_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ExitCar_Idle.bf" animName="ExitCar_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Fall_Idle.bf" animName="Fall_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastSwim_2TreadWater.bf" animName="FastSwim_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastSwim_2Walk.bf" animName="FastSwim_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastSwim_Ahead.bf" animName="FastSwim_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastSwim_Left.bf" animName="FastSwim_Left" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastSwim_Right.bf" animName="FastSwim_Right" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastSwim_SharkHammerhead.bf" animName="FastSwim_SharkHammerhead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastSwim_SharkReef.bf" animName="FastSwim_SharkReef" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastWalk_2Run.bf" animName="FastWalk_2Run" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastWalk_2Stand.bf" animName="FastWalk_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastWalk_2Walk.bf" animName="FastWalk_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastWalk_Ahead.bf" animName="FastWalk_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastWalk_TurnLeftA.bf" animName="FastWalk_TurnLeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastWalk_TurnLeftB.bf" animName="FastWalk_TurnLeftB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastWalk_TurnRightA.bf" animName="FastWalk_TurnRightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_FastWalk_TurnRightB.bf" animName="FastWalk_TurnRightB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_2Stand.bf" animName="Gesture_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_ArcHigh.bf" animName="Gesture_ArcHigh" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_ArcLow.bf" animName="Gesture_ArcLow" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_Circle.bf" animName="Gesture_Circle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_DiagonalDown.bf" animName="Gesture_DiagonalDown" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_DiagonalUp.bf" animName="Gesture_DiagonalUp" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_Idle.bf" animName="Gesture_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_LeftRight.bf" animName="Gesture_LeftRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_RightLeft.bf" animName="Gesture_RightLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_TapObject.bf" animName="Gesture_TapObject" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_UpDown.bf" animName="Gesture_UpDown" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Gesture_Whistle.bf" animName="Gesture_Whistle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_HoldHandLeft_2Stand.bf" animName="HoldHandLeft_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_HoldHandLeft_Idle.bf" animName="HoldHandLeft_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_HoldHandRight_2Stand.bf" animName="HoldHandRight_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_HoldHandRight_Idle.bf" animName="HoldHandRight_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_Hose_2Stand.bf" animName="Hose_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_Hose_Idle.bf" animName="Hose_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_InspectHigh_2Stand.bf" animName="InspectHigh_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_InspectHigh_Idle.bf" animName="InspectHigh_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_InspectLow_2Stand.bf" animName="InspectLow_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_InspectLow_Idle.bf" animName="InspectLow_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_InspectMedium_2Stand.bf" animName="InspectMedium_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_InspectMedium_Idle.bf" animName="InspectMedium_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Jump_2Run.bf" animName="Jump_2Run" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Jump_Ahead.bf" animName="Jump_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_LandImpact_2Stand.bf" animName="LandImpact_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_LandImpact_Idle.bf" animName="LandImpact_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_LookThroughBinoculars_2Stand.bf" animName="LookThroughBinoculars_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_LookThroughBinoculars_Idle.bf" animName="LookThroughBinoculars_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_LookThroughBinoculars_Left.bf" animName="LookThroughBinoculars_Left" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_LookThroughBinoculars_Right.bf" animName="LookThroughBinoculars_Right" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_PhotoBooth_2Stand.bf" animName="PhotoBooth_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_PhotoBooth_Idle.bf" animName="PhotoBooth_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_PlaceFood_2StandItem.bf" animName="PlaceFood_2StandItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_PlaceFood_Idle.bf" animName="PlaceFood_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_PourItem_2StandItem.bf" animName="PourItem_2StandItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_PourItem_Idle.bf" animName="PourItem_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ReadMap_2StandItem.bf" animName="ReadMap_2StandItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ReadMap_2WalkReadMap.bf" animName="ReadMap_2WalkReadMap" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ReadMap_Idle.bf" animName="ReadMap_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ReadMapBench_2SitBenchItem.bf" animName="ReadMapBench_2SitBenchItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_ReadMapBench_Idle.bf" animName="ReadMapBench_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Run_2FastWalk.bf" animName="Run_2FastWalk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Run_2Jump.bf" animName="Run_2Jump" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Run_2RunScream.bf" animName="Run_2RunScream" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Run_2Stand.bf" animName="Run_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Run_2Walk.bf" animName="Run_2Walk" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Run_Ahead.bf" animName="Run_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Run_Left.bf" animName="Run_TurnLeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Run_Right.bf" animName="Run_TurnRightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_RunScream_2Attacked.bf" animName="RunScream_2Attacked" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_RunScream_2Run.bf" animName="RunScream_2Run" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_RunScream_Ahead.bf" animName="RunScream_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Secondary_HeadLook.bf" animName="Secondary_HeadLook" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SharkBooth.bf" animName="SharkBooth" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_2SitBenchCellPhone.bf" animName="SitBench_2SitBenchCellPhone" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_2SitBenchListenLeft.bf" animName="SitBench_2SitBenchListenLeft" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_2SitBenchListenRight.bf" animName="SitBench_2SitBenchListenRight" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_2SitBenchTalkLeft.bf" animName="SitBench_2SitBenchTalkLeft" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_2SitBenchTalkRight.bf" animName="SitBench_2SitBenchTalkRight" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_2Stand.bf" animName="SitBench_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Applaud.bf" animName="SitBench_Applaud" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_ApplaudA.bf" animName="SitBench_ApplaudA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_ApplaudB.bf" animName="SitBench_ApplaudB" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_ArmsUp.bf" animName="SitBench_ArmsUp" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Awed.bf" animName="SitBench_Awed" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_CheckWatch.bf" animName="SitBench_CheckWatch" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Cheer.bf" animName="SitBench_Cheer" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_CheerStand.bf" animName="SitBench_CheerStand" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Dismissive.bf" animName="SitBench_Dismissive" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Grumble.bf" animName="SitBench_Grumble" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Idle.bf" animName="SitBench_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Laugh.bf" animName="SitBench_Laugh" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_OohAhh.bf" animName="SitBench_OohAhh" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Photo.bf" animName="SitBench_Photo" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Point.bf" animName="SitBench_Point" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_ShakeFist.bf" animName="SitBench_ShakeFist" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_ShakeHead.bf" animName="SitBench_ShakeHead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_SplashMildHappy.bf" animName="SitBench_SplashMildHappy" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_SplashMildMad.bf" animName="SitBench_SplashMildMad" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_SplashMildShock.bf" animName="SitBench_SplashMildShock" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_SplashSoakedHappy.bf" animName="SitBench_SplashSoakedHappy" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_SplashSoakedMad.bf" animName="SitBench_SplashSoakedMad" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_SplashSoakedShock.bf" animName="SitBench_SplashSoakedShock" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Startled.bf" animName="SitBench_Startled" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBench_Yawn.bf" animName="SitBench_Yawn" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchCellPhone_2SitBench.bf" animName="SitBenchCellPhone_2SitBench" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchCellPhone_Idle.bf" animName="SitBenchCellPhone_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchItem_2ReadMapBench.bf" animName="SitBenchItem_2ReadMapBench" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchItem_2SitBench.bf" animName="SitBenchItem_2SitBench" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchItem_2StandItem.bf" animName="SitBenchItem_2StandItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchItem_Drink.bf" animName="SitBenchItem_Drink" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchItem_Eat.bf" animName="SitBenchItem_Eat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchItem_Idle.bf" animName="SitBenchItem_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchItem_Lick.bf" animName="SitBenchItem_Lick" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchItem_Sip.bf" animName="SitBenchItem_Sip" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchListenLeft_2SitBench.bf" animName="SitBenchListenLeft_2SitBench" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchListenLeft_A.bf" animName="SitBenchListenLeft_A" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchListenLeft_Idle.bf" animName="SitBenchListenLeft_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchListenRight_2SitBench.bf" animName="SitBenchListenRight_2SitBench" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchListenRight_A.bf" animName="SitBenchListenRight_A" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchListenRight_Idle.bf" animName="SitBenchListenRight_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchTalkLeft_2SitBench.bf" animName="SitBenchTalkLeft_2SitBench" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchTalkLeft_A.bf" animName="SitBenchTalkLeft_A" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchTalkLeft_Idle.bf" animName="SitBenchTalkLeft_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchTalkRight_2SitBench.bf" animName="SitBenchTalkRight_2SitBench" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchTalkRight_A.bf" animName="SitBenchTalkRight_A" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitBenchTalkRight_Idle.bf" animName="SitBenchTalkRight_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_2ExitCar.bf" animName="SitCar_2ExitCar" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_2SitCarLookLeft.bf" animName="SitCar_2SitCarLookLeft" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_2SitCarLookRight.bf" animName="SitCar_2SitCarLookRight" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_Applaud.bf" animName="SitCar_Applaud" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_ApplaudA.bf" animName="SitCar_ApplaudA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_Bored.bf" animName="SitCar_Bored" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_BoredA.bf" animName="SitCar_BoredA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_Excited.bf" animName="SitCar_Excited" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_ExcitedA.bf" animName="SitCar_ExcitedA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_Happy.bf" animName="SitCar_Happy" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_HappyA.bf" animName="SitCar_HappyA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_HappyB.bf" animName="SitCar_HappyB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_HappyC.bf" animName="SitCar_HappyC" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_Idle.bf" animName="SitCar_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCar_Upset.bf" animName="SitCar_Upset" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_2SitCar.bf" animName="SitCarLookLeft_2SitCar" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_Applaud.bf" animName="SitCarLookLeft_Applaud" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_ApplaudA.bf" animName="SitCarLookLeft_ApplaudA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_Bored.bf" animName="SitCarLookLeft_Bored" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_BoredA.bf" animName="SitCarLookLeft_BoredA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_Excited.bf" animName="SitCarLookLeft_Excited" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_ExcitedA.bf" animName="SitCarLookLeft_ExcitedA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_Happy.bf" animName="SitCarLookLeft_Happy" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_HappyA.bf" animName="SitCarLookLeft_HappyA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_HappyB.bf" animName="SitCarLookLeft_HappyB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_HappyC.bf" animName="SitCarLookLeft_HappyC" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_Idle.bf" animName="SitCarLookLeft_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookLeft_Upset.bf" animName="SitCarLookLeft_Upset" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_2SitCar.bf" animName="SitCarLookRight_2SitCar" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_Applaud.bf" animName="SitCarLookRight_Applaud" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_ApplaudA.bf" animName="SitCarLookRight_ApplaudA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_Bored.bf" animName="SitCarLookRight_Bored" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_BoredA.bf" animName="SitCarLookRight_BoredA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_Excited.bf" animName="SitCarLookRight_Excited" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_ExcitedA.bf" animName="SitCarLookRight_ExcitedA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_Happy.bf" animName="SitCarLookRight_Happy" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_HappyA.bf" animName="SitCarLookRight_HappyA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_HappyB.bf" animName="SitCarLookRight_HappyB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_HappyC.bf" animName="SitCarLookRight_HappyC" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_Idle.bf" animName="SitCarLookRight_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitCarLookRight_Upset.bf" animName="SitCarLookRight_Upset" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitPicnicTable_2Stand.bf" animName="SitPicnicTable_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitPicnicTable_Idle.bf" animName="SitPicnicTable_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitPicnicTableItem_2StandItem.bf" animName="SitPicnicTableItem_2StandItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitPicnicTableItem_Drink.bf" animName="SitPicnicTableItem_Drink" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitPicnicTableItem_Eat.bf" animName="SitPicnicTableItem_Eat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitPicnicTableItem_EatFingerFood.bf" animName="SitPicnicTableItem_EatFingerFood" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitPicnicTableItem_EatFork.bf" animName="SitPicnicTableItem_EatFork" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitPicnicTableItem_Idle.bf" animName="SitPicnicTableItem_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitPicnicTableItem_Lick.bf" animName="SitPicnicTableItem_Lick" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitPicnicTableItem_Sip.bf" animName="SitPicnicTableItem_Sip" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitRide_2Stand.bf" animName="SitRide_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitRide_Cheer.bf" animName="SitRide_Cheer" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitRide_Down.bf" animName="SitRide_Down" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitRide_Idle.bf" animName="SitRide_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitRide_OohAhh.bf" animName="SitRide_OohAhh" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitRide_Point.bf" animName="SitRide_Point" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitRide_Up.bf" animName="SitRide_Up" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitTable_2Stand.bf" animName="SitTable_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitTable_Idle.bf" animName="SitTable_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitTableItem_2StandItem.bf" animName="SitTableItem_2StandItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitTableItem_Drink.bf" animName="SitTableItem_Drink" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitTableItem_Eat.bf" animName="SitTableItem_Eat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitTableItem_EatFingerFood.bf" animName="SitTableItem_EatFingerFood" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitTableItem_EatFork.bf" animName="SitTableItem_EatFork" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitTableItem_Idle.bf" animName="SitTableItem_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitTableItem_Lick.bf" animName="SitTableItem_Lick" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SitTableItem_Sip.bf" animName="SitTableItem_Sip" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2Attacked_BowledOver.bf" animName="Stand_2Attacked_BowledOver" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2Camera.bf" animName="Stand_2Camera" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2CaptainStand.bf" animName="Stand_2CaptainStand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2ClimbUp.bf" animName="Stand_2ClimbUp" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2CoverEyes.bf" animName="Stand_2CoverEyes" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2Dance.bf" animName="Stand_2Dance" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2EnterCar.bf" animName="Stand_2EnterCar" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2FastWalk.bf" animName="Stand_2FastWalk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2Gesture.bf" animName="Stand_2Gesture" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_Stand_2Hose.bf" animName="Stand_2Hose" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_Stand_2InspectHigh.bf" animName="Stand_2InspectHigh" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_Stand_2InspectLow.bf" animName="Stand_2InspectLow" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_Stand_2InspectMedium.bf" animName="Stand_2InspectMedium" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2LookThroughBinoculars.bf" animName="Stand_2LookThroughBinoculars" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2PhotoBooth.bf" animName="Stand_2PhotoBooth" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2Run.bf" animName="Stand_2Run" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2SitBench.bf" animName="Stand_2SitBench" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2SitPicnicTable.bf" animName="Stand_2SitPicnicTable" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2SitRide.bf" animName="Stand_2SitRide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2Standbored.bf" animName="Stand_2Standbored" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2StandCellPhone.bf" animName="Stand_2StandCellPhone" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2StandItem.bf" animName="Stand_2StandItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2StandItem_FeedingDispenser.bf" animName="Stand_2StandItem_FeedingDispenser" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2StandItem_Inventory.bf" animName="Stand_2StandItem_Inventory" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2StandListen.bf" animName="Stand_2StandListen" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2StandTalk.bf" animName="Stand_2StandTalk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2TreadWater_Dive.bf" animName="Stand_2TreadWater_Dive" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_2Walk.bf" animName="Stand_2Walk" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Applaud.bf" animName="Stand_Applaud" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Argue.bf" animName="Stand_Argue" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ArmsUp.bf" animName="Stand_ArmsUp" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Attacked_Carnotaurus.bf" animName="Stand_Attacked_Carnotaurus" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Attacked_PenguinEmperor.bf" animName="Stand_Attacked_PenguinEmperor" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Attacked_TurtleSeaGreen.bf" animName="Stand_Attacked_TurtleSeaGreen" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Attacked_TyrannosaurusRex.bf" animName="Stand_Attacked_TyrannosaurusRex" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Awed.bf" animName="Stand_Awed" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_CallForApplause.bf" animName="Stand_CallForApplause" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_CheckWatch.bf" animName="Stand_CheckWatch" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Cheer.bf" animName="Stand_Cheer" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_CleanFilter.bf" animName="Stand_CleanFilter" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_CombHair.bf" animName="Stand_CombHair" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_CoverEars.bf" animName="Stand_CoverEars" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Cry.bf" animName="Stand_Cry" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Dismissive.bf" animName="Stand_Dismissive" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Donate.bf" animName="Stand_Donate" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_DrinkFountain.bf" animName="Stand_DrinkFountain" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Grumble.bf" animName="Stand_Grumble" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_HandShake.bf" animName="Stand_HandShake" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Idle.bf" animName="Stand_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_JumpUp.bf" animName="Stand_JumpUp" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Laugh.bf" animName="Stand_Laugh" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_MimicShark.bf" animName="Stand_MimicShark" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_MimicSwim.bf" animName="Stand_MimicSwim" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_OohAhh.bf" animName="Stand_OohAhh" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_PeekABoo.bf" animName="Stand_PeekABoo" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_PetAnimalLarge.bf" animName="Stand_PetAnimalLarge" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_PetAnimalSmall.bf" animName="Stand_PetAnimalSmall" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_PinchNose.bf" animName="Stand_PinchNose" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Point.bf" animName="Stand_Point" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_PointCasual.bf" animName="Stand_PointCasual" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_PointShow.bf" animName="Stand_PointShow" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_PointTrash.bf" animName="Stand_PointTrash" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_PressGlass.bf" animName="Stand_PressGlass" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Read.bf" animName="Stand_Read" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_RepairFilter.bf" animName="Stand_RepairFilter" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_RubBack.bf" animName="Stand_RubBack" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_RubHip.bf" animName="Stand_RubHip" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Scold.bf" animName="Stand_Scold" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ScratchChinHigh.bf" animName="Stand_ScratchChinHigh" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ScratchChinLow.bf" animName="Stand_ScratchChinLow" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ScratchHead.bf" animName="Stand_ScratchHead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ScratchHeadHigh.bf" animName="Stand_ScratchHeadHigh" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ScratchHeadLow.bf" animName="Stand_ScratchHeadLow" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_SeaLion.bf" animName="Stand_SeaLion" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ShakeFist.bf" animName="Stand_ShakeFist" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ShakeHead.bf" animName="Stand_ShakeHead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ShopGiveMoney.bf" animName="Stand_ShopGiveMoney" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ShopReceiveItem.bf" animName="Stand_ShopReceiveItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ShoutFailure.bf" animName="Stand_ShoutFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ShoutSuccess.bf" animName="Stand_ShoutSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_ShoutSuperSuccess.bf" animName="Stand_ShoutSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_SplashMildAnnoyed.bf" animName="Stand_SplashMildAnnoyed" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_SplashMildHappy.bf" animName="Stand_SplashMildHappy" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_SplashMildShock.bf" animName="Stand_SplashMildShock" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_SplashSoakedHappy.bf" animName="Stand_SplashSoakedHappy" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_SplashSoakedMad.bf" animName="Stand_SplashSoakedMad" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_SplashSoakedShock.bf" animName="Stand_SplashSoakedShock" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_StaffPhotoBooth.bf" animName="Stand_StaffPhotoBooth" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Startled.bf" animName="Stand_Startled" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_TalkPuppet.bf" animName="Stand_TalkPuppet" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_TapGlass.bf" animName="Stand_TapGlass" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_TapTank.bf" animName="Stand_TapTank" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Touch.bf" animName="Stand_Touch" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_TouchPoolA.bf" animName="Stand_TouchPoolA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_TouchPoolB.bf" animName="Stand_TouchPoolB" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_TouchPoolC.bf" animName="Stand_TouchPoolC" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Turn180.bf" animName="Stand_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_TurnL.bf" animName="Stand_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_TurnR.bf" animName="Stand_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_TurtleLeatherback.bf" animName="Stand_TurtleLeatherback" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_UseATM.bf" animName="Stand_UseATM" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Wave.bf" animName="Stand_Wave" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_WaveToCrowd.bf" animName="Stand_WaveToCrowd" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Whistle.bf" animName="Stand_Whistle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Yawn.bf" animName="Stand_Yawn" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Stand_Yell.bf" animName="Stand_Yell" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Standbored_2Stand.bf" animName="Standbored_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Standbored_ArmsUp.bf" animName="Standbored_ArmsUp" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Standbored_CoverEars.bf" animName="Standbored_CoverEars" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Standbored_Cry.bf" animName="Standbored_Cry" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Standbored_Dismissive.bf" animName="Standbored_Dismissive" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Standbored_Grumble.bf" animName="Standbored_Grumble" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Standbored_Idle.bf" animName="Standbored_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Standbored_ShakeHead.bf" animName="Standbored_ShakeHead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Standbored_Yawn.bf" animName="Standbored_Yawn" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandCellPhone_2Stand.bf" animName="StandCellPhone_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandCellPhone_Idle.bf" animName="StandCellPhone_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_StandItem_2DistributeHoney.bf" animName="StandItem_2DistributeHoney" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_StandItem_2DistributeInsects.bf" animName="StandItem_2DistributeInsects" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_StandItem_2PlaceFood.bf" animName="StandItem_2PlaceFood" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_StandItem_2PourItem.bf" animName="StandItem_2PourItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_2ReadMap.bf" animName="StandItem_2ReadMap" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_2SitBenchItem.bf" animName="StandItem_2SitBenchItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_2SitPicnicTableItem.bf" animName="StandItem_2SitPicnicTableItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_2SitTableItem.bf" animName="StandItem_2SitTableItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_2Stand.bf" animName="StandItem_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_2Stand_Throw.bf" animName="StandItem_2Stand_Throw" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_2Stand_ThrowUnderhand.bf" animName="StandItem_2Stand_ThrowUnderhand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_StandItem_2TossFood.bf" animName="StandItem_2TossFood" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_2WalkItem.bf" animName="StandItem_2WalkItem" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_Drink.bf" animName="StandItem_Drink" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_Eat.bf" animName="StandItem_Eat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_Idle.bf" animName="StandItem_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_Lick.bf" animName="StandItem_Lick" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_LookAtPhoto.bf" animName="StandItem_LookAtPhoto" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_Sip.bf" animName="StandItem_Sip" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_ThrowAway.bf" animName="StandItem_ThrowAway" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_TossFood.bf" animName="StandItem_TossFood" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_Turn180.bf" animName="StandItem_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_TurnL.bf" animName="StandItem_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_TurnR.bf" animName="StandItem_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandItem_WearHat.bf" animName="StandItem_WearHat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandListen_2Stand.bf" animName="StandListen_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandListen_A.bf" animName="StandListen_A" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandListen_Idle.bf" animName="StandListen_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandTalk_2Stand.bf" animName="StandTalk_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandTalk_A.bf" animName="StandTalk_A" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_StandTalk_Idle.bf" animName="StandTalk_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Swim_2SwimSub.bf" animName="Swim_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Swim_2TreadWater.bf" animName="Swim_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Swim_2Walk.bf" animName="Swim_2Walk" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Swim_Ahead.bf" animName="Swim_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Swim_HealAnimal.bf" animName="Swim_HealAnimal" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Swim_TurnLeftA.bf" animName="Swim_TurnLeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Swim_TurnRightA.bf" animName="Swim_TurnRightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SwimSub_2Swim.bf" animName="SwimSub_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SwimSub_2TreadWaterSub.bf" animName="SwimSub_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SwimSub_Ahead.bf" animName="SwimSub_Ahead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SwimSub_TurnLeftA.bf" animName="SwimSub_TurnLeftA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_SwimSub_TurnRightA.bf" animName="SwimSub_TurnRightA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_TossFood_2StandItem.bf" animName="TossFood_2StandItem" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\staff\Keeper\Staff_Keeper_M_TossFood_Idle.bf" animName="TossFood_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_2CleanTankWater.bf" animName="TreadWater_2CleanTankWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_2ClimbLadderUp.bf" animName="TreadWater_2ClimbLadderUp" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_2Drown.bf" animName="TreadWater_2Drown" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_2FastSwim.bf" animName="TreadWater_2FastSwim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_2Stand_Climb.bf" animName="TreadWater_2Stand_Climb" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_2Stand_Climb_TEMP.bf" animName="TreadWater_2Stand_Climb_TEMP" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_2Swim.bf" animName="TreadWater_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_2SwimSub.bf" animName="TreadWater_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_Beluga.bf" animName="TreadWater_Beluga" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_HealAnimal.bf" animName="TreadWater_HealAnimal" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_Idle.bf" animName="TreadWater_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_Manatee.bf" animName="TreadWater_Manatee" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_Marlin.bf" animName="TreadWater_Marlin" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_Narwhal.bf" animName="TreadWater_Narwhal" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_PlaceFood.bf" animName="TreadWater_PlaceFood" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_ScratchOrca.bf" animName="TreadWater_ScratchOrca" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_SharkWhite.bf" animName="TreadWater_SharkWhite" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_Touch.bf" animName="TreadWater_Touch" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_TurnLeft90.bf" animName="TreadWater_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_TurnRight90.bf" animName="TreadWater_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_TurtleLeatherback.bf" animName="TreadWater_TurtleLeatherback" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWater_WalrusPacific.bf" animName="TreadWater_WalrusPacific" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWaterSub_2SwimSub.bf" animName="TreadWaterSub_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWaterSub_Idle.bf" animName="TreadWaterSub_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWaterSub_PlaceFood.bf" animName="TreadWaterSub_PlaceFood" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWaterSub_TurnLeft90.bf" animName="TreadWaterSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_TreadWaterSub_TurnRight90.bf" animName="TreadWaterSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_2ClimbLadderDown.bf" animName="Walk_2ClimbLadderDown" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_2ClimbLadderUp.bf" animName="Walk_2ClimbLadderUp" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_2FastSwim.bf" animName="Walk_2FastSwim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_2FastWalk.bf" animName="Walk_2FastWalk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_2Run.bf" animName="Walk_2Run" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_2Stand.bf" animName="Walk_2Stand" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_2Swim.bf" animName="Walk_2Swim" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_Ahead.bf" animName="Walk_Ahead" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_DownStairs.bf" animName="Walk_DownStairs" debug="false" animSpeed="1.5" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_Left.bf" animName="Walk_TurnLeftA" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_Right.bf" animName="Walk_TurnRightA" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_Walk_UpStairs.bf" animName="Walk_UpStairs" debug="false" animSpeed="1.5" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_WalkItem_2StandItem.bf" animName="WalkItem_2StandItem" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_WalkItem_Ahead.bf" animName="WalkItem_Ahead" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_WalkItem_Left.bf" animName="WalkItem_TurnLeftA" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_WalkItem_Right.bf" animName="WalkItem_TurnRightA" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_WalkReadMap_2ReadMap.bf" animName="WalkReadMap_2ReadMap" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_WalkReadMap_Ahead.bf" animName="WalkReadMap_Ahead" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_WalkReadMap_Left.bf" animName="WalkReadMap_TurnLeftA" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_WalkReadMap_Right.bf" animName="WalkReadMap_TurnRightA" debug="false" animSpeed="1.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_WaterImpact_2TreadWater.bf" animName="WaterImpact_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\guests\AdultMale\Guest_Adult_M_WaterImpact_Idle.bf" animName="WaterImpact_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="Guest_Adult_F_Photographer" version="1">
+    <node name="Attacked">
+      <table>
+        <Attacked_Giraffe />
+        <Attacked_Gorilla />
+        <Attacked_Rhino />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Attacked_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Camera">
+      <table>
+        <Camera_Idle />
+        <Camera_TakePhoto />
+        <Camera_ViewPhoto />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Camera_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="CaptainStand">
+      <table>
+        <CaptainStand_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <CaptainStand_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="CleanTankWater">
+      <table>
+        <CleanTankWater_Ahead />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <CleanTankWater_2TreadWater />
+        </table>
+      </edge>
+    </node>
+    <node name="ClimbDown">
+      <table>
+        <ClimbDown_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <ClimbDown_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="ClimbLadderDown">
+      <table>
+        <ClimbLadderDown_Idle />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <ClimbLadderDown_2TreadWater />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <ClimbLadderDown_2Walk />
+        </table>
+      </edge>
+    </node>
+    <node name="ClimbLadderUp">
+      <table>
+        <ClimbLadderUp_Idle />
+      </table>
+      <edge name="Walk">
+        <table>
+          <ClimbLadderUp_2Walk />
+        </table>
+      </edge>
+    </node>
+    <node name="ClimbUp">
+      <table>
+        <ClimbUp_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <ClimbUp_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="CoverEyes">
+      <table>
+        <CoverEyes_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <CoverEyes_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Dance">
+      <table>
+        <Dance_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Dance_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="DistributeHoney">
+      <table>
+        <DistributeHoney_Idle />
+      </table>
+      <edge name="StandItem">
+        <table>
+          <DistributeHoney_2StandItem />
+        </table>
+      </edge>
+    </node>
+    <node name="DistributeInsects">
+      <table>
+        <DistributeInsects_Idle />
+      </table>
+      <edge name="StandItem">
+        <table>
+          <DistributeInsects_2StandItem />
+        </table>
+      </edge>
+    </node>
+    <node name="Drown">
+      <table>
+        <Drown_Idle />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <Drown_2TreadWater />
+        </table>
+      </edge>
+    </node>
+    <node name="EnterCar">
+      <table>
+        <EnterCar_Idle />
+      </table>
+      <edge name="SitCar">
+        <table>
+          <EnterCar_2SitCar />
+        </table>
+      </edge>
+    </node>
+    <node name="ExitCar">
+      <table>
+        <ExitCar_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <ExitCar_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Fall">
+      <table>
+        <Fall_Idle />
+      </table>
+    </node>
+    <node name="FastSwim">
+      <table>
+        <FastSwim_Ahead />
+        <FastSwim_Left />
+        <FastSwim_Right />
+        <FastSwim_SharkHammerhead />
+        <FastSwim_SharkReef />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <FastSwim_2TreadWater />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <FastSwim_2Walk />
+        </table>
+      </edge>
+    </node>
+    <node name="FastWalk">
+      <table>
+        <FastWalk_Ahead />
+        <FastWalk_TurnLeftA />
+        <FastWalk_TurnLeftB />
+        <FastWalk_TurnRightA />
+        <FastWalk_TurnRightB />
+      </table>
+      <edge name="Stand">
+        <table>
+          <FastWalk_2Stand />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <FastWalk_2Walk />
+        </table>
+      </edge>
+      <edge name="Run">
+        <table>
+          <FastWalk_2Run />
+        </table>
+      </edge>
+    </node>
+    <node name="Gesture">
+      <table>
+        <Gesture_ArcHigh />
+        <Gesture_ArcLow />
+        <Gesture_Circle />
+        <Gesture_DiagonalDown />
+        <Gesture_DiagonalUp />
+        <Gesture_Idle />
+        <Gesture_LeftRight />
+        <Gesture_RightLeft />
+        <Gesture_TapObject />
+        <Gesture_UpDown />
+        <Gesture_Whistle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Gesture_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="HoldHandLeft">
+      <table>
+        <HoldHandLeft_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <HoldHandLeft_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="HoldHandRight">
+      <table>
+        <HoldHandRight_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <HoldHandRight_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Hose">
+      <table>
+        <Hose_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Hose_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="InspectHigh">
+      <table>
+        <InspectHigh_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <InspectHigh_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="InspectLow">
+      <table>
+        <InspectLow_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <InspectLow_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="InspectMedium">
+      <table>
+        <InspectMedium_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <InspectMedium_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Jump">
+      <table>
+        <Jump_Ahead />
+      </table>
+      <edge name="Run">
+        <table>
+          <Jump_2Run />
+        </table>
+      </edge>
+    </node>
+    <node name="LandImpact">
+      <table>
+        <LandImpact_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <LandImpact_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="LookThroughBinoculars">
+      <table>
+        <LookThroughBinoculars_Idle />
+        <LookThroughBinoculars_Left />
+        <LookThroughBinoculars_Right />
+      </table>
+      <edge name="Stand">
+        <table>
+          <LookThroughBinoculars_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="PhotoBooth">
+      <table>
+        <PhotoBooth_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <PhotoBooth_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="PlaceFood">
+      <table>
+        <PlaceFood_Idle />
+      </table>
+      <edge name="StandItem">
+        <table>
+          <PlaceFood_2StandItem />
+        </table>
+      </edge>
+    </node>
+    <node name="PourItem">
+      <table>
+        <PourItem_Idle />
+      </table>
+      <edge name="StandItem">
+        <table>
+          <PourItem_2StandItem />
+        </table>
+      </edge>
+    </node>
+    <node name="ReadMap">
+      <table>
+        <ReadMap_Idle />
+      </table>
+      <edge name="WalkReadMap">
+        <table>
+          <ReadMap_2WalkReadMap />
+        </table>
+      </edge>
+      <edge name="StandItem">
+        <table>
+          <ReadMap_2StandItem />
+        </table>
+      </edge>
+    </node>
+    <node name="ReadMapBench">
+      <table>
+        <ReadMapBench_Idle />
+      </table>
+      <edge name="SitBenchItem">
+        <table>
+          <ReadMapBench_2SitBenchItem />
+        </table>
+      </edge>
+    </node>
+    <node name="Run">
+      <table>
+        <Run_Ahead />
+        <Run_TurnLeftA />
+        <Run_TurnRightA />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Run_2Stand />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Run_2Walk />
+        </table>
+      </edge>
+      <edge name="Jump">
+        <table>
+          <Run_2Jump />
+        </table>
+      </edge>
+      <edge name="RunScream">
+        <table>
+          <Run_2RunScream />
+        </table>
+      </edge>
+      <edge name="FastWalk">
+        <table>
+          <Run_2FastWalk />
+        </table>
+      </edge>
+    </node>
+    <node name="RunScream">
+      <table>
+        <RunScream_Ahead />
+      </table>
+      <edge name="Run">
+        <table>
+          <RunScream_2Run />
+        </table>
+      </edge>
+      <edge name="Attacked">
+        <table>
+          <RunScream_2Attacked />
+        </table>
+      </edge>
+    </node>
+    <node name="Secondary">
+      <table>
+        <Secondary_HeadLook />
+      </table>
+    </node>
+    <node name="SharkBooth">
+      <table>
+        <SharkBooth />
+      </table>
+    </node>
+    <node name="SitBench">
+      <table>
+        <SitBench_Applaud />
+        <SitBench_ApplaudA />
+        <SitBench_ApplaudB />
+        <SitBench_ArmsUp />
+        <SitBench_Awed />
+        <SitBench_CheckWatch />
+        <SitBench_Cheer />
+        <SitBench_CheerStand />
+        <SitBench_Dismissive />
+        <SitBench_Grumble />
+        <SitBench_Idle />
+        <SitBench_Laugh />
+        <SitBench_OohAhh />
+        <SitBench_Photo />
+        <SitBench_Point />
+        <SitBench_ShakeFist />
+        <SitBench_ShakeHead />
+        <SitBench_SplashMildHappy />
+        <SitBench_SplashMildMad />
+        <SitBench_SplashMildShock />
+        <SitBench_SplashSoakedHappy />
+        <SitBench_SplashSoakedMad />
+        <SitBench_SplashSoakedShock />
+        <SitBench_Startled />
+        <SitBench_Yawn />
+      </table>
+      <edge name="Stand">
+        <table>
+          <SitBench_2Stand />
+        </table>
+      </edge>
+      <edge name="SitBenchCellPhone">
+        <table>
+          <SitBench_2SitBenchCellPhone />
+        </table>
+      </edge>
+      <edge name="SitBenchListenRight">
+        <table>
+          <SitBench_2SitBenchListenRight />
+        </table>
+      </edge>
+      <edge name="SitBenchTalkLeft">
+        <table>
+          <SitBench_2SitBenchTalkLeft />
+        </table>
+      </edge>
+      <edge name="SitBenchTalkRight">
+        <table>
+          <SitBench_2SitBenchTalkRight />
+        </table>
+      </edge>
+      <edge name="SitBenchListenLeft">
+        <table>
+          <SitBench_2SitBenchListenLeft />
+        </table>
+      </edge>
+    </node>
+    <node name="SitBenchCellPhone">
+      <table>
+        <SitBenchCellPhone_Idle />
+      </table>
+      <edge name="SitBench">
+        <table>
+          <SitBenchCellPhone_2SitBench />
+        </table>
+      </edge>
+    </node>
+    <node name="SitBenchItem">
+      <table>
+        <SitBenchItem_Drink />
+        <SitBenchItem_Eat />
+        <SitBenchItem_Idle />
+        <SitBenchItem_Lick />
+        <SitBenchItem_Sip />
+      </table>
+      <edge name="SitBench">
+        <table>
+          <SitBenchItem_2SitBench />
+        </table>
+      </edge>
+      <edge name="ReadMapBench">
+        <table>
+          <SitBenchItem_2ReadMapBench />
+        </table>
+      </edge>
+      <edge name="StandItem">
+        <table>
+          <SitBenchItem_2StandItem />
+        </table>
+      </edge>
+    </node>
+    <node name="SitBenchListenLeft">
+      <table>
+        <SitBenchListenLeft_A />
+        <SitBenchListenLeft_Idle />
+      </table>
+      <edge name="SitBench">
+        <table>
+          <SitBenchListenLeft_2SitBench />
+        </table>
+      </edge>
+    </node>
+    <node name="SitBenchListenRight">
+      <table>
+        <SitBenchListenRight_A />
+        <SitBenchListenRight_Idle />
+      </table>
+      <edge name="SitBench">
+        <table>
+          <SitBenchListenRight_2SitBench />
+        </table>
+      </edge>
+    </node>
+    <node name="SitBenchTalkLeft">
+      <table>
+        <SitBenchTalkLeft_A />
+        <SitBenchTalkLeft_Idle />
+      </table>
+      <edge name="SitBench">
+        <table>
+          <SitBenchTalkLeft_2SitBench />
+        </table>
+      </edge>
+    </node>
+    <node name="SitBenchTalkRight">
+      <table>
+        <SitBenchTalkRight_A />
+        <SitBenchTalkRight_Idle />
+      </table>
+      <edge name="SitBench">
+        <table>
+          <SitBenchTalkRight_2SitBench />
+        </table>
+      </edge>
+    </node>
+    <node name="SitCar">
+      <table>
+        <SitCar_Applaud />
+        <SitCar_ApplaudA />
+        <SitCar_Bored />
+        <SitCar_BoredA />
+        <SitCar_Excited />
+        <SitCar_ExcitedA />
+        <SitCar_Happy />
+        <SitCar_HappyA />
+        <SitCar_HappyB />
+        <SitCar_HappyC />
+        <SitCar_Idle />
+        <SitCar_Upset />
+      </table>
+      <edge name="ExitCar">
+        <table>
+          <SitCar_2ExitCar />
+        </table>
+      </edge>
+      <edge name="SitCarLookLeft">
+        <table>
+          <SitCar_2SitCarLookLeft />
+        </table>
+      </edge>
+      <edge name="SitCarLookRight">
+        <table>
+          <SitCar_2SitCarLookRight />
+        </table>
+      </edge>
+    </node>
+    <node name="SitCarLookLeft">
+      <table>
+        <SitCarLookLeft_Applaud />
+        <SitCarLookLeft_ApplaudA />
+        <SitCarLookLeft_Bored />
+        <SitCarLookLeft_BoredA />
+        <SitCarLookLeft_Excited />
+        <SitCarLookLeft_ExcitedA />
+        <SitCarLookLeft_Happy />
+        <SitCarLookLeft_HappyA />
+        <SitCarLookLeft_HappyB />
+        <SitCarLookLeft_HappyC />
+        <SitCarLookLeft_Idle />
+        <SitCarLookLeft_Upset />
+      </table>
+      <edge name="SitCar">
+        <table>
+          <SitCarLookLeft_2SitCar />
+        </table>
+      </edge>
+    </node>
+    <node name="SitCarLookRight">
+      <table>
+        <SitCarLookRight_Applaud />
+        <SitCarLookRight_ApplaudA />
+        <SitCarLookRight_Bored />
+        <SitCarLookRight_BoredA />
+        <SitCarLookRight_Excited />
+        <SitCarLookRight_ExcitedA />
+        <SitCarLookRight_Happy />
+        <SitCarLookRight_HappyA />
+        <SitCarLookRight_HappyB />
+        <SitCarLookRight_HappyC />
+        <SitCarLookRight_Idle />
+        <SitCarLookRight_Upset />
+      </table>
+      <edge name="SitCar">
+        <table>
+          <SitCarLookRight_2SitCar />
+        </table>
+      </edge>
+    </node>
+    <node name="SitPicnicTable">
+      <table>
+        <SitPicnicTable_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <SitPicnicTable_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="SitPicnicTableItem">
+      <table>
+        <SitPicnicTableItem_Drink />
+        <SitPicnicTableItem_Eat />
+        <SitPicnicTableItem_EatFingerFood />
+        <SitPicnicTableItem_EatFork />
+        <SitPicnicTableItem_Idle />
+        <SitPicnicTableItem_Lick />
+        <SitPicnicTableItem_Sip />
+      </table>
+      <edge name="StandItem">
+        <table>
+          <SitPicnicTableItem_2StandItem />
+        </table>
+      </edge>
+    </node>
+    <node name="SitRide">
+      <table>
+        <SitRide_Cheer />
+        <SitRide_Down />
+        <SitRide_Idle />
+        <SitRide_OohAhh />
+        <SitRide_Point />
+        <SitRide_Up />
+      </table>
+      <edge name="Stand">
+        <table>
+          <SitRide_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="SitTable">
+      <table>
+        <SitTable_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <SitTable_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="SitTableItem">
+      <table>
+        <SitTableItem_Drink />
+        <SitTableItem_Eat />
+        <SitTableItem_EatFingerFood />
+        <SitTableItem_EatFork />
+        <SitTableItem_Idle />
+        <SitTableItem_Lick />
+        <SitTableItem_Sip />
+      </table>
+      <edge name="StandItem">
+        <table>
+          <SitTableItem_2StandItem />
+        </table>
+      </edge>
+    </node>
+    <node name="Stand">
+      <table>
+        <Stand_Applaud />
+        <Stand_Argue />
+        <Stand_ArmsUp />
+        <Stand_Attacked_Carnotaurus />
+        <Stand_Attacked_PenguinEmperor />
+        <Stand_Attacked_TurtleSeaGreen />
+        <Stand_Attacked_TyrannosaurusRex />
+        <Stand_Awed />
+        <Stand_CallForApplause />
+        <Stand_CheckWatch />
+        <Stand_Cheer />
+        <Stand_CleanFilter />
+        <Stand_CombHair />
+        <Stand_CoverEars />
+        <Stand_Cry />
+        <Stand_Dismissive />
+        <Stand_Donate />
+        <Stand_DrinkFountain />
+        <Stand_Grumble />
+        <Stand_HandShake />
+        <Stand_Idle />
+        <Stand_JumpUp />
+        <Stand_Laugh />
+        <Stand_MimicShark />
+        <Stand_MimicSwim />
+        <Stand_OohAhh />
+        <Stand_PeekABoo />
+        <Stand_PetAnimalLarge />
+        <Stand_PetAnimalSmall />
+        <Stand_PinchNose />
+        <Stand_Point />
+        <Stand_PointCasual />
+        <Stand_PointShow />
+        <Stand_PointTrash />
+        <Stand_PressGlass />
+        <Stand_Read />
+        <Stand_RepairFilter />
+        <Stand_RubBack />
+        <Stand_RubHip />
+        <Stand_Scold />
+        <Stand_ScratchChinHigh />
+        <Stand_ScratchChinLow />
+        <Stand_ScratchHead />
+        <Stand_ScratchHeadHigh />
+        <Stand_ScratchHeadLow />
+        <Stand_SeaLion />
+        <Stand_ShakeFist />
+        <Stand_ShakeHead />
+        <Stand_ShopGiveMoney />
+        <Stand_ShopReceiveItem />
+        <Stand_ShoutFailure />
+        <Stand_ShoutSuccess />
+        <Stand_ShoutSuperSuccess />
+        <Stand_SplashMildAnnoyed />
+        <Stand_SplashMildHappy />
+        <Stand_SplashMildShock />
+        <Stand_SplashSoakedHappy />
+        <Stand_SplashSoakedMad />
+        <Stand_SplashSoakedShock />
+        <Stand_StaffPhotoBooth />
+        <Stand_Startled />
+        <Stand_TalkPuppet />
+        <Stand_TapGlass />
+        <Stand_TapTank />
+        <Stand_Touch />
+        <Stand_TouchPoolA />
+        <Stand_TouchPoolB />
+        <Stand_TouchPoolC />
+        <Stand_Turn180 />
+        <Stand_TurnLeft90 />
+        <Stand_TurnRight90 />
+        <Stand_TurtleLeatherback />
+        <Stand_UseATM />
+        <Stand_Wave />
+        <Stand_WaveToCrowd />
+        <Stand_Whistle />
+        <Stand_Yawn />
+        <Stand_Yell />
+      </table>
+      <edge name="InspectLow">
+        <table>
+          <Stand_2InspectLow />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Stand_2Walk />
+        </table>
+      </edge>
+      <edge name="Standbored">
+        <table>
+          <Stand_2Standbored />
+        </table>
+      </edge>
+      <edge name="StandListen">
+        <table>
+          <Stand_2StandListen />
+        </table>
+      </edge>
+      <edge name="SitPicnicTable">
+        <table>
+          <Stand_2SitPicnicTable />
+        </table>
+      </edge>
+      <edge name="Attacked">
+        <table>
+          <Stand_2Attacked_BowledOver />
+        </table>
+      </edge>
+      <edge name="StandTalk">
+        <table>
+          <Stand_2StandTalk />
+        </table>
+      </edge>
+      <edge name="FastWalk">
+        <table>
+          <Stand_2FastWalk />
+        </table>
+      </edge>
+      <edge name="SitBench">
+        <table>
+          <Stand_2SitBench />
+        </table>
+      </edge>
+      <edge name="EnterCar">
+        <table>
+          <Stand_2EnterCar />
+        </table>
+      </edge>
+      <edge name="CoverEyes">
+        <table>
+          <Stand_2CoverEyes />
+        </table>
+      </edge>
+      <edge name="PhotoBooth">
+        <table>
+          <Stand_2PhotoBooth />
+        </table>
+      </edge>
+      <edge name="InspectMedium">
+        <table>
+          <Stand_2InspectMedium />
+        </table>
+      </edge>
+      <edge name="Camera">
+        <table>
+          <Stand_2Camera />
+        </table>
+      </edge>
+      <edge name="StandCellPhone">
+        <table>
+          <Stand_2StandCellPhone />
+        </table>
+      </edge>
+      <edge name="Hose">
+        <table>
+          <Stand_2Hose />
+        </table>
+      </edge>
+      <edge name="StandItem">
+        <table>
+          <Stand_2StandItem />
+          <Stand_2StandItem_FeedingDispenser />
+          <Stand_2StandItem_Inventory />
+        </table>
+      </edge>
+      <edge name="Dance">
+        <table>
+          <Stand_2Dance />
+        </table>
+      </edge>
+      <edge name="SitRide">
+        <table>
+          <Stand_2SitRide />
+        </table>
+      </edge>
+      <edge name="ClimbUp">
+        <table>
+          <Stand_2ClimbUp />
+        </table>
+      </edge>
+      <edge name="LookThroughBinoculars">
+        <table>
+          <Stand_2LookThroughBinoculars />
+        </table>
+      </edge>
+      <edge name="CaptainStand">
+        <table>
+          <Stand_2CaptainStand />
+        </table>
+      </edge>
+      <edge name="Run">
+        <table>
+          <Stand_2Run />
+        </table>
+      </edge>
+      <edge name="TreadWater">
+        <table>
+          <Stand_2TreadWater_Dive />
+        </table>
+      </edge>
+      <edge name="Gesture">
+        <table>
+          <Stand_2Gesture />
+        </table>
+      </edge>
+      <edge name="InspectHigh">
+        <table>
+          <Stand_2InspectHigh />
+        </table>
+      </edge>
+    </node>
+    <node name="Standbored">
+      <table>
+        <Standbored_ArmsUp />
+        <Standbored_CoverEars />
+        <Standbored_Cry />
+        <Standbored_Dismissive />
+        <Standbored_Grumble />
+        <Standbored_Idle />
+        <Standbored_ShakeHead />
+        <Standbored_Yawn />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Standbored_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="StandCellPhone">
+      <table>
+        <StandCellPhone_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <StandCellPhone_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="StandItem">
+      <table>
+        <StandItem_Drink />
+        <StandItem_Eat />
+        <StandItem_Idle />
+        <StandItem_Lick />
+        <StandItem_LookAtPhoto />
+        <StandItem_Sip />
+        <StandItem_ThrowAway />
+        <StandItem_TossFood />
+        <StandItem_Turn180 />
+        <StandItem_TurnLeft90 />
+        <StandItem_TurnRight90 />
+        <StandItem_WearHat />
+      </table>
+      <edge name="DistributeHoney">
+        <table>
+          <StandItem_2DistributeHoney />
+        </table>
+      </edge>
+      <edge name="SitPicnicTableItem">
+        <table>
+          <StandItem_2SitPicnicTableItem />
+        </table>
+      </edge>
+      <edge name="PourItem">
+        <table>
+          <StandItem_2PourItem />
+        </table>
+      </edge>
+      <edge name="SitBenchItem">
+        <table>
+          <StandItem_2SitBenchItem />
+        </table>
+      </edge>
+      <edge name="ReadMap">
+        <table>
+          <StandItem_2ReadMap />
+        </table>
+      </edge>
+      <edge name="PlaceFood">
+        <table>
+          <StandItem_2PlaceFood />
+        </table>
+      </edge>
+      <edge name="WalkItem">
+        <table>
+          <StandItem_2WalkItem />
+        </table>
+      </edge>
+      <edge name="SitTableItem">
+        <table>
+          <StandItem_2SitTableItem />
+        </table>
+      </edge>
+      <edge name="Stand">
+        <table>
+          <StandItem_2Stand />
+          <StandItem_2Stand_Throw />
+          <StandItem_2Stand_ThrowUnderhand />
+        </table>
+      </edge>
+      <edge name="TossFood">
+        <table>
+          <StandItem_2TossFood />
+        </table>
+      </edge>
+      <edge name="DistributeInsects">
+        <table>
+          <StandItem_2DistributeInsects />
+        </table>
+      </edge>
+    </node>
+    <node name="StandListen">
+      <table>
+        <StandListen_A />
+        <StandListen_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <StandListen_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="StandTalk">
+      <table>
+        <StandTalk_A />
+        <StandTalk_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <StandTalk_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Swim">
+      <table>
+        <Swim_Ahead />
+        <Swim_HealAnimal />
+        <Swim_TurnLeftA />
+        <Swim_TurnRightA />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <Swim_2TreadWater />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <Swim_2SwimSub />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Swim_2Walk />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSub">
+      <table>
+        <SwimSub_Ahead />
+        <SwimSub_TurnLeftA />
+        <SwimSub_TurnRightA />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimSub_2Swim />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <SwimSub_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="TossFood">
+      <table>
+        <TossFood_Idle />
+      </table>
+      <edge name="StandItem">
+        <table>
+          <TossFood_2StandItem />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWater">
+      <table>
+        <TreadWater_Beluga />
+        <TreadWater_HealAnimal />
+        <TreadWater_Idle />
+        <TreadWater_Manatee />
+        <TreadWater_Marlin />
+        <TreadWater_Narwhal />
+        <TreadWater_PlaceFood />
+        <TreadWater_ScratchOrca />
+        <TreadWater_SharkWhite />
+        <TreadWater_Touch />
+        <TreadWater_TurnLeft90 />
+        <TreadWater_TurnRight90 />
+        <TreadWater_TurtleLeatherback />
+        <TreadWater_WalrusPacific />
+      </table>
+      <edge name="Stand">
+        <table>
+          <TreadWater_2Stand_Climb />
+        </table>
+      </edge>
+      <edge name="FastSwim">
+        <table>
+          <TreadWater_2FastSwim />
+        </table>
+      </edge>
+      <edge name="CleanTankWater">
+        <table>
+          <TreadWater_2CleanTankWater />
+        </table>
+      </edge>
+      <edge name="Drown">
+        <table>
+          <TreadWater_2Drown />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <TreadWater_2Swim />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <TreadWater_2SwimSub />
+        </table>
+      </edge>
+      <edge name="ClimbLadderUp">
+        <table>
+          <TreadWater_2ClimbLadderUp />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterSub">
+      <table>
+        <TreadWaterSub_Idle />
+        <TreadWaterSub_PlaceFood />
+        <TreadWaterSub_TurnLeft90 />
+        <TreadWaterSub_TurnRight90 />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <TreadWaterSub_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="Walk">
+      <table>
+        <Walk_Ahead />
+        <Walk_DownStairs />
+        <Walk_TurnLeftA />
+        <Walk_TurnRightA />
+        <Walk_UpStairs />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Walk_2Stand />
+        </table>
+      </edge>
+      <edge name="FastSwim">
+        <table>
+          <Walk_2FastSwim />
+        </table>
+      </edge>
+      <edge name="ClimbLadderDown">
+        <table>
+          <Walk_2ClimbLadderDown />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <Walk_2Swim />
+        </table>
+      </edge>
+      <edge name="FastWalk">
+        <table>
+          <Walk_2FastWalk />
+        </table>
+      </edge>
+      <edge name="Run">
+        <table>
+          <Walk_2Run />
+        </table>
+      </edge>
+      <edge name="ClimbLadderUp">
+        <table>
+          <Walk_2ClimbLadderUp />
+        </table>
+      </edge>
+    </node>
+    <node name="WalkItem">
+      <table>
+        <WalkItem_Ahead />
+        <WalkItem_TurnLeftA />
+        <WalkItem_TurnRightA />
+      </table>
+      <edge name="StandItem">
+        <table>
+          <WalkItem_2StandItem />
+        </table>
+      </edge>
+    </node>
+    <node name="WalkReadMap">
+      <table>
+        <WalkReadMap_Ahead />
+        <WalkReadMap_TurnLeftA />
+        <WalkReadMap_TurnRightA />
+      </table>
+      <edge name="ReadMap">
+        <table>
+          <WalkReadMap_2ReadMap />
+        </table>
+      </edge>
+    </node>
+    <node name="WaterImpact">
+      <table>
+        <WaterImpact_Idle />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <WaterImpact_2TreadWater />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

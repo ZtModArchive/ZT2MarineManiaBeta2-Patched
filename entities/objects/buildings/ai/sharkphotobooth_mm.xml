@@ -1,0 +1,115 @@
+<BFTypedBinder binderType="sharkphotobooth_mm">
+   <types>
+      <entity>
+         <building>
+            <sharkphotobooth_mm/>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="shadowObj2" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="Vendor" rottype="use" postype="use" attachnode="Link_Vendor"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTPlacementData icon3Doffset="0 -0.000140 0.710719" icon3Dscale="0.293944" iconAnim="Stand_Idle" dockArrowStyle="special" dockArrowSize="1.0"/>
+      <UIButton name="overviewicon">
+         <UIAspect>
+            <default image="ui/zoomap/icon_attractions.dds"/>
+         </UIAspect>
+      </UIButton>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\buildings\sharkphotobooth_mm\sharkphotobooth_mm_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:sharkphotobooth_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="sharkphotobooth_mm"/>
+         </on>
+      </UIToggleButton>
+      <UIToggleButton template="researchentity">
+         <UIAspect>
+            <default image="entities\objects\buildings\sharkphotobooth_mm\sharkphotobooth_mm_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="sharkphotobooth_mm"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_ObjectType="Misc" b_Researchable="true" s_uisort="ff" s_Product="Marine" s_ItemsSold="Photo" b_CommerceBuilding="true" b_DonationAcceptor="false" b_SeeThrough="true" s_Zoopedia="zoopedia:zoopedia_sharkphotobooth:entry" f_researchUnlockTime="80" f_researchCost="400" f_FameReq="60"/>
+      <ZTItemFilter>
+      	<Include_OR b_Photo="true"/>
+      </ZTItemFilter>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="ShadowNode_01" width="1" length="1.25" offwidth="0.125" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj2">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="ShadowNode_02" width="2.5" length="2.5" offwidth="0.45" offlength="-0.25" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/sharkphotobooth_mm/sharkphotobooth_mm" switch="0 7 14 23 34" minSwitch="0 0 0 7 14"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Vendor">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities\units\guests\AdultMale\Vendor_M.bfm" switch="0 7 14 23 34" minSwitch="0 0 0 7 14"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars minDrawSetting="1"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Use_PhotoBooth">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot targetNode="Dock_Enter" capacity="1"/>
+               </slots>
+               <queue>
+                  <BFGEntityContainerSlot targetNode="Dock_Enter" capacity="5"/>
+               </queue>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="500">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="50" period="monthly" type="debit" category="upkeep"/>
+               <ZTTransaction name="Buy_Item" costIndex="1" costChoice="15 20 30" type="debit" category="concessions_gifts" nextTransaction="add_user"/>
+               <ZTTransaction name="add_user" cost="1" type="addUser" category="user"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr behaviorVersion="1" physObj="Vendor">
+               <subBehaviors>
+                  <BFBehAnimate interruptible="true" targetAnim="Stand_Idle" interruptFlag="true" loopFlag="true"/>
+               </subBehaviors>
+            </BFBehaviorMgr>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

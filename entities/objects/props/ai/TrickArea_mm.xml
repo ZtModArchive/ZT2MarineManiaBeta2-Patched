@@ -1,0 +1,633 @@
+<BFTypedBinder binderType="TrickArea_mm">
+	<types>
+		<entity>
+			<prop>
+				<TrickArea_mm />
+			</prop>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTDevComponent />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\props\TrickArea_mm\TrickArea_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:TrickArea_mm" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TrickArea_mm" />
+			</on>
+		</UIToggleButton>
+		<BFGCollisionData isPassable="true" isTraversable="true" />
+		<ZTPlacementData moveable="true" randomRotate="false" gridSnap="true" autoFootprint="false" icon3Doffset="0 0.0 0.84">
+			<cfootprint width="1" height="4" />
+			<dfootprint width="2" height="6" />
+		</ZTPlacementData>
+		<BFAIEntityDataShared s_uisort="fa" s_Zoopedia="zoopedia:zoopedia_trickarea_mm:entry" f_FameReq="40" s_Product="Marine" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities\objects\props\TrickArea_mm\TrickArea_mm" />
+					<BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0" />
+					<BFCollisionComponent grid="Grid" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Node_Training x="1.5" yaw="-90" />
+						<Node_Orca_Training x="-5" yaw="-90" />
+						<Node_Jump_Failure y="-4.50" z="-1.624" pitch="56.106" yaw="180" />
+						<Node_Jump_Orca_Failure y="-4.50" z="-5.624" pitch="56.106" yaw="180" />
+						<Node_Jump_SeaLionCalifornia_Failure y="-4.50" z="-0.104" yaw="180" />
+						<Node_Jump_OtterSea_Failure y="-4.50" z="-0.65" yaw="180" />
+						<Node_Jump_Success y="-4.50" pitch="60" yaw="180" />
+						<Node_Jump_Orca_Success y="-4.50" z="-4" pitch="60" yaw="180" />
+						<Node_Jump_SeaLionCalifornia_Success y="-4.50" z="-0.104" yaw="180" />
+						<Node_Jump_OtterSea_Success y="-4.50" z="-0.65" yaw="180" />
+						<Node_Jump_Critical y="-4.50" pitch="57.151" yaw="180" />
+						<Node_Jump_Orca_Critical y="-4.50" z="-4" pitch="57.151" yaw="180" />
+						<Node_Jump_SeaLionCalifornia_Critical y="-4.50" z="-0.104" yaw="180" />
+						<Node_Jump_OtterSea_Critical y="-4.50" z="-0.65" yaw="180" />
+						<Node_JumpFallSide_Failure z="-1.852" pitch="80" yaw="270" />
+						<Node_JumpFallSide_Orca_Failure x="-3" z="-5.852" pitch="80" yaw="270" />
+						<Node_JumpFallSide_Success z="-1.852" pitch="83.073" yaw="270" />
+						<Node_JumpFallSide_Orca_Success x="-3" z="-5.852" pitch="83.073" yaw="270" />
+						<Node_JumpFallSide_Critical z="-1.919" pitch="83.073" yaw="270" />
+						<Node_JumpFallSide_Orca_Critical x="-3" z="-5.919" pitch="83.073" yaw="270" />
+						<Node_StraightUpJump_Failure z="-1.852" pitch="85.2" yaw="180" />
+						<Node_StraightUpJump_Orca_Failure z="-5.852" pitch="85.2" yaw="180" />
+						<Node_StraightUpJump_Success z="-1.852" pitch="85.2" yaw="180" />
+						<Node_StraightUpJump_Orca_Success z="-5.852" pitch="85.2" yaw="180" />
+						<Node_StraightUpJump_Critical z="-1.852" pitch="85.2" yaw="180" />
+						<Node_StraightUpJump_Orca_Critical z="-5.852" pitch="85.2" yaw="180" />
+						<Node_DiveJump_Failure z="-1.852" pitch="85.2" yaw="180" />
+						<Node_DiveJump_Success z="-1.852" pitch="85.2" yaw="180" />
+						<Node_DiveJump_Critical z="-1.852" pitch="85.2" yaw="180" />
+						<Node_FlipForward_Failure y="-5" z="0" pitch="29.993" yaw="180" />
+						<Node_FlipForward_Orca_Failure y="-5" z="-4" pitch="29.993" yaw="180" />
+						<Node_FlipForward_Success y="-5" z="-1.353" pitch="62.413" yaw="180" />
+						<Node_FlipForward_Orca_Success y="-5" z="-5.353" pitch="62.413" yaw="180" />
+						<Node_FlipForward_Critical y="-5" z="-1.353" pitch="62.413" yaw="180" />
+						<Node_FlipForward_Orca_Critical y="-5" z="-5.353" pitch="62.413" yaw="180" />
+						<Node_FlipBack_Failure y="-3" z="-0.09" pitch="53.822" yaw="180" />
+						<Node_FlipBack_Success y="-3" z="-0.105" pitch="50.716" yaw="180" />
+						<Node_FlipBack_Critical y="-3" z="-0.105" pitch="50.789" yaw="180" />
+						<Node_FlipperSplash_Failure y="-3" yaw="180" />
+						<Node_FlipperSplash_Success y="-3" yaw="180" />
+						<Node_FlipperSplash_Critical y="-3" yaw="180" />
+						<Node_Spyhop_Failure y="-6.5" yaw="180" />
+						<Node_Spyhop_Success y="-6.5" yaw="180" />
+						<Node_Spyhop_Critical y="-6.5" yaw="180" />
+						<Node_TailSplash_Failure y="-3" yaw="180" />
+						<Node_TailSplash_Success y="-3" yaw="180" />
+						<Node_TailSplash_Critical y="-3" yaw="180" />
+						<Node_CorkscrewTwist_Failure y="-5" z="-0.998" yaw="180" />
+						<Node_CorkscrewTwist_Success y="-5" z="-1.739" pitch="65.2" yaw="180" />
+						<Node_CorkscrewTwist_Critical y="-5" z="-3.197" pitch="-14.8" yaw="180" />
+						<Node_WaterWalk_Failure y="-6" z="-.5" yaw="180" />
+						<Node_WaterWalk_Success y="-6" z="-.5" yaw="180" />
+						<Node_WaterWalk_Critical y="-6" z="-.5" yaw="180" />
+						<Node_Squirt_Failure y="-5" z="-0.451" pitch="66.753" yaw="180" />
+						<Node_Squirt_Success y="-5" z="-0.451" pitch="66.753" yaw="180" />
+						<Node_Squirt_Critical y="-5" z="-0.451" pitch="66.753" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Training" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTraining" targetNode="Node_Training" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Training_Teleport" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTraining_Teleport" targetNode="Node_Training" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Orca_Training" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTraining" targetNode="Node_Orca_Training" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Orca_Training_Teleport" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTraining_Teleport" targetNode="Node_Orca_Training" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Failure" targetNode="Node_Jump_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_Orca_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Failure" targetNode="Node_Jump_Orca_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_SeaLionCalifornia_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Failure" targetNode="Node_Jump_SeaLionCalifornia_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_OtterSea_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Failure" targetNode="Node_Jump_OtterSea_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Success" targetNode="Node_Jump_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_Orca_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Success" targetNode="Node_Jump_Orca_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_SeaLionCalifornia_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Success" targetNode="Node_Jump_SeaLionCalifornia_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_OtterSea_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Success" targetNode="Node_Jump_OtterSea_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Critical" targetNode="Node_Jump_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_Orca_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Critical" targetNode="Node_Jump_Orca_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_SeaLionCalifornia_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Critical" targetNode="Node_Jump_SeaLionCalifornia_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Jump_OtterSea_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Jump" useBehSet="Jump_Critical" targetNode="Node_Jump_OtterSea_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpFallSide_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_JumpFallSide" useBehSet="JumpFallSide_Failure" targetNode="Node_JumpFallSide_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpFallSide_Orca_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_JumpFallSide" useBehSet="JumpFallSide_Failure" targetNode="Node_JumpFallSide_Orca_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpFallSide_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_JumpFallSide" useBehSet="JumpFallSide_Success" targetNode="Node_JumpFallSide_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpFallSide_Orca_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_JumpFallSide" useBehSet="JumpFallSide_Success" targetNode="Node_JumpFallSide_Orca_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpFallSide_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_JumpFallSide" useBehSet="JumpFallSide_Critical" targetNode="Node_JumpFallSide_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpFallSide_Orca_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_JumpFallSide" useBehSet="JumpFallSide_Critical" targetNode="Node_JumpFallSide_Orca_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="StraightUpJump_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_StraightUpJump" useBehSet="StraightUpJump_Failure" targetNode="Node_StraightUpJump_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="StraightUpJump_Orca_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_StraightUpJump" useBehSet="StraightUpJump_Failure" targetNode="Node_StraightUpJump_Orca_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="StraightUpJump_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_StraightUpJump" useBehSet="StraightUpJump_Success" targetNode="Node_StraightUpJump_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="StraightUpJump_Orca_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_StraightUpJump" useBehSet="StraightUpJump_Success" targetNode="Node_StraightUpJump_Orca_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="StraightUpJump_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_StraightUpJump" useBehSet="StraightUpJump_Critical" targetNode="Node_StraightUpJump_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="StraightUpJump_Orca_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_StraightUpJump" useBehSet="StraightUpJump_Critical" targetNode="Node_StraightUpJump_Orca_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="DiveJump_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_DiveJump" useBehSet="DiveJump_Failure" targetNode="Node_DiveJump_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="DiveJump_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_DiveJump" useBehSet="DiveJump_Success" targetNode="Node_DiveJump_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="DiveJump_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_DiveJump" useBehSet="DiveJump_Critical" targetNode="Node_DiveJump_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipForward_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipForward" useBehSet="FlipForward_Failure" targetNode="Node_FlipForward_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipForward_Orca_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipForward" useBehSet="FlipForward_Failure" targetNode="Node_FlipForward_Orca_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipForward_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipForward" useBehSet="FlipForward_Success" targetNode="Node_FlipForward_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipForward_Orca_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipForward" useBehSet="FlipForward_Success" targetNode="Node_FlipForward_Orca_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipForward_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipForward" useBehSet="FlipForward_Critical" targetNode="Node_FlipForward_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipForward_Orca_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipForward" useBehSet="FlipForward_Critical" targetNode="Node_FlipForward_Orca_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipBack_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipBack" useBehSet="FlipBack_Failure" targetNode="Node_FlipBack_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipBack_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipBack" useBehSet="FlipBack_Success" targetNode="Node_FlipBack_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipBack_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipBack" useBehSet="FlipBack_Critical" targetNode="Node_FlipBack_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipperSplash_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipperSplash" useBehSet="FlipperSplash_Failure" targetNode="Node_FlipperSplash_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipperSplash_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipperSplash" useBehSet="FlipperSplash_Success" targetNode="Node_FlipperSplash_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlipperSplash_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_FlipperSplash" useBehSet="FlipperSplash_Critical" targetNode="Node_FlipperSplash_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Spyhop_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Spyhop" useBehSet="Spyhop_Failure" targetNode="Node_Spyhop_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Spyhop_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Spyhop" useBehSet="Spyhop_Success" targetNode="Node_Spyhop_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Spyhop_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Spyhop" useBehSet="Spyhop_Critical" targetNode="Node_Spyhop_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="TailSplash_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_TailSplash" useBehSet="TailSplash_Failure" targetNode="Node_TailSplash_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="TailSplash_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_TailSplash" useBehSet="TailSplash_Success" targetNode="Node_TailSplash_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="TailSplash_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_TailSplash" useBehSet="TailSplash_Critical" targetNode="Node_TailSplash_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="CorkscrewTwist_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_CorkscrewTwist" useBehSet="CorkscrewTwist_Failure" targetNode="Node_CorkscrewTwist_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="CorkscrewTwist_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_CorkscrewTwist" useBehSet="CorkscrewTwist_Success" targetNode="Node_CorkscrewTwist_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="CorkscrewTwist_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_CorkscrewTwist" useBehSet="CorkscrewTwist_Critical" targetNode="Node_CorkscrewTwist_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="WaterWalk_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_WaterWalk" useBehSet="WaterWalk_Failure" targetNode="Node_WaterWalk_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="WaterWalk_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_WaterWalk" useBehSet="WaterWalk_Success" targetNode="Node_WaterWalk_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="WaterWalk_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_WaterWalk" useBehSet="WaterWalk_Critical" targetNode="Node_WaterWalk_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Squirt_Failure" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Squirt" useBehSet="Squirt_Failure" targetNode="Node_Squirt_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Squirt_Success" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Squirt" useBehSet="Squirt_Success" targetNode="Node_Squirt_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Squirt_Critical" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTrickArea_Squirt" useBehSet="Squirt_Critical" targetNode="Node_Squirt_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="320">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

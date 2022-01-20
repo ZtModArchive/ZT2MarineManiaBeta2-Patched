@@ -1,0 +1,91 @@
+﻿<BFTypedBinder binderType="Carcass_mm" abstract="true">
+	<types>
+		<entity>
+			<food>
+				<Carcass_mm />
+			</food>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\food\Carcass_mm\Carcass_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:Carcass_mm" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Carcass_mm" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData randomRotate="false" gridSnap="true" autoFootprint="false" terrainFlatten="false" tankPlacement="true" waterPlacement="true" landPlacement="false" minimumDepth="1">
+			<cfootprint width="0" height="0" />
+			<dfootprint width="1" height="1" />
+			<stompData>
+				<delete>
+					<treat />
+					<bush />
+					<grass />
+					<wildflowers />
+					<fungi />
+					<watersurfacefoliage />
+				</delete>
+				<prevent />
+			</stompData>
+		</ZTPlacementData>
+		<BFGCollisionData isPassable="false" isStatic="true" />
+		<BFAIEntityDataShared s_uisort="p" b_Sniffable="true" s_Zoopedia="zoopedia:zoopedia_marinecarcass:entry" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob.tga" baseNode="footprint" width="2" minLength="2" maxLength="3" minOffset="0" maxOffset=".5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="50" />
+					<BFTerrainPaintComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_01 parentNode="AutoRoot" x="0" y=".65" z="1.25" yaw="0" />
+						<Dock_02 parentNode="AutoRoot" x="-.65" y="0" z="1.25" yaw="-90" />
+						<Dock_03 parentNode="AutoRoot" x=".65" y="0" z="1.25" yaw="90" />
+						<Dock_04 parentNode="AutoRoot" x="0" y="-.65" z="1.25" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Eat">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterMarineCarcass" useBehSet="UseMarineCarcass" exitBehSet="ExitMarineCarcass" targetNode="Dock_01" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterMarineCarcass" useBehSet="UseMarineCarcass" exitBehSet="ExitMarineCarcass" targetNode="Dock_02" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterMarineCarcass" useBehSet="UseMarineCarcass" exitBehSet="ExitMarineCarcass" targetNode="Dock_03" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterMarineCarcass" useBehSet="UseMarineCarcass" exitBehSet="ExitMarineCarcass" targetNode="Dock_04" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<ZTAIStaffRequestController attribName="f_FoodLevel" thresholdValue="25" testType="1" cancelThresholdValue="50" cancelTestType="2">
+					<ZTStaffRequestData tokenKey="t_FillFoodContainer" subjectType="Keeper" />
+				</ZTAIStaffRequestController>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

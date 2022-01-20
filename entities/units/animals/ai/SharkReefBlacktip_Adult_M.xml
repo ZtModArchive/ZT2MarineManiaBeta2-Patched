@@ -1,0 +1,35 @@
+<BFTypedBinder binderType="SharkReefBlacktip_Adult_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Elasmobranchii>
+                  <Carcharhiniformes>
+                     <Carcharhinidae>
+                        <SharkReefBlacktip>
+                           <SharkReefBlacktip_Adult>
+                              <SharkReefBlacktip_Adult_M/>
+                           </SharkReefBlacktip_Adult>
+                        </SharkReefBlacktip>
+                     </Carcharhinidae>
+                  </Carcharhiniformes>
+               </Elasmobranchii>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\SharkReefBlacktip\SharkReefBlacktip_Adult_M_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SharkReefBlacktip_Adult_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

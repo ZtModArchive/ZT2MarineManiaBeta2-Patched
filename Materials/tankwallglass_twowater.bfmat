@@ -1,0 +1,47 @@
+<material fx="TankGlassTwoWater" shareable="true">
+	<param name="CullMode" type="dword">2</param>
+	<param name="MaterialPower" type="float">10.000000</param>
+	<param name="MaterialAmbient" type="vector4">0.600000, 1.000000, 0.900000, 1.000000</param>
+	<param name="MaterialDiffuse" type="vector4">0.000000, 0.000000, 0.000000, 0.750000</param>
+	<param name="MaterialEmissive" type="vector4">0.000000, 0.000000, 0.000000, 1.000000</param>
+	<param name="MaterialSpecular" type="vector4">0.100000, 0.150000, 0.1250000, 1.000000</param>
+	<param name="EmissiveMaterialSource" type="dword">0</param>
+	<param name="DiffuseMaterialSource" type="dword">0</param>
+	<param name="AmbientMaterialSource" type="dword">0</param>
+	<param name="MinScum" type="float">0.00000</param>
+	<param name="MaxScum" type="float">1.000000</param>
+	<param name="DirtinessCCW" type="float">0.5</param>
+	<param name="DirtinessCW" type="float">0.5</param>
+	<param name="TextureReflect" type="texture">Materials/cube_test</param>
+  <param name="TextureSide" type="texture">Materials/mf_cutoffhalf</param>
+  <param name="TextureGlass" type="texture">Materials/mf_tankglass_layout</param>
+	<param name="TextureScumCCW" type="texture">Materials/MagnaScumLaude01</param>
+	<param name="DetailScumCCW" type="texture">Materials/TankScumDetail</param>
+	<param name="TextureScumCW" type="texture">Materials/MagnaScumLaude01</param>
+	<param name="DetailScumCW" type="texture">Materials/TankScumDetail</param>
+	<param name="TextureLUT" type="texture">Materials/lutinvbiangle128e</param>
+	<param name="LUTScaleOffset" type="matrix">
+	   0.000000, 0.000000, 0.000000, 0.000000, 
+	   0.000000, 1.000000, 0.000000, 0.000000, 
+	   0.5, 0.000000, 0.000000, 0.000000, 
+	   0.500000, 0.000000, 0.000000, 1.000000
+	</param>
+	<param name="ScumTransform" type="matrix">
+	   1.000000, 0.000000, 0.000000, 0.000000, 
+	   0.000000, 1.000000, 0.000000, 0.000000, 
+	   0.000000, 0.000000, 1.000000, 0.000000, 
+	   0.000000, 0.000000, 0.000000, 1.000000
+	</param>
+	<param name="ScumDetailTransform" type="matrix">
+	   2.000000, 0.000000, 0.000000, 0.000000, 
+	   0.000000, 2.000000, 0.000000, 0.000000, 
+	   0.000000, 0.000000, 1.000000, 0.000000, 
+	   0.000000, 0.000000, 0.000000, 1.000000
+	</param>
+	<param name="GlassTransform" type="matrix">
+	   1.000000, 0.000000, 0.000000, 0.000000, 
+	   0.000000, 1.000000, 0.000000, 0.000000, 
+	   0.000000, 0.000000, 1.000000, 0.000000, 
+	   0.000000, 0.000000, 0.000000, 1.000000
+	</param>
+</material>

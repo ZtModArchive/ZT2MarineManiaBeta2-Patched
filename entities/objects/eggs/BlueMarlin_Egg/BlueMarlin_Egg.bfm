@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\eggs\BlueMarlin_Egg\BlueMarlin_Egg.nif">
+  <animation anim="entities\objects\eggs\BlueMarlin_Egg\BlueMarlin_Egg_Stand_Idle.bf" animName="Stand_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="BlueMarlin_Egg" version="1">
+    <node name="Stand">
+      <table>
+        <Stand_Idle />
+      </table>
+    </node>
+  </Graph>
+</BFM>

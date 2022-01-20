@@ -1,0 +1,206 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="PirateShipBasic_Stimulation" reserveTag="Play" UniqueID="PirateShip:PirateShipBasic_Stimulation">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_PirateShipUser/>
+            <b_Basic/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <PirateShip/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToSwimAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAroundAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PirateShipMedium_Stimulation" reserveTag="Play" UniqueID="PirateShip:PirateShipMedium_Stimulation">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_PirateShipUser/>
+            <b_Medium/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <PirateShip/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToSwimAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAroundAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PirateShipAdvanced_Stimulation" reserveTag="Play" UniqueID="PirateShip:PirateShipAdvanced_Stimulation">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_PirateShipUser/>
+            <b_Advanced/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <PirateShip/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToSwimAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAroundAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PirateShipElite_Stimulation" reserveTag="Play" UniqueID="PirateShip:PirateShipElite_Stimulation">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_PirateShipUser/>
+            <b_Elite/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <PirateShip/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToSwimAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAroundAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_9">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

@@ -1,0 +1,22 @@
+<skylayers>
+   <!-- The sky dome -->
+   <BFColorInterpolateSkyLayer>
+      <!-- old clearZBufferAfter="true" -->
+      <interpModels model1="world/environments/sky/blueinterp/skysphere_Benthic" model2="world/environments/sky/blueinterp/skysphere_Benthic" model3="world/environments/sky/blueinterp/skysphere_Benthic" model4="world/environments/sky/blueinterp/skysphere_Benthic" model5="world/environments/sky/blueinterp/skysphere_Benthic" model6="world/environments/sky/blueinterp/skysphere_Benthic" mode7="world/environments/sky/blueinterp/skysphere_Benthic"/>
+      <interpTimes t1="0.0" t2="0.07" t3="0.13" t4="0.42" t5="0.7" t6="0.9" t7="1.0"/>
+   </BFColorInterpolateSkyLayer>
+   <!-- The sun body -->
+   <ZTSunLayer sunPositionModel="world/environments/sky/sunpositions.xml" smoothUpdate="true">
+      <!-- old clearZBufferAfter="true" -->
+      <sunModels model1="world/environments/sky/blueinterp/sun_body_benthic.xml"/>
+      <interpTimes t1="0.0" t2="0.1" t3="0.15" t4="0.35" t5="0.5" t6="0.65" t7="0.85" t8="0.9" t9="1.0"/>
+      <interpScales s1=".8" s2=".5" s3=".3" s4=".2" s5=".2" s6=".2" s7=".3" s8=".5" s9=".8"/>
+      <interpNodes n1="sun_node_00" n2="sun_node_01" n3="sun_node_02" n4="sun_node_03" n5="sun_node_04" n6="sun_node_05" n7="sun_node_06" n8="sun_node_07" n9="sun_node_00"/>
+      <interpColors c1="255 150 0" c2="255 240 160" c3="255 240 200" c4="253 253 253" c5="253 253 253" c6="253 253 253" c7="255 240 175" c8="255 200 100" c9="255 0 0"/>
+   </ZTSunLayer>
+   <!-- The "low" clouds -->
+   <BFSkyLayer useWorldLights="true">
+      <!-- old clearZBufferAfter="true" -->
+      <models model2="world/environments/sky/blueinterp/clouds_benthic.xml"/>
+   </BFSkyLayer>
+</skylayers>

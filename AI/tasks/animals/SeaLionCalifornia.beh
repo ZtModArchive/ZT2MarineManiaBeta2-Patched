@@ -1,0 +1,3624 @@
+<BehaviorSets>
+<!--Wander behavior sets for randomized wandering-->
+   <Wander>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WanderGround"/>
+               <water behSet="WanderSurf"/>
+               <underwater behSet="WanderSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander>
+   <Wander_Fast>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WanderGround_Fast"/>
+               <water behSet="WanderSurf_Fast"/>
+               <underwater behSet="WanderSub_Fast"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander_Fast>
+   <Wander_Medium>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WanderGround_Med"/>
+               <water behSet="WanderSurf_Med"/>
+               <underwater behSet="WanderSub_Med"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander_Medium>
+   <Wander_Slow>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WanderGround_Slow"/>
+               <water behSet="WanderSurf_Slow"/>
+               <underwater behSet="WanderSurf_Slow"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander_Slow>
+   <WanderGround>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderGround_Fast weight="33"/>
+               <WanderGround_Med weight="33"/>
+               <WanderGround_Slow weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderGround>
+   <WanderGround_Fast>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidWater="true" locoSpeed="fast"/>
+      </behaviors>
+   </WanderGround_Fast>
+   <WanderGround_Med>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidWater="true" locoSpeed="medium"/>
+      </behaviors>
+   </WanderGround_Med>
+   <WanderGround_Slow>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidWater="true" locoSpeed="slow"/>
+      </behaviors>
+   </WanderGround_Slow>
+   <WanderSurf>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="25"/>
+               <WanderSurf_Med weight="25"/>
+               <WanderSurf_Slow weight="25"/>
+               <WanderSurf_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSurf_Glide>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Glide>
+   <WanderSub>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="25"/>
+               <WanderSub_Med weight="25"/>
+               <WanderSub_Slow weight="25"/>
+               <WanderSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Slow>
+   <WanderSub_Glide>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Glide>
+   <Surface_Submerge>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="0" maxDepth="0" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Surface>
+<!--End Wander behavior sets for randomized wandering-->
+   <Idle>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand"/>
+               <water behSet="TreadWater"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle>
+   <Idle_NoWanderToStop>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="TreadWater"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_NoWanderToStop>
+   <Idle_15>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_15"/>
+               <water behSet="TreadWater_15"/>
+               <underwater behSet="TreadWaterSub_15"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_15>
+   <Idle_35>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_35"/>
+               <water behSet="TreadWater_35"/>
+               <underwater behSet="TreadWaterSub_35"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_35>
+   <Idle_Loop>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_Loop"/>
+               <water behSet="TreadWater_Loop"/>
+               <underwater behSet="TreadWaterSub_Loop"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_Loop>
+   <TreadWater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </TreadWater>
+   <TreadWater_15>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="15"/>
+      </behaviors>
+   </TreadWater_15>
+   <TreadWater_35>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="35"/>
+      </behaviors>
+   </TreadWater_35>
+   <TreadWater_Loop>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true"/>
+      </behaviors>
+   </TreadWater_Loop>
+   <TreadWater_180>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Turn180"/>
+      </behaviors>
+   </TreadWater_180>
+   <TreadWaterSub>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </TreadWaterSub>
+   <TreadWaterSub_15>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="15"/>
+      </behaviors>
+   </TreadWaterSub_15>
+   <TreadWaterSub_35>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="35"/>
+      </behaviors>
+   </TreadWaterSub_35>
+   <TreadWaterSub_Loop>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" loopFlag="true"/>
+      </behaviors>
+   </TreadWaterSub_Loop>
+   <TreadWaterSub_180>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Turn180"/>
+      </behaviors>
+   </TreadWaterSub_180>
+   <Stand>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand>
+   <Stand_15>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="15"/>
+      </behaviors>
+   </Stand_15>
+   <Stand_35>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="35"/>
+      </behaviors>
+   </Stand_35>
+   <Stand_Loop>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </Stand_Loop>
+   <Stand_180>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </Stand_180>
+   <TreadWater_Idle>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </TreadWater_Idle>
+   <Stand_Idle>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand_Idle>
+   <FailureSet>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Bark"/>
+               <water behSet="TreadWater"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <Think>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="TiltHead"/>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="TiltHead"/>
+      </behaviors>
+   </Investigate>
+   <Float>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Float_Idle" playTime="3"/>
+         <BFBehAnimate targetAnim="Float_Breath"/>
+         <BFBehAnimate targetAnim="Float_Idle" playTime="3"/>
+      </behaviors>
+   </Float>
+   <Breath>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Float_Breath"/>
+         <BFBehAnimate targetAnim="Float_Idle" playTime="3"/>
+         <BFBehAnimate targetAnim="Float_Breath"/>
+      </behaviors>
+   </Breath>
+   <Lie>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Lie_Idle weight="66"/>
+               <LieSide_Idle weight="34"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Lie>
+   <Lie_Idle>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="10"/>
+      </behaviors>
+   </Lie_Idle>
+   <LieSide_Idle>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="LieSide_Idle" playTime="10"/>
+      </behaviors>
+   </LieSide_Idle>
+   <Sleep>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="SleepGround"/>
+               <water behSet="SleepWater"/>
+               <underwater behSet="SleepWater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Sleep>
+   <SleepGround>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="3">
+            <randomSets>
+               <Sleep_Idle weight="50"/>
+               <SleepSide_Idle weight="25"/>
+               <SleepBack_Idle weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </SleepGround>
+   <Sleep_Idle>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="7"/>
+      </behaviors>
+   </Sleep_Idle>
+   <SleepSide_Idle>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SleepSide_Idle" playTime="7"/>
+      </behaviors>
+   </SleepSide_Idle>
+   <SleepBack_Idle>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SleepBack_Idle" playTime="7"/>
+      </behaviors>
+   </SleepBack_Idle>
+   <SleepWater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Float_Idle" playTime="4"/>
+         <BFBehAnimate targetAnim="Float_Breath"/>
+         <BFBehAnimate targetAnim="Float_Idle" playTime="4"/>
+         <BFBehAnimate targetAnim="TreadWater_Yawn"/>
+      </behaviors>
+   </SleepWater>   
+   <Die_OldAge>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="DefaultLie"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Fight_Ground"/>
+               <water behSet="Die_Fight_Water"/>
+               <underwater behSet="Die_Fight_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Die_Fight>
+   <Die_Fight_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight_Ground>
+   <Die_Fight_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Chum_mm" NameIt="true"/>
+      </behaviors>
+   </Die_Fight_Water>
+   <Yawn>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Lie behSet="Yawn_Lie"/>
+               <Stand behSet="Yawn_Stand"/>
+               <TreadWater behSet="Yawn_TreadWater"/>
+               <default behSet="Yawn_Lie"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Yawn>
+   <Yawn_Lie>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Yawn"/>
+      </behaviors>
+   </Yawn_Lie>
+   <Yawn_Stand>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Yawn"/>
+      </behaviors>
+   </Yawn_Stand>
+   <Yawn_TreadWater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Yawn"/>
+      </behaviors>
+   </Yawn_TreadWater>
+   <Echolocate>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Echolocate"/>
+      </behaviors>
+   </Echolocate>
+   <Eat>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="EatLand"/>
+               <water behSet="EatWater"/>
+               <underwater behSet="EatWater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Eat>
+   <EatLand>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BiteA_Eat weight="50"/>
+               <BiteB_Eat weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </EatLand>
+   <BiteA_Eat>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatLand_Sniff"/>
+         <BFBehAnimate targetAnim="EatLand_BiteA"/>
+         <BFBehAnimate targetAnim="EatLand_ChewGulp"/>
+      </behaviors>
+   </BiteA_Eat>
+   <BiteB_Eat>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatLand_Sniff"/>
+         <BFBehAnimate targetAnim="EatLand_BiteB"/>
+         <BFBehAnimate targetAnim="EatLand_ChewGulp"/>
+      </behaviors>
+   </BiteB_Eat>   
+   <EatWater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatWater_Sniff"/>
+         <BFBehAnimate targetAnim="EatWater_BiteA"/>
+         <BFBehAnimate targetAnim="EatWater_ChewGulp"/>
+      </behaviors>
+   </EatWater>
+   <Drink>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatLand_Drink"/>
+      </behaviors>
+   </Drink>
+   <NurseYoung>
+      <subjects>
+         <SeaLionCalifornia_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="10"/>
+      </behaviors>
+   </NurseYoung>
+   <YoungNurse>
+      <subjects>
+         <SeaLionCalifornia_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Nurse_Idle" playTime="10"/>
+      </behaviors>
+   </YoungNurse>
+   <Pee>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="PeeLand"/>
+               <water behSet="PeeWater"/>
+               <underwater behSet="PeeUnderwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Pee>
+   <PeeLand>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Pee"/>
+      </behaviors>
+   </PeeLand>
+   <PeeWater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </PeeWater>
+   <PeeUnderwater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </PeeUnderwater>
+   <Poop>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="PoopLand"/>
+               <water behSet="PoopWater"/>
+               <underwater behSet="PoopUnderwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Poop>
+   <PoopLand>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Small" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </PoopLand>
+   <PoopWater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </PoopWater>
+   <PoopUnderwater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </PoopUnderwater>
+   <Poop_Sick>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="PoopLand_Sick"/>
+               <water behSet="PoopWater"/>
+               <underwater behSet="PoopUnderwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Poop_Sick>
+   <PoopLand_Sick>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Small_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </PoopLand_Sick>
+   <Sneeze>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Lie behSet="Sneeze_Lie"/>
+               <Stand behSet="Sneeze_Stand"/>
+               <default behSet="Sneeze_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sneeze>
+   <Sneeze_Lie>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Sneeze"/>
+      </behaviors>
+   </Sneeze_Lie>
+   <Sneeze_Stand>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sneeze"/>
+      </behaviors>
+   </Sneeze_Stand>
+   <Bathe>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Bathe"/>
+      </behaviors>
+   </Bathe>
+   <GroomSelf>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="GroomSelf_Ground"/>
+               <water behSet="GroomSelf_Water"/>
+               <underwater behSet="GroomSelf_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </GroomSelf>
+   <GroomSelf_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_GroomSelf"/>
+         <BFBehAnimate targetAnim="Lie_GroomSelf"/>
+      </behaviors>
+   </GroomSelf_Ground>
+   <GroomSelf_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Float_GroomSelf"/>
+         <BFBehAnimate targetAnim="Float_Breath"/>
+         <BFBehAnimate targetAnim="Float_GroomSelf"/>
+      </behaviors>
+   </GroomSelf_Water>
+   <SniffOther>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SniffOther"/>
+      </behaviors>
+   </SniffOther>
+   <Bite>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BiteA"/>
+      </behaviors>
+   </Bite>
+   <Dodge>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Dodge"/>
+      </behaviors>
+   </Dodge>
+   <ChestSlam>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ChestSlam"/>
+      </behaviors>
+   </ChestSlam>
+   <KnockedBack>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KnockedBack"/>
+      </behaviors>
+   </KnockedBack>
+   <TiltHead>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="3">
+            <randomSets>
+               <TiltHeadLeft weight="50"/>
+               <TiltHeadRight weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </TiltHead>
+   <TiltHeadLeft>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TiltHeadLeft"/>
+      </behaviors>
+   </TiltHeadLeft>
+   <TiltHeadRight>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TiltHeadRight"/>
+      </behaviors>
+   </TiltHeadRight>
+   <Sniff>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="Sniff_Ground"/>
+               <water behSet="Sniff_Water"/>
+               <underwater behSet="Sniff_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Sniff>
+   <Sniff_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="3">
+            <randomSets>
+               <Sniff_Lie weight="50"/>
+               <Sniff_Stand weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Sniff_Ground>
+   <Sniff_Lie>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Sniff"/>
+      </behaviors>
+   </Sniff_Lie>
+   <Sniff_Stand>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sniff"/>
+      </behaviors>
+   </Sniff_Stand>
+   <Sniff_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="3">
+            <randomSets>
+               <Sniff_TreadWater weight="75"/>
+               <Sniff_Swim weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Sniff_Water>
+   <Sniff_TreadWater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Sniff"/>
+      </behaviors>
+   </Sniff_TreadWater>
+   <Sniff_Swim>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Sniff"/>
+      </behaviors>
+   </Sniff_Swim>
+   <Clap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Clap"/>
+      </behaviors>
+   </Clap>
+   <Swipe>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="Swipe_Ground"/>
+               <water behSet="Swipe_Water"/>
+               <underwater behSet="Swipe_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Swipe>
+   <Swipe_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwipeLeft weight="50"/>
+               <SwipeRight weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Swipe_Ground>
+   <SwipeLeft>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SwipeLeft"/>
+      </behaviors>
+   </SwipeLeft>
+   <SwipeRight>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SwipeRight"/>
+      </behaviors>
+   </SwipeRight>
+   <Swipe_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwipeNose weight="50"/>
+               <SwipeTail weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Swipe_Water>
+   <SwipeNose>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_SwipeNose"/>
+      </behaviors>
+   </SwipeNose>
+   <SwipeTail>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_SwipeTail"/>
+      </behaviors>
+   </SwipeTail>
+   <Swipe_Whap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="Swipe_Ground_Whap"/>
+               <water behSet="Swipe_Water_Whap"/>
+               <underwater behSet="Swipe_Water_Whap"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Swipe_Whap>
+   <Swipe_Ground_Whap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwipeLeft_Whap weight="50"/>
+               <SwipeRight_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Swipe_Ground_Whap>
+   <SwipeLeft_Whap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_SwipeLeft" interruptFlag="true" groundFit="false"/>
+      </behaviors>
+   </SwipeLeft_Whap>
+   <SwipeRight_Whap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_SwipeRight" interruptFlag="true" groundFit="false"/>
+      </behaviors>
+   </SwipeRight_Whap>
+   <Swipe_Water_Whap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwipeNose_Whap weight="50"/>
+               <SwipeTail_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Swipe_Water_Whap>
+   <SwipeNose_Whap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="TreadWater_SwipeNose" interruptFlag="true" groundFit="false"/>
+      </behaviors>
+   </SwipeNose_Whap>
+   <SwipeTail_Whap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="TreadWater_SwipeTail" interruptFlag="true" groundFit="false"/>
+      </behaviors>
+   </SwipeTail_Whap>
+   <Forage>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="3">
+            <randomSets>
+               <Forage_Dig weight="40"/>
+               <Forage_Idle weight="60"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Forage>
+   <Forage_Dig>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Forage_Dig"/>
+      </behaviors>
+   </Forage_Dig>
+   <Forage_Idle>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Forage_Idle"/>
+      </behaviors>
+   </Forage_Idle>
+   <Bark>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Bark"/>
+      </behaviors>
+   </Bark>
+   <AngryBark>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_AngryBark"/>
+      </behaviors>
+   </AngryBark>
+   <LookExcited>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_LookExcitedA weight="50"/>
+               <Stand_LookExcitedB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </LookExcited>
+   <Slide>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Run_Slide"/>
+      </behaviors>
+   </Slide>
+   <CallOther>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="Bark"/>
+               <water behSet="Sniff_Water"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </CallOther>
+   <MatingCall_F>
+      <subjects>
+         <SeaLionCalifornia_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="Bark"/>
+               <water behSet="Sniff_Water"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </MatingCall_F>
+   <MatingCall_M>
+      <subjects>
+         <SeaLionCalifornia_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingCallAnswer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="Bark"/>
+               <water behSet="Sniff_Water"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </MatingCall_M>
+   <Mate>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle_15"/>
+      </behaviors>
+   </Mate>
+   <Birth>
+      <subjects>
+         <SeaLionCalifornia_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth>
+   <SpawnF>
+      <subjects>
+         <SeaLionCalifornia_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="SeaLionCalifornia_Young_F" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <SeaLionCalifornia_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="SeaLionCalifornia_Young_M" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM>
+   <Rendezvous>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit/>
+      </behaviors>
+   </Rendezvous>
+   <SyncSwimLead>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet loopFlag="true">
+            <randomSets>
+               <WanderSurf_Fast weight="50"/>
+               <WanderSub_Fast weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </SyncSwimLead>
+   <SyncSwimFollow>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehFollowEntity locoSpeed="fast" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </SyncSwimFollow>   
+   <DockAttackGuest_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Guest" targetNode="p_TalkOffset" targetAnim="TreadWater_Idle" locoSpeed="fast"/>
+      </behaviors>
+   </DockAttackGuest_Water>
+   <AttackGuest_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_2TreadWater" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="TreadWater_GuestAttack_Friendly"/>
+      </behaviors>
+   </AttackGuest_Water>
+   <DockAttackGuest_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Node_Guest" targetNode="p_TalkOffset" targetAnim="Stand_Idle" locoSpeed="fast" interpolationDistance="2" />
+      </behaviors>
+   </DockAttackGuest_Ground>
+   <AttackGuest_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GuestAttack_Friendly" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest_Ground>
+   <DockFight>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="DockFight_Ground"/>
+               <water behSet="DockFight_Water"/>
+               <underwater behSet="DockFight_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </DockFight> 
+   <DockFight_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehDock subjectNode="p_FightOffset" targetNode="p_FightOffset" locoSpeed="fast" interpolationDistance="2" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight_Ground>
+   <WaitFight>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="WaitFight_Ground"/>
+               <water behSet="WaitFight_Water"/>
+               <underwater behSet="WaitFight_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </WaitFight> 
+   <WaitFight_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="Stand_LookExcitedA" loopFlag="true"/>
+      </behaviors>
+   </WaitFight_Ground>
+   <FightSnap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <Fight>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="ChestSlam"/>
+      </behaviors>
+   </Fight>
+   <DefendEqual>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Fight weight="40"/>
+	       <Dodge weight="20"/>
+               <FightHurt weight="40"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <FightHurt>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KnockedBack"/>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSetAttribute>
+            <BFAISubjectData health="30"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </FightHurt>
+   <ChasePrey>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="stalk"/>
+      </behaviors>
+   </ChasePrey> 
+   <MissPrey>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="FailureSet"/>
+      </behaviors>
+   </MissPrey> 	
+   <AttackPrey>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehFollowEntity locoSpeed="attack" subjectNode="Node_Predator" targetNode="Node_Attacked" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </AttackPrey>
+   <Roar>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="AngryBark"/>
+               <water behSet="Sniff_Water"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Roar> 
+   <SwipeMed>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="ChestSlam"/>
+               <water behSet="SwipeTail"/>
+               <underwater behSet="SwipeTail"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </SwipeMed>
+   <HitMediumEqual>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <HitMed>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </HitMed>
+   <HitMed_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Dodge weight="70"/>
+               <Stand_ChestSlam weight="15"/>
+               <Stand_KnockedBack weight="15"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Ground> 
+   <HitMed_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <TreadWater_SwipeNose weight="25"/>
+               <TreadWater_SwipeTail weight="75"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Water> 
+   <HitMed_Underwater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnLeft90 weight="40"/>
+               <SwimSub_TurnRight90 weight="40"/>
+               <SwimSub_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Underwater> 
+   <HitMedDie>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie> 
+   <BiteMed>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="ChestSlam"/>
+               <water behSet="SwipeTail"/>
+               <underwater behSet="SwipeTail"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BiteMed>
+   <BitMed>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie> 
+   <WaitFight_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="SwimSub_BiteVicious"/>
+      </behaviors>
+   </WaitFight_Water> 
+   <DockFight_Water>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="SwimSub_BiteVicious"/>
+      </behaviors>
+   </DockFight_Water> 
+   <Die_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Attacked" />
+      </behaviors>
+   </Die_Ground> 
+   <Die_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+         <BFBehAnimate targetAnim="TreadWater_Attacked" interruptFlag="true"/>
+      </behaviors>
+   </Die_Water> 
+   <Die_Underwater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+         <BFBehAnimate targetAnim="TreadWaterSub_Attacked" interruptFlag="true"/>
+      </behaviors>
+   </Die_Underwater> 
+   <DockAttacked>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+
+   <EnterFoodDish>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Node_Dish" targetAnim="Stand_Idle" interpolationDistance="2"/>
+      </behaviors>
+   </EnterFoodDish>
+   <UseFoodDish>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseFoodDish>
+   <DrinkFoodDish>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Drink"/>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitFoodDish>
+   <EnterIceBlock>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="EnterIceBlock_Land"/>
+               <water behSet="EnterIceBlock_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </EnterIceBlock>
+   <EnterIceBlock_Land>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" interpolationDistance="2"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceBlock_Land>
+   <EnterIceBlock_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" locoSpeed="medium" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterIceBlock_Water>
+   <UseIceBlock>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseIceBlock>
+   <ExitIceBlock>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="ExitIceBlock_Land"/>
+               <water behSet="ExitIceBlock_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </ExitIceBlock>
+   <ExitIceBlock_Land>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitIceBlock_Land>
+   <ExitIceBlock_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Turn180" interruptFlag="true"/>
+      </behaviors>
+   </ExitIceBlock_Water>
+   <EnterBuoyLure>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterBuoyLure>
+   <UseBuoyLure>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseBuoyLure>
+   <ExitBuoyLure>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TurnLeft90"/>
+      </behaviors>
+   </ExitBuoyLure>
+   <EnterArtificialReef>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterArtificialReef>
+   <UseArtificialReef>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseArtificialReef>
+   <ExitArtificialReef>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitArtificialReef>
+   <EnterFoodBox>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterFoodBox>
+   <UseFoodBox>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseFoodBox>
+   <ExitFoodBox>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitFoodBox>
+   <EnterMarineCarcass>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterMarineCarcass>
+   <UseMarineCarcass>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseMarineCarcass>
+   <ExitMarineCarcass>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitMarineCarcass>
+   <EnterRockIsland>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="medium" targetAnim="Swim_2Slide"/>
+      </behaviors>
+   </EnterRockIsland>
+   <UseRockIsland>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sleep"/>
+      </behaviors>
+   </UseRockIsland>
+   <BirthRockIsland>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Birth"/>
+      </behaviors>
+   </BirthRockIsland>
+   <ExitRockIsland1>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit1" targetAnim="Walk_2Swim" interpolationDistance="2"/>
+      </behaviors>
+   </ExitRockIsland1>
+   <ExitRockIsland2>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit2" targetAnim="Walk_2Swim" interpolationDistance="2"/>
+      </behaviors>
+   </ExitRockIsland2>
+   <ExitRockIsland3>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit3" targetAnim="Walk_2Swim" interpolationDistance="2"/>
+      </behaviors>
+   </ExitRockIsland3>
+   <ExitRockIsland4>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit4" targetAnim="Walk_2Swim" interpolationDistance="2"/>
+      </behaviors>
+   </ExitRockIsland4>
+   <ChaseBall>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="EnterBall_Land"/>
+               <water behSet="EnterBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </ChaseBall>
+   <EnterBall>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="EnterBall_Land"/>
+               <water behSet="EnterBall_Water"/>
+               <underwater behSet="EnterBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </EnterBall>
+   <EnterBall_Land>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockRadial subjectNode="Node_Ball" locoSpeed="medium" targetAnim="Stand_Idle" interpolationDistance="2"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterBall_Land>
+   <EnterBall_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Ball" locoSpeed="medium" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </EnterBall_Water>
+   <GrabBall>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="GrabBall_Land"/>
+               <water behSet="GrabBall_Water"/>
+               <underwater behSet="GrabBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </GrabBall>
+   <GrabBall_Land>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockRadial subjectNode="Node_Ball" locoSpeed="medium" targetAnim="Stand_Idle" interpolationDistance="2"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </GrabBall_Land>
+   <GrabBall_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Ball" locoSpeed="medium" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="Swim_2TreadWater" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </GrabBall_Water>
+   <PickUpBall>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="PickUpBall_Land"/>
+               <water behSet="PickUpBall_Water"/>
+               <underwater behSet="PickUpBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </PickUpBall>
+   <PickUpBall_Land>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_Pickup" targetAnim="Stand_2StandObject" locoMod="carry" detachAction="dropitem" container="mouth"/>
+      </behaviors>
+   </PickUpBall_Land>
+   <PickUpBall_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_Pickup" targetAnim="TreadWater_2TreadWaterObject" locoMod="carry" detachAction="dropitem" container="mouth"/>
+      </behaviors>
+   </PickUpBall_Water>
+   <PickUpRubberToy>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="PickUpRubberToy_Land"/>
+               <water behSet="PickUpRubberToy_Water"/>
+               <underwater behSet="PickUpRubberToy_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </PickUpRubberToy>
+   <PickUpRubberToy_Land>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_PickUp01" targetAnim="Stand_2StandObject" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpRubberToy_Land>
+   <PickUpRubberToy_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_PickUp01" targetAnim="TreadWater_2TreadWaterObject" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpRubberToy_Water>
+   <PickUpFeederBall>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="PickUpFeederBall_Land"/>
+               <water behSet="PickUpFeederBall_Water"/>
+               <underwater behSet="PickUpFeederBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </PickUpFeederBall>
+   <PickUpFeederBall_Land>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_Pickup" targetAnim="Stand_2StandObject" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpFeederBall_Land>
+   <PickUpFeederBall_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_Pickup" targetAnim="TreadWater_2TreadWaterObject" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpFeederBall_Water>
+   <UseBall_Whap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+        <BFBehPlaySet behSet="Swipe_Whap"/>
+      </behaviors>
+   </UseBall_Whap>
+   <UsePursuitBall_Whap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+        <BFBehPlaySet behSet="Swipe_Whap"/>
+      </behaviors>
+   </UsePursuitBall_Whap>
+   <UseCarTire_Whap>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+        <BFBehPlaySet behSet="Swipe_Whap"/>
+      </behaviors>
+   </UseCarTire_Whap>
+   <UseBall>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+        <BFBehPlaySet behSet="Swipe_Whap"/>
+      </behaviors>
+   </UseBall>
+   <ExitBall>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="ExitBall_Land"/>
+               <water behSet="ExitBall_Water"/>
+               <underwater behSet="ExitBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </ExitBall>
+   <ExitBall_Land>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitBall_Land>
+   <ExitBall_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Turn180"/>
+      </behaviors>
+   </ExitBall_Water>
+   <DropObject>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <groundcarry behSet="DropObject_Ground"/>
+               <watercarry behSet="DropObject_Water"/>
+               <underwatercarry behSet="DropObject_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </DropObject>
+   <DropObject_Ground>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+      </behaviors>
+   </DropObject_Ground>
+   <DropObject_Water>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterObject_2TreadWater"/>
+      </behaviors>
+   </DropObject_Water>
+   <DropObject_Underwater>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSubObject_2TreadWaterSub"/>
+      </behaviors>
+   </DropObject_Underwater>
+   <EnterRockIsland>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="medium" targetAnim="Swim_2Walk_Platform"/>
+         <BFBehAnimate targetAnim="Swim_2Walk_Platform" interruptFlag="true"/>
+      </behaviors>
+   </EnterRockIsland>
+   <UseRockIsland>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sleep"/>
+      </behaviors>
+   </UseRockIsland>
+   <BirthRockIsland>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTActionInfo locID="animalactions:Birthing"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehPlaySet behSet="Birth"/>
+      </behaviors>
+   </BirthRockIsland>
+   <ExitRockIsland1>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit1" targetAnim="Walk_2Swim" interpolationDistance="2"/>
+      </behaviors>
+   </ExitRockIsland1>
+   <ExitRockIsland2>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit2" targetAnim="Walk_2Swim" interpolationDistance="2"/>
+      </behaviors>
+   </ExitRockIsland2>
+   <ExitRockIsland3>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit3" targetAnim="Walk_2Swim" interpolationDistance="2"/>
+      </behaviors>
+   </ExitRockIsland3>
+   <ExitRockIsland4>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit4" targetAnim="Walk_2Swim" interpolationDistance="2"/>
+      </behaviors>
+   </ExitRockIsland4>
+   
+<!--Trick Behavior Sets-->
+   <DockTrickArea_Jump>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_Jump"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+      </behaviors>
+   </DockTrickArea_Jump>
+   <Jump_Failure>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="SwimSub_JumpFailureA" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Failure>
+   <Jump_Success>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <Jump_Success_A weight="25"/>
+               <Jump_Success_B weight="75"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Jump_Success>
+   <Jump_Success_A>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehSplashGuest targetAnim="SwimSub_JumpSuccessA" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Success_A>
+   <Jump_Success_B>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehSplashGuest targetAnim="SwimSub_JumpSuccessB" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Success_B>
+   <Jump_Critical>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <Jump_Critical_A weight="25"/>
+               <Jump_Critical_B weight="75"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Jump_Critical>
+   <Jump_Critical_A>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehSplashGuest targetAnim="SwimSub_JumpSuperSuccessA" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Critical_A>
+   <Jump_Critical_B>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehSplashGuest targetAnim="SwimSub_JumpSuperSuccessB" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Critical_B>
+   <DockSlide>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_SlideOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+         <BFBehAnimate targetAnim="Swim_2Walk_Platform" interruptFlag="true"/>
+      </behaviors>
+   </DockSlide>
+   <Slide_Failure>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Slide_Failure" targetAnim="Walk_2UseSlide" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SlidingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="UseSlide_2Walk_Failure"/>
+      </behaviors>
+   </Slide_Failure>
+   <Slide_Success>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Slide_Success" targetAnim="Walk_2UseSlide" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SlidingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="UseSlide_2Swim_Success">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Slide_Success>
+   <Slide_Critical>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Slide_Critical" targetAnim="Walk_2UseSlide" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SlidingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="UseSlide_2Swim_SuperSuccess">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Slide_Critical>
+   <DockSwing>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_SwingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+         <BFBehAnimate targetAnim="Swim_2Walk_Platform" interruptFlag="true"/>
+      </behaviors>
+   </DockSwing>
+   <Swing_Failure>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Swing_Failure" targetAnim="Walk_2Stand" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwingingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="Stand_Bark"/>
+      </behaviors>
+   </Swing_Failure>
+   <Swing_Success>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Swing_Success" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwingingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+         <BFBehSyncSet subjectBehSet="SwingSuccess" targetBehSet="Swing" resetPhase="true"/>
+      </behaviors>
+   </Swing_Success>
+   <SwingSuccess>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2SwimSub_SwingSuccess" groundFit="false"/>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest>
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </SwingSuccess>
+   <Swing_Critical>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Swing_Critical" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwingingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+         <BFBehSyncSet subjectBehSet="SwingCritical" targetBehSet="Swing" resetPhase="true"/>
+      </behaviors>
+   </Swing_Critical>
+   <SwingCritical>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2SwimSub_SwingSuperSuccess" groundFit="false"/>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest>
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </SwingCritical>
+   <DockSeat>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_SeatOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+         <BFBehAnimate targetAnim="Swim_2Walk_Platform" interruptFlag="true"/>
+      </behaviors>
+   </DockSeat>
+   <Seat_Failure>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Seat_Failure" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SittingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="SealSeat_Idle"/>
+      </behaviors>
+   </Seat_Failure>
+   <Seat_Success>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Seat_Success" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SittingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimateRandom minPlays="2" maxPlays="4">
+            <randomAnims>
+               <SealSeat_BarkHappy weight="33"/>
+               <SealSeat_OpenMouth weight="33"/>
+               <SealSeat_WaveForeFlipper weight="33"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Seat_Success>
+   <Seat_Critical>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Seat_Critical" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SittingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimateRandom minPlays="4" maxPlays="6">
+            <randomAnims>
+               <SealSeat_BarkHappy weight="33"/>
+               <SealSeat_OpenMouth weight="33"/>
+               <SealSeat_WaveForeFlipper weight="33"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Seat_Critical>
+   <DockHorns>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_Play" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+         <BFBehAnimate targetAnim="Swim_2Walk_Platform" interruptFlag="true"/>
+      </behaviors>
+   </DockHorns>
+   <Horns_Failure>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Horns_Failure" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Playing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="Stand_Bark"/>
+      </behaviors>
+   </Horns_Failure>
+   <Horns_Success>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Horns_Success" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Playing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <Horns_Tease weight="50"/>
+               <Horns_RowRowRowYourBoat weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Horns_Success>
+   <Horns_Tease>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="UseHorn_SecondHorn"/>
+         <BFBehAnimate targetAnim="UseHorn_SecondHorn"/>
+         <BFBehAnimate targetAnim="UseHorn_FirstHorn"/>
+         <BFBehAnimate targetAnim="UseHorn_ThirdHorn"/>
+         <BFBehAnimate targetAnim="UseHorn_SecondHorn"/>
+         <BFBehAnimate targetAnim="UseHorn_FirstHorn"/>
+      </behaviors>
+   </Horns_Tease>
+   <Horns_RowRowRowYourBoat>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="UseHorn_SecondHorn"/>
+         <BFBehAnimate targetAnim="UseHorn_SecondHorn"/>
+         <BFBehAnimate targetAnim="UseHorn_SecondHorn"/>
+         <BFBehAnimate targetAnim="UseHorn_ThirdHorn"/>
+         <BFBehAnimate targetAnim="UseHorn_FourthHorn"/>
+      </behaviors>
+   </Horns_RowRowRowYourBoat>
+   <Horns_Critical>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Horns_Critical" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Playing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <Horns_Tease weight="50"/>
+               <Horns_RowRowRowYourBoat weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <Horns_Tease weight="50"/>
+               <Horns_RowRowRowYourBoat weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Horns_Critical>
+   <DockBall>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_BalanceOnNose" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+         <BFBehAnimate targetAnim="Swim_2Walk_Platform" interruptFlag="true"/>
+      </behaviors>
+   </DockBall>
+   <Ball_Failure>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Ball_Failure" targetAnim="Walk_2UseBall" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BalancingOnNose" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="Stand_Bark"/>
+      </behaviors>
+   </Ball_Failure>
+   <Ball_Success>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Ball_Success" targetAnim="Walk_2UseBall" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BalancingOnNose" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehPlaySet behSet="PickUpTrickBall"/>
+         <BFBehPlaySet behSet="HoldBallNose_Left_Right"/>
+         <BFBehPlaySet behSet="DropTrickBall"/>
+      </behaviors>
+   </Ball_Success>
+   <PickUpTrickBall>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="SmallBall_mm" targetAnim="Stand_2HoldBallNose" detachAction="killitem" container="mouth"/>
+      </behaviors>
+   </PickUpTrickBall>
+   <DropTrickBall>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HoldBallNose_2Stand_A weight="50"/>
+               <HoldBallNose_2Stand_B weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DropTrickBall>
+   <HoldBallNose_2Stand_A>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDetachObject targetAnim="HoldBallNose_2Stand_A" detachEntity="SmallBall_mm" detachAction="killitem"/>
+      </behaviors>
+   </HoldBallNose_2Stand_A>
+   <HoldBallNose_2Stand_B>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDetachObject targetAnim="HoldBallNose_2Stand_B" detachEntity="SmallBall_mm" detachAction="killitem"/>
+      </behaviors>
+   </HoldBallNose_2Stand_B>
+   <HoldBallNose_Left_Right>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HoldBallNose_Left weight="50"/>
+               <HoldBallNose_Right weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HoldBallNose_Left_Right>
+   <HoldBallNose_Left>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="HoldBallNose_BalanceLeft"/>
+      </behaviors>
+   </HoldBallNose_Left>
+   <HoldBallNose_Right>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="HoldBallNose_BalanceRight"/>
+      </behaviors>
+   </HoldBallNose_Right>
+   <HoldBallNose_ThrowInHoop>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="HoldBallNose_ThrowInHoop"/>
+      </behaviors>
+   </HoldBallNose_ThrowInHoop>
+   <HoldBallNose_HoldBallFlippers>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="HoldBallNose_HoldBallFlippers"/>
+      </behaviors>
+   </HoldBallNose_HoldBallFlippers>
+   <Ball_Critical>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Ball_Critical" targetAnim="Walk_2UseBall" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BalancingOnNose" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehPlaySet behSet="PickUpTrickBall"/>
+         <BFBehPlaySet behSet="HoldBallNose_Left_Right"/>
+         <BFBehPlaySet behSet="HoldBallNose_HoldBallFlippers"/>
+         <BFBehPlaySet behSet="DropTrickBall"/>
+      </behaviors>
+   </Ball_Critical>
+   <ExitTrickPlatform>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+         <BFBehDock targetNode="UnDock_TrickPlatform" redock="true"/>
+         <BFBehAnimate targetAnim="Walk_2Swim_Platform"/>
+      </behaviors>
+   </ExitTrickPlatform>
+   <DockTrampoline>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_JumpOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+      </behaviors>
+   </DockTrampoline>
+   <Trampoline_Failure>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JumpOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehEvasion evasionRadius="6" locoSpeed="fast"/>
+      </behaviors>
+   </Trampoline_Failure>
+   <Trampoline_Success>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_2JumpTrampoline" interruptFlag="true" groundFit="false"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JumpOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet minPlays="2" maxPlays="4">
+            <randomSets>
+               <Trampoline_Idle weight="50"/>
+               <Trampoline_ForwardFlip weight="25"/>
+               <Trampoline_BackwardFlip weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="JumpTrampoline_2SwimSub" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Trampoline_Success>
+   <Trampoline_Idle>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="JumpTrampoline" targetBehSet="Jump" resetPhase="true"/>
+      </behaviors>
+   </Trampoline_Idle>
+   <Trampoline_ForwardFlip>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="JumpTrampoline_ForwardFlip" targetBehSet="Jump" resetPhase="true"/>
+      </behaviors>
+   </Trampoline_ForwardFlip>
+   <Trampoline_BackwardFlip>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="JumpTrampolineBackwardFlip" targetBehSet="Jump" resetPhase="true"/>
+      </behaviors>
+   </Trampoline_BackwardFlip>
+   <JumpTrampoline>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="JumpTrampoline_Idle" groundFit="false"/>
+      </behaviors>
+   </JumpTrampoline>
+   <JumpTrampoline_ForwardFlip>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="JumpTrampoline_FlipForward" groundFit="false"/>
+      </behaviors>
+   </JumpTrampoline_ForwardFlip>
+   <JumpTrampolineBackwardFlip>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="JumpTrampoline_FlipBack" groundFit="false"/>
+      </behaviors>
+   </JumpTrampolineBackwardFlip>
+   <Trampoline_Critical>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_2JumpTrampoline" interruptFlag="true" groundFit="false"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JumpOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet minPlays="3" maxPlays="6">
+            <randomSets>
+               <Trampoline_Idle weight="33"/>
+               <Trampoline_ForwardFlip weight="33"/>
+               <Trampoline_BackwardFlip weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="JumpTrampoline_2SwimSub" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Trampoline_Critical>
+   <DockBasketball>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_Play" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+         <BFBehAnimate targetAnim="Swim_2Walk_Platform" interruptFlag="true"/>
+      </behaviors>
+   </DockBasketball>
+   <Basketball_Failure>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Basketball_Failure" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Playing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="Stand_Bark"/>
+      </behaviors>
+   </Basketball_Failure>
+   <Basketball_Success>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Basketball_Success" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Playing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="PickUpTrickBall"/>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehPlaySet behSet="HoldBallNose_ThrowInHoop"/>
+         <BFBehPlaySet behSet="DropTrickBall"/>
+      </behaviors>
+   </Basketball_Success>
+   <Basketball_Critical>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Basketball_Critical" redock="true" interpolationDistance="2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Playing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="PickUpTrickBall"/>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehPlaySet behSet="HoldBallNose_ThrowInHoop"/>
+         <BFBehPlaySet behSet="DropTrickBall"/>
+      </behaviors>
+   </Basketball_Critical>
+<!--Show Behaviors-->
+   <DockMC>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToWait" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline ignoreCollisionWithTarget="false" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockMC>
+   <ShowIdle>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitTrick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </ShowIdle>
+   <ShowIdle_Treat>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_GiveTreat" Payload="subject" GiveTo="target" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="10"/>
+      </behaviors>
+   </ShowIdle_Treat>
+   <GetTreat>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GetTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TreadWater_GetTreat" detachAction="killitem" container="foodprop"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-5" bathroom="5"/>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </GetTreat>
+   <GetTreat_Loop>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GetTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TreadWater_GetTreat" detachAction="killitem"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-5" bathroom="5"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTEmoticonInfo emoticonName="EmoteGuestEducation" emoticonEntityNode="Bip01 Head"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true"/>
+      </behaviors>
+   </GetTreat_Loop>
+   <ReactToShow1Star>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodLeftRight"/>
+      </behaviors>
+   </ReactToShow1Star>
+   <ReactToShow2Star>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodLeftRight"/>
+      </behaviors>
+   </ReactToShow2Star>
+   <ReactToShow3Star>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+      </behaviors>
+   </ReactToShow3Star>
+   <ReactToShow4Star>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+      </behaviors>
+   </ReactToShow4Star>
+   <ReactToShow5Star>
+      <subjects>
+         <SeaLionCalifornia/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+      </behaviors>
+   </ReactToShow5Star>
+<!--Staff Training Behavior Sets-->
+   <DockTrainer>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTActionInfo locID="animalactions:GoToGetTrained" useTargetName="true"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTrainer>
+   <WatchTrainer>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="WatchTrainer_Water"/>
+               <underwater behSet="WatchTrainer_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </WatchTrainer>
+   <WatchTrainer_Water>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Watching" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehAnimateRandom loopFlag="true">
+            <randomAnims>
+               <TreadWater_Idle weight="70"/>
+               <TreadWater_TrainingNodUpDown weight="30"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </WatchTrainer_Water>
+   <WatchTrainer_Underwater>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Watching" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="TreadWaterSub_Loop"/>
+      </behaviors>
+   </WatchTrainer_Underwater>
+<!--First Person Training Behavior Sets-->
+   <GetTreat_FPT>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GetTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TreadWater_GetTreat" detachAction="killitem" interruptFlag="true"/>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTEmoticonInfo emoticonName="EmoteGuestEducation" emoticonEntityNode="Bip01 Head"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </GetTreat_FPT>
+   <DockTraining>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="veryfast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTraining>
+   <DockTraining_Platform>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="veryfast"/>
+         <BFBehDockSpline locoSpeed="veryfast" targetNode="Node_Training" targetAnim="TreadWater_Idle" redock="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTraining_Platform>
+   <DockTraining_Teleport>
+      <subjects>
+         <SeaLionCalifornia_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDockNow/>
+      </behaviors>
+   </DockTraining_Teleport>
+</BehaviorSets>

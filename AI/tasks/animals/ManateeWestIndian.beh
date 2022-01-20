@@ -1,0 +1,1314 @@
+<BehaviorSets>
+<!--Wander behavior sets for randomized wandering-->
+   <WanderSurf>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="25"/>
+               <WanderSurf_Med weight="25"/>
+               <WanderSurf_Slow weight="25"/>
+               <WanderSurf_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSurf_Glide>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Glide>
+   <WanderSub>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="25"/>
+               <WanderSub_Med weight="25"/>
+               <WanderSub_Slow weight="25"/>
+               <WanderSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Slow>
+   <WanderSub_Glide>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Glide>
+   
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Unhappy>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultSwim>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="20"/>
+               <WanderSub weight="50"/>
+               <Idle weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultSwim>
+   <DefaultSwimSurface>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="2" maxPlayTime="5" avoidLand="true" locoSpeed="medium"/>
+      </behaviors>
+   </DefaultSwimSurface>
+   <DefaultSwimSub>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="2" maxPlayTime="5" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </DefaultSwimSub>
+   <DefaultLie>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultRest>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </DefaultRest>
+   <DefaultHappy>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="50"/>
+               <WanderSub weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultHappy>
+   <DefaultUnhappy>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub weight="50"/>
+               <FloatSub weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Idle_Ground"/>
+               <water behSet="Idle_Surface"/>
+               <underwater behSet="Idle_Sub"/>
+               <default behSet="Idle_Sub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle>
+   <Idle_Ground>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+            <BFBehAnimate targetAnim="OnLand_Idle" playTime="15"/>
+      </behaviors>
+   </Idle_Ground>
+   <Idle_Surface>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+            <BFBehAnimate targetAnim="TreadWater_Idle" playTime="15"/>
+      </behaviors>
+   </Idle_Surface>
+   <Idle_Sub>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+            <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="15"/>
+      </behaviors>
+   </Idle_Sub>
+   <FailureSet>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="SurfaceFailure"/>
+               <underwater behSet="SubFailure"/>
+               <default behSet="SubFailure"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <SurfaceFailure>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+            <BFBehPlaySet behSet="Breath"/>
+      </behaviors>
+   </SurfaceFailure>
+   <SubFailure>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+            <BFBehPlaySet behSet="Idle_Sub"/>
+      </behaviors>
+   </SubFailure>
+   <Think>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Swim behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <Investigate>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="3"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Dying>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="OnLand"/>
+               <water behSet="Idle"/>
+               <underwater behSet="Idle"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Dying>
+   <Die_Fight>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Chum_mm" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Beached>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Beached>   
+   <RubFloor>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_RubFloor"/>
+      </behaviors>
+   </RubFloor>  
+   <Rub>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Rub"/>
+      </behaviors>
+   </Rub>  
+   <Lie>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </Lie>  
+   <Sleep>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+      </behaviors>
+   </Sleep>
+   <Somersault>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Somersault"/>
+      </behaviors>
+   </Somersault>
+   <Roll>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Roll"/>
+      </behaviors>
+   </Roll>
+   <FloatSub>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="10"/>
+      </behaviors>
+   </FloatSub>   
+   <Rendezvous>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit/>
+      </behaviors>
+   </Rendezvous>
+   <SyncSwimLead>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </SyncSwimLead>
+   <SyncSwimFollow>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFollowEntity locoSpeed="slow" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </SyncSwimFollow>
+   <WaitHugAndRoll>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitHugAndRoll>
+   <EnterHugAndRoll>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehDockSpline subjectNode="Node_Hug" targetNode="Node_Hug" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterHugAndRoll>
+   <HugAndRollLead>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="HugAndRoll_Idle"/>
+      </behaviors>
+   </HugAndRollLead>
+   <HugAndRollFollow>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="HugAndRoll_Idle"/>
+      </behaviors>
+   </HugAndRollFollow>
+   <WaitReproduction>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </WaitReproduction>
+   <ReproductionSwimLead>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </ReproductionSwimLead>
+   <ReproductionSwimFollow>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFollowEntity locoSpeed="slow" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </ReproductionSwimFollow>
+   <Birth>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnF weight="49"/>
+               <SpawnM weight="49"/>
+               <SpawnTwins weight="2"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth>
+   <SpawnTwins>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="2">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </SpawnTwins>
+   <SpawnF>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="ManateeWestIndian_Young_F" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="ManateeWestIndian_Young_M" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM>
+   <Surface_Submerge>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="4" maxPlayTime="8" avoidLand="true" minDepth="3" maxDepth="10"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="4" maxPlayTime="8" avoidLand="true" minDepth="0" maxDepth="0"/>
+      </behaviors>
+   </Surface>
+   <DockAttackGuest>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Guest" targetNode="p_TalkOffset" targetAnim="TreadWater_Idle" locoSpeed="fast"/>
+      </behaviors>
+   </DockAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_GuestAttack" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest>
+   <EnterBuoyLure>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterBuoyLure>
+   <UseBuoyLure>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Eat"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Swallow"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Eat"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Swallow"/>
+      </behaviors>
+   </UseBuoyLure>
+   <ExitBuoyLure>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitBuoyLure>
+   <EnterArtificialReef>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterArtificialReef>
+   <UseArtificialReef>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Eat"/>
+         <BFBehAnimate targetAnim="SwimSub_Turn180"/>
+         <BFBehAnimate targetAnim="SwimSub_Eat"/>
+         <BFBehAnimate targetAnim="SwimSub_Swallow"/>
+      </behaviors>
+   </UseArtificialReef>
+   <ExitArtificialReef>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180"/>
+         <BFBehAnimate targetAnim="SwimSub_Swallow"/>
+      </behaviors>
+   </ExitArtificialReef>
+   <EnterFoodBox>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterFoodBox>
+   <UseFoodBox>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Eat"/>
+         <BFBehAnimate targetAnim="SwimSub_Turn180"/>
+         <BFBehAnimate targetAnim="SwimSub_Eat"/>
+         <BFBehAnimate targetAnim="SwimSub_Swallow"/>
+      </behaviors>
+   </UseFoodBox>
+   <ExitFoodBox>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180"/>
+         <BFBehAnimate targetAnim="SwimSub_Swallow"/>
+      </behaviors>
+   </ExitFoodBox>
+   <Poop>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop_Sick>
+   <OnLand>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Idle"/>
+      </behaviors>
+   </OnLand>
+   <Roar>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="OnLand"/>
+               <water behSet="Breath"/>
+               <underwater behSet="Somersault"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Roar> 
+   <SwipeMed>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="SwipeMed_Water"/>
+               <underwater behSet="SwipeMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </SwipeMed>
+   <SwipeMed_Water>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_TurnRight90 weight="75"/>
+               <Swim_TurnRight180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </SwipeMed_Water>
+   <SwipeMed_Underwater>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnRight90 weight="75"/>
+               <SwimSub_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </SwipeMed_Underwater> 
+   <HitMediumEqual>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <HitMed>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </HitMed>
+   <HitMed_Ground>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Idle"/>
+      </behaviors>
+   </HitMed_Ground> 
+   <HitMed_Water>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnRight90 weight="75"/>
+               <SwimSub_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Water> 
+   <HitMed_Underwater>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnRight90 weight="75"/>
+               <SwimSub_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Underwater> 
+   <HitMedDie>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie> 
+   <BiteMed>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="BiteMed_Ground"/>
+               <water behSet="BiteMed_Water"/>
+               <underwater behSet="BiteMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BiteMed>
+   <BiteMed_Ground>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Idle"/>
+      </behaviors>
+   </BiteMed_Ground> 
+   <BiteMed_Water>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_TurnRight90 weight="75"/>
+               <Swim_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </BiteMed_Water>
+   <BiteMed_Underwater>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnRight90 weight="75"/>
+               <SwimSub_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </BiteMed_Underwater> 
+   <BitMediumEqual>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <BitMed>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie> 
+   <WaitFight>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </WaitFight> 
+   <DockFight>
+      <subjects>
+         <ManateeWestIndian_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </DockFight> 
+   <Die_Ground>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Idle" />
+      </behaviors>
+   </Die_Ground> 
+   <Die_Water>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Water> 
+   <Die_Underwater>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Underwater> 
+   <DockAttacked>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <EnterBubbleEmitter>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetAnim="TreadWaterSub_Idle" locospeed="medium"/>
+      </behaviors>
+   </EnterBubbleEmitter>
+   <UseBubbleEmitter>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </UseBubbleEmitter>
+   <ExitBubbleEmitter>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Turn180"/>
+      </behaviors>
+   </ExitBubbleEmitter>   
+   <EnterKelpBed>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterKelpBed>
+   <UseKelpBed>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </UseKelpBed>
+   <ExitKelpBed>
+      <subjects>
+         <ManateeWestIndian/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180"/>
+      </behaviors>
+   </ExitKelpBed>   
+</BehaviorSets>

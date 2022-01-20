@@ -1,0 +1,42 @@
+<BFTypedBinder binderType="marine">
+   <types>
+      <entity>
+         <path>
+            <marine/>
+         </path>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="path">
+         <UIAspect>
+            <default image="entities\objects\paths\marine\path_marine_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:marine"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTPATH" data="BFString" string="marine"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Zoopedia="zoopedia:zoopedia_asphalt:entry"/>
+      <ZTTourData>
+         <theme_marine value="1" />
+      </ZTTourData>
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTPath texture="entities/objects/paths/marine/path_marine_128.DDS" curb="curb_asphalt"/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="2.5">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

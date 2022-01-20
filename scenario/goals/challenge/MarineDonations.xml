@@ -1,0 +1,20 @@
+<BFScenarioGroup name="marinedonationsrules" state="0" chain="true" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="marinedonations" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHMarineDonationsShort" overview="Challengetext:CHMarineDonations" />
+				<success locid="Challengetext:CHMarineDonationsSuccessShort" overview="Challengetext:CHMarineDonationsSuccess" />
+				<failure locid="Challengetext:CHMarineDonationsFailureShort" overview="Challengetext:CHMarineDonationsFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/marinedonations.lua" entry="evalMarineDonations" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/marinedonations.lua" entry="completeMarineDonations" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/marinedonations.lua" entry="failMarineDonations" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

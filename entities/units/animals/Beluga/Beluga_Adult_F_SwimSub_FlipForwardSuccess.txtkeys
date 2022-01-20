@@ -1,0 +1,6 @@
+<TEXTKEY>
+   <key time="0.23" text="{Bip01 Head} runspl"/>
+   <key time="1.43" text="{Bip01 Head} snd 'splash_large' "/>
+   <key time="1.43" text="{Bip01 Head} snd 'splash_large_uw' "/>   
+   <key time="1.43" text="{Bip01 Ponytail2} splash directed_large"/>
+</TEXTKEY>

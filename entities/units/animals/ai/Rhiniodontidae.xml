@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Rhiniodontidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Chondrichthyes>
+                  <Orectolobiformes>
+                     <Rhiniodontidae/>
+                  </Orectolobiformes>
+               </Chondrichthyes>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

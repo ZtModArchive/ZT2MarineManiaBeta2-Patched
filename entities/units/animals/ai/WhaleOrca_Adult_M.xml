@@ -1,0 +1,35 @@
+<BFTypedBinder binderType="WhaleOrca_Adult_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Delphinidae>
+                        <WhaleOrca>
+                           <WhaleOrca_Adult>
+                              <WhaleOrca_Adult_M/>
+                           </WhaleOrca_Adult>
+                        </WhaleOrca>
+                     </Delphinidae>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\WhaleOrca\WhaleOrca_Adult_M_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="WhaleOrca_Adult_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

@@ -1,0 +1,139 @@
+	<ZT2Strings>
+      <LOC_STRING _locID="Challengetext:CHBelugaTraining"  >The Cetacean Training Association has a scholarship for trainers just starting out. If you train a beluga on the jump trick up to 3 dots in two months, the association will award you a scholarship of $2,500.
+			<br/>
+   			Difficulty: Moderate</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHBelugaTrainingShort"  >Train a beluga up to 3 dots on the jump trick to receive a $2,500 scholarship.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHBelugaTrainingSuccessShort"  >Since you trained a beluga up to 3 dots on the jump trick, you received a $2,500 scholarship.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHBelugaTrainingSuccess"  >You and your beluga learn quickly! You trained your beluga up to 3 dots on the jump trick before the two-month deadline. The Cetacean Training Association awarded you a $2,500 scholarship for your efforts.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHBelugaTrainingFailureShort"  >You didn't train a beluga up to 3 dots on the jump trick in two months.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHBelugaTrainingFailure"  >Two months went by and you didn't train your beluga up to 3 dots on the jump trick. As a result, you are not eligible for the Cetacean Training Association's scholarship.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMantaRay"  >Worldwide Rays is a conservation group devoted to raising the public's awareness of rays and skates worldwide. If you adopt three manta rays in a month, the group will feature your zoo in an upcoming television special. The resulting publicity should attract more guests to your zoo and slightly increase your zoo fame.
+			<br/>
+   			Difficulty: Easy</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMantaRayShort"  >Adopt three manta rays in a month.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMantaRaySuccessShort"  >You adopted three manta rays in a month, which made your zoo more popular.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMantaRaySuccess"  >After adopting three manta rays in a month, Worldwide Rays filmed part of their popular manta ray special at your zoo. The publicity from the show attracted more guests and made your zoo slightly more famous.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMantaRayFailureShort"  >Since you didn't adopt three manta rays in a month, you missed an opportunity to make your zoo more popular.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMantaRayFailure"  >A month went by and you didn't adopt three manta rays. As a result, Worldwide Rays decided to film their television special at another zoo. You missed an opportunity to make your zoo more famous.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineDonations"  >Aquatic Amusements Inc. wants to sell their marine-inspired gift items at your zoo, but they need to see that you're committed to displaying marine animals first. If you raise $750 in donations for marine animals in a month, Aquatic Amusements will donate a free marine gift cart to your zoo.   
+			<br/>
+   			Difficulty: Easy</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineDonationsShort"  >Raise $750 in donations for marine animals in a month and receive a free marine gift cart.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineDonationsSuccessShort"  >Since you raised more than $750 in donations for marine animals in a month, Aquatic Amusements Inc. awarded you a free marine gift cart.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineDonationsSuccess"  >Well done! You raised more than $750 in donations for marine animals in a month. As a result, Aquatic Amusements Inc. believes their products will sell well at your zoo. They gave you a free marine gift cart. You can find it near your zoo entrance in a crate.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineDonationsFailureShort"  >Since you failed to raise $750 in donations for marine animals, you did not receive a free marine gift cart.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineDonationsFailure"  >A month went by and you didn't raise $750 in donations for marine animals. As a result, Aquatic Amusements Inc. doesn't think you're serious about displaying marine animals in your zoo. You missed an opportunity to get a free marine gift cart.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHManateeRescue"  >(Marine Animal Challenge) The gentle, slow-moving manatee often rests in shallow waters, which can cause them problems, particularly in areas where people use power boats. Every year dozens of manatees are killed or seriously injured in collisions with power boats.
+      <p/>
+      Marine biologists at Marine Oceanic University rescued a manatee injured by a power boat. The researchers would like your zoo to care for the manatee, and then release it into the wild after it fully recovers. If you release the manatee back to the wild in two months, the university will donate a pilot whale to your zoo.
+      <br/>      
+      Difficulty: Moderate</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHManateeRescueShort"  >Care for the injured manatee and release it into the wild in two months to receive a pilot whale.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHManateeRescueSuccessShort"  >Since you cared for the manatee and released it into the wild, the university donated a pilot whale to your zoo.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHManateeRescueSuccess"  >Good work! The happy, healthy manatee was returned to its home. To thank you for your efforts, Marine Oceanic University donated a pilot whale to your zoo. You can find it near your zoo entrance in a crate.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHManateeRescueFailureShort"  >Since you were unable to release the injured manatee into the wild in two months, you missed an opportunity to receive a pilot whale.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHManateeRescueFailureDeadline"  >Two months went by and your manatee hasn't recovered. As a result, Marine Oceanic University decided to move the manatee to another facility for better care. You missed an opportunity to receive a pilot whale.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHManateeRescueFailureDeath"  >When researchers from the university found out how the manatee was doing, they were shocked to learn it wasn't in your zoo! The researchers are very disappointed the manatee disappeared. You missed an opportunity to receive a free pilot whale.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineConservationConsortium"  >(Marine Animal Challenge) The Marine Conservation Consortium is dedicated to increasing marine animal populations worldwide. If you breed three different species of marine animals in two months, they'll pay you a breeding fee as a reward. The amount you receive depends on the species you breed. 
+      <br/>      
+      Difficulty: Moderate</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineConservationConsortiumShort"  >Breed three different marine animal species in a two-month period.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineConservationConsortiumSuccessShort"  >Since you successfully bred three different marine animal species, you received a breeding fee as a reward.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineConservationConsortiumSuccess"  >Good work! You bred three different marine animal species. To reward you for helping repopulate the world's oceans, the Marine Conservation Consortium is giving your zoo a grant!</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineConservationConsortiumFailureShort"  >Since you were unable to breed three different species of marine animals in two months, you did not qualify for the breeding fee program.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineConservationConsortiumFailure"  >Since you weren't able to breed three different marine animal species by the two-month deadline, you are not eligible to receive a breeding fee from the Marine Conservation Consortium. Better luck next time!</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineConservationConsortiumOneBred"  >Well done! You bred one species of marine animal. Breed two more different species to receive a breeding fee from the Marine Conservation Consortium.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineConservationConsortiumTwoBred"  >Good work! You bred a second species of marine animal. Breed one more species to receive a breeding fee from the Marine Conservation Consortium.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisit"  >(Marine Animal Challenge) Internationally famous wildlife photographer Eleanor Avus is coming to your zoo! She's doing a book of photos of coastal marine animals and wants to view certain coastal species at your zoo before heading into the wild.
+      <p/>Eleanor Avus expressed an interest in seeing three particular coastal species at your zoo--the manatee, the sea otter, and the rockhopper penguin. If she sees all three species, then the publicity from her book will make your zoo slightly more famous and attract more guests!
+      <p/>
+      (Hint: Keep the wildlife photographer happy during her visit. If Eleanor Avus becomes unhappy, she may leave your zoo before viewing all three species.)
+      <br/>
+      Difficulty: Moderate</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitShort"  >If wildlife photographer Eleanor Avus sees a manatee, a sea otter, and a rockhopper penguin during her visit to your zoo, additional guests will visit your zoo, which may make it slightly more famous.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitSuccessShort"  >Since wildlife photographer Eleanor Avus saw three specific coastal species during her visit, your zoo is more famous and has more guests.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitSuccess"  >Wildlife photographer Eleanor Avus saw the three coastal species she wanted to see! Her favorable coverage of your zoo attracted more guests and may make your zoo more famous.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitFailureShort"  >Since wildlife photographer Eleanor Avus left your zoo without seeing the three different coastal species, you missed an opportunity to make your zoo more popular.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitFailure"  >Wildlife photographer Eleanor Avus is disappointed in your zoo because she didn't see the three species she was interested in during her visit. As a result, she doesn't plan to mention your zoo in her new book. You missed this opportunity to make your zoo more popular.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitArrival"  >Wildlife photographer Eleanor Avus has arrived at your zoo!</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitSeeManatee"  >Have wildlife photographer Eleanor Avus view a manatee.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitSeeOtter"  >Have wildlife photographer Eleanor Avus view a sea otter.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitSeeRockhopper"  >Have wildlife photographer Eleanor Avus view a rockhopper penguin.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitSeeManateeDone"  >Wildlife photographer Eleanor Avus viewed a manatee.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitSeeOtterDone"  >Wildlife photographer Eleanor Avus viewed a sea otter.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitSeeRockhopperDone"  >Wildlife photographer Eleanor Avus viewed a rockhopper penguin.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitPhotographerGone"  >Wildlife photographer Eleanor Avus has left the zoo!</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPhotographerVisitPhotographerName"  >Eleanor Avus</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTraining"  >(Marine Show Challenge) The Cetacean Training Association announced its annual competition to promote excellence in dolphin training. In this year's competition, there are two trick categories -- Water Walk and Front Flip.
+      <p/>If you train a bottlenose dolphin up to 3 dots on the Water Walk trick in two months, the association will pay for TV commercials for your zoo, which will attract guests and may make your zoo more famous. 
+      <p/>
+      If you train a bottlenose dolphin up to 3 dots on the Front Flip trick in two months, the association will pay a cash award of $20,000 to your zoo.
+      <p/>
+      If you accept this challenge, you will be asked to choose which trick category you want to compete in. You can only compete in one of the two trick categories. 
+      <br/>
+      Difficulty: Hard</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingChoice"  >If you train a bottlenose dolphin up to 3 dots on the Water Walk trick in two months, your zoo attracts more guests and may become more famous. 
+      <p/>
+      If you train a bottlenose dolphin to 3 dots on the Front Flip trick in two months, your zoo gets a cash award of $20,000.
+      <p/>
+      Which trick category do you want to compete in?</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:TrickOneName"  >Water Walk</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:TrickTwoName"  >Front Flip</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingShort"  >Compete in the Cetacean Training Association's competition.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingTrickOneShort"  >Train a bottlenose dolphin up to 3 dots on the Water Walk trick in two months to attract more guests and possibly make your zoo more famous.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingTrickTwoShort"  >Train a bottlenose dolphin up to 3 dots on the Front Flip trick in two months to receive a cash award of $20,000.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingSuccessTrickOneShort"  >Since you trained a bottlenose dolphin up to 3 dots on the Water Walk trick, you made your zoo more famous.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingSuccessTrickOne"  >Congratulations! You trained a dolphin up to 3 dots on the Water Walk trick and won the competition! As a reward the Cetacean Training Association paid for a series of TV commercials promoting your zoo. The resulting publicity attracts extra guests and may make your zoo more famous.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingFailureTrickOneShort"  >You weren't able to train a bottlenose dolphin up to 3 dots on the Water Walk trick in two months.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingFailureTrickOne"  >The training competition is over, and you weren't able to train a bottlenose dolphin up to 3 dots on the Water Walk trick in two months. As a result, you missed an opportunity to gain free publicity for your zoo.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingSuccessTrickTwoShort"  >You trained a bottlenose dolphin up to 3 dots on the Front Flip trick in two months and won a $20,000 prize.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingSuccessTrickTwo"  >You've won the training competition by training a dolphin up to 3 dots on the Front Flip trick in two months! As a result, the Cetacean Training Association awarded you a $20,000 prize. Well done!</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingFailureTrickTwoShort"  >You weren't able to train a bottlenose dolphin up to 3 dots on the Front Flip trick in two months.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHDolphinTrainingFailureTrickTwo"  >The training competition is over, and you weren't able to train a bottlenose dolphin up to 3 dots on the Front Flip trick in two months. As a result, you missed an opportunity to win a $20,000 prize.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHAnimalStar"  >Delia, the world-famous performing dolphin, is touring the country, and she may visit your zoo. If you pay a $3,000 booking fee Delia the dolphin will stay at your zoo for two months. Having a famous dolphin like Delia in your show could do wonders for its star rating and donations. Star performers require lots of attention. If Delia's happiness need goes critical at any time during her visit, she'll leave your zoo immediately, and the resulting bad publicity will make your zoo slightly less popular. 
+      <br/>
+      Difficulty: Moderate</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHAnimalStarShort"  >Keep Delia, the performing dolphin, in your zoo for two months without her happiness need going critical.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHAnimalStarSuccessShort"  >You kept Delia, the performing dolphin, in your zoo for two months without her happiness need going critical.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHAnimalStarSuccess"  >Delia's visit to your zoo was a smashing success! Your guests loved her performances, and you managed to keep her happy throughout her stay. Though Delia's already off to visit the next zoo on her tour, you and your guests will always remember her. In addition, the good publicity from her visit attracted even more guests to your zoo!</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHAnimalStarFailureShort"  >You failed to keep Delia happy during her stay, and she left your zoo. The resulting bad publicity made your zoo slightly less popular.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHAnimalStarFailure"  >Delia is unhappy! Her trainers removed Delia from your zoo to protect the star animal. Unfortunately, the bad publicity surrounding her sudden departure made your zoo slightly less popular. Fewer guests visit your zoo in the next month.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHAnimalStarAnimalName"  >Delia</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPowerSurge"  >A sudden power surge hit your zoo! For the most part, it only made the lights flicker a little. Unfortunately, though, it did blow out the delicate electronics in your tank filters, and now they're all broken!
+      <p/>The good news is that your tank filters are insured. The bad news is that it takes a while for the insurance company to process your claim. You can choose to wait until your insurance company delivers new filters for free, or you can buy new filters immediately.
+      <p/>If you choose the insurance claim, you must wait two months for the insurance company to process it and deliver your new filters at no charge. In addition, the insurance company will pay you a $5,000 settlement to cover unexpected expenses. While you're awaiting the claim, you cannot purchase new filters. Instead, you and your zookeepers must clean the tanks by hand!
+      <p/>If you choose to buy new filters, you can purchase them immediately, but the insurance company will not cover your costs.
+      <br/>
+      Difficulty: Moderate</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPowerSurgeShort"  >Clean the zoo's tanks by hand for two months while waiting for the insurance company to provide you with new filters.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPowerSurgeSuccessShort"  >You cleaned the zoo's tanks by hand for two months while waiting for the insurance company to provide you with new filters.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPowerSurgeSuccess"  >At last, the insurance company processed your claim! New filters were delivered to your zoo, and you can find them crated near the entrance. In addition, the insurance company paid you a $5,000 settlement to cover expenses related to the unexpected power surge.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPowerSurgeBuyFilters"  >Buy New Filters</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHPowerSurgeWait"  >Wait for Insurance</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHHireEducators"  >Marine Oceanic University is conducting a study on ways to educate the public on marine ecosystems. If you choose to participate by accepting this challenge, you must pay a $500 fee and hire two additional educators for a minimum of two months. 
+      <p/>If you fire one or both of educators during the two-month study period, you fail the challenge. However, if you can retain them for two months, the university donates a baby whale shark to your zoo! 
+      <p/>Tip: Don't forget to buy podiums for your new educators and place them near your most popular exhibits. You'll find that educators greatly increase the money you earn from educational donations!
+      <br/>
+      Difficulty: Moderate</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHHireEducatorsAccepted"  >The university is delighted you decided to participate in their study! The $500 fee was deducted from your account, and the two new educators arrived at your zoo. You can find them near your zoo gate. Remember, if you fire any of the new educators during the next two months, you fail the scenario and miss out on an opportunity to receive a baby whale shark from the university.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHHireEducatorsShort"  >Keep two additional educators on your payroll for two months to receive a baby whale shark as a reward.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHHireEducatorsSuccessShort"  >You kept two additional educators on your payroll for two months and received a free whale shark as a reward.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHHireEducatorsSuccess"  >Two months went by and Marine Oceanic University completed their study. The university can use the information from the educators to develop new ways to teach the public about marine ecosystems. To thank you for your participation, the university donated a baby whale shark to your zoo. You'll find it crated near the entrance to your zoo.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHHireEducatorsFailureShort"  >You failed to keep the two additional educators on your payroll for two months.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHHireEducatorsFailure"  >By firing an educator, you broke your deal with Marine Oceanic University, which is very disappointed that you backed out of their study. The resulting bad publicity made your zoo slightly less popular with guests. You missed an opportunity to receive a free baby whale shark.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHStressManagement"  >Stress Management Associates is a consulting firm that specializes in stress level reduction. The company just started working with zoos and would like your zoo to help the firm demonstrate stress management techniques.
+      <p/>According to Stress Management Associates, fatigue is the number one cause of guest stress. A well-rested zoo guest is a happy guest! If you can run your zoo for two months without a total of five different guests reaching a critical rest need, Stress Management Associates will donate $5,000 to your zoo as a thanks for demonstrating the firm's stress reduction techniques. As a bonus, your guests will be happier. (Hint: Make sure plenty of benches, tables, and gazebos are distributed throughout your zoo.)
+      <br/>
+      Difficulty: Varies</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHStressManagementShort"  >Run your zoo for two months without a total of five different guests reaching a critical rest need to receive a $5,000 donation and, as an added bonus, make your guests happier.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHStressManagementSuccessShort"  >Since you went two months without five guests reaching a critical rest need, you received a $5,000 donation for your zoo and made your guests happier.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHStressManagementSuccess"  >Well done! You went two months without five different guests reaching a critical rest need. The guests in your zoo are well-rested and happier! Stress Management Associates donated $5,000 to your zoo as a thank you for demonstrating the firm's stress management techniques.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHStressManagementFailureShort"  >Since five or more guests reached a critical rest need, you missed your chance to receive a grant from Stress Management Associates.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHStressManagementFailure"  >Unfortunately, five or more guests reached a critical rest need. As a result, you missed an opportunity to receive a $5,000 donation from Stress Management Associates and chance to make your guests happier. Consider building more benches, tables, and gazebos in the future!</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHStressManagementOneCritical"  >One guest has reached a critical rest need.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHStressManagementTwoCritical"  >Two guests have reached a critical rest need.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHStressManagementThreeCritical"  >Three guests have reached a critical rest need.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHStressManagementFourCritical"  >Four guests have reached a critical rest need.</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineShowChallengePromo"  >Complete two Marine Show challenges to unlock the big-screen TV!</LOC_STRING>
+      <LOC_STRING _locID="Challengetext:CHMarineAnimalChallengePromo"  >Complete two Marine Animal challenges to unlock the tuna live food enrichment item!</LOC_STRING>
+</ZT2Strings>

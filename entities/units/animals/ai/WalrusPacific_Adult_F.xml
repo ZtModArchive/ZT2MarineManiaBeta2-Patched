@@ -1,0 +1,48 @@
+<BFTypedBinder binderType="WalrusPacific_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Carnivora>
+                     <Odobenidae>
+                        <WalrusPacific>
+                           <WalrusPacific_Adult>
+                              <WalrusPacific_Adult_F/>
+                           </WalrusPacific_Adult>
+                        </WalrusPacific>
+                     </Odobenidae>
+                  </Carnivora>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)"/>
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <ZTAITrickComponent/>
+         </instance>
+         <shared>
+            <ZTAITrickComponentData>
+               <Knowledge>
+                  <WalrusPacificJump minScore="10" maxScore="10"/>
+                  <WalrusPacificSeat minScore="0" maxScore="0"/>
+                  <WalrusPacificBellow minScore="0" maxScore="0"/>
+               </Knowledge>
+            </ZTAITrickComponentData>
+         </shared>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

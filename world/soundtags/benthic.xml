@@ -1,0 +1,29 @@
+<soundtags>
+   <BFSoundtag>
+      <BF2DSndFactory name="Drone">
+         <snd name="sound/B_BN_Drone.wav" randpan="1" randvolume="1" minpitch=".9" maxpitch="1" minvolume=".10" maxvolume=".6"/>
+      </BF2DSndFactory>
+      <BF2DSndFactory name="Drone2">
+         <snd name="sound/B_BN_Drone2.wav" randpan="1" randvolume="1" minpitch=".9" maxpitch="1" minvolume=".10" maxvolume=".6"/>
+      </BF2DSndFactory> 
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF2DSndFactory name="QuickDrone">
+         <snd name="sound/B_BN_QuickDrone.wav" randvolume="1" minvolume=".10" maxvolume=".45" minpitch=".8" maxpitch="1"/>
+      </BF2DSndFactory>
+      <BF2DSndFactory name="QuickDrone2">
+         <snd name="sound/B_BN_QuickDrone2.wav" randvolume="1" minvolume=".10" maxvolume=".45" minpitch=".8" maxpitch="1"/>
+      </BF2DSndFactory>
+      <BF2DSndFactory name="QuickDrone3">
+         <snd name="sound/B_BN_QuickDrone3.wav" randvolume="1" minvolume=".10" maxvolume=".45" minpitch=".8" maxpitch="1"/>
+      </BF2DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BFAmbient2DSndFactory name="b_animals01">
+         <snds>
+            <snd name="QuickDrone" mindelay="20" maxdelay="100"/>         
+            <snd name="Drone" mindelay="30" maxdelay="100"/>
+         </snds>
+      </BFAmbient2DSndFactory>
+   </BFSoundtag>
+</soundtags>

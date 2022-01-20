@@ -1,0 +1,194 @@
+<BFTypedBinder binderType="Koi">
+   <types>
+      <entity>
+         <scenery>
+            <live_scenery>
+               <live_scenery_fish>
+                  <Koi/>
+               </live_scenery_fish>
+            </live_scenery>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared s_Product="Marine" b_NoPerceiveOverride="true" b_SceneryFish="true" b_Researchable="true" f_researchUnlockTime="80" f_researchCost="700" f_FameReq="50" p_PreyOffset="0 .5 0" s_uisort="er" s_Species="Koi" s_Zoopedia="zoopedia:zoopedia_koi:entry" b_SmallPrey="true" f_researchUnlockTime="120" f_researchCost="1000" f_FameReq="80">
+         <BFAINeedAdjusts lifespan="0.25" />
+      </BFAIEntityDataShared>
+      <ZTPlacementData icon3Dscale="3.0" iconAnim="Swim_Ahead" randomRotate="false" displayFootprint="false" waterPlacement="true" tankPlacement="true" landPlacement="false" />
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\Koi\Koi_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Koi"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Koi"/>
+         </on>
+      </UIToggleButton>
+		<UIToggleButton template="researchentity">
+			<UIAspect>
+				<default image="entities\units\animals\Koi\Koi_icon.dds" />
+			</UIAspect>
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Koi" />
+			</on>
+		</UIToggleButton>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities\units\animals\Koi\Koi_Adult_F.bfm" switch="0 5000 5001" scale="1.8"/>
+               <BFShadowLODComponent numLevels="1" switchingDists="60.0"/>
+               <BF2LegsGroundFitComponent heightOffset="0" fitRadius=".15" frontBuoyancyNode="Node_Buoy" allowRollOnWater="true"/>
+               <BFSwimComponent waterInDistance="0.50" waterOutDistance="0.1"/>
+               <BFRotYawMovingComponent/>
+               <BFCollisionComponent grid="Bip01"/>
+               <BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+			<shared>
+				<BFSharedRandomTextureInfo>
+					<replacementSet>
+						<group weight="45">
+							<item material="Koi_Adult_F" image="entities\units\animals\Koi\Koi_Adult_F.dds" layer="base" />
+						</group>
+						<group weight="45">
+							<item material="Koi_Adult_F" image="entities\units\animals\Koi\Koi_Adult_F_1.dds" layer="base" />
+						</group>
+						<group weight="10">
+							<item material="Koi_Adult_F" image="entities\units\animals\Koi\Koi_Adult_F_2.dds" layer="base" />
+						</group>
+					</replacementSet>
+				</BFSharedRandomTextureInfo>
+			</shared>         
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\blob_animal_final.tga" baseNode="Bip01_Head" width="0.5" minLength="0.5" maxLength="1.0" minOffset="0" maxOffset="0.25"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr behaviorVersion="1">
+               <subBehaviors>
+                  <BFBehAnimate interruptible="true" targetAnim="Swim_Ahead" interruptFlag="true" loopFlag="true"/>
+               </subBehaviors>
+            </BFBehaviorMgr>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFLocomotionMgr/>
+         </instance>
+         <binder>
+            <BFNamedBinder binderName="water" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="Swim"/>
+                     <slow name="Swim">
+                        <anim name="Swim_Ahead" yaw="0.5" roll="0.25"/>
+                     </slow>
+                     <medium name="Swim" animSpeed="1.5">
+                        <anim name="Swim_Ahead" yaw="1.0" roll="0.5"/>
+                     </medium>
+                     <fast name="Swim" animSpeed="2.0">
+                        <anim name="Swim_Ahead" yaw="1.0" roll="0.5"/>
+                     </fast>
+                     <glide name="SwimGlide" animSpeed="1.5" flapAnim="Swim_2SwimGlide" minFlapPeriod="4" maxFlapPeriod="6">
+                        <anim name="SwimGlide_Ahead" yaw="0.5" roll="0.25" acceleration="-0.1" minSpeed="0.5" maxSpeed="1.5"/>
+                        <anim name="Swim_2SwimGlide" yaw="0.5" roll="0.25" acceleration="-0.1" minSpeed="0.5" maxSpeed="1.5"/>
+                     </glide>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+            <BFNamedBinder binderName="underwater" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="Swim"/>
+                     <slow name="Swim">
+                        <anim name="Swim_Ahead" yaw="0.5" pitch="0.5"/>
+                     </slow>
+                     <medium name="Swim" animSpeed="1.5">
+                        <anim name="Swim_Ahead" yaw="1.0" pitch="0.5"/>
+                     </medium>
+                     <fast name="Swim" animSpeed="2.0">
+                        <anim name="Swim_Ahead" yaw="1.0" pitch="0.5"/>
+                     </fast>
+                     <glide name="SwimGlide" animSpeed="1.5" flapAnim="Swim_2SwimGlide" minFlapPeriod="4" maxFlapPeriod="6">
+                        <anim name="SwimGlide_Ahead" yaw="0.5" pitch="0.5" acceleration="-0.1" minSpeed="0.5" maxSpeed="1.5"/>
+                        <anim name="Swim_2SwimGlide" yaw="0.5" pitch="0.5"/>
+                     </glide>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+            <BFNamedBinder binderName="ground" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="Swim"/>
+                     <slow name="Swim">
+                        <anim name="Swim_Ahead" yaw="0.5" pitch="0.5"/>
+                     </slow>
+                     <medium name="Swim" animSpeed="1.5">
+                        <anim name="Swim_Ahead" yaw="1.0" pitch="0.5"/>
+                     </medium>
+                     <fast name="Swim" animSpeed="2.0">
+                        <anim name="Swim_Ahead" yaw="1.0" pitch="0.5"/>
+                     </fast>
+                     <glide name="SwimGlide" animSpeed="1.5" flapAnim="Swim_2SwimGlide" minFlapPeriod="4" maxFlapPeriod="6">
+                        <anim name="SwimGlide_Ahead" yaw="0.5" pitch="0.5" acceleration="-0.1" minSpeed="0.5" maxSpeed="1.5"/>
+                        <anim name="Swim_2SwimGlide" yaw="0.5" pitch="0.5"/>
+                     </glide>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+         </binder>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAICognitiveMgr>
+               <Sensors>
+                  <ZTAISensor/>
+                  <BFAISensorSelf/>
+               </Sensors>
+               <StateThinkers>
+                  <ZTAIStateThinker>
+                     <BFAIStateVar Name="lifespan" Value="" ValueMin="0" ValueMax="0" CessationThreshold="0" TriggerThreshold="90" CriticalThreshold="90" Advanced="true"/>
+                  </ZTAIStateThinker>
+               </StateThinkers>
+               <TaskThinkers>
+                  <ZTAITaskThinker/>
+               </TaskThinkers>
+            </BFAICognitiveMgr>
+         </instance>
+         <shared>
+            <BFAICogShared>
+               <BFAINoPerceive>
+                  <Guest/>
+               </BFAINoPerceive>
+            </BFAICogShared>
+         </shared>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester radius=".25" motionClass="swimmer" waterScore="0" landScore="100" maxSlope=".75"/>
+         </instance>
+      </BFBinder>
+      		<BFBinder>
+					<instance>
+						<ZTEconomyComponent cost="600">
+							<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+							<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+						</ZTEconomyComponent>
+					</instance>
+		</BFBinder>
+   </binder>
+</BFTypedBinder>

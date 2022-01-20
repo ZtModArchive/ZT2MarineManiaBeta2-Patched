@@ -1,0 +1,595 @@
+<soundtags>        
+   
+   <!--adult sounds-->
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_AngryBark">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_AngryBark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>       
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_BellowFailure">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_BellowFailure.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_BellowSuccess">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_BellowSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_BellowSuperSuccess">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_BellowSuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Attacked">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Bark">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Bark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="WalrusPacific_Adult_Bark1">
+                     <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_HappyBark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Bathe">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Bathe.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_BiteEat">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_BiteEat.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_ChewGulp">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_ChewGulp.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Clap">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Clap.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Dig">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Dig.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Drink">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Drink.wav" volume=".7" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>        
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_EatLand_BiteA">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_EatLand_BiteB.wav" volume=".8" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_EatLand_BiteB">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_EatLand_BiteB.wav" volume=".8" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>       
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Forage">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Forage.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_GroomSelf">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_GroomSelf.wav" volume="1" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>                    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Sleep">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Sleep.wav" volume=".7" mindist="5" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Sneeze">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Sneeze.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Sniff">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Stand_SniffOther.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_SwipeLeft">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_SwipeRight">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_TreadWater_Attacked">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_TreadWater_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_TreadWater_SwipeNose">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_TreadWater_SwipeNose.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_TreadWater_SwipeTail">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_TreadWater_SwipeTail.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_TreadWaterSub_Attacked">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_TreadWaterSub_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Yawn">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Yawn.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_M_ChestSlam">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_M_ChestSlam.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_M_KnockedBack">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_M_KnockedBack.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>         
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_M_TreadWater_GuestAttack">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_M_TreadWater_GuestAttack.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>       
+     
+   <!--young sounds-->
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_AngryBark">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_AngryBark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Attacked">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+<BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_BellowFailure">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_BellowFailure.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_BellowSuccess">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_BellowSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_BellowSuperSuccess">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_BellowSuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>         
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Bark">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Bark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="WalrusPacific_Young_Bark1">
+                     <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_HappyBark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Bathe">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Bathe.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_BiteEat">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_BiteEat.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_ChewGulp">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_ChewGulp.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Clap">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Clap.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Dig">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Dig.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Drink">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Drink.wav" volume=".7" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_EatLand_BiteA">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_EatLand_BiteB.wav" volume=".8" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_EatLand_BiteB">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_EatLand_BiteB.wav" volume=".8" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>       
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Forage">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Forage.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_GroomSelf">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_GroomSelf.wav" volume="1" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>                    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Sleep">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Sleep.wav" volume=".5" mindist="5" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Sneeze">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Sneeze.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Sniff">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Stand_SniffOther.wav" volume=".7" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_SwipeLeft">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_SwipeRight">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_TreadWater_Attacked">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_TreadWater_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_TreadWater_SwipeNose">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_TreadWater_SwipeNose.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_TreadWater_SwipeTail">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_TreadWater_SwipeTail.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_TreadWaterSub_Attacked">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_TreadWaterSub_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Yawn">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Yawn.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_M_ChestSlam">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_M_ChestSlam.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_M_KnockedBack">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_M_KnockedBack.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>         
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_M_TreadWater_GuestAttack">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_M_TreadWater_GuestAttack.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>     
+   
+   <!--UNDERWATER-->   
+<!--adult sounds-->
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_AngryBark_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_AngryBark.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Attacked_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Attacked.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_BellowFailure_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_BellowFailure.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_BellowSuccess_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_BellowSuccess.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_BellowSuperSuccess_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_BellowSuperSuccess.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>         
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Bark_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Bark.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="WalrusPacific_Adult_Bark1_uw">
+                     <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_HappyBark.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Bathe_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Bathe.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_BiteEat_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_BiteEat.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_ChewGulp_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_ChewGulp.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Clap_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Clap.wav" volume=".6" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Dig_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Dig.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Drink_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Drink.wav" volume=".7" mindist="4" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_EatLand_BiteB_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_EatLand_BiteB.wav" volume=".8" mindist="4" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>       
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Forage_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Forage.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_GroomSelf_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_GroomSelf.wav" volume="1" mindist="3" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>                    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Sleep_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Sleep.wav" volume=".7" mindist="3" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Sneeze_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Sneeze.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Sniff_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Stand_SniffOther.wav" volume=".7" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_SwipeLeft_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_SwipeRight_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_TreadWater_Attacked_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_TreadWater_Attacked.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_TreadWater_SwipeNose_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_TreadWater_SwipeNose.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_TreadWater_SwipeTail_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_TreadWater_SwipeTail.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_TreadWaterSub_Attacked_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_TreadWaterSub_Attacked.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_Yawn_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Yawn.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_M_ChestSlam_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_M_ChestSlam.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_M_KnockedBack_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_M_KnockedBack.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>         
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Adult_M_TreadWater_GuestAttack_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_M_TreadWater_GuestAttack.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>       
+     
+   <!--young sounds-->
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_AngryBark_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_AngryBark.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Attacked_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Attacked.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_BellowFailure_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_BellowFailure.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_BellowSuccess_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_BellowSuccess.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_BellowSuperSuccess_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_BellowSuperSuccess.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>               
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Bark_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Bark.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="WalrusPacific_Young_Bark1_uw">
+                     <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_HappyBark.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Bathe_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Bathe.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_BiteEat_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_BiteEat.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_ChewGulp_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_ChewGulp.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Clap_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Clap.wav" volume=".6" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Dig_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Dig.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Drink_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Drink.wav" volume=".7" mindist="4" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_EatLand_BiteB_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_EatLand_BiteB.wav" volume=".8" mindist="4" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>       
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Forage_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Forage.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_GroomSelf_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_GroomSelf.wav" volume="1" mindist="3" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>                    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Sleep_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Sleep.wav" volume=".5" mindist="3" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Sneeze_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Sneeze.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Sniff_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Adult_F_Stand_SniffOther.wav" volume=".7" mindist="3" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_SwipeLeft_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_SwipeRight_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_TreadWater_Attacked_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_TreadWater_Attacked.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_TreadWater_SwipeNose_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_TreadWater_SwipeNose.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_TreadWater_SwipeTail_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_TreadWater_SwipeTail.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_TreadWaterSub_Attacked_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_TreadWaterSub_Attacked.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_Yawn_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_F_Yawn.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_M_ChestSlam_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_M_ChestSlam.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_M_KnockedBack_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_M_KnockedBack.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>         
+   <BFSoundtag>
+         <BF3DSndFactory name="WalrusPacific_Young_M_TreadWater_GuestAttack_uw">
+            <snd name="entities/units/animals/WalrusPacific/sound/WalrusPacific_Young_M_TreadWater_GuestAttack.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>     
+      
+   
+   </soundtags>

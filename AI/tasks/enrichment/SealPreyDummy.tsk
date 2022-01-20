@@ -1,0 +1,206 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="PlayBasic" reserveTag="Play" UniqueID="SealPreyDummy:PlayBasic">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_SealPreyDummyUser/>
+            <b_Basic/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <SealPreyDummy/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap stimulation="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PlayMedium" reserveTag="Play" UniqueID="SealPreyDummy:PlayMedium">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_SealPreyDummyUser/>
+            <b_Medium/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <SealPreyDummy/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap stimulation="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PlayAdvanced" reserveTag="Play" UniqueID="SealPreyDummy:PlayAdvanced">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_SealPreyDummyUser/>
+            <b_Advanced/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <SealPreyDummy/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="30">
+         <BFAIAttributeFloatMap stimulation="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PlayElite" reserveTag="Play" UniqueID="SealPreyDummy:PlayElite">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_SealPreyDummyUser/>
+            <b_Elite/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <SealPreyDummy/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="30">
+         <BFAIAttributeFloatMap stimulation="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

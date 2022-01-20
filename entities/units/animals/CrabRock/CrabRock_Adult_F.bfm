@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\animals\CrabRock\CrabRock_Adult_F.nif">
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_Stand_2WalkLeft.bf" animName="Stand_2WalkLeft" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_Stand_2WalkRight.bf" animName="Stand_2WalkRight" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_Stand_Idle.bf" animName="Stand_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_WalkLeft_2Stand.bf" animName="WalkLeft_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_WalkLeft_2WalkRight.bf" animName="WalkLeft_2WalkRight" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_WalkLeft_Ahead.bf" animName="WalkLeft_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_WalkLeft_TurnBackwardB.bf" animName="WalkLeft_TurnBackwardB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_WalkLeft_TurnForwardA.bf" animName="WalkLeft_TurnForwardA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_WalkRight_2Stand.bf" animName="WalkRight_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_WalkRight_2WalkLeft.bf" animName="WalkRight_2WalkLeft" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_WalkRight_Ahead.bf" animName="WalkRight_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_WalkRight_TurnBackwardB.bf" animName="WalkRight_TurnBackwardB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\CrabRock\CrabRock_Adult_F_WalkRight_TurnForwardA.bf" animName="WalkRight_TurnForwardA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="CrabRock_Adult_F" version="1">
+    <node name="Stand">
+      <table>
+        <Stand_Idle />
+      </table>
+      <edge name="WalkLeft">
+        <table>
+          <Stand_2WalkLeft />
+        </table>
+      </edge>
+      <edge name="WalkRight">
+        <table>
+          <Stand_2WalkRight />
+        </table>
+      </edge>
+    </node>
+    <node name="WalkLeft">
+      <table>
+        <WalkLeft_Ahead />
+        <WalkLeft_TurnBackwardB />
+        <WalkLeft_TurnForwardA />
+      </table>
+      <edge name="Stand">
+        <table>
+          <WalkLeft_2Stand />
+        </table>
+      </edge>
+      <edge name="WalkRight">
+        <table>
+          <WalkLeft_2WalkRight />
+        </table>
+      </edge>
+    </node>
+    <node name="WalkRight">
+      <table>
+        <WalkRight_Ahead />
+        <WalkRight_TurnBackwardB />
+        <WalkRight_TurnForwardA />
+      </table>
+      <edge name="Stand">
+        <table>
+          <WalkRight_2Stand />
+        </table>
+      </edge>
+      <edge name="WalkLeft">
+        <table>
+          <WalkRight_2WalkLeft />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

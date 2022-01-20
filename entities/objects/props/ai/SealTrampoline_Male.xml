@@ -1,0 +1,118 @@
+<BFTypedBinder binderType="SealTrampoline_Male">
+   <types>
+      <entity>
+         <prop>
+            <SealTrampoline_Male/>
+         </prop>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTDevComponent/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\buildings\SealTrampoline\SealTrampoline_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:SealTrampoline_Male"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SealTrampoline_Male"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Zoopedia="zoopedia:zoopedia_trampoline:entry" s_Product="Marine"/>
+      <ZTPlacementData minimumDepth="2" icon3Doffset="0 0 0.918257" icon3Dscale="0.11" randomRotate="false" gridSnap="true" terrainFlatten="false" autoFootprint="false">
+         <cfootprint width="3" height="3"/>
+         <dfootprint width="3" height="3"/>
+      </ZTPlacementData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/objects/props/SealTrampoline/SealTrampoline.bfm" scale="1.2" switch="0 30 60" />
+               <BFFakePhysicsComponent idleAnim="Jump_Idle" moveAnim="Jump_Used" escapeAnim="Stand_Idle" slideRate="2.0" maxEscapeTries="5"/>					
+               <BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0"/>
+               <BFCollisionComponent grid="Bip01" />
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars>
+               <virtualNodes>
+                  <Node_Training x="-2" y="2" yaw="-90"/>
+                  <Node_Trampoline_Failure y="-4" yaw="180"/>
+                  <Node_Trampoline_Success y="-4" yaw="180"/>
+                  <Node_Trampoline_Critical y="-4" yaw="180"/>
+               </virtualNodes>
+            </BFSharedPhysVars>
+         </shared>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Moving="false"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr behaviorVersion="1">
+               <subBehaviors>
+                  <BFBehAnimate targetAnim="Jump_Idle" loopFlag="true"/>
+               </subBehaviors>
+            </BFBehaviorMgr>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="Training" repopulateMethod="byName">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTraining" targetNode="Node_Training" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Training_Teleport" repopulateMethod="byName">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTraining_Teleport" targetNode="Node_Training" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Trampoline_Failure">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTrampoline" useBehSet="Trampoline_Failure" targetNode="Node_Trampoline_Failure" exclusiveID="Trampoline1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Trampoline_Success">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTrampoline" useBehSet="Trampoline_Success" targetNode="Node_Trampoline_Success" exclusiveID="Trampoline1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Trampoline_Critical">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTrampoline" useBehSet="Trampoline_Critical" targetNode="Node_Trampoline_Critical" exclusiveID="Trampoline1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="400">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

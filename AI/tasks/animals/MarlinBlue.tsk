@@ -1,0 +1,765 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Idle" UniqueID="MarlinBlue:Idle">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="0.002"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Submerge" TaskDelayMin="45" TaskDelayMax="90" UniqueID="MarlinBlue:Submerge">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers_AND isSwimming="true" isSwimmingOnSurface="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Submerge"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-5" stimulation="-2" rest="5"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderWaterSub" UniqueID="MarlinBlue:WanderWaterSub">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="4"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_1"/>
+         <BFBehPlaySet behSet="WanderSub"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-2" stimulation="-2" rest="10" hygiene="-2"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderWaterSub_Rest" UniqueID="MarlinBlue:WanderWaterSub_Rest">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <BFBehPlaySet behSet="WanderRest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-60" exercise="15" stimulation="15"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderWaterSub_Stimulation" UniqueID="MarlinBlue:WanderWaterSub_Stimulation">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_1"/>
+         <BFBehPlaySet behSet="WanderSub_Med"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="20" exercise="-10" stimulation="-30"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderWaterSub_Exercise" UniqueID="MarlinBlue:WanderWaterSub_Exercise">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <BFBehPlaySet behSet="WanderSub_Fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="20" exercise="-30" stimulation="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ShakeHygiene" UniqueID="MarlinBlue:ShakeHygiene">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hygiene="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Shaking"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalShakeGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="SlashFrenzy"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="30" exercise="-15" hygiene="-100"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="MarlinBlue:OffspringCheck">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Adult_F/>
+            <MarlinBlue_Old_F/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="MarlinBlue:CantReproduce">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Adult_F/>
+            <MarlinBlue_Old_F/>
+            <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+         </Subjects>
+         <Targets>
+            <MarlinBlue_Adult_M/>
+            <MarlinBlue_Old_M/>
+            <Qualifiers_AND inHabitat="true" canMate="false"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-27"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="MarlinBlue:InviteReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Adult_F/>
+            <MarlinBlue_Old_F/>
+            <Qualifiers_AND isSwimming="true" b_Pregnant="E false"/>
+         </Subjects>
+         <Targets>
+            <MarlinBlue_Adult_M/>
+            <MarlinBlue_Old_M/>
+            <Qualifiers_AND isSwimming="true" canMate="true"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="WaitReproduction"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="MarlinBlue:RespondReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Adult_M/>
+            <MarlinBlue_Old_M/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+           <Qualifiers_AND inWater="true" isSwimming="true" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Reproduce/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_3"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="Rendezvous" targetBehSet="Rendezvous"/>
+         <BFBehSyncSet subjectBehSet="ReproductionSwimLead" targetBehSet="ReproductionSwimFollow"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="75"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-50" rest="-10"/>
+         <BFAITargetData rest="-10"/>
+         <BFBehExecTask>
+            <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Pregnant" UniqueID="MarlinBlue:Pregnant">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Adult_F/>
+            <MarlinBlue_Old_F/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Pregnant1/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="50"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+               <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData b_Pregnant="true"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="70.21" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Birth" UniqueID="MarlinBlue:Birth">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Adult_F/>
+            <MarlinBlue_Old_F/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Surface"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LayingEgg"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Swim_Idle"/>
+         <BFBehPlaySet behSet="LayEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_4">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBornGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="IdleEgg" UniqueID="MarlinBlue:IdleEgg">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Egg/>
+            <Qualifiers inWater="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="IdleEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+<!-- Remember to set Trigger Threshhold data in the animal's egg file to equal incubation -->
+   <BFAITaskTemplate Name="HatchEgg" UniqueID="MarlinBlue:HatchEgg">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Egg/>
+            <Qualifiers_AND inWater="true" incubation="GE 1.24"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="200"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="HatchEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="MarlinBlue:Born">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="LE 1"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Born"/>
+               <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="SlashFrenzy"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="MarlinBlue:Puberty">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 28.78"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_F" UniqueID="MarlinBlue:Age_F">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Young_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="MarlinBlue_Adult_F" morphScale="true" morphPeriod="10" initScale="0.55"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_M" UniqueID="MarlinBlue:Age_M">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Young_M/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="MarlinBlue_Adult_M" morphScale="true" morphPeriod="10" initScale="0.55"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Old" TaskDelayMin="60" TaskDelayMax="60" UniqueID="MarlinBlue:Old">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers lifespan="GE 115.13"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap lifespan="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_1"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die_Sick" Priority="3" UniqueID="MarlinBlue:Die_Sick">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers_AND inWater_OR_onLand="true" health="GE 99"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="15000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_Sick"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EvadePrivacy" UniqueID="MarlinBlue:EvadePrivacy">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SeekingPrivacy" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehEvasion evasionRadius="10">
+            <avoidEntityTypes>
+               <Guest/>
+            </avoidEntityTypes>
+         </BFBehEvasion>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-40" exercise="-10" stimulation="-10" rest="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SyncSwim_Invite" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="MarlinBlue:SyncSwim_Invite">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <MarlinBlue/>
+            <Qualifiers_AND isSwimming="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_SyncSwim" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SyncSwim_Respond" UniqueID="MarlinBlue:SyncSwim_Respond">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <MarlinBlue/>
+            <Qualifiers_AND isSwimming="true" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_SyncSwim/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="90"/>
+      <BFBehExecTask>
+         <BFBehSyncSet subjectBehSet="Rendezvous" targetBehSet="Rendezvous"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <BFBehSyncSet subjectBehSet="SyncSwimLead" targetBehSet="SyncSwimFollow"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-30"/>
+         <BFAITargetData social="-30"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackGuest" Priority="5" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="MarlinBlue:AttackGuest">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue_Adult/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" inWater="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+                  <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedMarlinBlue"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+               	    <ZTMessageInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Beached" Priority="1" UniqueID="MarlinBlue:Beached">
+      <BFAICreateData>
+         <Subjects>
+            <MarlinBlue/>
+            <Qualifiers_AND inWater="false" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Beached"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalBeachedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehAnimate targetAnim="OnLand_Idle" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="OnLand_Twitch" interruptFlag="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap health="3"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBeached" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehAnimate targetAnim="OnLand_Dying" interruptFlag="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

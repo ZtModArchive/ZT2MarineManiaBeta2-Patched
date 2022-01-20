@@ -1,0 +1,352 @@
+<soundtags> 
+   <!--adult sounds-->
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_Attacked">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_Attacked.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_BiteA">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_BiteA.wav" volume=".5" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_BlowFur">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_BlowFur.wav" volume=".5" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_BlowFurYoung">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_BlowFurYoung.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_ChewGulp">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_ChewGulp.wav" volume=".6" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_ChewPaw">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_ChewPaw.wav" volume=".6" mindist="2" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_ChinScratch">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_ChinScratch.wav" volume=".5" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_ClimbOnToPlatform">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_ClimbOnToPlatform.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_Dive">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_Dive.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_Forage_Dig">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_Forage_Dig.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_Forage_Idle">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_Forage_Idle.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_HeadScratch">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_HeadScratch.wav" volume=".5" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_LookCute">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_LookCute.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_NoseBitten">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_NoseBitten.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_PickFur">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_PickFur.wav" volume=".7" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_PickFurYoung">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_PickFurYoung.wav" volume=".5" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_Quiver">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_Quiver.wav" volume=".4" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_Sleep">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_Sleep.wav" volume=".3" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_SmashShell">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_SmashShell.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_Sneeze">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_Sneeze.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_Sniff">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_Sniff.wav" volume=".4" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_Somersault">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_Somersault.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_ThrowInHoopFailure">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_ThrowInHoopFailure.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_ThrowInHoopSuccess">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_ThrowInHoopSuccess.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_ThrowInHoopSuperSuccess">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_ThrowInHoopSuperSuccess.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_UseShakerToyFailure">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_UseShakerToyFailure.wav" volume=".5" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_UseShakerToySuccess">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_UseShakerToySuccess.wav" volume=".6" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_UseShakerToySuperSuccess">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_UseShakerToySuperSuccess.wav" volume=".6" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_VocalDisplay">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_VocalDisplay.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_WashFood">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_WashFood.wav" volume=".7" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_Yawn">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_Yawn.wav" volume=".4" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_BiteNose">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_M_BiteNose.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>       
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Adult_GuestAttack">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_M_GuestAttack.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>         
+    
+   <!--young sounds-->
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Nurse_Idle">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Nurse_Idle.wav" volume=".6" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Stand_Cry">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Stand_Cry.wav" volume=".6" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_TreadWater_Cry">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_TreadWater_Cry.wav" volume=".6" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Attacked">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Attacked.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_BiteA">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_BiteA.wav" volume=".4" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_BlowFur">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_BlowFur.wav" volume=".4" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_BlowFurYoung">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_BlowFurYoung.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_ChewGulp">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_ChewGulp.wav" volume=".5" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_ChewPaw">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_ChewPaw.wav" volume=".5" mindist="2" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_ChinScratch">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_ChinScratch.wav" volume=".4" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_ClimbOnToPlatform">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_ClimbOnToPlatform.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Dive">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Dive.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Forage_Dig">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Forage_Dig.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Forage_Idle">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Forage_Idle.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_HeadScratch">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_HeadScratch.wav" volume=".4" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_LookCute">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_LookCute.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_NoseBitten">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_NoseBitten.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_PickFur">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_PickFur.wav" volume=".6" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_PickFurYoung">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_PickFurYoung.wav" volume=".4" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Quiver">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Quiver.wav" volume=".3" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Sleep">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Sleep.wav" volume=".2" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_SmashShell">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_SmashShell.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Sneeze">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Sneeze.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Sniff">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Sniff.wav" volume=".3" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Somersault">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Somersault.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_ThrowInHoopFailure">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_ThrowInHoopFailure.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_ThrowInHoopSuccess">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_ThrowInHoopSuccess.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_ThrowInHoopSuperSuccess">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_ThrowInHoopSuperSuccess.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_UseShakerToyFailure">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_UseShakerToyFailure.wav" volume=".4" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_UseShakerToySuccess">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_UseShakerToySuccess.wav" volume=".5" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_UseShakerToySuperSuccess">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_UseShakerToySuperSuccess.wav" volume=".5" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_VocalDisplay">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_VocalDisplay.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_WashFood">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_WashFood.wav" volume=".6" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_Yawn">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_F_Yawn.wav" volume=".3" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_BiteNose">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_M_BiteNose.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>       
+   <BFSoundtag>
+         <BF3DSndFactory name="OtterSea_Young_GuestAttack">
+            <snd name="entities/units/animals/OtterSea/sound/OtterSea_Young_M_GuestAttack.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>            
+
+    
+   </soundtags>

@@ -1,0 +1,214 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Eat" reserveTag="Eat" UniqueID="IceBlock_Clams:Eat">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Cancrivorous/>
+            <b_Basic/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <IceBlock_Clams/>
+            <Qualifiers inWater="true"/>            
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-50" stimulation="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEatContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:EatingContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEatContainerGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-10" thirst="-20" bathroom="30" stimulation="-30"/>
+         <BFAITargetData f_FoodLevel="-100"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehMorph morphEntity="target" morphTargetEntityType="IceBlock"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Eat" reserveTag="Eat" UniqueID="IceBlock_Clams:Eat:1">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Cancrivorous/>
+            <b_Medium/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <IceBlock_Clams/>
+            <Qualifiers inWater="true"/>            
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-50" stimulation="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEatContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:EatingContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEatContainerGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-10" thirst="-20" bathroom="30" stimulation="-30"/>
+         <BFAITargetData f_FoodLevel="-100"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehMorph morphEntity="target" morphTargetEntityType="IceBlock"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Eat" reserveTag="Eat" UniqueID="IceBlock_Clams:Eat:2">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Cancrivorous/>
+            <b_Advanced/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <IceBlock_Clams/>
+            <Qualifiers inWater="true"/>            
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-50" stimulation="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEatContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:EatingContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEatContainerGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-10" thirst="-20" bathroom="30" stimulation="-30"/>
+         <BFAITargetData f_FoodLevel="-100"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehMorph morphEntity="target" morphTargetEntityType="IceBlock"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Eat" reserveTag="Eat" UniqueID="IceBlock_Clams:Eat:3">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Cancrivorous/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <IceBlock_Clams/>
+            <Qualifiers inWater="true"/>            
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-50" stimulation="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEatContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:EatingContainer" useTargetContents="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEatContainerGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-10" thirst="-20" bathroom="30" stimulation="-30"/>
+         <BFAITargetData f_FoodLevel="-100"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehMorph morphEntity="target" morphTargetEntityType="IceBlock"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

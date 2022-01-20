@@ -1,0 +1,89 @@
+﻿<BFTypedBinder binderType="PirateMast">
+	<types>
+		<entity>
+			<scenery>
+				<PirateMast />
+			</scenery>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData waterPlacement="true" tankPlacement="true" icon3Doffset="0 -.01 0.22" icon3Dscale="0.13" minimumHeadroom="12">
+			<UIAspect>
+				<default image="entities\objects\scenery\PirateMast\PirateMast_icon.dds" />
+			</UIAspect>
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\scenery\PirateMast\PirateMast_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:PirateMast" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="PirateMast" />
+			</on>
+		</UIToggleButton>
+		<UIButton name="overviewicon">
+			<UIAspect>
+				<default image="ui/zoomap/icon_attractions.dds" />
+			</UIAspect>
+		</UIButton>
+		<BFAIEntityDataShared s_ObjectType="Misc" s_Product="Marine" b_Researchable="true" s_uisort="ef" b_DonationAcceptor="false" s_Zoopedia="zoopedia:zoopedia_pirate_mast:entry" f_researchUnlockTime="80" f_researchCost="600" b_wantLifetimeUsers="true" f_FameReq="40" b_NoPerceiveOverride="true" />
+		<ZTTourData>
+			<cool value="6" />
+			<theme_marine value="5" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="ShadowNode_01" width="6" length="6" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities\objects\scenery\PirateMast\PirateMast" switch="0 18 36" minSwitch="0 0 20" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_North x="1" z="3" />
+						<Dock_East y="-1.5" z="3" yaw="-90" />
+						<Dock_West y="1.5" z="3" yaw="90" />
+						<Dock_South x="-2" z="3" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="420">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="Play">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterPirateMast" useBehSet="UsePirateMast" targetNode="Dock_North" exclusiveID="PirateMast1" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterPirateMast" useBehSet="UsePirateMast" targetNode="Dock_East" exclusiveID="PirateMast1" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterPirateMast" useBehSet="UsePirateMast" targetNode="Dock_West" exclusiveID="PirateMast1" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterPirateMast" useBehSet="UsePirateMast" targetNode="Dock_South" exclusiveID="PirateMast1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

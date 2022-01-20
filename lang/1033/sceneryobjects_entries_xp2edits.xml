@@ -1,0 +1,82 @@
+<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_soundrock" version="7" />
+      <LOC_STRING _locID="zoopedia_soundrock:entry" version="7"  >Music Rock</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_soundrock:text" version="7"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/scenery/MusicalRock_df/MusicalRock_df_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/scenery/MusicalRock_jt/MusicalRock_jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/scenery/MusicalRock_St/MusicalRock_St_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/scenery/MusicalRock_mm/MusicalRock_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>
+                  These small rocks are outdoor speakers that blend into the landscaping and create a pleasant ambience. Guests are happy to hear the audio as they walk nearby.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_themedfountains" version="6" />
+      <LOC_STRING _locID="zoopedia_themedfountains:entry" version="6"  >Fountains, Themed</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_themedfountains:text" version="6"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\Fountain_Jt\Fountain_Jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\Fountain_St\Fountain_St_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\Fountain_mm\Fountain_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>Fountains make guests happy, especially when the fountain represents a favorite animal. Guests on tours enjoy themed areas.
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button. Next, click the Zoo Awards tab, and then click Persistent Awards. 
+				</color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_themedstatue" version="6" />
+      <LOC_STRING _locID="zoopedia_themedstatue:entry" version="6"  >Statue, Themed</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_themedstatue:text" version="6"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\Statue_Jt\Statue_Jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\Statue_St\Statue_St_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\Statue_mm\Statue_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  
+                  <br/>Guests enjoy seeing statues, especially when the statue represents a favorite animal. Guests on tours enjoy themed areas.          
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button, click the Zoo Awards tab, and then click Persistent Awards. 
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_themedarch" version="6" />
+      <LOC_STRING _locID="zoopedia_themedarch:entry" version="6"  >Arch, Themed</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_themedarch:text" version="6"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\PathArch_Jt\PathArch_Jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\PathArch_St\PathArch_St_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\PathArch_mm\PathArch_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>An arch adds a nice decorative element to paths and zoo areas.  Guests enjoy walking under an arch. Guests on tours enjoy themed areas.
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button. Next, click the Zoo Awards tab, and then click Persistent Awards. 
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+
+
+</ZT2Strings>

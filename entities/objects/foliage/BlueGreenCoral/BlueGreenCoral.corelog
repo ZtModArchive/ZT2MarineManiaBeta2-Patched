@@ -1,0 +1,38 @@
+************************************************************
+Date: 03/01/2006
+Time: 19:04
+************************************************************
+Compiled object 1: Lights
+Compiled object 2: Omni01
+Compiled object 3: Omni02
+Compiled object 4: Omni03
+Compiled object 5: Omni04
+Compiled object 6: Omni05
+Compiled object 7: Omni06
+Compiled object 8: footprint
+Compiled object 10: paint_BlueGreenCoral
+Compiled object 12: BlueGreenCoral_LODGroup
+Compiled object 13: BlueGreenCoral_LOD0
+Compiled object 14: BlueGreenCoral_LOD1
+Compiled object 15: BlueGreenCoral_LOD2
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 912 
+Vertex Count: 739 
+Vertex Memory: 25 kb
+Material Count: 2 
+Texture Count: 2 
+Texture Memory: 63 kb
+Num LODs: 3 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 228 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 491ms
+XML File Translation: total time = 358ms
+Data Output: total time = 6ms
+************************************************************

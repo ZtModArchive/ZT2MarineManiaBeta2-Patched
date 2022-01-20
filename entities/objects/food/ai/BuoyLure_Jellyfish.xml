@@ -1,0 +1,116 @@
+﻿<BFTypedBinder binderType="BuoyLure_Jellyfish">
+	<types>
+		<entity>
+			<food>
+				<BuoyLure>
+					<BuoyLure_Jellyfish />
+				</BuoyLure>
+			</food>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\food\BuoyLure\BuoyLure_Jellyfish_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:BuoyLure_Jellyfish" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="BuoyLure_Jellyfish" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared f_FameReq="50" s_FoodType="Jellyfish" s_contents="Terrain_Jellyfish" s_Product="Marine" s_prop="Jellyfish_Prop" b_Sniffable="true" b_JellyfishEaterFood="true" />
+		<ZTPlacementData icon3Doffset="0 -0.0 1.39" icon3Dscale=".48" minimumHeadroom="2.0">
+			<excludedIconObjs>
+				<full />
+				<twothird />
+				<onethird />
+				<empty />
+			</excludedIconObjs>
+		</ZTPlacementData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/BuoyLure/Buoy_JellyFish_mm" />
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" floatOnWater="true" waterOffset="-.1" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_01 parentNode="AutoRoot" x="0" y=".65" z="-1.5" yaw="0" />
+						<Dock_02 parentNode="AutoRoot" x="-.65" y="0" z="-1.45" yaw="-90" />
+						<Dock_03 parentNode="AutoRoot" x=".65" y="0" z="-1.55" yaw="90" />
+						<Dock_04 parentNode="AutoRoot" x="0" y="-.65" z="-1.5" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="full" required="1">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/BuoyLure/Buoy_JellyFish_Full" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="20" />
+					<BFGroundFitComponent floatOnWater="true" waterOffset="-1.75" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="twothird" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/BuoyLure/Buoy_JellyFish_66" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="10" />
+					<BFGroundFitComponent floatOnWater="true" waterOffset="-1.75" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="onethird" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/BuoyLure/Buoy_JellyFish_33" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="5" />
+					<BFGroundFitComponent floatOnWater="true" waterOffset="-1.75" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="empty" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/BuoyLure/Buoy_JellyFish_Empty" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="5" />
+					<BFGroundFitComponent floatOnWater="true" waterOffset="-1.75" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance f_FoodLevel="100" />
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIFadeController attribName="f_FoodLevel" currState="full" fadePeriod="1">
+					<stateList>
+						<full physObj="full" minRange="66" maxRange="101" />
+						<twothird physObj="twothird" minRange="33" maxRange="66" />
+						<onethird physObj="onethird" minRange="1" maxRange="33" />
+						<empty physObj="empty" minRange="-101" maxRange="1" />
+					</stateList>
+				</BFAIFadeController>
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="450">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="refill" cost="150" type="credit" category="animal_upkeep" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

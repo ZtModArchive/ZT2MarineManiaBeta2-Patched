@@ -1,0 +1,13 @@
+﻿<BFM modelname="entities\objects\fences\marinefence_lowgate_mm\marinefence_lowgate_mm_anim.nif">
+	<animation anim="entities\objects\fences\marinefence_lowgate_mm\marinefence_lowgate_mm_anim_Bip01_close.bf" animName="Bip01_close" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\objects\fences\marinefence_lowgate_mm\marinefence_lowgate_mm_anim_Bip01_open.bf" animName="Bip01_open" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\objects\fences\marinefence_lowgate_mm\marinefence_lowgate_mm_anim_Bip01_close.bf" animName="Bip01_close" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+</BFM>
+<Graph name="marinefence_lowgate_mm_anim" version="1">
+	<node name="Bip01">
+		<table>
+			<Bip01_close />
+			<Bip01_open />
+		</table>
+	</node>
+</Graph>

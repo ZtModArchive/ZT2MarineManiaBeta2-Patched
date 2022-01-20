@@ -1,0 +1,203 @@
+<ZT2Strings>
+
+   <zoopedia_soundrock version="7">
+      <entry>Music Rock</entry>
+      <text>
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/scenery/MusicalRock_df/MusicalRock_df_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/scenery/MusicalRock_jt/MusicalRock_jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/scenery/MusicalRock_St/MusicalRock_St_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/scenery/MusicalRock_mm/MusicalRock_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>
+                  These small rocks are outdoor speakers that blend into the landscaping and create a pleasant ambience. Guests are happy to hear the audio as they walk nearby.
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_soundrock>
+
+<!--Themed objects
+   <zoopedia_themedtrashcan version="2">
+      <entry>Trash Can, Themed</entry>
+      <text>
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\trashcan_jt\trashcan_jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\trashcan_st\trashcan_st_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\trashcan_end\trashcan_end_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>A trash can allows guests to dispose of their trash and is emptied by maintenance workers. Guests get irritated if trash cans become full, and they litter if a trash can isn't available. Guests on tours enjoy seeing themed objects.          
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button. Next, click the Zoo Awards tab, and then click Persistent Awards.     
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_themedtrashcan>
+
+   <zoopedia_themedlamp version="2">
+      <entry>Lamps, Themed</entry>
+      <text>
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\lamp_jt\lamp_jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\lamp_st\lamp_st_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\lamp_end\lamp_end_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>Themed lamps provide additional ambience for zoo guests. Guests on tours enjoy seeing themed objects.
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button. Next, click the Zoo Awards tab, and then click Persistent Awards.     
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_themedlamp>   
+
+   <zoopedia_themedviewingareas version="2">
+      <entry>Viewing Canopies, Themed</entry>
+      <text>
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\ViewingArea_Jt\ViewingArea_Jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\ViewingArea_St\ViewingArea_St_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\ViewingArea_end\ViewingArea_end_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>A themed viewing canopy offers guests a shelter from which they can view the animals. Guests enjoy it when the viewing canopy's theme coordinates with the nearby exhibit.
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button. Next, click the Zoo Awards tab, and then click Persistent Awards. 
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_themedviewingareas>
+   
+-->   
+
+   <zoopedia_themedfountains version="6">
+      <entry>Fountains, Themed</entry>
+      <text>
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\Fountain_Jt\Fountain_Jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\Fountain_St\Fountain_St_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\Fountain_mm\Fountain_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>Fountains make guests happy, especially when the fountain represents a favorite animal. Guests on tours enjoy themed areas.
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button. Next, click the Zoo Awards tab, and then click Persistent Awards. 
+				</color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_themedfountains>
+
+   <zoopedia_themedstatue version="6">
+      <entry>Statue, Themed</entry>
+      <text>
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\Statue_Jt\Statue_Jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\Statue_St\Statue_St_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\Statue_mm\Statue_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  
+                  <br/>Guests enjoy seeing statues, especially when the statue represents a favorite animal. Guests on tours enjoy themed areas.          
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button, click the Zoo Awards tab, and then click Persistent Awards. 
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_themedstatue>
+   
+<!--
+   <zoopedia_themedbench version="2">
+      <entry>Bench, Themed</entry>
+      <text>
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\bench_jt\bench_jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\bench_st\bench_st_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\bench_end\bench_end_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>Guests get tired walking around the zoo. A themed bench provides a welcome chance to take a
+break and take in the zoo's atmosphere. Fatigued guests who can't find a bench become unhappy. Guests on tours enjoy themed areas.
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button. Next, click the Zoo Awards tab, and then click Persistent Awards. 
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_themedbench>
+-->
+
+   <zoopedia_themedarch version="6">
+      <entry>Arch, Themed</entry>
+      <text>
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\PathArch_Jt\PathArch_Jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\PathArch_St\PathArch_St_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\PathArch_mm\PathArch_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>An arch adds a nice decorative element to paths and zoo areas.  Guests enjoy walking under an arch. Guests on tours enjoy themed areas.
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button. Next, click the Zoo Awards tab, and then click Persistent Awards. 
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_themedarch>
+
+<!--
+   <zoopedia_themedumbrellatable version="2">
+      <entry>Umbrella Table, Themed</entry>
+      <text>
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\umbrellatable_jt\umbrellatable_jt_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\umbrellatable_St\umbrellatable_St_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\umbrellatable_end\umbrellatable_end_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>A dining table lets guests sit down to eat food and drink beverages purchased at the zoo. Guests prefer to eat sitting down instead of standing up. After an exhibit, guests like it when nearby scenery and objects feature similar themes. 
+                  <p/>To see the many themes you can unlock, click the Zoo Fame button. Next, click the Zoo Awards tab, and then click Persistent Awards. 
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_themedumbrellatable>
+-->
+
+
+</ZT2Strings>

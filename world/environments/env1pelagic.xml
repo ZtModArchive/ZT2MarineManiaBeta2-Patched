@@ -1,0 +1,10 @@
+<BFWorldEnvironment lights="world/lights/ScrubLights.xml">
+   <skylayers file="world/environments/sky/desert_sky.xml"/>
+   <skirtModels skirt1="world/environments/skirt/skirt_pelagic_mm/skirt_pelagic_280_df.xml" skirt2="world/environments/skirt/skirt_pelagic_mm/pelagic_mountain_ring.xml"/>
+   <fog file="world/environments/coastal_fog.xml"/>
+  <envmaps>
+      <map time="0.0" waterMap="data/shared/environmentmap_sunrise.tga" objectMap="data/shared/environmentmap_sunrise.tga"/>
+      <map time="0.33" waterMap="data/shared/environmentmap_noon.tga" objectMap="data/shared/environmentmap_noon.tga"/>
+      <map time="0.66" waterMap="data/shared/environmentmap_sunset.tga" objectMap="data/shared/environmentmap_sunset.tga"/>
+   </envmaps>
+</BFWorldEnvironment>

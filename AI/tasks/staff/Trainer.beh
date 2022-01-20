@@ -1,0 +1,110 @@
+<BehaviorSets>
+  <TrainerIdle>
+    <subjects>
+      <Trainer/>
+    </subjects>
+    <behaviors>
+      <BFBehAnimate targetAnim="Stand_Idle" playTime="1"/>
+    </behaviors>
+  </TrainerIdle>
+  <TrainerIdle10>
+    <subjects>
+      <Trainer/>
+    </subjects>
+    <behaviors>
+      <BFBehAnimate targetAnim="Stand_Idle" playTime="10"/>
+    </behaviors>
+  </TrainerIdle10>
+  <TrainerIdle_Bored>
+    <subjects>
+      <Trainer/>
+    </subjects>
+    <behaviors>
+      <BFBehAnimate targetAnim="Standbored_Idle" playTime="1"/>
+    </behaviors>
+  </TrainerIdle_Bored>
+  <DockPlatform>
+    <subjects>
+      <Trainer/>
+    </subjects>
+    <behaviors>
+      <BFBehDock interpolationDistance="1" reserveSlotName="Trainer"/>
+    </behaviors>
+  </DockPlatform>
+  <FaceAnimal>
+    <subjects>
+      <Trainer/>
+    </subjects>
+    <behaviors>
+      <BFBehFaceTarget/>
+    </behaviors>
+  </FaceAnimal>
+  <TrainAnimal>
+    <subjects>
+      <Trainer/>
+    </subjects>
+    <behaviors>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="staffactions:Train_Animal" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimateRandom minPlays="2" maxPlays="4">
+        <randomAnims>
+          <Gesture_ArcHigh weight="9.09"/>
+          <Gesture_ArcLow weight="9.09"/>
+          <Gesture_Circle weight="9.09"/>
+          <Gesture_DiagonalDown weight="9.09"/>
+          <Gesture_DiagonalUp weight="9.09"/>
+          <Gesture_Idle weight="9.09"/>
+          <Gesture_LeftRight weight="9.09"/>
+          <Gesture_RightLeft weight="9.09"/>
+          <Gesture_TapObject weight="9.09"/>
+          <Gesture_UpDown weight="9.09"/>
+          <Gesture_Whistle weight="9.09"/>
+        </randomAnims>
+      </BFBehAnimateRandom>
+    </behaviors>
+  </TrainAnimal>
+  <GiveTreat>
+    <subjects>
+      <Trainer/>
+    </subjects>
+    <behaviors>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="staffactions:GiveTreat" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAttachObject attachEntity="Bucket" targetAnim="Stand_2StandItem" detachAction="killitem"/>
+      <BFBehSyncSet subjectBehSet="TossTreat" targetBehSet="GetTreat_Loop"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_STDefaultTask" GiveTo="target" Payload="subject" Reconsider="true" RetainOnFailure="true" RetainOnSuccess="true" RetainOnError="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </behaviors>
+  </GiveTreat>
+  <TossTreat>
+    <subjects>
+      <Trainer/>
+    </subjects>
+    <behaviors>
+      <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TossFood_Idle" detachAction="killitem" container="lefthand"/>
+      <BFBehAnimate targetAnim="Stand_Idle"/>
+    </behaviors>
+  </TossTreat>
+  <TrainerFailure>
+    <subjects>
+      <Trainer/>
+    </subjects>
+    <behaviors>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+          <ZTMessageInfo locID="zoomessages:TrainerFailure" priority="-1" timeout="30" interval="30" global="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </behaviors>
+  </TrainerFailure>
+</BehaviorSets>

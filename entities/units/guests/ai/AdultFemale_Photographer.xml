@@ -1,0 +1,75 @@
+<BFTypedBinder binderType="Guest_Adult_F_Photographer">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Guest>
+                  <Guest_Adult>
+                     <Guest_Adult_F>
+                        <Guest_Adult_F_Photographer/>
+                     </Guest_Adult_F>
+                  </Guest_Adult>
+               </Guest>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="headObj" rottype="use" postype="use" attachnode="Link_Head"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared s_Rarity="unique"/>
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFAICognitiveMgr>
+               <StateThinkers>
+                  <ZTAIStateThinker>
+                     <BFAIStateVar Name="hunger" Value="" ValueMin="10" ValueMax="65" DisplayThreshold="30" TriggerThreshold="30" CessationThreshold="20" PressingThreshold="70" CriticalThreshold="90" CriticalAdjust="1"/>
+                     <BFAIStateVar Name="thirst" Value="" ValueMin="10" ValueMax="65" DisplayThreshold="30" TriggerThreshold="30" CessationThreshold="20" PressingThreshold="70" CriticalThreshold="90" CriticalAdjust="1"/>
+                     <BFAIStateVar Name="dessert" Value="25" DisplayThreshold="30" TriggerThreshold="30" CessationThreshold="20" PressingThreshold="70" CriticalThreshold="90"/>
+                     <BFAIStateVar Name="rest" Value="" ValueMin="30" ValueMax="50" DisplayThreshold="30" TriggerThreshold="30" CessationThreshold="20" PressingThreshold="70" CriticalThreshold="90" CriticalAdjust="1"/>
+                     <BFAIStateVar Name="social" Value="" ValueMin="10" ValueMax="65" TriggerThreshold="50" CessationThreshold="40" CriticalThreshold="101"/>
+                     <BFAIStateVar Name="amusement" Value="" ValueMin="10" ValueMax="20" DisplayThreshold="30" TriggerThreshold="30" CessationThreshold="20" PressingThreshold="70" CriticalThreshold="90" CriticalAdjust=".1"/>
+                     <BFAIStateVar Name="gift" Value="0" TriggerThreshold="50" CessationThreshold="40" CriticalThreshold="101"/>
+                     <BFAIStateVar Name="bathroom" Value="" ValueMin="20" ValueMax="50" TriggerThreshold="30" DisplayThreshold="30" CessationThreshold="20" PressingThreshold="70" CriticalThreshold="90" CriticalAdjust="1"/>
+                     <BFAIStateVar Name="viewanimals" Value="30" TriggerThreshold="0" CessationThreshold="-100" CriticalThreshold="101"/>
+                     <BFAIStateVar Name="happiness" Value="50" TriggerThreshold="0" CessationThreshold="-100" CriticalThreshold="101"/>
+                     <BFAIStateVar Name="tour"  Value="" ValueMin="99" ValueMax="100" TriggerThreshold="0" CessationThreshold="-100" CriticalThreshold="101"/>
+                  </ZTAIStateThinker>
+               </StateThinkers>   
+            </BFAICognitiveMgr>				
+				</instance>
+			</BFBinder>   
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFShadowLODComponent numLevels="1" switchingDists="30.0"/>
+               <BFActorComponent actorfile="entities\units\guests\AdultFemale\Guest_Adult_F_Photographer.bfm" scale="1.0" switch="0 20 40 5002 5003 5004"/>
+               <BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 1" ankleRotVectorRight="0 0 1" heightOffset="0" fitRadius=".5"/>
+               <BFForwardMovingComponent/>
+               <BFRotYawMovingComponent/>
+               <BFBoundedObjectComponent>
+                  <minPoint x="0" y="0" z="-100"/>
+                  <maxPoint x="300" y="300" z="100"/>
+               </BFBoundedObjectComponent>
+               <BFCollisionComponent grid="Grid"/>
+               <BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="headObj">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\units\guests\AdultFemale\Head_Adult_F_Photographer.nif" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

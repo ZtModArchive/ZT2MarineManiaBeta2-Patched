@@ -1,0 +1,943 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\animals\OtterSea\OtterSea_Adult_F.nif">
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatLand_2Stand.bf" animName="EatLand_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatLand_BiteA.bf" animName="EatLand_BiteA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatLand_ChewGulp.bf" animName="EatLand_ChewGulp" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatLand_Drink.bf" animName="EatLand_Drink" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatLand_Sniff.bf" animName="EatLand_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatWater_2Forage.bf" animName="EatWater_2Forage" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatWater_2TreadWaterSub.bf" animName="EatWater_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatWater_BiteA.bf" animName="EatWater_BiteA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatWater_ChewGulp.bf" animName="EatWater_ChewGulp" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatWater_SmashShell.bf" animName="EatWater_SmashShell" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatWater_Sniff.bf" animName="EatWater_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_EatWater_WashFood.bf" animName="EatWater_WashFood" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Float_2SleepKelpBed.bf" animName="Float_2SleepKelpBed" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Float_2SleepWater.bf" animName="Float_2SleepWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Float_2TreadWater.bf" animName="Float_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Float_Breath.bf" animName="Float_Breath" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Float_Idle.bf" animName="Float_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Forage_2EatWater.bf" animName="Forage_2EatWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Forage_Dig.bf" animName="Forage_Dig" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Forage_Idle.bf" animName="Forage_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Lie_2Sleep.bf" animName="Lie_2Sleep" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Lie_2Stand.bf" animName="Lie_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Lie_Idle.bf" animName="Lie_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Lie_Sneeze.bf" animName="Lie_Sneeze" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Lie_Sniff.bf" animName="Lie_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Lie_Yawn.bf" animName="Lie_Yawn" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Young_F_Nurse_2TreadWater.bf" animName="Nurse_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Young_F_Nurse_Idle.bf" animName="Nurse_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Run_2Stand.bf" animName="Run_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Run_2Swim.bf" animName="Run_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Run_2Walk.bf" animName="Run_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Run_Ahead.bf" animName="Run_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Run_LeftA.bf" animName="Run_LeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Run_LeftB.bf" animName="Run_LeftB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Run_RightA.bf" animName="Run_RightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Run_RightB.bf" animName="Run_RightB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_RunObject_2StandObject.bf" animName="RunObject_2StandObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_RunObject_2SwimObject.bf" animName="RunObject_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_RunObject_2WalkObject.bf" animName="RunObject_2WalkObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_RunObject_Ahead.bf" animName="RunObject_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_RunObject_LeftA.bf" animName="RunObject_LeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_RunObject_LeftB.bf" animName="RunObject_LeftB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_RunObject_RightA.bf" animName="RunObject_RightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_RunObject_RightB.bf" animName="RunObject_RightB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SealSeat_2Stand.bf" animName="SealSeat_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SealSeat_ChinScratch.bf" animName="SealSeat_ChinScratch" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SealSeat_EatTreat.bf" animName="SealSeat_EatTreat" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SealSeat_HeadScratch.bf" animName="SealSeat_HeadScratch" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SealSeat_Idle.bf" animName="SealSeat_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SealSeat_LookCute.bf" animName="SealSeat_LookCute" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Secondary_HeadLook.bf" animName="Secondary_HeadLook" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Sleep_2Lie.bf" animName="Sleep_2Lie" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Sleep_Idle.bf" animName="Sleep_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SleepKelpBed_2Float.bf" animName="SleepKelpBed_2Float" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SleepKelpBed_Idle.bf" animName="SleepKelpBed_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SleepWater_2Float.bf" animName="SleepWater_2Float" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SleepWater_Idle.bf" animName="SleepWater_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_2EatLand.bf" animName="Stand_2EatLand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_2Lie.bf" animName="Stand_2Lie" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_2Run.bf" animName="Stand_2Run" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_2SealSeat.bf" animName="Stand_2SealSeat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_2StandObject.bf" animName="Stand_2StandObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_2Walk.bf" animName="Stand_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_Attacked.bf" animName="Stand_Attacked" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_M_Stand_BiteNose.bf" animName="Stand_BiteNose" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Young_F_Stand_Cry.bf" animName="Stand_Cry" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_M_Stand_GuestAttack.bf" animName="Stand_GuestAttack" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_Idle.bf" animName="Stand_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_NoseBitten.bf" animName="Stand_NoseBitten" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_Pee.bf" animName="Stand_Pee" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_Poop.bf" animName="Stand_Poop" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_Quiver.bf" animName="Stand_Quiver" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_Sneeze.bf" animName="Stand_Sneeze" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_Sniff.bf" animName="Stand_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_TurnLeft90.bf" animName="Stand_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_TurnRight180.bf" animName="Stand_TurnRight180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_TurnRight90.bf" animName="Stand_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_VocalDisplay.bf" animName="Stand_VocalDisplay" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Stand_Yawn.bf" animName="Stand_Yawn" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_StandObject_2RunObject.bf" animName="StandObject_2RunObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_StandObject_2Stand.bf" animName="StandObject_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_StandObject_2WalkObject.bf" animName="StandObject_2WalkObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_StandObject_Idle.bf" animName="StandObject_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_StandObject_TurnLeft90.bf" animName="StandObject_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_StandObject_TurnRight180.bf" animName="StandObject_TurnRight180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_StandObject_TurnRight90.bf" animName="StandObject_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_2Run.bf" animName="Swim_2Run" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_2SwimGlide.bf" animName="Swim_2SwimGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_2SwimObject.bf" animName="Swim_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_2SwimSub.bf" animName="Swim_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_2TreadWater.bf" animName="Swim_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_2Walk.bf" animName="Swim_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_2Walk_Platform.bf" animName="Swim_2Walk_Platform" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_Ahead.bf" animName="Swim_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_JumpFailure.bf" animName="Swim_JumpFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_JumpSuccess.bf" animName="Swim_JumpSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_JumpSuperSuccess.bf" animName="Swim_JumpSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_Sniff.bf" animName="Swim_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_Somersault.bf" animName="Swim_Somersault" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_Turn180.bf" animName="Swim_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_TurnLeft90.bf" animName="Swim_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Swim_TurnRight90.bf" animName="Swim_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimGlide_2Swim.bf" animName="SwimGlide_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimGlide_Ahead.bf" animName="SwimGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObject_2RunObject.bf" animName="SwimObject_2RunObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObject_2Swim.bf" animName="SwimObject_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObject_2SwimObjectGlide.bf" animName="SwimObject_2SwimObjectGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObject_2SwimSubObject.bf" animName="SwimObject_2SwimSubObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObject_2TreadWaterObject.bf" animName="SwimObject_2TreadWaterObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObject_2WalkObject.bf" animName="SwimObject_2WalkObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObject_Ahead.bf" animName="SwimObject_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObject_Turn180.bf" animName="SwimObject_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObject_TurnLeft90.bf" animName="SwimObject_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObject_TurnRight90.bf" animName="SwimObject_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObjectGlide_2SwimObject.bf" animName="SwimObjectGlide_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimObjectGlide_Ahead.bf" animName="SwimObjectGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSub_2Swim.bf" animName="SwimSub_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSub_2SwimSubGlide.bf" animName="SwimSub_2SwimSubGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSub_2TreadWaterSub.bf" animName="SwimSub_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSub_Ahead.bf" animName="SwimSub_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSub_Turn180.bf" animName="SwimSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSub_TurnDown90.bf" animName="SwimSub_TurnDown90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSub_TurnLeft90.bf" animName="SwimSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSub_TurnRight90.bf" animName="SwimSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSub_TurnUp90.bf" animName="SwimSub_TurnUp90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubGlide_2SwimSub.bf" animName="SwimSubGlide_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubGlide_Ahead.bf" animName="SwimSubGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObject_2SwimObject.bf" animName="SwimSubObject_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObject_2SwimSubObjectGlide.bf" animName="SwimSubObject_2SwimSubObjectGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObject_2TreadWaterSub.bf" animName="SwimSubObject_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObject_2TreadWaterSubObject.bf" animName="SwimSubObject_2TreadWaterSubObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObject_Ahead.bf" animName="SwimSubObject_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObject_Turn180.bf" animName="SwimSubObject_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObject_TurnDown90.bf" animName="SwimSubObject_TurnDown90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObject_TurnLeft90.bf" animName="SwimSubObject_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObject_TurnRight90.bf" animName="SwimSubObject_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObject_TurnUp90.bf" animName="SwimSubObject_TurnUp90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObjectGlide_2SwimSubObject.bf" animName="SwimSubObjectGlide_2SwimSubObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimSubObjectGlide_Ahead.bf" animName="SwimSubObjectGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimUpsideDown_2Swim.bf" animName="SwimUpsideDown_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimUpsideDown_2SwimUpsideDownGlide.bf" animName="SwimUpsideDown_2SwimUpsideDownGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimUpsideDown_2TreadWater.bf" animName="SwimUpsideDown_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimUpsideDown_Ahead.bf" animName="SwimUpsideDown_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimUpsideDown_Turn180.bf" animName="SwimUpsideDown_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimUpsideDown_TurnLeft90.bf" animName="SwimUpsideDown_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimUpsideDown_TurnRight90.bf" animName="SwimUpsideDown_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimUpsideDownGlide_2SwimUpsideDown.bf" animName="SwimUpsideDownGlide_2SwimUpsideDown" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimUpsideDownGlide_Ahead.bf" animName="SwimUpsideDownGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimYoung_2SwimYoungGlide.bf" animName="SwimYoung_2SwimYoungGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimYoung_2TreadWaterYoung.bf" animName="SwimYoung_2TreadWaterYoung" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimYoung_Ahead.bf" animName="SwimYoung_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimYoung_Breath.bf" animName="SwimYoung_Breath" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimYoung_Turn180.bf" animName="SwimYoung_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimYoungGlide_2SwimYoung.bf" animName="SwimYoungGlide_2SwimYoung" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_SwimYoungGlide_Ahead.bf" animName="SwimYoungGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_2Float.bf" animName="TreadWater_2Float" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Young_F_TreadWater_2Nurse.bf" animName="TreadWater_2Nurse" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_2Swim.bf" animName="TreadWater_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_2SwimUpsideDown.bf" animName="TreadWater_2SwimUpsideDown" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_2TreadWaterObject.bf" animName="TreadWater_2TreadWaterObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_2TreadWaterSubObject.bf" animName="TreadWater_2TreadWaterSubObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_2TreadWaterYoung.bf" animName="TreadWater_2TreadWaterYoung" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_Attacked.bf" animName="TreadWater_Attacked" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_M_TreadWater_BiteNose.bf" animName="TreadWater_BiteNose" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_BlowFur.bf" animName="TreadWater_BlowFur" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_ChewPaw.bf" animName="TreadWater_ChewPaw" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Young_F_TreadWater_Cry.bf" animName="TreadWater_Cry" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_GetTreat.bf" animName="TreadWater_GetTreat" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_M_TreadWater_GuestAttack.bf" animName="TreadWater_GuestAttack" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_Idle.bf" animName="TreadWater_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_NodLeftRight.bf" animName="TreadWater_NodLeftRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_NodUpDown.bf" animName="TreadWater_NodUpDown" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_NoseBitten.bf" animName="TreadWater_NoseBitten" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_PickFur.bf" animName="TreadWater_PickFur" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_Quiver.bf" animName="TreadWater_Quiver" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_Sniff.bf" animName="TreadWater_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_TrainingConfused.bf" animName="TreadWater_TrainingConfused" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_TrainingNodLeftRight.bf" animName="TreadWater_TrainingNodLeftRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_TrainingNodUpDown.bf" animName="TreadWater_TrainingNodUpDown" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_Turn180.bf" animName="TreadWater_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_TurnLeft90.bf" animName="TreadWater_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_TurnRight90.bf" animName="TreadWater_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_VocalDisplay.bf" animName="TreadWater_VocalDisplay" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWater_Yawn.bf" animName="TreadWater_Yawn" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_2SwimObject.bf" animName="TreadWaterObject_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_2TreadWater.bf" animName="TreadWaterObject_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_2TreadWater_ThrowInHoopFailure.bf" animName="TreadWaterObject_2TreadWater_ThrowInHoopFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_2TreadWater_ThrowInHoopSuccess.bf" animName="TreadWaterObject_2TreadWater_ThrowInHoopSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_2TreadWater_ThrowInHoopSuperSuccess.bf" animName="TreadWaterObject_2TreadWater_ThrowInHoopSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_Idle.bf" animName="TreadWaterObject_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_Turn180.bf" animName="TreadWaterObject_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_TurnLeft90.bf" animName="TreadWaterObject_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_TurnRight90.bf" animName="TreadWaterObject_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_UseShakerToyFailure.bf" animName="TreadWaterObject_UseShakerToyFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_UseShakerToySuccess.bf" animName="TreadWaterObject_UseShakerToySuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterObject_UseShakerToySuperSuccess.bf" animName="TreadWaterObject_UseShakerToySuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_2EatWater.bf" animName="TreadWaterSub_2EatWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_2Forage.bf" animName="TreadWaterSub_2Forage" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_2SwimSub.bf" animName="TreadWaterSub_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_Attacked.bf" animName="TreadWaterSub_Attacked" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_GetTreat.bf" animName="TreadWaterSub_GetTreat" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_Idle.bf" animName="TreadWaterSub_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_Quiver.bf" animName="TreadWaterSub_Quiver" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_TrainingConfused.bf" animName="TreadWaterSub_TrainingConfused" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_TrainingNodLeftRight.bf" animName="TreadWaterSub_TrainingNodLeftRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_TrainingNodUpDown.bf" animName="TreadWaterSub_TrainingNodUpDown" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_Turn180.bf" animName="TreadWaterSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_TurnLeft90.bf" animName="TreadWaterSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSub_TurnRight90.bf" animName="TreadWaterSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSubObject_2SwimSubObject.bf" animName="TreadWaterSubObject_2SwimSubObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSubObject_2TreadWater.bf" animName="TreadWaterSubObject_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSubObject_Idle.bf" animName="TreadWaterSubObject_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSubObject_Turn180.bf" animName="TreadWaterSubObject_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSubObject_TurnLeft90.bf" animName="TreadWaterSubObject_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterSubObject_TurnRight90.bf" animName="TreadWaterSubObject_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterYoung_2SwimSurfaceYoung.bf" animName="TreadWaterYoung_2SwimYoung" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterYoung_2TreadWater.bf" animName="TreadWaterYoung_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterYoung_BlowFurYoung.bf" animName="TreadWaterYoung_BlowFurYoung" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterYoung_Breath.bf" animName="TreadWaterYoung_Breath" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterYoung_Idle.bf" animName="TreadWaterYoung_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterYoung_PickFurYoung.bf" animName="TreadWaterYoung_PickFurYoung" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_TreadWaterYoung_Turn180.bf" animName="TreadWaterYoung_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Walk_2Run.bf" animName="Walk_2Run" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Walk_2Stand.bf" animName="Walk_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Walk_2Swim.bf" animName="Walk_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Walk_2Swim_Platform.bf" animName="Walk_2Swim_Platform" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Walk_Ahead.bf" animName="Walk_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Walk_LeftA.bf" animName="Walk_LeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Walk_LeftB.bf" animName="Walk_LeftB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Walk_RightA.bf" animName="Walk_RightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_Walk_RightB.bf" animName="Walk_RightB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_WalkObject_2RunObject.bf" animName="WalkObject_2RunObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_WalkObject_2StandObject.bf" animName="WalkObject_2StandObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_WalkObject_2SwimObject.bf" animName="WalkObject_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_WalkObject_Ahead.bf" animName="WalkObject_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_WalkObject_LeftA.bf" animName="WalkObject_LeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_WalkObject_LeftB.bf" animName="WalkObject_LeftB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_WalkObject_RightA.bf" animName="WalkObject_RightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\OtterSea\OtterSea_Adult_F_WalkObject_RightB.bf" animName="WalkObject_RightB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="OtterSea_Adult_F" version="1">
+    <node name="EatLand">
+      <table>
+        <EatLand_BiteA />
+        <EatLand_ChewGulp />
+        <EatLand_Drink />
+        <EatLand_Sniff />
+      </table>
+      <edge name="Stand">
+        <table>
+          <EatLand_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="EatWater">
+      <table>
+        <EatWater_BiteA />
+        <EatWater_ChewGulp />
+        <EatWater_SmashShell />
+        <EatWater_Sniff />
+        <EatWater_WashFood />
+      </table>
+      <edge name="Forage">
+        <table>
+          <EatWater_2Forage />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <EatWater_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="Float">
+      <table>
+        <Float_Breath />
+        <Float_Idle />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <Float_2TreadWater />
+        </table>
+      </edge>
+      <edge name="SleepWater">
+        <table>
+          <Float_2SleepWater />
+        </table>
+      </edge>
+      <edge name="SleepKelpBed">
+        <table>
+          <Float_2SleepKelpBed />
+        </table>
+      </edge>
+    </node>
+    <node name="Forage">
+      <table>
+        <Forage_Dig />
+        <Forage_Idle />
+      </table>
+      <edge name="EatWater">
+        <table>
+          <Forage_2EatWater />
+        </table>
+      </edge>
+    </node>
+    <node name="Lie">
+      <table>
+        <Lie_Idle />
+        <Lie_Sneeze />
+        <Lie_Sniff />
+        <Lie_Yawn />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Lie_2Stand />
+        </table>
+      </edge>
+      <edge name="Sleep">
+        <table>
+          <Lie_2Sleep />
+        </table>
+      </edge>
+    </node>
+    <node name="Nurse">
+      <table>
+        <Nurse_Idle />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <Nurse_2TreadWater />
+        </table>
+      </edge>
+    </node>
+    <node name="Run">
+      <table>
+        <Run_Ahead />
+        <Run_LeftA />
+        <Run_LeftB />
+        <Run_RightA />
+        <Run_RightB />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Run_2Stand />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Run_2Walk />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <Run_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="RunObject">
+      <table>
+        <RunObject_Ahead />
+        <RunObject_LeftA />
+        <RunObject_LeftB />
+        <RunObject_RightA />
+        <RunObject_RightB />
+      </table>
+      <edge name="WalkObject">
+        <table>
+          <RunObject_2WalkObject />
+        </table>
+      </edge>
+      <edge name="SwimObject">
+        <table>
+          <RunObject_2SwimObject />
+        </table>
+      </edge>
+      <edge name="StandObject">
+        <table>
+          <RunObject_2StandObject />
+        </table>
+      </edge>
+    </node>
+    <node name="SealSeat">
+      <table>
+        <SealSeat_ChinScratch />
+        <SealSeat_EatTreat />
+        <SealSeat_HeadScratch />
+        <SealSeat_Idle />
+        <SealSeat_LookCute />
+      </table>
+      <edge name="Stand">
+        <table>
+          <SealSeat_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Secondary">
+      <table>
+        <Secondary_HeadLook />
+      </table>
+    </node>
+    <node name="Sleep">
+      <table>
+        <Sleep_Idle />
+      </table>
+      <edge name="Lie">
+        <table>
+          <Sleep_2Lie />
+        </table>
+      </edge>
+    </node>
+    <node name="SleepKelpBed">
+      <table>
+        <SleepKelpBed_Idle />
+      </table>
+      <edge name="Float">
+        <table>
+          <SleepKelpBed_2Float />
+        </table>
+      </edge>
+    </node>
+    <node name="SleepWater">
+      <table>
+        <SleepWater_Idle />
+      </table>
+      <edge name="Float">
+        <table>
+          <SleepWater_2Float />
+        </table>
+      </edge>
+    </node>
+    <node name="Stand">
+      <table>
+        <Stand_Attacked />
+        <Stand_BiteNose />
+        <Stand_Cry />
+        <Stand_GuestAttack />
+        <Stand_Idle />
+        <Stand_NoseBitten />
+        <Stand_Pee />
+        <Stand_Poop />
+        <Stand_Quiver />
+        <Stand_Sneeze />
+        <Stand_Sniff />
+        <Stand_TurnLeft90 />
+        <Stand_TurnRight180 />
+        <Stand_TurnRight90 />
+        <Stand_VocalDisplay />
+        <Stand_Yawn />
+      </table>
+      <edge name="Lie">
+        <table>
+          <Stand_2Lie />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Stand_2Walk />
+        </table>
+      </edge>
+      <edge name="StandObject">
+        <table>
+          <Stand_2StandObject />
+        </table>
+      </edge>
+      <edge name="Run">
+        <table>
+          <Stand_2Run />
+        </table>
+      </edge>
+      <edge name="SealSeat">
+        <table>
+          <Stand_2SealSeat />
+        </table>
+      </edge>
+      <edge name="EatLand">
+        <table>
+          <Stand_2EatLand />
+        </table>
+      </edge>
+    </node>
+    <node name="StandObject">
+      <table>
+        <StandObject_Idle />
+        <StandObject_TurnLeft90 />
+        <StandObject_TurnRight180 />
+        <StandObject_TurnRight90 />
+      </table>
+      <edge name="RunObject">
+        <table>
+          <StandObject_2RunObject />
+        </table>
+      </edge>
+      <edge name="Stand">
+        <table>
+          <StandObject_2Stand />
+        </table>
+      </edge>
+      <edge name="WalkObject">
+        <table>
+          <StandObject_2WalkObject />
+        </table>
+      </edge>
+    </node>
+    <node name="Swim">
+      <table>
+        <Swim_Ahead />
+        <Swim_JumpFailure />
+        <Swim_JumpSuccess />
+        <Swim_JumpSuperSuccess />
+        <Swim_Sniff />
+        <Swim_Somersault />
+        <Swim_Turn180 />
+        <Swim_TurnLeft90 />
+        <Swim_TurnRight90 />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <Swim_2TreadWater />
+        </table>
+      </edge>
+      <edge name="SwimObject">
+        <table>
+          <Swim_2SwimObject />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Swim_2Walk />
+          <Swim_2Walk_Platform />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <Swim_2SwimSub />
+        </table>
+      </edge>
+      <edge name="Run">
+        <table>
+          <Swim_2Run />
+        </table>
+      </edge>
+      <edge name="SwimGlide">
+        <table>
+          <Swim_2SwimGlide />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimGlide">
+      <table>
+        <SwimGlide_Ahead />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimGlide_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimObject">
+      <table>
+        <SwimObject_Ahead />
+        <SwimObject_Turn180 />
+        <SwimObject_TurnLeft90 />
+        <SwimObject_TurnRight90 />
+      </table>
+      <edge name="RunObject">
+        <table>
+          <SwimObject_2RunObject />
+        </table>
+      </edge>
+      <edge name="TreadWaterObject">
+        <table>
+          <SwimObject_2TreadWaterObject />
+        </table>
+      </edge>
+      <edge name="SwimObjectGlide">
+        <table>
+          <SwimObject_2SwimObjectGlide />
+        </table>
+      </edge>
+      <edge name="SwimSubObject">
+        <table>
+          <SwimObject_2SwimSubObject />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <SwimObject_2Swim />
+        </table>
+      </edge>
+      <edge name="WalkObject">
+        <table>
+          <SwimObject_2WalkObject />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimObjectGlide">
+      <table>
+        <SwimObjectGlide_Ahead />
+      </table>
+      <edge name="SwimObject">
+        <table>
+          <SwimObjectGlide_2SwimObject />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSub">
+      <table>
+        <SwimSub_Ahead />
+        <SwimSub_Turn180 />
+        <SwimSub_TurnDown90 />
+        <SwimSub_TurnLeft90 />
+        <SwimSub_TurnRight90 />
+        <SwimSub_TurnUp90 />
+      </table>
+      <edge name="SwimSubGlide">
+        <table>
+          <SwimSub_2SwimSubGlide />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <SwimSub_2Swim />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <SwimSub_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubGlide">
+      <table>
+        <SwimSubGlide_Ahead />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <SwimSubGlide_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubObject">
+      <table>
+        <SwimSubObject_Ahead />
+        <SwimSubObject_Turn180 />
+        <SwimSubObject_TurnDown90 />
+        <SwimSubObject_TurnLeft90 />
+        <SwimSubObject_TurnRight90 />
+        <SwimSubObject_TurnUp90 />
+      </table>
+      <edge name="SwimObject">
+        <table>
+          <SwimSubObject_2SwimObject />
+        </table>
+      </edge>
+      <edge name="SwimSubObjectGlide">
+        <table>
+          <SwimSubObject_2SwimSubObjectGlide />
+        </table>
+      </edge>
+      <edge name="TreadWaterSubObject">
+        <table>
+          <SwimSubObject_2TreadWaterSubObject />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <SwimSubObject_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubObjectGlide">
+      <table>
+        <SwimSubObjectGlide_Ahead />
+      </table>
+      <edge name="SwimSubObject">
+        <table>
+          <SwimSubObjectGlide_2SwimSubObject />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimUpsideDown">
+      <table>
+        <SwimUpsideDown_Ahead />
+        <SwimUpsideDown_Turn180 />
+        <SwimUpsideDown_TurnLeft90 />
+        <SwimUpsideDown_TurnRight90 />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <SwimUpsideDown_2TreadWater />
+        </table>
+      </edge>
+      <edge name="SwimUpsideDownGlide">
+        <table>
+          <SwimUpsideDown_2SwimUpsideDownGlide />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <SwimUpsideDown_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimUpsideDownGlide">
+      <table>
+        <SwimUpsideDownGlide_Ahead />
+      </table>
+      <edge name="SwimUpsideDown">
+        <table>
+          <SwimUpsideDownGlide_2SwimUpsideDown />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimYoung">
+      <table>
+        <SwimYoung_Ahead />
+        <SwimYoung_Breath />
+        <SwimYoung_Turn180 />
+      </table>
+      <edge name="TreadWaterYoung">
+        <table>
+          <SwimYoung_2TreadWaterYoung />
+        </table>
+      </edge>
+      <edge name="SwimYoungGlide">
+        <table>
+          <SwimYoung_2SwimYoungGlide />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimYoungGlide">
+      <table>
+        <SwimYoungGlide_Ahead />
+      </table>
+      <edge name="SwimYoung">
+        <table>
+          <SwimYoungGlide_2SwimYoung />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWater">
+      <table>
+        <TreadWater_Attacked />
+        <TreadWater_BiteNose />
+        <TreadWater_BlowFur />
+        <TreadWater_ChewPaw />
+        <TreadWater_Cry />
+        <TreadWater_GetTreat />
+        <TreadWater_GuestAttack />
+        <TreadWater_Idle />
+        <TreadWater_NodLeftRight />
+        <TreadWater_NodUpDown />
+        <TreadWater_NoseBitten />
+        <TreadWater_PickFur />
+        <TreadWater_Quiver />
+        <TreadWater_Sniff />
+        <TreadWater_TrainingConfused />
+        <TreadWater_TrainingNodLeftRight />
+        <TreadWater_TrainingNodUpDown />
+        <TreadWater_Turn180 />
+        <TreadWater_TurnLeft90 />
+        <TreadWater_TurnRight90 />
+        <TreadWater_VocalDisplay />
+        <TreadWater_Yawn />
+      </table>
+      <edge name="Float">
+        <table>
+          <TreadWater_2Float />
+        </table>
+      </edge>
+      <edge name="Nurse">
+        <table>
+          <TreadWater_2Nurse />
+        </table>
+      </edge>
+      <edge name="TreadWaterObject">
+        <table>
+          <TreadWater_2TreadWaterObject />
+        </table>
+      </edge>
+      <edge name="SwimUpsideDown">
+        <table>
+          <TreadWater_2SwimUpsideDown />
+        </table>
+      </edge>
+      <edge name="TreadWaterSubObject">
+        <table>
+          <TreadWater_2TreadWaterSubObject />
+        </table>
+      </edge>
+      <edge name="TreadWaterYoung">
+        <table>
+          <TreadWater_2TreadWaterYoung />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <TreadWater_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterObject">
+      <table>
+        <TreadWaterObject_Idle />
+        <TreadWaterObject_Turn180 />
+        <TreadWaterObject_TurnLeft90 />
+        <TreadWaterObject_TurnRight90 />
+        <TreadWaterObject_UseShakerToyFailure />
+        <TreadWaterObject_UseShakerToySuccess />
+        <TreadWaterObject_UseShakerToySuperSuccess />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <TreadWaterObject_2TreadWater />
+          <TreadWaterObject_2TreadWater_ThrowInHoopFailure />
+          <TreadWaterObject_2TreadWater_ThrowInHoopSuccess />
+          <TreadWaterObject_2TreadWater_ThrowInHoopSuperSuccess />
+        </table>
+      </edge>
+      <edge name="SwimObject">
+        <table>
+          <TreadWaterObject_2SwimObject />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterSub">
+      <table>
+        <TreadWaterSub_Attacked />
+        <TreadWaterSub_GetTreat />
+        <TreadWaterSub_Idle />
+        <TreadWaterSub_Quiver />
+        <TreadWaterSub_TrainingConfused />
+        <TreadWaterSub_TrainingNodLeftRight />
+        <TreadWaterSub_TrainingNodUpDown />
+        <TreadWaterSub_Turn180 />
+        <TreadWaterSub_TurnLeft90 />
+        <TreadWaterSub_TurnRight90 />
+      </table>
+      <edge name="Forage">
+        <table>
+          <TreadWaterSub_2Forage />
+        </table>
+      </edge>
+      <edge name="EatWater">
+        <table>
+          <TreadWaterSub_2EatWater />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <TreadWaterSub_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterSubObject">
+      <table>
+        <TreadWaterSubObject_Idle />
+        <TreadWaterSubObject_Turn180 />
+        <TreadWaterSubObject_TurnLeft90 />
+        <TreadWaterSubObject_TurnRight90 />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <TreadWaterSubObject_2TreadWater />
+        </table>
+      </edge>
+      <edge name="SwimSubObject">
+        <table>
+          <TreadWaterSubObject_2SwimSubObject />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterYoung">
+      <table>
+        <TreadWaterYoung_BlowFurYoung />
+        <TreadWaterYoung_Breath />
+        <TreadWaterYoung_Idle />
+        <TreadWaterYoung_PickFurYoung />
+        <TreadWaterYoung_Turn180 />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <TreadWaterYoung_2TreadWater />
+        </table>
+      </edge>
+      <edge name="SwimYoung">
+        <table>
+          <TreadWaterYoung_2SwimYoung />
+        </table>
+      </edge>
+    </node>
+    <node name="Walk">
+      <table>
+        <Walk_Ahead />
+        <Walk_LeftA />
+        <Walk_LeftB />
+        <Walk_RightA />
+        <Walk_RightB />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Walk_2Stand />
+        </table>
+      </edge>
+      <edge name="Run">
+        <table>
+          <Walk_2Run />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <Walk_2Swim />
+          <Walk_2Swim_Platform />
+        </table>
+      </edge>
+    </node>
+    <node name="WalkObject">
+      <table>
+        <WalkObject_Ahead />
+        <WalkObject_LeftA />
+        <WalkObject_LeftB />
+        <WalkObject_RightA />
+        <WalkObject_RightB />
+      </table>
+      <edge name="RunObject">
+        <table>
+          <WalkObject_2RunObject />
+        </table>
+      </edge>
+      <edge name="SwimObject">
+        <table>
+          <WalkObject_2SwimObject />
+        </table>
+      </edge>
+      <edge name="StandObject">
+        <table>
+          <WalkObject_2StandObject />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

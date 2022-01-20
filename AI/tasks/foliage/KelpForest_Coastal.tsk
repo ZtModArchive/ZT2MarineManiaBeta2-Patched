@@ -1,0 +1,49 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Browse" UniqueID="KelpForest_Coastal:Browse">
+      <BFAICreateData>
+         <Subjects>
+            <b_Fucivore/>
+            <Qualifiers isSwimming="true"/>            
+         </Subjects>
+         <Targets>
+            <KelpForest_Coastal/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>            
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBrowse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-40" bathroom="30" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Browsing" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_4">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBrowseGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="BrowseBushSub"/>
+            <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

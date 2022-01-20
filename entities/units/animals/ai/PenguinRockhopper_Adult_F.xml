@@ -1,0 +1,76 @@
+<BFTypedBinder binderType="PenguinRockhopper_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Aves>
+                  <Sphenisciformes>
+                     <Spheniscidae>
+                        <PenguinRockhopper>
+                           <PenguinRockhopper_Adult>
+                              <PenguinRockhopper_Adult_F/>
+                           </PenguinRockhopper_Adult>
+                        </PenguinRockhopper>
+                     </Spheniscidae>
+                  </Sphenisciformes>
+               </Aves>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,2)"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="texController" required="1">
+         <instance>
+            <BFAITextureController currState="well" defaultState="well">
+               <attribList>
+                  <health />
+                  <hygiene />
+               </attribList>
+               <stateList>
+                  <sickanddirty>
+                     <attribData>
+                        <health minRange="70" maxRange="101" />
+                        <hygiene minRange="70" maxRange="101" />
+                     </attribData>
+                     <textureData>
+                        <mainObj material="PenguinRockhopper_Adult_F" image="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Sick_Dirty.dds" />
+                     </textureData>
+                  </sickanddirty>
+                  <sick>
+                     <attribData>
+                        <health minRange="70" maxRange="101" />
+                     </attribData>
+                     <textureData>
+                        <mainObj material="PenguinRockhopper_Adult_F" image="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Sick.dds" />
+                     </textureData>
+                  </sick>
+                  <dirty>
+                     <attribData>
+                        <hygiene minRange="70" maxRange="101" />
+                     </attribData>
+                     <textureData>
+                        <mainObj material="PenguinRockhopper_Adult_F" image="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Dirty.dds" />
+                     </textureData>
+                  </dirty>
+                  <well>
+                     <textureData>
+                        <mainObj material="PenguinRockhopper_Adult_F" image="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F.dds" />
+                     </textureData>
+                  </well>
+               </stateList>
+            </BFAITextureController>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

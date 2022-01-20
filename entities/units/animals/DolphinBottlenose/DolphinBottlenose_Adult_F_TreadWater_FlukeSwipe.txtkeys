@@ -1,0 +1,12 @@
+<TEXTKEY>
+   <key time="0.1" text="{Bip01 Head} runspr"/>
+   <key time="0.1" text="whap 90"/>
+   <key time="0.25" text="{Bip01 Tail4} snd 'splash_large' "/>
+   <key time="0.25" text="{Bip01 Tail4} snd 'splash_large_uw' "/>
+   <key time="0.25" text="{Bip01 Tail4} splash directed_large"/>
+   <key time="0.28" text="{Bip01 Head} runspr"/>
+   <key time="0.42" text="{Bip01_Dorsal} runspr"/>
+   <key time="0.71" text="{Bip01 Tail4} runspl"/>
+   <key time="0.80" text="{Bip01 Head} runspr"/>
+   <key time="0.89" text="{Bip01_Dorsal} runspr"/>
+</TEXTKEY>

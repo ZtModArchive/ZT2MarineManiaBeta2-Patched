@@ -1,0 +1,197 @@
+<UIListBox name="XP2_Challenge" columns="-1" autosize="false">
+   <UIRegion x="0" y="0" w="0" h="305" walign="max"/>
+   <UIAspect>
+      <default image="ui/shared/white1X1.dds">
+         <BFColor r="64" g="64" b="64" a="255"/>
+      </default>
+   </UIAspect>
+   <children>
+      <UIListBox rows="-1" autosize="true" name="awardslist">
+         <UIRegion x="0" y="0" w="260" h="0"/>
+         <children>
+            <UILayout name="MarineAnimalChallenges_name_award">
+               <UIRegion x="10" y="0" w="0" h="60"/>
+               <children>
+                  <UIStatic template="awardsicon">
+                     <UIAspect>
+                        <default image="entities/units/animals/TunaYellowfin/TunaYellowfin_Adult_F_icon.dds"/>
+                     </UIAspect>
+                  </UIStatic>
+                  <UIText template="awardstext">
+                     <UIAspect locid="awards:MarineAnimalChallenges_name"/>
+                     <text type="multi"/>
+                     <children>
+                        <UILayout name="bar clipper">
+                           <UIRegion x="11" y="6" w="-11" h="-6" xalign="min" yalign="min" walign="max" halign="max"/>
+                           <children>
+                              <UILayout name="bar">
+                                 <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="% min" halign="max"/>
+                                 <UIState active="normal" visible="normal"/>
+                                 <UIAspect>
+                                    <default image="ui/shared/white1X1.dds">
+                                       <BFColor r="0" g="255" b="0" a="150"/>
+                                    </default>
+                                 </UIAspect>
+                              </UILayout>
+                           </children>
+                        </UILayout>
+                     </children>
+                  </UIText>
+                  <UIHoverButton name="pre">
+                     <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect alwayshit="true">
+                        <default image="ui\shared\white1x1.dds">
+                           <BFRect x="0" y="0" w="-1" h="-1"/>
+                           <BFColor r="0" g="0" b="0" a="0"/>
+                        </default>
+                        <standard>
+                           <normal/>
+                           <highlighted/>
+                           <activated/>
+                           <disabled/>
+                        </standard>
+                     </UIAspect>
+                     <UIHotKeys/>
+                     <enter>
+                        <event msg="UI_CHILD" data="UIChildData" name="awards description">
+                           <child msg="UI_SET_LOCID" data="BFString" string="awards:MarineAnimalChallenges_pre_ltt"/>
+                        </event>
+                     </enter>
+                     <leave>
+                        <event msg="UI_CHILD" data="UIChildData" name="awards description">
+                           <child msg="UI_SET_LOCID" data="BFString" string=""/>
+                        </event>
+                     </leave>
+                  </UIHoverButton>
+                  <UIHoverButton name="post">
+                     <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="hidden"/>
+                     <UIAspect alwayshit="true">
+                        <default image="ui\shared\white1x1.dds">
+                           <BFRect x="0" y="0" w="-1" h="-1"/>
+                           <BFColor r="0" g="0" b="0" a="0"/>
+                        </default>
+                        <standard>
+                           <normal/>
+                           <highlighted/>
+                           <activated/>
+                           <disabled/>
+                        </standard>
+                     </UIAspect>
+                     <UIHotKeys/>
+                     <enter>
+                        <event msg="UI_CHILD" data="UIChildData" name="awards description">
+                           <child msg="UI_SET_LOCID" data="BFString" string="awards:MarineAnimalChallenges_post_ltt"/>
+                        </event>
+                     </enter>
+                     <leave>
+                        <event msg="UI_CHILD" data="UIChildData" name="awards description">
+                           <child msg="UI_SET_LOCID" data="BFString" string=""/>
+                        </event>
+                     </leave>
+                  </UIHoverButton>
+                  <UILayout template="highlight" name="highlightbar">
+                     <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="hidden"/>
+                     <UIAspect>
+                        <default/>
+                     </UIAspect>
+                  </UILayout>
+               </children>
+            </UILayout>
+            <UILayout name="MarineShowChallenges_name_award">
+               <UIRegion x="10" y="0" w="0" h="60"/>
+               <children>
+                  <UIStatic template="awardsicon">
+                     <UIAspect>
+                        <default image="entities/objects/scenery/BigScreenTV/BigScreenTV_icon.dds"/>
+                     </UIAspect>
+                  </UIStatic>
+                  <UIText template="awardstext">
+                     <UIAspect locid="awards:MarineShowChallenges_name"/>
+                     <text type="multi"/>
+                     <children>
+                        <UILayout name="bar clipper">
+                           <UIRegion x="11" y="6" w="-11" h="-6" xalign="min" yalign="min" walign="max" halign="max"/>
+                           <children>
+                              <UILayout name="bar">
+                                 <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="% min" halign="max"/>
+                                 <UIState active="normal" visible="normal"/>
+                                 <UIAspect>
+                                    <default image="ui/shared/white1X1.dds">
+                                       <BFColor r="0" g="255" b="0" a="150"/>
+                                    </default>
+                                 </UIAspect>
+                              </UILayout>
+                           </children>
+                        </UILayout>
+                     </children>
+                  </UIText>
+                  <UIHoverButton name="pre">
+                     <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect alwayshit="true">
+                        <default image="ui\shared\white1x1.dds">
+                           <BFRect x="0" y="0" w="-1" h="-1"/>
+                           <BFColor r="0" g="0" b="0" a="0"/>
+                        </default>
+                        <standard>
+                           <normal/>
+                           <highlighted/>
+                           <activated/>
+                           <disabled/>
+                        </standard>
+                     </UIAspect>
+                     <UIHotKeys/>
+                     <enter>
+                        <event msg="UI_CHILD" data="UIChildData" name="awards description">
+                           <child msg="UI_SET_LOCID" data="BFString" string="awards:MarineShowChallenges_pre_ltt"/>
+                        </event>
+                     </enter>
+                     <leave>
+                        <event msg="UI_CHILD" data="UIChildData" name="awards description">
+                           <child msg="UI_SET_LOCID" data="BFString" string=""/>
+                        </event>
+                     </leave>
+                  </UIHoverButton>
+                  <UIHoverButton name="post">
+                     <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="hidden"/>
+                     <UIAspect alwayshit="true">
+                        <default image="ui\shared\white1x1.dds">
+                           <BFRect x="0" y="0" w="-1" h="-1"/>
+                           <BFColor r="0" g="0" b="0" a="0"/>
+                        </default>
+                        <standard>
+                           <normal/>
+                           <highlighted/>
+                           <activated/>
+                           <disabled/>
+                        </standard>
+                     </UIAspect>
+                     <UIHotKeys/>
+                     <enter>
+                        <event msg="UI_CHILD" data="UIChildData" name="awards description">
+                           <child msg="UI_SET_LOCID" data="BFString" string="awards:MarineShowChallenges_post_ltt"/>
+                        </event>
+                     </enter>
+                     <leave>
+                        <event msg="UI_CHILD" data="UIChildData" name="awards description">
+                           <child msg="UI_SET_LOCID" data="BFString" string=""/>
+                        </event>
+                     </leave>
+                  </UIHoverButton>
+                  <UILayout template="highlight" name="highlightbar">
+                     <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="hidden"/>
+                     <UIAspect>
+                        <default/>
+                     </UIAspect>
+                  </UILayout>
+               </children>
+            </UILayout>
+         </children>
+      </UIListBox>
+   </children>
+</UIListBox>

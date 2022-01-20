@@ -1,0 +1,164 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Training" Priority="85" reserveTag="Training" UniqueID="Basketball_Hoop:Training">
+     <BFAICreateData>
+       <Subjects>
+          <OtterSea_Adult/>
+          <Qualifiers inWater_OR_onLand="true"/>
+       </Subjects>
+       <Targets>
+         <fromToken/>
+         <Qualifiers_AND inWater_OR_onLand="true"/>
+       </Targets>
+       <Objects>
+         <t_FPTSummonOtterSeaBasketball/>
+       </Objects>
+     </BFAICreateData>
+     <BFAIEvalData fixedScore="95"/>
+     <BFBehExecTask>
+       <BFBehEnter/>
+     </BFBehExecTask>
+     <BFAICompletionData/>
+     <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Training_Teleport" Priority="86" reserveTag="Training_Teleport" UniqueID="Basketball_Hoop:Training_Teleport">
+     <BFAICreateData>
+       <Subjects>
+          <OtterSea_Adult/>
+          <Qualifiers inWater_OR_onLand="true"/>
+       </Subjects>
+       <Targets>
+         <fromToken/>
+         <Qualifiers_AND inWater_OR_onLand="true"/>
+       </Targets>
+       <Objects>
+         <t_fptTeleportOtterSeaBasketball/>
+       </Objects>
+     </BFAICreateData>
+     <BFAIEvalData fixedScore="95"/>
+     <BFBehExecTask>
+       <BFBehEnter/>
+     </BFBehExecTask>
+     <BFAICompletionData/>
+     <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Basketball_Failure" reserveTag="BasketballHoop_Failure" UniqueID="Basketball_Hoop:Basketball_Failure">
+     <BFAICreateData>
+       <Subjects>
+         <OtterSea_Adult/>
+         <Qualifiers isSwimming="true"/>
+       </Subjects>
+       <Targets>
+         <fromToken/>
+         <Qualifiers inWater="true"/>
+       </Targets>
+       <Objects>
+         <t_BasketballFailure/>
+       </Objects>
+     </BFAICreateData>
+     <BFAIEvalData fixedScore="2000"/>
+     <BFBehExecTask>
+       <BFBehEnter/>
+       <BFBehPlaySet behSet="useContainer"/>
+     </BFBehExecTask>
+     <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-5" stimulation="-5"/>
+       <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowBad"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+          <BFBehSendToken>
+              <BFAITokenList>
+                 <BFAIToken Name="t_FailureReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+              </BFAITokenList>
+           </BFBehSendToken>
+        </BFBehExecTask>
+     </BFAICompletionData>
+     <BFAIFailureData>
+       <BFBehExecTask>
+         <BFBehPlaySet behSet="FailureSet"/>
+       </BFBehExecTask>
+     </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Basketball_Success" reserveTag="BasketballHoop_Success" UniqueID="Basketball_Hoop:Basketball_Success">
+      <BFAICreateData>
+         <Subjects>
+            <OtterSea_Adult/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_BasketballSuccess/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+         <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+          <BFBehSendToken>
+              <BFAITokenList>
+                 <BFAIToken Name="t_SuccessReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+              </BFAITokenList>
+           </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Basketball_Critical" reserveTag="BasketballHoop_Critical" UniqueID="Basketball_Hoop:Basketball_Critical">
+      <BFAICreateData>
+         <Subjects>
+            <OtterSea_Adult/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_BasketballCritical/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+         <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowVeryGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+          <BFBehSendToken>
+              <BFAITokenList>
+                 <BFAIToken Name="t_CriticalReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+              </BFAITokenList>
+           </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

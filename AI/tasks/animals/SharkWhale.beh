@@ -1,0 +1,1328 @@
+<BehaviorSets>
+<!--Wander behavior sets for randomized wandering-->
+   <WanderSurf>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Surface"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="25"/>
+               <WanderSurf_Med weight="25"/>
+               <WanderSurf_Slow weight="25"/>
+               <WanderSurf_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSurf_Glide>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Glide>
+   <WanderSub>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="25"/>
+               <WanderSub_Med weight="25"/>
+               <WanderSub_Slow weight="25"/>
+               <WanderSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Slow>
+   <WanderSub_Glide>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Glide>
+   <WanderRest>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderRest>
+   
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Unhappy>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultSwim>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="50"/>
+               <WanderSub weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultSwim>
+   <DefaultSwimSurface>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Swim_Ahead"/>
+      </behaviors>
+   </DefaultSwimSurface>
+   <DefaultSwimSub>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="SwimSub_Ahead"/>
+      </behaviors>
+   </DefaultSwimSub>
+   <DefaultEatSwim>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Graze"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="EatSurface_Ahead"/>
+      </behaviors>
+   </DefaultEatSwim>
+   <DefaultEatSwimSub>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Graze"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="EatSwimSub_Ahead"/>
+      </behaviors>
+   </DefaultEatSwimSub>
+   <DefaultLie>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="WanderSub_Slow"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultRest>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="WanderSub_Glide"/>
+      </behaviors>
+   </DefaultRest>
+   <DefaultHappy>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="50"/>
+               <WanderSub weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultHappy>
+   <DefaultUnhappy>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub weight="50"/>
+               <FloatSub weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="DefaultSwimSurface"/>
+               <SwimSub behSet="DefaultSwimSub"/>
+               <EatSwim behSet="DefaultEatSwim"/>
+               <EatSwimSub behSet="DefaultEatSwimSub"/>
+               <default behSet="DefaultSwimSub"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>
+   <FailureSet>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="SurfaceFailure"/>
+               <underwater behSet="SubFailure"/>
+               <default behSet="SubFailure"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <SurfaceFailure>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+            <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </SurfaceFailure>
+   <SubFailure>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+            <BFBehPlaySet behSet="Float_Sub"/>
+      </behaviors>
+   </SubFailure>
+   <Think>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Swim behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <Investigate>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="3"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Dying>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="OnLand"/>
+               <water behSet="WanderSurf_Slow"/>
+               <underwater behSet="WanderSub_Slow"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Dying>
+   <Die_Fight>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Chum_mm" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Beached>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Beached>   
+   <Eat>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="EatSurface"/>
+               <SwimSub behSet="EatSub"/>
+               <default behSet="EatSub"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Eat>
+   <EatSurface>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <EatSurface_Fast weight="25"/>
+               <EatSurface_Med weight="25"/>
+               <EatSurface_Slow weight="25"/>
+               <EatSurface_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </EatSurface>
+   <EatSurface_Slow>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatslow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSurface_Slow>
+   <EatSurface_Med>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatmedium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSurface_Med>
+   <EatSurface_Fast>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatfast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSurface_Fast>
+   <EatSurface_Glide>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatglide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSurface_Glide>
+   <EatSub>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <EatSub_Fast weight="25"/>
+               <EatSub_Med weight="25"/>
+               <EatSub_Slow weight="25"/>
+               <EatSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </EatSub>
+   <EatSub_Slow>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatslow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSub_Slow>
+   <EatSub_Med>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatmedium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSub_Med>
+   <EatSub_Fast>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatfast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSub_Fast>
+   <EatSub_Glide>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatglide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSub_Glide>
+   <RubFloor>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_RubGround"/>
+      </behaviors>
+   </RubFloor>   
+   <FloatSub>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="FloatSub_Idle" playTime="10"/>
+      </behaviors>
+   </FloatSub>   
+   <ObserveGuest>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehMove locoSpeed="slow"/>
+         <BFBehAnimate targetAnim="SwimSub_2FloatSub" interruptFlag="true"/>
+      </behaviors>
+   </ObserveGuest>
+   <Rendezvous>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit/>
+      </behaviors>
+   </Rendezvous>
+   <SyncSwimLead>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </SyncSwimLead>
+   <SyncSwimFollow>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFollowEntity locoSpeed="slow" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </SyncSwimFollow>
+   <WaitReproduction>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </WaitReproduction>
+   <ReproductionSwimLead>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </ReproductionSwimLead>
+   <ReproductionSwimFollow>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFollowEntity locoSpeed="slow" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </ReproductionSwimFollow>
+   <Birth>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="3">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth>
+   <SpawnF>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="SharkWhale_Young_F" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="SharkWhale_Young_M" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM>
+   <Surface_Submerge>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="3" maxDepth="10"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="0" maxDepth="0"/>
+      </behaviors>
+   </Surface>   
+   <DockAttackGuest>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Guest" targetNode="p_TalkOffset" targetAnim="Swim_Ahead" locoSpeed="fast"/>
+      </behaviors>
+   </DockAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="4" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </AttackGuest>   
+   <EnterBuoyLure>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="eatmedium" subjectNode="Node_Mouth"/>
+      </behaviors>
+   </EnterBuoyLure>
+   <UseBuoyLure>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="4" avoidLand="true" locoSpeed="eatsuckinfood" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </UseBuoyLure>
+   <ExitBuoyLure>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="4" avoidLand="true" locoSpeed="eatmedium" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </ExitBuoyLure>
+   <EnterArtificialReef>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="eatmedium" subjectNode="Node_Mouth"/>
+      </behaviors>
+   </EnterArtificialReef>
+   <UseArtificialReef>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="4" avoidLand="true" locoSpeed="eatsuckinfood" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </UseArtificialReef>
+   <ExitArtificialReef>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="4" avoidLand="true" locoSpeed="eatmedium" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </ExitArtificialReef>
+   <EnterFoodBox>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="eatmedium" subjectNode="Node_Mouth"/>
+      </behaviors>
+   </EnterFoodBox>
+   <UseFoodBox>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="4" avoidLand="true" locoSpeed="eatsuckinfood" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </UseFoodBox>
+   <ExitFoodBox>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="4" avoidLand="true" locoSpeed="eatmedium" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </ExitFoodBox>
+   <Poop>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop_Sick>
+   <OnLand>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Dying"/>
+      </behaviors>
+   </OnLand>
+   <Roar>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Eat weight="50"/>
+               <Float weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Roar> 
+   <SwipeMed>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="SwipeMed_Water"/>
+               <underwater behSet="SwipeMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </SwipeMed>
+   <SwipeMed_Water>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_TurnRight90 weight="75"/>
+               <Swim_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </SwipeMed_Water>
+   <SwipeMed_Underwater>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnRight90 weight="75"/>
+               <SwimSub_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </SwipeMed_Underwater> 
+   <HitMediumEqual>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <HitMed>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </HitMed>
+   <HitMed_Ground>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <OnLand_Twitch weight="75"/>
+               <OnLand_Dying weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Ground> 
+   <HitMed_Water>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_TurnRight90 weight="75"/>
+               <SwimSub_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Water> 
+   <HitMed_Underwater>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnRight90 weight="75"/>
+               <SwimSub_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Underwater> 
+   <HitMedDie>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie> 
+   <BiteMed>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="BiteMed_Water"/>
+               <underwater behSet="BiteMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BiteMed>
+   <BiteMed_Water>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_TurnRight90 weight="75"/>
+               <Swim_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </BiteMed_Water>
+   <BiteMed_Underwater>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnRight90 weight="75"/>
+               <SwimSub_Turn180 weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </BiteMed_Underwater> 
+   <BitMediumEqual>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <BitMed>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie> 
+   <WaitFight>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset"/>
+      </behaviors>
+   </WaitFight> 
+   <DockFight>
+      <subjects>
+         <SharkWhale_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset"/>
+      </behaviors>
+   </DockFight> 
+   <Die_Ground>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Twitch" />
+      </behaviors>
+   </Die_Ground> 
+   <Die_Water>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Water> 
+   <Die_Underwater>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Underwater> 
+   <DockAttacked>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <EnterBubbleEmitter>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterBubbleEmitter>
+   <UseBubbleEmitter>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_2Float" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="Float_Idle"/>
+      </behaviors>
+   </UseBubbleEmitter>
+   <ExitBubbleEmitter>
+      <subjects>
+         <SharkWhale/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitBubbleEmitter>   
+</BehaviorSets>

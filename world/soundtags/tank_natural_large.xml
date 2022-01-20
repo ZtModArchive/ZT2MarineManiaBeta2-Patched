@@ -1,0 +1,20 @@
+<soundtags>
+   <BFSoundtag>
+      <BF2DSndFactory name="DeepMovement_01">
+            <snd name="sound/B_TM_DeepMovement01.wav" randpan="1" randvolume="1" minpitch=".6" maxpitch=".9" minvolume=".20" maxvolume=".75"/>
+         </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF2DSndFactory name="Movement_01">
+         <snd name="sound/B_TM_Movement01.wav" randpan="1" randvolume="1" minpitch=".6" maxpitch=".9" minvolume=".20" maxvolume=".55"/>
+      </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BFAmbient2DSndFactory name="a_tank_natural_large">
+         <snds>
+            <snd name="DeepMovement_01" mindelay="15" maxdelay="50"/>
+            <snd name="Movement_01" mindelay="35" maxdelay="50"/>
+         </snds>
+      </BFAmbient2DSndFactory> 
+   </BFSoundtag>
+</soundtags>

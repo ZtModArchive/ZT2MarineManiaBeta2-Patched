@@ -1,0 +1,39 @@
+<BFTypedBinder binderType="tankladder" abstract="true">
+	<types>
+		<entity>
+			<scenery>
+				<tankladder/>
+			</scenery>
+		</entity>
+	</types>
+	<shared>
+		<BFAIEntityDataShared b_DoNotSave="true" />
+		<ZTPlacementData waterPlacement="true" tankPlacement="true" showTankPlacement="true" deletable="false" moveable="false" selectable="false" terrainFlatten="false" />
+		<BFGCollisionData isPassable="true" />
+	</shared>
+	<binder>
+    <BFNamedBinder binderName="mainObj">
+      <shared>
+        <BFSharedPhysVars noCaustics="true"/>
+      </shared>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="expandoPiece1" required="0">
+      <shared>
+        <BFSharedPhysVars noCaustics="true"/>
+      </shared>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="top" required="0">
+      <shared>
+        <BFSharedPhysVars noCaustics="true"/>
+      </shared>
+    </BFNamedBinder>
+    <BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="0">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

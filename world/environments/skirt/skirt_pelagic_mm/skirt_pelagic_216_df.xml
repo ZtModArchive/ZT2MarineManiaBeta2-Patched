@@ -1,0 +1,4 @@
+<BFPhysObj>
+   <BFRSceneGraphComponent modelfile="world\environments\skirt\skirt_pelagic_mm\skirt_pelagic_216_mm"/>
+	<BFForceUpdateWhenVisibleComponent />   
+</BFPhysObj>

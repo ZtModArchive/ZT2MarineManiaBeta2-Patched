@@ -1,0 +1,6 @@
+<TEXTKEY>
+   <key time="0.0" text="{Node_Eat} detach object"/>
+	<key time="0.2" text="{Bip01 Head} runspl strength=.15"/>    
+	<key time="0.6" text="{Bip01 Head} runsns strength=.09"/>    	
+	<key time="0.2" text="{Bip01 Spine} runspl strength=.1"/>    	
+</TEXTKEY>

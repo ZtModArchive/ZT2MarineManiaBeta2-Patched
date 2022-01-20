@@ -1,0 +1,14 @@
+<BFTypedBinder binderType="live_scenery_fish" abstract="true">
+   <types>
+      <entity>
+         <scenery>
+            <live_scenery>
+               <live_scenery_fish/>
+            </live_scenery>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

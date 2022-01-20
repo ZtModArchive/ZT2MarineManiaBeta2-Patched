@@ -1,0 +1,6 @@
+<BFPhysObj drawLast="true" allowHighlight="false">
+   <position x="0" y="0" z="0"/>
+   <BFSceneGraphComponent modelfile="world/particlesystems/emoticons/emoticons_training_bad.nif" updateBounds="true"/>
+   <BFHasParticleComponent/>
+   <BFForceUpdateWhenVisibleComponent/>
+</BFPhysObj>

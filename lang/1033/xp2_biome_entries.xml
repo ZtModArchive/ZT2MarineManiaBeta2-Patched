@@ -1,0 +1,62 @@
+<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_benthic:entry"  >Benthic Biome</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_benthic:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" bgimg="ui/zoopedia/topCellBg.dds" pady="15" padx="15">
+            <color r="255" g="255" b="255">
+               <cell width="600">
+                  <img src="UI/zoopedia/biome/benthic_zoopedia_biomebrush.dds" sx="0" sy="0" sw="256" sh="85"/>
+                  <p/>The benthic biome is the area of the ocean floor below the pelagic zone. It does not, however, include the deepest, darkest part of the ocean, known as the abyssal zone.
+                  <p/>The bottom of the benthic biome consists of sand, silt, and dead organisms. Certain animals and organisms thrive in the nutrient-rich environment, including bacteria, fungi, sponges, sea anemones, worms, sea stars, and bottom-feeding fish. Seaweed also grows here.
+               </cell>
+            </color>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_coastal:entry"  >Coastal Biome</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_coastal:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" bgimg="ui/zoopedia/topCellBg.dds" pady="15" padx="15">
+            <color r="255" g="255" b="255">
+               <cell width="600">
+                  <img src="UI/zoopedia/biome/coastal_zoopedia_biomebrush.dds" sx="0" sy="0" sw="256" sh="85"/>
+                  <p/>The coastal biome, also known as the intertidal zone, is the area where the ocean meets the shore. It is sometimes submerged under the water and sometimes exposed to open air. Animals and plants in this biome must be able to adapt to both the water and the open air.
+                  <p/>In the land areas where the highest tides reach, only a few algae and mollusk species exist. In these areas, though, there is a diverse array of these algae and small animals, such as herbivorous snails, crabs, sea stars, and tiny fishes. At the bottom of the coastal biome, which is only exposed during the lowest tides, there are many invertebrates, fishes, and seaweed. All of these species must adapt to the constant volatility of moving sands. In the rocky cliff areas along coasts, which also qualify as coastal biomes, there are fewer life forms to support, and those species have a more consistent habitat.
+   
+               </cell>
+            </color>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_pelagic:entry"  >Pelagic Biome</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_pelagic:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" bgimg="ui/zoopedia/topCellBg.dds" pady="15" padx="15">
+            <color r="255" g="255" b="255">
+               <cell width="600">
+                  <img src="UI/zoopedia/biome/pelagic_zoopedia_biomebrush.dds" sx="0" sy="0" sw="256" sh="85"/>
+                  <p/>Far from any land, the pelagic biome is the open ocean. The pelagic biome is generally cold; however, there is some variance in temperature due to thermal stratification, with the constant mixing of warm and cold ocean currents. Surface seaweeds thrive in the pelagic biome, as do many species of fish and some mammals, such as whales and dolphins.  
+               </cell>
+            </color>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_reef:entry"  >Reef Biome</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_reef:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" bgimg="ui/zoopedia/topCellBg.dds" pady="15" padx="15">
+            <color r="255" g="255" b="255">
+               <cell width="600">
+                  <img src="UI/zoopedia/biome/reef_zoopedia_biomebrush.dds" sx="0" sy="0" sw="256" sh="85"/>
+                  <p/>The reef biome is a coastal and oceanic ecosystem renowned for providing one of the most biologically diverse habitats on earth and for its beautiful life forms. A reef is an outcrop or ridge of rock situated just beneath the surface of the sea. Coral reefs are built largely or entirely by corals, which are tiny animals that live in colonies. Over a period of hundreds or even thousands of years, the limestone skeletons of dead corals continue to build up, forming an ever-growing structure for new corals. This physical structure, with its living surface of coral colonies and many other organisms, is a coral reef.   
+               </cell>
+            </color>
+         </cell>
+      </LOC_STRING>   
+
+</ZT2Strings>

@@ -1,0 +1,35 @@
+<BFTypedBinder binderType="SharkWhite_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Chondrichthyes>
+                  <Lamniformes>
+                     <Lamnidae>
+                        <SharkWhite>
+                           <SharkWhite_Young>
+                              <SharkWhite_Young_M/>
+                           </SharkWhite_Young>
+                        </SharkWhite>
+                     </Lamnidae>
+                  </Lamniformes>
+               </Chondrichthyes>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\SharkWhite\SharkWhite_Adult_M_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SharkWhite_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

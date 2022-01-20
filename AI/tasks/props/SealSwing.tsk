@@ -1,0 +1,166 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Training" Priority="85" reserveTag="Training" UniqueID="SealSwing:Training">
+     <BFAICreateData>
+       <Subjects>
+          <SeaLionCalifornia_Adult/>
+          <Qualifiers inWater_OR_onLand="true"/>
+       </Subjects>
+       <Targets>
+         <fromToken/>
+         <Qualifiers_AND inWater="true"/>
+       </Targets>
+       <Objects>
+         <t_FPTSummonSeaLionCaliforniaSwing/>
+         <t_FPTSummonSeaLionCaliforniaSwing_Male/>
+       </Objects>
+     </BFAICreateData>
+     <BFAIEvalData fixedScore="95"/>
+     <BFBehExecTask>
+       <BFBehEnter/>
+     </BFBehExecTask>
+     <BFAICompletionData/>
+     <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Training_Teleport" Priority="86" reserveTag="Training_Teleport" UniqueID="SealSwing:Training_Teleport">
+     <BFAICreateData>
+       <Subjects>
+          <SeaLionCalifornia_Adult/>
+          <Qualifiers inWater_OR_onLand="true"/>
+       </Subjects>
+       <Targets>
+         <fromToken/>
+         <Qualifiers_AND inWater="true"/>
+       </Targets>
+       <Objects>
+         <t_fptTeleportSeaLionCaliforniaSwing/>
+         <t_fptTeleportSeaLionCaliforniaSwing_Male/>
+       </Objects>
+     </BFAICreateData>
+     <BFAIEvalData fixedScore="95"/>
+     <BFBehExecTask>
+       <BFBehEnter/>
+     </BFBehExecTask>
+     <BFAICompletionData/>
+     <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Swing_Failure" reserveTag="Swing_Failure" UniqueID="SealSwing:Swing_Failure">
+     <BFAICreateData>
+       <Subjects>
+         <SeaLionCalifornia_Adult/>
+         <Qualifiers isSwimming="true"/>
+       </Subjects>
+       <Targets>
+         <fromToken/>
+         <Qualifiers inWater="true"/>
+       </Targets>
+       <Objects>
+         <t_SwingFailure/>
+       </Objects>
+     </BFAICreateData>
+     <BFAIEvalData fixedScore="2000"/>
+     <BFBehExecTask>
+       <BFBehEnter/>
+       <BFBehPlaySet behSet="useContainer"/>
+     </BFBehExecTask>
+     <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-5" stimulation="-5"/>
+       <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowBad"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+          <BFBehSendToken>
+              <BFAITokenList>
+                 <BFAIToken Name="t_FailureReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+              </BFAITokenList>
+           </BFBehSendToken>
+        </BFBehExecTask>
+     </BFAICompletionData>
+     <BFAIFailureData>
+       <BFBehExecTask>
+         <BFBehPlaySet behSet="FailureSet"/>
+       </BFBehExecTask>
+     </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Swing_Success" reserveTag="Swing_Success" UniqueID="SealSwing:Swing_Success">
+      <BFAICreateData>
+         <Subjects>
+            <SeaLionCalifornia_Adult/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_SwingSuccess/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+         <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+          <BFBehSendToken>
+              <BFAITokenList>
+                 <BFAIToken Name="t_SuccessReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+              </BFAITokenList>
+           </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Swing_Critical" reserveTag="Swing_Critical" UniqueID="SealSwing:Swing_Critical">
+      <BFAICreateData>
+         <Subjects>
+            <SeaLionCalifornia_Adult/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_SwingCritical/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+         <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowVeryGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+          <BFBehSendToken>
+              <BFAITokenList>
+                 <BFAIToken Name="t_CriticalReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+              </BFAITokenList>
+           </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

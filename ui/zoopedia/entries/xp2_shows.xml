@@ -1,0 +1,16 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry entry="zoopedia_shows">
+         <BFHelpEntry entry="zoopedia_bigscreentv"/>
+         <BFHelpEntry entry="zoopedia_grandstand_mm"/>
+         <BFHelpEntry entry="zoopedia_grandstand_upgraded_mm"/>
+         <BFHelpEntry entry="zoopedia_light_mm" order="zoopedia_tanklight"/>          
+         <BFHelpEntry entry="zoopedia_showplatform"/>
+         <BFHelpEntry entry="zoopedia_showplatform_upgraded" order="zoopedia_upgradedshowplatform"/>
+         <BFHelpEntry entry="zoopedia_tankportal"/>
+         <BFHelpEntry entry="zoopedia_trainingarea"/>
+         <BFHelpEntry entry="zoopedia_trickarea_mm"/>
+         <BFHelpEntry entry="zoopedia_trickplatform"/>         
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

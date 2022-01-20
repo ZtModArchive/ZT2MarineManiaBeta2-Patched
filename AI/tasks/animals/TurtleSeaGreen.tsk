@@ -1,0 +1,1425 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="GoToWater" UniqueID="TurtleSeaGreen:GoToWater">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <water/>
+        <Qualifiers inSight="25"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="500"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingInWater"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="Idle"/>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="WanderWater" UniqueID="TurtleSeaGreen:WanderWater">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="0.0002"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="WanderWater"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-30" rest="10"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Greeting" UniqueID="TurtleSeaGreen:Greeting">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <TurtleSeaGreen/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_InviteGreet" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToGreet" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove moveRadius="8"/>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalGreetGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-30" stimulation="-40"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Greeting_Respond" UniqueID="TurtleSeaGreen:Greeting_Respond">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_InviteGreet/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToGreet" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove moveRadius="8"/>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalGreetGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-30" stimulation="-40"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Sleep" UniqueID="TurtleSeaGreen:Sleep">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+        <Qualifiers_AND depthBelowSurface="GE 2" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap rest="-35"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehMove locoSpeed="medium"/>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Sleeping"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Sleep"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="-100"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DrinkWaterTank" UniqueID="TurtleSeaGreen:DrinkWaterTank">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers_AND thirst="GE 30" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap thirst="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Drinking"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Drink"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAIAttributeFloatMap thirst="-100" bathroom="20"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteFight" TaskDelayMin="60" TaskDelayMax="180" UniqueID="TurtleSeaGreen:InviteFight">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_M/>
+        <Qualifiers_AND inWater="true" reproduction="GE 70" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <TurtleSeaGreen_Adult_M/>
+        <Qualifiers_AND inWater="true" isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="20">
+      <BFAIAttributeFloatMap reproduction="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Fight" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Challenge"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteFight_NoFamily" TaskDelayMin="60" TaskDelayMax="180" UniqueID="TurtleSeaGreen:InviteFight_NoFamily">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_M/>
+        <Qualifiers_AND inWater="true" isSwimming="true" reproduction="GE 70"/>
+      </Subjects>
+      <Targets>
+        <TurtleSeaGreen_Adult_M/>
+        <Qualifiers_AND inWater="true" isSwimming="true" isFamily="false" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap reproduction="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Fight" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Challenge"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondFight" reserveTag="General" UniqueID="TurtleSeaGreen:RespondFight">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_M/>
+        <Qualifiers_AND inWater="true" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" isSwimming="true"/>
+      </Targets>
+      <Objects>
+        <t_Fight/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehSyncSet subjectBehSet="DockFight" targetBehSet="DockFight2"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fighting" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalFightBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap" resetPhase="true"/>
+      <BFBehSyncSet subjectBehSet="Fight" targetBehSet="DefendEqual" resetPhase="true"/>
+      <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap2" resetPhase="true"/>
+      <BFBehSyncSet subjectBehSet="DefendEqual" targetBehSet="Fight" resetPhase="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-20"/>
+      <BFAITargetData reproduction="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="YoungChase" UniqueID="TurtleSeaGreen:YoungChase">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <TurtleSeaGreen_Young/>
+        <Qualifiers_AND notInSight="6" isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="30" social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="YoungEvade" UniqueID="TurtleSeaGreen:YoungEvade">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" isSwimming="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayYoung/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="30" social="-20" exercise="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AdultChase" TaskDelayMin="60" TaskDelayMax="120" UniqueID="TurtleSeaGreen:AdultChase">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <TurtleSeaGreen_Adult/>
+        <Qualifiers_AND notInSight="6" isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="6" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_EvadePlayAdult" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Bite"/>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AdultEvade" UniqueID="TurtleSeaGreen:AdultEvade">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" isSwimming="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayAdult/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" stimulation="-20" social="-20" exercise="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Evade" UniqueID="TurtleSeaGreen:Evade">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Flee/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_1">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" exercise="-20"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadeAttack" UniqueID="TurtleSeaGreen:EvadeAttack">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Attack/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" exercise="-20"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Stunned" UniqueID="TurtleSeaGreen:Stunned">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets_AND>
+        <water/>
+        <tundra/>
+        <Qualifiers inSight="3"/>
+      </Targets_AND>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="500"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_3"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Drowning"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="BeachBallFloat"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap health="5"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="TurtleSeaGreen:OffspringCheck">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="1000"/>
+    <BFBehExecTask>
+      <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="TurtleSeaGreen:CantReproduce">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_F/>
+        <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+      </Subjects>
+      <Targets>
+        <TurtleSeaGreen_Adult_M/>
+        <Qualifiers_AND inHabitat="true" canMate="false"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="50">
+      <BFAIAttributeFloatMap reproduction="-27"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="TurtleSeaGreen:InviteReproduction">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_F/>
+        <Qualifiers_AND isSwimming="true" b_Pregnant="E false"/>
+      </Subjects>
+      <Targets>
+        <TurtleSeaGreen_Adult_M/>
+        <Qualifiers_AND isSwimming="true" canMate="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="50">
+      <BFAIAttributeFloatMap reproduction="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Wait"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="TurtleSeaGreen:RespondReproduction">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_M/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Reproduce/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2"/>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Bite"/>
+      <BFBehSyncSet subjectBehSet="Rendezvous" targetBehSet="Rendezvous"/>
+      <BFBehPlaySet behSet="Bite"/>
+      <BFBehSyncSet subjectBehSet="Mate" targetBehSet="Mate"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="75"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-50" rest="-10"/>
+      <BFAITargetData rest="-10"/>
+      <BFBehExecTask>
+        <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Pregnant" UniqueID="TurtleSeaGreen:Pregnant">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Pregnant1/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="50"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+          <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITargetData b_Pregnant="true"/>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="180.21" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="LayEgg_Dirt" UniqueID="TurtleSeaGreen:LayEgg_Dirt">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_F/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <dirt/>
+        <Qualifiers_AND inHabitat="true" inSight="20"/>
+      </Targets>
+      <Objects>
+        <t_Pregnant/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000">
+      <BFAIAttributeFloatMap reproduction="-90"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+          <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:LayingEgg"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="Lie_Idle"/>
+      <BFBehPlaySet behSet="LayEgg"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-100"/>
+      <BFAISubjectData b_Pregnant="false"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_4">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="LayEgg_GroundCover" UniqueID="TurtleSeaGreen:LayEgg_GroundCover">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_F/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <ground_cover/>
+        <Qualifiers_AND inHabitat="true" inSight="20"/>
+      </Targets>
+      <Objects>
+        <t_Pregnant/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000">
+      <BFAIAttributeFloatMap reproduction="-90"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+          <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:LayingEgg"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="Lie_Idle"/>
+      <BFBehPlaySet behSet="LayEgg"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-100"/>
+      <BFAISubjectData b_Pregnant="false"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_4">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="LayEgg_Shade" UniqueID="TurtleSeaGreen:LayEgg_Shade">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Adult_F/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <shade/>
+        <Qualifiers_AND inSight="20" inHabitat="true" onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_Pregnant/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000">
+      <BFAIAttributeFloatMap reproduction="-95"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+          <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:LayingEgg"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="Lie_Idle"/>
+      <BFBehPlaySet behSet="LayEgg"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-100"/>
+      <BFAISubjectData b_Pregnant="false"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_4">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="IdleEgg" UniqueID="TurtleSeaGreen:IdleEgg">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Egg/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="IdleEgg"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <!-- Remember to set Trigger Threshhold data in the animal's egg file to equal incubation -->
+  <BFAITaskTemplate Name="HatchEgg" UniqueID="TurtleSeaGreen:HatchEgg">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Egg/>
+        <Qualifiers_AND inWater_OR_onLand="true" incubation="GE 1.74"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="200"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="HatchEgg"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="TurtleSeaGreen:Born">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" lifespan="LE 1"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Born"/>
+          <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Idle"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SeekPrivacy" UniqueID="TurtleSeaGreen:SeekPrivacy">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap privacy="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SeekingPrivacy" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="15">
+        <avoidEntityTypes>
+          <Guest/>
+        </avoidEntityTypes>
+      </BFBehEvasion>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Hide" GiveTo="subject" Timeout="30" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="TurtleSeaGreen:Puberty">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 10.3"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Age_F" UniqueID="TurtleSeaGreen:Age_F">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Young_F/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Age/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehMorph morphTargetEntityType="TurtleSeaGreen_Adult_F" morphScale="true" morphPeriod="10" initScale="0.55"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Age_M" UniqueID="TurtleSeaGreen:Age_M">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Young_M/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Age/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehMorph morphTargetEntityType="TurtleSeaGreen_Adult_M" morphScale="true" morphPeriod="10" initScale="0.55"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Old" TaskDelayMin="60" TaskDelayMax="60" UniqueID="TurtleSeaGreen:Old">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers lifespan="GE 90.42"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap lifespan="-100"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Die" UniqueID="TurtleSeaGreen:Die">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Die/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="10000"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Die_OldAge"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Die_Sick" Priority="3" UniqueID="TurtleSeaGreen:Die_Sick">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers_AND inWater_OR_onLand="true" health="GE 99"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="15000"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Die_Sick"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="HideMarinePlant" UniqueID="TurtleSeaGreen:HideMarinePlant">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers_AND onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <marineplant/>
+        <Qualifiers_AND inWater="true" inHabitat="true" inSight="15"/>
+      </Targets>
+      <Objects>
+        <t_Hide/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100">
+      <BFAIAttributeFloatMap privacy="-25"/>
+      <BFAIBiomeMap alpine=".25" borealforest=".50" temperateforest=".75" desert=".50" grassland=".50" savannah="1.00" tropicalrainforest=".50" scrub=".75" tundra=".25" wetlands=".25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAISubjectData rest="-20" privacy="-50"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_2">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <BFBehPlaySet behSet="HideSub"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Hide" UniqueID="TurtleSeaGreen:Hide">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <marineplant/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Hide/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100">
+      <BFAIAttributeFloatMap privacy="-25"/>
+      <BFAIBiomeMap alpine=".25" borealforest=".50" temperateforest=".75" desert=".50" grassland=".50" savannah="1.00" tropicalrainforest=".50" scrub=".75" tundra=".25" wetlands=".25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAISubjectData rest="-20" privacy="-50"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_1">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <BFBehPlaySet behSet="HideSub"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackGuest_Ground" Priority="5" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="TurtleSeaGreen:AttackGuest_Ground">
+      <BFAICreateData>
+         <Subjects>
+            <TurtleSeaGreen_Adult/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest_Ground" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:PlayGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <BFBehSyncSet subjectBehSet="AttackGuest_Ground" targetBehSet="AttackedTurtleSeaGreen" resetPhase="true"/>
+         </BFBehExecTask>
+         <BFAITargetData amusement="-30" happiness="-10" gift="+25"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackGuest_Water" Priority="5" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="TurtleSeaGreen:AttackGuest_Water">
+      <BFAICreateData>
+         <Subjects>
+            <TurtleSeaGreen_Adult/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" inWater="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest_Water" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <BFBehSyncSet subjectBehSet="AttackGuest_Water" targetBehSet="AttackedTurtleSeaGreen" resetPhase="true"/>
+         </BFBehExecTask>
+         <BFAITargetData amusement="-30" happiness="-10" gift="+25"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ScareGuest" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="TurtleSeaGreen:ScareGuest">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Guest/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="20" fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehTargetFence behSet="DockWallScareGuest" fenceType="tankwallsegment" searchDistance="6"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Scare" GiveTo="Guest" Payload="subject" Radius="10" Timeout="30" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:RammingTankWall"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehAnimate targetAnim="SwimSub_Ram" interruptFlag="true"/>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

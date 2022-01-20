@@ -1,0 +1,89 @@
+<BFTypedBinder binderType="MackerelAtlanticLargeSchool">
+   <types>
+      <entity>
+         <actor>
+            <ambient>
+               <ambient_water>
+                  <MackerelAtlantic>
+                     <MackerelAtlanticLargeSchool/>
+                  </MackerelAtlantic>
+               </ambient_water>
+            </ambient>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="fish1" rottype="use" postype="use" attachnode="Node_School1"/>
+            <parentObj parent="mainObj" child="fish2" rottype="use" postype="use" attachnode="Node_School2"/>
+            <parentObj parent="mainObj" child="fish3" rottype="use" postype="use" attachnode="Node_School3"/>
+            <parentObj parent="mainObj" child="fish4" rottype="use" postype="use" attachnode="Node_School4"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared />
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/units/animals/MackerelAtlantic/MackerelAtlantic_Adult_F.bfm"/>
+               <BFShadowLODComponent numLevels="1" switchingDists="60.0"/>
+               <BF2LegsGroundFitComponent heightOffset="0" fitRadius=".15" frontBuoyancyNode="Node_Buoy" allowRollOnWater="true"/>
+               <BFSwimComponent waterInDistance="0.50" waterOutDistance="0.1"/>
+               <BFRotYawMovingComponent/>
+               <BFCollisionComponent grid="Bip01"/>
+               <BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="fish1">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFActorComponent actorfile="entities/units/animals/MackerelAtlantic/MackerelAtlantic_Adult_F.bfm" scale="0.75" activeSequenceName="Swim_Ahead" activeSequenceLoop="true"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="fish2">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFActorComponent actorfile="entities/units/animals/MackerelAtlantic/MackerelAtlantic_Adult_F.bfm" scale="0.9" activeSequenceName="Swim_Ahead" activeSequenceLoop="true"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="fish3">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFActorComponent actorfile="entities/units/animals/MackerelAtlantic/MackerelAtlantic_Adult_F.bfm" scale="0.8" activeSequenceName="Swim_Ahead" activeSequenceLoop="true"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="fish4">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFActorComponent actorfile="entities/units/animals/MackerelAtlantic/MackerelAtlantic_Adult_F.bfm" scale="0.95" activeSequenceName="Swim_Ahead" activeSequenceLoop="true"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\blob_animal_final.tga" baseNode="Bip01 Head" width="0.5" minLength="0.5" maxLength="1.0" minOffset="0" maxOffset="0.75"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester radius="0.25" motionClass="swimmer" maxSlope="0.75" wadeDepth="2" waterScore="0" landScore="1000"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1" repopulateMethod="byType">
+         <instance>
+            <BFGCollisionHandler factorMin="0.1" factorStepUp="0.1" factorStepDown="0.05"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,151 @@
+<soundtags>
+   <!--adult sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="TurtleLeatherback_Adult_Bite">
+         <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_Bite.wav" volume="1" mindist="6" maxdist="30" />
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="TurtleLeatherback_Adult_Breathe">
+            <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_Breathe.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="TurtleLeatherback_Adult_Eat">
+            <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_Eat.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="TurtleLeatherback_Adult_GuestAttack_Snap_Stand">
+            <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_GuestAttack_Snap_Stand.wav" volume=".8" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="TurtleLeatherback_Adult_GuestAttack_Snap">
+            <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_GuestAttack_Snap.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="TurtleLeatherback_Adult_Ram">
+            <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_Ram.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+         <BF3DSndFactory name="TurtleLeatherback_Adult_ThrowSand">
+            <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_ThrowSand.wav" volume=".5" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>
+   </BFSoundtag>
+   
+   <!--young sounds-->
+      <BFSoundtag>
+         <BF3DSndFactory name="TurtleLeatherback_Young_Bite">
+            <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_Bite.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Young_Breathe">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_Breathe.wav" volume=".6" mindist="6" maxdist="30"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Young_Eat">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_Eat.wav" volume="1" mindist="6" maxdist="30"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Young_GuestAttack_Snap_Stand">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_GuestAttack_Snap_Stand.wav" volume=".8" mindist="6" maxdist="30"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Young_GuestAttack_Snap">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_GuestAttack_Snap.wav" volume="1" mindist="6" maxdist="30"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Young_Ram">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_Ram.wav" volume="1" mindist="6" maxdist="30"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Young_ThrowSand">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_ThrowSand.wav" volume=".5" mindist="6" maxdist="30"/>
+            </BF3DSndFactory>
+   </BFSoundtag>
+   
+      <!--UNDERWATER: adult sounds-->
+      <BFSoundtag>
+         <BF3DSndFactory name="TurtleLeatherback_Adult_Bite_u">
+            <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_Bite_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+         </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Adult_Breathe_u">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_Breathe_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Adult_Eat_u">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_Eat_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Adult_GuestAttack_Snap_Stand_u">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_GuestAttack_Snap_Stand_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Adult_GuestAttack_Snap_u">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_GuestAttack_Snap_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Adult_Ram_u">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_Ram_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Adult_ThrowSand_u">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Adult_F_ThrowSand_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+            </BF3DSndFactory>
+      </BFSoundtag>
+      
+      <!--UNDERWATER: young sounds-->
+         <BFSoundtag>
+            <BF3DSndFactory name="TurtleLeatherback_Young_Bite_u">
+               <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_Bite_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+            </BF3DSndFactory>
+         </BFSoundtag>
+         <BFSoundtag>
+               <BF3DSndFactory name="TurtleLeatherback_Young_Breathe_u">
+                  <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_Breathe_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+               </BF3DSndFactory>
+         </BFSoundtag>
+         <BFSoundtag>
+               <BF3DSndFactory name="TurtleLeatherback_Young_Eat_u">
+                  <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_Eat_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+               </BF3DSndFactory>
+         </BFSoundtag>
+         <BFSoundtag>
+               <BF3DSndFactory name="TurtleLeatherback_Young_GuestAttack_Snap_Stand_u">
+                  <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_GuestAttack_Snap_Stand_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+               </BF3DSndFactory>
+         </BFSoundtag>
+         <BFSoundtag>
+               <BF3DSndFactory name="TurtleLeatherback_Young_GuestAttack_Snap_u">
+                  <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_GuestAttack_Snap_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+               </BF3DSndFactory>
+         </BFSoundtag>
+         <BFSoundtag>
+               <BF3DSndFactory name="TurtleLeatherback_Young_Ram_u">
+                  <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_Ram_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+               </BF3DSndFactory>
+         </BFSoundtag>
+         <BFSoundtag>
+               <BF3DSndFactory name="TurtleLeatherback_Young_ThrowSand_u">
+                  <snd name="entities/units/animals/TurtleSeaGreen/sound/TurtleSeaGreen_Young_F_ThrowSand_u.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+               </BF3DSndFactory>
+   </BFSoundtag>
+   
+   
+</soundtags>

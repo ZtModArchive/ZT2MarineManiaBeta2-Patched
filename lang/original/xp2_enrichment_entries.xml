@@ -1,0 +1,90 @@
+<ZT2Strings>
+
+	 <zoopedia_bubbleemitter>
+	  <entry>Clam Bubbler</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/enrichment/BubbleEmitter/BubbleEmitter_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Marine animals, such as the manta ray, enjoy swimming through the bubble stream created by this artificial giant clam.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_bubbleemitter>
+
+	 <zoopedia_jarwithfish>
+	  <entry>Jar with Fish</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/enrichment/JarWithFish/JarWithFish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Sea otters love to work to free the fish food sealed inside the jar -- and guests love to watch them do it!
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_jarwithfish>
+
+	 <zoopedia_livetunayellowfin>
+	  <entry>Live Food, Yellow Fin Tuna</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/units/animals/TunaYellowfin/TunaYellowfin_Adult_F_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Marine predators enjoy their food even more if they have to catch it! Many zoos have introduced live food as part of their animal enrichment programs.
+			<p/>To unlock the yellow fin tuna live food, complete any two marine animal challenges in Challenge mode.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_livetunayellowfin>
+
+	 <zoopedia_livecodarctic>
+	  <entry>Live Food, Arctic Cod</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/units/animals/CodArctic/CodArctic_Adult_F_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Marine predators enjoy their food even more if they have to catch it! Many zoos have introduced live food as part of their animal enrichment programs.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_livecodarctic>
+
+	<zoopedia_sealpreydummy>
+      <entry>Seal Prey Dummy</entry>
+      <text>
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <p/>
+                  <img src="entities\objects\enrichment\Seal_Prey_Dummy\SealPreyDummy_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>This floating enrichment object is designed for such large marine predators as the white shark and the orca. These animals love to ram and bite at the seal-shaped dummy.
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_sealpreydummy>
+
+</ZT2Strings>

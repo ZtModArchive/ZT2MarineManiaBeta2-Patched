@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\animals\WalrusPacific\WalrusPacific_Young_F.nif">
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatLand_2Stand.bf" animName="EatLand_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatLand_BiteA.bf" animName="EatLand_BiteA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatLand_BiteB.bf" animName="EatLand_BiteB" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatLand_ChewGulp.bf" animName="EatLand_ChewGulp" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatLand_Drink.bf" animName="EatLand_Drink" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatLand_Sniff.bf" animName="EatLand_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatWater_2Forage.bf" animName="EatWater_2Forage" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatWater_2TreadWaterSub.bf" animName="EatWater_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatWater_BiteA.bf" animName="EatWater_BiteA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatWater_ChewGulp.bf" animName="EatWater_ChewGulp" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_EatWater_Sniff.bf" animName="EatWater_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Float_2TreadWater.bf" animName="Float_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Float_Breath.bf" animName="Float_Breath" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Float_GroomSelf.bf" animName="Float_GroomSelf" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Float_Idle.bf" animName="Float_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Forage_2EatWater.bf" animName="Forage_2EatWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Forage_Dig.bf" animName="Forage_Dig" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Forage_Idle.bf" animName="Forage_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_HoldBallNose_2Stand_A.bf" animName="HoldBallNose_2Stand_A" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_HoldBallNose_2Stand_B.bf" animName="HoldBallNose_2Stand_B" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_HoldBallNose_BalanceLeft.bf" animName="HoldBallNose_BalanceLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_HoldBallNose_BalanceRight.bf" animName="HoldBallNose_BalanceRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_HoldBallNose_HoldBallFlippers.bf" animName="HoldBallNose_HoldBallFlippers" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_HoldBallNose_ThrowInHoop.bf" animName="HoldBallNose_ThrowInHoop" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_HoldBallNose_TossCatch.bf" animName="HoldBallNose_TossCatch" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_JumpTrampoline_2SwimSub.bf" animName="JumpTrampoline_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_JumpTrampoline_FlipBack.bf" animName="JumpTrampoline_FlipBack" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_JumpTrampoline_FlipForward.bf" animName="JumpTrampoline_FlipForward" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_JumpTrampoline_Idle.bf" animName="JumpTrampoline_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Lie_2LieSide.bf" animName="Lie_2LieSide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Lie_2Sleep.bf" animName="Lie_2Sleep" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Lie_2Stand.bf" animName="Lie_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Lie_GroomSelf.bf" animName="Lie_GroomSelf" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Lie_Idle.bf" animName="Lie_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Lie_Sneeze.bf" animName="Lie_Sneeze" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Lie_Sniff.bf" animName="Lie_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Lie_Yawn.bf" animName="Lie_Yawn" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_LieSide_2Lie.bf" animName="LieSide_2Lie" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_LieSide_2SleepBack.bf" animName="LieSide_2SleepBack" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_LieSide_2SleepSide.bf" animName="LieSide_2SleepSide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_LieSide_Idle.bf" animName="LieSide_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Young_F_Nurse_2Stand.bf" animName="Nurse_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Young_F_Nurse_Idle.bf" animName="Nurse_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Run_2Stand.bf" animName="Run_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_M_Run_2Stand_GuestAttack.bf" animName="Run_2Stand_GuestAttack" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Run_2Swim.bf" animName="Run_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Run_2Walk.bf" animName="Run_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Run_Ahead.bf" animName="Run_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Run_LeftA.bf" animName="Run_LeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Run_LeftB.bf" animName="Run_LeftB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Run_RightA.bf" animName="Run_RightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Run_RightB.bf" animName="Run_RightB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Run_Slide.bf" animName="Run_Slide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_RunObject_2StandObject.bf" animName="RunObject_2StandObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_RunObject_2SwimObject.bf" animName="RunObject_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_RunObject_2WalkObject.bf" animName="RunObject_2WalkObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_RunObject_Ahead.bf" animName="RunObject_Ahead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_RunObject_LeftA.bf" animName="RunObject_LeftA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_RunObject_LeftB.bf" animName="RunObject_LeftB" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_RunObject_RightA.bf" animName="RunObject_RightA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_RunObject_RightB.bf" animName="RunObject_RightB" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SealSeat_2Stand.bf" animName="SealSeat_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SealSeat_BarkHappy.bf" animName="SealSeat_BarkHappy" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SealSeat_EatTreat.bf" animName="SealSeat_EatTreat" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SealSeat_HeadScratch.bf" animName="SealSeat_HeadScratch" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SealSeat_Idle.bf" animName="SealSeat_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SealSeat_OpenMouth.bf" animName="SealSeat_OpenMouth" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SealSeat_WaveForeFlipper.bf" animName="SealSeat_WaveForeFlipper" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Sleep_2Lie.bf" animName="Sleep_2Lie" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Sleep_Idle.bf" animName="Sleep_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SleepBack_2LieSide.bf" animName="SleepBack_2LieSide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SleepBack_Idle.bf" animName="SleepBack_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SleepSide_2LieSide.bf" animName="SleepSide_2LieSide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SleepSide_Idle.bf" animName="SleepSide_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_2EatLand.bf" animName="Stand_2EatLand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_2HoldBallNose.bf" animName="Stand_2HoldBallNose" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_2Lie.bf" animName="Stand_2Lie" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Young_F_Stand_2Nurse.bf" animName="Stand_2Nurse" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_2Run.bf" animName="Stand_2Run" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_2SealSeat.bf" animName="Stand_2SealSeat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_2StandObject.bf" animName="Stand_2StandObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_2SwimSub_SwingSuccess.bf" animName="Stand_2SwimSub_SwingSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_2SwimSub_SwingSuperSuccess.bf" animName="Stand_2SwimSub_SwingSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_2UseHorn.bf" animName="Stand_2UseHorn" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_2Walk.bf" animName="Stand_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_AngryBark.bf" animName="Stand_AngryBark" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Attacked.bf" animName="Stand_Attacked" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Bark.bf" animName="Stand_Bark" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Bellow.bf" animName="Stand_Bellow" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_BellowFailure.bf" animName="Stand_BellowFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_BellowSuccess.bf" animName="Stand_BellowSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_BellowSuperSuccess.bf" animName="Stand_BellowSuperSuccess" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_BiteA.bf" animName="Stand_BiteA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_M_Stand_ChestSlam.bf" animName="Stand_ChestSlam" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Clap.bf" animName="Stand_Clap" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Dodge.bf" animName="Stand_Dodge" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_M_Stand_GuestAttack_Friendly.bf" animName="Stand_GuestAttack_Friendly" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Idle.bf" animName="Stand_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_M_Stand_KnockedBack.bf" animName="Stand_KnockedBack" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_LookExcitedA.bf" animName="Stand_LookExcitedA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_LookExcitedB.bf" animName="Stand_LookExcitedB" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Pee.bf" animName="Stand_Pee" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Poop.bf" animName="Stand_Poop" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Sneeze.bf" animName="Stand_Sneeze" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Sniff.bf" animName="Stand_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_SniffOther.bf" animName="Stand_SniffOther" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_SwipeLeft.bf" animName="Stand_SwipeLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_SwipeRight.bf" animName="Stand_SwipeRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_TilitHeadLeft.bf" animName="Stand_TiltHeadLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_TilitHeadRight.bf" animName="Stand_TiltHeadRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_TurnLeft45.bf" animName="Stand_TurnLeft45" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_TurnRight180.bf" animName="Stand_TurnRight180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_TurnRight45.bf" animName="Stand_TurnRight45" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Stand_Yawn.bf" animName="Stand_Yawn" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_StandObject_2RunObject.bf" animName="StandObject_2RunObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_StandObject_2Stand.bf" animName="StandObject_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_StandObject_2WalkObject.bf" animName="StandObject_2WalkObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_StandObject_Idle.bf" animName="StandObject_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_StandObject_TurnLeft45.bf" animName="StandObject_TurnLeft45" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_StandObject_TurnRight180.bf" animName="StandObject_TurnRight180" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_StandObject_TurnRight45.bf" animName="StandObject_TurnRight45" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_2Run.bf" animName="Swim_2Run" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_2SwimGlide.bf" animName="Swim_2SwimGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_2SwimObject.bf" animName="Swim_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_2SwimSub.bf" animName="Swim_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_2TreadWater.bf" animName="Swim_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_2Walk.bf" animName="Swim_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_2Walk_Platform.bf" animName="Swim_2Walk_Platform" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_Ahead.bf" animName="Swim_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_Echolocate.bf" animName="Swim_Echolocate" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_Sniff.bf" animName="Swim_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_Turn180.bf" animName="Swim_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_TurnLeft90.bf" animName="Swim_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Swim_TurnRight90.bf" animName="Swim_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimGlide_2Swim.bf" animName="SwimGlide_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimGlide_Ahead.bf" animName="SwimGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObject_2RunObject.bf" animName="SwimObject_2RunObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObject_2Swim.bf" animName="SwimObject_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObject_2SwimObjectGlide.bf" animName="SwimObject_2SwimObjectGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObject_2SwimSubObject.bf" animName="SwimObject_2SwimSubObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObject_2TreadWaterObject.bf" animName="SwimObject_2TreadWaterObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObject_2WalkObject.bf" animName="SwimObject_2WalkObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObject_Ahead.bf" animName="SwimObject_Ahead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObject_Turn180.bf" animName="SwimObject_Turn180" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObject_TurnLeft90.bf" animName="SwimObject_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObject_TurnRight90.bf" animName="SwimObject_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObjectGlide_2SwimObject.bf" animName="SwimObjectGlide_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimObjectGlide_Ahead.bf" animName="SwimObjectGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_2JumpTrampoline.bf" animName="SwimSub_2JumpTrampoline" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_2Swim.bf" animName="SwimSub_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_2SwimSubGlide.bf" animName="SwimSub_2SwimSubGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_2TreadWaterSub.bf" animName="SwimSub_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_Ahead.bf" animName="SwimSub_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_JumpFailure.bf" animName="SwimSub_JumpFailure" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_JumpSuccessA.bf" animName="SwimSub_JumpSuccessA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_JumpSuccessB.bf" animName="SwimSub_JumpSuccessB" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_JumpSuperSuccessA.bf" animName="SwimSub_JumpSuperSuccessA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_JumpSuperSuccessB.bf" animName="SwimSub_JumpSuperSuccessB" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_Turn180.bf" animName="SwimSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_TurnLeft90.bf" animName="SwimSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSub_TurnRight90.bf" animName="SwimSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubGlide_2SwimSub.bf" animName="SwimSubGlide_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubGlide_Ahead.bf" animName="SwimSubGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObject_2Swim.bf" animName="SwimSubObject_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObject_2SwimObject.bf" animName="SwimSubObject_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObject_2SwimSubObjectGlide.bf" animName="SwimSubObject_2SwimSubObjectGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObject_2TreadWaterSub.bf" animName="SwimSubObject_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObject_2TreadWaterSubObject.bf" animName="SwimSubObject_2TreadWaterSubObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObject_Ahead.bf" animName="SwimSubObject_Ahead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObject_Turn180.bf" animName="SwimSubObject_Turn180" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObject_TurnLeft90.bf" animName="SwimSubObject_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObject_TurnRight90.bf" animName="SwimSubObject_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObjectGlide_2SwimSubObject.bf" animName="SwimSubObjectGlide_2SwimSubObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_SwimSubObjectGlide_Ahead.bf" animName="SwimSubObjectGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_2Float.bf" animName="TreadWater_2Float" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_2Swim.bf" animName="TreadWater_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_2TreadWaterObject.bf" animName="TreadWater_2TreadWaterObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_Attacked.bf" animName="TreadWater_Attacked" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_Bathe.bf" animName="TreadWater_Bathe" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_GetTreat.bf" animName="TreadWater_GetTreat" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_M_TreadWater_GuestAttack.bf" animName="TreadWater_GuestAttack" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_GuestAttack_Friendly.bf" animName="TreadWater_GuestAttack_Friendly" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_Idle.bf" animName="TreadWater_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_Sniff.bf" animName="TreadWater_Sniff" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_SwipeNose.bf" animName="TreadWater_SwipeNose" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_SwipeTail.bf" animName="TreadWater_SwipeTail" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_TrainingConfused.bf" animName="TreadWater_TrainingConfused" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_TrainingNodLeftRight.bf" animName="TreadWater_TrainingNodLeftRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_TrainingNodUpDown.bf" animName="TreadWater_TrainingNodUpDown" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_Turn180.bf" animName="TreadWater_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_TurnLeft90.bf" animName="TreadWater_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_TurnRight90.bf" animName="TreadWater_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWater_Yawn.bf" animName="TreadWater_Yawn" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterObject_2SwimObject.bf" animName="TreadWaterObject_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterObject_2TreadWater.bf" animName="TreadWaterObject_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterObject_Idle.bf" animName="TreadWaterObject_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterObject_Turn180.bf" animName="TreadWaterObject_Turn180" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterObject_TurnLeft90.bf" animName="TreadWaterObject_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterObject_TurnRight90.bf" animName="TreadWaterObject_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSub_2EatWater.bf" animName="TreadWaterSub_2EatWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSub_2SwimSub.bf" animName="TreadWaterSub_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSub_2TreadWaterSubObject.bf" animName="TreadWaterSub_2TreadWaterSubObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSub_Attacked.bf" animName="TreadWaterSub_Attacked" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSub_Idle.bf" animName="TreadWaterSub_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSub_Turn180.bf" animName="TreadWaterSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSub_TurnLeft90.bf" animName="TreadWaterSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSub_TurnRight90.bf" animName="TreadWaterSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSubObject_2SwimSubObject.bf" animName="TreadWaterSubObject_2SwimSubObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSubObject_2TreadWaterSub.bf" animName="TreadWaterSubObject_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSubObject_Idle.bf" animName="TreadWaterSubObject_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSubObject_Turn180.bf" animName="TreadWaterSubObject_Turn180" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSubObject_TurnLeft90.bf" animName="TreadWaterSubObject_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_TreadWaterSubObject_TurnRight90.bf" animName="TreadWaterSubObject_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_UseHorn_2Stand.bf" animName="UseHorn_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_UseHorn_FirstHorn.bf" animName="UseHorn_FirstHorn" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_UseHorn_FourthHorn.bf" animName="UseHorn_FourthHorn" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_UseHorn_SecondHorn.bf" animName="UseHorn_SecondHorn" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_UseHorn_ThirdHorn.bf" animName="UseHorn_ThirdHorn" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_UseSlide_2Swim_Success.bf" animName="UseSlide_2Swim_Success" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_UseSlide_2Swim_SuperSuccess.bf" animName="UseSlide_2Swim_SuperSuccess" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_UseSlide_2Walk_Failure.bf" animName="UseSlide_2Walk_Failure" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_UseSlide_Idle.bf" animName="UseSlide_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Walk_2Run.bf" animName="Walk_2Run" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Walk_2Stand.bf" animName="Walk_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Walk_2Swim.bf" animName="Walk_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Walk_2Swim_Platform.bf" animName="Walk_2Swim_Platform" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Walk_2UseSlide.bf" animName="Walk_2UseSlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Walk_Ahead.bf" animName="Walk_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Walk_LeftA.bf" animName="Walk_LeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Walk_LeftB.bf" animName="Walk_LeftB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Walk_RightA.bf" animName="Walk_RightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_Walk_RightB.bf" animName="Walk_RightB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_WalkObject_2RunObject.bf" animName="WalkObject_2RunObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_WalkObject_2StandObject.bf" animName="WalkObject_2StandObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_WalkObject_2SwimObject.bf" animName="WalkObject_2SwimObject" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_WalkObject_Ahead.bf" animName="WalkObject_Ahead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_WalkObject_LeftA.bf" animName="WalkObject_LeftA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_WalkObject_LeftB.bf" animName="WalkObject_LeftB" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_WalkObject_RightA.bf" animName="WalkObject_RightA" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\SeaLionCalifornia\SeaLionCalifornia_Adult_F_WalkObject_RightB.bf" animName="WalkObject_RightB" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="WalrusPacific_Young_F" version="1">
+    <node name="EatLand">
+      <table>
+        <EatLand_BiteA />
+        <EatLand_BiteB />
+        <EatLand_ChewGulp />
+        <EatLand_Drink />
+        <EatLand_Sniff />
+      </table>
+      <edge name="Stand">
+        <table>
+          <EatLand_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="EatWater">
+      <table>
+        <EatWater_BiteA />
+        <EatWater_ChewGulp />
+        <EatWater_Sniff />
+      </table>
+      <edge name="Forage">
+        <table>
+          <EatWater_2Forage />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <EatWater_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="Float">
+      <table>
+        <Float_Breath />
+        <Float_GroomSelf />
+        <Float_Idle />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <Float_2TreadWater />
+        </table>
+      </edge>
+    </node>
+    <node name="Forage">
+      <table>
+        <Forage_Dig />
+        <Forage_Idle />
+      </table>
+      <edge name="EatWater">
+        <table>
+          <Forage_2EatWater />
+        </table>
+      </edge>
+    </node>
+    <node name="HoldBallNose">
+      <table>
+        <HoldBallNose_BalanceLeft />
+        <HoldBallNose_BalanceRight />
+        <HoldBallNose_HoldBallFlippers />
+        <HoldBallNose_ThrowInHoop />
+        <HoldBallNose_TossCatch />
+      </table>
+      <edge name="Stand">
+        <table>
+          <HoldBallNose_2Stand_A />
+          <HoldBallNose_2Stand_B />
+        </table>
+      </edge>
+    </node>
+    <node name="JumpTrampoline">
+      <table>
+        <JumpTrampoline_FlipBack />
+        <JumpTrampoline_FlipForward />
+        <JumpTrampoline_Idle />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <JumpTrampoline_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="Lie">
+      <table>
+        <Lie_GroomSelf />
+        <Lie_Idle />
+        <Lie_Sneeze />
+        <Lie_Sniff />
+        <Lie_Yawn />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Lie_2Stand />
+        </table>
+      </edge>
+      <edge name="LieSide">
+        <table>
+          <Lie_2LieSide />
+        </table>
+      </edge>
+      <edge name="Sleep">
+        <table>
+          <Lie_2Sleep />
+        </table>
+      </edge>
+    </node>
+    <node name="LieSide">
+      <table>
+        <LieSide_Idle />
+      </table>
+      <edge name="Lie">
+        <table>
+          <LieSide_2Lie />
+        </table>
+      </edge>
+      <edge name="SleepBack">
+        <table>
+          <LieSide_2SleepBack />
+        </table>
+      </edge>
+      <edge name="SleepSide">
+        <table>
+          <LieSide_2SleepSide />
+        </table>
+      </edge>
+    </node>
+    <node name="Nurse">
+      <table>
+        <Nurse_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Nurse_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Run">
+      <table>
+        <Run_Ahead />
+        <Run_LeftA />
+        <Run_LeftB />
+        <Run_RightA />
+        <Run_RightB />
+        <Run_Slide />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Run_2Stand />
+          <Run_2Stand_GuestAttack />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Run_2Walk />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <Run_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="RunObject">
+      <table>
+        <RunObject_Ahead />
+        <RunObject_LeftA />
+        <RunObject_LeftB />
+        <RunObject_RightA />
+        <RunObject_RightB />
+      </table>
+      <edge name="WalkObject">
+        <table>
+          <RunObject_2WalkObject />
+        </table>
+      </edge>
+      <edge name="SwimObject">
+        <table>
+          <RunObject_2SwimObject />
+        </table>
+      </edge>
+      <edge name="StandObject">
+        <table>
+          <RunObject_2StandObject />
+        </table>
+      </edge>
+    </node>
+    <node name="SealSeat">
+      <table>
+        <SealSeat_BarkHappy />
+        <SealSeat_EatTreat />
+        <SealSeat_HeadScratch />
+        <SealSeat_Idle />
+        <SealSeat_OpenMouth />
+        <SealSeat_WaveForeFlipper />
+      </table>
+      <edge name="Stand">
+        <table>
+          <SealSeat_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Sleep">
+      <table>
+        <Sleep_Idle />
+      </table>
+      <edge name="Lie">
+        <table>
+          <Sleep_2Lie />
+        </table>
+      </edge>
+    </node>
+    <node name="SleepBack">
+      <table>
+        <SleepBack_Idle />
+      </table>
+      <edge name="LieSide">
+        <table>
+          <SleepBack_2LieSide />
+        </table>
+      </edge>
+    </node>
+    <node name="SleepSide">
+      <table>
+        <SleepSide_Idle />
+      </table>
+      <edge name="LieSide">
+        <table>
+          <SleepSide_2LieSide />
+        </table>
+      </edge>
+    </node>
+    <node name="Stand">
+      <table>
+        <Stand_AngryBark />
+        <Stand_Attacked />
+        <Stand_Bark />
+        <Stand_Bellow />
+        <Stand_BellowFailure />
+        <Stand_BellowSuccess />
+        <Stand_BellowSuperSuccess />
+        <Stand_BiteA />
+        <Stand_ChestSlam />
+        <Stand_Clap />
+        <Stand_Dodge />
+        <Stand_GuestAttack_Friendly />
+        <Stand_Idle />
+        <Stand_KnockedBack />
+        <Stand_LookExcitedA />
+        <Stand_LookExcitedB />
+        <Stand_Pee />
+        <Stand_Poop />
+        <Stand_Sneeze />
+        <Stand_Sniff />
+        <Stand_SniffOther />
+        <Stand_SwipeLeft />
+        <Stand_SwipeRight />
+        <Stand_TiltHeadLeft />
+        <Stand_TiltHeadRight />
+        <Stand_TurnLeft45 />
+        <Stand_TurnRight180 />
+        <Stand_TurnRight45 />
+        <Stand_Yawn />
+      </table>
+      <edge name="Nurse">
+        <table>
+          <Stand_2Nurse />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <Stand_2SwimSub_SwingSuccess />
+          <Stand_2SwimSub_SwingSuperSuccess />
+        </table>
+      </edge>
+      <edge name="UseHorn">
+        <table>
+          <Stand_2UseHorn />
+        </table>
+      </edge>
+      <edge name="StandObject">
+        <table>
+          <Stand_2StandObject />
+        </table>
+      </edge>
+      <edge name="HoldBallNose">
+        <table>
+          <Stand_2HoldBallNose />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Stand_2Walk />
+        </table>
+      </edge>
+      <edge name="Run">
+        <table>
+          <Stand_2Run />
+        </table>
+      </edge>
+      <edge name="SealSeat">
+        <table>
+          <Stand_2SealSeat />
+        </table>
+      </edge>
+      <edge name="Lie">
+        <table>
+          <Stand_2Lie />
+        </table>
+      </edge>
+      <edge name="EatLand">
+        <table>
+          <Stand_2EatLand />
+        </table>
+      </edge>
+    </node>
+    <node name="StandObject">
+      <table>
+        <StandObject_Idle />
+        <StandObject_TurnLeft45 />
+        <StandObject_TurnRight180 />
+        <StandObject_TurnRight45 />
+      </table>
+      <edge name="RunObject">
+        <table>
+          <StandObject_2RunObject />
+        </table>
+      </edge>
+      <edge name="Stand">
+        <table>
+          <StandObject_2Stand />
+        </table>
+      </edge>
+      <edge name="WalkObject">
+        <table>
+          <StandObject_2WalkObject />
+        </table>
+      </edge>
+    </node>
+    <node name="Swim">
+      <table>
+        <Swim_Ahead />
+        <Swim_Echolocate />
+        <Swim_Sniff />
+        <Swim_Turn180 />
+        <Swim_TurnLeft90 />
+        <Swim_TurnRight90 />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <Swim_2TreadWater />
+        </table>
+      </edge>
+      <edge name="SwimObject">
+        <table>
+          <Swim_2SwimObject />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Swim_2Walk />
+          <Swim_2Walk_Platform />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <Swim_2SwimSub />
+        </table>
+      </edge>
+      <edge name="Run">
+        <table>
+          <Swim_2Run />
+        </table>
+      </edge>
+      <edge name="SwimGlide">
+        <table>
+          <Swim_2SwimGlide />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimGlide">
+      <table>
+        <SwimGlide_Ahead />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimGlide_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimObject">
+      <table>
+        <SwimObject_Ahead />
+        <SwimObject_Turn180 />
+        <SwimObject_TurnLeft90 />
+        <SwimObject_TurnRight90 />
+      </table>
+      <edge name="RunObject">
+        <table>
+          <SwimObject_2RunObject />
+        </table>
+      </edge>
+      <edge name="TreadWaterObject">
+        <table>
+          <SwimObject_2TreadWaterObject />
+        </table>
+      </edge>
+      <edge name="SwimObjectGlide">
+        <table>
+          <SwimObject_2SwimObjectGlide />
+        </table>
+      </edge>
+      <edge name="SwimSubObject">
+        <table>
+          <SwimObject_2SwimSubObject />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <SwimObject_2Swim />
+        </table>
+      </edge>
+      <edge name="WalkObject">
+        <table>
+          <SwimObject_2WalkObject />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimObjectGlide">
+      <table>
+        <SwimObjectGlide_Ahead />
+      </table>
+      <edge name="SwimObject">
+        <table>
+          <SwimObjectGlide_2SwimObject />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSub">
+      <table>
+        <SwimSub_Ahead />
+        <SwimSub_JumpFailure />
+        <SwimSub_JumpSuccessA />
+        <SwimSub_JumpSuccessB />
+        <SwimSub_JumpSuperSuccessA />
+        <SwimSub_JumpSuperSuccessB />
+        <SwimSub_Turn180 />
+        <SwimSub_TurnLeft90 />
+        <SwimSub_TurnRight90 />
+      </table>
+      <edge name="SwimSubGlide">
+        <table>
+          <SwimSub_2SwimSubGlide />
+        </table>
+      </edge>
+      <edge name="JumpTrampoline">
+        <table>
+          <SwimSub_2JumpTrampoline />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <SwimSub_2Swim />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <SwimSub_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubGlide">
+      <table>
+        <SwimSubGlide_Ahead />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <SwimSubGlide_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubObject">
+      <table>
+        <SwimSubObject_Ahead />
+        <SwimSubObject_Turn180 />
+        <SwimSubObject_TurnLeft90 />
+        <SwimSubObject_TurnRight90 />
+      </table>
+      <edge name="SwimObject">
+        <table>
+          <SwimSubObject_2SwimObject />
+        </table>
+      </edge>
+      <edge name="TreadWaterSubObject">
+        <table>
+          <SwimSubObject_2TreadWaterSubObject />
+        </table>
+      </edge>
+      <edge name="SwimSubObjectGlide">
+        <table>
+          <SwimSubObject_2SwimSubObjectGlide />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <SwimSubObject_2Swim />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <SwimSubObject_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubObjectGlide">
+      <table>
+        <SwimSubObjectGlide_Ahead />
+      </table>
+      <edge name="SwimSubObject">
+        <table>
+          <SwimSubObjectGlide_2SwimSubObject />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWater">
+      <table>
+        <TreadWater_Attacked />
+        <TreadWater_Bathe />
+        <TreadWater_GetTreat />
+        <TreadWater_GuestAttack />
+        <TreadWater_GuestAttack_Friendly />
+        <TreadWater_Idle />
+        <TreadWater_Sniff />
+        <TreadWater_SwipeNose />
+        <TreadWater_SwipeTail />
+        <TreadWater_TrainingConfused />
+        <TreadWater_TrainingNodLeftRight />
+        <TreadWater_TrainingNodUpDown />
+        <TreadWater_Turn180 />
+        <TreadWater_TurnLeft90 />
+        <TreadWater_TurnRight90 />
+        <TreadWater_Yawn />
+      </table>
+      <edge name="Float">
+        <table>
+          <TreadWater_2Float />
+        </table>
+      </edge>
+      <edge name="TreadWaterObject">
+        <table>
+          <TreadWater_2TreadWaterObject />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <TreadWater_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterObject">
+      <table>
+        <TreadWaterObject_Idle />
+        <TreadWaterObject_Turn180 />
+        <TreadWaterObject_TurnLeft90 />
+        <TreadWaterObject_TurnRight90 />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <TreadWaterObject_2TreadWater />
+        </table>
+      </edge>
+      <edge name="SwimObject">
+        <table>
+          <TreadWaterObject_2SwimObject />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterSub">
+      <table>
+        <TreadWaterSub_Attacked />
+        <TreadWaterSub_Idle />
+        <TreadWaterSub_Turn180 />
+        <TreadWaterSub_TurnLeft90 />
+        <TreadWaterSub_TurnRight90 />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <TreadWaterSub_2SwimSub />
+        </table>
+      </edge>
+      <edge name="EatWater">
+        <table>
+          <TreadWaterSub_2EatWater />
+        </table>
+      </edge>
+      <edge name="TreadWaterSubObject">
+        <table>
+          <TreadWaterSub_2TreadWaterSubObject />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterSubObject">
+      <table>
+        <TreadWaterSubObject_Idle />
+        <TreadWaterSubObject_Turn180 />
+        <TreadWaterSubObject_TurnLeft90 />
+        <TreadWaterSubObject_TurnRight90 />
+      </table>
+      <edge name="SwimSubObject">
+        <table>
+          <TreadWaterSubObject_2SwimSubObject />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <TreadWaterSubObject_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="UseHorn">
+      <table>
+        <UseHorn_FirstHorn />
+        <UseHorn_FourthHorn />
+        <UseHorn_SecondHorn />
+        <UseHorn_ThirdHorn />
+      </table>
+      <edge name="Stand">
+        <table>
+          <UseHorn_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="UseSlide">
+      <table>
+        <UseSlide_Idle />
+      </table>
+      <edge name="Walk">
+        <table>
+          <UseSlide_2Walk_Failure />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <UseSlide_2Swim_Success />
+          <UseSlide_2Swim_SuperSuccess />
+        </table>
+      </edge>
+    </node>
+    <node name="Walk">
+      <table>
+        <Walk_Ahead />
+        <Walk_LeftA />
+        <Walk_LeftB />
+        <Walk_RightA />
+        <Walk_RightB />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Walk_2Stand />
+        </table>
+      </edge>
+      <edge name="UseSlide">
+        <table>
+          <Walk_2UseSlide />
+        </table>
+      </edge>
+      <edge name="Run">
+        <table>
+          <Walk_2Run />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <Walk_2Swim />
+          <Walk_2Swim_Platform />
+        </table>
+      </edge>
+    </node>
+    <node name="WalkObject">
+      <table>
+        <WalkObject_Ahead />
+        <WalkObject_LeftA />
+        <WalkObject_LeftB />
+        <WalkObject_RightA />
+        <WalkObject_RightB />
+      </table>
+      <edge name="RunObject">
+        <table>
+          <WalkObject_2RunObject />
+        </table>
+      </edge>
+      <edge name="SwimObject">
+        <table>
+          <WalkObject_2SwimObject />
+        </table>
+      </edge>
+      <edge name="StandObject">
+        <table>
+          <WalkObject_2StandObject />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

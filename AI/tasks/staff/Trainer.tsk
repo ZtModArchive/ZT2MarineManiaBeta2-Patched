@@ -1,0 +1,43 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="TrainAnimal" Priority="80" UniqueID="Trainer:TrainAnimal">
+    <BFAICreateData>
+      <Subjects>
+        <Trainer/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true" isInShow="false" f_needPointsGood="G 0" hunger="L 80" rest="L 80"/>
+      </Targets>
+      <Objects>
+        <t_TrainAnimal/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-50"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="staffactions:GoTrain" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehStaffTrainAnimal 
+        IncrementAmt="5.0" 
+        SummonAnimalTimeout="60" 
+        AnimalDoesTrickTimeout="60" 
+        GoToPlatformPrimaryBeh="DockPlatform" 
+        PreTrainingPrimaryBeh="" 
+        SummonAnimalPrimaryBeh="" 
+        SummonAnimalLoopingBeh="TrainerIdle" 
+        TrainAnimalPrimaryBeh="TrainAnimal" 
+        AnimalDoesTrickPrimaryBeh="" 
+        AnimalDoesTrickLoopingBeh="TrainerIdle_Bored" 
+        RewardAnimalPrimaryBeh="GiveTreat" 
+        CleanupPrimaryBeh="TrainerIdle10" 
+      />
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

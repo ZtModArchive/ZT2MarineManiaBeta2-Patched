@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\animals\JellyfishMoon\JellyFishMoon_Adult_F.nif">
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_SwimSub_2SwimSubGlide.bf" animName="SwimSub_2SwimSubGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_SwimSub_2TreadWaterSub.bf" animName="SwimSub_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_SwimSub_Ahead.bf" animName="SwimSub_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_SwimSubGlide_2SwimSub.bf" animName="SwimSubGlide_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_SwimSubGlide_Ahead.bf" animName="SwimSubGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_TreadWaterSub_2SwimSub.bf" animName="TreadWaterSub_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_TreadWaterSub_Down_2TreadWaterSub.bf" animName="TreadWaterSub_2TreadWaterSub_Down" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_TreadWaterSub_Up_2TreadWaterSub.bf" animName="TreadWaterSub_2TreadWaterSub_Up" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_TreadWaterSub_Idle.bf" animName="TreadWaterSub_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_TreadWaterSub_TurnLeft90.bf" animName="TreadWaterSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\JellyfishMoon\JellyfishMoon_Adult_F_TreadWaterSub_TurnRight90.bf" animName="TreadWaterSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="JellyFishMoon_Adult_F" version="1">
+    <node name="SwimSub">
+      <table>
+        <SwimSub_Ahead />
+      </table>
+      <edge name="SwimSubGlide">
+        <table>
+          <SwimSub_2SwimSubGlide />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <SwimSub_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubGlide">
+      <table>
+        <SwimSubGlide_Ahead />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <SwimSubGlide_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterSub">
+      <table>
+        <TreadWaterSub_Idle />
+        <TreadWaterSub_TurnLeft90 />
+        <TreadWaterSub_TurnRight90 />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <TreadWaterSub_2SwimSub />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <TreadWaterSub_2TreadWaterSub_Down />
+          <TreadWaterSub_2TreadWaterSub_Up />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

@@ -1,0 +1,41 @@
+<BFScenarioGroup name="dolphintrainingrules" state="0" chain="false" allsuccess="false" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="dolphintraining" state="0" sticky="true" optional="true">
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/DolphinTraining.lua" entry="evaldolphintraining" />
+			</evaluate>
+		</BFScenarioRule>	
+		<BFScenarioRule hidden="1" name="TrickOne" state="2" sticky="true" optional="false">
+			<info type="primary">
+				<neutral locid="Challengetext:CHDolphinTrainingTrickOneShort" overview="Challengetext:CHDolphinTraining" />
+				<success locid="Challengetext:CHDolphinTrainingSuccessTrickOneShort" overview="Challengetext:CHDolphinTrainingSuccessTrickOne"/>
+				<failure locid="Challengetext:CHDolphinTrainingFailureTrickOneShort" overview="Challengetext:CHDolphinTrainingFailureTrickOne"/>
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/DolphinTraining.lua" entry="evalTrickOne" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/DolphinTraining.lua" entry="completeTrickOne" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/DolphinTraining.lua" entry="failTrickOne" />
+			</failure>	
+		</BFScenarioRule>	
+		<BFScenarioRule hidden="1" name="TrickTwo" state="2" sticky="true" optional="false">
+			<info type="primary">
+				<neutral locid="Challengetext:CHDolphinTrainingTrickTwoShort" overview="Challengetext:CHDolphinTraining" />
+				<success locid="Challengetext:CHDolphinTrainingSuccessTrickTwoShort" overview="Challengetext:CHDolphinTrainingSuccessTrickTwo"/>
+				<failure locid="Challengetext:CHDolphinTrainingFailureTrickTwoShort" overview="Challengetext:CHDolphinTrainingFailureTrickTwo"/>
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/DolphinTraining.lua" entry="evalTrickTwo" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/DolphinTraining.lua" entry="completeTrickTwo" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/DolphinTraining.lua" entry="failTrickTwo" />
+			</failure>	
+		</BFScenarioRule>			
+	</children>
+</BFScenarioGroup>

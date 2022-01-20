@@ -1,0 +1,87 @@
+﻿<BFTypedBinder binderType="PirateShip">
+	<types>
+		<entity>
+			<scenery>
+				<PirateShip />
+			</scenery>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData waterPlacement="true" tankPlacement="true" icon3Doffset="0 0 0.5" icon3Dscale="0.09" minimumHeadroom="15">
+			<UIAspect>
+				<default image="entities\objects\scenery\PirateShip\PirateShip_icon.dds" />
+			</UIAspect>
+		</ZTPlacementData>dw 
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\scenery\PirateShip\PirateShip_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:PirateShip" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="PirateShip" />
+			</on>
+		</UIToggleButton>
+		<UIButton name="overviewicon">
+			<UIAspect>
+				<default image="ui/zoomap/icon_attractions.dds" />
+			</UIAspect>
+		</UIButton>
+		<BFAIEntityDataShared s_ObjectType="Misc" s_Product="Marine" b_Researchable="true" s_uisort="ef" b_DonationAcceptor="false" s_Zoopedia="zoopedia:zoopedia_pirate_ship:entry" f_researchUnlockTime="120" f_researchCost="1000" b_wantLifetimeUsers="true" f_FameReq="40" b_NoPerceiveOverride="true" />
+		<ZTTourData>
+			<cool value="8" />
+			<theme_marine value="5" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="ShadowNode_01" width="6" length="6" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities\objects\scenery\PirateShip\PirateShip" switch="0 18 36" minSwitch="0 0 20" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Port x="3" y="-2" z="1.2" yaw="90" />
+						<Dock_Starboard x="-3" y="-2" z="1.2" yaw="-90" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="1200">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="upkeep" cost="100" period="monthly" type="debit" category="upkeep" />
+					<ZTTransaction name="add_user" cost="1" type="addUser" category="user" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="Play">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterPirateShip" useBehSet="UsePirateShip" exitBehSet="ExitPirateShipPort" targetNode="Dock_Port" exclusiveID="PirateShip1" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterPirateShip" useBehSet="UsePirateShip" exitBehSet="ExitPirateShipStarboard" targetNode="Dock_Starboard" exclusiveID="PirateShip1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

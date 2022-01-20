@@ -1,0 +1,6 @@
+<TEXTKEY>
+   <key time="0.93" text="{Bip01 Ponytail2} runsns strength=.6"/>
+   <key time="1.40" text="{Bip01 Head} snd 'splash_large' "/>
+   <key time="1.40" text="{Bip01 Head} snd 'splash_large_uw' "/>
+   <key time="1.40" text="{Bip01 Tail4} splash directed_large"/>
+</TEXTKEY>

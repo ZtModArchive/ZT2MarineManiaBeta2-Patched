@@ -1,0 +1,17 @@
+<BFTypedBinder binderType="Aquarium" abstract="true">
+	<types>
+		<entity>
+			<building>
+				<Aquarium />
+			</building>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTPlacementData minimumHeadroom="8" />
+		<BFAIEntityDataShared />
+	</shared>
+	<binder />
+</BFTypedBinder>

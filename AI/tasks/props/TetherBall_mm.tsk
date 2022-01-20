@@ -1,0 +1,286 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="Training" Priority="85" reserveTag="Training" UniqueID="TetherBall_mm:Training">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTSummonDolphinFlukeSwipeTetherBall/>
+        <t_FPTSummonDolphinRamTetherBall/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Training_Teleport" Priority="86" reserveTag="Training_Teleport" UniqueID="TetherBall_mm:Training_Teleport">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_fptTeleportDolphinFlukeSwipeTetherBall/>
+        <t_fptTeleportDolphinRamTetherBall/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>  
+  <BFAITaskTemplate Name="FlukeSwipeTetherBall_Failure" reserveTag="FlukeSwipeTetherBall_Failure" UniqueID="TetherBall_mm:FlukeSwipeTetherBall_Failure">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FlukeSwipeTetherBallFailure/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-5" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowBad"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_FailureReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="FlukeSwipeTetherBall_Success" reserveTag="FlukeSwipeTetherBall_Success" UniqueID="TetherBall_mm:FlukeSwipeTetherBall_Success">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FlukeSwipeTetherBallSuccess/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_SuccessReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="FlukeSwipeTetherBall_Critical" reserveTag="FlukeSwipeTetherBall_Critical" UniqueID="TetherBall_mm:FlukeSwipeTetherBall_Critical">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FlukeSwipeTetherBallCritical/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowVeryGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_CriticalReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RamTetherBall_Failure" reserveTag="RamTetherBall_Failure" UniqueID="TetherBall_mm:RamTetherBall_Failure">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_RamTetherBallFailure/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-5" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowBad"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_FailureReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RamTetherBall_Success" reserveTag="RamTetherBall_Success" UniqueID="TetherBall_mm:RamTetherBall_Success">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_RamTetherBallSuccess/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_SuccessReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RamTetherBall_Critical" reserveTag="RamTetherBall_Critical" UniqueID="TetherBall_mm:RamTetherBall_Critical">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_RamTetherBallCritical/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowVeryGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_CriticalReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

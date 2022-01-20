@@ -1,0 +1,6 @@
+<TEXTKEY>
+   <key frame="0" text="{Bip01 Head} snd 'FrenzyA'"/>
+   <key frame="0" text="{Bip01 Head} snd 'FrenzyA_uw'"/>
+   <key frame="2" text = "{Node_Eat} attach object"/>
+   <key frame="44" text = "{Node_Eat} detach object"/>
+</TEXTKEY>

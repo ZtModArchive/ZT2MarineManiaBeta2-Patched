@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Istiophoridae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Actinopterygii>
+                  <Perciformes>
+                     <Istiophoridae/>
+                  </Perciformes>
+               </Actinopterygii>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

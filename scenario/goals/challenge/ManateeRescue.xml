@@ -1,0 +1,20 @@
+<BFScenarioGroup name="manateerescuerules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="manateerescue" state="0" sticky="true" optional="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHManateeRescueShort" overview="Challengetext:CHManateeRescue" />
+				<success locid="Challengetext:CHManateeRescueSuccessShort" overview="Challengetext:CHAnimalAssistanceSuccess" />
+				<failure locid="Challengetext:CHManateeRescueFailureShort" overview="Challengetext:CHManateeRescueFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/ManateeRescue.lua" entry="evalManateeRescue" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/ManateeRescue.lua" entry="completeManateeRescue" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/ManateeRescue.lua" entry="failManateeRescue" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

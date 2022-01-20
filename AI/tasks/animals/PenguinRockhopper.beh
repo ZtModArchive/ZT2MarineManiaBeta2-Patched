@@ -1,0 +1,2202 @@
+<BehaviorSets>
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Happy_inWater>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <Default_inWater_Happy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_inWater>
+   <Default_VeryHappy_inWater>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <Default_inWater_Happy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_inWater>
+   <Default_Happy_isSwimming>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderWater weight="90"/>
+               <Default_isSwimming_Happy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_isSwimming>
+   <Default_VeryHappy_isSwimming>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderWater weight="80"/>
+               <Default_isSwimming_Happy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_isSwimming>
+   <Default_Unhappy>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+   <Default_Unhappy_inWater>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <Default_inWater_Unhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_inWater>
+   <Default_VeryUnhappy_inWater>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <Default_inWater_Unhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_inWater>
+   <Default_Unhappy_isSwimming>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultTreadWater weight="90"/>
+               <Default_isSwimming_Unhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_isSwimming>
+   <Default_VeryUnhappy_isSwimming>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultTreadWater weight="80"/>
+               <Default_isSwimming_Unhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_isSwimming>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultStand>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DefaultStand>
+   <DefaultRest>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Rest_Idle"/>
+      </behaviors>
+   </DefaultRest>
+   <DefaultTreadWater>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="DefaultTreadWaterSurf"/>
+               <underwater behSet="DefaultTreadWaterSub"/>
+               <default behSet="DefaultTreadWaterSurf"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </DefaultTreadWater>
+   <DefaultTreadWaterSurf>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:TreadingWater"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DefaultTreadWaterSurf>
+   <DefaultTreadWaterSub>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:TreadingWater"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </DefaultTreadWaterSub>
+   <DefaultHappy>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BobbingHead"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="HeadBob"/>
+      </behaviors>
+   </DefaultHappy>
+   <Default_inWater_Happy>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BobbingHead"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="HeadBob"/>
+      </behaviors>
+   </Default_inWater_Happy>
+   <Default_isSwimming_Happy>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+         <BFBehSetAttribute>
+            <BFAITargetData exercise="-10"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_isSwimming_Happy>
+   <DefaultUnhappy>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RoarAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="AlarmCall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+   <Default_inWater_Unhappy>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RoarAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="AlarmCall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Unhappy>
+   <Default_isSwimming_Unhappy>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_isSwimming_Unhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+<!--Wander behavior sets for randomized wandering-->
+   <DefaultWander>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WanderLand"/>
+               <water behSet="WanderSurf"/>
+               <underwater behSet="WanderSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </DefaultWander>
+   <WanderLand>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidWater="true" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <b_SmallPredator/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderLand>
+   <WanderWater>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface_Submerge"/>
+         <BFBehPlaySet behSet="DefaultWander"/>
+      </behaviors>
+   </WanderWater>
+   <WanderSurf>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="25"/>
+               <WanderSurf_Med weight="25"/>
+               <WanderSurf_Slow weight="25"/>
+               <WanderSurf_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <b_SmallPredator/>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <b_SmallPredator/>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <b_SmallPredator/>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSurf_Glide>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <b_SmallPredator/>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Glide>
+   <WanderSub>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="25"/>
+               <WanderSub_Med weight="25"/>
+               <WanderSub_Slow weight="25"/>
+               <WanderSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <b_SmallPredator/>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <b_SmallPredator/>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <b_SmallPredator/>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Slow>
+   <WanderSub_Glide>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <b_SmallPredator/>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Glide>
+   <Surface_Submerge>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="3" maxDepth="10"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="0" maxDepth="0"/>
+      </behaviors>
+   </Surface>
+<!--End Wander behavior sets for randomized wandering-->   
+   <Idle>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Ground_Idle"/>
+               <water behSet="Water_Idle"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle>
+   <ChasePause>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="MutualCall"/>
+               <water behSet="TreadWater_Idle"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </ChasePause>
+   <Ground_Idle>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="DefaultStand"/>
+               <Rest behSet="DefaultRest"/>
+               <default behSet="DefaultStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Ground_Idle>
+   <Water_Idle>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <Swim behSet="DefaultTreadWater"/>
+               <default behSet="DefaultTreadWater"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Water_Idle>
+   <Think>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="3"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Stand>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand>
+   <Die_OldAge>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <PickUpEgg>
+      <subjects>
+         <PenguinRockhopper_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PickingUp" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAttachObject targetNode="Floor" targetAnim="Stand_2StandEgg" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpEgg>
+   <StandEgg>
+      <subjects>
+         <PenguinRockhopper_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandEgg_Idle" playTime="10"/>
+      </behaviors>
+   </StandEgg>
+   <DropEgg>
+      <subjects>
+         <PenguinRockhopper_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dropping" useObjectName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="StandEgg_2Stand"/>
+      </behaviors>
+   </DropEgg>
+   <FailureSet>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_AlarmCall"/>
+      </behaviors>
+   </FailureSet>
+   <Stand_Idle>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand_Idle>
+   <TreadWater_Idle>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </TreadWater_Idle>
+   <Rest>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Rest_Idle" playTime="8"/>
+      </behaviors>
+   </Rest>
+   <Sleep>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="SleepGround"/>
+               <water behSet="SleepSurf"/>
+               <underwater behSet="SleepSub"/>
+               <default behSet="SleepGround"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Sleep>
+   <SleepGround>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Rest_Idle" playTime="20"/>
+      </behaviors>
+   </SleepGround>
+   <SleepSurf>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="20"/>
+      </behaviors>
+   </SleepSurf>
+   <SleepSub>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="20"/>
+      </behaviors>
+   </SleepSub>   
+   <Eat>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Eat_Land"/>
+               <water behSet="Eat_Water"/>
+               <underwater behSet="Eat_Water"/>
+               <default behSet="Eat_Land"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Eat>
+   <Eat_Land>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </Eat_Land>
+   <Eat_Water>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Eat"/>
+         <BFBehAnimate targetAnim="SwimSub_Eat"/>
+      </behaviors>
+   </Eat_Water>
+   <Graze>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </Graze>
+   <EnterTrough>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterTrough> 
+   <UseTrough>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </UseTrough>
+   <DrinkTrough>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </DrinkTrough>
+   <ExitTrough>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </ExitTrough>
+   <EnterFoodDish>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterFoodDish> 
+   <UseFoodDish>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </UseFoodDish>
+   <DrinkFoodDish>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </ExitFoodDish>
+   <Drink>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </Drink>
+   <EnterBuoyLure>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterBuoyLure>
+   <UseBuoyLure>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseBuoyLure>
+   <ExitBuoyLure>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TurnLeft90"/>
+      </behaviors>
+   </ExitBuoyLure>
+   <EnterArtificialReef>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterArtificialReef>
+   <UseArtificialReef>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseArtificialReef>
+   <ExitArtificialReef>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TurnLeft90"/>
+      </behaviors>
+   </ExitArtificialReef>
+   <EnterFoodBox>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterFoodBox>
+   <UseFoodBox>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseFoodBox>
+   <ExitFoodBox>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TurnLeft90"/>
+      </behaviors>
+   </ExitFoodBox>
+   <EnterMarineCarcass>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterMarineCarcass>
+   <UseMarineCarcass>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseMarineCarcass>
+   <ExitMarineCarcass>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TurnLeft90"/>
+      </behaviors>
+   </ExitMarineCarcass>
+   <SpreadWings>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SpreadWings_Idle"/>
+      </behaviors>
+   </SpreadWings>
+   <AlarmCall>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_AlarmCall"/>
+      </behaviors>
+   </AlarmCall>
+   <Poop>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Poop_Land"/>
+               <water behSet="Poop_Water"/>
+               <underwater behSet="Poop_Water"/>
+               <default behSet="Poop_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Poop>
+   <Poop_Land>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Bird" subjectNode="Poop" targetAnim="Poop_Idle"/>
+      </behaviors>
+   </Poop_Land>
+   <Poop_Water>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop_Water>
+   <Poop_Sick>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Poop_Sick_Land"/>
+               <water behSet="Poop_Sick_Water"/>
+               <underwater behSet="Poop_Sick_Water"/>
+               <default behSet="Poop_Sick_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Poop_Sick>
+   <Poop_Sick_Land>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Bird_Sick" subjectNode="Poop" targetAnim="Poop_Idle"/>
+      </behaviors>
+   </Poop_Sick_Land>
+   <Poop_Sick_Water>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop_Sick_Water>
+   <Groom>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_CleanWingL weight="50"/>
+               <Stand_CleanWingR weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Groom>
+   <Scratch>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Scratch"/>
+      </behaviors>
+   </Scratch>
+   <Shake>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Shake"/>
+      </behaviors>
+   </Shake>
+   <Stretch>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Stretch"/>
+      </behaviors>
+   </Stretch>
+   <DockAllopreen>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="p_Allopreen" targetNode="p_Allopreen" locoSpeed="hop" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockAllopreen>
+   <WaitAllopreen>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAllopreen>
+   <Allopreen>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_AlloPreen"/>
+         <BFBehAnimate targetAnim="Stand_AlloPreen"/>
+         <BFBehAnimate targetAnim="Stand_AlloPreen"/>
+      </behaviors>
+   </Allopreen>
+   <Wake>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Yawn weight="50"/>
+               <Stretch weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Wake>
+   <HeadBob>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_HeadShake"/>
+      </behaviors>
+   </HeadBob>
+   <Yawn>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Yawn"/>
+      </behaviors>
+   </Yawn>
+   <MatingCall>
+      <subjects>
+         <PenguinRockhopper_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_MatingCall"/>
+      </behaviors>
+   </MatingCall>
+   <MutualCall>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_MutualCall"/>
+      </behaviors>
+   </MutualCall>
+   <Threat>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Threat"/>
+      </behaviors>
+   </Threat>
+   <Attack>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Attack"/>
+      </behaviors>
+   </Attack>
+   <DockAttacked>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="p_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="KnockedDown_Idle"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <AttackedOkay>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </AttackedOkay>
+   <AttackedHurt>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="KnockedDown_Idle"/>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSetAttribute>
+            <BFAISubjectData health="30"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </AttackedHurt>
+   <Fight>
+      <subjects>
+         <PenguinRockhopper_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Attack"/>
+      </behaviors>
+   </Fight>
+   <DefendEqual>
+      <subjects>
+         <PenguinRockhopper_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <AttackedOkay weight="50"/>
+               <AttackedHurt weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <DockFight>
+      <subjects>
+         <PenguinRockhopper_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <PenguinRockhopper_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <FightSnap>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <BeakInspection>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="BeakInspection_Idle"/>
+      </behaviors>
+   </BeakInspection>
+   <FootInspection>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="FootInspection_Idle"/>
+      </behaviors>
+   </FootInspection>
+   <Sick>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </VerySick>
+   <EnterIceFloe_Large3>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockTAP targetAnim="TreadWater_Idle" subjectNode="Floor" targetTAP="EnterCPenguin"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Climbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="EnterCPenguin" exitTAP="false"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceFloe_Large3>
+   <EnterIceFloe_Large4>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockTAP targetAnim="TreadWater_Idle" subjectNode="Floor" targetTAP="EnterDPenguin"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Climbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="EnterDPenguin" exitTAP="false"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceFloe_Large4>
+   <UseIceFloe_Large>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Rest_Idle" playTime="20"/>
+      </behaviors>
+   </UseIceFloe_Large>
+   <ExitIceFloe_Large3>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="ExitCPenguin" exitTAP="true"/>
+      </behaviors>
+   </ExitIceFloe_Large3>
+   <ExitIceFloe_Large4>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="ExitDPenguin" exitTAP="true"/>
+      </behaviors>
+   </ExitIceFloe_Large4>
+   <EnterIceFloe_Medium1>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockTAP targetAnim="TreadWater_Idle" subjectNode="Floor" targetTAP="EnterA"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Climbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="EnterA" exitTAP="false"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceFloe_Medium1>
+   <EnterIceFloe_Medium2>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockTAP targetAnim="TreadWater_Idle" subjectNode="Floor" targetTAP="EnterB"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Climbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="EnterB" exitTAP="false"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceFloe_Medium2>
+   <EnterIceFloe_Medium3>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockTAP targetAnim="TreadWater_Idle" subjectNode="Floor" targetTAP="EnterC"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Climbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="EnterC" exitTAP="false"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceFloe_Medium3>
+   <EnterIceFloe_Medium4>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockTAP targetAnim="TreadWater_Idle" subjectNode="Floor" targetTAP="EnterD"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Climbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="EnterD" exitTAP="false"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceFloe_Medium4>
+   <UseIceFloe_Medium>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Rest_Idle" playTime="20"/>
+      </behaviors>
+   </UseIceFloe_Medium>
+   <ExitIceFloe_Medium1>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitIceFloe_Medium1>
+   <ExitIceFloe_Medium2>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitIceFloe_Medium2>
+   <ExitIceFloe_Medium3>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="ExitC" exitTAP="true"/>
+      </behaviors>
+   </ExitIceFloe_Medium3>
+   <ExitIceFloe_Medium4>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="ExitD" exitTAP="true"/>
+      </behaviors>
+   </ExitIceFloe_Medium4>
+   <MateF>
+      <subjects>
+         <PenguinRockhopper_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_MatingCall"/>
+         <BFBehAnimate targetAnim="Stand_Stretch"/>
+         <BFBehAnimate targetAnim="Stand_MatingCall"/>
+      </behaviors>
+   </MateF>
+   <MateM>
+      <subjects>
+         <PenguinRockhopper_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Stretch"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAnimate targetAnim="Stand_MatingCall"/>
+      </behaviors>
+   </MateM>
+   <LayEgg>
+      <subjects>
+         <PenguinRockhopper_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="PenguinRockhopper_Egg" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </LayEgg>
+   <HatchEgg>
+      <subjects>
+         <PenguinRockhopper_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <IdleEgg>
+      <subjects>
+         <PenguinRockhopper_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </IdleEgg>
+   <SpawnF>
+      <subjects>
+         <PenguinRockhopper_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="PenguinRockhopper_Egg" morphTargetEntityType="PenguinRockhopper_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <PenguinRockhopper_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="PenguinRockhopper_Egg" morphTargetEntityType="PenguinRockhopper_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnM>
+   <Slide>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Slide_Ahead"/>
+      </behaviors>
+   </Slide>
+   <FeedMother>
+      <subjects>
+         <PenguinRockhopper_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingFed" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_FoodCall" playTime="8"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </FeedMother>
+   <DockFeedMother>
+      <subjects>
+         <PenguinRockhopper_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFeed" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Node_Mouth" targetNode="p_FeedYoungNode" targetAnim="Stand_Idle" locoSpeed="fast"/>
+      </behaviors>
+   </DockFeedMother>
+   <WaitFeedYoung>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitingToFeedYoung" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitFeedYoung>
+   <FeedYoung>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FeedYoung" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="FeedYoung_Idle" loopFlag="true"/>
+      </behaviors>
+   </FeedYoung>
+   <CallMother>
+      <subjects>
+         <PenguinRockhopper_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="TreadWater_Idle"/>
+               <TreadWater behSet="TreadWater_Idle"/>
+               <Stand behSet="MutualCall"/>
+               <default behSet="MutualCall"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </CallMother>
+   <AttackGuest>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_AttackGuest"/>
+      </behaviors>
+   </AttackGuest>
+   <Roar>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Threat"/>
+      </behaviors>
+   </Roar>
+   <InterspeciesTerritorialCall>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="0" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Roar"/>
+      </behaviors>
+   </InterspeciesTerritorialCall>
+   <EnterRockIsland>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="medium" targetAnim="Swim_2Slide"/>
+      </behaviors>
+   </EnterRockIsland>
+   <UseRockIsland>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sleep"/>
+      </behaviors>
+   </UseRockIsland>
+   <BirthRockIsland>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTActionInfo locID="animalactions:LayingEgg"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehPlaySet behSet="LayEgg"/>
+      </behaviors>
+   </BirthRockIsland>
+   <ExitRockIsland1>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit1" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland1>
+   <ExitRockIsland2>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit2" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland2>
+   <ExitRockIsland3>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit3" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland3>
+   <ExitRockIsland4>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit4" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland4>
+   <EnterCoastalRock1>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Stand_Idle" subjectNode="Floor" targetTAP="JumpUp_A"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="JumpUp_A" exitTAP="false"/>
+      </behaviors>
+   </EnterCoastalRock1>
+   <EnterCoastalRock2>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Stand_Idle" subjectNode="Floor" targetTAP="JumpUp_B"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="JumpUp_B" exitTAP="false"/>
+      </behaviors>
+   </EnterCoastalRock2>
+   <EnterCoastalRock3>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Stand_Idle" subjectNode="Floor" targetTAP="JumpUp_C"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="JumpUp_C" exitTAP="false"/>
+      </behaviors>
+   </EnterCoastalRock3>
+   <UseCoastalRock>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sleep"/>
+      </behaviors>
+   </UseCoastalRock>   
+   <ExitCoastalRock1>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="JumpDown_A" exitTAP="true"/>
+      </behaviors>
+   </ExitCoastalRock1>
+   <ExitCoastalRock2>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="JumpDown_B" exitTAP="true"/>
+      </behaviors>
+   </ExitCoastalRock2>
+   <ExitCoastalRock3>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="JumpDown_C" exitTAP="true"/>
+      </behaviors>
+   </ExitCoastalRock3>
+   <Turn180>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </Turn180>
+   <ArriveAtCreche>
+      <subjects>
+         <PenguinRockhopper_Young/>
+      </subjects>
+      <behaviors>
+        <BFBehRandomSet>
+           <randomSets>
+              <SpreadWings weight="40"/>
+              <HeadBob weight="20"/>
+              <Stretch weight="20"/>
+              <Shake weight="20"/>
+           </randomSets>
+        </BFBehRandomSet>
+      </behaviors>
+   </ArriveAtCreche>
+   <LoopIdle>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="LoopStand"/>
+               <Rest behSet="LoopRest"/>
+               <default behSet="LoopStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+   <LoopStand>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopStand>
+   <LoopLie>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopLie>
+   <LoopRest>
+      <subjects>
+         <PenguinRockhopper/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Rest_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopRest>
+   <DockAttackGuest>
+      <subjects>
+         <PenguinRockhopper_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDockRadial subjectNode="Node_Guest" targetAnim="Stand_Idle" locoSpeed="hop"/>
+      </behaviors>
+   </DockAttackGuest>
+</BehaviorSets>

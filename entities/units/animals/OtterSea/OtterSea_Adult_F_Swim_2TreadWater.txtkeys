@@ -1,0 +1,5 @@
+<TEXTKEY> 
+   <key time=".1" text="{Bip01 Spine} runspl strength=.1"/> 
+   <key time=".4" text="{Bip01 Head} runspl strength=.15"/> 
+	<key time=".75" text="{Bip01 Head} runsns strength=.05"/>    
+</TEXTKEY>

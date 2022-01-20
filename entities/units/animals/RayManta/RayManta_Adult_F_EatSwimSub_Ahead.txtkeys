@@ -1,0 +1,4 @@
+<TEXTKEY>
+   <key percent="0" text="{Node_Eat} attach object"/>
+   <key percent="100" text="{Node_Eat} detach object"/>
+</TEXTKEY>

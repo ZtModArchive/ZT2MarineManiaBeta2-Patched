@@ -1,0 +1,101 @@
+﻿<ZT2Strings>
+
+   <zoopedia_swimwithanimals>
+      <entry>Swim With Animals</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="600" padx="20" pady="20">
+In Zoo Tycoon 2: Marine Mania, you can swim alongside some of your favorite marine animals. Click a marine animal in a tank, and then click the Swim With Animal button, if it's available for that animal. Press SPACEBAR to stop swimming with the animal.                  
+                  <p/>
+You can also swim with animals in Zoo Guest Mode. Swim up to the animal, and then press SPACEBAR to swim alongside it. Note, you may have to clean or heal the animal first. Press SPACEBAR again to stop swimming with the animal.
+						<p/>
+You can swim alongside the beluga, the bottlenose dolphin, the manta ray, the narwhal, the green sea turtle, the false killer whale, the short-finned pilot whale, and the orca. 						
+               </cell>
+            </cell>
+         </color>
+      </text>
+   </zoopedia_swimwithanimals>
+
+   <zoopedia_rewardobjects version="7">
+      <entry>Reward Objects</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="600" padx="20" pady="20">
+You earn reward objects by winning <a href="zoopedia:zoopedia_awards:entry"><u><color r="255" g="231" b="135">awards,</color></u></a> playing <a href="zoopedia:zoopedia_challenge:entry"><u><color r="255" g="231" b="135">challenges,</color></u></a> or completing <a href="zoopedia:zoopedia_campaign:entry"><u><color r="255" g="231" b="135">campaigns.</color></u></a> Some reward objects are only available in the game in which you won them. In every game of Zoo Tycoon 2: Marine Mania, though, locked reward objects become available as soon as you unlock them.
+<p/>
+Here are the reward objects in Zoo Tycoon 2: Marine Mania and how you get them.
+<p/>
+Balloon bouquet: Have an endangered species baby.
+<br/>Blimp: Win the 20th Anniversary Award.
+<br/>Dolphin arch: Win the Marine Animal Tycoon 1 Award.
+<br/>Enhanced zoo gate: Win the Zoo Tycoon Award.
+<br/>Face painting kiosk: Win the Entertainment Donation Achievement Award.
+<br/>Headset kiosk: Win the Educational Donation Achievement Award.
+<br/>Marine fountain: Win the Marine Animal Tycoon 3 Award.
+<br/>Marine zoo gate and zoo walls: Win the Marine Animal Tycoon 4 Award.
+<br/>Marine tank wall: Win the Show Tycoon 3 Award.
+<br/>Seahorse bouncy ride: Win the Marine Animal Tycoon 2 Award.
+<br/>Show fence: Win the Show Tycoon 2 Award.
+<br/>Tank light: Win the Show Tycoon 1 Award.
+<br/>Upgraded medium grandstand: Win the Show Donation 1 Award.
+<br/>Upgraded large grandstand: Win the Show Donation 2 Award.
+<br/>Zoo attendance statue: Win the Zoo Attendance 20,000 Guests Award.
+<p/>
+Big-screen TV: Complete any two marine show challenges in Challenge mode to unlock.
+<br/>Jungle theme: Complete any five photo challenges in Challenge mode to unlock.
+<br/>Tuna live food enrichment item: Complete any two marine animal challenges in Challenge mode to unlock.
+<br/>Safari theme: Complete any five game challenges in Challenge mode to unlock.
+<p/>
+Blue Whale Hall: Complete the Marine Animals campaign to unlock. 
+<br/>Upgraded show platform with canopy: Complete the Marine Shows campaign to unlock.
+<p/>
+Flower arch: Complete the Troubled Zoos campaign to unlock.
+<br/>Flower post: Complete the Zookeeper in Training campaign to unlock.
+<br/>Gilded statue: Complete the Mysterious Panda campaign to unlock.
+<br/>Globe statue: Complete the Globe campaign to unlock.
+<br/>Sundial: Complete the Prevent Animal Abuse campaign to unlock.           
+               </cell>
+            </cell>
+         </color>
+      </text>
+   </zoopedia_rewardobjects>   
+
+   <zoopedia_animaltraining>
+      <entry>Animal Training</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="600" padx="20" pady="20">
+In Zoo Tycoon 2: Marine Mania you can train certain marine animals to do trained behaviors or tricks. The animals can then perform these tricks in marine shows. 
+<p/>
+Only certain marine animals can be taught tricks. In Marine Mania those animals are: the beluga, the bottlenose dolphin, the false killer whale, the orca, the sea otter, the California sea lion, the short-finned pilot whale, and the Pacific walrus.
+<p/>
+Before you can train an animal the animal's tank must contain a tank entrance and a training area. The animal also needs to be in good health.
+<p/>
+To train an eligible animal click the animal and then click the Train In 1st Person button on the animal's information panel. This will open the training panel, where you can select the trick you wish to train.
+<p/>
+You train an animal by tracing gesture lines with a training wand cursor. During training the tracer will move along the gesture line. You must keep the training wand cursor over the tracer as it moves along the gesture line. Depending on the gesture you may also have to either click the left mouse button or press one of the four directional buttons while tracing the gesture.
+<p/>
+The sparks that come from the tracer while it moves tell you how well you're doing. Green sparks mean you're right on top of the gesture tracer and doing well. Yellow and orange sparks mean you're falling a little behind. Red sparks mean that you're not earning any points at all because your cursor is too far away from the tracer.
+<p/>
+Once you've completed the gesture you will receive a score telling you how well you performed the gesture--the higher the score, the better. You also feed the animal a fish after completing the gesture, and the animal learns when you feed him the fish. The higher your trick score, the more the animal learns. As an animal's training level in a trick increases the animal performs that trick better. When an animal has mastered a trick it may unlock new tricks for the animal to learn.
+<p/>
+You can also hire trainers who will train animals automatically. Like other staff, you must pay your hired trainers once a month.
+               </cell>
+            </cell>
+         </color>
+      </text>
+   </zoopedia_animaltraining> 
+   
+</ZT2Strings>

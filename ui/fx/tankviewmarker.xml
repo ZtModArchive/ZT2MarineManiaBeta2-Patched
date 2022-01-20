@@ -1,0 +1,6 @@
+<BFPhysObj allowHighlight="false">
+   <BFSceneGraphComponent modelfile="UI\fx\tankview\view_sparkle.nif" updateBounds="false" scale="2.0"/>
+   <BFHasParticleComponent/>
+   <BFGroundFitComponent heightOffset="0"/>
+   <BFForceUpdateWhenVisibleComponent controllersOnly="false"/>
+</BFPhysObj>

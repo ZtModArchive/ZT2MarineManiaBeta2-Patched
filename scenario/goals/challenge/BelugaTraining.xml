@@ -1,0 +1,20 @@
+<BFScenarioGroup name="belugatrainingrules" state="0" chain="true" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="belugatraining" state="0" sticky="true" optional="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHBelugaTrainingShort" overview="Challengetext:CHBelugaTraining" />
+				<success locid="Challengetext:CHBelugaTrainingSuccessShort" overview="Challengetext:CHBelugaTrainingSuccess" />
+				<failure locid="Challengetext:CHBelugaTrainingFailureShort" overview="Challengetext:CHBelugaTrainingFailure" />
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BelugaTraining.lua" entry="evalbelugatraining" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BelugaTraining.lua" entry="completebelugatraining" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BelugaTraining.lua" entry="failbelugatraining" />
+			</failure>	
+		</BFScenarioRule>		
+	</children>
+</BFScenarioGroup>

@@ -1,0 +1,53 @@
+<BFTypedBinder binderType="SeaLionCalifornia_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Carnivora>
+                     <Otariidae>
+                        <SeaLionCalifornia>
+                           <SeaLionCalifornia_Adult>
+                              <SeaLionCalifornia_Adult_F/>
+                           </SeaLionCalifornia_Adult>
+                        </SeaLionCalifornia>
+                     </Otariidae>
+                  </Carnivora>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)"/>
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <ZTAITrickComponent/>
+         </instance>
+         <shared>
+            <ZTAITrickComponentData>
+               <Knowledge>
+                  <SeaLionCaliforniaJump minScore="10" maxScore="10"/>
+                  <SeaLionCaliforniaSlide minScore="0" maxScore="0"/>
+                  <SeaLionCaliforniaSwing minScore="0" maxScore="0"/>
+                  <SeaLionCaliforniaSeat minScore="0" maxScore="0"/>
+                  <SeaLionCaliforniaHorns minScore="0" maxScore="0"/>
+                  <SeaLionCaliforniaBall minScore="0" maxScore="0"/>
+                  <SeaLionCaliforniaTrampoline minScore="0" maxScore="0"/>
+                  <SeaLionCaliforniaBasketball minScore="0" maxScore="0"/>
+               </Knowledge>
+            </ZTAITrickComponentData>
+         </shared>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

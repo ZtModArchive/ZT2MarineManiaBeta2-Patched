@@ -1,0 +1,351 @@
+<BFGBiome name="reef" displayname="biometype:reef" groundTexture="Biomes/coastal/coastal_ground_512.DDS" groundCoverTexture="Biomes/reef/reef_cover_256.DDS" mixMask="Biomes/reef/mixmask_reef.DDS" objectMask="Biomes/shared/foliage_distribution_mask.DDS" cliffHoriz="Biomes/alpine/alpine_cliff_128_H.DDS" cliffVert="Biomes/alpine/alpine_cliff_128_V.DDS" cliffDiag1="Biomes/alpine/alpine_cliff_128_D1.DDS" cliffDiag2="Biomes/alpine/alpine_cliff_128_D2.DDS" cliffUnaligned="Biomes/alpine/alpine_cliff_128_U.DDS" groundCoverHeightMap="Biomes/shared/med_displacecover_128.DDS" groundCoverWhiteHeightOffset="0.20f" groundCoverBlackHeightOffset="0.0" groundHeightMap="Biomes/shared/med_displaceground_128.DDS" groundWhiteHeightOffset="0.20f" groundBlackHeightOffset="0.0" mixHeightMap="Biomes/shared/low_displacemix_128.DDS" mixBlackHeightOffset="0.2" mixWhiteHeightOffset="0.2" drawOrder="5" iconName="ui/icon_biomes/icon_reef.dds">
+   <groundBrushes brush="Biomes/shared/groundbrush01_64.DDS" brush1="Biomes/shared/groundbrush02_64.DDS" brush2="Biomes/shared/groundbrush03_64.DDS" brush3="Biomes/shared/groundbrush04_64.DDS"/>
+   <groundCoverBrushes brush="Biomes/shared/groundbrush01_64.DDS" brush1="Biomes/shared/groundbrush02_64.DDS" brush2="Biomes/shared/groundbrush03_64.DDS" brush3="Biomes/shared/groundbrush04_64.DDS"/>
+   <groundBrushesNoBlend brush="Biomes/shared/noblend_brush01_32.DDS" brush1="Biomes/shared/noblend_brush02_32.DDS" brush2="Biomes/shared/noblend_brush03_32.DDS" brush3="Biomes/shared/noblend_brush04_32.DDS"/>
+   <groundCoverBrushesNoBlend brush="Biomes/shared/noblend_brush01_32.DDS" brush1="Biomes/shared/noblend_brush02_32.DDS" brush2="Biomes/shared/noblend_brush03_32.DDS" brush3="Biomes/shared/noblend_brush04_32.DDS"/>
+   <overviewColors coverR="177" coverG="208" coverB="148" uncoverR="177" uncoverG="208" uncoverB="148" cliffR="177" cliffG="208" cliffB="148"/>
+   <water shallowDepth="1.0" deepDepth="6.0" shoreOffset="0.4" vertexColorLow="200 230 255 130" vertexColorMed="200 200 200 150" vertexColorHigh="200 200 200 150" glossMap="world/water/gloss/alpine_gloss.dds" waterSubmerged="Biomes/reef/reef_seafloor_512.DDS" shoreTexture="Biomes/coastal/coastal_ground_512.DDS" shoreRipple="ShoreRipples" shoreRippleMaxPercent="75" shoreRipplePeriod="2" shoreRippleMaxPercentPerPeriod="50" waterXML="Materials/reef.xml">
+      <texture name="world/water/water.dds" gridWidth="6" gridHeight="6" scrollTexture="true" startMinUV="0.0 1.0" startMaxUV="1.0 2.0" endMinUV="0.0 0.0" endMaxUV="1.0 1.0" scrollInterval="40" pingpong="false"/>
+      <texture name="world/water/water45.dds" gridWidth="6" gridHeight="6" scrollTexture="true" startMinUV="1.0 0.0" startMaxUV="2.0 1.0" endMinUV="0.0 1.0" endMaxUV="1.0 2.0" scrollInterval="40" pingpong="false"/>
+   </water>
+   <detailobjects>
+      <lowest/>
+      <low/>
+      <med>
+         <dirt objDensity="1">
+            <object nifFile="Biomes/z_detail/alpine/DecDetailSmallRockA_Alpine.nif" probability="2"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersA_Alpine.nif" probability="5"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersB_Alpine.nif" probability="5"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersC_Alpine.nif" probability="5"/>
+            <object nifFile="" probability="800"/>
+         </dirt>
+         <cover objDensity="2">
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersA_Alpine.nif" probability="100"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersB_Alpine.nif" probability="300"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersC_Alpine.nif" probability="100"/>
+            <object nifFile="" probability="200"/>
+         </cover>
+      </med>
+      <high>
+         <dirt objDensity="1">
+            <object nifFile="Biomes/z_detail/alpine/DecDetailSmallRockA_Alpine.nif" probability="5"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailSmallRockB_Alpine.nif" probability="5"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersA_Alpine.nif" probability="2"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersB_Alpine.nif" probability="5"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersC_Alpine.nif" probability="2"/>
+            <object nifFile="" probability="500"/>
+         </dirt>
+         <cover objDensity="2">
+            <object nifFile="Biomes/z_detail/alpine/DecDetailSmallRockA_Alpine.nif" probability="5"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailSmallRockB_Alpine.nif" probability="5"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersA_Alpine.nif" probability="150"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersB_Alpine.nif" probability="450"/>
+            <object nifFile="Biomes/z_detail/alpine/DecDetailFlowersC_Alpine.nif" probability="150"/>
+            <object nifFile="" probability="50"/>
+         </cover>
+      </high>
+   </detailobjects>
+   <decorativedetailobjects>
+      <dirt>
+         <object bfrFile="Biomes/z_detail/alpine/DecDetailSmallRockA_Alpine" probability="1"/>
+         <object bfrFile="Biomes/z_detail/alpine/DecDetailSmallRockB_Alpine" probability="1"/>
+         <object bfrFile="Biomes/z_detail/alpine/DecDetailFlowersA_Alpine" probability="50"/>
+         <object bfrFile="Biomes/z_detail/alpine/DecDetailFlowersB_Alpine" probability="100"/>
+         <object bfrFile="Biomes/z_detail/alpine/DecDetailFlowersC_Alpine" probability="50"/>
+         <object bfrFile="" probability="25"/>
+      </dirt>
+      <cover>
+         <object bfrFile="Biomes/z_detail/alpine/DecDetailSmallRockA_Alpine" probability="1"/>
+         <object bfrFile="Biomes/z_detail/alpine/DecDetailSmallRockB_Alpine" probability="1"/>
+         <object bfrFile="Biomes/z_detail/alpine/DecDetailFlowersA_Alpine" probability="50"/>
+         <object bfrFile="Biomes/z_detail/alpine/DecDetailFlowersB_Alpine" probability="100"/>
+         <object bfrFile="Biomes/z_detail/alpine/DecDetailFlowersC_Alpine" probability="50"/>
+         <object nifFile="" probability="15"/>
+      </cover>
+   </decorativedetailobjects>
+   <autoPlacementVariations>
+      <foliage-mix>
+         <Range0 threshold="20">
+            <nothing weight="100"/>
+         </Range0>
+         <Range1 threshold="160">
+            <nothing weight="500"/>
+         </Range1>
+         <Range2 threshold="254">
+            <nothing weight="500"/>
+         </Range2>
+         <Range3 threshold="255">
+            <nothing weight="100"/>
+         </Range3>
+      </foliage-mix>
+      <foliage-mix-terrain>
+         <Range0 threshold="10">
+            <nothing weight="400"/>
+         </Range0>
+         <Range1 threshold="150">
+            <nothing weight="500"/>
+         </Range1>
+         <Range2 threshold="254">
+            <nothing weight="300"/>
+         </Range2>
+         <Range3 threshold="255">
+            <nothing weight="100"/>
+         </Range3>
+      </foliage-mix-terrain>
+      <water>
+         <Range0 threshold="100">
+            <nothing weight="100"/>
+         </Range0>
+         <Range1 threshold="180">
+            <BlueGreenCoral_Reef weight="300"/>
+            <FireCoral_Reef weight="100"/>
+            <GiantBarrelSponge_Reef weight="100"/>
+            <MyriadFeatherStar_Reef weight="100"/>
+            <PlateCoral_Reef weight="300"/>
+            <TableCoral_Reef weight="200"/>
+            <Rock_Reef_Large weight="100"/>
+            <Rock_Reef_Small weight="200"/>
+            <Rock_Reef_Medium weight="200"/>
+            <nothing weight="666"/>
+         </Range1>
+         <Range2 threshold="255">
+            <nothing weight="100"/>
+         </Range2>
+      </water>
+   </autoPlacementVariations>
+   <panel>
+      <UIToggleSet name="Biome">
+         <UIRegion x="25" y="45" w="500" h="256" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="normal"/>
+         <UIAspect string="">
+            <default image="" sound="">
+               <BFRect x="0" y="0" w="0" h="0"/>
+               <BFColor r="0" g="0" b="0" a="0"/>
+            </default>
+         </UIAspect>
+         <UIHotKeys/>
+         <children>
+            <UIToggleButton name="deepwater" toggle="1" sticky="1">
+               <UIRegion x="0" y="93" w="77" h="60" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="" long="" help="" ids="alpine:deepwater"/>
+               <UIAspect string="">
+                  <default image="ui/biome/biome_reef.DDS" sound="">
+                     <BFRect x="0" y="0" w="-1" h="-1"/>
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+                  <standard>
+                     <normal>
+                        <BFRect x="0" y="252" w="77" h="60"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="146" y="252" w="77" h="60"/>
+                     </highlighted>
+                     <activated>
+                        <BFRect x="293" y="252" w="77" h="60"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="284" y="382" w="77" h="60"/>
+                     </disabled>
+                  </standard>
+                  <alternate>
+                     <normal>
+                        <BFRect x="293" y="252" w="77" h="60"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="146" y="252" w="77" h="60"/>
+                     </highlighted>
+                     <activated>
+                        <BFRect x="293" y="252" w="77" h="60"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="284" y="382" w="77" h="60"/>
+                     </disabled>
+                  </alternate>
+               </UIAspect>
+               <UIHotKeys/>
+               <on>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_biome"/>
+                  <event msg="ZT_SETMODE" data="BFString" string="deepwater"/>
+               </on>
+            </UIToggleButton>
+            <UIToggleButton name="shallowwater" toggle="0" sticky="1">
+               <UIRegion x="20" y="93" w="133" h="60" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="" long="" help="" ids="alpine:shallowwater"/>
+               <UIAspect string="">
+                  <default image="ui/biome/biome_reef.DDS" sound="">
+                     <BFRect x="0" y="0" w="-1" h="-1"/>
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+                  <standard>
+                     <normal>
+                        <BFRect x="0" y="189" w="133" h="60"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="146" y="189" w="133" h="60"/>
+                     </highlighted>
+                     <activated>
+                        <BFRect x="293" y="189" w="133" h="60"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="143" y="382" w="133" h="60"/>
+                     </disabled>
+                  </standard>
+                  <alternate>
+                     <normal>
+                        <BFRect x="293" y="189" w="133" h="60"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="146" y="189" w="133" h="60"/>
+                     </highlighted>
+                     <activated>
+                        <BFRect x="293" y="189" w="133" h="60"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="143" y="446" w="133" h="60"/>
+                     </disabled>
+                  </alternate>
+               </UIAspect>
+               <UIHotKeys/>
+               <on>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_biome"/>
+                  <event msg="ZT_SETMODE" data="BFString" string="shallowwater"/>
+               </on>
+            </UIToggleButton>
+            <UIToggleButton name="ground" toggle="0" sticky="1">
+               <UIRegion x="96" y="93" w="133" h="60" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="" long="" help="" ids="coastal:ground"/>
+               <UIAspect string="">
+                  <default image="ui/biome/biome_reef.DDS" sound="">
+                     <BFRect x="0" y="0" w="-1" h="-1"/>
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+                  <standard>
+                     <normal>
+                        <BFRect x="0" y="126" w="133" h="60"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="145" y="126" w="133" h="60"/>
+                     </highlighted>
+                     <activated>
+                        <BFRect x="293" y="126" w="133" h="60"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="143" y="382" w="133" h="60"/>
+                     </disabled>
+                  </standard>
+                  <alternate>
+                     <normal>
+                        <BFRect x="293" y="126" w="133" h="60"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="145" y="126" w="133" h="60"/>
+                     </highlighted>
+                     <activated>
+                        <BFRect x="293" y="126" w="133" h="60"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="143" y="116" w="133" h="60"/>
+                     </disabled>
+                  </alternate>
+               </UIAspect>
+               <UIHotKeys/>
+               <on>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_biome"/>
+                  <event msg="ZT_SETMODE" data="BFString" string="ground"/>
+               </on>
+            </UIToggleButton>
+            <UIToggleButton name="mix" toggle="0" sticky="1">
+               <UIRegion x="173" y="93" w="133" h="60" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="" long="" help="" ids="coastal:mix"/>
+               <UIAspect string="">
+                  <default image="ui/biome/biome_reef.DDS" sound="">
+                     <BFRect x="0" y="0" w="-1" h="-1"/>
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+                  <standard>
+                     <normal>
+                        <BFRect x="0" y="63" w="133" h="60"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="146" y="63" w="133" h="60"/>
+                     </highlighted>
+                     <activated>
+                        <BFRect x="293" y="63" w="133" h="60"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="0" y="446" w="133" h="60"/>
+                     </disabled>
+                  </standard>
+                  <alternate>
+                     <normal>
+                        <BFRect x="293" y="63" w="133" h="60"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="146" y="63" w="133" h="60"/>
+                     </highlighted>
+                     <activated>
+                        <BFRect x="293" y="63" w="133" h="60"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="0" y="446" w="133" h="60"/>
+                     </disabled>
+                  </alternate>
+               </UIAspect>
+               <UIHotKeys/>
+               <on>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_biome"/>
+                  <event msg="ZT_SETMODE" data="BFString" string="mix"/>
+               </on>
+            </UIToggleButton>
+            <UIToggleButton name="ground-cover" toggle="0" sticky="1">
+               <UIRegion x="250" y="93" w="133" h="60" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="" long="" help="" ids="coastal:ground-cover"/>
+               <UIAspect string="">
+                  <default image="ui/biome/biome_reef.DDS" sound="">
+                     <BFRect x="0" y="0" w="-1" h="-1"/>
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+                  <standard>
+                     <normal>
+                        <BFRect x="0" y="0" w="133" h="60"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="146" y="0" w="133" h="60"/>
+                     </highlighted>
+                     <activated>
+                        <BFRect x="293" y="0" w="133" h="60"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="0" y="382" w="133" h="60"/>
+                     </disabled>
+                  </standard>
+                  <alternate>
+                     <normal>
+                        <BFRect x="293" y="0" w="133" h="60"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="146" y="0" w="133" h="60"/>
+                     </highlighted>
+                     <activated>
+                        <BFRect x="293" y="0" w="133" h="60"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="0" y="382" w="133" h="60"/>
+                     </disabled>
+                  </alternate>
+               </UIAspect>
+               <UIHotKeys/>
+               <on>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_biome"/>
+                  <event msg="ZT_SETMODE" data="BFString" string="ground-cover"/>
+               </on>
+            </UIToggleButton>
+         </children>
+      </UIToggleSet>
+   </panel>
+</BFGBiome>

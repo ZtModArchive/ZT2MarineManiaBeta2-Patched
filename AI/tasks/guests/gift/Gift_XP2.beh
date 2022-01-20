@@ -1,0 +1,266 @@
+<BehaviorSets>
+   <GiftCartSellItem>
+      <subjects>
+         <giftcart_mm/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate physObj="Vendor" targetAnim="Stand_ShopReceiveItem"/>
+      </behaviors>
+   </GiftCartSellItem>
+   <BuyRayMantaGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="RayManta_Gift" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyRayMantaGift>
+   <BuyRayMantaGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="RayManta_Gift_Adult" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyRayMantaGift>
+   <BuyTurtleSeaGreenGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/TurtleSeaGreenGiftAdult.lua" function="TurtleSeaGreenGiftAdult"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyTurtleSeaGreenGift>
+   <BuyTurtleSeaGreenGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/TurtleSeaGreenGiftYoung.lua" function="TurtleSeaGreenGiftYoung"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyTurtleSeaGreenGift>
+   <BuyTurtleLeatherbackGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/TurtleLeatherbackGiftAdult.lua" function="TurtleLeatherbackGiftAdult"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyTurtleLeatherbackGift>
+   <BuyTurtleLeatherbackGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/TurtleLeatherbackGiftYoung.lua" function="TurtleLeatherbackGiftYoung"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyTurtleLeatherbackGift>
+   <BuyDolphinBottlenoseGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="DolphinBottlenose_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDolphinBottlenoseGift>   
+   <BuyManateeWestIndianGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="ManateeWestIndian_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyManateeWestIndianGift>     
+   <BuyOtterSeaGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="OtterSea_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyOtterSeaGift>
+   <BuyWhaleBelugaGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="WhaleBeluga_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyWhaleBelugaGift>
+
+   <BuySharkHammerheadScallopedGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="SharkHammerheadScalloped_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuySharkHammerheadScallopedGift>
+   
+   <BuyWhaleOrcaGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/WhaleOrcaGiftAdult.lua" function="WhaleOrcaGiftAdult"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyWhaleOrcaGift>
+   
+   <BuyWhaleOrcaGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/WhaleOrcaGiftYoung.lua" function="WhaleOrcaGiftYoung"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyWhaleOrcaGift>
+
+   
+   <BuySeaLionCaliforniaGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="SeaLionCalifornia_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuySeaLionCaliforniaGift>     
+   
+   <BuySharkGoblinGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="SharkGoblin_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuySharkGoblinGift>
+   
+   
+   <BuySharkReefBlackTipGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="SharkReefBlackTip_Gift" subjectNode="Bip01 L Finger0" detachAction="inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuySharkReefBlackTipGift>     
+
+   <BuyNarwhalGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Narwhal_Gift" subjectNode="Bip01 L Finger0" detachAction="inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyNarwhalGift> 
+   
+   <BuySharkWhaleGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="SharkWhale_Gift" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuySharkWhaleGift>
+   <BuySharkWhaleGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="SharkWhale_Gift_Adult" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuySharkWhaleGift>
+
+   <BuySharkWhiteGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="SharkWhite_Gift" subjectNode="Bip01 L Finger0" detachAction="inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuySharkWhiteGift> 
+   
+   <BuyWalrusPacificGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="WalrusPacific_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyWalrusPacificGift>
+
+   <BuyWhaleFalseKillerGift>
+		<subjects>
+			<Guest/>
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="DockGiftCart"/>
+			<BFBehAttachObject attachEntity="WhaleFalseKiller_Gift" subjectNode="Bip01 Spine1" detachAction="inventory" container="fanny_inventory"/>
+			<BFBehAnimate targetAnim="Stand_Turn180"/>
+		</behaviors>
+   </BuyWhaleFalseKillerGift>
+   
+   <BuyWhalePilotShortFinnedGift>
+		<subjects>
+			<Guest/>
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="DockGiftCart"/>
+			<BFBehAttachObject attachEntity="WhalePilotShortFinned_Gift" subjectNode="Bip01 Spine1" detachAction="inventory" container="fanny_inventory"/>
+			<BFBehAnimate targetAnim="Stand_Turn180"/>
+		</behaviors>
+   </BuyWhalePilotShortFinnedGift>
+   
+   <BuyMarlinBlueGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/MarlinBlueGiftAdult.lua" function="MarlinBlueGiftAdult"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyMarlinBlueGift>
+   
+</BehaviorSets>

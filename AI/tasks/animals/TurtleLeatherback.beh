@@ -1,0 +1,1624 @@
+<BehaviorSets>
+<!--Wander behavior sets for randomized wandering-->
+   <WanderWater>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="25"/>
+               <WanderSub weight="75"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderWater>
+   <WanderSurf>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="25"/>
+               <WanderSurf_Med weight="25"/>
+               <WanderSurf_Slow weight="25"/>
+               <WanderSurf_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSurf_Glide>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Glide>
+   <WanderSub>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="25"/>
+               <WanderSub_Med weight="25"/>
+               <WanderSub_Slow weight="25"/>
+               <WanderSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Slow>
+   <WanderSub_Glide>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Glide>
+   <WanderLand>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehEscapeObstacle locoSpeed="fast" escapeTime="20" escapeRadius="5"/>
+      </behaviors>
+   </WanderLand>
+<!--End Wander behavior sets for randomized wandering-->
+
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultWander weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultWander weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Unhappy>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultWander weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultWander weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultWander>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WanderLand"/>
+               <water behSet="WanderWater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </DefaultWander>
+   <DefaultSwim>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="50"/>
+               <WanderSub weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultSwim>
+   <DefaultSwimSurface>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Swim_Ahead"/>
+      </behaviors>
+   </DefaultSwimSurface>
+   <DefaultSwimSub>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="SwimSub_Ahead"/>
+      </behaviors>
+   </DefaultSwimSub>
+   <DefaultStand>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DefaultStand>
+   <DefaultWalk>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+      </behaviors>
+   </DefaultWalk>
+   <DefaultLie>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LyingDown"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultRest>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+      </behaviors>
+   </DefaultRest>
+   <DefaultHappy>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="DefaultWander"/>
+      </behaviors>
+   </DefaultHappy>
+   <DefaultUnhappy>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Bite weight="50"/>
+               <Idle weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="TreadWater_Idle"/>
+               <SwimSub behSet="TreadWaterSub_Idle"/>
+               <Stand behSet="Stand_Idle"/>
+               <default behSet="TreadWaterSub_Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>
+   <Lie_Idle>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </Lie_Idle>
+   <TreadWater_Idle>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" interruptFlag="true"/>
+      </behaviors>
+   </TreadWater_Idle>
+   <TreadWaterSub_Idle>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" interruptFlag="true"/>
+      </behaviors>
+   </TreadWaterSub_Idle>
+   <Stand_Idle>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true"/>
+      </behaviors>
+   </Stand_Idle>
+   <Wait>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="TreadWaterWait"/>
+               <SwimSub behSet="TreadWaterSubWait"/>
+               <Stand behSet="StandWait"/>
+               <default behSet="TreadWaterSubWait"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Wait>
+   <TreadWaterWait>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="30"/>
+      </behaviors>
+   </TreadWaterWait>
+   <TreadWaterSubWait>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="30"/>
+      </behaviors>
+   </TreadWaterSubWait>
+   <StandWait>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="30"/>
+      </behaviors>
+   </StandWait>
+   <Sleep>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="SleepLand"/>
+               <water behSet="SleepWater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Sleep>
+   <SleepLand>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SleepLand_Idle" playTime="20"/>
+      </behaviors>
+   </SleepLand>
+   <SleepWater>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </SleepWater>
+   <Die_OldAge>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="DefaultLie"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Chum_mm" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Beached>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Beached> 
+   <BrowseBushSub>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Eat" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Swallow"/>
+      </behaviors>
+   </BrowseBushSub>
+   <Drink>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Drink"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Swallow"/>
+      </behaviors>
+   </Drink>
+   <FailureSet>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Ground_Failure"/>
+               <water behSet="Water_Failure"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <Ground_Failure>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Bite"/>
+               <default behSet="Bite"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Ground_Failure>
+   <Water_Failure>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="TreadWater_Idle"/>
+               <SwimSub behSet="TreadWater_Idle"/>
+               <TreadWater behSet="TreadWater_Idle"/>
+               <TreadWaterSub behSet="TreadWater_Idle"/>
+               <default behSet="TreadWater_Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Water_Failure>
+   <Bite>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Bite_Land"/>
+               <water behSet="Bite_Surface"/>
+               <underwater behSet="Bite_Submerge"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Bite>
+   <Bite_Land>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Bite"/>
+      </behaviors>
+   </Bite_Land>
+   <Bite_Surface>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_GuestAttack_Snap"/>
+      </behaviors>
+   </Bite_Surface>
+   <Bite_Submerge>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Bite"/>
+      </behaviors>
+   </Bite_Submerge>
+   <DockFight>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="2" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+	 <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="2" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <FightSnap>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="FightSnap_Land"/>
+               <water behSet="FightSnap_Water"/>
+               <underwater behSet="FightSnap_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FightSnap>
+   <FightSnap_Land>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap_Land>
+   <FightSnap_Water>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </FightSnap_Water>
+   <Fight>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Fight_Land"/>
+               <water behSet="Fight_Water"/>
+               <underwater behSet="Fight_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Fight>
+   <Fight_Land>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Bite"/>
+      </behaviors>
+   </Fight_Land>
+   <Fight_Water>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Ram"/>
+      </behaviors>
+   </Fight_Water>
+   <DefendEqual>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Fight weight="50"/>
+               <FightHurt weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <FightHurt>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="FightHurt_Land"/>
+               <water behSet="FightHurt_Water"/>
+               <underwater behSet="FightHurt_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSetAttribute>
+            <BFAISubjectData health="30"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </FightHurt>
+   <FightHurt_Land>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Attacked"/>
+      </behaviors>
+   </FightHurt_Land>
+   <FightHurt_Water>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Ram"/>
+      </behaviors>
+   </FightHurt_Water>
+   <Challenge>
+      <subjects>
+         <TurtleLeatherback_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Challenge_Land"/>
+               <water behSet="Challenge_Water"/>
+               <underwater behSet="Challenge_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Challenge>
+   <Challenge_Land>
+      <subjects>
+         <TurtleLeatherback_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Bite"/>
+         <BFBehAnimate targetAnim="Stand_Bite"/>
+      </behaviors>
+   </Challenge_Land>
+   <Challenge_Water>
+      <subjects>
+         <TurtleLeatherback_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Bite"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Bite"/>
+      </behaviors>
+   </Challenge_Water>
+   <BeachBallFloat>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="BeachBallFloat_Idle"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <BobLeft weight="50"/>
+               <BobRight weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehAnimate targetAnim="BeachBallFloat_Idle"/>
+      </behaviors>
+   </BeachBallFloat>
+   <BobLeft>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="BeachBallFloat_BobLeft"/>
+      </behaviors>
+   </BobLeft>
+   <BobRight>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="BeachBallFloat_BobRight"/>
+      </behaviors>
+   </BobRight>
+   <Rendezvous>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit/>
+      </behaviors>
+   </Rendezvous>
+   <Mate>
+      <subjects>
+         <TurtleLeatherback_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="MateSurface"/>
+               <underwater behSet="MateSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Mate>
+   <MateSurface>
+      <subjects>
+         <TurtleLeatherback_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="10"/>
+      </behaviors>
+   </MateSurface>
+   <MateSub>
+      <subjects>
+         <TurtleLeatherback_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="10"/>
+      </behaviors>
+   </MateSub>
+   <LayEgg>
+      <subjects>
+         <TurtleLeatherback_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="5">
+            <randomSets>
+               <SpawnEgg weight="100"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LayEgg>
+   <SpawnEgg>
+      <subjects>
+         <TurtleLeatherback_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_LayEggs"/>
+         <BFBehSpawn spawnEntity="TurtleLeatherback_Egg" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnEgg>
+   <HatchEgg>
+      <subjects>
+         <TurtleLeatherback_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <IdleEgg>
+      <subjects>
+         <TurtleLeatherback_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </IdleEgg>
+   <SpawnF>
+      <subjects>
+         <TurtleLeatherback_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="TurtleLeatherback_Egg" morphTargetEntityType="TurtleLeatherback_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <TurtleLeatherback_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="TurtleLeatherback_Egg" morphTargetEntityType="TurtleLeatherback_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnM>
+   <DockWallScareGuest>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToRamTankWall"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockTankWall subjectNode="Node_RamWall" locoSpeed="fast" heightAboveGround="1"/>
+      </behaviors>
+   </DockWallScareGuest>
+   <Surface_Submerge>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="3" maxDepth="10"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="0" maxDepth="0"/>
+      </behaviors>
+   </Surface>
+   <DockAttackGuest_Water>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Guest" targetNode="p_TalkOffset" targetAnim="TreadWater_Idle" locoSpeed="fast"/>
+      </behaviors>
+   </DockAttackGuest_Water>
+   <AttackGuest_Water>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_2TreadWater" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="TreadWater_GuestAttack_Snap"/>
+      </behaviors>
+   </AttackGuest_Water>
+   <DockAttackGuest_Ground>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Node_Guest" targetNode="p_TalkOffset" targetAnim="Stand_Idle" locoSpeed="fast"/>
+      </behaviors>
+   </DockAttackGuest_Ground>
+   <AttackGuest_Ground>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GuestAttack_Snap"/>
+      </behaviors>
+   </AttackGuest_Ground>
+   <EnterBuoyLure>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterBuoyLure>
+   <UseBuoyLure>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Eat"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Swallow"/>
+      </behaviors>
+   </UseBuoyLure>
+   <ExitBuoyLure>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TurnLeft90"/>
+      </behaviors>
+   </ExitBuoyLure>
+   <EnterArtificialReef>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterArtificialReef>
+   <UseArtificialReef>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Eat"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Swallow"/>
+      </behaviors>
+   </UseArtificialReef>
+   <ExitArtificialReef>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TurnLeft90"/>
+      </behaviors>
+   </ExitArtificialReef>
+   <EnterFoodBox>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterFoodBox>
+   <UseFoodBox>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Eat"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Swallow"/>
+      </behaviors>
+   </UseFoodBox>
+   <ExitFoodBox>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TurnLeft90"/>
+      </behaviors>
+   </ExitFoodBox>
+   <HideSub>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="10"/>
+      </behaviors>
+   </HideSub>
+   <Poop>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop_Sick>
+   <EnterBubbleEmitter>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" locospeed="medium"/>
+      </behaviors>
+   </EnterBubbleEmitter>
+   <UseBubbleEmitter>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </UseBubbleEmitter>
+   <ExitBubbleEmitter>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitBubbleEmitter>
+   <EnterKelpBed>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="Node_KelpBed" locospeed="medium" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterKelpBed>
+   <UseKelpBed>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_2TreadWaterSub" interruptFlag="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Wait"/>
+      </behaviors>
+   </UseKelpBed>
+   <ExitKelpBed>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitKelpBed>
+   <EnterDesertIsland1>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Swim_2Walk" subjectNode="Floor" targetTAP="Left_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Left_EnterA" exitTAP="false"/>
+      </behaviors>
+   </EnterDesertIsland1>
+   <EnterDesertIsland2>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Swim_2Walk" subjectNode="Floor" targetTAP="Right_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Right_EnterA" exitTAP="false"/>
+      </behaviors>
+   </EnterDesertIsland2>
+   <UseDesertIsland_Sleep>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="SleepLand"/>
+      </behaviors>
+   </UseDesertIsland_Sleep>
+   <UseDesertIsland_LayEgg>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LayingEgg"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+           <ZTFeedbackData>
+             <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+           </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="LayEgg"/>
+      </behaviors>
+   </UseDesertIsland_LayEgg>
+   <ExitDesertIsland1>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Left_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitDesertIsland1>
+   <ExitDesertIsland2>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Right_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitDesertIsland2>
+   <LoopIdle>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="LoopStand"/>
+               <Rest behSet="LoopRest"/>
+               <TreadWater behSet="LoopTreadWater"/>
+               <TreadWaterSub behSet="LoopTreadWaterSub"/>
+               <default behSet="LoopStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+   <LoopStand>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopStand>
+   <LoopLie>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopLie>
+   <LoopRest>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Rest_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopRest>
+   <LoopTreadWater>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopTreadWater>
+   <LoopTreadWaterSub>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopTreadWaterSub>
+   <Roar>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Ground_Failure"/>
+               <water behSet="Water_Failure"/>
+               <underwater behSet="Water_Failure"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Roar> 
+   <SwipeMed>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Fight"/>
+      </behaviors>
+   </SwipeMed>
+   <HitMediumEqual>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <HitMed>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </HitMed>
+   <HitMed_Ground>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <OnLand_Twitch weight="75"/>
+               <OnLand_Dying weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Ground> 
+   <HitMed_Water>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Fight"/>
+      </behaviors>
+   </HitMed_Water> 
+   <HitMed_Underwater>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Fight"/>
+      </behaviors>
+   </HitMed_Underwater> 
+   <HitMedDie>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie> 
+   <BiteMed>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </BiteMed>
+   <BitMediumEqual>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <BitMed>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie> 
+   <WaitFight>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Wait"/>
+      </behaviors>
+   </WaitFight> 
+   <Die_Ground>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Attacked" />
+      </behaviors>
+   </Die_Ground> 
+   <Die_Water>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Water> 
+   <Die_Underwater>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Underwater> 
+   <DockAttacked>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <TurtleLeatherback/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+</BehaviorSets>

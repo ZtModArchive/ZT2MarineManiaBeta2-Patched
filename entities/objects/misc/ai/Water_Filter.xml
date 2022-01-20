@@ -1,0 +1,152 @@
+<BFTypedBinder binderType="Water_Filter">
+   <types>
+      <entity>
+         <building>
+            <Water_Filter/>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTPlacementData dockArrowStyle="special" dockArrowSize="1.5" icon3Doffset="0 0 0.542671" icon3Dscale="0.290000" adjacentToWater="true" orientToTankWall="true"/>
+      <UIButton name="overviewicon">
+         <UIAspect>
+            <default image="ui/zoomap/icon_staff.dds"/>
+         </UIAspect>
+      </UIButton>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\misc\Water_Filter\Water_Filter_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Water_Filter"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Water_Filter"/>
+         </on>
+      </UIToggleButton>
+      <UIToggleButton template="researchentity">
+         <UIAspect>
+            <default image="entities\objects\misc\Water_Filter\Water_Filter_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Water_Filter"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Researchable="true" s_ObjectType="Misc" s_Product="Marine" s_uisort="dd" s_Zoopedia="zoopedia:zoopedia_waterfilter:entry" b_DoNotDisplayUsers="true" f_FameReq="60" f_researchUnlockTime="100" f_researchCost="800"/>
+      <ZTUserStaffAction>
+         <SetAttribute name="f_FilterDirtyLevel" value="0" threshold="5" locid="superstaff:clean_water_filter" effect="SuperStaffWrench"/>
+      </ZTUserStaffAction>
+      <BFGInfluenceComponent defaultRadius="9.0" defaultGroupFactor="0.0" defaultRadiusDropoff="linear" defaultGroupDropoff="none">
+         <smell key="bad" value="10" scalingAttribute="f_FilterDirtyLevel"/>
+      </BFGInfluenceComponent>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/misc/Water_Filter/Water_Filter_Machine" initialTextKey="snd &quot;water_filter&quot; looping"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="clean" required="1">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/misc/Water_Filter/Water_Filter_Clean"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+               <BFHasParticleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="soiled" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/misc/Water_Filter/Water_Filter_Soiled"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+               <BFHasParticleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="dirty" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/misc/Water_Filter/Water_Filter_Dirty"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="toxic" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/misc/Water_Filter/Water_Filter_Toxic"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance f_FilterDirtyLevel="0"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIFadeController attribName="f_FilterDirtyLevel" currState="clean" fadePeriod="1">
+               <stateList>
+                  <toxic physObj="toxic" minRange="66" maxRange="101"/>
+                  <dirty physObj="dirty" minRange="33" maxRange="66"/>
+                  <soiled physObj="soiled" minRange="1" maxRange="33"/>
+                  <clean physObj="clean" minRange="-1" maxRange="1"/>
+               </stateList>
+            </BFAIFadeController>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGInfluenceController attribName="f_FilterDirtyLevel"/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="1000">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="50" period="monthly" type="debit" category="upkeep"/>
+               <ZTTransaction name="sell" cost="100" period="monthly" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <ZTAIStaffRequestController attribName="f_FilterDirtyLevel" thresholdValue="50" testType="2" cancelThresholdValue="25" cancelTestType="1">
+               <ZTStaffRequestData tokenKey="t_CleanWaterFilter" subjectType="Worker" priority="1"/>
+            </ZTAIStaffRequestController>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <ZTAIWaterFilterComponent cleanupInterval="2.0" cleanupRate="750.0" maximumDirtCapacity="75000.0" fullFilterMessage="zoomessages:full_filter">
+               <maintenanceThresholds>
+                  <preemptive threshold="20" cancelThreshold="10"/>
+                  <regular threshold="50" cancelThreshold="10"/>
+                  <occasional threshold="80" cancelThreshold="10"/>
+               </maintenanceThresholds>
+            </ZTAIWaterFilterComponent>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="Clean_Filter">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockWaterFilter" useBehSet="UseWaterFilter" exitBehSet="ExitWaterFilter" targetNode="Dock_Adult"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\items\BFG_Aquavac2006\BFG_Aquavac2006.nif">
+  <animation anim="entities\objects\items\BFG_Aquavac2006\BFG_Aquavac2006_Swim_Idle.bf" animName="Swim_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="BFG_Aquavac2006" version="1">
+    <node name="Swim">
+      <table>
+        <Swim_Idle />
+      </table>
+    </node>
+  </Graph>
+</BFM>

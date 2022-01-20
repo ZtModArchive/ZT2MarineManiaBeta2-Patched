@@ -1,0 +1,31 @@
+************************************************************
+Date: 03/01/2006
+Time: 19:18
+************************************************************
+Compiled object 1: CoralPlate_LODGroup
+Compiled object 2: CoralPlate_LOD0
+Compiled object 3: CoralPlate_LOD1
+Compiled object 4: CoralPlate_LOD2
+Compiled object 5: footprint
+Compiled object 7: paint_CoralPlate
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 1037 
+Vertex Count: 656 
+Vertex Memory: 23 kb
+Material Count: 1 
+Texture Count: 1 
+Texture Memory: 42 kb
+Num LODs: 3 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 115 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 468ms
+XML File Translation: total time = 380ms
+Data Output: total time = 9ms
+************************************************************

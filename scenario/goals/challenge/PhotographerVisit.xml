@@ -1,0 +1,39 @@
+<BFScenarioGroup name="photographervisitrules" state="0" chain="false" allsuccess="false" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="photographervisit" state="0" sticky="true" optional="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHPhotographerVisitShort" overview="Challengetext:CHPhotographerVisit" />
+				<success locid="Challengetext:CHPhotographerVisitSuccessShort" overview="Challengetext:CHAnimalAssistanceSuccess" />
+				<failure locid="Challengetext:CHPhotographerVisitFailureShort" overview="Challengetext:CHPhotographerVisitFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/photographervisit.lua" entry="evalPhotographerVisit" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/photographervisit.lua" entry="completePhotographerVisit" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/photographervisit.lua" entry="failPhotographerVisit" />
+			</failure>	
+		</BFScenarioRule>
+
+		<BFScenarioRule name="SeenManatee" hidden = "0" state="0" sticky="true">
+			<info type="primary" >
+				<neutral locid="Challengetext:CHPhotographerVisitSeeManatee" />
+				<success locid="Challengetext:CHPhotographerVisitSeeManateeDone"/>
+			</info>				
+		</BFScenarioRule>
+		<BFScenarioRule name="SeenOtter" hidden = "0" state="0" sticky="true">
+			<info type="primary" >
+				<neutral locid="Challengetext:CHPhotographerVisitSeeOtter" />
+				<success locid="Challengetext:CHPhotographerVisitSeeOtterDone"/>
+			</info>	
+		</BFScenarioRule>
+		<BFScenarioRule name="SeenRochhopper" hidden = "0" state="0" sticky="true">
+			<info type="primary" >
+				<neutral locid="Challengetext:CHPhotographerVisitSeeRockhopper" />
+				<success locid="Challengetext:CHPhotographerVisitSeeRockhopperDone"/>
+			</info>	
+		</BFScenarioRule>		
+	</children>
+</BFScenarioGroup>

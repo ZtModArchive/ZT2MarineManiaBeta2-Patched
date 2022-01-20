@@ -1,0 +1,7 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01} snd 'UseSlide_2Swim_Success'"/>
+   <key time="0" text="{Bip01} snd 'UseSlide_2Swim_Success_uw'"/>   
+   <key time="2.43" text="{Bip01 Head} snd 'splash_med' "/>
+   <key time="2.43" text="{Bip01 Head} snd 'splash_med_uw' "/>
+   <key time="2.43" text="{Bip01 Head} splash directed_medium"/>
+</TEXTKEY>

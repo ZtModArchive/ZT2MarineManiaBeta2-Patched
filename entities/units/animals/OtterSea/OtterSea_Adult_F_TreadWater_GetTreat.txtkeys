@@ -1,0 +1,6 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01} runspl"/>
+   <key time="0.73" text="{Node_Eat} attach object"/>
+   <key time="2.0" text="{Bip01} runspl"/>
+   <key time="2.00" text="{Node_Eat} detach object"/>
+</TEXTKEY>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\scenery\TreasureChest\TreasureChest.nif">
+  <animation anim="entities\objects\scenery\TreasureChest\TreasureChest_Idle_Bubble.bf" animName="Idle_Bubble" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\scenery\TreasureChest\TreasureChest_Idle_Idle.bf" animName="Idle_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="TreasureChest" version="1">
+    <node name="Idle">
+      <table>
+        <Idle_Bubble />
+        <Idle_Idle />
+      </table>
+    </node>
+  </Graph>
+</BFM>

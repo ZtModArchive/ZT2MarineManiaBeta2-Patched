@@ -1,0 +1,6 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Head} runspl"/>
+   <key time="1.4" text="{Bip01 Head} snd 'splash_med' "/>
+   <key time="1.4" text="{Bip01 Head} snd 'splash_med_uw' "/>   
+   <key time="1.40" text="{Bip01} splash directed_medium"/>
+</TEXTKEY>

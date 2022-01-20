@@ -1,0 +1,54 @@
+<soundtags>
+   <BFSoundtag>
+      <BF2DSndFactory name="SeagullCluster">
+         <snd name="sound/B_CS_seagullcluster.wav" randpan="1" randvolume="1" minpitch=".85" maxpitch="1" minvolume="0" maxvolume=".15"/>
+      </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+         <BF2DSndFactory name="SeagullCluster2">
+            <snd name="sound/B_CS_seagullcluster2.wav" randpan="1" randvolume="1" minpitch=".85" maxpitch="1" minvolume="0" maxvolume=".15"/>
+         </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+         <BF2DSndFactory name="SeagullCluster3">
+            <snd name="sound/B_CS_seagullcluster3.wav" randpan="1" randvolume="1" minpitch=".85" maxpitch="1" minvolume="0" maxvolume=".1"/>
+         </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF2DSndFactory name="Seagull">
+            <snd name="sound/B_CS_seagulls4.wav" randpan="1" randvolume="1" minpitch=".85" maxpitch="1" minvolume=".20" maxvolume=".2"/>
+         </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF2DSndFactory name="Seagulls">
+         <snd name="sound/B_CS_seagulls.wav" randpan="1" randvolume="1" minpitch=".9" maxpitch="1" minvolume=".10" maxvolume=".25"/>
+      </BF2DSndFactory>
+      <BF2DSndFactory name="Seagulls2">
+         <snd name="sound/B_CS_seagulls2.wav" randpan="1" randvolume="1" minpitch=".9" maxpitch="1" minvolume=".10" maxvolume=".25"/>
+      </BF2DSndFactory>
+      <BF2DSndFactory name="Seagulls3">
+         <snd name="sound/B_CS_seagulls3.wav" randpan="1" randvolume="1" minpitch=".9" maxpitch="1" minvolume=".10" maxvolume=".25"/>
+      </BF2DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF2DSndFactory name="Waves">
+         <snd name="sound/Coastal_Waves.wav" randvolume="1" minvolume=".10" maxvolume=".15" minpitch=".8" maxpitch="1"/>
+      </BF2DSndFactory>
+      <BF2DSndFactory name="Waves2">
+         <snd name="sound/Coastal_Waves2.wav" randvolume="1" minvolume=".10" maxvolume=".15" minpitch=".8" maxpitch="1"/>
+      </BF2DSndFactory>
+      <BF2DSndFactory name="Waves3">
+         <snd name="sound/Coastal_Waves3.wav" randvolume="1" minvolume=".10" maxvolume=".15" minpitch=".8" maxpitch="1"/>
+      </BF2DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BFAmbient2DSndFactory name="c_animals01">
+         <snds>
+            <snd name="Waves" mindelay="10" maxdelay="40"/>
+            <snd name="SeagullCluster" mindelay="25" maxdelay="100"/>
+            <snd name="Seagull" mindelay="30" maxdelay="100"/>
+            <snd name="Seagulls" mindelay="30" maxdelay="100"/>
+         </snds>
+      </BFAmbient2DSndFactory>
+   </BFSoundtag>
+</soundtags>

@@ -1,0 +1,19 @@
+<BFScenarioGroup name="belugaphotorules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="belugaphotophoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHBelugaPhotoShort" overview="PhotoChallengetext:PHBelugaPhoto" />
+				<success locid="PhotoChallengetext:PHBelugaPhotoSuccessShort" overview="PhotoChallengetext:PHBelugaPhotoSuccess" />
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BelugaPhoto.lua" entry="evalbelugaphoto" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BelugaPhoto.lua" entry="completebelugaphoto" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BelugaPhoto.lua" entry="failbelugaphoto" />
+			</failure>	
+		</BFScenarioRule>		
+	 </children>
+</BFScenarioGroup>

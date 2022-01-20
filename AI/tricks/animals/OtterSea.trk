@@ -1,0 +1,120 @@
+<Tricks>
+	<ZTAITrickData>
+		<Data name="OtterSeaJump" locname="tricknames:Jump" icon="UI/trick_icons/trick_icon_jump_Otter.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<OtterSea_Adult/>
+		</Animals>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Jump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Jump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_JumpFailure"/>
+		<Success token="t_JumpSuccess"/>
+		<Critical token="t_JumpCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="OtterSeaShakerToy" locname="tricknames:OpenUp" icon="UI/trick_icons/trick_icon_UseShakerToy.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<OtterSea_Adult/>
+		</Animals>
+                <Prerequisite name="OtterSeaJump" minScore="100"/>
+		<ZTAITrickTargetData Prop="ShakerToy"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="ShakerToy_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="ShakerToy_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="ShakerToy_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="ShakerToy_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="ShakerToy_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="ShakerToy_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="ShakerToy_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="ShakerToy_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="ShakerToy_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="ShakerToy_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_ShakerToyFailure"/>
+		<Success token="t_ShakerToySuccess"/>
+		<Critical token="t_ShakerToyCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="OtterSeaForage" locname="tricknames:ForageIn" icon="UI/trick_icons/trick_icon_ForageInRockPile.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<OtterSea_Adult/>
+		</Animals>
+                <Prerequisite name="OtterSeaShakerToy" minScore="100"/>
+		<ZTAITrickTargetData Prop="PileOfRocks"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Forage_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Forage_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Forage_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Forage_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Forage_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Forage_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Forage_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Forage_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Forage_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Forage_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_ForageFailure"/>
+		<Success token="t_ForageSuccess"/>
+		<Critical token="t_ForageCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="OtterSeaSeat" locname="tricknames:LookCuteOn" icon="UI/trick_icons/trick_icon_LookCute.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<OtterSea_Adult/>
+		</Animals>
+		<ZTAITrickTargetData Prop="SealSeat"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Seat_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Seat_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_SeatFailure"/>
+		<Success token="t_SeatSuccess"/>
+		<Critical token="t_SeatCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="OtterSeaBasketball" locname="tricknames:PlayingBasketball" icon="UI/trick_icons/trick_icon_UseBasketballHoop.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<OtterSea_Adult/>
+		</Animals>
+                <Prerequisite name="OtterSeaSeat" minScore="100"/>
+		<ZTAITrickTargetData Prop="Basketball_Hoop_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Basketball_Otter_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Basketball_Otter_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Basketball_Otter_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Basketball_Otter_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Basketball_Otter_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Basketball_Otter_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Basketball_Otter_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Basketball_Otter_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Basketball_Otter_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Basketball_Otter_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_BasketballFailure"/>
+		<Success token="t_BasketballSuccess"/>
+		<Critical token="t_BasketballCritical"/>
+	</ZTAITrickData>
+</Tricks>

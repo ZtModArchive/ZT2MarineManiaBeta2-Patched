@@ -1,0 +1,76 @@
+<BFTypedBinder binderType="TurtleLeatherback_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Reptilia>
+                  <Testudines>
+                     <Cheloniidae>
+                        <TurtleLeatherback>
+                           <TurtleLeatherback_Young>
+                              <TurtleLeatherback_Young_F/>
+                           </TurtleLeatherback_Young>
+                        </TurtleLeatherback>
+                     </Cheloniidae>
+                  </Testudines>
+               </Reptilia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TurtleLeatherback_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+   <binder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<attribList>
+						<health />
+						<hygiene />
+					</attribList>
+					<stateList>
+						<sickanddirty>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+								<hygiene minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="TurtleLeatherback_Adult_F" image="entities\units\animals\TurtleLeatherback\TurtleLeatherback_Adult_F_Sick_Dirty.dds" />
+							</textureData>
+						</sickanddirty>
+						<sick>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="TurtleLeatherback_Adult_F" image="entities\units\animals\TurtleLeatherback\TurtleLeatherback_Adult_F_Sick.dds" />
+							</textureData>
+						</sick>
+						<dirty>
+							<attribData>
+								<hygiene minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="TurtleLeatherback_Adult_F" image="entities\units\animals\TurtleLeatherback\TurtleLeatherback_Adult_F_Dirty.dds" />
+							</textureData>
+						</dirty>
+						<well>
+							<textureData>
+								<mainObj material="TurtleLeatherback_Adult_F" image="entities\units\animals\TurtleLeatherback\TurtleLeatherback_Adult_F.dds" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+   </binder>
+</BFTypedBinder>

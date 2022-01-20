@@ -1,0 +1,249 @@
+<BFTypedBinder binderType="WhalePilotShortFinned" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Cetacea>
+							<Delphinidae>
+								<WhalePilotShortFinned />
+							</Delphinidae>
+						</Cetacea>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\WhalePilotShortFinned\WhalePilotShortFinned_Adult_F_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo ids="entityname:WhalePilotShortFinned" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="WhalePilotShortFinned_Adult_F" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData icon3Doffset="0 .02 .89" icon3Dscale=".34" iconAnim="Swim_Ahead" minimumDepth="0.6" />
+		<BFAIEntityDataShared b_UpdateSteeringEveryFrame="true" s_Product="Marine" f_MaxTourValue="40" f_BaseDonationAmount="60" s_DonateToken="t_DonateWhalePilotShortFinned" s_Species="WhalePilotShortFinned" s_Endangerment="LowRisk" b_Medium="true" b_MediumAnimal="true" f_adoptRarity="40" s_Zoopedia="zoopedia:zoopedia_whalepilotshortfinned:entry" f_RequiredInitialTankSpace="200" f_RequiredAdditionalTankSpace="50" f_RequiredTankDepth="5" s_KeeperEatType="BuoyLure_Fish" p_SniffNode="0 -3.5 180" p_PreyOffset="0 -1.5 0" p_PredatorOffset="0 -2 0" b_Prey="true" p_FightOffset="0 -1.5 180" f_TrickLearningLifespanAdjustment="-0.1" b_PelagicAnimal="true" b_MarinePiscivore="true" b_SquidEater="true" b_MarineAnimal="true" s_tracerIcon="UI/fx/traininggestures/trainingpointer_Whale_PilotShortFinned.dds" b_KelpBedUser="true" b_BubbleEmitterUser="true" b_PirateShipUser="true">
+			<BFAINeedAdjusts hunger="0.25" thirst="0" rest="0.25" exercise="0.50" privacy="0.1" social="0.5" stimulation="0.1" />
+		</BFAIEntityDataShared>
+		<BFGBiomeData location="pelagic_warm_oceans_worldwide" locationSensitivity="10">
+			<alpine sensitivity="-10" />
+			<benthic sensitivity="-10" />
+			<borealforest sensitivity="-10" />
+			<coastal sensitivity="0" />
+			<desert sensitivity="-5" />
+			<grassland sensitivity="-5" />
+			<pelagic sensitivity="10" primary="true" />
+			<reef sensitivity="0" />
+			<temperateforest sensitivity="-10" />
+			<tropicalrainforest sensitivity="-10" />
+			<tundra sensitivity="-10" />
+			<savannah sensitivity="-5" />
+			<scrub sensitivity="-10" />
+			<wetlands sensitivity="-10" />
+		</BFGBiomeData>
+		<ZTUserStaffAction>
+			<SetAttribute name="hygiene" value="0" threshold="20" locid="superstaff:animal_groom" effect="SuperStaffGroom" />
+			<SetAttribute name="health" value="0" threshold="20" locid="superstaff:animal_heal" />
+		</ZTUserStaffAction>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/WhalePilotShortFinned/WhalePilotShortFinned_Adult_F.bfm" scale=".7" switch="0 15 30 60" />
+					<BFShadowLODComponent numLevels="1" switchingDists="60.0" />
+					<BF2LegsGroundFitComponent heightOffset="0" seabedOffset="1" fitRadius=".15" frontBuoyancyNode="Node_Buoy" allowRollOnWater="true" />
+					<BFSwimComponent waterInDistance="0.50" waterOutDistance="0.1" />
+					<BFRotYawMovingComponent />
+					<BFSpineBendComponent spineBase="Bip01 Spine" spineBone1="Bip01 Spine1" tailBone1="Bip01 Tail" tailBone2="Bip01 Tail1" tailBone3="Bip01 Tail2" tailBone4="Bip01 Tail3" bendDegree="89" bendTime="0.5" /> 
+					<BFCollisionComponent grid="Bip01 Tail" />
+					<BFGridCollisionComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars floorNode="Floor" isWaterDisplacer="true" waterDisplacement="0.25 0.5 0.25" splashScale="0.2">
+					<virtualNodes>
+						<Node_Floor x="0" y="-2" z="-.25" yaw="0" pitch="0" roll="0" />
+						<Node_Follow x="2" />
+						<Node_Attacked y="4" />
+						<Node_Predator y="-4" />
+						<Node_Guest y="0" z="-1.8" />
+						<Node_RamWall y="-2" />
+						<Node_JumpTankWall y="-3" pitch="60" />
+						<Node_TankWallRight x="-3" y="-.35" z="-.25" yaw="90" />
+						<Node_TankWallLeft x="3" y="-.35" z="-.25" yaw="-90" />
+						<Node_RubOther x=".5" y="-.35" z="-.25" yaw="-90" />
+						<Node_KelpBed y="-3" />
+						<Node_Lure y="-4.25" z="0.75"/>
+						<Node_Box y="-6.25"/>
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionHandler factorStepDown="0.01" />
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<BFAICognitiveMgr>
+					<StateThinkers>
+						<ZTAIStateThinker>
+							<BFAIStateVar Name="thirst" ValueMin="0" ValueMax="0" />
+						</ZTAIStateThinker>
+					</StateThinkers>
+				</BFAICognitiveMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFBehaviorMgr behaviorVersion="1">
+					<subBehaviors>
+						<BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true" />
+					</subBehaviors>
+				</BFBehaviorMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="OnLand" />
+							<slow name="OnLand" />
+							<medium name="OnLand" />
+							<fast name="OnLand" />
+							<veryfast name="OnLand" />
+							<evade name="OnLand" />
+							<stalk name="OnLand" />
+							<attack name="OnLand" />
+							<glide name="OnLand" />
+							<corkscrew name="OnLand" />
+							<porpoise name="OnLand" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="water" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="TreadWater"/>
+							<slow name="Swim" minAnimSpeed="0.75" maxAnimSpeed="1.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</slow>
+							<medium name="Swim" minAnimSpeed="0.85" maxAnimSpeed="1.1" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</medium>
+							<fast name="Swim" minAnimSpeed="0.95" maxAnimSpeed="1.2" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</fast>
+							<veryfast name="Swim" minAnimSpeed="2.0" maxAnimSpeed="2.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</veryfast>
+							<evade name="Swim" minAnimSpeed="0.95" maxAnimSpeed="1.2" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</evade>
+							<stalk name="Swim" minAnimSpeed="0.95" maxAnimSpeed="1.2" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</stalk>
+							<attack name="Swim" flapAnim="Swim_Nudge" minAnimSpeed="0.5" maxAnimSpeed="1.5" minResetPeriod="1" maxResetPeriod="2">
+								<anim name="Swim_Nudge" yaw="1.0" acceleration="-0.1" />
+								<anim name="SubSwim_2Swim" yaw="1.0" pitch="0.5" />
+							</attack>
+							<glide name="SwimGlide" flapAnim="Swim_2SwimGlide" minAnimSpeed="0.5" maxAnimSpeed="1.5" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimGlide_Ahead" yaw="1.0" roll="0.5" acceleration="-0.1" />
+								<anim name="Swim_2SwimGlide" yaw="1.0" roll="0.5" />
+							</glide>
+							<corkscrew name="Swim" minAnimSpeed="0.75" maxAnimSpeed="1.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</corkscrew>
+							<porpoise name="Swim" flapAnim="Swim_Porpoise" minAnimSpeed="0.5" maxAnimSpeed="1.5" minResetPeriod="1" maxResetPeriod="2">
+								<anim name="Swim_Porpoise" yaw="1.0" acceleration="-0.1" />
+								<anim name="SubSwim_2Swim" yaw="1.0" pitch="0.5" />
+							</porpoise>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="underwater" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="TreadWaterSub"/>
+							<slow name="SwimSub" minAnimSpeed="0.75" maxAnimSpeed="1.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" pitch="0.5" />
+							</slow>
+							<medium name="SwimSub" minAnimSpeed="0.85" maxAnimSpeed="1.1" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" pitch="0.5" />
+							</medium>
+							<fast name="SwimSub" minAnimSpeed="0.95" maxAnimSpeed="1.2" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" pitch="0.5" />
+							</fast>
+							<veryfast name="SwimSub" minAnimSpeed="2.0" maxAnimSpeed="2.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" pitch="0.5" />
+							</veryfast>
+							<evade name="SwimSub" minAnimSpeed="0.95" maxAnimSpeed="1.2" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" pitch="0.5" />
+							</evade>
+							<stalk name="SwimSub" flapAnim="SwimSub_Echolocate" minAnimSpeed="0.95" maxAnimSpeed="1.2" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Echolocate" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" pitch="0.5" />
+							</stalk>
+							<attack name="SwimSub" flapAnim="SwimSub_Bite" minAnimSpeed="0.75" maxAnimSpeed="1.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Bite" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" pitch="0.5" />
+							</attack>
+							<glide name="SwimSubGlide" flapAnim="SwimSub_2SwimSubGlide" minAnimSpeed="0.5" maxAnimSpeed="1.5" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSubGlide_Ahead" yaw="1.0" pitch="0.5" roll="0.5" acceleration="-0.1" />
+								<anim name="SwimSub_2SwimSubGlide" yaw="1.0" pitch="0.5" />
+							</glide>
+							<corkscrew name="SwimSub" flapAnim="SwimSub_CorkscrewTwist" minAnimSpeed="0.5" maxAnimSpeed="1.5" minResetPeriod="1" maxResetPeriod="2">
+								<anim name="SwimSub_CorkscrewTwist" yaw="1.0" pitch="0.5" acceleration="-0.1" />
+								<anim name="Swim_2SwimSub" yaw="1.0" pitch="0.5" roll="0.5" />
+							</corkscrew>
+							<porpoise name="SwimSub" minAnimSpeed="0.75" maxAnimSpeed="1.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" pitch="0.5" />
+							</porpoise>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFNamedBinder binderName="foodprop" repopulateMethod="byName" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="5500">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

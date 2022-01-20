@@ -1,0 +1,6 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Ponytail1} snd 'JumpRamSuccess'"/>
+   <key time="0" text="{Bip01 Ponytail1} snd 'JumpRamSuccess_uw'"/>
+   <key time="0.8" text="{Bip01 Head} splash directed_extralarge"/>
+   <key time="0.8" text="whap 90"/>
+</TEXTKEY>

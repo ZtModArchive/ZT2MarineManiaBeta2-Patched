@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Mitsukurinidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Chondrichthyes>
+                  <Lamniformes>
+                     <Mitsukurinidae/>
+                  </Lamniformes>
+               </Chondrichthyes>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

@@ -1,0 +1,109 @@
+<BFTypedBinder binderType="Curb_Tank_mm">
+   <types>
+      <entity>
+         <fence>
+            <curb>
+               <elevatedcurb>
+                  <Curb_Tank_mm/>
+               </elevatedcurb>
+            </curb>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_SeeThrough="true" s_Zoopedia="zoopedia:zoopedia_elevatedpathrailing:entry"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\paths\sand\curb_sand_post"/>
+               <BFDistanceCullComponent cullDistance="0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars ignoreFittingBounds="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\BasicTank\basictank_curb_vert"/>
+               <BFDistanceCullComponent cullDistance="0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars ignoreFittingBounds="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\BasicTank\basictank_curb_diag"/>
+               <BFDistanceCullComponent cullDistance="0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars ignoreFittingBounds="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\paths\sand\curb_sand_post"/>
+               <BFDistanceCullComponent cullDistance="0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars ignoreFittingBounds="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90curve90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\BasicTank\basictank_curb_curve90"/>
+               <BFDistanceCullComponent cullDistance="0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars ignoreFittingBounds="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45curve90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\BasicTank\basictank_curb_curve90_diag"/>
+               <BFDistanceCullComponent cullDistance="0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars ignoreFittingBounds="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90curve135">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\BasicTank\basictank_curb_curve135_short"/>
+               <BFDistanceCullComponent cullDistance="0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars ignoreFittingBounds="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45curve135">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\BasicTank\basictank_curb_curve135_long"/>
+               <BFDistanceCullComponent cullDistance="0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars ignoreFittingBounds="true"/>
+         </shared>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

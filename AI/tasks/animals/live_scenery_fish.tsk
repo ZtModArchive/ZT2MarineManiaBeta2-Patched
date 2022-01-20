@@ -1,0 +1,527 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="Ambient" UniqueID="live_scenery_fish:Ambient">
+    <BFAICreateData>
+      <Subjects>
+        <live_scenery_fish/>
+        <Qualifiers inWater="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="10000"/>
+    <BFBehExecTask>
+      <BFBehWander playTime="1" locoSpeed="fast" avoidLand="true"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_ViewLiveScenery" GiveTo="Guest" Payload="subject" Chance="25" Radius="12" Timeout="5" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadeAttack" UniqueID="live_scenery_fish:EvadeAttack">
+    <BFAICreateData>
+      <Subjects>
+        <live_scenery_fish/>
+        <Qualifiers inWater="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Flee/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="11000"/>
+    <BFBehExecTask>
+      <BFBehEvasion evasionRadius="30" locoSpeed="fast" avoidLand="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DeadOnLand" UniqueID="live_scenery_fish:DeadOnLand">
+    <BFAICreateData>
+      <Subjects>
+        <live_scenery_fish/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="10000"/>
+    <BFBehExecTask>
+      <BFBehAnimate targetAnim="Swim_Ahead"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Die" GiveTo="subject" Payload="target" Timeout="-1" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Die" UniqueID="live_scenery_fish:Die">
+    <BFAICreateData>
+      <Subjects>
+        <live_scenery_fish/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Die/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="12000"/>
+    <BFBehExecTask>
+      <ZTBehEconomy transactionName="destroy"/>
+      <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Die_OldAge" UniqueID="live_scenery_fish:Die_OldAge">
+    <BFAICreateData>
+      <Subjects>
+        <live_scenery_fish/>
+        <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 100"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="12000"/>
+    <BFBehExecTask>
+      <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Attacked" UniqueID="live_scenery_fish:Attacked">
+    <BFAICreateData>
+      <Subjects>
+        <live_scenery_fish/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Attack/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehEvasion evasionRadius="30" locoSpeed="fast" avoidLand="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ChaseLiveFish" reserveTag="General" UniqueID="live_scenery_fish:ChaseLiveFish">
+    <BFAICreateData>
+      <Subjects>
+        <Felidae/>
+        <CrocodileNile/>
+        <PenguinEmperor/>
+        <Qualifiers_AND inWater_OR_onLand="true" hunger="GE 70"/>
+      </Subjects>
+      <Targets>
+        <live_scenery_fish/>
+        <Qualifiers_AND inWater="true" inSight="25" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap hunger="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehHeadLook/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:HuntingPrey" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="ChasePreyWater"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_HuntLiveFish" GiveTo="subject" Payload="target" Timeout="20"/>
+            <BFAIToken Name="t_Attack" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AttackLiveFish" UniqueID="live_scenery_fish:AttackLiveFish">
+    <BFAICreateData>
+      <Subjects>
+        <Felidae/>
+        <CrocodileNile/>
+        <PenguinEmperor/>
+        <Qualifiers_AND inWater_OR_onLand="true" hunger="GE 70"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inSight="25" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Huntlive_scenery_fish/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap hunger="-45"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChasingAnimal" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="2" pursuitRadius="30" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap hunger="-15" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:AttackingAnimal" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehHeadLook/>
+        <BFBehSyncSet subjectBehSet="WaitAttackIdle" targetBehSet="DockAttacked"/>
+        <BFBehHeadLook disengage="true"/>
+        <ZTBehViewEvent viewKey="Pos_3">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalAttackingGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <BFBehSyncSet subjectBehSet="AttackPreySwitch" targetBehSet="Attacked"/>
+        <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ChaseLiveFish_NonAttackingSwimmers" reserveTag="General" UniqueID="live_scenery_fish:ChaseLiveFish_NonAttackingSwimmers">
+    <BFAIValidationData>
+      <Subjects/>
+      <Targets>
+        <Qualifiers waterDepth="LE 1"/>
+      </Targets>
+    </BFAIValidationData>
+    <BFAICreateData>
+      <Subjects>
+        <BearPolar/>
+        <BearGrizzly/>
+        <BearBlackAsiatic/>
+        <Qualifiers_AND inWater_OR_onLand="true" hunger="GE 70"/>
+      </Subjects>
+      <Targets>
+        <live_scenery_fish/>
+        <Qualifiers_AND inWater="true" waterDepth="LE 1" inSight="25" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap hunger="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehHeadLook/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:HuntingPrey" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="ChasePreyWater"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_HuntLiveFish" GiveTo="subject" Payload="target" Timeout="20"/>
+            <BFAIToken Name="t_Attack" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AttackLiveFish_NonAttackingSwimmers" UniqueID="live_scenery_fish:AttackLiveFish_NonAttackingSwimmers">
+    <BFAIValidationData>
+      <Subjects/>
+      <Targets>
+        <Qualifiers waterDepth="LE 1"/>
+      </Targets>
+    </BFAIValidationData>
+    <BFAICreateData>
+      <Subjects>
+        <BearPolar/>
+        <BearGrizzly/>
+        <BearBlackAsiatic/>
+        <Qualifiers_AND inWater_OR_onLand="true" hunger="GE 70"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" waterDepth="LE 1" inSight="25" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Huntlive_scenery_fish/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap hunger="-45"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChasingAnimal" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="4" pursuitRadius="30" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap hunger="-15" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:AttackingAnimal" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehHeadLook/>
+        <BFBehSyncSet subjectBehSet="WaitAttack" targetBehSet="DockAttacked"/>
+        <BFBehHeadLook disengage="true"/>
+        <ZTBehViewEvent viewKey="Pos_3">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalAttackingGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <BFBehSyncSet subjectBehSet="AttackPreyFish" targetBehSet="Attacked"/>
+        <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="FishCheck" TaskDelayMin="60" TaskDelayMax="180" UniqueID="live_scenery_fish:FishCheck">
+    <BFAICreateData>
+      <Subjects>
+        <Felidae/>
+      </Subjects>
+      <Targets>
+        <live_scenery_fish/>
+        <Qualifiers_AND inWater="true" inSight="25" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehHeadLook/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:BeingCurious"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehFaceTarget/>
+      <BFBehHeadLook disengage="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_InvestigateFish" GiveTo="subject" Payload="target" Timeout="20"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InvestigateFishyWater" UniqueID="live_scenery_fish:InvestigateFishyWater">
+    <BFAICreateData>
+      <Subjects>
+        <Felidae/>
+      </Subjects>
+      <Targets>
+        <shore/>
+        <Qualifiers_AND inHabitat="true" inSight="25"/>
+      </Targets>
+      <Objects>
+        <t_InvestigateFish/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehHeadLook/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:BeingCurious"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehDockWater targetAnim="Stand_Idle" subjectNode="Node_Mouth"/>
+      <BFBehHeadLook disengage="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-10"/>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="Fishin"/>
+        <ZTBehViewEvent viewKey="Pos_4">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalPonderGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AttackLiveFish_Marine" UniqueID="live_scenery_fish:AttackLiveFish_Marine">
+    <BFAICreateData>
+      <Subjects>
+         <Delphinidae/>
+         <Carcharhinidae/>
+         <Monodontidae/>
+         <Otariidae/>
+         <Lamnidae/>
+         <Sphyrnidae/>
+         <Mitsukurinidae/>
+         <Istiophoridae/>
+         <Qualifiers_AND isSwimming="true" hunger="GE 70"/>
+      </Subjects>
+      <Targets>
+        <Koi/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap hunger="-45"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChasingAnimal" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="1" pursuitRadius="30" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap hunger="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:AttackingAnimal" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_3">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalAttackingGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <BFBehSyncSet subjectBehSet="MarineAttackPreyFish" targetBehSet="Attacked"/>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AttackLiveFish_YoungTurtle" UniqueID="live_scenery_fish:AttackLiveFish_YoungTurtle">
+    <BFAICreateData>
+      <Subjects>
+        <TurtleSeaGreen_Young/>
+        <Qualifiers_AND isSwimming="true" hunger="GE 70"/>
+      </Subjects>
+      <Targets>
+        <Koi/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true" inSight="2"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap hunger="-45"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChasingAnimal" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="1" pursuitRadius="30" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap hunger="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:AttackingAnimal" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_3">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalAttackingGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <BFBehSyncSet subjectBehSet="MarineAttackPreyFish" targetBehSet="Attacked"/>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

@@ -1,0 +1,82 @@
+<BFParticleDictionary>
+   <SuperStaffPourWater>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Pour_water.xml" removeTime="6.0"/>
+      </Conditions>
+   </SuperStaffPourWater>
+   <SuperStaffRake>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Rake.xml" removeTime="4.0"/>
+      </Conditions>
+   </SuperStaffRake>
+   <SuperStaffWashLarge>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Wash_Large.xml" removeTime="9.0"/>
+      </Conditions>
+   </SuperStaffWashLarge>
+   <SuperStaffWashMed>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Wash_Med.xml" removeTime="9.0"/>
+      </Conditions>
+   </SuperStaffWashMed>
+   <SuperStaffWashSmall>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Wash_Small.xml" removeTime="9.0"/>
+      </Conditions>
+   </SuperStaffWashSmall>
+   <SuperStaffSweep>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Sweep.xml" removeTime="4.0"/>
+      </Conditions>
+   </SuperStaffSweep>
+   <SuperStaffEmptytrash>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Trash_empty.xml" removeTime="3.0"/>
+      </Conditions>
+   </SuperStaffEmptytrash>
+   <SuperStaffGroom>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Groom_all.xml" removeTime="3.0"/>
+      </Conditions>
+   </SuperStaffGroom>
+   <SuperStaffHeal>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Heal.xml" removeTime="10.0"/>
+      </Conditions>
+   </SuperStaffHeal>
+   <SuperStaffPourGrass>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Pour_Grass.xml" removeTime="6.0"/>
+      </Conditions>
+   </SuperStaffPourGrass>
+   <SuperStaffPourHay>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Pour_Hay.xml" removeTime="6.0"/>
+      </Conditions>
+   </SuperStaffPourHay>
+   <SuperStaffPourBananas>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Pour_Bananas.xml" removeTime="6.0"/>
+      </Conditions>
+   </SuperStaffPourBananas>
+   <SuperStaffPourFish>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Pour_Fish.xml" removeTime="6.0"/>
+      </Conditions>
+   </SuperStaffPourFish>
+   <SuperStaffPourMeat>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Pour_Meat.xml" removeTime="6.0"/>
+      </Conditions>
+   </SuperStaffPourMeat>
+   <SuperStaffPourApples>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Pour_Apples.xml" removeTime="6.0"/>
+      </Conditions>
+   </SuperStaffPourApples>
+   <SuperStaffWrench>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\user_actions\Clean_Filter.xml" removeTime="4.0"/>
+      </Conditions>
+   </SuperStaffWrench>
+</BFParticleDictionary>

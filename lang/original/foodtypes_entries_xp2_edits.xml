@@ -1,0 +1,24 @@
+<ZT2Strings> 
+
+   <zoopedia_fish version="2">
+      <entry>Fish</entry>
+      <text>
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/Terrain/Terrain_Fish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/BuoyLure/BuoyLure_Fish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/FoodBox/FoodBox_Fish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <img src="entities/objects/food/ArtificalReef/ArtificalReef_Fish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <p/>Fish is a staple food in the diet of many zoo animals, including bears, penguins, crocodiles, and dolphins.
+               <p/>Fish can be placed directly on the ground, or in a lure buoy, food box, or artificial reef.
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_fish>
+   
+</ZT2Strings>

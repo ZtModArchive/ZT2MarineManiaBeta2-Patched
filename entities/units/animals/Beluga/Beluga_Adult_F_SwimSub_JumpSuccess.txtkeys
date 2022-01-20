@@ -1,0 +1,6 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01_Dorsal_Node} runspl"/>
+   <key time="0.97" text="{Bip01 Head} snd 'splash_med' "/>
+   <key time="0.97" text="{Bip01 Head} snd 'splash_med_uw' "/>
+   <key time="0.97" text="{Bip01 Ponytail2} splash directed_medium"/>
+</TEXTKEY>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\scenery\Cannon\Cannon.nif">
+  <animation anim="entities\objects\scenery\Cannon\Cannon_Idle.bf" animName="Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="Cannon" version="1">
+    <node name="Idle">
+      <table>
+        <Idle />
+      </table>
+    </node>
+  </Graph>
+</BFM>

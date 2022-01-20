@@ -1,0 +1,67 @@
+<BFTypedBinder binderType="SeaHorse_mm">
+   <types>
+      <entity>
+         <scenery>
+            <Playground>
+               <BouncyRide>
+                  <SeaHorse_mm/>
+               </BouncyRide>
+            </Playground>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="rideObj" rottype="use" postype="use" attachnode="Bip02"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities/objects/scenery/Playground_BouncyRide_SeaHorse_mm/BouncyRide_SeaHorse_mm_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:BouncyRide_SeaHorse_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SeaHorse_mm"/>
+         </on>
+      </UIToggleButton>
+      <ZTPlacementData terrainFlatten="true" dockArrowStyle="special" dockArrowSize=".75"/>
+      <BFAIEntityDataShared s_Product="Marine" s_uisort="sa" b_ReceiveUpdates="true" s_Zoopedia="zoopedia:zoopedia_seahorseride:entry" s_GameLock="seahorseridelock" />
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob.tga" baseNode="footprint" width="3" minLength="3" maxLength="4" minOffset=".5" maxOffset="1"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/objects/scenery/Playground_BouncyRide_SeaHorse_mm/BouncyRide_SeaHorse_mm.bfm" activeSequenceName="BouncyRide_Used" activeSequenceAccumulate="false"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>      
+      <BFNamedBinder binderName="rideObj">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities/objects/scenery/Playground_BouncyRide_SeaHorse_mm/Playground_BouncyRide_SeaHorse_mm" switch="0 10 50"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="300">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

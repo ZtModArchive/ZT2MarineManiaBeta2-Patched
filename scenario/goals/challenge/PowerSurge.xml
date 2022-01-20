@@ -1,0 +1,17 @@
+<BFScenarioGroup name="powersurgerules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="powersurge" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHPowerSurgeShort" overview="Challengetext:CHPowerSurge" />
+				<success locid="Challengetext:CHPowerSurgeSuccessShort" overview="Challengetext:CHPowerSurgeSuccess" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/PowerSurge.lua" entry="evalpowersurge" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/PowerSurge.lua" entry="completepowersurge" />
+			</success>
+			
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

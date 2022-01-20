@@ -1,0 +1,528 @@
+﻿ <ZT2Strings>
+   <MarineShowsCampaign>
+<!--Draft. All specific values for cash awards, etc. are highly speculative, tentative, and subject to change!-->
+
+      <MarineShowPhotographerIntro>Marine Show Photographer</MarineShowPhotographerIntro>
+      <MarineShowPhotographerOverviewShort>Explore the world of marine shows by taking exciting show photos! Complete all the scenarios in this campaign to unlock the upgraded show platform.</MarineShowPhotographerOverviewShort>
+      
+      <MarineShowPhotographerOverview>Ocean Domain, a marine zoo, wants you to take publicity photos of their popular marine shows. It'll take a good eye and quick reflexes to get the pictures they want. Don't worry, if you miss a shot you can wait for the next show to start!
+      <p/>
+      The zoo wants you to start by taking photos of the Pacific walrus. Take the following marine show photos:
+      <br/>
+			*  A Pacific walrus bellowing.
+			<br/>
+			*  A Pacific walrus jumping.
+      </MarineShowPhotographerOverview>
+      
+      <MarineShowPhotographerPart1Goals>
+      Take the following marine show photos:
+      <br/>
+			*  A Pacific walrus bellowing. 
+			<br/>
+			*  A Pacific walrus jumping.
+      </MarineShowPhotographerPart1Goals>
+      
+      <MarineShowPhotographerPart1GoalsDone>You successfully completed the first set of marine show photos!</MarineShowPhotographerPart1GoalsDone>
+      
+      <MarineShowPhotographerPart2>The zoo is very pleased with your first batch of marine show photos! Next, they want  you take some action photos of the bottlenose dolphin.
+      <p/>
+      Take the following marine show photos:
+      <br/>
+			*  A bottlenose dolphin doing a corkscrew twist.
+			<br/>
+			*  A bottlenose dolphin jumping through a hoop.
+      </MarineShowPhotographerPart2>
+      
+      <MarineShowPhotographerPart2Goals>
+      Take the following marine show photos:
+      <br/>
+			*  A bottlenose dolphin doing a corkscrew twist.
+			<br/>
+			*  A bottlenose dolphin jumping through a hoop.
+      </MarineShowPhotographerPart2Goals>
+      
+      <MarineShowPhotographerPart2GoalsDone>You successfully completed the second set of marine show photos!</MarineShowPhotographerPart2GoalsDone>
+      
+      <MarineShowPhotographerPart3>
+Ocean Domain really likes your photography! They want you to take a few more show photos, this time of the California sea lion.
+      <p/>
+      Take the following marine show photos:
+      <br/>
+			*  A California sea lion using the seal slide.
+			<br/>
+			*  A California sea lion using a horn.
+      </MarineShowPhotographerPart3>
+      
+      <MarineShowPhotographerPart3Goals>
+      Take the following marine show photos:
+      <br/>
+			*  A California sea lion using the seal slide.
+			<br/>
+			* A California sea lion using a horn.
+      </MarineShowPhotographerPart3Goals>
+      
+      <MarineShowPhotographerPart3GoalsDone>You successfully completed the third set of marine show photos!</MarineShowPhotographerPart3GoalsDone>      
+
+      <MarineShowPhotographerPart4>
+Great work! Ocean Domain wants you to take one more set of photos. They want a few photos of their biggest attraction -- the orca.
+      <p/>
+      Take the following marine show photos to win the scenario:
+      <br/>
+			*  An orca jumping over a bar.
+			<br/>
+			*  An orca doing a spyhop.
+      </MarineShowPhotographerPart4>
+      
+      <MarineShowPhotographerPart4Goals>
+      Take the following marine show photos to win the scenario:
+      <br/>
+			*  An orca jumping over a bar.
+			<br/>
+			*  An orca doing a spyhop.
+      </MarineShowPhotographerPart4Goals>
+      
+      <MarineShowPhotographerPart4GoalsDone>You have completed the last set of marine show photos!</MarineShowPhotographerPart4GoalsDone>  
+            
+      <MarineShowPhotographerSuccessOverview>
+Excellent work! Ocean Domain is extremely pleased with all your photos. As for you, now you've seen what can be done in a marine show, it's time to build some of your own.
+      </MarineShowPhotographerSuccessOverview>
+      
+      <MarineShowPhotographerOverallGoal>Use your camera to take pictures of marine shows.
+      </MarineShowPhotographerOverallGoal>
+      
+      <MarineShowPhotographerPart1Photo1Goal>
+      Take a photo of a Pacific walrus bellowing.
+      </MarineShowPhotographerPart1Photo1Goal>
+      <MarineShowPhotographerPart1Photo1GoalDone>You took a photo of a Pacific walrus bellowing!</MarineShowPhotographerPart1Photo1GoalDone>
+      
+      <MarineShowPhotographerPart1Photo2Goal>
+      Take a photo of a Pacific walrus jumping.
+      </MarineShowPhotographerPart1Photo2Goal>
+      <MarineShowPhotographerPart1Photo2GoalDone>You took a photo of a Pacific walrus jumping!</MarineShowPhotographerPart1Photo2GoalDone>
+      
+      <MarineShowPhotographerPart2Photo1Goal>
+      Take a photo of a bottlenose dolphin doing a corkscrew twist.
+      </MarineShowPhotographerPart2Photo1Goal>
+      <MarineShowPhotographerPart2Photo1GoalDone>You took a photo of a bottlenose dolphin doing a corkscrew twist!</MarineShowPhotographerPart2Photo1GoalDone>
+      
+      <MarineShowPhotographerPart2Photo2Goal>
+      Take a photo of a bottlenose dolphin jumping through a hoop.
+      </MarineShowPhotographerPart2Photo2Goal>
+      <MarineShowPhotographerPart2Photo2GoalDone>You took a photo of a bottlenose dolphin jumping through a hoop!</MarineShowPhotographerPart2Photo2GoalDone>
+      
+      <MarineShowPhotographerPart3Photo1Goal>
+      Take a photo of a California sea lion using the seal slide.
+      </MarineShowPhotographerPart3Photo1Goal>
+      <MarineShowPhotographerPart3Photo1GoalDone>You took a photo of a California sea lion using the seal slide!</MarineShowPhotographerPart3Photo1GoalDone>
+      
+      <MarineShowPhotographerPart3Photo2Goal>
+      Take a photo of a California sea lion using a horn.
+      </MarineShowPhotographerPart3Photo2Goal>
+      <MarineShowPhotographerPart3Photo2GoalDone>You took a photo of a California sea lion using a horn!</MarineShowPhotographerPart3Photo2GoalDone>
+      
+      <MarineShowPhotographerPart4Photo1Goal>
+      Take a photo of an orca jumping over a bar.
+      </MarineShowPhotographerPart4Photo1Goal>
+      <MarineShowPhotographerPart4Photo1GoalDone>You took a photo of an orca jumping over a bar!</MarineShowPhotographerPart4Photo1GoalDone> 
+      
+      <MarineShowPhotographerPart4Photo2Goal>
+      Take a photo of an orca spy hopping.
+      </MarineShowPhotographerPart4Photo2Goal>
+      <MarineShowPhotographerPart4Photo2GoalDone>You took a photo of an orca doing a spyhop!</MarineShowPhotographerPart4Photo2GoalDone>       
+
+<!--Optional guest attendance goal-->      
+      <MarineShowPhotographerAttendance>Ocean Domain also promised you a $10,000 bonus if you can attract more than 60 guests to the zoo. 
+      </MarineShowPhotographerAttendance>
+      
+      <MarineShowPhotographerAttendanceSuccess>More than 60 guests attended the zoo! As a reward, you received a $10,000 bonus.</MarineShowPhotographerAttendanceSuccess>
+      
+      <MarineShowPhotographerAttendanceGoal>(Optional) If more than 60 guests visit the zoo, you receive a $10,000 bonus.
+      </MarineShowPhotographerAttendanceGoal>
+      <MarineShowPhotographerAttendanceGoalDone>More than 60 guests visited the zoo!</MarineShowPhotographerAttendanceGoalDone>
+     
+<!-- The next message appears if a show animal is removed from a show because its needs have gone critical -->      
+		<MarineShowPhotographerCriticalNeeds>The needs of one of your show animals just went critical, so it was removed from the show. Consider increasing the number of breaks in your show schedule to keep the animals happy and healthy.
+		</MarineShowPhotographerCriticalNeeds>
+		
+		
+      
+
+      
+      <RevampShowIntro>Fine Tuning</RevampShowIntro>
+      <RevampShowOverviewShort>You were hired to liven up a sleepy little marine show. Can you create a 3-star hit show and dazzle the guests? Complete all the scenarios in this campaign to unlock the upgraded show platform.
+      </RevampShowOverviewShort>
+      <RevampShowOverview>A local zoo isn't happy with their latest marine show, "Waldo the Wonder Walrus." The zoo hired you to improve the show and make it more popular.
+      <p/>
+		The board of directors wants you to improve the show's rating to 3 stars. You can do this, if you like, but the zoo's board also suggested you add a different animal to the show. If you do, they promise to give you an additional $20,000 grant when your show reaches 1 star of fame.
+		<p/>
+		Make sure the show animals stay happy and healthy -- if you don't take good care of them, you may not be able to complete the scenario!
+      </RevampShowOverview>
+      
+      <RevampShowTwoStars>
+      Things are looking up. Under your management, the marine show reached 1 star of fame. The board of directors gave you $20,000 to keep up the good work. Better yet, they promised an additional $40,000 if the show's fame improves to 2 stars.
+      </RevampShowTwoStars>
+      
+      <RevampShowThreeStars>
+      Thanks to you, the marine show climbed to 2 stars of fame! As promised, the zoo's board awarded you $40,000.
+      <p/>
+      The board of directors wants you to take the marine show to the next level of fame. If you achieve 3 stars of fame, you'll win the scenario, while making your mark in the marine show business!
+      </RevampShowThreeStars>
+      
+      <RevampShowOverallGoal>Improve your marine show's rating to 3 stars to complete the scenario. 
+      </RevampShowOverallGoal>
+      <RevampShowOverallGoalDone>You created a 3-star marine show!
+      </RevampShowOverallGoalDone>
+
+		<RevampShowOneStarGoal>Improve your marine show's star rating to 1 star and receive a $20,000 grant. 
+		</RevampShowOneStarGoal>
+		<RevampShowOneStarGoalDone>Your marine show achieved a 1-star rating!
+		</RevampShowOneStarGoalDone>
+      
+		<RevampShowTwoStarGoal>Improve your marine show's star rating to 2 stars and receive a $40,000 grant.
+		</RevampShowTwoStarGoal>
+		<RevampShowTwoStarGoalDone>Your marine show achieved a 2-star rating!
+		</RevampShowTwoStarGoalDone>
+		
+		<RevampShowThreeStarGoal>Improve your marine show's star rating to 3 stars and win the scenario.
+		</RevampShowThreeStarGoal>
+		<RevampShowThreeStarGoalDone>Your marine show achieved a 3-star rating, and you won the scenario!
+		</RevampShowThreeStarGoalDone>		
+		
+      <RevampShowSuccessOverview>
+      Congratulations, your show reached a 3-star rating! The board of directors is impressed with you and your work. Your future in the marine show biz is bright.
+      </RevampShowSuccessOverview>		
+
+<!--Optional show donation/pilot whale goal-->      
+      <RevampShowPilotWhale>After you earn $7,500 in donations to establish your marine show's financial success, the board of directors plans to acquire a pilot whale for your zoo.</RevampShowPilotWhale>   
+      
+      <RevampShowPilotWhaleSuccess>The zoo's board members are impressed with you for earning more than $7,500 in marine show donations! As promised, they acquired a short-finned pilot whale for your zoo. It's in a crate near your zoo's entrance.</RevampShowPilotWhaleSuccess>
+      
+      <RevampShowPilotWhaleGoal>(Optional) Earn $7,500 in show donations to receive a free pilot whale.</RevampShowPilotWhaleGoal>
+      <RevampShowPilotWhaleDone>You earned more than $7,500 in show donations and received a free pilot whale!</RevampShowPilotWhaleDone>
+
+<!--Optional special guest photo goal-->      
+      <RevampShowExplorer>Rumor has it that undersea explorer St&#xE9;phane Baleine just entered your zoo! If you can take a photo of him watching your marine show, the board of directors will pay you a $10,000 bonus.</RevampShowExplorer>
+      
+      <RevampShowExplorerSuccess>You snapped a photo of St&#xE9;phane Baleine, the world-famous undersea explorer, watching your marine show! The zoo's board gave you a $10,000 bonus for the valuable publicity photo.</RevampShowExplorerSuccess>
+      
+      <RevampShowExplorerGoal>(Optional) Take a photo of St&#xE9;phane Baleine watching your marine show to earn $10,000.</RevampShowExplorerGoal>
+      <RevampShowExplorerGoalDone>You received $10,000 for your photo of St&#xE9;phane Baleine watching a marine show at your zoo!</RevampShowExplorerGoalDone>
+
+      <RevampShowExplorerEntered>
+Undersea explorer St&#xE9;phane Baleine is in your zoo! Snap a photo of him watching your marine show.
+      </RevampShowExplorerEntered>      
+      <RevampShowFailureExplorer>
+Undersea explorer St&#xE9;phane Baleine left your zoo before you could photograph him watching a marine show. You won't receive a $10,000 bonus.
+      </RevampShowFailureExplorer>
+      
+     <RevampShowExplorerName>St&#xE9;phane Baleine</RevampShowExplorerName>       
+
+<!-- The next message appears the first time a show animal is removed from a show because its needs have gone critical -->      
+		<RevampShowCriticalNeeds>The needs for one of your show animals is now critical, and the animal was removed from the show. Consider increasing the number of breaks in your show schedule to keep the animals happy and healthy.
+		<p/>
+		The zoo's board of directors gave you a stern warning: If this happens again, you fail the scenario!
+		</RevampShowCriticalNeeds>
+
+<!-- If a second show animal is removed from a show the player gets the following message and fails the scenario -->      
+      <RevampShowCriticalNeedsFailure>Once again, a show animal was removed from your show because its needs became critical. Since this isn't the first time, the zoo's board has no choice but to terminate your employment. You failed the scenario. Try taking better care of your show animals next time!
+      </RevampShowCriticalNeedsFailure>
+      
+      <RevampShowWalrusName>Waldo</RevampShowWalrusName>
+
+
+
+<!--150 guests per show may be too much in the next one, but it's just a guess for now. If counting the number of guests who have attended a show isn't possible, use number of guests donations to each show instead.-->
+      <DoubleFeatureIntro>Double Feature</DoubleFeatureIntro>
+      <DoubleFeatureOverviewShort>What's better than a zoo with a great marine show? A zoo with two marine shows! Complete all the scenarios in this campaign to unlock the upgraded show platform.
+      </DoubleFeatureOverviewShort>
+      <DoubleFeatureOverview>You were hired to put on two marine shows at the same time. To demonstrate the diversity of marine mammals, the zoo's board of directors wants you to create two separate and different shows. One show must feature cetaceans -- dolphins and whales -- and the other must feature pinnipeds -- seals, the California sea lion, and the Pacific walrus.
+		<p/>
+		After creating a show featuring a cetacean and another featuring a pinniped, 150 guests must visit each show to win the scenario!
+		<p/>
+		(Hint: Once you create, say, a pilot whale show, you can try other cetaceans in the show if you like. You could, for example, replace the pilot whale with an orca. Just make sure you at least one cetacean is always in the cetacean show and at least one pinniped is always in the pinniped show.) 
+      </DoubleFeatureOverview>
+      
+      <DoubleFeatureCetaceanSetup>
+      You created a show featuring a cetacean! As a reward for your efforts, the zoo's board gave you a $10,000 grant. After 150 guests visit your cetacean show, the board promises to give you an additional $20,000. (Hint: Make sure there's always at least one cetacean in this show... or else!)
+      </DoubleFeatureCetaceanSetup>
+
+      <DoubleFeatureCetaceanGuests>
+      More than 150 guests saw your cetacean show! The board of directors awarded you $20,000 for doing such a good job.
+      </DoubleFeatureCetaceanGuests>
+      
+      <DoubleFeaturePinnipedSetup>
+      You created a show featuring a pinniped! As a reward for your efforts, the zoo's board gave you a $10,000 grant. After 150 guests visit your pinniped show, the board promises to give you an additional $20,000. (Hint: Make sure there's always at least one pinnped in this show... or else!)
+      </DoubleFeaturePinnipedSetup>
+      
+		<DoubleFeaturePinnipedGuests>
+		Over 150 guests thrilled to your pinniped show! The board of directors gave you a $20,000 grant as promised.
+      </DoubleFeaturePinnipedGuests>
+      
+      <DoubleFeatureOverallGoal>Create two shows -- one with cetaceans and one with pinnipeds -- and have 150 guests attend each. 
+      </DoubleFeatureOverallGoal>
+      <DoubleFeatureOverallGoalDone>You created two successful shows featuring cetaceans and pinnipeds!
+      </DoubleFeatureOverallGoalDone>
+
+		<DoubleFeatureCetaceanSetupGoal>Create a marine show featuring a cetacean to receive a $10,000 grant. 
+		</DoubleFeatureCetaceanSetupGoal>
+		<DoubleFeatureCetaceanSetupGoalDone>You created a marine show featuring a cetacean.
+		</DoubleFeatureCetaceanSetupGoalDone>
+		
+		<DoubleFeatureCetaceanGuestGoal>Have a grand total of 150 guests view your cetacean show to receive a $20,000 grant.
+		</DoubleFeatureCetaceanGuestGoal>
+		<DoubleFeatureCetaceanGuestGoalDone>More than 150 guests viewed your cetacean show!
+		</DoubleFeatureCetaceanGuestGoalDone>		
+      
+		<DoubleFeaturePinnipedSetupGoal>Create a separate marine show featuring a pinniped to receive a $10,000 grant. 
+		</DoubleFeaturePinnipedSetupGoal>
+		<DoubleFeaturePinnipedSetupGoalDone>You created a marine show featuring a pinniped.
+		</DoubleFeaturePinnipedSetupGoalDone>
+		
+		<DoubleFeaturePinnipedGuestGoal>Have a grand total of 150 guests view your pinniped show to receive a $20,000 grant.
+		</DoubleFeaturePinnipedGuestGoal>
+		<DoubleFeaturePinnipedGuestGoalDone>More than 150 guests viewed your pinniped show!
+		</DoubleFeaturePinnipedGuestGoalDone>		
+		
+      <DoubleFeatureSuccessOverview>
+      Well done! More than 150 guests saw both shows. You did an excellent job creating shows using two very different types of marine animal species.
+      </DoubleFeatureSuccessOverview>		
+
+<!--Optional special guest photo goal-->      
+      <DoubleFeaturePhotographer>World-famous wildlife photographer Eleanor Avus just entered your zoo! To receive a $20,000 cash grant, take the following photos:
+      <br/>
+			*  Eleanor Avus eating or drinking.
+			<br/>
+			*  Eleanor Avus taking a photograph.
+      </DoubleFeaturePhotographer>
+      
+      <DoubleFeaturePhotographerSuccess>Good work! You received $20,000 cash grant for taking photos of world-famous wildlife photographer Eleanor Avus.</DoubleFeaturePhotographerSuccess>
+      
+      <DoubleFeaturePhotographerGoal>(Optional) Take the following photos to receive a $20,000 grant:
+      <br/>
+			*  Eleanor Avus eating or drinking.
+			<br/>
+			*  Eleanor Avus taking a photograph.
+      </DoubleFeaturePhotographerGoal>
+      <DoubleFeaturePhotographerGoalDone>You received $20,000 for your photos of world-famous wildlife photographer Eleanor Avus!</DoubleFeaturePhotographerGoalDone>
+
+      <DoubleFeaturePhotographerEntered>
+Wildlife photographer Eleanor Avus is in your zoo!
+      </DoubleFeaturePhotographerEntered>      
+      <DoubleFeaturePhotographerFailure>
+Since wildlife photographer Eleanor Avus left your zoo before you could photograph her, you won't receive a $20,000 bonus.
+      </DoubleFeaturePhotographerFailure>
+      
+      <DoubleFeaturePhotographerName>Eleanor Avus</DoubleFeaturePhotographerName>
+      
+      <DoubleFeaturePhotographerEatingGoal>
+      Snap a photo of Eleanor Avus eating or drinking.
+      </DoubleFeaturePhotographerEatingGoal>
+      <DoubleFeaturePhotographerEatingGoalDone>
+      You took a photo of Eleanor Avus eating or drinking!
+      </DoubleFeaturePhotographerEatingGoalDone>
+      
+      <DoubleFeaturePhotographerPhotographing>
+      Take a photo of Eleanor Avus taking a photograph.
+      </DoubleFeaturePhotographerPhotographing>
+      <DoubleFeaturePhotographerPhotographingDone>
+      You took a photo of Eleanor Avus taking a photograph!
+      </DoubleFeaturePhotographerPhotographingDone>
+      
+      
+      <DoubleFeatureCetaceanFailure>
+      Since you removed all the cetaceans from your shows, the board of directors is removing you! The zoo's board is shocked that you ignored their instructions to you. You failed the scenario!       
+      </DoubleFeatureCetaceanFailure>
+      
+      <DoubleFeaturePinnipedFailure>
+      You removed all the pinnipeds from your shows, and now the board of directors is removing you! The zoo's board of directors is shocked that you ignored their instructions to you. You failed the scenario!    
+      </DoubleFeaturePinnipedFailure>
+      
+<!-- The next message appears when an animal is removed from a show because its needs have gone critical -->      
+		<DoubleFeatureCriticalNeeds>One of your show animals' needs just went critical, so it was removed from the show. Consider increasing the number of breaks in your show schedule to keep the animals happy and healthy.
+		</DoubleFeatureCriticalNeeds>
+   
+   
+   
+<!-- Before anyone asks, "Tupoupou" is a Maori word used for dolphins that means "to jump vertically" i.e. spy hop.-->
+      <TrainTricksIntro>Starmaker</TrainTricksIntro>
+      <TrainTricksOverviewShort>Transform an untrained young dolphin into a marine show star! Complete all the scenarios in this campaign to unlock the upgraded show platform.
+      </TrainTricksOverviewShort>
+      <TrainTricksOverview>
+      There's a new arrival crated at the entrance of your zoo -- Tupoupou, a bottlenose dolphin! Your assignment is to transform this promising youngster into a marine show star. 
+		<p/>
+		Your first goal is to teach Tupoupou the basics. Train Tupoupou up to 3 dots on the following tricks:
+      <br/>
+			*  Jump
+			<br/>
+			*  Ram large ball
+			<br/>
+			*  Swipe tether ball buoy
+		<p/>
+		Of course, you also need to take good care of Tupoupou. Make sure he stays happy and healthy, or you may fail the scenario!
+      </TrainTricksOverview>
+      
+      <TrainTricksTrickOne>
+      With your help, Tupoupou can perform a jump trick up to 3 dots!
+      </TrainTricksTrickOne>
+
+      <TrainTricksTrickTwo>
+      You trained Tupoupou on the ram large ball trick up to 3 dots!
+      </TrainTricksTrickTwo>
+      
+      <TrainTricksTrickThree>
+      Tupoupou can perform a swipe tether ball buoy trick up to 3 dots!
+      </TrainTricksTrickThree>
+      
+		<TrainTricksMasterTrick>
+		Thanks to your patient guidance, Tupoupou learned the basics of three different tricks! It's time now to take your sea-faring student to the next level and make him a master of marine showmanship. Train any one of Tupoupou's tricks up to 5 dots to win the scenario.
+      </TrainTricksMasterTrick>
+      
+      <TrainTricksOverallGoal>Transform Tupoupou into a marine show star. 
+      </TrainTricksOverallGoal>
+      <TrainTricksOverallGoalDone>Tupoupou is now a star, and it's all thanks to you!
+      </TrainTricksOverallGoalDone>
+
+		<TrainTricksThreeTricksGoal>Train Tupoupou to 3 dots on three different tricks. 
+		</TrainTricksThreeTricksGoal>
+		<TrainTricksThreeTricksGoalDone>You trained Tupoupou up to 3 dots on three different tricks!
+		</TrainTricksThreeTricksGoalDone>
+		
+		<TrainTricksTrickOneGoal>Train Tupoupou to 3 dots on the jump trick. 
+		</TrainTricksTrickOneGoal>
+		<TrainTricksTrickOneGoalDone>You trained Tupoupou to 3 dots on the jump trick!
+		</TrainTricksTrickOneGoalDone>
+
+		<TrainTricksTrickTwoGoal>Train Tupoupou to 3 dots on the ram large ball trick. 
+		</TrainTricksTrickTwoGoal>
+		<TrainTricksTrickTwoGoalDone>You trained Tupoupou to 3 dots on the ram large Ball trick!
+		</TrainTricksTrickTwoGoalDone>
+
+		<TrainTricksTrickThreeGoal>Train Tupoupou to 3 dots on the swipe tether ball buoy trick. 
+		</TrainTricksTrickThreeGoal>
+		<TrainTricksTrickThreeGoalDone>You trained Tupoupou to 3 dots on the swipe tether ball buoy trick!
+		</TrainTricksTrickThreeGoalDone>		
+		
+		<TrainTricksMasterTrickGoal>Train Tupoupou to five dots on any trick to win the scenario.
+		</TrainTricksMasterTrickGoal>
+		<TrainTricksMasterTrickGoalDone>You trained Tupoupou to 5 dots on a trick!
+		</TrainTricksMasterTrickGoalDone>		      	
+		
+      <TrainTricksSuccessOverview>
+      Congratulations, Tupoupou mastered one of his tricks and is well on his way to becoming a marine show star! You did a fine job of training a show animal while taking good care of him at the same time.
+      </TrainTricksSuccessOverview>		
+
+<!--Optional guest attendance goal-->      
+      <TrainTricksAttendance>To help you in your training efforts, the owners of the zoo offered you a $20,000 bonus if you attract more than 100 guests to the zoo. 
+      </TrainTricksAttendance>
+      
+      <TrainTricksAttendanceSuccess>More than 100 guests attended your zoo! As a reward, you received a $20,000 bonus.</TrainTricksAttendanceSuccess>
+      
+      <TrainTricksAttendanceGoal>(Optional) If more than 100 guests visit your zoo, you receive a $20,000 bonus.
+      </TrainTricksAttendanceGoal>
+      <TrainTricksAttendanceGoalDone>More than 100 guests visited your zoo!</TrainTricksAttendanceGoalDone>
+
+<!--Optional show donations attendance goal-->      
+      <TrainTricksDonations>To help build show attendance, the zoo's owners are offering you an incentive. If you obtain a total of 100 show donations, they will pay you a $20,000 bonus. 
+      </TrainTricksDonations>
+      
+      <TrainTricksDonationsSuccess>More than 100 guests made donations to your show! As a reward, you received a $20,000 grant.</TrainTricksDonationsSuccess>
+      
+      <TrainTricksDonationsGoal>(Optional) If more than 100 guests give your show donations, you'll receive a $20,000 bonus.
+      </TrainTricksDonationsGoal>
+      <TrainTricksDonationsGoalDone>More than 100 guests donated to your show!</TrainTricksDonationsGoalDone>
+      
+<!-- The next message appears the first time the star animal is removed from a show because its needs have gone critical -->      
+		<TrainTricksCriticalNeeds>While performing, Tupoupou's needs went critical, so the animal was removed from the show. Consider increasing the number of breaks in your show schedule to keep Tupoupou happy and healthy. Be careful -- the next time this happens you fail the scenario!
+		</TrainTricksCriticalNeeds>
+		
+<!-- The next message appears the second time the star animal is removed from a show because its needs have gone critical -->      
+		<TrainTricksCriticalNeedsFailure>Once again, Tupoupou's needs have gone critical while performing, and he was removed from the show. The zoo's owners decided that Tupoupou's on the road to stardom -- but you won't be training him any longer. You are fired from your position. Next time, try to take better care of Tupoupou!
+		</TrainTricksCriticalNeedsFailure>		
+				
+<!-- The next message appears when the star dolphin dies or is put up for adoption/released to the wild-->      
+		<TrainTricksDolphinDeadFailure>With Tupoupou gone you can never achieve your goal of making him a marine show star! You have failed the scenario.
+		</TrainTricksDolphinDeadFailure>
+		
+		<TrainTricksDolphinName>Tupoupou</TrainTricksDolphinName>
+
+
+		      
+      <FiveStarShowIntro>Marine Show Mogul</FiveStarShowIntro>
+      <FiveStarShowOverviewShort>Create a 5-star marine show in the ultimate test of showmanship! Complete all the scenarios in this campaign to unlock the upgraded show platform.
+      </FiveStarShowOverviewShort>
+      <FiveStarShowOverview>Your terrific track record for creating popular marine shows attracted the attention of the owners of a small zoo. They want you to manage their zoo and build a 5-star marine show. You can develop the zoo and show any way you like.
+      <p/>
+      There's just one catch -- the zoo's owners can't afford to give you much money at the start. Instead, they plan to provide you a cash grant for each star of show fame you earn. To start, they promise to pay you a $10,000 cash grant after you create them a 1-star show.
+      </FiveStarShowOverview>
+
+      <FiveStarShowTwoStars>
+      Your fledgling show earned 1 star of fame! The owners gave you a $10,000 cash grant as promised. They'll give you another cash grant -- this one for $20,000 -- after your show reaches 2 stars of fame.
+      </FiveStarShowTwoStars>
+
+      <FiveStarShowThreeStars>
+      People from all over are talking about your 2-star marine show! The happy zoo owners gave you $20,000 as promised. They're eager for you to improve the show even more. If you reach 3 stars of zoo fame, they promise to give you a $40,000 cash grant!
+      </FiveStarShowThreeStars>
+      
+      <FiveStarShowFourStars>
+      Your show's fame reached 2 stars and people are traveling hundreds of miles to see it. The zoo's owners are delighted with your progress and gave you the $40,000 cash grant. Next, they promise to give you $60,000 more when your show reaches 4 stars. 
+      </FiveStarShowFourStars>
+      
+       <FiveStarShowFiveStars>
+      Your show's reputation continues to grow. It reached 4 stars of fame and is considered one of the best marine shows anywhere! You received the $60,000 cash grant. Use it to tackle the ultimate challenge -- a 5-star show! 
+      </FiveStarShowFiveStars>     
+    
+      <FiveStarShowSuccessOverview>
+      Your 5-star show is a smash hit! Both your show and the zoo are now massive successes. Best of all, your show helped people from all around the world learn about marine animals and their amazing abilities.
+      <p/>
+Completing this campaign unlocked the upgraded show platform object. You can use this object in all of your future Zoo Tycoon 2: Marine Mania games.      
+      </FiveStarShowSuccessOverview>
+      
+      <FiveStarShowAttendance>As they say in show biz, "Nothing succeeds like success!" If you can get 100 people to attend your marine show, the buzz about the show's popularity will attract more guests to your show and the zoo.
+      </FiveStarShowAttendance>
+      
+      <FiveStarShowOverallGoal>Create a 5-star marine show.
+      </FiveStarShowOverallGoal>
+         
+      <FiveStarShowOneStarGoal>Earn a 1-star rating for your show to receive a cash grant.
+      </FiveStarShowOneStarGoal>
+      <FiveStarShowOneStarGoalDone>You earned a 1-star show rating!
+      </FiveStarShowOneStarGoalDone>      
+      
+      <FiveStarShowTwoStarsGoal>Earn a 2-star rating for your show to receive a cash grant.
+      </FiveStarShowTwoStarsGoal>
+      <FiveStarShowTwoStarsGoalDone>You earned a 2-star show rating!
+      </FiveStarShowTwoStarsGoalDone>         
+
+      <FiveStarShowThreeStarsGoal>Earn a 3-star rating for your show to receive a cash grant.
+      </FiveStarShowThreeStarsGoal>
+      <FiveStarShowThreeStarsGoalDone>You have earned a 3-star show rating!
+      </FiveStarShowThreeStarsGoalDone>   
+      
+      <FiveStarShowFourStarsGoal>Earn a 4-star rating for your show to receive a cash grant.
+      </FiveStarShowFourStarsGoal>
+      <FiveStarShowFourStarsGoalDone>You earned a 4-star show rating!
+      </FiveStarShowFourStarsGoalDone>         
+      
+      <FiveStarShowAttendanceGoal>Have more than 100 people attend your show to attract additional guests to your zoo.
+      </FiveStarShowAttendanceGoal>
+      <FiveStarShowAttendanceGoalDone>More than 100 people attended your show!
+      </FiveStarShowAttendanceGoalDone>
+   
+		            
+   </MarineShowsCampaign>
+   
+   <MarineShowsCampaignLabels>
+      <MarineShowsCampaignshort>Marine Shows</MarineShowsCampaignshort>
+      <MarineShowsCampaignS1>Marine Show Photographer</MarineShowsCampaignS1>
+      <MarineShowsCampaignS1short>Marine Show Photographer</MarineShowsCampaignS1short>
+      <MarineShowsCampaignS2>Fine-Tuning</MarineShowsCampaignS2>
+      <MarineShowsCampaignS2short>Fine-Tuning</MarineShowsCampaignS2short>
+      <MarineShowsCampaignS3>Double Feature</MarineShowsCampaignS3>
+      <MarineShowsCampaignS3short>Double Feature</MarineShowsCampaignS3short>
+      <MarineShowsCampaignS4>Starmaker</MarineShowsCampaignS4>
+      <MarineShowsCampaignS4short>Starmaker</MarineShowsCampaignS4short>      
+      <MarineShowsCampaignS5>Marine Show Mogul</MarineShowsCampaignS5>
+      <MarineShowsCampaignS5short>Marine Show Mogul</MarineShowsCampaignS5short>
+   </MarineShowsCampaignLabels>
+   
+</ZT2Strings>

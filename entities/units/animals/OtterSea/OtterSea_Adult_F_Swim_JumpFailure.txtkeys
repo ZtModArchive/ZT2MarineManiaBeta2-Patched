@@ -1,0 +1,8 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Spine2} runspl"/>
+   <key time="0.60" text="{Bip01 Head} runspl"/>
+   <key time="1.33" text="{Bip01 R Thigh} snd 'splash_small' "/>
+   <key time="1.33" text="{Bip01 R Thigh} snd 'splash_small_uw' "/>
+   <key time="1.33" text="{Bip01 R Thigh} splash directed_small"/>
+   <key time="1.77" text="{Bip01 Head} runspl"/>
+</TEXTKEY>

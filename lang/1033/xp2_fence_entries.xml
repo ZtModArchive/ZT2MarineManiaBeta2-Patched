@@ -1,0 +1,33 @@
+﻿<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_marinefence:entry"  >Marine Theme Fence</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_marinefence:text"  >
+   <cell pady="0" width="1000"/>
+   <p/>
+   <cell width="260"/>
+   <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+    <cell width="600" padx="20" pady="20">
+     <color r="255" g="255" b="255">
+      <img src="entities\objects\fences\marinefence_high_mm\marinefence_high_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>     
+      <p/>
+The marine theme fence is best used in marine animal exhibits and their nearby public areas.
+     </color>
+    </cell>
+   </cell>
+  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_showfence:entry"  >Show Fence</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_showfence:text"  >
+   <cell pady="0" width="1000"/>
+   <p/>
+   <cell width="260"/>
+   <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+    <cell width="600" padx="20" pady="20">
+     <color r="255" g="255" b="255">
+      <img src="entities\objects\fences\showfence_mm\showfence_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>     
+      <p/>
+The show fence isn't strong, so it's not the best choice for animal exhibits. It's an excellent choice, though, for creating enclosed show areas for your grandstands. If you build an exhibit out of show fence the game will automatically prompt you to place a show platform and show portals.
+     </color>
+    </cell>
+   </cell>
+  </LOC_STRING>
+
+</ZT2Strings>

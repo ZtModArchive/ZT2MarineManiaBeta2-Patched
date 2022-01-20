@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\scenery\Aquarium_Octopus\Aquarium_Octopus_Octopus.nif">
+  <animation anim="entities\objects\scenery\Aquarium_Octopus\Aquarium_Octopus_Octopus_Idle.bf" animName="Octopus_Octopus_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\scenery\Aquarium_Octopus\Aquarium_Octopus_Octopus_Used.bf" animName="Octopus_Octopus_Used" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="Aquarium_Octopus_Octopus" version="1">
+    <node name="Octopus">
+      <table>
+        <Octopus_Octopus_Idle />
+        <Octopus_Octopus_Used />
+      </table>
+    </node>
+  </Graph>
+</BFM>

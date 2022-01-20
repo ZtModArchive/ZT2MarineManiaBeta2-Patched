@@ -1,0 +1,81 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<info locid="MarineShowsCampaign:MarineShowPhotographerIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>		
+		<BFScenarioGroup hidden="0" name="Guest" state="0" chain="true" allsuccess="true" sticky="true">
+			<children>
+				<BFScenarioRule name="GuestGoal" hidden="0" state="0" sticky="true">
+					<info type="primary">
+						<neutral locid="MarineShowsCampaign:MarineShowPhotographerAttendanceGoal" overview="MarineShowsCampaign:MarineShowPhotographerAttendance"/>
+						<success locid="MarineShowsCampaign:MarineShowPhotographerAttendanceGoalDone" overview="MarineShowsCampaign:MarineShowPhotographerAttendanceSuccess"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="evalGuest" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="completeGuest" />
+					</success>
+				</BFScenarioRule>	
+			</children>	
+		</BFScenarioGroup>			
+		<BFScenarioGroup hidden="0" name="FinalGoals" state="0" chain="true" allsuccess="true" sticky="true">
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="completeMarineShowScenario" />
+			</success>
+			<children>
+				<BFScenarioRule name="MarineShowPhotoSet1" hidden="0" state="0" sticky="true">
+					<info type="primary">
+						<neutral locid="MarineShowsCampaign:MarineShowPhotographerPart1Goals" overview="MarineShowsCampaign:MarineShowPhotographerOverview" />
+						<success locid="MarineShowsCampaign:MarineShowPhotographerPart1GoalsDone" overview="MarineShowsCampaign:MarineShowPhotographerOverview" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="evalMarineShowPhotos1" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="completeMarineShowPhotos1" />
+					</success>
+				</BFScenarioRule>			
+				<BFScenarioRule name="MarineShowPhotoSet2" hidden="1" state="0" sticky="true">
+					<info type="primary">
+						<neutral locid="MarineShowsCampaign:MarineShowPhotographerPart2Goals" overview="MarineShowsCampaign:MarineShowPhotographerPart2" />
+						<success locid="MarineShowsCampaign:MarineShowPhotographerPart2GoalsDone" overview="MarineShowsCampaign:MarineShowPhotographerPart2" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="evalMarineShowPhotos2" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="completeMarineShowPhotos2" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="MarineShowPhotoSet3" hidden="1" state="0" sticky="true">
+					<info type="primary">
+						<neutral locid="MarineShowsCampaign:MarineShowPhotographerPart3Goal" overview="MarineShowsCampaign:MarineShowPhotographerPart3" />
+						<success locid="MarineShowsCampaign:MarineShowPhotographerPart3GoalDone" overview="MarineShowsCampaign:MarineShowPhotographerPart3" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="evalMarineShowPhotos3" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="completeMarineShowPhotos3" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="MarineShowPhotoSet4" hidden="1" state="0" sticky="true">
+					<info type="primary">
+						<neutral locid="MarineShowsCampaign:MarineShowPhotographerPart4Goal" overview="MarineShowsCampaign:MarineShowPhotographerPart4" />
+						<success locid="MarineShowsCampaign:MarineShowPhotographerPart4GoalDone" overview="MarineShowsCampaign:MarineShowPhotographerPart4" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="evalMarineShowPhotos4" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowPhotographer.lua" entry="completeMarineShowPhotos4" />
+					</success>
+				</BFScenarioRule>				
+			</children>
+		</BFScenarioGroup>			
+	</children>
+</ZTScenarioMgr>

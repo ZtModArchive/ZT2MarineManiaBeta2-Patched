@@ -1,0 +1,238 @@
+<Tricks>
+	<ZTAITrickData>
+		<Data name="WhaleOrcaJump" locname="tricknames:Jump" icon="UI/trick_icons/trick_icon_jump.dds" Difficulty="6" PopularityMult=".8"/>
+		<Animals>
+			<WhaleOrca_Adult/>
+		</Animals>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Jump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Jump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_JumpFailure"/>
+		<Success token="t_JumpSuccess"/>
+		<Critical token="t_JumpCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WhaleOrcaJumpFallSide" locname="tricknames:JumpFallSide" icon="UI/trick_icons/trick_icon_JumpFallSide.dds" Difficulty="8" PopularityMult="1.0"/>
+		<Animals>
+			<WhaleOrca_Adult/>
+		</Animals>
+                <Prerequisite name="WhaleOrcaJump" minScore="100"/>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="JumpFallSide_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="JumpFallSide_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="JumpFallSide_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="JumpFallSide_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="JumpFallSide_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="JumpFallSide_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="JumpFallSide_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="JumpFallSide_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="JumpFallSide_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="JumpFallSide_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_JumpFallSideFailure"/>
+		<Success token="t_JumpFallSideSuccess"/>
+		<Critical token="t_JumpFallSideCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WhaleOrcaStraightUpJump" locname="tricknames:StraightUpJump" icon="UI/trick_icons/trick_icon_JumpStraightUp.dds" Difficulty="8" PopularityMult="1.0"/>
+		<Animals>
+			<WhaleOrca_Adult/>
+		</Animals>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="StraightUpJump_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="StraightUpJump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="StraightUpJump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="StraightUpJump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="StraightUpJump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="StraightUpJump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="StraightUpJump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="StraightUpJump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="StraightUpJump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="StraightUpJump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_StraightUpJumpFailure"/>
+		<Success token="t_StraightUpJumpSuccess"/>
+		<Critical token="t_StraightUpJumpCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WhaleOrcaFlipForward" locname="tricknames:FlipForward" icon="UI/trick_icons/trick_icon_ForwardFlip.dds" Difficulty="8" PopularityMult="1.0"/>
+		<Animals>
+			<WhaleOrca_Adult/>
+		</Animals>
+                <Prerequisite name="WhaleOrcaJumpFallSide" minScore="100"/>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="FlipForward_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="FlipForward_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="FlipForward_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="FlipForward_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="FlipForward_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="FlipForward_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="FlipForward_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="FlipForward_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="FlipForward_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="FlipForward_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_FlipForwardFailure"/>
+		<Success token="t_FlipForwardSuccess"/>
+		<Critical token="t_FlipForwardCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WhaleOrcaFlipperSplash" locname="tricknames:FlipperSplash" icon="UI/trick_icons/trick_icon_FlipperSplash.dds" Difficulty="6" PopularityMult=".8"/>
+		<Animals>
+			<WhaleOrca_Adult/>
+		</Animals>
+                <Prerequisite name="WhaleOrcaBeachSlidingPlatform" minScore="100"/>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="FlipperSplash_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="FlipperSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="FlipperSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="FlipperSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="FlipperSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="FlipperSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="FlipperSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="FlipperSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="FlipperSplash_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="FlipperSplash_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_FlipperSplashFailure"/>
+		<Success token="t_FlipperSplashSuccess"/>
+		<Critical token="t_FlipperSplashCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WhaleOrcaSpyhop" locname="tricknames:Spyhop" icon="UI/trick_icons/trick_icon_Spyhop.dds" Difficulty="8" PopularityMult="1.0"/>
+		<Animals>
+			<WhaleOrca_Adult/>
+		</Animals>
+                <Prerequisite name="WhaleOrcaStraightUpJump" minScore="100"/>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Spyhop_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Spyhop_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Spyhop_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Spyhop_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Spyhop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Spyhop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Spyhop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Spyhop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Spyhop_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Spyhop_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_SpyhopFailure"/>
+		<Success token="t_SpyhopSuccess"/>
+		<Critical token="t_SpyhopCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WhaleOrcaTailSplash" locname="tricknames:TailSplash" icon="UI/trick_icons/trick_icon_TailSplash.dds" Difficulty="9" PopularityMult="1.1"/>
+		<Animals>
+			<WhaleOrca_Adult/>
+		</Animals>
+                <Prerequisite name="WhaleOrcaFlipperSplash" minScore="100"/>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="TailSplash_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="TailSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="TailSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="TailSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="TailSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="TailSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="TailSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="TailSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="TailSplash_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="TailSplash_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_TailSplashFailure"/>
+		<Success token="t_TailSplashSuccess"/>
+		<Critical token="t_TailSplashCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WhaleOrcaFlukeSwipeBall" locname="tricknames:JumpSwipeAt" icon="UI/trick_icons/trick_icon_FlukeSwipeBall.dds" Difficulty="7" PopularityMult=".9"/>
+		<Animals>
+			<WhaleOrca_Adult/>
+		</Animals>
+		<ZTAITrickTargetData Prop="LargeBall_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="JumpHoop_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="JumpHoop_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="JumpHoop_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="JumpHoop_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="JumpHoop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="JumpHoop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="JumpHoop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="JumpHoop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="JumpHoop_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="JumpHoop_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_FlukeSwipeBallFailure"/>
+		<Success token="t_FlukeSwipeBallSuccess"/>
+		<Critical token="t_FlukeSwipeBallCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WhaleOrcaRamBallOutOfWater" locname="tricknames:RamAt" icon="UI/trick_icons/trick_icon_RamBallOutOfWater.dds" Difficulty="9" PopularityMult="1.1"/>
+		<Animals>
+			<WhaleOrca_Adult/>
+		</Animals>
+                <Prerequisite name="WhaleOrcaFlukeSwipeBall" minScore="100"/>
+		<ZTAITrickTargetData Prop="LargeBall_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="RamOutOfWater_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="RamOutOfWater_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="RamOutOfWater_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="RamOutOfWater_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="RamOutOfWater_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="RamOutOfWater_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="RamOutOfWater_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="RamOutOfWater_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="RamOutOfWater_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="RamOutOfWater_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_RamBallOutOfWaterFailure"/>
+		<Success token="t_RamBallOutOfWaterSuccess"/>
+		<Critical token="t_RamBallOutOfWaterCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WhaleOrcaBeachSlidingPlatform" locname="tricknames:SlideOn" icon="UI/trick_icons/trick_icon_UseBeachingPlatform.dds" Difficulty="9" PopularityMult="1.1"/>
+		<Animals>
+			<WhaleOrca_Adult/>
+		</Animals>
+		<ZTAITrickTargetData Prop="SlidingPlatform_Orca"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Beach_Orca_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Beach_Orca_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Beach_Orca_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Beach_Orca_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Beach_Orca_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Beach_Orca_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Beach_Orca_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Beach_Orca_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Beach_Orca_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Beach_Orca_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_BeachSlidingPlatformFailure"/>
+		<Success token="t_BeachSlidingPlatformSuccess"/>
+		<Critical token="t_BeachSlidingPlatformCritical"/>
+	</ZTAITrickData>
+</Tricks>

@@ -1,0 +1,74 @@
+<BFTypedBinder binderType="Trainer_Adult_F" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Staff>
+                  <Trainer>
+                     <Trainer_Adult_F/>
+                  </Trainer>
+               </Staff>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="headObj" rottype="use" postype="use" attachnode="Link_Head"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0" s_Zoopedia="zoopedia:zoopedia_trainer:entry"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <position x="10" y="0" z="0"/>
+               <BFShadowLODComponent numLevels="1" switchingDists="30.0"/>
+               <BFActorComponent actorfile="entities\units\staff\Trainer\Trainer_Adult_F.bfm" scale="1.0"/>
+               <BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 1" ankleRotVectorRight="0 0 1" heightOffset="0" fitRadius=".15"/>
+               <BFForwardMovingComponent/>
+               <BFRotYawMovingComponent/>
+               <BFBoundedObjectComponent>
+                  <minPoint x="0" y="0" z="-100"/>
+                  <maxPoint x="300" y="300" z="100"/>
+               </BFBoundedObjectComponent>
+               <BFCollisionComponent grid="Grid"/>
+               <BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\guest_blob.tga" baseNode="Bip01" width="1.0" minLength="1.0" maxLength="4.0" minOffset="0" maxOffset="1.0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFTextTagMacrosComponent>
+               <MACROS>
+                  <macro name="Walky" text="anim 'Walk_Ahead'"/>
+                  <macro name="Walky2Standy" text="anim 'Walk_2Stand', anim'Stand_Idle'"/>
+                  <macro name="Standy2Walky" text="anim 'Stand_2Walk', anim 'Walk_TurnLeftA'"/>
+                  <macro name="TurnLeft180" text="anim 'Stand_TurnLeft90', anim 'Stand_TurnLeft90'"/>
+                  <macro name="TurnRight180" text="anim 'Stand_TurnRight90', anim 'Stand_TurnRight90'"/>
+                  <macro name="TurnLeft90" text="anim 'Stand_TurnLeft90'"/>
+                  <macro name="TurnRight90" text="anim 'Stand_TurnRight90'"/>
+               </MACROS>
+            </BFTextTagMacrosComponent>
+         </shared>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="500">
+               <ZTTransaction name="build" costType="parent" type="debit" category="staff_salaries"/>
+               <ZTTransaction name="salary" cost="350" period="monthly" type="debit" category="staff_salaries"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

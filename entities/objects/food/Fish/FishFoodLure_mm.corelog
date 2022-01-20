@@ -1,0 +1,30 @@
+************************************************************
+Date: 04/03/2006
+Time: 21:14
+************************************************************
+Compiled object 1: FishFoodLure_LODGroup
+Compiled object 2: FishFoodLure_mm_LOD0
+Compiled object 3: FishFoodLure_mm_LOD1
+Compiled object 4: FishFoodLure_mm_LOD2
+Compiled object 5: FishFoodLure_mm_LOD3
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 204 
+Vertex Count: 162 
+Vertex Memory: 5 kb
+Material Count: 2 
+Texture Count: 1 
+Texture Memory: 85 kb
+Num LODs: 4 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 204 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 172ms
+XML File Translation: total time = 71ms
+Data Output: total time = 1ms
+************************************************************

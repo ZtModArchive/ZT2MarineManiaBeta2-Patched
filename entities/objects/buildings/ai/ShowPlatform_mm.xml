@@ -1,0 +1,78 @@
+﻿<BFTypedBinder binderType="ShowPlatform_mm">
+	<types>
+		<entity>
+			<building>
+				<ShowPlatform>
+					<ShowPlatform_mm />
+				</ShowPlatform>
+			</building>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="canopy" rottype="use" postype="use" />
+				<parentObj parent="mainObj" child="TV" rottype="use" postype="use" attachnode="node_trick" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIButton name="overviewicon">
+			<UIAspect>
+				<default image="ui/zoomap/icon_staff.dds" />
+			</UIAspect>
+		</UIButton>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\buildings\Platform_Show_mm\Platform_Show_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:ShowPlatform_mm" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="ShowPlatform_mm" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared s_Zoopedia="zoopedia:zoopedia_showplatform:entry" />
+		<ZTPlacementData icon3Doffset="0 0.05 0.918257" icon3Dscale="0.1" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/buildings/Platform_Show_mm/Platform_Show_mm" switch="0 20 40" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="canopy" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/buildings/Platform_Show_mm/Platform_ShowUpgraded_mm" switch="0 20 40" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="TV" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/scenery/BigScreenTV/BigScreenTV" switch="0 20 40" minSwitch="0 0 20" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="1200">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="upkeep" cost="500" period="monthly" type="debit" category="upkeep" />
+					<ZTTransaction name="purchasecanopy" cost="400" type="debit" category="construction" />
+					<ZTTransaction name="sellcanopy" cost="250" type="credit" category="recycling" />
+					<ZTTransaction name="purchaseTV" cost="300" type="debit" category="construction" />
+					<ZTTransaction name="sellTV" cost="100" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+		<BFBinder repopulateMethod="byName">
+			<instance>
+				<ZTPhysObjSwapComponent />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

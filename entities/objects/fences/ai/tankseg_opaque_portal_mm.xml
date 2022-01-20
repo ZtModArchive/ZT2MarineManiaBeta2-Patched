@@ -1,0 +1,79 @@
+<BFTypedBinder binderType="tankseg_opaque_portal_mm">
+   <types>
+      <entity>
+         <fence>
+            <tankwallsegment>
+               <tankportalsegment>
+                  <tankseg_opaque_portal_mm/>
+               </tankportalsegment>
+            </tankwallsegment>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\AnimalTank_Gate/AnimalTank_Gate_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:tankuiportal"/>
+         <on>
+            <event msg="ZT_SETFENCEPLACEMENTMODE" data="BFString" string="gate"/>
+            <event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="tankseg_portal_mm"/>
+         </on>
+      </UIToggleButton>
+      <ZTPlacementData placeable="false" s_GatePlacementRules="portalgate" tankPlacement="true"/>
+      <BFAIEntityDataShared s_uisort="zz" f_Height="1.0" s_Zoopedia="zoopedia:zoopedia_tankportal:entry" f_FameReq="0"/>
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTTankSegment support="tankpost_mm" middleSupport="tanksupport_mm" opaqueMat="basicopaquewall" gate="tankseg_opaque_gate_mm"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\paths\sand\curb_sand_post"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\paths\sand\curb_sand_post"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\BasicTank\basictank_curb_vert"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\BasicTank\basictank_curb_diag"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="tfence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\BasicTank\basictank_top_vert"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="tfence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\BasicTank\basictank_top_diag"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

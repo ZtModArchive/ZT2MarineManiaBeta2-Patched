@@ -1,0 +1,106 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="false" sticky="true" optional="false">
+	<info locid="MarineAnimals:MarineDiversityIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/MarineDiversityZoo.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup name="OptionalGoals" hidden="0" state="0" chain="false" allsuccess="false" sticky="true">
+			<info type="primary" >
+				<neutral locid="MarineAnimals:MarineDiversityDonationsGoal" overview="MarineAnimals:MarineDiversityDonations"/>
+				<success locid="MarineAnimals:MarineDiversityDonationsGoalDone" overview="MarineAnimals:MarineDiversityDonationsSuccess" />
+			</info>
+			<children>
+				<BFScenarioRule name="Donations" state="0" sticky="true">
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineDiversityZoo.lua" entry="evalMarineDonations" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineDiversityZoo.lua" entry="completeMarineDonations" />
+					</success>
+				</BFScenarioRule>				
+			</children>
+		</BFScenarioGroup>
+		<BFScenarioGroup name="OverallGoals" state="0" chain="true" allsuccess="true" sticky="true">
+			<info type="primary" >
+				<neutral locid="MarineAnimals:MarineDiversityOverallGoal" overview="MarineAnimals:MarineDiversityOverview"/>
+				<success locid="MarineAnimals:MarineDiversityOverallGoalDone" overview="MarineAnimals:MarineDiversitySuccess" />
+			</info>		
+			<children>
+				<BFScenarioRule name="MainGoal" state="0" sticky="true">
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineDiversityZoo.lua" entry="evalOverallGoal" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineDiversityZoo.lua" entry="completeOverallGoal" />
+					</success>					
+				</BFScenarioRule>				
+				<BFScenarioRule name="Carnivora" hidden="0" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:MarineDiversityCarnivora" />
+						<success locid="MarineAnimals:MarineDiversityCarnivoraDone"/>
+					</info>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Cetacea" hidden="0" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:MarineDiversityCetacea" />
+						<success locid="MarineAnimals:MarineDiversityCetaceaDone"/>						
+					</info>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Chondrichthyes" hidden="0" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:MarineDiversityChondrichthyes" />
+						<success locid="MarineAnimals:MarineDiversityChondrichthyesDone"/>						
+					</info>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Perciformes" hidden="0" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:MarineDiversityPerciformes" />
+						<success locid="MarineAnimals:MarineDiversityPerciformesDone"/>						
+					</info>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Testudines" hidden="0" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:MarineDiversityTestudines" />
+						<success locid="MarineAnimals:MarineDiversityTestudinesDone"/>						
+					</info>
+				</BFScenarioRule>								
+			</children>
+		</BFScenarioGroup>	
+		<BFScenarioGroup name="AquariumGoals" hidden="1" state="0" chain="false" allsuccess="true" sticky="true">
+			<info type="primary" >
+				<neutral locid="MarineAnimals:MarineDiversityAquariumsOverallGoal" overview="MarineAnimals:MarineDiversityAquariums"/>
+				<success locid="MarineAnimals:MarineDiversityAquariumsOverallGoalDone" overview="MarineAnimals:MarineDiversityAquariumsSuccess" />
+			</info>		
+			<children>	
+				<BFScenarioRule name="AquariumMainGoal" state="0" sticky="true">
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineDiversityZoo.lua" entry="evalAquarium" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineDiversityZoo.lua" entry="completeAquarium" />
+					</success>						
+				</BFScenarioRule>				
+				<BFScenarioRule name="Octopus" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:MarineDiversityAquariumsOctopusGoal" />
+						<success locid="MarineAnimals:MarineDiversityAquariumsOctopusGoalDone" />
+					</info>
+				</BFScenarioRule>				
+				<BFScenarioRule name="SeaHorse" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:MarineDiversityAquariumsSeahorseGoal" />
+						<success locid="MarineAnimals:MarineDiversityAquariumsSeahorseGoalDone" />
+					</info>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Tropical" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:MarineDiversityAquariumsTropicalGoal" />
+						<success locid="MarineAnimals:MarineDiversityAquariumsTropicalGoalDone" />
+					</info>
+				</BFScenarioRule>						
+			</children>
+		</BFScenarioGroup>		
+	</children>
+</ZTScenarioMgr>

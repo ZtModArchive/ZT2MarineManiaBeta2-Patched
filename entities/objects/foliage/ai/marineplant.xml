@@ -1,0 +1,30 @@
+<BFTypedBinder binderType="marineplant" abstract="true">
+   <types>
+      <entity>
+         <foliage>
+            <marineplant/>
+         </foliage>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTPlacementData terrainFlatten="false" waterPlacement="true" landPlacement="true" tankPlacement="true" randomRotate="true" gridSnap="true" autoFootprint="true" sound="place_plant"/>
+      <BFGInfluenceComponent defaultRadius="9.0" defaultGroupFactor="10.0" defaultRadiusDropoff="linear" defaultGroupDropoff="linear">
+         <biome/>
+         <location/>
+      </BFGInfluenceComponent>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFTerrainPaintComponent/>
+               <BFCollisionComponent/>
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="40"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

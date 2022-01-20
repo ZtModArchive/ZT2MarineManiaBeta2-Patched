@@ -1,0 +1,2631 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="DefaultTask_PenguinRockhopper" UniqueID="PenguinRockhopper:DefaultTask_PenguinRockhopper">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <water/>
+        <Qualifiers_AND inSight="25" inHabitat="true" waterDepth="GE 2"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".0001"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingInWater"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-20"/>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="Idle"/>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Surface_Submerge" TaskDelayMin="30" TaskDelayMax="60" distanceInfluenced="false" UniqueID="PenguinRockhopper:Surface_Submerge">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".002"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Surface_Submerge"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GoToWater_Exercise" UniqueID="PenguinRockhopper:GoToWaterExercise">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <water/>
+        <Qualifiers_AND inSight="25" inHabitat="true" waterDepth="GE 2"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingInWater"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="WanderWater" UniqueID="PenguinRockhopper:WanderWater">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SwimmingAround"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="DefaultWander"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="10" exercise="-100"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_2"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SlowWander" UniqueID="PenguinRockhopper:SlowWander">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND rest="GE 70" inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WalkingAround"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehWander minPlayTime="10" maxPlayTime="20" avoidWater="true" avoidEntityRadius="8">
+        <avoidEntityTypes>
+          <b_XLargePredator/>
+          <b_LargePredator/>
+          <b_MediumPredator/>
+          <b_SmallPredator/>
+        </avoidEntityTypes>
+      </BFBehWander>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="5" exercise="-30"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_1"/>
+        <BFBehPlaySet behSet="Idle"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="FastWander" UniqueID="PenguinRockhopper:FastWander">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND rest="LE 49" inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:RunningAround"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehWander minPlayTime="10" maxPlayTime="30" locoSpeed="fast" avoidWater="true" avoidEntityRadius="8">
+        <avoidEntityTypes>
+          <b_XLargePredator/>
+          <b_LargePredator/>
+          <b_MediumPredator/>
+          <b_SmallPredator/>
+        </avoidEntityTypes>
+      </BFBehWander>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_2"/>
+        <BFBehPlaySet behSet="Idle"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Hop" UniqueID="PenguinRockhopper:Hop">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:RunningAround"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_5">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalFunnyWalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehWander minPlayTime="10" maxPlayTime="20" locoSpeed="hop" avoidWater="true" avoidEntityRadius="8">
+        <avoidEntityTypes>
+          <b_XLargePredator/>
+          <b_LargePredator/>
+          <b_MediumPredator/>
+          <b_SmallPredator/>
+        </avoidEntityTypes>
+      </BFBehWander>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-40" rest="30"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SlenderWalk" UniqueID="PenguinRockhopper:SlenderWalk">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap social="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PreeningWalk"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalFunnyWalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_PreenWalkWatch" GiveTo="PenguinRockhopper" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehWander minPlayTime="10" maxPlayTime="20" locoSpeed="slenderwalk" avoidWater="true" avoidEntityRadius="8">
+        <avoidEntityTypes>
+          <b_XLargePredator/>
+          <b_LargePredator/>
+          <b_MediumPredator/>
+          <b_SmallPredator/>
+        </avoidEntityTypes>
+      </BFBehWander>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="PreenWalkWatch" UniqueID="PenguinRockhopper:PreenWalkWatch">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_PreenWalkWatch/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehHeadLook/>
+      <BFBehFaceTarget/>
+      <BFBehHeadLook disengage="true"/>
+      <BFBehPlaySet behSet="Idle"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Mutual_Call" UniqueID="PenguinRockhopper:Mutual_Call">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="MutualCall"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAITokenList>
+        <BFAIToken Name="t_MutualCall" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Mutual_Answer" UniqueID="PenguinRockhopper:Mutual_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_MutualCall/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="MutualCall"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="HeadBob_Call" UniqueID="PenguinRockhopper:HeadBob_Call">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="HeadBob"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAITokenList>
+        <BFAIToken Name="t_HeadBob" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="HeadBob_Answer" UniqueID="PenguinRockhopper:HeadBob_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_HeadBob/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="HeadBob"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Sleep" UniqueID="PenguinRockhopper:Sleep">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+      </Subjects>
+      <Targets_AND>
+        <ground_cover/>
+        <biome/>
+        <Qualifiers inSight="20"/>
+      </Targets_AND>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap rest="-40"/>
+      <BFAIBiomeMap alpine=".75" borealforest=".50" temperateforest=".50" desert=".25" grassland=".50" savannah=".50" tropicalrainforest=".25" scrub=".25" tundra="1.00" wetlands=".25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingSleep"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:Sleeping"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehPlaySet behSet="Sleep"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAITokenList>
+        <BFAIToken Name="t_Wake" GiveTo="subject" Timeout="5"/>
+      </BFAITokenList>
+      <BFAIAttributeFloatMap privacy="-20" rest="-100"/>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wake" UniqueID="PenguinRockhopper:Wake">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers rest="LE 7"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Wake/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10" fixedScore="1">
+      <BFAIAttributeFloatMap rest="-7"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Sleeping"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Sleep"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WakingUp"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Wake"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="-7"/>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GroomSelf" UniqueID="PenguinRockhopper:GroomSelf">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="5">
+      <BFAIAttributeFloatMap hygiene="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PreeningFeathers"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="Groom"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap hygiene="-40"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteAllopreen" TaskDelayMin="120" TaskDelayMax="180" UniqueID="PenguinRockhopper:InviteAllopreen">
+      <BFAICreateData>
+         <Subjects>
+            <PenguinRockhopper_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <PenguinRockhopper_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="30">
+         <BFAIAttributeFloatMap hygiene="-30" social="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingBeGroomed" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="MatingCall"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Allopreen" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="15"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondAllopreen" TaskDelayMin="120" TaskDelayMax="180" UniqueID="PenguinRockhopper:RespondAllopreen" reserveTag="general">
+      <BFAICreateData>
+         <Subjects>
+            <PenguinRockhopper_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Allopreen/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingGroomOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehSyncSet subjectBehSet="DockAllopreen" targetBehSet="WaitAllopreen"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="Allopreen" targetBehSet="Allopreen"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-30" social="-30"/>
+         <BFAITargetData hygiene="-30" social="-30"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_EmoteGroomOther" GiveTo="target" Timeout="-1" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EmoteGroomAdult" UniqueID="PenguinRockhopper:EmoteGroomAdult">
+      <BFAICreateData>
+         <Subjects>
+            <PenguinRockhopper_Adult/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_EmoteGroomOther/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SpreadWings" UniqueID="PenguinRockhopper:SpreadWings">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap stimulation="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SpreadingWings"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSpreadWingsGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="SpreadWings"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-25"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ScratchSelf" UniqueID="PenguinRockhopper:ScratchSelf">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap hygiene="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ScratchingSelf"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalRubGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="Scratch"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap hygiene="-40"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Shake" UniqueID="PenguinRockhopper:Shake">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap hygiene="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Shaking"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalShakeGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="Shake"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap hygiene="-40"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Mating_Call" UniqueID="PenguinRockhopper:Mating_Call">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap reproduction="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_5">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="MatingCall"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-30"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAITokenList>
+        <BFAIToken Name="t_MatingCall" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Mating_Answer" UniqueID="PenguinRockhopper:Mating_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_MatingCall/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap reproduction="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:MatingCallAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_5">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="MatingCall"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-30"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteFightAdult" UniqueID="PenguinRockhopper:InviteFightAdult">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" reproduction="GE 70"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="20">
+      <BFAIAttributeFloatMap reproduction="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_3"/>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_FightAdult" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="Threat_Idle" playTime="20"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteFightAdult_NoFamily" UniqueID="PenguinRockhopper:InviteFightAdult_NoFamily">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" reproduction="GE 70"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" inHabitat="true" isFamily="false"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap reproduction="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_3"/>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_FightAdult" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="Threat_Idle" playTime="20"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondFightAdult" reserveTag="General" UniqueID="PenguinRockhopper:RespondFightAdult">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FightAdult/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100">
+      <BFAIAttributeFloatMap reproduction="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehHeadLook/>
+      <BFBehSyncSet subjectBehSet="DockFight" targetBehSet="DockFight2"/>
+      <BFBehHeadLook disengage="true"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fighting" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_6">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalFightBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap" resetPhase="true"/>
+      <BFBehSyncSet subjectBehSet="Attack" targetBehSet="DefendEqual" resetPhase="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-20"/>
+      <BFAITargetData reproduction="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DrinkWaterTerrain" UniqueID="PenguinRockhopper:DrinkWaterTerrain">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <shore/>
+        <Qualifiers_AND inSight="25" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap thirst="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingDrink"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehDockWater targetAnim="Stand_Idle" subjectNode="Node_Mouth"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_1"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+            <ZTActionInfo locID="animalactions:Drinking"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehPlaySet behSet="Drink"/>
+      </BFBehExecTask>
+      <BFAIAttributeFloatMap thirst="-40" bathroom="15"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="PenguinRockhopper:Puberty">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 5.22"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Age_F" UniqueID="PenguinRockhopper:Age_F">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young_F/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Age/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehMorph morphTargetEntityType="PenguinRockhopper_Adult_F" morphScale="true" morphPeriod="10" initScale="0.55"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Age_M" UniqueID="PenguinRockhopper:Age_M">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young_M/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Age/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehMorph morphTargetEntityType="PenguinRockhopper_Adult_M" morphScale="true" morphPeriod="10" initScale="0.55"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Old" TaskDelayMin="60" TaskDelayMax="60" UniqueID="PenguinRockhopper:Old">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers lifespan="GE 35.78"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap lifespan="-100"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Sleep"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Die" UniqueID="PenguinRockhopper:Die">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Die/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="10000"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Die_OldAge"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Die_Sick" Priority="3" UniqueID="PenguinRockhopper:Die_Sick">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" health="GE 99"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="15000"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Die_Sick"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Attacked" UniqueID="PenguinRockhopper:Attacked">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_Attack/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="500"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:AlarmCall" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="AlarmCall"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="b_LargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+            <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+            <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+            <BFAIToken Name="t_Flee" GiveTo="subject" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadeAttack" UniqueID="PenguinRockhopper:EvadeAttack">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" lifespan="LE 30"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_Flee/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehEvasion evasionRadius="30" locoSpeed="evade"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadeAttack" UniqueID="PenguinRockhopper:EvadeAttack:1">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" lifespan="G 30"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_Flee/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehEvasion evasionRadius="25" locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadeAttack" UniqueID="PenguinRockhopper:EvadeAttack:2">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_Flee/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehEvasion evasionRadius="25" locoSpeed="evade"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="PenguinRockhopper:OffspringCheck">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="1000"/>
+    <BFBehExecTask>
+      <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="PenguinRockhopper:CantReproduce">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inHabitat="true" canMate="false"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="50">
+      <BFAIAttributeFloatMap reproduction="-27"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="PenguinRockhopper:InviteReproduction">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inHabitat="true" hasMate="false" canMate="true"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="50">
+      <BFAIAttributeFloatMap reproduction="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehHeadLook/>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="MatingCall"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehHeadLook disengage="true"/>
+      <BFBehAnimate targetAnim="Stand_Idle" playTime="35"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteReproduction_Mate" TaskDelayMin="60" TaskDelayMax="180" UniqueID="PenguinRockhopper:InviteReproduction_Mate">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers b_Pregnant="E false"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inHabitat="true" isRelation="mate"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="50">
+      <BFAIAttributeFloatMap reproduction="-50"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehHeadLook/>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="MatingCall"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehHeadLook disengage="true"/>
+      <BFBehAnimate targetAnim="Stand_Idle" playTime="35"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="PenguinRockhopper:RespondReproduction">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_M/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Reproduce/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4"/>
+      <BFBehHeadLook/>
+      <BFBehFaceTarget/>
+      <BFBehPlaySet behSet="MatingCall"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehDockRadial subjectNode="p_MateOffset" locoSpeed="slow" targetAnim="Stand_Idle"/>
+      <BFBehHeadLook disengage="true"/>
+      <BFBehSyncSet subjectBehSet="MateM" targetBehSet="MateF"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="100"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-50" rest="-10"/>
+      <BFAITargetData rest="-10"/>
+      <BFBehExecTask>
+        <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Pregnant" UniqueID="PenguinRockhopper:Pregnant">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Pregnant1/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="50"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+          <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITargetData b_Pregnant="true"/>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="238.74" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="LayEgg_Dirt" UniqueID="PenguinRockhopper:LayEgg_Dirt">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+      </Subjects>
+      <Targets>
+        <dirt/>
+        <Qualifiers_AND inHabitat="true" inSight="25"/>
+      </Targets>
+      <Objects>
+        <t_Pregnant/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000">
+      <BFAIAttributeFloatMap reproduction="-90"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+          <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:LayingEgg"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="Stand_Idle"/>
+      <BFBehPlaySet behSet="LayEgg"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-100"/>
+      <BFAISubjectData b_Pregnant="false"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_5">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="LayEgg_GroundCover" UniqueID="PenguinRockhopper:LayEgg_GroundCover">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+      </Subjects>
+      <Targets>
+        <ground_cover/>
+        <Qualifiers_AND inHabitat="true" inSight="25"/>
+      </Targets>
+      <Objects>
+        <t_Pregnant/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000">
+      <BFAIAttributeFloatMap reproduction="-90"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+          <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:LayingEgg"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="Stand_Idle"/>
+      <BFBehPlaySet behSet="LayEgg"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-100"/>
+      <BFAISubjectData b_Pregnant="false"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_5">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="IdleEgg" UniqueID="PenguinRockhopper:IdleEgg">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Egg/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="IdleEgg"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <!-- Remember to set Trigger Threshhold data in the animal's egg file to equal incubation -->
+  <BFAITaskTemplate Name="HatchEgg" UniqueID="PenguinRockhopper:HatchEgg">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Egg/>
+        <Qualifiers_AND inWater_OR_onLand="true" incubation="GE 2.33"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="200"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_5">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalEggHatchedGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="HatchEgg"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="PenguinRockhopper:Born">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" lifespan="LE 1"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Born"/>
+          <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="Stand_MutualCall"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CallChild" TaskDelayMin="300" TaskDelayMax="420" UniqueID="PenguinRockhopper:CallChild">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" isRelation="child"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="5">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_3"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="MutualCall"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-30" stimulation="-10"/>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_Come" GiveTo="target" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ChildCome" UniqueID="PenguinRockhopper:ChildCome">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_Come/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="MutualCall"/>
+      <BFBehMove moveRadius="5" locoSpeed="fast"/>
+      <BFBehPlaySet behSet="Stand"/>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCallYoungGood" priority="1" timeout="60" global="false" useTargetSpecies="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" stimulation="-10" health="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CallMother" TaskDelayMin="60" TaskDelayMax="160" UniqueID="PenguinRockhopper:CallMother">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers_AND inWater_OR_onLand="true" isRelation="mother"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetSpecies="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="AlarmCall"/>
+      <BFBehPlaySet behSet="Stand"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_ComeAdult" GiveTo="target" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="MotherCome" UniqueID="PenguinRockhopper:MotherCome">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ComeAdult/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="AlarmCall"/>
+      <BFBehMove moveRadius="5" locoSpeed="fast"/>
+      <BFBehPlaySet behSet="AlarmCall"/>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetSpecies="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" stimulation="-10"/>
+      <BFAITargetData health="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="YoungChase" TaskDelayMin="30" TaskDelayMax="60" UniqueID="PenguinRockhopper:YoungChase">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" notInSight="6"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap stimulation="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="6" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_EvadePlayYoung" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="ChasePause"/>
+      <BFBehPursuit hitRadius="3" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="YoungEvade" UniqueID="PenguinRockhopper:YoungEvade">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayYoung/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast" evasionTime="60"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" exercise="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AdultChase" TaskDelayMin="60" TaskDelayMax="120" UniqueID="PenguinRockhopper:AdultChase">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Adult/>
+        <Qualifiers_AND inWater_OR_onLand="true" notInSight="6"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="30">
+      <BFAIAttributeFloatMap stimulation="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="6" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_EvadePlayAdult" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="ChasePause"/>
+      <BFBehPursuit hitRadius="3" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AdultEvade" UniqueID="PenguinRockhopper:AdultEvade">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayAdult/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast" evasionTime="60"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-15" social="-20" exercise="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="FollowMother" UniqueID="PenguinRockhopper:FollowMother">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers_AND inWater_OR_onLand="true" notInSight="5" isRelation="mother"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".1"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:FollowMother"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="CallMother"/>
+      <BFBehPursuit hitRadius="3" pursuitRadius="6" locoSpeed="fast"/>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalFollowMotherGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-2"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CheckEgg" UniqueID="PenguinRockhopper:CheckEgg">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Egg/>
+        <Qualifiers_AND inWater_OR_onLand="true" notInSight="10" isRelation="child"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".1"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:CheckingEgg"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehDockRadial subjectNode="Node_Egg" targetAnim="Stand_2StandEgg"/>
+      <BFBehPlaySet behSet="StandEgg"/>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCheckEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="WalkEgg" UniqueID="PenguinRockhopper:WalkEgg">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_M/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <ground_cover/>
+        <Qualifiers_AND inHabitat="true" inSight="20"/>
+      </Targets>
+      <Objects >
+        <PenguinRockhopper_Egg/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Carrying"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-40"/>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="DropEgg"/>
+        <ZTBehViewEvent viewKey="Pos_5">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalCarryObjectGood" priority="1" timeout="60" global="false" useTargetObject="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Slide" TaskDelayMin="60" TaskDelayMax="120" UniqueID="PenguinRockhopper:Slide">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <biome/>
+        <Qualifiers inSight="20"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap stimulation="-25"/>
+      <BFAIBiomeMap alpine="0" borealforest="0" temperateforest="0" desert="0" grassland="0" savannah="0" tropicalrainforest="0" scrub="0" tundra="1.00" wetlands="0"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Sliding"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSlidingGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="Slide"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteFeedMother" UniqueID="PenguinRockhopper:InviteFeedMother">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" isRelation="mother" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap hunger="-50" thirst="-50"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_FeedChild" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true" OnlyOne="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehAnimate targetAnim="Stand_MutualCall"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondFeedChild" reserveTag="General" UniqueID="PenguinRockhopper:RespondFeedChild">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult_F/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FeedChild/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehHeadLook/>
+      <BFBehSyncSet subjectBehSet="WaitFeedYoung" targetBehSet="DockFeedMother"/>
+      <BFBehHeadLook disengage="true"/>
+      <ZTBehViewEvent viewKey="Pos_6">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalFeedYoungGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSyncSet subjectBehSet="FeedYoung" targetBehSet="FeedMother"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20"/>
+      <BFAITargetData hunger="-100" thirst="-100" social="-10" health="-50"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SwimmingPrivacy" UniqueID="PenguinRockhopper:SwimmingPrivacy">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers waterDepth="G 2" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <dirt/>
+        <ground_cover/>
+        <Qualifiers_AND inSight="25" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap privacy="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SwimmingAround"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap privacy="-40"/>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RestPrivacy" UniqueID="PenguinRockhopper:RestPrivacy">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap privacy="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Resting"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_2"/>
+      <BFBehPlaySet behSet="Rest"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap privacy="-40"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AttackGuest" Priority="5" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="PenguinRockhopper:AttackGuest">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Adult/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <Guest_Adult_M/>
+        <Qualifiers_AND inSight="25" inHabitat="true" b_Attacked="E false"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="500"/>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehSyncSet subjectBehSet="DockAttackGuest" targetBehSet="WaitAnimalInteraction"/>
+    </BFBehExecTask>
+    <BFAICompletionData invalidateTarget="true">
+      <BFBehExecTask>
+        <BFBehHeadLook/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedPenguinEmperor" resetPhase="true"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAISubjectData b_Escaped="true"/>
+      <BFAITargetData b_Attacked="true" f_departurePoints="-100" happiness="100"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GetOffTrack_PenguinRockhopper" UniqueID="PenguinRockhopper:GetOffTrack_PenguinRockhopper">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_GetOffTrack/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="5100"/>
+    <BFBehExecTask>
+      <BFBehWander minPlayTime="5" maxPlayTime="10" avoidWater="true" locoSpeed="fast">
+        <avoidEntityTypes>
+          <GroundTrack_df/>
+          <groundvehicle/>
+        </avoidEntityTypes>
+      </BFBehWander>
+    </BFBehExecTask>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CallCreche" TaskDelayMin="300" TaskDelayMax="420" UniqueID="PenguinRockhopper:CallCreche">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" social="GE 70"/>
+      </Subjects>
+      <Targets>
+        <PenguinRockhopper_Young/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap social="-50"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCreche" priority="1" timeout="60" global="false" useTargetSpecies="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:FormCreche"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="MutualCall"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_ComeCreche" GiveTo="PenguinRockhopper_Young" Payload="subject" Radius="60" Timeout="30" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Idle" playTime="35"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-10" stimulation="-10"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AnswerCreche" UniqueID="PenguinRockhopper:AnswerCreche">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ComeCreche/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToCreche" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="MutualCall"/>
+      <BFBehMove moveRadius="1" locoSpeed="fast"/>
+      <BFBehPlaySet behSet="ArriveAtCreche"/>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalCreche" priority="1" timeout="60" global="false" useTargetSpecies="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" stimulation="-10" health="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadePredator_Young" UniqueID="PenguinRockhopper:EvadePredator_Young">
+    <BFAICreateData>
+      <Subjects>
+        <PenguinRockhopper_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <b_XLargePredator/>
+        <b_LargePredator/>
+        <b_MediumPredator/>
+        <b_SmallPredator/>
+        <Qualifiers_AND inSight="2" sameSpecies="false"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="85"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehEvasion evasionRadius="30" locoSpeed="evade" avoidWater="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

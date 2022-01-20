@@ -1,0 +1,11 @@
+<BehaviorSets>
+   <Jump>
+      <subjects>
+         <SealTrampoline/>
+         <SealTrampoline_Male/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Jump_Used"/>
+      </behaviors>
+   </Jump>
+</BehaviorSets>

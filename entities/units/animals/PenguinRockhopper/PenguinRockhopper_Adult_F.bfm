@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F.NIF">
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Breath_Idle.bf" animName="Breath_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Eat_2Stand.bf" animName="Eat_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Eat_Drink.bf" animName="Eat_Drink" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Eat_Idle.bf" animName="Eat_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_FeedYoung_2Stand.bf" animName="FeedYoung_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_FeedYoung_Idle.bf" animName="FeedYoung_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Hop_2Stand.bf" animName="Hop_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Hop_2Walk.bf" animName="Hop_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Hop_Ahead.bf" animName="Hop_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Hop_TurnLeftA.bf" animName="Hop_TurnLeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Hop_TurnLeftB.bf" animName="Hop_TurnLeftB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Hop_TurnRightA.bf" animName="Hop_TurnRightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Hop_TurnRightB.bf" animName="Hop_TurnRightB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_HopDown_2Stand.bf" animName="HopDown_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_HopDown_Ahead.bf" animName="HopDown_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_HopUp_2Stand.bf" animName="HopUp_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_HopUp_Ahead.bf" animName="HopUp_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_JumpDown_Ahead.bf" animName="JumpDown_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_JumpUp_2Slide.bf" animName="JumpUp_2Slide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_JumpUp_Ahead.bf" animName="JumpUp_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_KnockedDown_2Stand.bf" animName="KnockedDown_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_KnockedDown_Idle.bf" animName="KnockedDown_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Poop_2Stand.bf" animName="Poop_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Poop_Idle.bf" animName="Poop_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Rest_2Sleep.bf" animName="Rest_2Sleep" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Rest_2Stand.bf" animName="Rest_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Rest_Idle.bf" animName="Rest_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Secondary_HeadLook.bf" animName="Secondary_HeadLook" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Secondary_TailA.bf" animName="Secondary_TailA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Secondary_WingsA.bf" animName="Secondary_WingsA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Sleep_2Rest.bf" animName="Sleep_2Rest" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Sleep_Idle.bf" animName="Sleep_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SlenderWalk_2Stand.bf" animName="SlenderWalk_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SlenderWalk_2Walk.bf" animName="SlenderWalk_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SlenderWalk_Ahead.bf" animName="SlenderWalk_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SlenderWalk_TurnLeftA.bf" animName="SlenderWalk_TurnLeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SlenderWalk_TurnRightA.bf" animName="SlenderWalk_TurnRightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Slide_2Stand.bf" animName="Slide_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Slide_2Swim.bf" animName="Slide_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Slide_2Walk.bf" animName="Slide_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Slide_Ahead.bf" animName="Slide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Slide_AheadB.bf" animName="Slide_AheadB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Slide_TurnLeftA.bf" animName="Slide_TurnLeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Slide_TurnRightA.bf" animName="Slide_TurnRightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SpreadWings_2Stand.bf" animName="SpreadWings_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SpreadWings_Idle.bf" animName="SpreadWings_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2Eat.bf" animName="Stand_2Eat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2FeedYoung.bf" animName="Stand_2FeedYoung" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Stand_2Hop.bf" animName="Stand_2Hop" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2HopDown.bf" animName="Stand_2HopDown" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2HopUp.bf" animName="Stand_2HopUp" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2JumpDown.bf" animName="Stand_2JumpDown" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2KnockedDown.bf" animName="Stand_2KnockedDown" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2Poop.bf" animName="Stand_2Poop" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2Rest.bf" animName="Stand_2Rest" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2SlenderWalk.bf" animName="Stand_2SlenderWalk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2Slide.bf" animName="Stand_2Slide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2SpreadWings.bf" animName="Stand_2SpreadWings" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_M_Stand_PickUpEgg.bf" animName="Stand_2StandEgg" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2Threat.bf" animName="Stand_2Threat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2Walk.bf" animName="Stand_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_M_Stand_AlarmCall.bf" animName="Stand_AlarmCall" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Stand_AlloPreen.bf" animName="Stand_AlloPreen" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_Attack.bf" animName="Stand_Attack" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_Attacked.bf" animName="Stand_Attacked" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_AttackGuest.bf" animName="Stand_AttackGuest" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_CleanWingL.bf" animName="Stand_CleanWingL" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_CleanWingR.bf" animName="Stand_CleanWingR" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_HeadBob.bf" animName="Stand_HeadBob" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Stand_HeadShake.bf" animName="Stand_HeadShake" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_Idle.bf" animName="Stand_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_Jump.bf" animName="Stand_Jump" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Stand_JumpOnRock.bf" animName="Stand_JumpOnRock" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_M_Stand_MatingCall.bf" animName="Stand_MatingCall" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_M_Stand_MutualCall.bf" animName="Stand_MutualCall" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_Scratch.bf" animName="Stand_Scratch" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_Shake.bf" animName="Stand_Shake" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_Stretch.bf" animName="Stand_Stretch" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_Threat.bf" animName="Stand_Threat" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_TurnLeft180.bf" animName="Stand_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_TurnLeftA.bf" animName="Stand_TurnLeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_TurnRightA.bf" animName="Stand_TurnRightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_Yawn.bf" animName="Stand_Yawn" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_M_Stand_DropEgg.bf" animName="StandEgg_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Stand_2WalkEgg.bf" animName="StandEgg_2WalkEgg" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_M_StandEgg_Idle.bf" animName="StandEgg_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Swim_2Slide.bf" animName="Swim_2Slide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Swim_2SwimGlide.bf" animName="Swim_2SwimGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Swim_2SwimSub.bf" animName="Swim_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Swim_2TreadWater.bf" animName="Swim_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Swim_Ahead.bf" animName="Swim_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Swim_Porpoise.bf" animName="Swim_Porpoise" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Swim_Turn180.bf" animName="Swim_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Swim_TurnLeft90.bf" animName="Swim_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Swim_TurnRight90.bf" animName="Swim_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimGlide_2Swim.bf" animName="SwimGlide_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimGlide_Ahead.bf" animName="SwimGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_2Swim.bf" animName="SwimSub_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_2SwimSubGlide.bf" animName="SwimSub_2SwimSubGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_2TreadWaterSub.bf" animName="SwimSub_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_Ahead.bf" animName="SwimSub_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_Bite.bf" animName="SwimSub_Bite" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_Eat.bf" animName="SwimSub_Eat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_Peck.bf" animName="SwimSub_Peck" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_Swallow.bf" animName="SwimSub_Swallow" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_Turn180.bf" animName="SwimSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_TurnDown90.bf" animName="SwimSub_TurnDown90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_TurnLeft90.bf" animName="SwimSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_TurnRight90.bf" animName="SwimSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSub_TurnUp90.bf" animName="SwimSub_TurnUp90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSubGlide_2SwimSub.bf" animName="SwimSubGlide_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_SwimSubGlide_Ahead.bf" animName="SwimSubGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Threat_2Stand.bf" animName="Threat_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Threat_Idle.bf" animName="Threat_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWater_2Stand.bf" animName="TreadWater_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWater_2Swim.bf" animName="TreadWater_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWater_Ahead.bf" animName="TreadWater_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWater_Idle.bf" animName="TreadWater_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWater_Turn180.bf" animName="TreadWater_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWater_TurnLeft90.bf" animName="TreadWater_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWater_TurnRight90.bf" animName="TreadWater_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWaterSub_2SwimSub.bf" animName="TreadWaterSub_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWaterSub_Eat.bf" animName="TreadWaterSub_Eat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWaterSub_Idle.bf" animName="TreadWaterSub_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWaterSub_Poop.bf" animName="TreadWaterSub_Poop" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWaterSub_Swallow.bf" animName="TreadWaterSub_Swallow" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWaterSub_Turn180.bf" animName="TreadWaterSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWaterSub_TurnLeft90.bf" animName="TreadWaterSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_TreadWaterSub_TurnRight90.bf" animName="TreadWaterSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinRockhopper\PenguinRockhopper_Adult_F_Walk_2Hop.bf" animName="Walk_2Hop" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_2HopDown.bf" animName="Walk_2HopDown" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_2HopUp.bf" animName="Walk_2HopUp" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_2JumpDown.bf" animName="Walk_2JumpDown" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_2SlenderWalk.bf" animName="Walk_2SlenderWalk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_2Slide.bf" animName="Walk_2Slide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_2Stand.bf" animName="Walk_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_2Swim.bf" animName="Walk_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_2SwimSub.bf" animName="Walk_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_Ahead.bf" animName="Walk_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_TurnLeftA.bf" animName="Walk_TurnLeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_Walk_TurnRightA.bf" animName="Walk_TurnRightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_WalkEgg_2Stand.bf" animName="WalkEgg_2StandEgg" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_WalkEgg_Ahead.bf" animName="WalkEgg_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_WalkEgg_TurnLeftA.bf" animName="WalkEgg_TurnLeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\PenguinEmperor\PenguinEmperor_Adult_F_WalkEgg_TurnRightA.bf" animName="WalkEgg_TurnRightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="PenguinRockhopper_Adult_F" version="1">
+    <node name="Breath">
+      <table>
+        <Breath_Idle />
+      </table>
+    </node>
+    <node name="Eat">
+      <table>
+        <Eat_Drink />
+        <Eat_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Eat_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="FeedYoung">
+      <table>
+        <FeedYoung_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <FeedYoung_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Hop">
+      <table>
+        <Hop_Ahead />
+        <Hop_TurnLeftA />
+        <Hop_TurnLeftB />
+        <Hop_TurnRightA />
+        <Hop_TurnRightB />
+      </table>
+      <edge name="Walk">
+        <table>
+          <Hop_2Walk />
+        </table>
+      </edge>
+      <edge name="Stand">
+        <table>
+          <Hop_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="HopDown">
+      <table>
+        <HopDown_Ahead />
+      </table>
+      <edge name="Stand">
+        <table>
+          <HopDown_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="HopUp">
+      <table>
+        <HopUp_Ahead />
+      </table>
+      <edge name="Stand">
+        <table>
+          <HopUp_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="JumpDown">
+      <table>
+        <JumpDown_Ahead />
+      </table>
+    </node>
+    <node name="JumpUp">
+      <table>
+        <JumpUp_Ahead />
+      </table>
+      <edge name="Slide">
+        <table>
+          <JumpUp_2Slide />
+        </table>
+      </edge>
+    </node>
+    <node name="KnockedDown">
+      <table>
+        <KnockedDown_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <KnockedDown_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Poop">
+      <table>
+        <Poop_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Poop_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Rest">
+      <table>
+        <Rest_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Rest_2Stand />
+        </table>
+      </edge>
+      <edge name="Sleep">
+        <table>
+          <Rest_2Sleep />
+        </table>
+      </edge>
+    </node>
+    <node name="Secondary">
+      <table>
+        <Secondary_HeadLook />
+        <Secondary_TailA />
+        <Secondary_WingsA />
+      </table>
+    </node>
+    <node name="Sleep">
+      <table>
+        <Sleep_Idle />
+      </table>
+      <edge name="Rest">
+        <table>
+          <Sleep_2Rest />
+        </table>
+      </edge>
+    </node>
+    <node name="SlenderWalk">
+      <table>
+        <SlenderWalk_Ahead />
+        <SlenderWalk_TurnLeftA />
+        <SlenderWalk_TurnRightA />
+      </table>
+      <edge name="Walk">
+        <table>
+          <SlenderWalk_2Walk />
+        </table>
+      </edge>
+      <edge name="Stand">
+        <table>
+          <SlenderWalk_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Slide">
+      <table>
+        <Slide_Ahead />
+        <Slide_AheadB />
+        <Slide_TurnLeftA />
+        <Slide_TurnRightA />
+      </table>
+      <edge name="Swim">
+        <table>
+          <Slide_2Swim />
+        </table>
+      </edge>
+      <edge name="Stand">
+        <table>
+          <Slide_2Stand />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Slide_2Walk />
+        </table>
+      </edge>
+    </node>
+    <node name="SpreadWings">
+      <table>
+        <SpreadWings_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <SpreadWings_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="Stand">
+      <table>
+        <Stand_AlarmCall />
+        <Stand_AlloPreen />
+        <Stand_Attack />
+        <Stand_Attacked />
+        <Stand_AttackGuest />
+        <Stand_CleanWingL />
+        <Stand_CleanWingR />
+        <Stand_HeadBob />
+        <Stand_HeadShake />
+        <Stand_Idle />
+        <Stand_Jump />
+        <Stand_JumpOnRock />
+        <Stand_MatingCall />
+        <Stand_MutualCall />
+        <Stand_Scratch />
+        <Stand_Shake />
+        <Stand_Stretch />
+        <Stand_Threat />
+        <Stand_Turn180 />
+        <Stand_TurnLeftA />
+        <Stand_TurnRightA />
+        <Stand_Yawn />
+      </table>
+      <edge name="Eat">
+        <table>
+          <Stand_2Eat />
+        </table>
+      </edge>
+      <edge name="StandEgg">
+        <table>
+          <Stand_2StandEgg />
+        </table>
+      </edge>
+      <edge name="JumpDown">
+        <table>
+          <Stand_2JumpDown />
+        </table>
+      </edge>
+      <edge name="HopDown">
+        <table>
+          <Stand_2HopDown />
+        </table>
+      </edge>
+      <edge name="KnockedDown">
+        <table>
+          <Stand_2KnockedDown />
+        </table>
+      </edge>
+      <edge name="HopUp">
+        <table>
+          <Stand_2HopUp />
+        </table>
+      </edge>
+      <edge name="Slide">
+        <table>
+          <Stand_2Slide />
+        </table>
+      </edge>
+      <edge name="Poop">
+        <table>
+          <Stand_2Poop />
+        </table>
+      </edge>
+      <edge name="Rest">
+        <table>
+          <Stand_2Rest />
+        </table>
+      </edge>
+      <edge name="Walk">
+        <table>
+          <Stand_2Walk />
+        </table>
+      </edge>
+      <edge name="Threat">
+        <table>
+          <Stand_2Threat />
+        </table>
+      </edge>
+      <edge name="SpreadWings">
+        <table>
+          <Stand_2SpreadWings />
+        </table>
+      </edge>
+      <edge name="SlenderWalk">
+        <table>
+          <Stand_2SlenderWalk />
+        </table>
+      </edge>
+      <edge name="FeedYoung">
+        <table>
+          <Stand_2FeedYoung />
+        </table>
+      </edge>
+      <edge name="Hop">
+        <table>
+          <Stand_2Hop />
+        </table>
+      </edge>
+    </node>
+    <node name="StandEgg">
+      <table>
+        <StandEgg_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <StandEgg_2Stand />
+        </table>
+      </edge>
+      <edge name="WalkEgg">
+        <table>
+          <StandEgg_2WalkEgg />
+        </table>
+      </edge>
+    </node>
+    <node name="Swim">
+      <table>
+        <Swim_Ahead />
+        <Swim_Porpoise />
+        <Swim_Turn180 />
+        <Swim_TurnLeft90 />
+        <Swim_TurnRight90 />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <Swim_2TreadWater />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <Swim_2SwimSub />
+        </table>
+      </edge>
+      <edge name="SwimGlide">
+        <table>
+          <Swim_2SwimGlide />
+        </table>
+      </edge>
+      <edge name="Slide">
+        <table>
+          <Swim_2Slide />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimGlide">
+      <table>
+        <SwimGlide_Ahead />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimGlide_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSub">
+      <table>
+        <SwimSub_Ahead />
+        <SwimSub_Bite />
+        <SwimSub_Eat />
+        <SwimSub_Peck />
+        <SwimSub_Swallow />
+        <SwimSub_Turn180 />
+        <SwimSub_TurnDown90 />
+        <SwimSub_TurnLeft90 />
+        <SwimSub_TurnRight90 />
+        <SwimSub_TurnUp90 />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimSub_2Swim />
+        </table>
+      </edge>
+      <edge name="SwimSubGlide">
+        <table>
+          <SwimSub_2SwimSubGlide />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <SwimSub_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubGlide">
+      <table>
+        <SwimSubGlide_Ahead />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <SwimSubGlide_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="Threat">
+      <table>
+        <Threat_Idle />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Threat_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWater">
+      <table>
+        <TreadWater_Ahead />
+        <TreadWater_Idle />
+        <TreadWater_Turn180 />
+        <TreadWater_TurnLeft90 />
+        <TreadWater_TurnRight90 />
+      </table>
+      <edge name="Swim">
+        <table>
+          <TreadWater_2Swim />
+        </table>
+      </edge>
+      <edge name="Stand">
+        <table>
+          <TreadWater_2Stand />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterSub">
+      <table>
+        <TreadWaterSub_Eat />
+        <TreadWaterSub_Idle />
+        <TreadWaterSub_Poop />
+        <TreadWaterSub_Swallow />
+        <TreadWaterSub_Turn180 />
+        <TreadWaterSub_TurnLeft90 />
+        <TreadWaterSub_TurnRight90 />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <TreadWaterSub_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="Walk">
+      <table>
+        <Walk_Ahead />
+        <Walk_TurnLeftA />
+        <Walk_TurnRightA />
+      </table>
+      <edge name="JumpDown">
+        <table>
+          <Walk_2JumpDown />
+        </table>
+      </edge>
+      <edge name="HopDown">
+        <table>
+          <Walk_2HopDown />
+        </table>
+      </edge>
+      <edge name="Stand">
+        <table>
+          <Walk_2Stand />
+        </table>
+      </edge>
+      <edge name="HopUp">
+        <table>
+          <Walk_2HopUp />
+        </table>
+      </edge>
+      <edge name="Slide">
+        <table>
+          <Walk_2Slide />
+        </table>
+      </edge>
+      <edge name="Swim">
+        <table>
+          <Walk_2Swim />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <Walk_2SwimSub />
+        </table>
+      </edge>
+      <edge name="SlenderWalk">
+        <table>
+          <Walk_2SlenderWalk />
+        </table>
+      </edge>
+      <edge name="Hop">
+        <table>
+          <Walk_2Hop />
+        </table>
+      </edge>
+    </node>
+    <node name="WalkEgg">
+      <table>
+        <WalkEgg_Ahead />
+        <WalkEgg_TurnLeftA />
+        <WalkEgg_TurnRightA />
+      </table>
+      <edge name="StandEgg">
+        <table>
+          <WalkEgg_2StandEgg />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

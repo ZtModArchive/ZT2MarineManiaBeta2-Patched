@@ -1,0 +1,43 @@
+<BFTypedBinder binderType="Fish_JarTreat">
+   <types>
+      <entity>
+         <enrichment>
+            <treat>
+               <Fish_JarTreat/>
+            </treat>
+         </enrichment>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <BFGDetachInfo>
+         <detachActionTable>
+            <dropitem destination="kill"/>
+            <killitem destination="kill"/>
+            <inventory destination="inventory"/>
+         </detachActionTable>
+      </BFGDetachInfo>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\food\Terrain_df\TerrainBerries_df_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Fish_JarTreat"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Fish_JarTreat"/>
+         </on>
+      </UIToggleButton>
+      <ZTDevComponent/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/food/Terrain/Terrain_Fish_66" scale="1.0" switch="0 18"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

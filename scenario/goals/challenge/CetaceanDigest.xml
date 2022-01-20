@@ -1,0 +1,19 @@
+<BFScenarioGroup name="cetaceandigestrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="cetaceandigestphoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHCetaceanDigestShort" overview="PhotoChallengetext:PHCetaceanDigest" />
+				<success locid="PhotoChallengetext:PHCetaceanDigestSuccessShort" overview="PhotoChallengetext:PHCetaceanDigestSuccess" />
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/CetaceanDigest.lua" entry="evalcetaceandigest" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/CetaceanDigest.lua" entry="completecetaceandigest" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/CetaceanDigest.lua" entry="failcetaceandigest" />
+			</failure>	
+		</BFScenarioRule>		
+	 </children>
+</BFScenarioGroup>

@@ -1,0 +1,8 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01 Ponytail1} snd 'Call'"/>
+   <key time="0" text="{Bip01 Ponytail1} snd 'Call_uw'"/>
+   <key time="0" text="{Bip01_Dorsal} runspl"/>
+   <key time="0.43" text="{Bip01 Ponytail2} runspl"/>
+   <key time="0.8" text="{Bip01 L Forearm} runspl"/>
+   <key time="0.8" text="{Bip01 R Forearm} runspl"/>
+</TEXTKEY>

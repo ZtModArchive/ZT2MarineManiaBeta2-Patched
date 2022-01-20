@@ -1,0 +1,33 @@
+<BFTypedBinder binderType="Plankton_Prop">
+   <types>
+      <entity>
+         <item>
+            <Plankton_Prop/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <BFGDetachInfo>
+         <detachActionTable>
+            <dropitem destination="kill"/>
+            <killitem destination="kill"/>
+            <inventory destination="inventory"/>
+         </detachActionTable>
+      </BFGDetachInfo>
+      <UIToggleButton template="adopt">
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Plankton_Prop"/>
+      </UIToggleButton>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/food/FoodProps/PlanktonProp"  switch="0 18"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

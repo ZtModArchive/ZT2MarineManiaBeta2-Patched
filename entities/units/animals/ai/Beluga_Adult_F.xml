@@ -1,0 +1,39 @@
+<BFTypedBinder binderType="Beluga_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Monodontidae>
+                        <Beluga>
+                           <Beluga_Adult>
+                              <Beluga_Adult_F/>
+                           </Beluga_Adult>
+                        </Beluga>
+                     </Monodontidae>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0"/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\Beluga\Beluga_Adult_F_icon.dds" />
+         </UIAspect>
+      </UIToggleButton>
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

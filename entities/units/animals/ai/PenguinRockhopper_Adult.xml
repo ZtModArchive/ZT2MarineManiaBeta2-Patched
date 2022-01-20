@@ -1,0 +1,61 @@
+<BFTypedBinder binderType="PenguinRockhopper_Adult" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Aves>
+						<Sphenisciformes>
+							<Spheniscidae>
+								<PenguinRockhopper>
+									<PenguinRockhopper_Adult />
+								</PenguinRockhopper>
+							</Spheniscidae>
+						</Sphenisciformes>
+					</Aves>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData />
+		<BFAIEntityDataShared f_viewBonus="20" b_Adult="1" b_Territorial="true" s_MorphMessage="zoomessages:AnimalPuberty" f_MorphMessagePriority="1" f_MorphMessageDuration="30" b_SmallPrey="true" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Spine" width="1.1" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="groundcarry" required="1">
+					<instance>
+						<BFLocoAnimate version="1" stationaryAnim="Stand_Idle">
+							<stop name="Stand" />
+							<slow name="WalkEgg" />
+							<medium name="WalkEgg" />
+							<fast name="WalkEgg" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.1875" radius=".375" motionClass="swimmer" waterScore="0" landScore="0" maxSlope=".50" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

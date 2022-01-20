@@ -1,0 +1,213 @@
+<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_showprops:entry"  >Show Props</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_showprops:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<p/>Some show tricks require show props, which appear automatically when the trick is ready to begin.
+			<p/>To view information about a show prop, click the name of the show prop in the list on the left.	  
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_basketballhoop_small_mm:entry"  >Basketball Hoop, Small</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_basketballhoop_small_mm:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/BasketbolHoop_Small_mm/BasketballHoop_Small_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Sea otters use the small basketball hoop when training to shoot baskets.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_basketballhoop_mm:entry"  >Basketball Hoop, Large</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_basketballhoop_mm:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/BasketballHoop_mm/Basketball_Hoop_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>California sea lions and Pacific walruses use the large basketball hoop when training  to sink hoops.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_hoop_mm:entry"  >Hoop</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_hoop_mm:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/Hoop_mm/Hoop_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Various marine animals use the hoop to perform amazing marine show tricks.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_horns_mm:entry"  >Horns</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_horns_mm:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/Horns_mm/Horns_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>California sea lions and Pacific walruses use the horns when training to play music.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_pileofrocks:entry"  >Pile of Rocks</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_pileofrocks:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/PileOfRocks/PileOfRocks_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Sea otters use the pile of rocks when performing in marine shows.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_shakertoy:entry"  >Shaker Toy with Food</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_shakertoy:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/ShakerToy/ShakerToy_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Sea otters use the shaker toy with food when performing in shows.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_sealseat:entry"  >Seat</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_sealseat:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/SealSeat/SealSeat_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>California sea lions and Pacific walruses use the seat when performing in marine shows.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_sealslide:entry"  >Slide</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_sealslide:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/SealSlide/SealSlide_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>California sea lions and Pacific walruses use the slide to perform amazing show tricks.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_sealswing:entry"  >Swing</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_sealswing:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/SealSwing/SealSwing_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>California sea lions and Pacific walruses use the swing to perform thrilling show tricks.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_slidingplatform:entry"  >Beaching Platform</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_slidingplatform:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/SlidingPlatform/SlidingPlatform_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Cetaceans, like the bottlenose dolphin and the orca, use the beaching platform when performing in marine shows.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_tetherball_mm:entry"  >Tether Ball Buoy</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_tetherball_mm:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/TetherBall_mm/TetherBall_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Various marine animals use the tether ball buoy to perform a variety of show tricks.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_trampoline:entry"  >Trampoline</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_trampoline:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/SealTrampoline/SealTrampoline_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>California sea lions use the trampoline when performing in marine shows.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_smallball:entry"  >Show Ball, Small</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_smallball:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/Ball_mm/BallSmall_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Various marine animals use the small show ball to perform a variety of show tricks.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_largeball:entry"  >Show Ball, Large</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_largeball:text"  >
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/Ball_mm/BallLarge_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Various marine animals use the large show ball to perform a variety of show tricks.
+		  </color>
+		 </cell>
+		</cell>
+	  </LOC_STRING>
+
+</ZT2Strings>

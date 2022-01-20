@@ -1,0 +1,59 @@
+<BFTypedBinder binderType="tanksupport_show">
+   <types>
+      <entity>
+         <scenery>
+            <tankwallsupport>
+               <tanksupport_show/>
+            </tankwallsupport>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="fence">
+         <on>
+            <event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="tanksupport_show"/>
+         </on>
+      </UIToggleButton>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\fences\themedtank_show\themedtank_show_support_base"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="expandoPiece1" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\fences\themedtank_show\themedtank_show_support_middle"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="top" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\fences\themedtank_show\themedtank_show_support_top"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTTankSupport height="10" heightAbsolute="true" rotateTop="true">
+               <Base binderName="mainObj" height="1.4f" attachSelfNode="" attachOthersNode="Link_Base01"/>
+               <Top>
+                  <TopPiece1 binderName="top" height="1.5f" attachSelfNode="Link_Segment01" attachOthersNode=""/>
+               </Top>
+               <Expando>
+                  <Piece1 binderName="expandoPiece1" height="1.5f" attachSelfNode="Link_Segment01" attachOthersNode="Link_Segment02"/>
+               </Expando>
+            </ZTTankSupport>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,28 @@
+<BFTypedBinder binderType="Chondrichthyes" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Chondrichthyes/>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTPlacementData waterPlacement="true" landPlacement="false" tankPlacement="true"/>
+      <BFAIEntityDataShared b_MarineAnimal="true" b_landAnimal="false"/>
+   </shared>
+	<binder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="0"/>
+			</binder>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

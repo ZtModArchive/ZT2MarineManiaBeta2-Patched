@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="SeaLionCalifornia_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Carnivora>
+                     <Otariidae>
+                        <SeaLionCalifornia>
+                           <SeaLionCalifornia_Young>
+                              <SeaLionCalifornia_Young_M/>
+                           </SeaLionCalifornia_Young>
+                        </SeaLionCalifornia>
+                     </Otariidae>
+                  </Carnivora>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SeaLionCalifornia_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

@@ -1,0 +1,19 @@
+<BFScenarioGroup name="peerlesspostersrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="peerlesspostersphoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHPeerlessPostersShort" overview="PhotoChallengetext:PHPeerlessPosters" />
+				<success locid="PhotoChallengetext:PHPeerlessPostersSuccessShort" overview="PhotoChallengetext:PHPeerlessPostersSuccess" />
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/PeerlessPosters.lua" entry="evalpeerlessposters" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/PeerlessPosters.lua" entry="completepeerlessposters" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/PeerlessPosters.lua" entry="failpeerlessposters" />
+			</failure>	
+		</BFScenarioRule>		
+	 </children>
+</BFScenarioGroup>

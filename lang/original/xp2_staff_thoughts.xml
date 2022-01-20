@@ -1,0 +1,14 @@
+<ZT2Strings>
+   <staffthoughts>
+      <!--Staff Thoughts-->
+      <GiveTreat>I better give %s a treat to keep performing that trick right.</GiveTreat>
+      <ConductShow>I hope the crowd enjoys this show.</ConductShow>
+      <FailureReaction>Oh no, %s messed up that trick!</FailureReaction>
+      <SuccessReaction>I think %s did a great job on that trick!</SuccessReaction>
+      <CriticalReaction>Wow, %s did a really good job on that trick!</CriticalReaction>
+      <WaitShow>I bet the next show is going to be even better!</WaitShow>
+      <PreShow>I better clean up for the next show.</PreShow>
+      <PostShow>Oops, that show left a bit of a mess.</PostShow>
+      <Training>Before too long, %s will totally know this trick.</Training>
+   </staffthoughts>
+</ZT2Strings>

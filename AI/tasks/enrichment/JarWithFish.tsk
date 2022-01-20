@@ -1,0 +1,642 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="PlayBasic" reserveTag="Play" UniqueID="JarWithFish:PlayBasic">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_JarWithFishUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <JarWithFish_Open/>
+            <JarWithFish_Closed/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFAITargetData f_Damage="35"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PlayMedium" reserveTag="Play" UniqueID="JarWithFish:PlayMedium">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_JarWithFishUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <JarWithFish_Open/>
+            <JarWithFish_Closed/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFAITargetData f_Damage="35"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PlayAdvanced" reserveTag="Play" UniqueID="JarWithFish:PlayAdvanced">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_JarWithFishUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <JarWithFish_Open/>
+            <JarWithFish_Closed/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="30">
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFAITargetData f_Damage="35"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PlayElite" reserveTag="Play" UniqueID="JarWithFish:PlayElite">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_JarWithFishUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <JarWithFish_Open/>
+            <JarWithFish_Closed/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="40">
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFAITargetData f_Damage="35"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="OpenBasic" reserveTag="Open" UniqueID="JarWithFish:OpenBasic">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_JarWithFishUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <JarWithFish_Closed/>
+            <Qualifiers_AND inHabitat="true" f_Damage="GE 90"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap hunger="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFBehExecTask>
+	    <ZTBehMorph morphEntity="target" morphTargetEntityType="JarWithFish_Open"/>
+            <BFBehSpawn spawnEntity="Fish_JarTreat" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="OpenMedium" reserveTag="Open" UniqueID="JarWithFish:OpenMedium">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_JarWithFishUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <JarWithFish_Closed/>
+            <Qualifiers_AND inHabitat="true" f_Damage="GE 90"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap hunger="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFBehExecTask>
+	    <ZTBehMorph morphEntity="target" morphTargetEntityType="JarWithFish_Open"/>
+            <BFBehSpawn spawnEntity="Fish_JarTreat" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="OpenAdvanced" reserveTag="Open" UniqueID="JarWithFish:OpenAdvanced">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_JarWithFishUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <JarWithFish_Closed/>
+            <Qualifiers_AND inHabitat="true" f_Damage="GE 90"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="30">
+         <BFAIAttributeFloatMap hunger="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFBehExecTask>
+	    <ZTBehMorph morphEntity="target" morphTargetEntityType="JarWithFish_Open"/>
+            <BFBehSpawn spawnEntity="Fish_JarTreat" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="OpenElite" reserveTag="Open" UniqueID="JarWithFish:OpenElite">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_JarWithFishUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <JarWithFish_Closed/>
+            <Qualifiers_AND inHabitat="true" f_Damage="GE 90"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="40">
+         <BFAIAttributeFloatMap hunger="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFBehExecTask>
+	    <ZTBehMorph morphEntity="target" morphTargetEntityType="JarWithFish_Open"/>
+            <BFBehSpawn spawnEntity="Fish_JarTreat" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Eat_Basic" reserveTag="Eat" UniqueID="Fish_JarTreat:Eat_Basic">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Piscivore/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Fish_JarTreat/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-50" stimulation="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-10" thirst="5" bathroom="5" stimulation="-5"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_4">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalEatGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="UseLiveFood"/>
+            <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Eat_Medium" reserveTag="Eat" UniqueID="Fish_JarTreat:Eat_Medium">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Piscivore/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Fish_JarTreat/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-50" stimulation="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-10" thirst="5" bathroom="5" stimulation="-5"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_4">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalEatGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="UseLiveFood"/>
+            <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Eat_Advanced" reserveTag="Eat" UniqueID="Fish_JarTreat:Eat_Advanced">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Piscivore/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Fish_JarTreat/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-50" stimulation="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-10" thirst="5" bathroom="5" stimulation="-5"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalEatGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="UseLiveFood"/>
+            <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Eat_Elite" reserveTag="Eat" UniqueID="Fish_JarTreat:Eat_Elite">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Piscivore/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Fish_JarTreat/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-50" stimulation="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-10" thirst="5" bathroom="5" stimulation="-5"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalEatGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="UseLiveFood"/>
+            <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

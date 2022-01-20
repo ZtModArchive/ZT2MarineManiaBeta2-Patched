@@ -1,0 +1,379 @@
+<ZT2Strings>
+      <LOC_STRING _locID="awards:MarineTrainingTycoonOne_name"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Marine Training Tycoon Level One Award</b>
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineTrainingTycoonOne_pre_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Achieve one perfect 100% training score to win the </b>
+              <b/>
+              <color r="255" g="255" b="0" a="255">
+                 <b>Marine Training Tycoon Level One Award.</b>
+              </color>              
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineTrainingTycoonOne_post_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Good work! As a reward for achieving a perfect 100% training score you have won the </b>
+              <color r="255" g="255" b="0" a="255">
+                 <b>Marine Training Tycoon Level One Award.</b>
+              </color>            
+           </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineTrainingTycoonTwo_name"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Marine Training Tycoon Level Two Award</b>
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineTrainingTycoonTwo_pre_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Achieve a total of ten perfect 100% training scores to win the </b>
+              <b/>
+              <color r="255" g="255" b="0" a="255">
+                 <b>Marine Training Tycoon Level Two Award.</b>
+                </color>             
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineTrainingTycoonTwo_post_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Congratulations! As a reward for achieving ten perfect 100% training scores you have won the </b>
+              <color r="255" g="255" b="0" a="255">
+                 <b>Marine Training Tycoon Level Three Award</b>
+              </color>            
+           </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineTrainingTycoonThree_name"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Marine Training Tycoon Level Three Award</b>
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineTrainingTycoonThree_pre_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Achieve a total of 100 perfect 100% training scores to make the </b>
+              <b/>
+              <color r="255" g="255" b="0" a="255">
+                 <b>Marine Training Statue</b>
+                </color>
+            <b> available for purchase in your zoo.</b>               
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineTrainingTycoonThree_post_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Congratulations! As a reward for achieving a total of 100 perfect 100% training scores the </b>
+              <color r="255" g="255" b="0" a="255">
+                 <b>Marine Training Statue</b>
+              </color>            
+              <b> is now available for purchase in your zoo.</b>
+           </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowTycoonOne_name"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Marine Show Tycoon Level 1 Award</b>
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowTycoonOne_pre_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Raise $25,000 in marine show donations to make the </b>
+              <b/>
+              <color r="255" g="255" b="0" a="255">
+                 <b>upgraded medium grandstand</b>
+              </color>
+              <b> available for purchase in your zoo.</b>               
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowTycoonOne_post_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Great work! As a reward for raising $25,000 in marine show donations the </b>
+              <color r="255" g="255" b="0" a="255">
+                 <b>upgraded medium grandstand</b>
+              </color>            
+              <b> is now available for purchase in your zoo.</b>
+           </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowTycoonTwo_name"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Marine Show Tycoon Level 2 Award</b>
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowTycoonTwo_pre_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Raise $100,000 in marine show donations to make the </b>
+              <b/>
+              <color r="255" g="255" b="0" a="255">
+                 <b>upgraded large grandstand</b>
+                </color>
+            <b> available for purchase in your zoo.</b>               
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowTycoonTwo_post_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Congratulations! As a reward for raising $100,000 in marine show donations the </b>
+              <color r="255" g="255" b="0" a="255">
+                 <b>upgraded large grandstand</b>
+              </color>            
+              <b> is now available for purchase in your zoo.</b>
+           </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineStarTycoonOne_name"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Marine Star Tycoon Level 1 Award</b>
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineStarTycoonOne_pre_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Create a 1-star marine show to make the </b>
+              <b/>
+              <color r="255" g="255" b="0" a="255">
+                 <b>tank light</b>
+              </color>
+              <b> available for purchase in your zoo.</b>               
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineStarTycoonOne_post_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Good work! As a reward for creating a 1-star marine show the </b>
+              <color r="255" g="255" b="0" a="255">
+                 <b>tank light</b>
+              </color>            
+              <b> is now available for purchase in your zoo.</b>
+           </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineStarTycoonTwo_name"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Marine Star Tycoon Level 2 Award</b>
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineStarTycoonTwo_pre_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Create a 3-star marine show to make the </b>
+              <b/>
+              <color r="255" g="255" b="0" a="255">
+                 <b>show fence</b>
+                </color>
+            <b> available for purchase in your zoo.</b>               
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineStarTycoonTwo_post_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Great work! As a reward for creating a 3-star marine show the </b>
+              <color r="255" g="255" b="0" a="255">
+                 <b>show fence</b>
+              </color>            
+              <b> is now available for purchase in your zoo.</b>
+           </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineStarTycoonThree_name"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Marine Star Tycoon Level 3 Award</b>
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineStarTycoonThree_pre_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Create a 5-star marine show to make the </b>
+              <b/>
+              <color r="255" g="255" b="0" a="255">
+                 <b>marine tank wall</b>
+                </color>
+            <b> available for purchase in your zoo.</b>               
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineStarTycoonThree_post_ltt"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Excellent work! As a reward for creating a 5-star marine show the </b>
+              <color r="255" g="255" b="0" a="255">
+                 <b>marine tank wall</b>
+              </color>            
+              <b> is now available for purchase in your zoo.</b>
+           </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonOne_name"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Marine Animal Tycoon Level 1 Award</b>
+          </font>
+       </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonOne_pre_ltt"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Raise $5,000 in donations for marine animals to make the </b>
+             <b/>
+             <color r="255" g="255" b="0" a="255">
+                <b>dolphin arch</b>
+              </color>
+            <b> available for purchase in your zoo.</b>               
+          </font>
+       </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonOne_post_ltt"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Well done! As a reward for raising $5,000 in marine animal donations the </b>
+             <color r="255" g="255" b="0" a="255">
+                <b>dolphin arch</b>
+             </color>            
+             <b> is now available for purchase in your zoo.</b>
+          </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonTwo_name"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Marine Animal Tycoon Level 2 Award</b>
+          </font>
+       </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonTwo_pre_ltt"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Raise $20,000 in marine animal donations to make the </b>
+             <b/>
+             <color r="255" g="255" b="0" a="255">
+                <b>seahorse bouncy ride</b>
+               </color>
+           <b> available for purchase in your zoo.</b>               
+          </font>
+       </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonTwo_post_ltt"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Brilliant! As a reward for raising $20,000 in marine animal donations the </b>
+             <color r="255" g="255" b="0" a="255">
+                <b>seahorse bouncy ride</b>
+             </color>            
+             <b> is now available for purchase in your zoo.</b>
+          </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonThree_name"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Marine Animal Tycoon Level 3 Award</b>
+          </font>
+       </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonThree_pre_ltt"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Raise $100,000 in marine animal donations to make the </b>
+             <b/>
+             <color r="255" g="255" b="0" a="255">
+                <b>marine fountain</b>
+               </color>
+           <b> available for purchase in your zoo.</b>               
+          </font>
+       </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonThree_post_ltt"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Outstanding! As a reward for raising $100,000 in marine animal donations the </b>
+             <color r="255" g="255" b="0" a="255">
+                <b>marine fountain</b>
+             </color>            
+             <b> is now available for purchase in your zoo.</b>
+          </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonFour_name"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Marine Animal Tycoon Level 4 Award</b>
+          </font>
+       </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonFour_pre_ltt"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Raise $200,000 in marine animal donations to receive the </b>
+             <b/>
+             <color r="255" g="255" b="0" a="255">
+                <b>marine zoo gate and fence</b>
+               </color>
+           <b> for your zoo.</b>               
+          </font>
+       </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalTycoonFour_post_ltt"  >
+          <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+             <b>Congratulations! As a reward for raising $200,000 in marine animal donations the </b>
+             <color r="255" g="255" b="0" a="255">
+                <b>marine zoo gate and fence</b>
+             </color>            
+             <b> was awarded to your zoo.</b>
+          </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalsCampaign_name"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Marine Animals Campaign Reward</b>
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalsCampaign_pre_ltt"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Successfully complete the marine animals campaign to receive the </b>
+            <color r="255" g="255" b="0" a="255">
+               <b>Blue Whale Hall.</b>
+            </color>
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalsCampaign_post_ltt"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Excellent! As a reward for completing the marine animals campaign, you received the </b>
+            <color r="255" g="255" b="0" a="255">
+               <b>Blue Whale Hall.</b>
+            </color>
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowsCampaign_name"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Marine Shows Campaign Reward</b>
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowsCampaign_pre_ltt"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Successfully complete the marine shows campaign to receive the </b>
+            <color r="255" g="255" b="0" a="255">
+               <b>upgraded show platform with canopy.</b>
+            </color>
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowsCampaign_post_ltt"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Congratulations! As reward for completing the marine shows campaign, you received the </b>
+            <color r="255" g="255" b="0" a="255">
+               <b>upgraded show platform with canopy.</b>
+            </color>
+            <b> To upgrade a show platform with a canopy, click the show platform you want to upgrade, and then click the Upgraded Show Platform button on the show platform's Information panel.</b>              
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalChallenges_name"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Marine Animal Challenges Reward</b>
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalChallenges_pre_ltt"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Successfully complete two marine animal challenges to unlock the </b>
+            <color r="255" g="255" b="0" a="255">
+               <b>tuna live food enrichment item.</b>
+            </color>
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineAnimalChallenges_post_ltt"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Outstanding! You completed two marine animal challenges and unlocked the </b>
+            <color r="255" g="255" b="0" a="255">
+               <b>tuna live food enrichment item.</b>
+            </color>
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowChallenges_name"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Marine Show Challenges Reward</b>
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowChallenges_pre_ltt"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Successfully complete two marine show challenges to unlock the </b>
+            <color r="255" g="255" b="0" a="255">
+               <b>big-screen TV.</b>
+            </color>
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineShowChallenges_post_ltt"  >
+         <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+            <b>Well done! You completed two marine show challenges and unlocked the </b>
+            <color r="255" g="255" b="0" a="255">
+               <b>big-screen TV.</b>
+            </color>
+            <b> To upgrade a show platform with a big-screen TV, click the show platform you want to upgrade, and then click the Big-Screen TV button on the show platform's Information panel.</b>            
+         </font>
+      </LOC_STRING>
+      <LOC_STRING _locID="itemunlock:newitembigscreentv"  >
+   		Congratulations! You unlocked the big-screen TV for your show platforms!
+   	</LOC_STRING>
+      <LOC_STRING _locID="itemunlock:newitemlivefoodtuna"  >
+   		Congratulations! You unlocked the tuna live food enrichment item!
+   	</LOC_STRING>   
+   
+</ZT2Strings>      

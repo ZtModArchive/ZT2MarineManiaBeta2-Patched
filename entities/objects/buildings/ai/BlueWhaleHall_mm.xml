@@ -1,0 +1,220 @@
+<BFTypedBinder binderType="BlueWhaleHall_mm">
+	<types>
+		<entity>
+			<building>
+				<BlueWhaleHall_mm />
+			</building>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="mist01" rottype="ignore" postype="use" attachnode="Link_Mist01" />
+				<parentObj parent="mainObj" child="mist02" rottype="ignore" postype="use" attachnode="Link_Mist02" />
+				<parentObj parent="mainObj" child="mist03" rottype="ignore" postype="use" attachnode="Link_Mist03" />
+				<parentObj parent="mainObj" child="mist04" rottype="ignore" postype="use" attachnode="Link_Mist04" />
+				<parentObj parent="mainObj" child="mist05" rottype="ignore" postype="use" attachnode="Link_Mist05" />
+				<parentObj parent="mainObj" child="mist05" rottype="ignore" postype="use" attachnode="SuperSpray25" />
+				<parentObj parent="mainObj" child="ShadowObj_01" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="biomedetail_01" rottype="ignore" postype="use" attachnode="biomedetail_01" />
+				<parentObj parent="mainObj" child="biomedetail_02" rottype="ignore" postype="use" attachnode="biomedetail_02" />
+				<parentObj parent="mainObj" child="biomedetail_03" rottype="ignore" postype="use" attachnode="biomedetail_03" />
+				<parentObj parent="mainObj" child="biomedetail_04" rottype="ignore" postype="use" attachnode="biomedetail_04" />
+				<parentObj parent="mainObj" child="biomedetail_05" rottype="ignore" postype="use" attachnode="biomedetail_05" />
+				<parentObj parent="mainObj" child="biomedetail_06" rottype="ignore" postype="use" attachnode="biomedetail_06" />
+				<parentObj parent="mainObj" child="biomedetail_07" rottype="ignore" postype="use" attachnode="biomedetail_07" />
+				<parentObj parent="mainObj" child="biomedetail_08" rottype="ignore" postype="use" attachnode="biomedetail_08" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\buildings\bluewhalehall_mm\bluewhalehall_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:BlueWhaleHall_mm" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="BlueWhaleHall_mm" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData autoFootprint="false" terrainFlatten="true" dockArrowStyle="standard" dockArrowSize="0.75" icon3Dscale="0.085" icon3Doffset="0 0 0.5" minimumHeadroom="7.5">
+			<cfootprint width="4" height="8" />
+			<dfootprint width="7" height="11" />
+			<attachObj>
+				<entity nodeName="Link_ABV_01" binderType="WhaleHall_collision_proxy" />
+				<entity nodeName="Link_ABV_02" binderType="WhaleHall_collision_proxy" />
+			</attachObj>
+			<soundEnv>
+				<stageVolume soundStage="whalehall" botLeftX="-4.0" botLeftY="-7.5" topRightX="4.0" topRightY="9.6" height="4.0" occludeCrowdSounds="1"/>
+				<fringeVolume soundStage="whalehall" botLeftX="-4.0" botLeftY="-27.0" topRightX="4.0" topRightY="-7.5" height="4.0" />
+				<fringeVolume soundStage="whalehall" botLeftX="-4.0" botLeftY="9.6" topRightX="4.0" topRightY="29.0" height="4.0" />
+			</soundEnv>
+		</ZTPlacementData>
+		<BFGCollisionData isPassable="true" />
+		<BFAIEntityDataShared s_Product="Marine" s_ProfileLock="whalehalllock" s_uisort="tc" s_Zoopedia="zoopedia:zoopedia_bluewhalehall_mm:entry" f_FameReq="60" />
+		<ZTTourData>
+			<theme_marine value="5" />
+			<cool value="8"/>
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFBinder repopulateMethod="byType">
+			<instance>
+				<ZTPlaceEntityComponent />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities\objects\buildings\bluewhalehall_mm\BlueWhaleHall.nif" switch="0 15 25 35" initialTextKey="{SuperSpray26 Emitter} snd &quot;whalehall_spray&quot; looping"/>
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFForceUpdateWhenVisibleComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Guest1 parentNode="Scene Root" x="-1.0" y="-4.5" z=".1" yaw="90" />
+						<Dock_Guest2 parentNode="Scene Root" x="1.0" y="-2.0" z=".1" yaw="-90" />
+						<Dock_Guest3 parentNode="Scene Root" x="-1.0" y="0.0" z=".1" yaw="90" />
+						<Dock_Guest4 parentNode="Scene Root" x="1.0" y="2.0" z=".1" yaw="-90" />
+						<Dock_Guest5 parentNode="Scene Root" x="-1.0" y="4.0" z=".1" yaw="90" />
+						<Dock_Guest6 parentNode="Scene Root" x="1.0" y="5.5" z=".1" yaw="-90" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="ShadowObj_01">
+			<instance>
+				<BFPhysObj>
+					<BFStaticBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="ShadowNode_01" width="15" length="20" offwidth="1" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_01">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_02">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_03">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_04">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_05">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_06">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_07">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_08">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mist01">
+			<instance>
+				<BFPhysObj drawLast="true">
+					<BFSimpleLODComponent modelfile="entities/objects/fx/Mist.nif" scale="0.65" />
+					<BFForceUpdateWhenVisibleComponent />
+					<BFHasParticleComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mist02">
+			<instance>
+				<BFPhysObj drawLast="true">
+					<BFSimpleLODComponent modelfile="entities/objects/fx/Mist.nif" scale="0.65" />
+					<BFForceUpdateWhenVisibleComponent />
+					<BFHasParticleComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mist03">
+			<instance>
+				<BFPhysObj drawLast="true">
+					<BFSimpleLODComponent modelfile="entities/objects/fx/Mist.nif" scale="0.65" />
+					<BFForceUpdateWhenVisibleComponent />
+					<BFHasParticleComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mist04">
+			<instance>
+				<BFPhysObj drawLast="true">
+					<BFSimpleLODComponent modelfile="entities/objects/fx/Mist.nif" scale="0.65" />
+					<BFForceUpdateWhenVisibleComponent />
+					<BFHasParticleComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mist05">
+			<instance>
+				<BFPhysObj drawLast="true">
+					<BFSimpleLODComponent modelfile="entities/objects/fx/Mist.nif" scale="0.4" />
+					<BFForceUpdateWhenVisibleComponent />
+					<BFHasParticleComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Use_Kiosk">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk1" targetNode="Dock_Guest1" />
+						<BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk2" targetNode="Dock_Guest2" />
+						<BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk3" targetNode="Dock_Guest3" />
+						<BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk1" targetNode="Dock_Guest4" />
+						<BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk2" targetNode="Dock_Guest5" />
+						<BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk3" targetNode="Dock_Guest6" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="1200">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="upkeep" cost="100" period="monthly" type="debit" category="upkeep"/>
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="add_user" cost="1" type="addUser" category="user" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

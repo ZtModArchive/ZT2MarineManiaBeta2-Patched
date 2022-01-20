@@ -1,0 +1,94 @@
+<BFTypedBinder binderType="Hoop_WhalePilotShortFinned_mm">
+	<types>
+		<entity>
+			<prop>
+				<Hoop_WhalePilotShortFinned_mm />
+			</prop>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTDevComponent />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\props\Hoop_mm\Hoop_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:Hoop_WhalePilotShortFinned_mm" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Hoop_WhalePilotShortFinned_mm" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData moveable="true" randomRotate="false" gridSnap="true" autoFootprint="false" icon3Doffset="0 -0.05 0.25" dockArrowStyle="special" dockArrowSize="1.5" minimumHeadroom="3">
+			<cfootprint width="1" height="3" />
+			<dfootprint width="3" height="4" />
+		</ZTPlacementData>
+		<BFAIEntityDataShared s_uisort="fa" s_Zoopedia="zoopedia:zoopedia_hoop_mm:entry" f_FameReq="40" s_Product="Marine" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities\objects\props\Hoop_mm\Hoop_mm.bfm" scale="0.7" activeSequenceName="Idle" activeSequenceLoop="true" />
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" floatOnWater="true" waterOffset="0.0" />
+					<BFCollisionComponent grid="Bip01" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Node_Training x="1.5" y="4" yaw="-75" />
+						<Node_JumpHoop_Failure y="-3.8" z="-1.208" yaw="180" />
+						<Node_JumpHoop_Success y="-2" z="-1.25" pitch="60" yaw="180" />
+						<Node_JumpHoop_Critical y="-6.5" z="-1.208" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Training" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot targetNode="Node_Training" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpHoop_Failure">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockHoop" useBehSet="JumpHoop_Failure" targetNode="Node_JumpHoop_Failure" exclusiveID="Hoop1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpHoop_Success">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockHoop" useBehSet="JumpHoop_Success" targetNode="Node_JumpHoop_Success" exclusiveID="Hoop1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpHoop_Critical">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockHoop" useBehSet="JumpHoop_Critical" targetNode="Node_JumpHoop_Critical" exclusiveID="Hoop1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="320">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

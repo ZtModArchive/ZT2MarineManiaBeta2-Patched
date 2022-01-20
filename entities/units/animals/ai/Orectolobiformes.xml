@@ -1,0 +1,19 @@
+<BFTypedBinder binderType="Orectolobiformes" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Chondrichthyes>
+						<Orectolobiformes />
+					</Chondrichthyes>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTEntityCrater crateType="AnimalCrate_mm" crateParticleDef="EmoteReleaseToWild_mm" />
+	</shared>
+</BFTypedBinder>

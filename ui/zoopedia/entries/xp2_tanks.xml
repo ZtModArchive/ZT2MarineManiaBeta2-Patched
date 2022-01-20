@@ -1,0 +1,12 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry entry="zoopedia_tanks">
+         <BFHelpEntry entry="zoopedia_tankwall" order="zoopedia_tankwallacrylic"/>
+         <BFHelpEntry entry="zoopedia_tankwallopaque" order="zoopedia_tankwallopaque"/>
+         <BFHelpEntry entry="zoopedia_marinetankwall" order="zoopedia_tankwallmarinethemed"/>
+         <BFHelpEntry entry="zoopedia_showtankwall" order="zoopedia_tankwallshow"/>         
+         <BFHelpEntry entry="zoopedia_tankentrance"/>
+         <BFHelpEntry entry="zoopedia_waterfilter"/>           
+      </BFHelpEntry>
+   </BFHelpEntry>    
+</entries>

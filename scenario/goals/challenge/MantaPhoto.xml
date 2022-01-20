@@ -1,0 +1,19 @@
+<BFScenarioGroup name="mantaphotorules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="mantaphotophoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHMantaPhotoShort" overview="PhotoChallengetext:PHMantaPhoto" />
+				<success locid="PhotoChallengetext:PHMantaPhotoSuccessShort" overview="PhotoChallengetext:PHMantaPhotoSuccess" />
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/instant/MantaPhoto.lua" entry="evalmantaphoto" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/MantaPhoto.lua" entry="completemantaphoto" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/MantaPhoto.lua" entry="failmantaphoto" />
+			</failure>	
+		</BFScenarioRule>		
+	 </children>
+</BFScenarioGroup>

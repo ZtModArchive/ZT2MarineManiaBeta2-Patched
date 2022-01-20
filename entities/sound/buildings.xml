@@ -1,0 +1,122 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="photokiosk_use">
+         <snd name="sound/photokiosk_use.wav" volume="1" mindist="4" maxdist="40"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="fountain">
+         <snd name="entities/objects/scenery/sound/fountain_extra.wav" volume=".5" mindist="4" maxdist="40" looping="1"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="drinking_fountain">
+         <snd name="sound/DrinkingFountain.wav" volume=".3" mindist="1" maxdist="8" looping="1"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="waterfall">
+         <snd name="entities/objects/scenery/sound/fountain_tiger.wav" volume="1.0" mindist="3" maxdist="50" looping="1"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="rockmusic">
+         <snd name="entities/objects/scenery/musicalrock_df/sound/rockmusic.wav" volume="1" mindist="6" maxdist="20" looping="1" softenGain=".4"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="rockmusic_1">
+         <snd name="entities/objects/scenery/musicalrock_jt/sound/rockmusic_jt.wav" volume="1" mindist="6" maxdist="20" looping="1" softenGain=".4"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="rockmusic_2">
+         <snd name="entities/objects/scenery/musicalrock_st/sound/rockmusic_st.wav" volume="1" mindist="6" maxdist="20" looping="1" softenGain=".4"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="rockmusic_3">
+         <snd name="entities/objects/scenery/musicalrock_ac/sound/rockmusic_ac.wav" volume="1" mindist="6" maxdist="20" looping="1" softenGain=".4"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="rockmusic_4_end">
+         <snd name="entities/objects/scenery/musicalrock_end/sound/rockmusic_end.mp3" volume="1" mindist="6" maxdist="25" looping="1" softenGain=".4"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="rockmusic_5_tundra">
+         <snd name="entities/objects/scenery/MusicalRock_tt/sound/rockmusic_tundra.mp3" volume="1" mindist="6" maxdist="25" looping="1" softenGain=".4"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="frontgate_end">
+         <snd name="entities/objects/buildings/frontgate_end/sound/ESTheme_frontgate.mp3" volume="1" mindist="15" maxdist="40" looping="1" softenGain=".4"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Geyser_rumble">
+         <snd name="entities/objects/Scenery/Geyser/sound/Geyser_rumble.wav" volume="0" mindist="4" maxdist="50" looping="1"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Geyser_burst">
+         <snd name="entities/objects/Scenery/Geyser/sound/Geyser_burst.wav" volume="1" mindist="10" maxdist="60"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dormant_Volcano_sparks">
+         <snd name="entities/objects/Scenery/Dormant_Volcano/sound/DormantVolcano_sparks.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dormant_Volcano_steam">
+         <snd name="entities/objects/Scenery/Dormant_Volcano/sound/DormantVolcano_steam.wav" volume="1" mindist="6" maxdist="60"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dormant_Volcano_gurgle">
+         <snd name="entities/objects/Scenery/Dormant_Volcano/sound/DormantVolcano_gurgle.wav" volume="1" mindist="8" maxdist="60"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RockPool_waterflow">
+         <snd name="entities/objects/Scenery/rock_pool/sound/RockPool_waterflow.wav" volume=".6" mindist="4" maxdist="50" looping="1"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="TouchPool_waterflow">
+         <snd name="entities/objects/buildings/touchpool_mm/sound/TouchPool_waterflow.wav" volume=".4" mindist="4" maxdist="30" looping="1"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SnowEmitter_spray">
+         <snd name="entities/objects/Scenery/SnowEmitter_df/sound/SnowEmitter_spray.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="FogEmitter_mist">
+         <snd name="entities/objects/Scenery/FogEmitter_df/sound/FogEmitter_mist.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="discokiosk_loop">
+         <snd name="entities/objects/buildings/DiscoveryKiosk_df/sound/DiscoKiosk_loop.wav" volume="1" mindist="4" maxdist="25" softenGain=".4"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="skytower_up">
+         <snd name="entities/objects/buildings/skytower_df/sound/skytower_up.wav" volume="1" mindist="4" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="skytower_down">
+         <snd name="entities/objects/buildings/skytower_df/sound/skytower_down.wav" volume="1" mindist="4" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Batcave_batsfly">
+         <snd name="entities/objects/Scenery/batcave/sound/Batcave_batsfly.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

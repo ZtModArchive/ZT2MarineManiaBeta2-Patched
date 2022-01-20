@@ -1,0 +1,1320 @@
+<BehaviorSets>
+<!--Wander behavior sets for randomized wandering-->
+   <WanderSurf>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Surface"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="20"/>
+               <WanderSurf_Med weight="20"/>
+               <WanderSurf_Slow weight="20"/>
+               <WanderSurf_Glide weight="40"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSurf_Glide>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Glide>
+   <WanderSub>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="20"/>
+               <WanderSub_Med weight="20"/>
+               <WanderSub_Slow weight="20"/>
+               <WanderSub_Glide weight="40"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Slow>
+   <WanderSub_Glide>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Glide>
+   
+   
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Unhappy>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultSwim>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="50"/>
+               <WanderSub weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultSwim>
+   <DefaultSwimSurface>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Swim_Ahead"/>
+      </behaviors>
+   </DefaultSwimSurface>
+   <DefaultSwimSub>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="SwimSub_Ahead"/>
+      </behaviors>
+   </DefaultSwimSub>
+   <DefaultEatSwim>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Graze"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="EatSurface_Ahead"/>
+      </behaviors>
+   </DefaultEatSwim>
+   <DefaultEatSwimSub>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Graze"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="EatSwimSub_Ahead"/>
+      </behaviors>
+   </DefaultEatSwimSub>
+   <DefaultLie>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="WanderSub_Slow"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultRest>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="WanderSub_Glide"/>
+      </behaviors>
+   </DefaultRest>
+   <DefaultHappy>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="50"/>
+               <WanderSub weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultHappy>
+   <DefaultUnhappy>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefensivePosture weight="50"/>
+               <FinSlap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="DefaultSwimSurface"/>
+               <SwimSub behSet="DefaultSwimSub"/>
+               <EatSwim behSet="DefaultEatSwim"/>
+               <EatSwimSub behSet="DefaultEatSwimSub"/>
+               <default behSet="DefaultSwimSub"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>
+   <FailureSet>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="SurfaceFailure"/>
+               <underwater behSet="SubFailure"/>
+               <default behSet="SubFailure"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <SurfaceFailure>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+            <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </SurfaceFailure>
+   <SubFailure>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+            <BFBehPlaySet behSet="FinSlap"/>
+      </behaviors>
+   </SubFailure>
+   <Think>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Swim behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <Investigate>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="3"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Dying>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="WanderSurf_Slow"/>
+               <underwater behSet="WanderSub_Slow"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Dying>
+   <Die_Fight>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Chum_mm" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Beached>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Beached>   
+   <Eat>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="EatSurface"/>
+               <SwimSub behSet="EatSub"/>
+               <default behSet="EatSub"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Eat>
+   <EatSurface>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <EatSurface_Fast weight="20"/>
+               <EatSurface_Med weight="20"/>
+               <EatSurface_Slow weight="20"/>
+               <EatSurface_Glide weight="40"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </EatSurface>
+   <EatSurface_Slow>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatslow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSurface_Slow>
+   <EatSurface_Med>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatmedium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSurface_Med>
+   <EatSurface_Fast>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatfast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSurface_Fast>
+   <EatSurface_Glide>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatglide"/>
+      </behaviors>
+   </EatSurface_Glide>
+   <EatSub>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <EatSub_Fast weight="25"/>
+               <EatSub_Med weight="25"/>
+               <EatSub_Slow weight="25"/>
+               <EatSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </EatSub>
+   <EatSub_Slow>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatslow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSub_Slow>
+   <EatSub_Med>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatmedium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSub_Med>
+   <EatSub_Fast>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatfast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSub_Fast>
+   <EatSub_Glide>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="eatglide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </EatSub_Glide>
+   <Breach>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BreachLandHead weight="45"/>
+               <BreachLandTail weight="45"/>
+               <BreachSomersault weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Breach>
+   <BreachLandHead>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_BreachLandHead"/>
+      </behaviors>
+   </BreachLandHead>
+   <BreachLandTail>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_BreachLandTail"/>
+      </behaviors>
+   </BreachLandTail>
+   <BreachSomersault>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_BreachSomersault"/>
+      </behaviors>
+   </BreachSomersault>
+   <Bite>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="Bite_Surface"/>
+               <SwimSub behSet="Bite_Submerge"/>
+               <default behSet="Bite_Surface"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Bite>
+   <Bite_Surface>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Bite"/>
+      </behaviors>
+   </Bite_Surface>
+   <Bite_Submerge>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Bite"/>
+      </behaviors>
+   </Bite_Submerge>
+   <DefensivePosture>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Defensive_Idle"/>
+         <BFBehAnimate targetAnim="Defensive_Idle"/>
+      </behaviors>
+   </DefensivePosture>
+   <FinSlap>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Defensive_Slap"/>
+      </behaviors>
+   </FinSlap>
+   <Rendezvous>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit/>
+      </behaviors>
+   </Rendezvous>
+   <ReproductionSwimLead>
+      <subjects>
+         <RayManta_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </ReproductionSwimLead>
+   <ReproductionSwimFollow>
+      <subjects>
+         <RayManta_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </ReproductionSwimFollow>
+   <Birth>
+      <subjects>
+         <RayManta_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Birth1 weight="15"/>
+               <Birth2 weight="85"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth>
+   <Birth1>
+      <subjects>
+         <RayManta_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth1>
+   <Birth2>
+      <subjects>
+         <RayManta_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="2">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth2>
+   <SpawnF>
+      <subjects>
+         <RayManta_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="RayManta_Young_F" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <RayManta_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="RayManta_Young_M" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM>
+   <Surface_Submerge>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="3" maxDepth="10"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="0" maxDepth="0"/>
+      </behaviors>
+   </Surface>
+   <DockAttackGuest>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Guest" targetNode="p_TalkOffset" locoSpeed="fast"/>
+      </behaviors>
+   </DockAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest>
+   <EnterBuoyLure>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetAnim="EatSwimSub_Ahead"/>
+      </behaviors>
+   </EnterBuoyLure>
+   <UseBuoyLure>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatSwimSub_Ahead"/>
+      </behaviors>
+   </UseBuoyLure>
+   <ExitBuoyLure>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatSwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitBuoyLure>
+   <EnterArtificialReef>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetAnim="EatSwimSub_Ahead"/>
+      </behaviors>
+   </EnterArtificialReef>
+   <UseArtificialReef>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatSwimSub_Ahead"/>
+      </behaviors>
+   </UseArtificialReef>
+   <ExitArtificialReef>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatSwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitArtificialReef>
+   <EnterFoodBox>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetAnim="EatSwimSub_Ahead"/>
+      </behaviors>
+   </EnterFoodBox>
+   <UseFoodBox>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatSwimSub_Ahead"/>
+      </behaviors>
+   </UseFoodBox>
+   <ExitFoodBox>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatSwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitFoodBox>
+   <Poop>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="4" maxPlayTime="8" avoidLand="true" locoSpeed="fast" minDepth="3" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="4" maxPlayTime="8" avoidLand="true" locoSpeed="fast" minDepth="3" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Poop_Sick>
+   <EnterBubbleEmitter>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterBubbleEmitter>
+   <UseBubbleEmitter>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180" interruptFlag="true"/>
+      </behaviors>
+   </UseBubbleEmitter>
+   <ExitBubbleEmitter>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180"/>
+      </behaviors>
+   </ExitBubbleEmitter>   
+   <Roar>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="SurfaceFailure"/>
+               <underwater behSet="SubFailure"/>
+               <default behSet="SubFailure"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Roar> 
+   <SwipeMed>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="FinSlap"/>
+               <underwater behSet="Bite"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </SwipeMed>
+   <HitMediumEqual>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <HitMed>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </HitMed>
+   <HitMed_Ground>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <OnLand_Idle weight="70"/>
+               <OnLand_SquirmLeft weight="10"/>
+               <OnLand_SquirmRight weight="10"/>
+               <OnLand_SquirmAhead weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Ground> 
+   <HitMed_Water>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_TurnLeft90 weight="40"/>
+               <Swim_TurnRight90 weight="40"/>
+               <Swim_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Water> 
+   <HitMed_Underwater>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnLeft90 weight="40"/>
+               <SwimSub_TurnRight90 weight="40"/>
+               <SwimSub_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Underwater> 
+   <HitMedDie>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie> 
+   <BiteMed>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="FinSlap"/>
+               <underwater behSet="Bite"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BiteMed>
+   <BitMediumEqual>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <BitMed>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie> 
+   <WaitFight>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="Defensive_Slap"/>
+      </behaviors>
+   </WaitFight> 
+   <DockFight>
+      <subjects>
+         <RayManta_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="Defensive_Slap"/>
+      </behaviors>
+   </DockFight> 
+   <Die_Ground>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Idle" />
+      </behaviors>
+   </Die_Ground> 
+   <Die_Water>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Water> 
+   <Die_Underwater>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Underwater> 
+   <DockAttacked>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <LoopIdle>
+      <subjects>
+         <RayManta/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Swim behSet="WanderSurf_Slow"/>
+               <SwimSub behSet="WanderSurf_Slow"/>
+               <default behSet="WanderSurf_Slow"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+</BehaviorSets>

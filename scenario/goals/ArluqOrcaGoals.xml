@@ -1,0 +1,157 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="false" sticky="true" optional="false">
+	<info locid="MarineAnimals:OrcaIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup name="OverallGoals" state="0" chain="true" allsuccess="true" sticky="true">
+			<info type="primary">
+				<neutral locid="MarineAnimals:OrcaOverallGoal"/>
+				<success locid="MarineAnimals:TakeThePlungeSuccessOverview" />
+				<failure locid="MarineAnimals:OrcaDeathFailure"/>
+			</info>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="failOverall" />
+			</failure>				
+			<children>
+				<BFScenarioRule name="Donations" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:OrcaDonationsGoal" overview="MarineAnimals:OrcaOverview"/>
+						<success locid="MarineAnimals:OrcaDonationsGoalDone" overview="MarineAnimals:OrcaOverview"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="evalDonations" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="completeDonations" />
+					</success>
+				</BFScenarioRule>				
+				<BFScenarioRule name="MeetBasicNeeds" hidden="1" state="2" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:OrcaBasicNeedsGoal" overview="MarineAnimals:OrcaBasicNeeds"/>
+						<success locid="MarineAnimals:OrcaBasicNeedsGoalDone" overview="MarineAnimals:OrcaBasicNeeds" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="evalBasicNeeds" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="completeBasicNeeds" />
+					</success>
+				</BFScenarioRule>	
+				<BFScenarioGroup name="3EnrichmentItems" hidden="1" state="2" chain="false" allsuccess="true" sticky="true">
+					<info type="primary">
+						<neutral locid="MarineAnimals:OrcaEnrichmentGoal" overview="MarineAnimals:OrcaEnrichment"/>
+						<success locid="MarineAnimals:OrcaEnrichmentGoalDone" />
+					</info>	
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="complete3Enrichment" />
+					</success>					
+					<children>
+						<BFScenarioRule name="SealPrey" state="0" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineAnimals:OrcaEnrichmentDummyGoal" />
+								<success locid="MarineAnimals:OrcaEnrichmentDummyGoalDone" />
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="evalSealPrey" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="completeSealPrey" />
+							</success>
+						</BFScenarioRule>	
+						<BFScenarioRule name="LargeBall" state="0" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineAnimals:OrcaEnrichmentBallGoal" />
+								<success locid="MarineAnimals:OrcaEnrichmentBallGoalDone" />
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="evalLargeBall" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="completeLargeBall" />
+							</success>
+						</BFScenarioRule>	
+						<BFScenarioRule name="BubbleEmitter" state="0" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineAnimals:OrcaEnrichmentBubbleGoal"/>
+								<success locid="MarineAnimals:OrcaEnrichmentBubbleGoalDone" />
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="evalBubbleEmitter" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="completeBubbleEmitter" />
+							</success>
+						</BFScenarioRule>
+						<BFScenarioRule name="Stimulation" state="0" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineAnimals:OrcaEnrichmentStimulationGoal"/>
+								<success locid="MarineAnimals:OrcaEnrichmentStimulationGoalDone" />
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="evalStimulation" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="completeStimulation" />
+							</success>
+						</BFScenarioRule>						
+					</children>
+				</BFScenarioGroup>							
+				<BFScenarioGroup name="Branch" hidden="1" state="2" chain="false" allsuccess="true" sticky="true">
+					<children>		
+						<BFScenarioRule name="HappyArluq" hidden="0" state="0" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineAnimals:OrcaCareGoal" overview="MarineAnimals:OrcaCare"/>
+								<success locid="MarineAnimals:OrcaCareGoalDone" />
+							</info>						
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="evalHappyArluq" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="completeHappyArluq" />
+							</success>
+						</BFScenarioRule>
+						<BFScenarioRule name="ReleaseToWildDonations" hidden="1" state="2" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineAnimals:OrcaReleaseDonationsGoal" />
+								<success locid="MarineAnimals:OrcaReleaseDonationsGoalDone"/>
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="evalReleaseToWildDonations" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="completeReleaseToWildDonations" />
+							</success>
+						</BFScenarioRule>	
+						<BFScenarioRule name="ReleaseToWild" hidden="1" state="2" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineAnimals:OrcaReleaseToWildGoal" overview="MarineAnimals:OrcaReleaseToWild" />
+								<success locid="MarineAnimals:OrcaReleaseToWildGoalDone" overview="MarineAnimals:OrcaReleaseToWildSuccess"/>
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="evalReleaseToWild" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="completeReleaseToWild" />
+							</success>
+						</BFScenarioRule>						
+						<BFScenarioRule name="BreedArluq" hidden="1" state="2" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineAnimals:OrcaBreedGoal" overview="MarineAnimals:OrcaBreed"/>
+								<success locid="MarineAnimals:OrcaBreedGoalDone" overview="MarineAnimals:OrcaBreedSuccess"/>
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="evalBreedArluq" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/ArluqOrca.lua" entry="completeBreedArluq" />
+							</success>	
+						</BFScenarioRule>								
+					</children>
+				</BFScenarioGroup>							
+			</children>
+		</BFScenarioGroup>		
+	</children>
+</ZTScenarioMgr>

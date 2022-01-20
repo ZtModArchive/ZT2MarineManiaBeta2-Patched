@@ -1,0 +1,33 @@
+<BFScenarioGroup name="stressmanagementrules" state="0" chain="false" allsuccess="false" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="stressmanagement" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHStressManagementShort" overview="Challengetext:CHStressManagement" />
+				<success locid="Challengetext:CHStressManagementSuccessShort" overview="Challengetext:CHStressManagementSuccess" />
+				<failure locid="Challengetext:CHStressManagementFailureShort" overview="Challengetext:CHStressManagementFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/StressManagement.lua" entry="evalStressManagement" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/StressManagement.lua" entry="completeStressManagement" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/StressManagement.lua" entry="failStressManagement" />
+			</failure>			
+		</BFScenarioRule>
+		
+		<BFScenarioRule name="critical1" hidden = "1" state="0" sticky="true">
+			<info type="primary" locid="Challengetext:CHStressManagementOneCritical" />
+		</BFScenarioRule>
+		<BFScenarioRule name="critical2" hidden = "1" state="0" sticky="true">
+			<info type="primary" locid="Challengetext:CHStressManagementTwoCritical" />
+		</BFScenarioRule>
+		<BFScenarioRule name="critical3" hidden = "1" state="0" sticky="true">
+			<info type="primary" locid="Challengetext:CHStressManagementThreeCritical" />
+		</BFScenarioRule>
+		<BFScenarioRule name="critical4" hidden = "1" state="0" sticky="true">
+			<info type="primary" locid="Challengetext:CHStressManagementFourCritical" />
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

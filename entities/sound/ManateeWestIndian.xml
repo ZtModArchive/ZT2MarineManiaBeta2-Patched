@@ -1,0 +1,142 @@
+<soundtags>
+        <!--adult sounds-->
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_OnLand_2Swim">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_OnLand_2Swim.wav" volume=".8" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_OnLand_Idle">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_OnLand_Idle.wav" volume=".8" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_SwimSub_Eat">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_SwimSub_Eat.wav" volume=".8" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_SwimSub_Push">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_SwimSub_Push.wav" volume=".8" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_SwimSub_Rub">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_SwimSub_Rub.wav" volume=".8" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_SwimSub_RubFloor">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_SwimSub_RubFloor.wav" volume=".8" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_SwimSub_Swallow">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_SwimSub_Swallow.wav" volume=".8" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_TreadWater_GuestAttack">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_TreadWater_GuestAttack.wav" volume=".8" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_TreadWaterSub_Eat">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_TreadWaterSub_Eat.wav" volume=".6" mindist="4" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>        
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_TreadWaterSub_Swallow">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_TreadWaterSub_Swallow.wav" volume=".8" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>             
+
+        <!--young sounds-->
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_OnLand_2Swim">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_OnLand_2Swim.wav" volume=".8" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_OnLand_Idle">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_OnLand_Idle.wav" volume=".8" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_SwimSub_Eat">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_SwimSub_Eat.wav" volume=".8" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_SwimSub_Push">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_SwimSub_Push.wav" volume=".8" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_SwimSub_Rub">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_SwimSub_Rub.wav" volume=".8" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_SwimSub_RubFloor">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_SwimSub_RubFloor.wav" volume=".8" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_SwimSub_Swallow">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_SwimSub_Swallow.wav" volume=".8" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_TreadWater_GuestAttack">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_TreadWater_GuestAttack.wav" volume=".8" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_TreadWaterSub_Eat">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_TreadWaterSub_Eat.wav" volume=".4" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>        
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_TreadWaterSub_Swallow">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_TreadWaterSub_Swallow.wav" volume=".8" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>                
+    
+    
+    <!--UNDERWATER TAGS-->
+    
+    <!--ADULT-->
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_TreadWater_GuestAttack_uw">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_TreadWater_GuestAttack.wav" volume=".7" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_TreadWaterSub_Eat_uw">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_TreadWaterSub_Eat.wav" volume=".7" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>        
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Adult_TreadWaterSub_Swallow_uw">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Adult_F_TreadWaterSub_Swallow.wav" volume=".7"  mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>       
+   
+     <!--YOUNG-->     
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_TreadWater_GuestAttack_uw">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_TreadWater_GuestAttack.wav" volume=".7"  mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_TreadWaterSub_Eat_uw">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_TreadWaterSub_Eat.wav" volume=".7" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>        
+        <BFSoundtag>
+                <BF3DSndFactory name="ManateeWestIndian_Young_TreadWaterSub_Swallow_uw">
+                <snd name="entities/units/animals/ManateeWestIndian/sound/ManateeWestIndian_Young_F_TreadWaterSub_Swallow.wav" volume=".7" mindist="6" maxdist="30" layer = "underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>      
+</soundtags>

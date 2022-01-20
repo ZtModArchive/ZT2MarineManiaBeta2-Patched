@@ -1,0 +1,33 @@
+<BFTypedBinder binderType="Beluga_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Monodontidae>
+                        <Beluga>
+                           <Beluga_Young>
+                              <Beluga_Young_F/>
+                           </Beluga_Young>
+                        </Beluga>
+                     </Monodontidae>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Beluga_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+   <binder/>
+</BFTypedBinder>

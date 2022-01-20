@@ -1,0 +1,5 @@
+<BFPhysObj>
+   <BFTerrainDecalComponent imageName="ui/cursor_texture/raisetankfloor.dds" alphaBlend="true" radius="10.0f">
+      <lighting emissiveColor="255 255 255" specularColor="255 255 255" diffuseColor="255 255 255" ambientColor="255 255 255"/>
+   </BFTerrainDecalComponent>
+</BFPhysObj>

@@ -1,0 +1,98 @@
+<BFTypedBinder binderType="PileOfRocks">
+   <types>
+      <entity>
+         <prop>
+	         <PileOfRocks/>
+         </prop>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+   	<ZTDevComponent/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\props\PileOfRocks\PileOfRocks_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:PileOfRocks"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="PileOfRocks"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Zoopedia="zoopedia:zoopedia_pileofrocks:entry" s_Product="Marine" s_SpecialPropPlacement="underwater"/>
+      <ZTPlacementData icon3Doffset="0 0 0.49" icon3Dscale="1.13" randomRotate="false" gridSnap="true" terrainFlatten="false" minimumDepth="3"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/props/PileOfRocks/PileOfRocks" switch="0 30 60" />
+               <BFGroundFitComponent heightOffset="0.0" waterOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars>
+               <virtualNodes>
+                  <Node_Training x="1.5" y="1" z="2" yaw="-70" />
+                  <Node_PileOfRocks x="0.75" y="0.75" z="0.75" yaw="45" />
+               </virtualNodes>
+            </BFSharedPhysVars>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Training" repopulateMethod="byName">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTraining_Sub" targetNode="Node_Training" exclusiveID="PileOfRocks1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Training_Teleport" repopulateMethod="byName">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTraining_Teleport" targetNode="Node_Training" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="PileOfRocks_Failure">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockPileOfRocks_Failure" useBehSet="PileOfRocks_Failure" targetNode="Node_PileOfRocks" exclusiveID="PileOfRocks1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="PileOfRocks_Success">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockPileOfRocks_Success" useBehSet="PileOfRocks_Success" targetNode="Node_PileOfRocks" exclusiveID="PileOfRocks1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="PileOfRocks_Critical">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockPileOfRocks_Critical" useBehSet="PileOfRocks_Critical" targetNode="Node_PileOfRocks" exclusiveID="PileOfRocks1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="400">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="25" period="monthly" type="debit" category="upkeep"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

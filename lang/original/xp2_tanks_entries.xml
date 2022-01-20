@@ -1,0 +1,132 @@
+<ZT2Strings>
+
+   <zoopedia_tanks>
+      <entry>Tank Building</entry>
+      <text>
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <p/>
+Zoo Tycoon 2: Marine Mania features exhibit tanks you can build to house your marine animals.
+                  <p/>
+To view information about a tank item, click the name of the item in the list on the left.  
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_tanks>
+
+ <zoopedia_tankwall>
+  <entry>Acrylic Tank Wall</entry>
+  <text>
+   <cell pady="0" width="1000"/>
+   <p/>
+   <cell width="260"/>
+   <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+    <cell width="600" padx="20" pady="20">
+     <color r="255" g="255" b="255">
+      <img src="entities\objects\fences\BasicTank\basictank_transparent_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+      <p/>
+The acrylic tank wall is made with a transparent synthetic fiber. Use it to build tanks that allow guests view your marine animals.
+     </color>
+    </cell>
+   </cell>
+  </text>
+ </zoopedia_tankwall>
+ 
+  <zoopedia_tankwallopaque>
+  <entry>Opaque Tank Wall</entry>
+  <text>
+   <cell pady="0" width="1000"/>
+   <p/>
+   <cell width="260"/>
+   <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+    <cell width="600" padx="20" pady="20">
+     <color r="255" g="255" b="255">
+      <img src="entities\objects\fences\BasicTank\basictank_opaque_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+      <p/>
+The opaque tank wall is made with sturdy concrete panels that guests cannot see through. Combine it with the acrylic tank wall to create a tank that provides privacy for your marine animals.
+     </color>
+    </cell>
+   </cell>
+  </text>
+ </zoopedia_tankwallopaque>
+ 
+ <zoopedia_marinetankwall>
+  <entry>Marine Theme Tank Wall</entry>
+  <text>
+   <cell pady="0" width="1000"/>
+   <p/>
+   <cell width="260"/>
+   <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+    <cell width="600" padx="20" pady="20">
+     <color r="255" g="255" b="255">
+      <img src="entities\objects\fences\ThemedTank_mm\themedtank_mm_opaque_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+      <img src="entities\objects\fences\ThemedTank_mm\themedtank_mm_transparent_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+      <p/>
+Tank walls with a marine theme add a fun touch to marine animal exhibits. They come in transparent and opaque varieties. Win the Show Tycoon Level 3 Award to unlock tank walls with a marine theme.    
+     </color>
+    </cell>
+   </cell>
+  </text>  
+ </zoopedia_marinetankwall>
+
+ <zoopedia_showtankwall>
+  <entry>Show Tank Wall</entry>
+  <text>
+   <cell pady="0" width="1000"/>
+   <p/>
+   <cell width="260"/>
+   <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+    <cell width="600" padx="20" pady="20">
+     <color r="255" g="255" b="255">
+      <img src="entities\objects\fences\ThemedTank_mm\themedtank_mm_opaque_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+      <img src="entities\objects\fences\ThemedTank_mm\themedtank_mm_transparent_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+      <p/>
+Use the show tank wall to make your show tanks more appealing. 
+     </color>
+    </cell>
+   </cell>
+  </text>  
+ </zoopedia_showtankwall>
+ 
+ <zoopedia_tankentrance>
+  <entry>Tank Entrance</entry>
+  <text>
+   <cell pady="0" width="1000"/>
+   <p/>
+   <cell width="260"/>
+   <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+    <cell width="600" padx="20" pady="20">
+     <color r="255" g="255" b="255">
+      <img src="entities\objects\fences\Tank_Gate\Tank_Gate_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+      <p/>
+Zookeepers cannot enter and care for the marine animals in a tank without a tank entrance. Trainers cannot train marine animals in a tank without a tank entrance platform. Note, tank entrances can only be placed on tank walls.
+     </color>
+    </cell>
+   </cell>
+  </text>
+ </zoopedia_tankentrance>
+ 
+ <zoopedia_waterfilter>
+  <entry>Water Filter</entry>
+  <text>
+   <cell pady="0" width="1000"/>
+   <p/>
+   <cell width="260"/>
+   <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+    <cell width="600" padx="20" pady="20">
+     <color r="255" g="255" b="255">
+      <img src="entities\objects\misc\Water_Filter\Water_Filter_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+      <p/>
+Water filters remove dirt and waste from the water in exhibit and show tanks. Clean tank water helps keep the animals inside a tank healthy and happy. Water filters need to be checked regularly by maintenance workers. You can also repair water filters yourself in Zoo Guest Mode. 
+     </color>
+    </cell>
+   </cell>
+  </text>
+ </zoopedia_waterfilter>
+ 
+</ZT2Strings>

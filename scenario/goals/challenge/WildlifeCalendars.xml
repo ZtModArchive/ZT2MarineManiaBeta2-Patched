@@ -1,0 +1,19 @@
+<BFScenarioGroup name="wildlifecalendarsrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="wildlifecalendarsphoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHWildlifeCalendarsShort" overview="PhotoChallengetext:PHWildlifeCalendars" />
+				<success locid="PhotoChallengetext:PHWildlifeCalendarsSuccessShort" overview="PhotoChallengetext:PHWildlifeCalendarsSuccess" />
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/WildlifeCalendars.lua" entry="evalwildlifecalendars" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/WildlifeCalendars.lua" entry="completewildlifecalendars" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/WildlifeCalendars.lua" entry="failwildlifecalendars" />
+			</failure>	
+		</BFScenarioRule>		
+	 </children>
+</BFScenarioGroup>

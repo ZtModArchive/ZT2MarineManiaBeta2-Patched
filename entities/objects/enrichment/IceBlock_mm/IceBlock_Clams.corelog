@@ -1,0 +1,44 @@
+************************************************************
+Date: 02/28/2006
+Time: 16:08
+************************************************************
+Compiled object 1: footprint
+Compiled object 3: Dock_01
+Compiled object 4: Dock_02
+Compiled object 5: Dock_03
+Compiled object 6: Dock_04
+Compiled object 7: LODGroup01
+Compiled object 8: IceBlock_Default_LOD0
+Compiled object 9: med
+Compiled object 10: med01
+Compiled object 11: Iceblock_Clams_LOD0
+Compiled object 12: IceBlock_Default_LOD1
+Compiled object 13: med02
+Compiled object 14: med03
+Compiled object 15: Iceblock_Clams_LOD1
+Compiled object 16: IceBlock_Default_LOD2
+Compiled object 17: lo01
+Compiled object 18: lo
+Compiled object 19: Iceblock_Clams_LOD2
+Compiled object 20: Node_Child
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 844 
+Vertex Count: 819 
+Vertex Memory: 25 kb
+Material Count: 3 
+Texture Count: 3 
+Texture Memory: 127 kb
+Num LODs: 3 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 844 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 787ms
+XML File Translation: total time = 550ms
+Data Output: total time = 4ms
+************************************************************

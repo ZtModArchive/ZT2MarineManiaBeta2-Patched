@@ -1,0 +1,723 @@
+<soundtags>
+   <!--SHARED MC-->
+   <BFSoundtag>
+      <BF3DSndFactory name="gesturetrace_whistle_single">
+         <snd name="UI/sound/gesturetrace_whistle_single.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="gesturetrace_whistle_double">
+         <snd name="UI/sound/gesturetrace_whistle_double.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--MALE MC-->
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_1_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd1">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_1_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_1_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_1_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_2_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_2_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_2_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_2_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_3_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_3_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_3_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_WaveToCrowd11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_WaveToCrowd_3_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_1_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_1_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_1_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_2_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_2_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_2_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_2_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_3_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_3_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_3_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_4_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_4_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause13">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_4_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_CallForApplause14">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_4_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_M_Point">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_3_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_3_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_3_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_Point12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_3_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_3_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_3_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_3_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_3_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_GiveTreat13">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_GiveTreat_3_5.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_3_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_3_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_3_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ScratchChinHigh12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_3_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_M_ThrowUnderhand">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ThrowUnderhand_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ThrowUnderhand2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ThrowUnderhand_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ThrowUnderhand3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ThrowUnderhand_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ThrowUnderhand4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ThrowUnderhand_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ThrowUnderhand5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ThrowUnderhand_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ThrowUnderhand6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ThrowUnderhand_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ThrowUnderhand7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ThrowUnderhand_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ThrowUnderhand8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ThrowUnderhand_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_M_ShoutFailure">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutFailure_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutFailure2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutFailure_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutFailure3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutFailure_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutFailure4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutFailure_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutFailure5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutFailure_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutFailure6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutFailure_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutFailure7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutFailure_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutFailure8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutFailure_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_3_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_3_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_3_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_3_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess13">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_4_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess14">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_4_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuccess15">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuccess_4_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_1_5.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_3_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_3_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_4_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess13">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_4_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess14">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_4_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess15">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_4_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess16">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_4_5.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess17">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_4_6.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess18">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_4_7.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess19">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_4_8.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_M_ShoutSuperSuccess20">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_4_9.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--FEMALE MC-->
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_1_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd1">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_1_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_1_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_1_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_2_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_2_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_2_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_2_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_3_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_3_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_3_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_WaveToCrowd11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_WaveToCrowd_3_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_1_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_1_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_1_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_1_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_2_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_2_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_2_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_2_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_3_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_3_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_3_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_3_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause13">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_4_1.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause14">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_4_2.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause15">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_4_3.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_CallForApplause16">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_CallForApplause_4_4.wav" volume="1.0" mindist="20" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_F_Point">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_3_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_3_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_3_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_Point12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_Point_3_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_3_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_3_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_3_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_GiveTreat12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_GiveTreat_3_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_3_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_3_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_3_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ScratchChinHigh12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ScratchChinHigh_3_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_F_ThrowUnderhand">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ThrowUnderhand_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ThrowUnderhand2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ThrowUnderhand_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ThrowUnderhand3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ThrowUnderhand_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ThrowUnderhand4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ThrowUnderhand_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ThrowUnderhand5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ThrowUnderhand_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ThrowUnderhand6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ThrowUnderhand_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ThrowUnderhand7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ThrowUnderhand_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_F_ShoutFailure">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutFailure_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutFailure2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutFailure_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutFailure3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutFailure_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutFailure4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutFailure_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutFailure5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutFailure_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutFailure6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutFailure_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutFailure7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutFailure_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutFailure8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutFailure_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_3_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_3_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_3_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_3_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_4_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess13">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_4_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess14">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_4_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuccess15">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuccess_4_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_1_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess2">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_1_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess3">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_1_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess4">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_1_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess5">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_2_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess6">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_2_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess7">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_2_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess8">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_2_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess9">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_3_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess10">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_3_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess11">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_3_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess12">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_3_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess13">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_4_1.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess14">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_4_2.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess15">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_4_3.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="MC_Adult_F_ShoutSuperSuccess16">
+         <snd name="entities/units/staff/MC/sound/MC_Adult_F_Stand_ShoutSuperSuccess_4_4.wav" volume="1.0" mindist="4" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

@@ -1,0 +1,53 @@
+<BFTypedBinder binderType="MC_Adult_F_02">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Staff>
+                  <MC>
+                     <MC_Adult_F>
+                     	<MC_Adult_F_02/>
+                     </MC_Adult_F>
+                  </MC>
+               </Staff>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+        <shared>
+            <BFSharedRandomTextureInfo>
+               <replacementSet>
+                  <group weight="1">
+                     <item material="body" image="entities\units\staff\MC\staff_MC_02.dds" layer="base"/>
+                  </group>
+               </replacementSet>
+            </BFSharedRandomTextureInfo>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="headObj">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\units\guests\AdultMale\Head_Adult_F.nif" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedRandomTextureInfo>
+               <replacementSet>
+                  <group weight="1">
+                     <item material="guest_adult_f_head" image="entities\units\guests\shared\guest_adult_f_head_02_happy.dds" layer="base"/>
+                     <item material="guest_f_head" image="entities\units\guests\shared\guest_adult_f_headlo_02.dds" layer="base"/>
+                  </group>
+               </replacementSet>
+            </BFSharedRandomTextureInfo>
+         </shared>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

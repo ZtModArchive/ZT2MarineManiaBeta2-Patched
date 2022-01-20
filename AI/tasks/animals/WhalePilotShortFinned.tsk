@@ -1,0 +1,2433 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="Idle" UniqueID="WhalePilotShortFinned:Idle">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Floating"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Idle"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Surface_Submerge" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WhalePilotShortFinned:Surface_Submerge">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".002"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Surface_Submerge"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Submerge" TaskDelayMin="60" TaskDelayMax="90" UniqueID="WhalePilotShortFinned:Submerge">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND isSwimming="true" isSwimmingOnSurface="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="15"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Submerge"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WhalePilotShortFinned:Wander">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".002"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Slow"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="5" exercise="-10"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_3"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander_Slow" UniqueID="WhalePilotShortFinned:Wander_Slow">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND rest="GE 70" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Slow"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="5" exercise="-100"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_4"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander_Medium" UniqueID="WhalePilotShortFinned:Wander_Medium">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND rest="LE 69" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="5" exercise="-100"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_5"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander_Fast" UniqueID="WhalePilotShortFinned:Wander_Fast">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND rest="LE 29" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="10" exercise="-100"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_5">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalSwimGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Sleep" UniqueID="WhalePilotShortFinned:Sleep">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap rest="-35"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_3"/>
+      <BFBehPlaySet behSet="Sleep"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="-100"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Porpoise" TaskDelayMin="120" TaskDelayMax="240" UniqueID="WhalePilotShortFinned:Porpoise">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND isSwimming="true" isSwimmingOnSurface="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="40">
+      <BFAIAttributeFloatMap stimulation="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Porpoising"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_5">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalPorpoiseGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="porpoise"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-5" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SpyhopAdult_Natural" TaskDelayMin="120" TaskDelayMax="240" UniqueID="WhalePilotShortFinned:SpyhopAdult_Natural">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="50">
+      <BFAIAttributeFloatMap stimulation="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_5">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSpyhopGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="Spyhop_Natural"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-50" exercise="-10" rest="10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SpyhopYoung_Natural" TaskDelayMin="120" TaskDelayMax="240" UniqueID="WhalePilotShortFinned:SpyhopYoung_Natural">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="35">
+      <BFAIAttributeFloatMap stimulation="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_6">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSpyhopGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="Spyhop_Natural"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-50" exercise="-10" rest="10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Jump" TaskDelayMin="60" TaskDelayMax="60" UniqueID="WhalePilotShortFinned:Jump">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers_AND isSwimming="true" hasTrick="WhalePilotShortFinnedJump 70"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap exercise="-35"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalJumpGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_WatchJumpTrick" GiveTo="WhalePilotShortFinned" Radius="10" Payload="subject" Timeout="20" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Jump_Natural"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-50" stimulation="-10" rest="10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="LearnJump" TaskDelayMin="60" TaskDelayMax="120" UniqueID="WhalePilotShortFinned:LearnJump">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_WatchJumpTrick/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_3"/>
+      <BFBehPlaySet behSet="WatchAnimal"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-20"/>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="WhalePilotShortFinnedJump_Learn10"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Stalk_Young" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WhalePilotShortFinned:Stalk_Young">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <WhalePilotShortFinned_Young/>
+        <Qualifiers_AND notInSight="10" inHabitat="true" isRelation="sibling"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:StalkingAnimal" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_5">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPursuit hitRadius="10" pursuitRadius="30"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-5" stimulation="-5"/>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_ChasePlay" GiveTo="subject" Payload="target" Timeout="20"/>
+            <BFAIToken Name="t_EvadePlayYoung" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="YoungChase" UniqueID="WhalePilotShortFinned:YoungChase">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_ChasePlay/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="30" social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Evade_Young" UniqueID="WhalePilotShortFinned:Evade_Young">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayYoung/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="30" social="-20" exercise="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Chase_Adult" TaskDelayMin="60" TaskDelayMax="120" UniqueID="WhalePilotShortFinned:Chase_Adult">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true" notInSight="8"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="8" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_EvadePlayAdult" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Idle"/>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Evade_Adult" UniqueID="WhalePilotShortFinned:Evade_Adult">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayAdult/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" stimulation="-20" social="-20" exercise="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Evade" UniqueID="WhalePilotShortFinned:Evade">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Flee/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" exercise="-20"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadeAttack" UniqueID="WhalePilotShortFinned:EvadeAttack">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Attack/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" exercise="-20"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SyncSwim_Invite" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WhalePilotShortFinned:SyncSwim_Invite">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_SyncSwim" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SyncSwim_Respond" UniqueID="WhalePilotShortFinned:SyncSwim_Respond">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_SyncSwim/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="90"/>
+    <BFBehExecTask>
+      <BFBehSyncSet subjectBehSet="Rendezvous" targetBehSet="Rendezvous"/>
+      <ZTBehViewEvent viewKey="Pos_4"/>
+      <BFBehSyncSet subjectBehSet="SyncSwimLead" targetBehSet="SyncSwimFollow"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-30"/>
+      <BFAITargetData social="-30"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackGuest" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WhalePilotShortFinned:AttackGuest">
+      <BFAICreateData>
+         <Subjects>
+            <WhalePilotShortFinned_Adult/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" inWater="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:PlayGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_6"/>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedWhalePilotShortFinned" resetPhase="true"/>
+         </BFBehExecTask>
+         <BFAITargetData amusement="-30" happiness="-10" gift="+25"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>  
+  <BFAITaskTemplate Name="Beached" Priority="1" UniqueID="WhalePilotShortFinned:Beached">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Beached"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_6">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalBeachedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehAnimate targetAnim="OnLand_Idle" interruptFlag="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap health="3"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:MarineMammalBeached" priority="-1" timeout="15" global="true" useTargetName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="FlopToWater" Priority="2" UniqueID="WhalePilotShortFinned:FlopToWater">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingInWater"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalBeachedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEscapeObstacle locoSpeed="medium" escapeTime="5" escapeRadius="5"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap health="3"/>
+    </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap health="3"/>
+      </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ScareGuest" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="WhalePilotShortFinned:ScareGuest">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Guest/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="20" fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehTargetFence behSet="DockWallScareGuest" fenceType="tankwallsegment" searchDistance="6"/>
+      <BFBehAnimate targetAnim="TreadWater_Nudge" interruptFlag="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_Scare" GiveTo="Guest" Payload="subject" Radius="10" Timeout="30" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SplashGuest" sensorTag="habitat" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WhalePilotShortFinned:SplashGuest">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Guest/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="40">
+      <BFAIAttributeFloatMap stimulation="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehRandomSet>
+        <randomSets>
+          <SplashGuest_Right weight="50"/>
+          <SplashGuest_Left weight="50"/>
+        </randomSets>
+      </BFBehRandomSet>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="WhalePilotShortFinned:OffspringCheck">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="1000"/>
+    <BFBehExecTask>
+      <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="WhalePilotShortFinned:CantReproduce">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers_AND isSwimming="true" b_Pregnant="E false" hasMate="false"/>
+      </Subjects>
+      <Targets>
+        <WhalePilotShortFinned_Adult_M/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true" canMate="false"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="80">
+      <BFAIAttributeFloatMap reproduction="-27"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="WhalePilotShortFinned:InviteReproduction">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers_AND b_Pregnant="E false" isSwimming="true" lifespan="LE 43.23"/>
+      </Subjects>
+      <Targets>
+        <WhalePilotShortFinned_Adult_M/>
+        <Qualifiers_AND inHabitat="true" isSwimming="true" canMate="true"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="80">
+      <BFAIAttributeFloatMap reproduction="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="WhalePilotShortFinned:RespondReproduction">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_M/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Reproduce/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehSyncSet subjectBehSet="Rendezvous" targetBehSet="Rendezvous"/>
+      <BFBehSyncSet subjectBehSet="ReproductionSwimLead" targetBehSet="ReproductionSwimFollow"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="55"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-50" rest="-10"/>
+      <BFAITargetData rest="-10"/>
+      <BFBehExecTask>
+        <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+        <ZTBehViewEvent viewKey="Pos_4"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Pregnant" UniqueID="WhalePilotShortFinned:Pregnant">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Pregnant1/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="50"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+          <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITargetData b_Pregnant="true"/>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="1130.68" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Birth" UniqueID="WhalePilotShortFinned:Birth">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers_AND isSwimming="true" isInShow="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Pregnant/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000">
+      <BFAIAttributeFloatMap reproduction="-90"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Birthing"/>
+          <ZTMessageInfo locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Idle"/>
+      <BFBehPlaySet behSet="Birth"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-100"/>
+      <BFAISubjectData b_Pregnant="false"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_5">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalBornGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:AnimalBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="WhalePilotShortFinned:Born">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Young/>
+        <Qualifiers_AND isSwimming="true" lifespan="LE 1"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Born"/>
+          <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="WhalePilotShortFinned:Puberty">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Young/>
+        <Qualifiers_AND isSwimming="true" lifespan="GE 5.22"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Age_F" UniqueID="WhalePilotShortFinned:Age_F">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Young_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Age/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehMorph morphTargetEntityType="WhalePilotShortFinned_Adult_F" morphScale="true" morphPeriod="10" initScale="0.4"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Age_M" UniqueID="WhalePilotShortFinned:Age_M">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Young_M/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Age/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehMorph morphTargetEntityType="WhalePilotShortFinned_Adult_M" morphScale="true" morphPeriod="10" initScale="0.4"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Old_Female" TaskDelayMin="60" TaskDelayMax="60" UniqueID="WhalePilotShortFinned:Old_Female">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND isSwimming="true" lifespan="GE 64.84"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap lifespan="-100"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <BFBehPlaySet behSet="Sleep"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Old_Male" TaskDelayMin="60" TaskDelayMax="60" UniqueID="WhalePilotShortFinned:Old_Male">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND isSwimming="true" lifespan="GE 44.72"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap lifespan="-100"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <BFBehPlaySet behSet="Sleep"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die" UniqueID="WhalePilotShortFinned:Die">
+      <BFAICreateData>
+         <Subjects>
+            <WhalePilotShortFinned/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Die/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_OldAge"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die_Sick" Priority="3" UniqueID="WhalePilotShortFinned:Die_Sick">
+      <BFAICreateData>
+         <Subjects>
+            <WhalePilotShortFinned/>
+            <Qualifiers_AND inWater_OR_onLand="true" health="GE 99"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="15000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_Sick"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteCarry" TaskDelayMin="180" TaskDelayMax="360" UniqueID="WhalePilotShortFinned:InviteCarry">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers_AND isSwimming="true" depthBelowSurface="G 0" isRelation="mother" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Carry" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="CallMother"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondCarry" attachTag="baby" UniqueID="WhalePilotShortFinned:RespondCarry">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers_AND isSwimming="true" depthBelowSurface="G 0"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Carry/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="1000"/>
+    <BFBehExecTask>
+      <BFBehSyncSet subjectBehSet="WaitCarryYoung" targetBehSet="BoardMom"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehSyncSet subjectBehSet="PickUpYoung" targetBehSet="GrabMom" resetPhase="true"/>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CarryYoung_Wander" TaskDelayMin="180" TaskDelayMax="360" objectContainer="back" UniqueID="WhalePilotShortFinned:CarryYoung_Wander">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <WhalePilotShortFinned_Young/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="1100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Carrying" useObjectName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehWander minPlayTime="10" maxPlayTime="20" avoidLand="true" avoidEntityRadius="8">
+        <avoidEntityTypes>
+          <b_XLargePredator/>
+          <b_LargePredator/>
+          <b_MediumPredator/>
+          <b_SmallPredator/>
+        </avoidEntityTypes>
+      </BFBehWander>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-40" health="-30"/>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="LetYoungOff"/>
+        <ZTBehViewEvent viewKey="Pos_5">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalCarryObjectGood" priority="1" timeout="60" global="false" useTargetObject="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAITargetData social="-40"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RubFloor" UniqueID="WhalePilotShortFinned:RubFloor">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+        <Qualifiers_AND inSight="25" inHabitat="true" depthAboveBottom="LE 1"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap hygiene="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToRubFloor"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove heightAboveFloor="1.5"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:RubbingTankFloor"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_4">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalRubFloorGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAIAttributeFloatMap hygiene="-50"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Echolocate" UniqueID="WhalePilotShortFinned:Echolocate">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10">
+      <BFAIAttributeFloatMap hunger="-3"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTEmoticonInfo emoticonName="EmoteAnimalHungerBad"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="animalthoughts:HungryAnimal" priority="1" timeout="30" global="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:LookingForFood"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalHungryBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="slow"/>
+      <BFBehPlaySet behSet="Echolocate"/>
+      <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="slow"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Squawk" UniqueID="WhalePilotShortFinned:Squawk">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10" fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SquawkAngry"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSquawkSelfBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Whistle_Call" UniqueID="WhalePilotShortFinned:Whistle_Call">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <WhalePilotShortFinned/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WhistlingAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Listen" GiveTo="WhalePilotShortFinned" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Whistle" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Whistle_Answer" UniqueID="WhalePilotShortFinned:Whistle_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Whistle/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WhistleAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteCaress_Adult_F" TaskDelayMin="300" TaskDelayMax="360" UniqueID="WhalePilotShortFinned:InviteCaress_Adult_F">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <WhalePilotShortFinned_Adult_M/>
+        <Qualifiers_AND inHabitat="true" isSwimming="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap reproduction="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Caress" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Idle_15"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondCaress_Adult_M" reserveTag="General" UniqueID="WhalePilotShortFinned:RespondCaress_Adult_M">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_M/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true" isSwimming="true"/>
+      </Targets>
+      <Objects>
+        <t_Caress/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalRubEachOtherGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSyncSet subjectBehSet="DockRub" targetBehSet="Idle_Loop"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Rubbing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehSyncSet subjectBehSet="GreetingRub" targetBehSet="Idle_Loop"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" stimulation="-10"/>
+      <BFAITargetData social="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteCaress_Adult_M" TaskDelayMin="300" TaskDelayMax="360" UniqueID="WhalePilotShortFinned:InviteCaress_Adult_M">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_M/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers_AND inHabitat="true" isSwimming="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap reproduction="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Caress" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Idle_15"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondCaress_Adult_M" reserveTag="General" UniqueID="WhalePilotShortFinned:RespondCaress_Adult_F">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true" isSwimming="true"/>
+      </Targets>
+      <Objects>
+        <t_Caress/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalRubEachOtherGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSyncSet subjectBehSet="DockRub" targetBehSet="Idle_Loop"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Rubbing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehSyncSet subjectBehSet="GreetingRub" targetBehSet="Idle_Loop"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" stimulation="-10"/>
+      <BFAITargetData social="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SeekPrivacy" UniqueID="WhalePilotShortFinned:SeekPrivacy">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap privacy="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SeekingPrivacy" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="12">
+        <avoidEntityTypes>
+          <Guest/>
+        </avoidEntityTypes>
+      </BFBehEvasion>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap privacy="-5"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Hide" GiveTo="subject" Timeout="30" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="HideMarinePlant" UniqueID="WhalePilotShortFinned:HideMarinePlant">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers_AND onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <marineplant/>
+        <Qualifiers_AND inWater="true" inHabitat="true" inSight="15"/>
+      </Targets>
+      <Objects>
+        <t_Hide/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100">
+      <BFAIAttributeFloatMap privacy="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAISubjectData privacy="-50"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_6">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <BFBehPlaySet behSet="Idle_15"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="HideFloor" UniqueID="WhalePilotShortFinned:HideFloor">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+        <Qualifiers_AND inSight="25" inHabitat="true" depthAboveBottom="LE 3"/>
+      </Targets>
+      <Objects>
+        <t_Hide/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="90">
+      <BFAIAttributeFloatMap privacy="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingHide"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove heightAboveFloor="1.5"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:Hiding"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_4"/>
+        <BFBehPlaySet behSet="Idle_15"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAIAttributeFloatMap privacy="-50"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <!--Show Tasks-->
+  <BFAITaskTemplate Name="EnterShowTank" UniqueID="WhalePilotShortFinned:EnterShowTank">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers_AND isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_EnterShowTank/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="120"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoToShowTank"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehUsePortal targetAnim="SwimSub_Ahead" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTMessageInfo locID="zoomessages:CantEnterShowTank" priority="-1" timeout="30" global="true" useEntityName="true"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ExitShowTank" UniqueID="WhalePilotShortFinned:ExitShowTank">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers_AND isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ExitShowTank/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="120"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoToHomeTank"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehUsePortal targetAnim="SwimSub_Ahead" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehScript context="behavior" file="scripts/CrateAnimal.lua" function="CrateAnimal"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DefaultShowBehavior" UniqueID="WhalePilotShortFinned:DefaultShowBehavior">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers_AND isInShow="true" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_DefaultShowBehavior/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Idle"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DockPlatform" reserveTag="Animals_Waiting_Area" UniqueID="WhalePilotShortFinned:DockPlatform">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_DockPlatform/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="120"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GetTreat" reserveTag="Animals_Waiting_Area" UniqueID="WhalePilotShortFinned:GetTreat">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers_AND isInShow="true" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_GetTreat/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="500"/>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_getApplause" GiveTo="target" Payload="subject" Timeout="20"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow1Star" UniqueID="WhalePilotShortFinned:ReactToShow1Star">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow1Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow1Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow2Star" UniqueID="WhalePilotShortFinned:ReactToShow2Star">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow2Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow2Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow3Star" UniqueID="WhalePilotShortFinned:ReactToShow3Star">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow3Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow3Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow4Star" UniqueID="WhalePilotShortFinned:ReactToShow4Star">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow4Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow4Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow5Star" UniqueID="WhalePilotShortFinned:ReactToShow5Star">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow5Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow5Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <!--First Person Training Tasks-->
+  <BFAITaskTemplate Name="DefaultFPTBehavior" Priority="80" UniqueID="WhalePilotShortFinned:DefaultFPTBehavior">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTDefaultTask/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Idle_NoWanderToStop"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Good_FPT" Priority="90" UniqueID="WhalePilotShortFinned:Feedback_Good_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTGood/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Bad_FPT" Priority="90" UniqueID="WhalePilotShortFinned:Feedback_Bad_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTBad/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehAnimate targetAnim="TreadWater_TrainingNodLeftRight"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Confused_FPT" Priority="90" UniqueID="WhalePilotShortFinned:Feedback_Confused_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTConfused/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTEmoticonInfo emoticonName="EmoteGuestUneducation" emoticonEntityNode="Bip01 Head"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="TreadWater_TrainingConfused"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GetReward_FPT" Priority="90" UniqueID="WhalePilotShortFinned:GetReward_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTEatReward/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="GetTreat_FPT"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <!--Staff Training Tasks-->
+  <BFAITaskTemplate Name="DockTrainer" reserveTag="Animal_Training_Area" Priority="90" UniqueID="WhalePilotShortFinned:DockTrainer">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers_AND isSwimming="true" f_needPointsGood="G 0"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_STSummon/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+       <BFBehPlaySet behSet="DockTrainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="StaffTrainingIdle" Priority="80" UniqueID="WhalePilotShortFinned:StaffTrainingIdle">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers_AND isSwimming="true" f_needPointsGood="G 0"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_STDefaultTask/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="WatchTrainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

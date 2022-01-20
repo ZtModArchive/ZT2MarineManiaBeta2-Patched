@@ -1,0 +1,93 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="false" sticky="true" optional="false">
+	<info locid="MarineAnimals:TakeThePlungeIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup name="OptionalGoals" state="0" chain="true" allsuccess="true" sticky="true">
+			<children>
+				<BFScenarioRule name="Guest1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:TakeThePlungeGuestGoal1" overview="MarineAnimals:TakeThePlungeGuest1Overview"/>
+						<success locid="MarineAnimals:TakeThePlungeGuestGoal1Done" overview="MarineAnimals:TakeThePlungeGuest1Success" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="evalGuest1" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="completeGuest1" />
+					</success>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Guest2" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:TakeThePlungeGuestGoal2" overview="MarineAnimals:TakeThePlungeGuest2Overview"/>
+						<success locid="MarineAnimals:TakeThePlungeGuestGoal2Done" overview="MarineAnimals:TakeThePlungeGuest2Success" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="evalGuest2" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="completeGuest2" />
+					</success>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Guest3" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:TakeThePlungeGuestGoal3" overview="MarineAnimals:TakeThePlungeGuest3Overview"/>
+						<success locid="MarineAnimals:TakeThePlungeGuestGoal3Done" overview="MarineAnimals:TakeThePlungeGuest3Success" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="evalGuest3" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="completeGuest3" />
+					</success>
+				</BFScenarioRule>				
+			</children>
+		</BFScenarioGroup>		
+		<BFScenarioGroup name="OverallGoals" state="0" chain="true" allsuccess="true" sticky="true">
+			<info type="primary">
+				<success locid="MarineAnimals:TakeThePlungeSuccessOverview" />
+			</info>
+			<children>
+				<BFScenarioRule name="Get_3" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:TakeThePlungeThreeGoal" overview="MarineAnimals:TakeThePlungeOverview"/>
+						<success locid="MarineAnimals:TakeThePlungeThreeGoalDone" overview="MarineAnimals:TakeThePlungeOverview" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="eval3MarineAnimals" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="complete3MarineAnimals" />
+					</success>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Get_6" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:TakeThePlungeSixGoal" overview="MarineAnimals:TakeThePlungeSix"/>
+						<success locid="MarineAnimals:TakeThePlungeSixGoalDone" overview="MarineAnimals:TakeThePlungeOverview" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="eval6MarineAnimals" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="complete6MarineAnimals" />
+					</success>
+				</BFScenarioRule>				
+				<BFScenarioRule name="Get_10" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineAnimals:TakeThePlungeTenGoal" overview="MarineAnimals:TakeThePlungeTen"/>
+						<success locid="MarineAnimals:TakeThePlungeTenGoalDone" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="eval10MarineAnimals" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TakeThePlunge.lua" entry="complete10MarineAnimals" />
+					</success>
+				</BFScenarioRule>				
+			</children>
+		</BFScenarioGroup>
+	</children>
+</ZTScenarioMgr>

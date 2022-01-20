@@ -1,0 +1,11 @@
+﻿<entries>
+	<BFHelpEntry entry="zoopedia_home">
+		<BFHelpEntry entry="zoopedia_foodcontainer">
+			<BFHelpEntry entry="zoopedia_buoynet"/>
+			<BFHelpEntry entry="zoopedia_buoylure" />
+			<BFHelpEntry entry="zoopedia_foodbox" />
+			<BFHelpEntry entry="zoopedia_artificialreef" />
+			<BFHelpEntry entry="zoopedia_marinecarcass" order="zoopedia_artificialmarinecarcass" />			
+		</BFHelpEntry>
+	</BFHelpEntry>
+</entries>

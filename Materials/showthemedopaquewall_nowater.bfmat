@@ -1,0 +1,11 @@
+<material fx="Base">
+	<param name="Texture0" type="texture">show_concrete</param>
+	<param name="TexCoordIndex0" type="dword">1</param>
+	<param name="CullMode" type="dword">1</param>
+	<param name="TextureTransform0" type="matrix">
+		4.3, 0.000000, 0.000000, 0.000000,
+		0.000000, 4.30000, 0.000000, 0.000000, 
+		0.000000, 0.000000, 1.000000, 0.000000, 
+		0.000000, 0.000000, 0.000000, 1.000000</param>
+      <param name="TextureTransformFlags0" type="dword">2</param>
+</material>

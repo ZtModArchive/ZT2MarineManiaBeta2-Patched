@@ -1,0 +1,36 @@
+<BFTypedBinder binderType="SharkHammerheadScalloped_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Elasmobranchii>
+                  <Carcharhiniformes>
+                     <Sphyrnidae>
+                        <SharkHammerheadScalloped>
+                           <SharkHammerheadScalloped_Young>
+                              <SharkHammerheadScalloped_Young_F/>
+                           </SharkHammerheadScalloped_Young>
+                        </SharkHammerheadScalloped>
+                     </Sphyrnidae>
+                  </Carcharhiniformes>
+               </Elasmobranchii>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\SharkHammerheadScalloped\SharkHammerheadScalloped_Adult_F_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SharkHammerheadScalloped_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+   <binder/>
+</BFTypedBinder>

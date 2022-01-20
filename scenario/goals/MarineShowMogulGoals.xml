@@ -1,0 +1,93 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="false" sticky="true" optional="false">
+	<info locid="MarineShowsCampaign:FiveStarShowIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup name="OptionalGoal" state="0" chain="true" allsuccess="true" sticky="true">
+			<children>
+				<BFScenarioRule name="AttendenceGoal" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:FiveStarShowAttendanceGoal" overview="MarineShowsCampaign:FiveStarShowAttendance"/>
+						<success locid="MarineShowsCampaign:FiveStarShowAttendanceGoalDone" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="evalShowAttendence" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="completeShowAttendence" />
+					</success>
+				</BFScenarioRule>				
+			</children>
+		</BFScenarioGroup>		
+		<BFScenarioGroup name="OverallGoals" state="0" chain="true" allsuccess="true" sticky="true">
+			<info type="primary">
+				<success locid="MarineShowsCampaign:FiveStarShowSuccessOverview" />
+			</info>
+			<children>
+				<BFScenarioRule name="OneStarGoal" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:FiveStarShowOneStarGoal" overview="MarineShowsCampaign:FiveStarShowOverview"/>
+						<success locid="MarineShowsCampaign:FiveStarShowOneStarGoalDone" overview="MarineShowsCampaign:FiveStarShowOverview" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="evalOneStarShow" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="completeOneStarShow" />
+					</success>
+				</BFScenarioRule>				
+				<BFScenarioRule name="TwoStarGoal" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:FiveStarShowTwoStarsGoal" overview="MarineShowsCampaign:FiveStarShowTwoStars"/>
+						<success locid="MarineShowsCampaign:FiveStarShowTwoStarsGoalDone" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="evalTwoStarShow" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="completeTwoStarShow" />
+					</success>
+				</BFScenarioRule>				
+				<BFScenarioRule name="ThreeStarGoal" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:FiveStarShowThreeStarsGoal" overview="MarineShowsCampaign:FiveStarShowThreeStars"/>
+						<success locid="MarineShowsCampaign:FiveStarShowThreeStarsGoalDone" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="evalThreeStarShow" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="completeThreeStarShow" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="FourStarGoal" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:FiveStarShowFourStarsGoal" overview="MarineShowsCampaign:FiveStarShowFourStars"/>
+						<success locid="MarineShowsCampaign:FiveStarShowFourStarsGoalDone" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="evalFourStarShow" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="completeFourStarShow" />
+					</success>
+				</BFScenarioRule>	
+				<BFScenarioRule name="FiveStarGoal" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:FiveStarShowFiveStarsGoal" overview="MarineShowsCampaign:FiveStarShowFiveStars"/>
+						<success locid="MarineShowsCampaign:FiveStarShowFiveStarsGoalDone" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="evalFiveStarShow" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/MarineShowMogul.lua" entry="completeFiveStarShow" />
+					</success>
+				</BFScenarioRule>						
+			</children>
+		</BFScenarioGroup>
+	</children>
+</ZTScenarioMgr>		

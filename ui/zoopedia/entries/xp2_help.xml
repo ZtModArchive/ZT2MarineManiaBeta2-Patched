@@ -1,0 +1,9 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry entry="zoopedia_welcome" order="zoopedia_AAAWelcome">
+         <BFHelpEntry entry="zoopedia_rewardobjects" version="7"/> 
+         <BFHelpEntry entry="zoopedia_swimwithanimals" version="7"/>
+         <BFHelpEntry entry="zoopedia_animaltraining" version="7"/>         
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

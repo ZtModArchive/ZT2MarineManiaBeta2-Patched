@@ -1,0 +1,160 @@
+<BFTypedBinder binderType="Aquarium_Octopus">
+   <types>
+      <entity>
+         <building>
+            <Aquarium>
+               <Aquarium_Octopus/>
+            </Aquarium>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="biomedetail_01" rottype="ignore" postype="use" attachnode="biomedetail_01"/>
+            <parentObj parent="mainObj" child="biomedetail_02" rottype="ignore" postype="use" attachnode="biomedetail_02"/>
+            <parentObj parent="mainObj" child="biomedetail_03" rottype="ignore" postype="use" attachnode="biomedetail_03"/>
+            <parentObj parent="mainObj" child="biomedetail_04" rottype="ignore" postype="use" attachnode="biomedetail_04"/>
+            <parentObj parent="mainObj" child="biomedetail_05" rottype="ignore" postype="use" attachnode="biomedetail_05"/>
+            <parentObj parent="mainObj" child="biomedetail_06" rottype="ignore" postype="use" attachnode="biomedetail_06"/>
+            <parentObj parent="mainObj" child="biomedetail_07" rottype="ignore" postype="use" attachnode="biomedetail_07"/>
+            <parentObj parent="mainObj" child="animals" rottype="use" postype="use" attachnode="Node_Octopus"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTPlacementData dockArrowStyle="standard" dockArrowSize="1.5" icon3Doffset="0 0 0.23" icon3Dscale="0.22"/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\scenery\Aquarium_Octopus\Aquarium_Octopus_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Aquarium_Octopus"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Aquarium_Octopus"/>
+         </on>
+      </UIToggleButton>
+      <UIToggleButton template="researchentity">
+         <UIAspect>
+            <default image="entities\objects\scenery\Aquarium_Octopus\Aquarium_Octopus_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Aquarium_Octopus"/>
+         </on>
+      </UIToggleButton>
+      <UIButton name="overviewicon">
+         <UIAspect>
+            <default image="ui/zoomap/icon_attractions.dds"/>
+         </UIAspect>
+      </UIButton>
+      <BFGCollisionData isStatic="true" isPassable="false"/>
+      <BFAIEntityDataShared s_ObjectType="Misc" s_Product="Marine" b_Researchable="true" s_uisort="ef" b_DonationAcceptor="false" s_Zoopedia="zoopedia:zoopedia_aquarium:entry" f_researchUnlockTime="100" f_researchCost="800" b_wantLifetimeUsers="true" f_FameReq="40"/>
+      <ZTTourData>
+         <cool value="6"/>
+      </ZTTourData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="ShadowNode_01" width="6" length="6" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/scenery/Aquarium_Octopus/Aquarium_Octopus" switch="0 18 36" minSwitch="0 0 20" initialTextKey="snd &quot;aquarium_pump&quot; looping"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars>
+               <virtualNodes>
+                  <Dock_Guest1 parentNode="AutoRoot" x="0.0" y="-2" z=".1" yaw="-185"/>
+                  <Dock_Guest2 parentNode="AutoRoot" x="-2.0" y="2.0" z=".1" yaw="-45"/>
+                  <Dock_Guest3 parentNode="AutoRoot" x="2.0" y="2.0" z=".1" yaw="45"/>
+               </virtualNodes>
+            </BFSharedPhysVars>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="animals" drawLast="true">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/objects/scenery/Aquarium_Octopus/Aquarium_Octopus_Octopus.bfm" activeSequenceName="Octopus_Octopus_Idle" switch="0"/>
+               <BFSecondaryAnimComponent animName="Octopus_Octopus_Used" frequency="1.5" chance="20" validAnims="Octopus_Octopus_Idle"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Use_Aquarium">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot targetNode="Dock_Guest1"/>
+                  <BFGEntityContainerSlot targetNode="Dock_Guest2"/>
+                  <BFGEntityContainerSlot targetNode="Dock_Guest3"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="biomedetail_01">
+         <instance>
+            <BFPhysObj>
+               <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="biomedetail_02">
+         <instance>
+            <BFPhysObj>
+               <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="biomedetail_03">
+         <instance>
+            <BFPhysObj>
+               <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="biomedetail_04">
+         <instance>
+            <BFPhysObj>
+               <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="biomedetail_05">
+         <instance>
+            <BFPhysObj>
+               <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="biomedetail_06">
+         <instance>
+            <BFPhysObj>
+               <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="biomedetail_07">
+         <instance>
+            <BFPhysObj>
+               <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="1200">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="100" period="monthly" type="debit" category="upkeep"/>
+               <ZTTransaction name="add_user" cost="1" type="addUser" category="user"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

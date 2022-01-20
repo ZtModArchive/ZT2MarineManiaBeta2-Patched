@@ -1,0 +1,103 @@
+<BFTypedBinder binderType="Basketball_Hoop_mm">
+   <types>
+      <entity>
+         <prop>
+            <Basketball_Hoop_mm/>
+         </prop>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTDevComponent/>   
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\props\BasketballHoop_mm\Basketball_Hoop_mm_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Basketball_Hoop_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Basketball_Hoop_mm"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_uisort="fa" s_Zoopedia="zoopedia:zoopedia_basketballhoop_mm:entry" f_FameReq="40" s_Product="Marine"/>
+      <ZTPlacementData icon3Doffset="0 0 0.918257" icon3Dscale="0.11" randomRotate="false" gridSnap="true" terrainFlatten="false"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities\objects\props\BasketballHoop_mm\Basketball_Hoop_mm.bfm" activeSequenceName="Float_Idle" activeSequenceLoop="true"/>
+               <BFFakePhysicsComponent idleAnim="Float_Idle" moveAnim="Float_KnockedOver" escapeAnim="Float_KnockedOver" slideRate="0.0" maxEscapeTries="5" />
+               <BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars>
+               <virtualNodes>
+                  <Node_Training x="-2" y="2" yaw="-90"/>
+                  <Node_BasketballHoop y="-2" yaw="180"/>
+               </virtualNodes>
+            </BFSharedPhysVars>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Training" repopulateMethod="byName">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTraining" targetNode="Node_Training" exclusiveID="BasketballHoop1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Training_Teleport" repopulateMethod="byName">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTraining_Teleport" targetNode="Node_Training" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="BasketballHoop_Failure">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockBasketballHoop" useBehSet="BasketballHoop_Failure" targetNode="Node_BasketballHoop" exclusiveID="BasketballHoop1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="BasketballHoop_Success">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockBasketballHoop" useBehSet="BasketballHoop_Success" targetNode="Node_BasketballHoop" exclusiveID="BasketballHoop1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="BasketballHoop_Critical">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockBasketballHoop" useBehSet="BasketballHoop_Critical" targetNode="Node_BasketballHoop" exclusiveID="BasketballHoop1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Moving="false" />
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="320">
+               <ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

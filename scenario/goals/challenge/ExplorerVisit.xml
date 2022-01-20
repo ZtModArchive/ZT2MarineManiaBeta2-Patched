@@ -1,0 +1,20 @@
+<BFScenarioGroup name="explorervisitrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="explorervisitphoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHExplorerVisitShort" overview="PhotoChallengetext:PHExplorerVisit" />
+				<success locid="PhotoChallengetext:PHExplorerVisitSuccessShort" overview="PhotoChallengetext:PHExplorerVisitSuccess" />
+				<failure locid="PhotoChallengetext:PHExplorerVisitFailureShort" overview="PhotoChallengetext:PHExplorerVisitFailure" />
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/ExplorerVisit.lua" entry="evalexplorervisit" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/ExplorerVisit.lua" entry="completeexplorervisit" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/ExplorerVisit.lua" entry="failexplorervisit" />
+			</failure>	
+		</BFScenarioRule>		
+	 </children>
+</BFScenarioGroup>

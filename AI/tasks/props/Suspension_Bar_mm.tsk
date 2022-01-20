@@ -1,0 +1,295 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="Training" Priority="85" reserveTag="Training" UniqueID="Suspension_Bar_mm:Training">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <WhaleFalseKiller_Adult/>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTSummonDolphinJumpBar/>
+        <t_FPTSummonWhaleFalseKillerJumpBar/>
+        <t_FPTSummonWhalePilotShortFinnedJumpBar/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Training_Teleport" Priority="86" reserveTag="Training_Teleport" UniqueID="Suspension_Bar_mm:Training_Teleport">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <WhaleFalseKiller_Adult/>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_fptTeleportDolphinJumpBar/>
+        <t_fptTeleportWhaleFalseKillerJumpBar/>
+        <t_fptTeleportWhalePilotShortFinnedJumpBar/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="JumpBar_Failure" reserveTag="JumpBar_Failure" UniqueID="Suspension_Bar_mm:JumpBar_Failure">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <WhaleFalseKiller_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_JumpBarFailure/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-5" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowBad"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_FailureReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="JumpBar_WhalePilotShortFinned_Failure" reserveTag="JumpBar_WhalePilotShortFinned_Failure" UniqueID="Suspension_Bar_mm:JumpBar_WhalePilotShortFinned_Failure">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_JumpBarFailure/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-5" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowBad"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_FailureReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="JumpBar_Success" reserveTag="JumpBar_Success" UniqueID="Suspension_Bar_mm:JumpBar_Success">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <WhaleFalseKiller_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_JumpBarSuccess/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_SuccessReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="JumpBar_WhalePilotShortFinned_Success" reserveTag="JumpBar_WhalePilotShortFinned_Success" UniqueID="Suspension_Bar_mm:JumpBar_WhalePilotShortFinned_Success">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_JumpBarSuccess/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_SuccessReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="JumpBar_Critical" reserveTag="JumpBar_Critical" UniqueID="Suspension_Bar_mm:JumpBar_Critical">
+    <BFAICreateData>
+      <Subjects>
+        <DolphinBottlenose_Adult/>
+        <WhaleFalseKiller_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_JumpBarCritical/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowVeryGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_CriticalReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="JumpBar_WhalePilotShortFinned_Critical" reserveTag="JumpBar_WhalePilotShortFinned_Critical" UniqueID="Suspension_Bar_mm:JumpBar_WhalePilotShortFinned_Critical">
+    <BFAICreateData>
+      <Subjects>
+        <WhalePilotShortFinned_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_JumpBarCritical/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-10" stimulation="-5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+           <ZTFeedbackData>
+              <ZTEmoticonInfo emoticonName="EmoteAnimalShowVeryGood"/>
+           </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_CriticalReaction" GiveTo="MC" Payload="subject" Radius="50" Timeout="10" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

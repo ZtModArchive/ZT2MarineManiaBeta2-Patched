@@ -1,0 +1,10 @@
+<TEXTKEY>
+   <key time="0.0" text="{Bip01 Ponytail1} snd 'SquirtWaterSuccess'"/>
+   <key time="0.0" text="{Bip01 Ponytail1} snd 'SquirtWaterSuccess_uw'"/>
+	<key time="0.0" text="{Bip01 Head} runspl"/>
+   <key time="0.7" text="{Node_Squirt} runpeff belugaspray attach "/>
+   <key time="1.0" text="{Bip01 Head} runspl"/>   
+   <key time="1.7" text="{Bip01 Head} snd 'splash_small' "/>
+   <key time="1.7" text="{Bip01 Head} snd 'splash_small_uw' "/>      
+   <key time="2" text="{Bip01 Head} runspl"/>
+</TEXTKEY>

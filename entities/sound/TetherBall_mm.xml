@@ -1,0 +1,22 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="Tetherball_Bounce">
+         <snd name="entities/objects/props/TetherBall_mm/sound/Tetherball.wav" volume="1" mindist="4" maxdist="150"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="Tetherball_Bounce2">
+         <snd name="entities/objects/props/TetherBall_mm/sound/Tetherball2.wav" volume="1" mindist="4" maxdist="150"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   
+   <!--UNDERWATER-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Tetherball_mm_Bounce_uw">
+         <snd name="entities/objects/props/TetherBall_mm/sound/Tetherball_uw.wav" volume="1" mindist="4" maxdist="150" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="Tetherball_mm_Bounce2_uw">
+         <snd name="entities/objects/props/TetherBall_mm/sound/Tetherball2_uw.wav" volume="1" mindist="4" maxdist="150" layer="underwater"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   
+</soundtags>   
+  

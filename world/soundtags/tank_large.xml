@@ -1,0 +1,43 @@
+<soundtags>
+   <BFSoundtag>
+      <BF2DSndFactory name="tl_Creak_01">
+         <snd name="sound/B_TM_Creak01.wav" randpan="1" randvolume="1" minpitch=".6" maxpitch=".9" minvolume=".20" maxvolume=".5"/>
+      </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+         <BF2DSndFactory name="tl_Creak_02">
+            <snd name="sound/B_TM_Creak02.wav" randpan="1" randvolume="1" minpitch=".6" maxpitch=".9" minvolume=".20" maxvolume=".45"/>
+         </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+         <BF2DSndFactory name="tl_Creak_03">
+            <snd name="sound/B_TM_DeepCreak01.wav" randpan="1" randvolume="1" minpitch=".6" maxpitch=".9" minvolume=".20" maxvolume=".45"/>
+         </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF2DSndFactory name="DeepMovement_01">
+            <snd name="sound/B_TM_DeepMovement01.wav" randpan="1" randvolume="1" minpitch=".6" maxpitch=".9" minvolume=".20" maxvolume=".75"/>
+         </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF2DSndFactory name="DeepMovement_02">
+         <snd name="sound/B_TM_DeepMovement02.wav" randpan="1" randvolume="1" minpitch=".6" maxpitch=".9" minvolume=".30" maxvolume=".75"/>
+      </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF2DSndFactory name="Movement_01">
+         <snd name="sound/B_TM_Movement01.wav" randpan="1" randvolume="1" minpitch=".6" maxpitch=".9" minvolume=".20" maxvolume=".55"/>
+      </BF2DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BFAmbient2DSndFactory name="a_tank_large">
+         <snds>
+            <snd name="DeepMovement_01" mindelay="15" maxdelay="50"/>
+            <snd name="tl_Creak_02" mindelay="20" maxdelay="40"/>
+            <snd name="DeepMovement_02" mindelay="25" maxdelay="50"/>
+            <snd name="tl_Creak_03" mindelay="30" maxdelay="55"/>
+            <snd name="Movement_01" mindelay="35" maxdelay="50"/>
+         </snds>
+      </BFAmbient2DSndFactory>
+   </BFSoundtag>
+</soundtags>

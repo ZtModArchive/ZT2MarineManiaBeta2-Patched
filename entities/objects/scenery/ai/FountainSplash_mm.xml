@@ -1,0 +1,107 @@
+<BFTypedBinder binderType="FountainSplash_mm">
+   <types>
+      <entity>
+         <scenery>
+	         <FountainSplash_mm/>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\scenery\FountainSplash_mm\FountainSplash_mm_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Fountain_Splash_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="FountainSplash_mm"/>
+         </on>
+      </UIToggleButton>
+      <UIToggleButton template="researchentity">
+         <UIAspect>
+            <default image="entities\objects\scenery\FountainSplash_mm\FountainSplash_mm_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="FountainSplash_mm"/>
+         </on>
+      </UIToggleButton>
+      <ZTTourData>
+         <fountain value="7"/>
+         <cool value="4"/>
+      </ZTTourData>
+      <BFAIEntityDataShared b_Researchable="true" s_Product="Marine" s_uisort="ca" s_Zoopedia="zoopedia:zoopedia_fountain_splash_mm:entry" f_FameReq="40" b_ReceiveUpdates="true" f_researchUnlockTime="120" f_researchCost="1000"/>
+      <ZTPlacementData terrainFlatten="true" waterPlacement="false" moveable="true" randomRotate="false" gridSnap="true" autoFootprint="true" icon3Doffset="0 -0.01 0.76" icon3Dscale=".2">
+         <cfootprint width="1" height="1"/>
+         <dfootprint width="1" height="1"/>
+			<attachObj>
+				<entity nodeName="Link_ABV_01" binderType="FountainSplash_collision_proxy" />
+				<entity nodeName="Link_ABV_02" binderType="FountainSplash_collision_proxy" />
+			</attachObj>         
+      </ZTPlacementData>
+		<BFGCollisionData isPassable="true" />      
+   </shared>
+   <binder>
+		<BFBinder repopulateMethod="byType">
+			<instance>
+				<ZTPlaceEntityComponent />
+			</instance>
+		</BFBinder>   
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob.tga" baseNode="footprint" width="1.5" minLength="1.5" maxLength="3.25" minOffset="0" maxOffset=".5"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/objects/scenery/Fountainsplash_mm/Fountainsplash_mm.bfm" switch="0 18 72"/>
+               <BFGroundFitComponent heightOffset="0.0" maxTilt="50"/>
+					<BFCollisionComponent grid="Bip01 Left ABV,Bip01 Right ABV"/>
+					<BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr behaviorVersion="1"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAICognitiveMgr>
+					<Sensors>
+						<ZTAISensor />
+						<BFAISensorSelf />
+					</Sensors>            
+               <TaskThinkers>
+                  <ZTAITaskThinker/>
+               </TaskThinkers>
+            </BFAICognitiveMgr>
+         </instance>
+         <shared>
+            <BFAICogShared/>
+         </shared>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="560">
+               <ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester maxSlope=".01"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

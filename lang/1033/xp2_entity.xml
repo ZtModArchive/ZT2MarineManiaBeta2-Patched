@@ -1,0 +1,2452 @@
+﻿<ZT2Strings>
+      <LOC_STRING _locID="entityname:DolphinBottlenose"  >Bottlenose Dolphin</LOC_STRING>
+      <LOC_STRING _locID="entityname:DolphinBottlenose_stt"  >Bottlenose dolphin</LOC_STRING>
+      <LOC_STRING _locID="entityname:DolphinBottlenose_lower"  >the bottlenose dolphin</LOC_STRING>
+      <LOC_STRING _locID="entityname:DolphinBottlenose_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Bottlenose Dolphin</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a bottlenose dolphin, a gregarious marine mammal. The bottlenose dolphin can perform in shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:RayManta"  >Manta Ray</LOC_STRING>
+      <LOC_STRING _locID="entityname:RayManta_stt"  >Manta ray</LOC_STRING>
+      <LOC_STRING _locID="entityname:RayManta_lower"  >the manta ray</LOC_STRING>
+      <LOC_STRING _locID="entityname:RayManta_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Manta Ray</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a manta ray, a graceful, ocean-dwelling ray.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleOrca"  >Orca</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleOrca_stt"  >Orca</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleOrca_lower"  >the orca</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleOrca_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Orca</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an orca, the largest member of the cetacean family. The orca can perform in shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleSeaGreen"  >Green Sea Turtle</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleSeaGreen_stt"  >Green sea turtle</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleSeaGreen_lower"  >the green sea turtle</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleSeaGreen_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Green Sea Turtle</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a green sea turtle, the fastest swimming turtle.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleLeatherback"  >Leatherback Sea Turtle</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleLeatherback_stt"  >Leatherback sea turtle</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleLeatherback_lower"  >the leatherback sea turtle</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleLeatherback_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Leatherback Sea Turtle</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a leatherback sea turtle, the largest living turtle.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:PenguinRockhopper"  >Rockhopper Penguin</LOC_STRING>
+      <LOC_STRING _locID="entityname:PenguinRockhopper_stt"  >Rockhopper penguin</LOC_STRING>
+      <LOC_STRING _locID="entityname:PenguinRockhopper_lower"  >the rockhopper penguin</LOC_STRING>
+      <LOC_STRING _locID="entityname:PenguinRockhopper_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Rockhopper Penguin</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a rockhopper penguin, a small and aggressive species of penguin.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaLionCalifornia"  >California Sea Lion</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaLionCalifornia_stt"  >California sea lion</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaLionCalifornia_lower"  >the California sea lion</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaLionCalifornia_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>California Sea Lion</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a California sea lion, an intelligent, slender-bodied eared seal. The California sea lion can perform in shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Beluga"  >Beluga</LOC_STRING>
+      <LOC_STRING _locID="entityname:Beluga_stt"  >Beluga</LOC_STRING>
+      <LOC_STRING _locID="entityname:Beluga_lower"  >the beluga</LOC_STRING>
+      <LOC_STRING _locID="entityname:Beluga_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Beluga</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a beluga, a common sight in northern oceans. The beluga can perform in shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleFalseKiller"  >False Killer Whale</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleFalseKiller_stt"  >False killer whale</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleFalseKiller_lower"  >the false killer whale</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleFalseKiller_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>False Killer Whale</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a false killer whale, which is sometimes mistaken for an orca and is also known as a pseudorca. The false killer whale can perform in shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:WhalePilotShortFinned"  >Short Finned Pilot Whale</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhalePilotShortFinned_stt"  >Short finned pilot whale</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhalePilotShortFinned_lower"  >the short finned pilot whale</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhalePilotShortFinned_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Short Finned Pilot Whale</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a short finned pilot whale, a deep-diving cetacean. The short finned pilot whale can perform in shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale"  >Whale Shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_stt"  >Whale shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_lower"  >the whale shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Whale Shark</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a whale shark, the largest fish in the world.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkReefBlacktip"  >Blacktip Reef Shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkReefBlacktip_stt"  >Blacktip reef shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkReefBlacktip_lower"  >the blacktip reef shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkReefBlacktip_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Blacktip Reef Shark</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a blacktip reef shark, a shark that prefers shallower waters.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhite"  >White Shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhite_stt"  >White shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhite_lower"  >the white shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhite_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>White Shark</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a white shark, often considered the most dangerous of sharks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkGoblin"  >Goblin Shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkGoblin_stt"  >Goblin shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkGoblin_lower"  >the goblin shark</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkGoblin_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Goblin Shark</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a goblin shark, a denizen of the deeps.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkHammerheadScalloped"  >Scalloped Hammerhead</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkHammerheadScalloped_stt"  >Scalloped hammerhead</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkHammerheadScalloped_lower"  >the scalloped hammerhead</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkHammerheadScalloped_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Scalloped Hammerhead</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a scalloped hammerhead, a shark with an unusually-shaped head.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:MarlinBlue"  >Blue Marlin</LOC_STRING>
+      <LOC_STRING _locID="entityname:MarlinBlue_stt"  >Blue marlin</LOC_STRING>
+      <LOC_STRING _locID="entityname:MarlinBlue_lower"  >the blue marlin</LOC_STRING>
+      <LOC_STRING _locID="entityname:MarlinBlue_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Blue Marlin</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a blue marlin, the world's largest species of billfish.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ManateeWestIndian"  >West Indian Manatee</LOC_STRING>
+      <LOC_STRING _locID="entityname:ManateeWestIndian_stt"  >West Indian manatee</LOC_STRING>
+      <LOC_STRING _locID="entityname:ManateeWestIndian_lower"  >the West Indian manatee</LOC_STRING>
+      <LOC_STRING _locID="entityname:ManateeWestIndian_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>West Indian Manatee</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a West Indian manatee, a gentle marine herbivore.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:OtterSea"  >Sea Otter</LOC_STRING>
+      <LOC_STRING _locID="entityname:OtterSea_stt"  >Sea otter</LOC_STRING>
+      <LOC_STRING _locID="entityname:OtterSea_lower"  >the sea otter</LOC_STRING>
+      <LOC_STRING _locID="entityname:OtterSea_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sea Otter</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a sea otter, the smallest marine mammal. The sea otter can perform in shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Narwhal"  >Narwhal</LOC_STRING>
+      <LOC_STRING _locID="entityname:Narwhal_stt"  >Narwhal</LOC_STRING>
+      <LOC_STRING _locID="entityname:Narwhal_lower"  >the narwhal</LOC_STRING>
+      <LOC_STRING _locID="entityname:Narwhal_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Narwhal</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a narwhal, a whale that may have inspired the legend of the unicorn.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:WalrusPacific"  >Pacific Walrus</LOC_STRING>
+      <LOC_STRING _locID="entityname:WalrusPacific_stt"  >Pacific walrus</LOC_STRING>
+      <LOC_STRING _locID="entityname:WalrusPacific_lower"  >the Pacific walrus</LOC_STRING>
+      <LOC_STRING _locID="entityname:WalrusPacific_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Pacific Walrus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a Pacific walrus, one of the largest arctic animals. The walrus can perform in shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Remora"  >Remora</LOC_STRING>
+      <LOC_STRING _locID="entityname:Remora_stt"  >Remora</LOC_STRING>
+      <LOC_STRING _locID="entityname:Remora_lower"  >the remora</LOC_STRING>
+      <LOC_STRING _locID="entityname:Remora_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Remora</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a remora, a cleanerfish that helps keep your sharks, dolphins, and turtles clean.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:RayManta_Gift"  >Manta Ray Backpack</LOC_STRING>
+      <LOC_STRING _locID="entityname:RayManta_Gift_stt"  >Manta ray backpack</LOC_STRING>
+      <LOC_STRING _locID="entityname:RayManta_Gift_lower"  >the manta ray backpack</LOC_STRING>
+      <LOC_STRING _locID="entityname:RayManta_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Manta Ray Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the manta ray will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_Gift"  >Whale Shark Backpack</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_Gift_stt"  >Whale shark backpack</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_Gift_lower"  >the whale shark backpack</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Whale Shark Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the whale shark will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleSeaGreen_Gift"  >Green Sea Turtle Shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleSeaGreen_Gift_stt"  >Green sea turtle shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleSeaGreen_Gift_lower"  >the green sea turtle shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleSeaGreen_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Green Sea Turtle Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the green sea turtle will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleOrca_Gift"  >Orca Shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleOrca_Gift_stt"  >Orca shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleOrca_Gift_lower"  >the orca shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleOrca_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Orca Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the orca will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:MarlinBlue_Gift"  >Blue Marlin Shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:MarlinBlue_Gift_stt"  >Blue marlin shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:MarlinBlue_Gift_lower"  >the blue marlin shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:MarlinBlue_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Blue Marlin Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the blue marlin will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleLeatherback_Gift"  >Leatherback Turtle Shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleLeatherback_Gift_stt"  >Leatherback turtle shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleLeatherback_Gift_lower"  >the leatherback turtle shirt</LOC_STRING>
+      <LOC_STRING _locID="entityname:TurtleLeatherback_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Leatherback Turtle Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the leatherback turtle will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkGoblin_Gift"  >Goblin Shark Hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkGoblin_Gift_stt"  >Goblin shark hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkGoblin_Gift_lower"  >the goblin shark hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkGoblin_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Goblin Shark Hat</b>
+         </color>
+         <br/>   
+         Guests who enjoy watching the goblin shark will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:WalrusPacific_Gift"  >Pacific Walrus Hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:WalrusPacific_Gift_stt"  >Pacific walrus hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:WalrusPacific_Gift_lower"  >the Pacific walrus hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:WalrusPacific_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Pacific Walrus Hat</b>
+         </color>
+         <br/>   
+         Guests who enjoy watching the Pacific walrus will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleBeluga_Gift"  >Beluga Hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleBeluga_Gift_stt"  >Beluga hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleBeluga_Gift_lower"  >the beluga hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleBeluga_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Beluga Hat</b>
+         </color>
+         <br/>   
+         Guests who enjoy watching the beluga will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkHammerheadScalloped_Gift"  >Scalloped Hammerhead Hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkHammerheadScalloped_Gift_stt"  >Scalloped hammerhead hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkHammerheadScalloped_Gift_lower"  >the scalloped hammerhead hat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkHammerheadScalloped_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Scalloped Hammerhead Hat</b>
+         </color>
+         <br/>   
+         Guests who enjoy watching the scalloped hammerhead will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkReefBlackTip_Gift"  >Black Tip Reef Shark Puppet</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkReefBlackTip_Gift_stt"  >Black tip reef shark puppet</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkReefBlackTip_Gift_lower"  >the black tip reef shark puppet</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkReefBlackTip_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Black Tip Reef Shark Puppet</b>
+         </color>
+         <br/>Guests who enjoy watching the black tip reef shark will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhite_Gift"  >White Shark Puppet</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhite_Gift_stt"  >White shark puppet</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhite_Gift_lower"  >the white shark puppet</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhite_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>White Shark Puppet</b>
+         </color>
+         <br/>Guests who enjoy watching the white shark will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Narwhal_Gift"  >Narwhal Puppet</LOC_STRING>
+      <LOC_STRING _locID="entityname:Narwhal_Gift_stt"  >Narwhal puppet</LOC_STRING>
+      <LOC_STRING _locID="entityname:Narwhal_Gift_lower"  >the narwhal puppet</LOC_STRING>
+      <LOC_STRING _locID="entityname:Narwhal_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Narwhal Puppet</b>
+         </color>
+         <br/>Guests who enjoy watching the narwhal will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleFalseKiller_Gift"  >False Killer Whale Hip Pack</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleFalseKiller_Gift_stt"  >False killer whale hip pack</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleFalseKiller_Gift_lower"  >the false killer whale hip pack</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhaleFalseKiller_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>False Killer Whale Hip Pack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the false killer whale will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:WhalePilotShortFinned_Gift"  >Short Finned Pilot Whale Hip Pack</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhalePilotShortFinned_Gift_stt"  >Short finned pilot whale hip pack</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhalePilotShortFinned_Gift_lower"  >the short finned pilot whale hip pack</LOC_STRING>
+      <LOC_STRING _locID="entityname:WhalePilotShortFinned_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Short Finned Pilot Whale Hip Pack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the short finned pilot whale will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ManateeWestIndian_Gift"  >West Indian Manatee Stuffed Animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:ManateeWestIndian_Gift_stt"  >West Indian manatee stuffed animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:ManateeWestIndian_Gift_lower"  >the West Indian manatee stuffed animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:ManateeWestIndian_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>West Indian Manatee Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the West Indian manatee will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:OtterSea_Gift"  >Sea Otter Stuffed Animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:OtterSea_Gift_stt"  >Sea otter stuffed animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:OtterSea_Gift_lower"  >the sea otter stuffed animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:OtterSea_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sea Otter Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the sea otter will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaLionCalifornia_Gift"  >California Sea Lion Stuffed Animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaLionCalifornia_Gift_stt"  >California sea lion stuffed animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaLionCalifornia_Gift_lower"  >the California sea lion stuffed animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaLionCalifornia_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>California Sea Lion Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the California sea lion will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:DolphinBottlenose_Gift"  >Bottlenose Dolphin Stuffed Animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:DolphinBottlenose_Gift_stt"  >Bottlenose dolphin stuffed animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:DolphinBottlenose_Gift_lower"  >the bottlenose dolphin stuffed animal</LOC_STRING>
+      <LOC_STRING _locID="entityname:DolphinBottlenose_Gift_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Bottlenose Dolphin Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the bottlenose dolphin will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_mm"  >Artifical Marine Carcass Container</LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_mm_stt"  >Artifical marine carcass container</LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_mm_lower"  >the artifical marine carcass</LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Artifical Marine Carcass Container</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the artifical marine carcass container, which is used to feed meat to marine carnivores.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_Chum_mm"  >Artifical Marine Carcass Container with Chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_Chum_mm_stt"  >Artifical Marine carcass container with chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_Chum_mm_lower"  >the artifical marine carcass</LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_Chum_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Artifical Marine Carcass Container with Chum</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the artifical marine carcass container with chum, which is used to feed chum to marine carnivores.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_Fish_mm"  >Artifical Marine Carcass with Fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_Fish_mm_stt"  >Artifical marine carcass with fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_Fish_mm_lower"  >the artifical marine carcass</LOC_STRING>
+      <LOC_STRING _locID="entityname:Carcass_Fish_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Artifical Marine Carcass with Fish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the artifical marine carcass with fish, which is used to feed chum to marine carnivores.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Chum"  >Chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Chum_stt"  >Chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Chum_lower"  >the chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Chum_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Chum</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place chum,which consists of chopped fish and fish parts. 
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Clams"  >Clams</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Clams_stt"  >Clams</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Clams_lower"  >the clams</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Clams_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Clams</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place clams, a favorite food of some marine animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Jellyfish"  >Jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Jellyfish_stt"  >Jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Jellyfish_lower"  >the jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Jellyfish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jellyfish</b>
+         </color>
+         <br/>
+         Click to select and then place jellyfish, a popular food with certain sea turtles.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Plankton"  >Zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Plankton_stt"  >Zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Plankton_lower"  >the zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Plankton_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Zooplankton</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place zooplankton, tiny creatures eaten by some marine animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Seaweed"  >Seaweed</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Seaweed_stt"  >Seaweed</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Seaweed_lower"  >the seaweed</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Seaweed_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Seaweed</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place seaweed, a popular food with marine herbivores like the manatee.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Shellfish"  >Shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Shellfish_stt"  >Shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Shellfish_lower"  >the shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Shellfish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Squid</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place shellfish, a favorite food of certain marine animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Squid"  >Squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Squid_stt"  >Squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Squid_lower"  >the squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:Terrain_Squid_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Squid</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place squid, a favorite food of certain marine animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Jellyfish"  >Lure Buoy with Jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Jellyfish_stt"  >Lure buoy with jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Jellyfish_lower"  >the lure buoy with jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Jellyfish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Lure Buoy with Jellyfish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a lure buoy with jellyfish, which some marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Plankton"  >Lure Buoy with Zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Plankton_stt"  >Lure buoy with zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Plankton_lower"  >the lure buoy with zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Plankton_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Lure Buoy with zooplankton</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a lure buoy with zooplankton, which filter-feeding marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Fish"  >Lure Buoy with Fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Fish_stt"  >Lure buoy with fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Fish_lower"  >the lure buoy with fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Fish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Lure Buoy with Fish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a lure buoy with fish, which filter-feeding marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Squid"  >Lure Buoy with Squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Squid_stt"  >Lure buoy with squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Squid_lower"  >the lure buoy with squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyLure_Squid_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Lure Buoy with Squid</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a lure buoy with squid, which some marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyNet_Chum"  >Net Buoy with Chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyNet_Chum_stt"  >Net buoy with chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyNet_Chum_lower"  >the net buoy with chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyNet_Chum_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Net Buoy with Chum</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a net buoy with chum, which certain marine carnivores eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyNet_Shellfish"  >Net Buoy with Shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyNet_Shellfish_stt"  >Net buoy with shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyNet_Shellfish_lower"  >the net buoy with shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:BuoyNet_Shellfish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Net Buoy with Shellfish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a net buoy with shellfish, which some marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Plankton"  >Food Box with Zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Plankton_stt"  >Food box with zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Plankton_lower"  >the food box with zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Plankton_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Food Box with Zooplankton</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a food box with zooplankton, which filter-feeding marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Squid"  >Food Box with Squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Squid_stt"  >Food box with squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Squid_lower"  >the food box with squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Squid_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Food Box with Squid</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a food box with squid, which some marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Seaweed"  >Food Box with Seaweed</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Seaweed_stt"  >Food box with seaweed</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Seaweed_lower"  >the food box with seaweed</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Seaweed_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Food Box with Seaweed</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a food box with seaweed, which some marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Chum"  >Food Box with Chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Chum_stt"  >Food box with chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Chum_lower"  >the food box with chum</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Chum_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Food Box with Chum</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a food box with chum, which some marine carnivores eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Fish"  >Food Box with Fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Fish_stt"  >Food box with fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Fish_lower"  >the food box with fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:FoodBox_Fish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Food Box with Fish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a food box with fish, which marine carnivores eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Squid"  >Artificial Reef with Squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Squid_stt"  >Artificial reef with squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Squid_lower"  >the artificial reef with squid</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Squid_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Artificial Reef with Squid</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an artificial reef with squid, which some marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Jellyfish"  >Artificial Reef with Jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Jellyfish_stt"  >Artificial Reef with Jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Jellyfish_lower"  >the artificial reef with jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Jellyfish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Artificial Reef with Jellyfish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an artificial reef with jellyfish, which some marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Plankton"  >Artificial Reef with Zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Plankton_stt"  >Artificial reef with zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Plankton_lower"  >the artificial reef with zooplankton</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Plankton_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Artificial Reef with Zooplankton</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an artificial reef with zooplankton, which filter-feeding marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Shellfish"  >Artificial Reef with Shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Shellfish_stt"  >Artificial reef with shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Shellfish_lower"  >the artificial reef with shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Shellfish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Artificial Reef with Shellfish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an artificial reef with shellfish, which some marine animals eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Fish"  >Artificial Reef with Fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Fish_stt"  >Artificial reef with fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Fish_lower"  >the artificial reef with fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:ArtificialReef_Fish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Artificial Reef with Fish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an artificial reef with fish, which marine carnivores eat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SubstratePile_Seaweed"  >Substrate Pile with Seaweed</LOC_STRING>
+      <LOC_STRING _locID="entityname:SubstratePile_Seaweed_stt"  >Substrate pile with seaweed</LOC_STRING>
+      <LOC_STRING _locID="entityname:SubstratePile_Seaweed_lower"  >the substrate pile</LOC_STRING>
+      <LOC_STRING _locID="entityname:SubstratePile_Seaweed_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Substrate Pile with Seaweed</b>
+         </color>
+         <br/>
+         
+         Click to select and then place a pile of gravel, shells, and other materials mixed with seaweed.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SubstratePile_Shellfish"  >Substrate Pile with Shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:SubstratePile_Shellfish_stt"  >Substrate pile with shellfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:SubstratePile_Shellfish_lower"  >the substrate pile</LOC_STRING>
+      <LOC_STRING _locID="entityname:SubstratePile_Shellfish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Substrate Pile with Shellfish</b>
+         </color>
+         <br/>
+         
+         Click to select and then place a pile of shredded gravel, shells, and other materials mixed with shellfish.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Trainer"  >Trainer</LOC_STRING>
+      <LOC_STRING _locID="entityname:Trainer_stt"  >Trainer</LOC_STRING>
+      <LOC_STRING _locID="entityname:Trainer_lower"  >the trainer</LOC_STRING>
+      <LOC_STRING _locID="entityname:Trainer_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Trainer</b>
+         </color>
+         <br/>
+         
+         
+          Click to hire the trainer. Trainers teach show animals how to perform tricks in shows. Show animals are designated by a star on their icon.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:sharkphotobooth_mm"  >Shark Photo Booth</LOC_STRING>
+      <LOC_STRING _locID="entityname:sharkphotobooth_mm_stt"  >Shark photo booth</LOC_STRING>
+      <LOC_STRING _locID="entityname:sharkphotobooth_mm_lower"  >the shark photo booth</LOC_STRING>
+      <LOC_STRING _locID="entityname:sharkphotobooth_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Shark Photo Booth</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a shark photo booth, where guests will pay to have a souvenir zoo photo taken.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:touchpool_mm"  >Touch Pool</LOC_STRING>
+      <LOC_STRING _locID="entityname:touchpool_mm_stt"  >Touch Pool</LOC_STRING>
+      <LOC_STRING _locID="entityname:touchpool_mm_lower"  >the touch pool</LOC_STRING>
+      <LOC_STRING _locID="entityname:touchpool_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Touch Pool</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a touch pool, a shallow pool where guests can interact with small aquatic animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:giftcart_mm"  >Marine Gift Cart</LOC_STRING>
+      <LOC_STRING _locID="entityname:giftcart_mm_stt"  >Marine Gift Cart</LOC_STRING>
+      <LOC_STRING _locID="entityname:giftcart_mm_lower"  >the marine gift cart</LOC_STRING>
+      <LOC_STRING _locID="entityname:giftcart_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Gift Cart</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a marine gift cart, where guests can buy marine animal souvenirs.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BlueWhaleHall_mm"  >Blue Whale Hall</LOC_STRING>
+      <LOC_STRING _locID="entityname:BlueWhaleHall_mm_stt"  >Blue Whale Hall</LOC_STRING>
+      <LOC_STRING _locID="entityname:BlueWhaleHall_mm_lower"  >the blue whale hall</LOC_STRING>
+      <LOC_STRING _locID="entityname:BlueWhaleHall_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Blue Whale Hall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the blue whale hall, an educational exhibit about the largest animal on earth.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_I_mm"  >Small Grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_I_mm_stt"  >Small grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_I_mm_lower"  >the small grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_I_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Small Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the small grandstand, which seats two guests.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_II_mm"  >Medium Grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_II_mm_stt"  >Medium grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_II_mm_lower"  >the medium grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_II_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Medium Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the medium grandstand, which seats four guests.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_III_mm"  >Large Grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_III_mm_stt"  >Large grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_III_mm_lower"  >the large grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Grandstand_III_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Large Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the large grandstand, ideal seating for animal shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_I_mm"  >Upgraded Small Grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_I_mm_stt"  >Upgraded small grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_I_mm_lower"  >the upgraded grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_I_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Upgraded Small Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the upgraded small grandstand, ideal seating for animal shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_II_mm"  >Upgraded Medium Grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_II_mm_stt"  >Upgraded medium grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_II_mm_lower"  >the upgraded medium grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_II_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Upgraded Medium Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the upgraded medium grandstand, ideal seating for animal shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_III_mm"  >Upgraded Large Grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_III_mm_stt"  >Upgraded large grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_III_mm_lower"  >the upgraded large grandstand</LOC_STRING>
+      <LOC_STRING _locID="entityname:Upgraded_Grandstand_III_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Upgraded Large Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the upgraded large grandstand, ideal seating for animal shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Water_Filter"  >Water Filter</LOC_STRING>
+      <LOC_STRING _locID="entityname:Water_Filter_stt"  >Water Filter</LOC_STRING>
+      <LOC_STRING _locID="entityname:Water_Filter_lower"  >the water filter</LOC_STRING>
+      <LOC_STRING _locID="entityname:Water_Filter_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Water Filter</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the water filter. The water filter cleans the water in tanks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:IceBlock_Clams"  >Block of Ice with Clams</LOC_STRING>
+      <LOC_STRING _locID="entityname:IceBlock_Clams_stt"  >Block of ice with clams</LOC_STRING>
+      <LOC_STRING _locID="entityname:IceBlock_Clams_lower"  >the block of ice with clams</LOC_STRING>
+      <LOC_STRING _locID="entityname:IceBlock_Clams_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Block of Ice with Clams</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the block of ice with clams. Some animals that eat clams will enjoy this frozen treat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealPreyDummy"  >Seal Prey Dummy</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealPreyDummy_stt"  >Seal prey dummy</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealPreyDummy_lower"  >the seal prey dummy</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealPreyDummy_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Seal Prey Dummy</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a seal prey dummy. This artificial seal look-alike will provide hours of entertainment for aggressive marine animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:LargeBall_mm"  >Large Ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:LargeBall_mm_stt"  >Large ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:LargeBall_mm_lower"  >the large ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:LargeBall_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Large Ball</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the large ball. This ball is useful in marine animal shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SmallBall_mm"  >Small Ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:SmallBall_mm_stt"  >Small ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:SmallBall_mm_lower"  >the small ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:SmallBall_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Small Ball</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the small ball. This ball is useful in marine animal shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealBall"  >Small Ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealBall_stt"  >Small ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealBall_lower"  >the small ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealBall_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Small Ball</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the small ball. This ball is useful in marine animal shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealBall_Male"  >Sea Lion Ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealBall_Male_stt"  >Sea Lion Ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealBall_Male_lower"  >the sea lion ball</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealBall_Male_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sea Lion Ball</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the sea lion ball. This ball on a trick platform is useful in sea lion shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:JarWithFish"  >Jar with Fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:JarWithFish_stt"  >Jar with fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:JarWithFish_lower"  >the jar with fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:JarWithFish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jar with Fish</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the jar with fish, which sea lions enjoy.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TetherBall_mm"  >Tether Ball Buoy</LOC_STRING>
+      <LOC_STRING _locID="entityname:TetherBall_mm_stt"  >Tether ball buoy</LOC_STRING>
+      <LOC_STRING _locID="entityname:TetherBall_mm_lower"  >the tether ball buoy</LOC_STRING>
+      <LOC_STRING _locID="entityname:TetherBall_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tether Ball Buoy</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the tether ball buoy, which various marine animals like to use.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BubbleEmitter"  >Clam Bubbler</LOC_STRING>
+      <LOC_STRING _locID="entityname:BubbleEmitter_stt"  >Clam bubbler</LOC_STRING>
+      <LOC_STRING _locID="entityname:BubbleEmitter_lower"  >the clam bubbler</LOC_STRING>
+      <LOC_STRING _locID="entityname:BubbleEmitter_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Clam Bubbler</b>
+         </color>
+         <br/>
+         Click to select and then place the clam bubbler. Marine animals such as the manta ray enjoy swimming in the bubbles.     
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Koi"  >Koi</LOC_STRING>
+      <LOC_STRING _locID="entityname:Koi_stt"  >Koi</LOC_STRING>
+      <LOC_STRING _locID="entityname:Koi_lower"  >the koi</LOC_STRING>
+      <LOC_STRING _locID="entityname:Koi_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Koi</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the koi, a decorative addition to any pond or tank.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TunaYellowfin"  >Yellowfin Tuna</LOC_STRING>
+      <LOC_STRING _locID="entityname:TunaYellowfin_stt"  >Yellowfin tuna</LOC_STRING>
+      <LOC_STRING _locID="entityname:TunaYellowfin_lower"  >the yellowfin tuna</LOC_STRING>
+      <LOC_STRING _locID="entityname:TunaYellowfin_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Yellowfin Tuna</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the yellowfin tuna, a form of live food used as an enrichment item.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:CodArctic"  >Arctic Cod</LOC_STRING>
+      <LOC_STRING _locID="entityname:CodArctic_stt"  >Arctic cod</LOC_STRING>
+      <LOC_STRING _locID="entityname:CodArctic_lower"  >the arctic cod</LOC_STRING>
+      <LOC_STRING _locID="entityname:CodArctic_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Arctic Cod</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the arctic cod, a form of live food used as an enrichment item.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:KelpBed"  >Kelp Bed</LOC_STRING>
+      <LOC_STRING _locID="entityname:KelpBed_stt"  >Kelp bed</LOC_STRING>
+      <LOC_STRING _locID="entityname:KelpBed_lower"  >the kelp bed</LOC_STRING>
+      <LOC_STRING _locID="entityname:KelpBed_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Kelp Bed</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the kelp bed, which sea otters use as a resting place.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:RockIsland_Shelter"  >Rock Island</LOC_STRING>
+      <LOC_STRING _locID="entityname:RockIsland_Shelter_stt"  >Rock island</LOC_STRING>
+      <LOC_STRING _locID="entityname:RockIsland_Shelter_lower"  >the rock island</LOC_STRING>
+      <LOC_STRING _locID="entityname:RockIsland_Shelter_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Rock Island</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the rock island, an artificial floating island that certain marine animals can use.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:DesertIsland_Shelter"  >Desert Island</LOC_STRING>
+      <LOC_STRING _locID="entityname:DesertIsland_Shelter_stt"  >Desert island</LOC_STRING>
+      <LOC_STRING _locID="entityname:DesertIsland_Shelter_lower"  >the desert island</LOC_STRING>
+      <LOC_STRING _locID="entityname:DesertIsland_Shelter_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Desert Island</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the desert island, an artificial floating island that certain marine animals can use.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_low_mm"  >Low Marine Fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_low_mm_stt"  >Low marine fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_low_mm_lower"  >the low marine fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_low_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Low Marine Fence</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a low marine fence.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_high_mm"  >High Marine Fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_high_mm_stt"  >High marine fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_high_mm_lower"  >the high marine fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_high_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>High Marine Fence</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a high marine fence.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_window_mm"  >Marine Window Fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_window_mm_stt"  >Marine window fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_window_mm_lower"  >the marine window fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_window_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Window Marine Fence</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a marine window fence.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:showfence_mm"  >Show Fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:showfence_mm_stt"  >Show fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:showfence_mm_lower"  >the show fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:showfence_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Show Fence</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a show fence, an attractive way to enclose show areas.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:tankwallseg_mm"  >Acrylic Tank Wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankwallseg_mm_stt"  >Acrylic tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankwallseg_mm_lower"  >the acrylic tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankwallseg_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Acrylic Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an acrylic tank wall.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:tankseg_opaque_mm"  >Opaque Tank Wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankseg_opaque_mm_stt"  >Opaque tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankseg_opaque_mm_lower"  >the opaque tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankseg_opaque_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Opaque Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a opaque tank wall, which can be used to contain aquatic animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_show"  >Marine Show Tank Wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_show_stt"  >Marine Show tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_show_lower"  >the marine show tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_show_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Show Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a marine show tank wall, which can be used to contain aquatic animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_opaque_show"  >Opaque Marine Show Tank Wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_opaque_show_stt"  >Opaque marine show tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_opaque_show_lower"  >the opaque marine show tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_opaque_show_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Opaque Marine Show Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a opaque marine show tank wall, which can be used to contain aquatic animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_mm"  >Marine Themed Tank Wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_mm_stt"  >Marine themed tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_mm_lower"  >the marine themed tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Themed Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a marine themed tank wall, which can be used to contain aquatic animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_opaque_mm"  >Opaque Marine Themed Tank Wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_opaque_mm_stt"  >Opaque marine themed tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_opaque_mm_lower"  >the opaque marine themed tank wall</LOC_STRING>
+      <LOC_STRING _locID="entityname:themedtankseg_opaque_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Opaque Marine Themed Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a opaque marine themed tank wall, which can be used to contain aquatic animals.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:tankuigate"  >Tank Entrance</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankuigate_stt"  >Tank entrance</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankuigate_lower"  >the tank entrance</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankuigate_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tank Entrance</b>
+         </color>
+         <br/>
+         
+          Click to select and then place a tank entrance, which gives member of your zoo staff a way to enter aquatic animal exhibits.
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:tankuiportal"  >Tank Portal</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankuiportal_stt"  >Tank portal</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankuiportal_lower"  >the tank portal</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankuiportal_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tank Portal</b>
+         </color>
+         <br/>
+
+         Click to select and then place a tank portal, which is an opening between a show tank and an adjacent exhibit tank.
+
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:tankseg_portal_mm"  >Acrylic Tank Wall with Portal</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankseg_portal_mm_stt"  >Acrylic tank wall with portal</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankseg_portal_mm_lower"  >the acrylic tank wall with portal</LOC_STRING>
+      <LOC_STRING _locID="entityname:tankseg_portal_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Acrylic Tank Wall with Portal</b>
+         </color>
+         <br/>
+
+
+         Click to select and then place an acrylic tank wall with portal.
+
+
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:FireCoral_Reef"  >Fire Coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:FireCoral_Reef_stt"  >Fire coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:FireCoral_Reef_lower"  >the fire coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:FireCoral_Reef_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fire Coral</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a fire coral, a coral-like cnidarian with nematocysts like a jellyfish.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:MyriadFeatherStar_Reef"  >Feather Star</LOC_STRING>
+      <LOC_STRING _locID="entityname:MyriadFeatherStar_Reef_stt"  >Feather star</LOC_STRING>
+      <LOC_STRING _locID="entityname:MyriadFeatherStar_Reef_lower"  >the feather star</LOC_STRING>
+      <LOC_STRING _locID="entityname:MyriadFeatherStar_Reef_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Feather Star</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a feather star, a nocturnal echinoderm.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Phaeophyta_Coastal"  >Phaeophyta</LOC_STRING>
+      <LOC_STRING _locID="entityname:Phaeophyta_Coastal_stt"  >Phaeophyta</LOC_STRING>
+      <LOC_STRING _locID="entityname:Phaeophyta_Coastal_lower"  >the phaeophyta</LOC_STRING>
+      <LOC_STRING _locID="entityname:Phaeophyta_Coastal_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Phaeophyta</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a phaeophyta, a type of brown algae.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:AnemoneGiantGreen_Coastal"  >Giant Green Anemone</LOC_STRING>
+      <LOC_STRING _locID="entityname:AnemoneGiantGreen_Coastal_stt"  >Giant green anemone</LOC_STRING>
+      <LOC_STRING _locID="entityname:AnemoneGiantGreen_Coastal_lower"  >the giant green anemone</LOC_STRING>
+      <LOC_STRING _locID="entityname:AnemoneGiantGreen_Coastal_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Giant Green Anemone</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a giant green anemone, a filter-feeding marine animal.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TableCoral_Reef"  >Table Coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:TableCoral_Reef_stt"  >Table coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:TableCoral_Reef_lower"  >the table coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:TableCoral_Reef_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Table Coral</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place table coral, a type of coral that grows out wide and flat.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BlueGreenCoral_Reef"  >Blue Green Coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:BlueGreenCoral_Reef_stt"  >Blue green coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:BlueGreenCoral_Reef_lower"  >the blue green coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:BlueGreenCoral_Reef_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Blue Green Coral</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a blue green coral, a type of coral found in tropical waters.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaStars_Benthic"  >Sea Star</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaStars_Benthic_stt"  >Sea star</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaStars_Benthic_lower"  >the sea star</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaStars_Benthic_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sea Stars</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a sea star, a small star-shaped echinoderm.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaFan_Coastal"  >Sea Fan</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaFan_Coastal_stt"  >Sea fan</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaFan_Coastal_lower"  >the sea fan</LOC_STRING>
+      <LOC_STRING _locID="entityname:SeaFan_Coastal_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sea Fan</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a sea fan, a fan-shaped coral colony.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:KelpForest_Coastal"  >Kelp Forest</LOC_STRING>
+      <LOC_STRING _locID="entityname:KelpForest_Coastal_stt"  >Kelp forest</LOC_STRING>
+      <LOC_STRING _locID="entityname:KelpForest_Coastal_lower"  >the kelp forest</LOC_STRING>
+      <LOC_STRING _locID="entityname:KelpForest_Coastal_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Kelp Forest</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a kelp forest, a collection of tall algae.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TussacGrass_Coastal"  >Tussac Grass</LOC_STRING>
+      <LOC_STRING _locID="entityname:TussacGrass_Coastal_stt"  >Tussac grass</LOC_STRING>
+      <LOC_STRING _locID="entityname:TussacGrass_Coastal_lower"  >the tussac grass</LOC_STRING>
+      <LOC_STRING _locID="entityname:TussacGrass_Coastal_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tussac Grass</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place tussac grass, a long coastal grass.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:PlateCoral_Reef"  >Plate Coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:PlateCoral_Reef_stt"  >Plate coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:PlateCoral_Reef_lower"  >the plate coral</LOC_STRING>
+      <LOC_STRING _locID="entityname:PlateCoral_Reef_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Plate Coral</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a plate coral, a type of coral with tendril-like polyps.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:GiantBarrelSponge_Reef"  >Giant Barrel Sponge</LOC_STRING>
+      <LOC_STRING _locID="entityname:GiantBarrelSponge_Reef_stt"  >Giant barrel sponge</LOC_STRING>
+      <LOC_STRING _locID="entityname:GiantBarrelSponge_Reef_lower"  >the giant barrel sponge</LOC_STRING>
+      <LOC_STRING _locID="entityname:GiantBarrelSponge_Reef_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Giant Barrel Sponge</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a giant barrel sponge, a large barrel-shaped sponge found in tropical waters.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Large"  >Large Benthic Rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Large_stt"  >Large benthic rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Large_lower"  >the large benthic rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Large_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Large Benthic Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a large benthic rock, which is appropriate for benthic biome-based exhibits.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Medium"  >Medium Benthic Rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Medium_stt"  >Medium benthic rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Medium_lower"  >the medium benthic rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Medium_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Medium Benthic Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a medium benthic rock, which is appropriate for benthic biome-based exhibits.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Small"  >Small Benthic Rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Small_stt"  >Small benthic rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Small_lower"  >the small benthic rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Benthic_Small_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Small Benthic Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a small benthic rock, which is appropriate for benthic biome-based exhibits.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Large"  >Large Reef Rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Large_stt"  >Large reef rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Large_lower"  >the large reef rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Large_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Large Reef Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a large reef rock, which is appropriate for reef biome-based exhibits.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Medium"  >Medium Reef Rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Medium_stt"  >Medium reef rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Medium_lower"  >the medium reef rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Medium_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Medium Reef Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a medium reef rock, which is appropriate for reef biome-based exhibits.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Small"  >Small Reef Rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Small_stt"  >Small reef rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Small_lower"  >the small reef rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Reef_Small_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Small Reef Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a small reef rock, which is appropriate for reef biome-based exhibits.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Large"  >Large Coastal Rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Large_stt"  >Large coastal rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Large_lower"  >the large coastal rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Large_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Large Coastal Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a large coastal rock, which is appropriate for coastal biome-based exhibits.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Medium"  >Medium Coastal Rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Medium_stt"  >Medium coastal rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Medium_lower"  >the medium coastal rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Medium_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Medium Coastal Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a medium coastal rock, which is appropriate for coastal biome-based exhibits.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Small"  >Small Coastal Rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Small_stt"  >Small coastal rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Small_lower"  >the small coastal rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:Rock_Coastal_Small_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Small Coastal Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a small coastal rock, which is appropriate for coastal biome-based exhibits.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:DonationBox_pt"  >Pirate Donation Box</LOC_STRING>
+      <LOC_STRING _locID="entityname:DonationBox_pt_stt"  >Pirate donation box</LOC_STRING>
+      <LOC_STRING _locID="entityname:DonationBox_pt_lower"  >the pirate donation box</LOC_STRING>
+      <LOC_STRING _locID="entityname:DonationBox_pt_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Pirate Donation Box</b>
+         </color>
+         <br/>
+         Click to select and then place a donation box with an pirate theme. Guests won't donate money if they can't find a donation box, so place them all over your zoo.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:PirateShip"  >Pirate Ship</LOC_STRING>
+      <LOC_STRING _locID="entityname:PirateShip_stt"  >Pirate ship</LOC_STRING>
+      <LOC_STRING _locID="entityname:PirateShip_lower"  >the pirate ship</LOC_STRING>
+      <LOC_STRING _locID="entityname:PirateShip_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Pirate Ship</b>
+         </color>
+         <br/>
+         Click to select and then place a pirate ship, a decoration that can be used in water or on land.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:PirateMast"  >Pirate Mast</LOC_STRING>
+      <LOC_STRING _locID="entityname:PirateMast_stt"  >Pirate mast</LOC_STRING>
+      <LOC_STRING _locID="entityname:PirateMast_lower"  >the pirate mast</LOC_STRING>
+      <LOC_STRING _locID="entityname:PirateMast_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Pirate Mast</b>
+         </color>
+         <br/>
+         Click to select and then place a pirate mast, a decoration that can be used in water or on land.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TreasureChest"  >Treasure Chest Bubbler</LOC_STRING>
+      <LOC_STRING _locID="entityname:TreasureChest_stt"  >Treasure chest bubbler</LOC_STRING>
+      <LOC_STRING _locID="entityname:TreasureChest_lower"  >the treasure chest bubbler</LOC_STRING>
+      <LOC_STRING _locID="entityname:TreasureChest_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Treasure Chest Bubbler</b>
+         </color>
+         <br/>
+         Click to select and then place a treasure chest bubbler, which can be used as decoration either on land or in water.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BouncyRide_SeaHorse_mm"  >Sea Horse Bouncy Ride</LOC_STRING>
+      <LOC_STRING _locID="entityname:BouncyRide_SeaHorse_mm_stt"  >Sea horse bouncy ride</LOC_STRING>
+      <LOC_STRING _locID="entityname:BouncyRide_SeaHorse_mm_lower"  >the sea horse bouncy ride</LOC_STRING>
+      <LOC_STRING _locID="entityname:BouncyRide_SeaHorse_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sea Horse Bouncy Ride</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a sea horse bouncy ride, on which small children can sit and bounce.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Fountain_mm"  >Marine Fountain</LOC_STRING>
+      <LOC_STRING _locID="entityname:Fountain_mm_stt"  >Marine fountain</LOC_STRING>
+      <LOC_STRING _locID="entityname:Fountain_mm_lower"  >the marine fountain</LOC_STRING>
+      <LOC_STRING _locID="entityname:Fountain_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Fountain</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a marine-themed fountain. Guests appreciate the beauty of a well-placed fountain.
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:MusicalRock_mm"  >Marine Music Rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:MusicalRock_mm_stt"  >Marine music rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:MusicalRock_mm_lower"  >the marine music rock</LOC_STRING>
+      <LOC_STRING _locID="entityname:MusicalRock_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Music Rock</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a marine-themed music rock, which plays music from speakers hidden inside of it.
+ 
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:drinkingfountain_mm"  >Nautilus Drinking Fountain</LOC_STRING>
+      <LOC_STRING _locID="entityname:drinkingfountain_mm_stt"  >Nautilus drinking fountain</LOC_STRING>
+      <LOC_STRING _locID="entityname:drinkingfountain_mm_lower"  >the nautilus drinking fountain</LOC_STRING>
+      <LOC_STRING _locID="entityname:drinkingfountain_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Nautilus Drinking Fountain</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a nautilus drinking fountain for guests to sip from.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Fountain_Splash_mm"  >Beluga Splash Fountain</LOC_STRING>
+      <LOC_STRING _locID="entityname:Fountain_Splash_mm_stt"  >Beluga splash fountain</LOC_STRING>
+      <LOC_STRING _locID="entityname:Fountain_Splash_mm_lower"  >the beluga splash fountain</LOC_STRING>
+      <LOC_STRING _locID="entityname:Fountain_Splash_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Beluga Splash Fountain</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a beluga splash fountain, a cool, wet source of amusement for children.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Gazebo_mm"  >Lighthouse Gazebo</LOC_STRING>
+      <LOC_STRING _locID="entityname:Gazebo_mm_stt"  >Lighthouse gazebo</LOC_STRING>
+      <LOC_STRING _locID="entityname:Gazebo_mm_lower"  >the lighthouse gazebo</LOC_STRING>
+      <LOC_STRING _locID="entityname:Gazebo_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Lighthouse Gazebo</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a lighthouse gazebo, which offers shade and seating for guests.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_Octopus"  >Aquarium with Octopus</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_Octopus_stt"  >Aquarium with octopus</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_Octopus_lower"  >the aquarium with octopus</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_Octopus_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Aquarium with Octopus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an aquarium containing a fascinating octopus.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_Jellyfish"  >Aquarium with Jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_Jellyfish_stt"  >Aquarium with jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_Jellyfish_lower"  >the aquarium with jellyfish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_Jellyfish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Aquarium with Jellyfish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an aquarium containing beautiful jellyfish.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_SeaHorse"  >Aquarium with Sea Horses</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_SeaHorse_stt"  >Aquarium with sea horses</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_SeaHorse_lower"  >the aquarium with sea horses</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_SeaHorse_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Aquarium with Sea Horses</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an aquarium containing playful sea horses.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_TropicalFish"  >Aquarium with Tropical Fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_TropicalFish_stt"  >Aquarium with tropical fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_TropicalFish_lower"  >the aquarium with tropical fish</LOC_STRING>
+      <LOC_STRING _locID="entityname:Aquarium_TropicalFish_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Aquarium with Tropical Fish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an aquarium containing colorful tropical fish.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Statue_mm"  >Marine Statue</LOC_STRING>
+      <LOC_STRING _locID="entityname:Statue_mm_stt"  >Marine statue</LOC_STRING>
+      <LOC_STRING _locID="entityname:Statue_mm_lower"  >the marine statue</LOC_STRING>
+      <LOC_STRING _locID="entityname:Statue_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Statue</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the marine statue, which portrays a family of frisky sea otters.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Statue_Training_mm"  >Marine Training Statue</LOC_STRING>
+      <LOC_STRING _locID="entityname:Statue_Training_mm_stt"  >Marine training statue</LOC_STRING>
+      <LOC_STRING _locID="entityname:Statue_Training_mm_lower"  >the marine training statue</LOC_STRING>
+      <LOC_STRING _locID="entityname:Statue_Training_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Training Statue</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the marine training statue, your reward for getting 100 perfect 100% training scores.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:PathArch_mm"  >Marine Arch</LOC_STRING>
+      <LOC_STRING _locID="entityname:PathArch_mm_stt"  >Marine arch</LOC_STRING>
+      <LOC_STRING _locID="entityname:PathArch_mm_lower"  >the marine arch</LOC_STRING>
+      <LOC_STRING _locID="entityname:PathArch_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Arch</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place a marine arch formed by a pair of graceful dolphins.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BigScreenTV"  >Big Screen TV</LOC_STRING>
+      <LOC_STRING _locID="entityname:BigScreenTV_stt"  >Big screen TV</LOC_STRING>
+      <LOC_STRING _locID="entityname:BigScreenTV_lower"  >the big screen TV</LOC_STRING>
+      <LOC_STRING _locID="entityname:BigScreenTV_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Big Screen TV</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place a big screen TV, which gives your guests a great view of animal shows. 
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:marine"  >Marine Path</LOC_STRING>
+      <LOC_STRING _locID="entityname:marine_stt"  >Marine path</LOC_STRING>
+      <LOC_STRING _locID="entityname:marine_lower"  >the marine path</LOC_STRING>
+      <LOC_STRING _locID="entityname:marine_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Path</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place sections of marine path. 
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Canopy"  >the Canopy</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Canopy_Description"  >Canopy</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_TV"  >the Big Screen TV</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_TV_Description"  >Big Screen TV</LOC_STRING>
+      <LOC_STRING _locID="entityname:ZTAIShow"  >Show</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_mm"  >Show Platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_mm_stt"  >Show platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_mm_lower"  >the show platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Show Platform</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the show platform. The show platform is required for running aquatic animal shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TrainingArea"  >Training Area</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrainingArea_stt"  >Training area</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrainingArea_lower"  >the training area</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrainingArea_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Training Area</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the training area. The training area is required for training marine animals to perform tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SlidingPlatform"  >Beaching Platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:SlidingPlatform_stt"  >Beaching platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:SlidingPlatform_lower"  >the beaching platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:SlidingPlatform_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Beaching Platform</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the beaching platform, which certain cetaceans use during marine shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Backdrop_I_mm"  >Show Platform with Backdrop</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Backdrop_I_mm_stt"  >Show Platform with backdrop</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Backdrop_I_mm_lower"  >the show platform with backdrop</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Backdrop_I_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Show Platform with Backdrop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the show platform with backdrop. The show platform is required for running aquatic animal shows. The backdrop allows you to theme your shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Backdrop_II_mm"  >Show Platform with Backdrop</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Backdrop_II_mm_stt"  >Show platform with backdrop</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Backdrop_II_mm_lower"  >the show platform with backdrop</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Backdrop_II_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Show Platform with Backdrop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the show platform. The show platform is required for running aquatic animal shows. The backdrop allows you to theme your shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Upgraded_mm"  >Upgraded Show Platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Upgraded_mm_stt"  >Upgraded Show Platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Upgraded_mm_lower"  >the upgraded show platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShowPlatform_Upgraded_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Upgraded Show Platform</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the upgraded show platform, which makes your shows even more impressive.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Hoop_mm"  >Hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:Hoop_mm_stt"  >Hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:Hoop_mm_lower"  >the hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:Hoop_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Hoop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the hoop. Dolphins can jump through the hoop in aquatic animal shows.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Suspension_Bar_mm"  >Suspension Bar</LOC_STRING>
+      <LOC_STRING _locID="entityname:Suspension_Bar_mm_stt"  >Suspension bar</LOC_STRING>
+      <LOC_STRING _locID="entityname:Suspension_Bar_mm_lower"  >the suspension bar</LOC_STRING>
+      <LOC_STRING _locID="entityname:Suspension_Bar_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Suspension Bar</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the suspension bar, which various marine animals use to perform tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Basketball_Hoop_mm"  >Basketball Hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:Basketball_Hoop_mm_stt"  >basketball hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:Basketball_Hoop_mm_lower"  >the basketball hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:Basketball_Hoop_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Basketball Hoop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the basketball hoop, which various marine animals use to perform tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Basketball_Hoop_mm_Male"  >Basketball Hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:Basketball_Hoop_mm_Male_stt"  >basketball hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:Basketball_Hoop_mm_Male_lower"  >the basketball hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:Basketball_Hoop_mm_Male_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Basketball Hoop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the basketball hoop, which various marine animals use to perform tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BasketballHoop_Small_mm"  >Basketball Hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:BasketballHoop_Small_mm_stt"  >basketball hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:BasketballHoop_Small_mm_lower"  >the basketball hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:BasketballHoop_Small_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Basketball Hoop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the basketball hoop, which various marine animals use to perform tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:BasketballHoop_Small_mm_Male"  >Basketball Hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:BasketballHoop_Small_mm_Male_stt"  >basketball hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:BasketballHoop_Small_mm_Male_lower"  >the basketball hoop</LOC_STRING>
+      <LOC_STRING _locID="entityname:BasketballHoop_Small_mm_Male_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Basketball Hoop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the basketball hoop, which various marine animals use to perform tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickArea_mm"  >Trick Area</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickArea_mm_stt"  >Trick area</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickArea_mm_lower"  >the trick area</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickArea_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Trick Area</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trick area, an area designated for show animals to perform tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickArea_mm_Male"  >Trick Area</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickArea_mm_Male_stt"  >Trick area</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickArea_mm_Male_lower"  >the trick area</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickArea_mm_Male_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Trick Area</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trick area, an area designated for show animals to perform tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickPlatform"  >Trick Platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickPlatform_stt"  >Trick platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickPlatform_lower"  >the trick platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickPlatform_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Trick Platform</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trick platform, which the Pacific walrus uses to perform its bellow trick.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickPlatform_Male"  >Trick Platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickPlatform_Male_stt"  >Trick platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickPlatform_Male_lower"  >the trick platform</LOC_STRING>
+      <LOC_STRING _locID="entityname:TrickPlatform_Male_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Trick Platform</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trick platform, which the Pacific walrus uses to perform its bellow trick.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealTrampoline"  >Trampoline</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealTrampoline_stt"  >Trampoline</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealTrampoline_lower"  >the trampoline</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealTrampoline_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Trampoline</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trampoline, which the sea lion uses when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealTrampoline_Male"  >Trampoline</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealTrampoline_Male_stt"  >Trampoline</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealTrampoline_Male_lower"  >the trampoline</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealTrampoline_Male_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Trampoline</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trampoline, which the sea lion uses when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSlide"  >Slide</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSlide_stt"  >Slide</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSlide_lower"  >the slide</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSlide_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Slide</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the slide, which sea lions and sea otters use when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSlide_Male"  >Slide</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSlide_Male_stt"  >Slide</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSlide_Male_lower"  >the slide</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSlide_Male_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Slide</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the slide, which sea lions and sea otters use when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSwing"  >Swing</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSwing_stt"  >Swing</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSwing_lower"  >the swing</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSwing_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swing</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the swing, which the sea lion and walrus use when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSwing_Male"  >Swing</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSwing_Male_stt"  >Swing</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSwing_Male_lower"  >the swing</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSwing_Male_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swing</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the swing, which the sea lion and walrus use when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSeat"  >Seat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSeat_stt"  >Seat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSeat_lower"  >the seat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSeat_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Seat</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the seat, which the sea lion and walrus use when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSeat_Male"  >Seat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSeat_Male_stt"  >Seat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSeat_Male_lower"  >the seat</LOC_STRING>
+      <LOC_STRING _locID="entityname:SealSeat_Male_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Seat</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the seat, which the sea lion and walrus use when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Horns_mm"  >Horns</LOC_STRING>
+      <LOC_STRING _locID="entityname:Horns_mm_stt"  >Horns</LOC_STRING>
+      <LOC_STRING _locID="entityname:Horns_mm_lower"  >the horns</LOC_STRING>
+      <LOC_STRING _locID="entityname:Horns_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Horns</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the horns, which the sea lion and walrus use when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Horns_mm_Male"  >Horns</LOC_STRING>
+      <LOC_STRING _locID="entityname:Horns_mm_Male_stt"  >Horns</LOC_STRING>
+      <LOC_STRING _locID="entityname:Horns_mm_Male_lower"  >the horns</LOC_STRING>
+      <LOC_STRING _locID="entityname:Horns_mm_Male_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Horns</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the horns, which the sea lion and walrus use when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:PileOfRocks"  >Pile of Rocks</LOC_STRING>
+      <LOC_STRING _locID="entityname:PileOfRocks_stt"  >Pile of Rocks</LOC_STRING>
+      <LOC_STRING _locID="entityname:PileOfRocks_lower"  >the pile of rocks</LOC_STRING>
+      <LOC_STRING _locID="entityname:PileOfRocks_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Pile of Rocks</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the pile of rocks, which the sea otter uses when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:ShakerToy"  >Shaker Toy</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShakerToy_stt"  >Shaker Toy</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShakerToy_lower"  >the shaker toy</LOC_STRING>
+      <LOC_STRING _locID="entityname:ShakerToy_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Shaker Toy</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the shaker toy, which the sea otter uses when performing tricks.
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Light_mm"  >Tank Light</LOC_STRING>
+      <LOC_STRING _locID="entityname:Light_mm_stt"  >Tank light</LOC_STRING>
+      <LOC_STRING _locID="entityname:Light_mm_lower"  >the tank light</LOC_STRING>
+      <LOC_STRING _locID="entityname:Light_mm_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tank Light</b>
+         </color>
+         <br/>         
+         Click to select and then place the tank light. The tank light makes tank water brighter.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:Cannon"  >Pirate Cannon</LOC_STRING>
+      <LOC_STRING _locID="entityname:Cannon_stt"  >Pirate cannon</LOC_STRING>
+      <LOC_STRING _locID="entityname:Cannon_lower"  >the pirate cannon</LOC_STRING>
+      <LOC_STRING _locID="entityname:Cannon_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Pirate Cannon</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the pirate cannon, which adds a swashbuckling touch to your exhibits.
+      
+      
+      </LOC_STRING>
+   
+</ZT2Strings>

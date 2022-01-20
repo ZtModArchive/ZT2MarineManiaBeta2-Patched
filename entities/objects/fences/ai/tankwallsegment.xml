@@ -1,0 +1,103 @@
+<BFTypedBinder binderType="tankwallsegment" abstract="true">
+   <types>
+      <entity>
+         <fence>
+            <tankwallsegment/>
+         </fence>
+      </entity>
+   </types>
+   <shared>
+      <BFGCollisionData isWaterBoundary="true">
+         <typeAttrScores>
+            <actor attr="b_Walkable" score="0" alwaysValidate="true"/>
+            <avatar attr="b_Walkable" score="0" alwaysValidate="true"/>
+         </typeAttrScores>
+      </BFGCollisionData>
+      <ZTPlacementData minimumHeadroom="2.0" tankPlacement="true" forceEdgeStraight="true" noBiomeHeightOffset="true" applyHeightModifier="false"/>
+      <BFAIEntityDataShared b_ValidateDockingPosition="false" b_SeeThrough="true" s_Product="Marine" f_FenceStrength="10"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+            <BFSharedPhysVars noCaustics="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+            <BFSharedPhysVars noCaustics="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+            <BFSharedPhysVars noCaustics="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+            <BFSharedPhysVars noCaustics="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90curve90">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+            <BFSharedPhysVars noCaustics="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45curve90">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+            <BFSharedPhysVars noCaustics="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90curve135">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+            <BFSharedPhysVars noCaustics="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45curve135">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+            <BFSharedPhysVars noCaustics="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFBinder required="0">
+         <instance>
+            <ZTFence/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <BFAIEntityDataInstance b_Walkable="false"/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="90">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

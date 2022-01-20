@@ -1,0 +1,7 @@
+<ambient loop="coastal_loop">
+   <ambients>
+      <snds>
+         <snd name="c_animals01"/>
+      </snds>
+   </ambients>
+</ambient>

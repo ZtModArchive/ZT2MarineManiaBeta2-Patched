@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\rocks\coastal\RockCoastal_TAP.nif">
+  <animation anim="entities\objects\rocks\coastal\Rock_Coastal_Large_TAP_Bip01_DockNode01_JumpDownA.bf" animName="JumpDown_A" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\rocks\coastal\Rock_Coastal_Large_TAP_Bip01_DockNode03_JumpDownB.bf" animName="JumpDown_B" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\rocks\coastal\Rock_Coastal_Large_TAP_Bip01_DockNode05_JumpDownC.bf" animName="JumpDown_C" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\rocks\coastal\Rock_Coastal_Large_TAP_Bip01_DockNode00_JumpUpA.bf" animName="JumpUp_A" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\rocks\coastal\Rock_Coastal_Large_TAP_Bip01_DockNode02_JumpUpB.bf" animName="JumpUp_B" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\rocks\coastal\Rock_Coastal_Large_TAP_Bip01_DockNode04_JumpUpC.bf" animName="JumpUp_C" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="RockCoastal_TAP" version="1">
+    <node name="JumpDown">
+      <table>
+        <JumpDown_A />
+        <JumpDown_B />
+        <JumpDown_C />
+      </table>
+    </node>
+    <node name="JumpUp">
+      <table>
+        <JumpUp_A />
+        <JumpUp_B />
+        <JumpUp_C />
+      </table>
+    </node>
+  </Graph>
+</BFM>

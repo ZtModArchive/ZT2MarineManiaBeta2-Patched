@@ -1,0 +1,974 @@
+<soundtags>
+   <!--adult sounds-->
+   <!--WhaleOrca Specific-->
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_TrainingNodUpDown">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_TrainingNodUpDown.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>   
+      <BF3DSndFactory name="WhaleOrca_Adult_TrainingNodUpDown2">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_TrainingNodUpDown2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_TrainingNodLeftRight">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_TrainingNodLeftRight.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>   
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_TrainingConfused">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_TrainingConfused.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>   
+      <BF3DSndFactory name="WhaleOrca_Adult_TrainingConfused2">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_TrainingConfused2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>    
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Bite">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_Bite.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Squirm">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_Squirm.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_Bite">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_Beach_Bite.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <!--Shared Dolphin Sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport3.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport4.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport5">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport5.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport6">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport6.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Click">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Click.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_Click2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Click2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_Click3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Pulse.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_Click4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Echolocate.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Squawk">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Squawk.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_Squawk2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Squawk2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_BeachLand">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_BeachLand.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_2Swim">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_2Swim.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Eat">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Eat.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Swallow">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Swallow.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_RubFloor">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_RubFloor.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_RubOther">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_RubOther.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_EatTreat">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_EatTreat.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_EatTreat2">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_EatTreat2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Nudge">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Nudge.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_HeadSplash">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_HeadSplash.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_DorsalFinSplash">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_DorsalFinSplash.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_TailSlap">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_TailSlap.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_FlipperSlap">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_FlipperSlap.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_DorsalFinSlap">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_DorsalFinSlap.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_RubBeak">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_RubBeak.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_SwimFast_Ram">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SwimFast_Ram.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_LobTail">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_LobTail.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_IdleSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_IdleSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_IdleSuccess2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_IdleSuccess2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_IdleSuccess3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_IdleSuccess3.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_IdleSuccess4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_IdleSuccess4.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_2SwimSub_Success">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_2SwimSub_Success.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_2SwimSub_SuperSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_2SwimSub_SuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_JumpRamFailure">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_JumpRamFailure.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_JumpRamSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_JumpRamSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_JumpRamSuperSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_JumpRamSuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_FlukeSwipeJumpSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_FlukeSwipeJumpSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_FlipperSplashFailure">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_FlipperSplashFailure.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_FlipperSplashSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_FlipperSplashSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_FlipperSplashSuperSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_FlipperSplashSuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Beach.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_SquirmFailure">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Beach_SquirmFailure.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_SquirmSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Beach_SquirmSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_SquirmSuperSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Beach_SquirmSuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_2Swim">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Beach_2Swim.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--young sounds-->
+   <!--WhaleOrca Specific-->
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Bite">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Young_F_Bite.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Squirm">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Squirm.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+  <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_Bite">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Young_F_Beach_Bite.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <!--Shared Dolphin Sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport3.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport4.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport5">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport5.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport6">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport6.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Click">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Click.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_Click2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Click2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_Click3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Pulse.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_Click4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Echolocate.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Squawk">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Squawk.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_Squawk2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Squawk2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_BeachLand">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_BeachLand.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_2Swim">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_2Swim.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Eat">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Eat.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Swallow">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Swallow.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_RubFloor">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_RubFloor.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_RubOther">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_RubOther.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_EatTreat">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Young_F_EatTreat.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_EatTreat2">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Young_F_EatTreat2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Nudge">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Nudge.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_HeadSplash">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_HeadSplash.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_DorsalFinSplash">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_DorsalFinSplash.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_TailSlap">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_TailSlap.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_FlipperSlap">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_FlipperSlap.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_DorsalFinSlap">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_DorsalFinSlap.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_RubBeak">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_RubBeak.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_SwimFast_Ram">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SwimFast_Ram.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_LobTail">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_LobTail.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_IdleSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_IdleSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_IdleSuccess2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_IdleSuccess2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_IdleSuccess3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_IdleSuccess3.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_IdleSuccess4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_IdleSuccess4.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_2SwimSub_Success">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_2SwimSub_Success.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_2SwimSub_SuperSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_2SwimSub_SuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_JumpRamFailure">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_JumpRamFailure.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_JumpRamSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_JumpRamSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_JumpRamSuperSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_JumpRamSuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_FlukeSwipeJumpSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_FlukeSwipeJumpSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_FlipperSplashFailure">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_FlipperSplashFailure.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_FlipperSplashSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_FlipperSplashSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_FlipperSplashSuperSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_FlipperSplashSuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Beach.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_SquirmFailure">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Beach_SquirmFailure.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_SquirmSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Beach_SquirmSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_SquirmSuperSuccess">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Beach_SquirmSuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_2Swim">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Beach_2Swim.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   
+   <!--UNDERWATER VERSIONS-->
+<!--adult sounds-->
+   <!--WhaleOrca Specific-->
+    <BFSoundtag>
+             <BF3DSndFactory name="WhaleOrca_Adult_TrainingNodUpDown_uw">
+              <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_TrainingNodUpDown_uw.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+            </BF3DSndFactory>   
+            <BF3DSndFactory name="WhaleOrca_Adult_TrainingNodUpDown_uw2">
+              <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_TrainingNodUpDown2_uw.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+            </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+            <BF3DSndFactory name="WhaleOrca_Adult_TrainingNodLeftRight_uw">
+              <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_TrainingNodLeftRight_uw.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+            </BF3DSndFactory>   
+   </BFSoundtag>  
+   <BFSoundtag> 
+            <BF3DSndFactory name="WhaleOrca_Adult_TrainingConfused_uw">
+               <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_TrainingConfused_uw.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+            </BF3DSndFactory>   
+            <BF3DSndFactory name="WhaleOrca_Adult_TrainingConfused_uw2">
+               <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_TrainingConfused2_uw.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"/>
+            </BF3DSndFactory>    
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Bite_uw">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_Bite_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Squirm_uw">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_Squirm_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_Bite_uw">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_Beach_Bite_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <!--Shared Dolphin Sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport_uw2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport2_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport_uw3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport3_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport_uw4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport4_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport_uw5">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport5_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_SharpReport_uw6">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SharpReport6_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Click_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Click_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_Click_uw2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Click2_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_Click_uw3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Pulse_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_Click_uw4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Echolocate_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Squawk_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Squawk_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_Squawk_uw2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Squawk2_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_BeachLand_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_BeachLand_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_2Swim_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_2Swim_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Eat_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Eat_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Swallow_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Swallow_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_RubFloor_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_RubFloor_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_RubOther_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_RubOther_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_EatTreat_uw">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_EatTreat_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_EatTreat_uw2">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Adult_F_EatTreat2_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Nudge_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Nudge_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_HeadSplash_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_HeadSplash_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_DorsalFinSplash_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_DorsalFinSplash_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_TailSlap_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_TailSlap_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_FlipperSlap_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_FlipperSlap_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_DorsalFinSlap_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_DorsalFinSlap_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_RubBeak_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_RubBeak_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_SwimFast_Ram_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_SwimFast_Ram_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_LobTail_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_LobTail_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_IdleSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_IdleSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_IdleSuccess_uw2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_IdleSuccess2_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_IdleSuccess_uw3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_IdleSuccess3_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_IdleSuccess_uw4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_IdleSuccess4_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_2SwimSub_Success_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_2SwimSub_Success_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_WaterWalk_2SwimSub_SuperSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_WaterWalk_2SwimSub_SuperSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_JumpRamFailure_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_JumpRamFailure_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_JumpRamSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_JumpRamSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_JumpRamSuperSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_JumpRamSuperSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_FlukeSwipeJumpSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_FlukeSwipeJumpSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_FlipperSplashFailure_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_FlipperSplashFailure_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_FlipperSplashSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_FlipperSplashSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_FlipperSplashSuperSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_FlipperSplashSuperSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Beach_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_SquirmFailure_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Beach_SquirmFailure_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_SquirmSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Beach_SquirmSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_SquirmSuperSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Beach_SquirmSuperSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Adult_Beach_2Swim_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Adult_F_Beach_2Swim_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--young sounds-->
+   <!--WhaleOrca Specific-->
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Bite_uw">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Young_F_Bite_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Squirm_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Squirm_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+  <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_Bite_uw">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Young_F_Beach_Bite_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <!--Shared Dolphin Sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport_uw2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport2_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport_uw3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport3_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport_uw4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport4_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport_uw5">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport5_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_SharpReport_uw6">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SharpReport6_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Click_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Click_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_Click_uw2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Click2_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_Click_uw3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Pulse_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_Click_uw4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Echolocate_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Squawk_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Squawk_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_Squawk_uw2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Squawk2_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_BeachLand_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_BeachLand_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_2Swim_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_2Swim_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Eat_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Eat_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Swallow_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Swallow_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_RubFloor_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_RubFloor_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_RubOther_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_RubOther_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_EatTreat_uw">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Young_F_EatTreat_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Adult_EatTreat_uw2">
+         <snd name="entities/units/animals/WhaleOrca/sound/WhaleOrca_Young_F_EatTreat2_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Nudge_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Nudge_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_HeadSplash_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_HeadSplash_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_DorsalFinSplash_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_DorsalFinSplash_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_TailSlap_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_TailSlap_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_FlipperSlap_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_FlipperSlap_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_DorsalFinSlap_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_DorsalFinSlap_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_RubBeak_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_RubBeak_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_SwimFast_Ram_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_SwimFast_Ram_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_LobTail_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_LobTail_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_IdleSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_IdleSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_IdleSuccess_uw2">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_IdleSuccess2_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_IdleSuccess_uw3">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_IdleSuccess3_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_IdleSuccess_uw4">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_IdleSuccess4_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_2SwimSub_Success_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_2SwimSub_Success_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_WaterWalk_2SwimSub_SuperSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_WaterWalk_2SwimSub_SuperSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_JumpRamFailure_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_JumpRamFailure_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_JumpRamSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_JumpRamSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_JumpRamSuperSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_JumpRamSuperSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_FlukeSwipeJumpSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_FlukeSwipeJumpSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_FlipperSplashFailure_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_FlipperSplashFailure_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_FlipperSplashSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_FlipperSplashSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_FlipperSplashSuperSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_FlipperSplashSuperSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Beach_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_SquirmFailure_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Beach_SquirmFailure_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_SquirmSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Beach_SquirmSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_SquirmSuperSuccess_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Beach_SquirmSuperSuccess_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="WhaleOrca_Young_Beach_2Swim_uw">
+         <snd name="entities/units/animals/DolphinBottlenose/sound/DolphinBottlenose_Young_F_Beach_2Swim_uw.wav" volume="1" mindist="6" maxdist="30" layer= "underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+</soundtags>

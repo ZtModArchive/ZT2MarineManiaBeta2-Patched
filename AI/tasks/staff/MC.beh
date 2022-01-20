@@ -1,0 +1,307 @@
+<BehaviorSets>
+   <Stand>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="5"/>
+      </behaviors>
+   </Stand>
+   <StandBored>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Standbored_Idle"/>
+      </behaviors>
+   </StandBored>
+   <StandBored_Yawn>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Standbored_Yawn"/>
+      </behaviors>
+   </StandBored_Yawn>
+   <Sit>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_PostShow"/>
+         <BFBehAnimate targetAnim="SitBench_Idle" loopFlag="true"/>
+      </behaviors>
+   </Sit>
+   <CaptainStand>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_PostShow_PreCapn"/>
+         <BFBehDock targetNode="Node_PostShow_Capn" redock="true"/>
+         <BFBehAnimate targetAnim="CaptainStand_Idle" loopFlag="true"/>
+      </behaviors>
+   </CaptainStand>
+   <ShowIdle>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Sit weight="75"/>
+               <CaptainStand weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </ShowIdle>
+   <PreShow>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <CaptainStand behSet="PreShow_FromCaptainStand"/>
+               <SitBench behSet="PreShow_FromSitBench"/>
+               <default behSet="PreShow_FromSitBench"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+         <BFBehRandomSet>
+            <randomSets>
+               <Stand weight="40"/>
+               <StandBored weight="40"/>
+               <StandBored_Yawn weight="10"/>
+               <CheckWatch weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </PreShow>
+   <PreShow_FromCaptainStand>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_PreShow_Capn"/>
+         <BFBehDock targetNode="Node_PreShow" redock="true"/>
+      </behaviors>
+   </PreShow_FromCaptainStand>
+   <PreShow_FromSitBench>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+      </behaviors>
+   </PreShow_FromSitBench>
+   <PostShow>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HoseDown weight="50"/>
+               <SweepOff weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </PostShow>
+   <HoseDown>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hose_Idle"/>
+      </behaviors>
+   </HoseDown>
+   <SweepOff>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sweep_Idle"/>
+      </behaviors>
+   </SweepOff>
+   <CheckWatch>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_CheckWatch"/>
+      </behaviors>
+   </CheckWatch>
+   <Point>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_PointShow"/>
+      </behaviors>
+   </Point>
+   <Point_Whistle_Single>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_PointShow">
+            <textkeys>
+               <frame1effect text="{Bip01 Head} snd 'gesturetrace_whistle_single'"/>
+            </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </Point_Whistle_Single>
+   <Point_Whistle_Double>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_PointShow">
+            <textkeys>
+               <frame1effect text="{Bip01 Head} snd 'gesturetrace_whistle_double'"/>
+            </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </Point_Whistle_Double>
+   <CallForApplause>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_CallForApplause"/>
+      </behaviors>
+   </CallForApplause>
+   <GetApplause_Loop>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Idle weight="33"/>
+               <Stand_WaveToCrowd weight="33"/>
+               <Stand_CallForApplause weight="33"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </GetApplause_Loop>
+   <WaveToCrowd>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_WaveToCrowd"/>
+      </behaviors>
+   </WaveToCrowd>
+   <ConductShow>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Point_Whistle_Single weight="50"/>
+               <Point_Whistle_Double weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SpeakCrowd_Idle weight="10"/>
+               <Stand_Idle weight="10"/>
+               <Stand_WaveToCrowd weight="20"/>
+               <Stand_CallForApplause weight="20"/>
+               <Stand_PointShow weight="20"/>
+               <StandTalk_A weight="10"/>
+               <StandTalk_Idle weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </ConductShow>
+   <Failure>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ShoutFailure"/>
+      </behaviors>
+   </Failure>
+   <Success>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ShoutSuccess"/>
+      </behaviors>
+   </Success>
+   <Critical>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ShoutSuperSuccess"/>
+      </behaviors>
+   </Critical>
+   <GiveTreat>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="Bucket" targetAnim="Stand_2StandItem" detachAction="killitem" container="righthand" interruptFlag="true"/>
+         <BFBehSyncSet subjectBehSet="TossTreat" targetBehSet="GetTreat"/>
+      </behaviors>
+   </GiveTreat>
+   <TossTreat>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TossFood_Idle" targetNode="Node_MCHand" detachAction="killitem" container="lefthand"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </TossTreat>
+   <ReactToShow1Star>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="CallForApplause"/>
+         <BFBehAnimate targetAnim="Stand_BowNormal"/>
+      </behaviors>
+   </ReactToShow1Star>
+   <ReactToShow2Star>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="CallForApplause"/>
+         <BFBehAnimate targetAnim="Stand_BowNormal"/>
+      </behaviors>
+   </ReactToShow2Star>
+   <ReactToShow3Star>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="CallForApplause"/>
+         <BFBehAnimate targetAnim="Stand_BowGreat"/>
+      </behaviors>
+   </ReactToShow3Star>
+   <ReactToShow4Star>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="CallForApplause"/>
+         <BFBehAnimate targetAnim="Stand_BowGreat"/>
+      </behaviors>
+   </ReactToShow4Star>
+   <ReactToShow5Star>
+      <subjects>
+         <MC/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="CallForApplause"/>
+         <BFBehAnimate targetAnim="Stand_BowSuper"/>
+      </behaviors>
+   </ReactToShow5Star>
+</BehaviorSets>

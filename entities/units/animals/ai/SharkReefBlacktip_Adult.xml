@@ -1,0 +1,93 @@
+<BFTypedBinder binderType="SharkReefBlacktip_Adult" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Elasmobranchii>
+                  <Carcharhiniformes>
+                     <Carcharhinidae>
+                        <SharkReefBlacktip>
+                           <SharkReefBlacktip_Adult/>
+                        </SharkReefBlacktip>
+                     </Carcharhinidae>
+                  </Carcharhiniformes>
+               </Elasmobranchii>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="shadowObj2" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Adult="1" f_viewBonus="25" f_adoptCount="rand(1,1)" s_MorphMessage="zoomessages:AnimalPuberty" f_MorphMessagePriority="1" f_MorphMessageDuration="30" b_MediumPredator="true" />
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Head" width="0.75" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj2">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Spine2" width="2.2" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester escapeBuffer="0.375" radius=".75" motionClass="swimonly" waterScore="0" landScore="10000" maxSlope=".75"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="texController" required="1">
+         <instance>
+            <BFAITextureController currState="well" defaultState="well">
+               <attribList>
+                  <health/>
+                  <hygiene/>
+               </attribList>
+               <stateList>
+                  <sickanddirty>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                        <hygiene minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData mergeKey="material">
+                        <mainObj material="SharkReefBlacktip_Adult_F" image="entities\units\animals\SharkReefBlacktip\SharkReefBlacktip_Adult_F_Sick_Dirty.dds"/>
+                     </textureData>
+                  </sickanddirty>
+                  <sick>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData mergeKey="material">
+                        <mainObj material="SharkReefBlacktip_Adult_F" image="entities\units\animals\SharkReefBlacktip\SharkReefBlacktip_Adult_F_Sick.dds"/>
+                     </textureData>
+                  </sick>
+                  <dirty>
+                     <attribData>
+                        <hygiene minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData mergeKey="material">
+                        <mainObj material="SharkReefBlacktip_Adult_F" image="entities\units\animals\SharkReefBlacktip\SharkReefBlacktip_Adult_F_Dirty.dds"/>
+                     </textureData>
+                  </dirty>
+                  <well>
+                     <textureData mergeKey="material">
+                        <mainObj material="SharkReefBlacktip_Adult_F" image="entities\units\animals\SharkReefBlacktip\SharkReefBlacktip_Adult_F.dds"/>
+                     </textureData>
+                  </well>
+               </stateList>
+            </BFAITextureController>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

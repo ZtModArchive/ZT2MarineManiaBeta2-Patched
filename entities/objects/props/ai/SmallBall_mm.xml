@@ -1,0 +1,138 @@
+<BFTypedBinder binderType="SmallBall_mm">
+	<types>
+		<entity>
+			<prop>
+				<SmallBall_mm />
+			</prop>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTDevComponent />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\props\Ball_mm\BallSmall_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:SmallBall_mm" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SmallBall_mm" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData moveable="true"randomRotate="false" gridSnap="true" icon3Doffset="0 -0.060010 0.91" icon3Dscale="1.064964" minimumHeadroom=".344" autoFootprint="false">
+			<cfootprint width="0" height="0" />
+			<dfootprint width="1" height="1" />
+		</ZTPlacementData>
+		<BFAIEntityDataShared s_Product="Marine" b_CanLookUpByGlobalID="true" b_NoPerceiveOverride="true" s_uisort="bb" s_Zoopedia="zoopedia:zoopedia_smallball:entry" f_researchUnlockTime="60" f_researchCost="600" f_FameReq="40" b_collideWithGroundVehicles="true" />
+		<BFGDetachInfo>
+			<detachActionTable>
+				<dropitem destination="drop" />
+				<killitem destination="kill" />
+				<inventory destination="inventory" />
+				<maketrash destination="kill" />
+			</detachActionTable>
+		</BFGDetachInfo>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob.tga" baseNode="footprint" width=".5" minLength=".5" maxLength=".75" minOffset="0" maxOffset=".125" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="false" modelfile="entities\objects\props\Ball_mm\BallSmall_mm" switch="0 35 50" minSwitch="0 10" />
+					<BFRealPhysicsComponent shapeRadius="0.172" rollFrictionCoef="0.05" bounceCoef="0.7" />
+					<BFGroundFitComponent heightOffset="0.172" floatOnWater="true" waterOffset="-0.015" />
+					<BFCollisionComponent grid="footprint" />
+					<BFGridCollisionComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Node_Whap y="5" z="-.5" />
+						<Node_FlukeSwipeBall_Failure y="-6" z="-1.0" yaw="180" />
+						<Node_FlukeSwipeBall_Success y="-2.766" z="-1.551" pitch="55.2" yaw="180" />
+						<Node_FlukeSwipeBall_Critical y="-2.966" z="-1.852" pitch="70.2" yaw="180" />
+						<Node_FlukeSwipeBall_Training x="2" yaw="270" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Play">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterBall" useBehSet="UsePursuitBall_Whap" exitBehSet="ExitBall" exclusiveID="Ball1" targetNode="Dock_01" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBall" useBehSet="UsePursuitBall_Whap" exitBehSet="ExitBall" exclusiveID="Ball1" targetNode="Dock_02" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBall" useBehSet="UsePursuitBall_Whap" exitBehSet="ExitBall" exclusiveID="Ball1" targetNode="Dock_03" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBall" useBehSet="UsePursuitBall_Whap" exitBehSet="ExitBall" exclusiveID="Ball1" targetNode="Dock_04" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlukeSwipeBall_Training" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTraining" useBehSet="Idle" targetNode="Node_FlukeSwipeBall_Training" exclusiveID="Ball1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlukeSwipeBall_Failure">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockBall" useBehSet="FlukeSwipeBall_Failure" targetNode="Node_FlukeSwipeBall_Failure" exclusiveID="Ball1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlukeSwipeBall_Success">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockBall" useBehSet="FlukeSwipeBall_Success" targetNode="Node_FlukeSwipeBall_Success" exclusiveID="Ball1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlukeSwipeBall_Critical">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockBall" useBehSet="FlukeSwipeBall_Critical" targetNode="Node_FlukeSwipeBall_Critical" exclusiveID="Ball1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="320">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Moving="false" />
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester maxSlope=".01" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

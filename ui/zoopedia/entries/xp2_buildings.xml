@@ -1,0 +1,11 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry entry="zoopedia_buildings">
+         <BFHelpEntry entry="zoopedia_touchpool_mm"/>
+         <BFHelpEntry entry="zoopedia_bluewhalehall_mm"/>
+         <BFHelpEntry entry="zoopedia_bluewhalehall_mm"/>
+         <BFHelpEntry entry="zoopedia_sharkphotobooth"/>
+         <BFHelpEntry entry="zoopedia_giftcart_mm" order="zoopedia_giftcartmarine"/>         
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

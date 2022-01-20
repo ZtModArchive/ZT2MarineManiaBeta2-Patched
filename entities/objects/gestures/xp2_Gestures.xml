@@ -1,0 +1,1818 @@
+<gestures>
+	<gesture name="NewTrick" parentObj="mainObj" parentNode="Dock_Adult" BBScaleX="12.0" BBScaleY="26.0" BBScaleZ="18.0" tracingSpeed="10.0" difficulty="easy" />
+	<gesture name="FlipperSplash_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.0" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -10.001984 0.321180" />
+		<point loc="0 -7.226379 -0.016804" />
+		<point loc="0 -4.380772 -0.077469" />
+		<point loc="0 -3.237434 2.148502" />
+		<point loc="0 -1.434380 -0.033163" />
+		<point loc="0 0.417168 2.007927" />
+		<point loc="0 3.398048 -0.301201" />
+		<point loc="0 6.591377 -0.155449" />
+		<point loc="0 10.982712 0.445415" />
+		<event splinePos="5.399999" distanceWindow="3.000000" type="uparrow" />
+		<event splinePos="11.199994" distanceWindow="3.000000" type="uparrow" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="FlipperSplash_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.0" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -10.001984 0.321180" />
+		<point loc="0 -7.226379 -0.016804" />
+		<point loc="0 -4.380772 -0.077469" />
+		<point loc="0 -3.237434 2.148502" />
+		<point loc="0 -1.434380 -0.033163" />
+		<point loc="0 0.417168 2.007927" />
+		<point loc="0 3.398048 -0.301201" />
+		<point loc="0 6.591377 -0.155449" />
+		<point loc="0 10.982712 0.445415" />
+		<event splinePos="5.399999" distanceWindow="2.500000" type="uparrow" />
+		<event splinePos="8.399997" distanceWindow="2.500000" type="downarrow" />
+		<event splinePos="11.199994" distanceWindow="2.500000" type="uparrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="FlipperSplash_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -10.001984 0.321180" />
+		<point loc="0 -7.226379 -0.016804" />
+		<point loc="0 -4.380772 -0.077469" />
+		<point loc="0 -3.237434 2.148502" />
+		<point loc="0 -1.434380 -0.033163" />
+		<point loc="0 0.417168 2.007927" />
+		<point loc="0 3.398048 -0.301201" />
+		<point loc="0 6.591377 -0.155449" />
+		<point loc="0 10.982712 0.445415" />
+		<event splinePos="5.399999" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="8.399997" distanceWindow="1.500000" type="downarrow" />
+		<event splinePos="11.199994" distanceWindow="1.500000" type="uparrow" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="Jump_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -9.588520 -0.123772" />
+		<point loc="0 -6.531292 0.064032" />
+		<point loc="0 -3.972675 0.026337" />
+		<point loc="0 -2.619537 5.322559" />
+		<point loc="0 0.484245 -0.268414" />
+		<point loc="0 4.673515 0.113630" />
+		<point loc="0 7.711143 -0.648661" />
+		<event splinePos="8.199997" distanceWindow="3.000000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Jump_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.0" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -9.588520 -0.123772" />
+		<point loc="0 -6.531292 0.064032" />
+		<point loc="0 -3.972675 0.026337" />
+		<point loc="0 -2.619537 5.322559" />
+		<point loc="0 0.484245 -0.268414" />
+		<point loc="0 4.673515 0.113630" />
+		<point loc="0 7.711143 -0.648661" />
+		<event splinePos="3.200000" distanceWindow="2.500000" type="uparrow" />
+		<event splinePos="8.199997" distanceWindow="2.500000" type="leftmousebutton" />
+		<event splinePos="13.999991" distanceWindow="2.500000" type="downarrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Jump_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -9.588520 -0.123772" />
+		<point loc="0 -6.531292 0.064032" />
+		<point loc="0 -3.972675 0.026337" />
+		<point loc="0 -2.619537 5.322559" />
+		<point loc="0 0.484245 -0.268414" />
+		<point loc="0 4.673515 0.113630" />
+		<point loc="0 7.711143 -0.648661" />
+		<event splinePos="3.200000" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="8.199997" distanceWindow="1.500000" type="leftmousebutton" />
+		<event splinePos="13.999991" distanceWindow="1.500000" type="downarrow" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="WaterWalk_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -7.335182 -0.003515" />
+		<point loc="0 -5.603245 0.084972" />
+		<point loc="0 -4.750256 0.018839" />
+		<point loc="0 -2.972805 4.031317" />
+		<point loc="0 -3.659863 5.081795" />
+		<point loc="0 -4.277088 4.026449" />
+		<point loc="0 -2.579174 0.135674" />
+		<point loc="0 -0.934246 4.030561" />
+		<point loc="0 -1.622040 5.074911" />
+		<point loc="0 -2.290745 4.064877" />
+		<point loc="0 -0.186039 0.158604" />
+		<point loc="0 1.236649 4.080122" />
+		<point loc="0 0.453197 5.099934" />
+		<point loc="0 -0.116386 4.017134" />
+		<point loc="0 2.520760 -0.051210" />
+		<point loc="0 4.220818 0.147015" />
+		<point loc="0 5.656063 -0.144346" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="WaterWalk_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.0" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -7.335182 -0.003515" />
+		<point loc="0 -5.603245 0.084972" />
+		<point loc="0 -4.750256 0.018839" />
+		<point loc="0 -2.972805 4.031317" />
+		<point loc="0 -3.659863 5.081795" />
+		<point loc="0 -4.277088 4.026449" />
+		<point loc="0 -2.579174 0.135674" />
+		<point loc="0 -0.934246 4.030561" />
+		<point loc="0 -1.622040 5.074911" />
+		<point loc="0 -2.290745 4.064877" />
+		<point loc="0 -0.186039 0.158604" />
+		<point loc="0 1.236649 4.080122" />
+		<point loc="0 0.453197 5.099934" />
+		<point loc="0 -0.116386 4.017134" />
+		<point loc="0 2.520760 -0.051210" />
+		<point loc="0 4.220818 0.147015" />
+		<point loc="0 5.656063 -0.144346" />
+		<event splinePos="24.200027" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="WaterWalk_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -7.335182 -0.003515" />
+		<point loc="0 -5.603245 0.084972" />
+		<point loc="0 -4.750256 0.018839" />
+		<point loc="0 -2.972805 4.031317" />
+		<point loc="0 -3.659863 5.081795" />
+		<point loc="0 -4.277088 4.026449" />
+		<point loc="0 -2.579174 0.135674" />
+		<point loc="0 -0.934246 4.030561" />
+		<point loc="0 -1.622040 5.074911" />
+		<point loc="0 -2.290745 4.064877" />
+		<point loc="0 -0.186039 0.158604" />
+		<point loc="0 1.236649 4.080122" />
+		<point loc="0 0.453197 5.099934" />
+		<point loc="0 -0.116386 4.017134" />
+		<point loc="0 2.520760 -0.051210" />
+		<point loc="0 4.220818 0.147015" />
+		<point loc="0 5.656063 -0.144346" />
+		<event splinePos="12.499992" distanceWindow="1.500000" type="leftmousebutton" />
+		<event splinePos="24.200027" distanceWindow="1.500000" type="leftmousebutton" />
+		<event splinePos="35.944183" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="DiveJump_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.899914 -0.286566" />
+		<point loc="0 -6.796070 -0.049858" />
+		<point loc="0 -4.109386 -0.723631" />
+		<point loc="0 -3.418541 0.601101" />
+		<point loc="0 -4.042610 2.308784" />
+		<point loc="0 -5.367508 1.866961" />
+		<point loc="0 -4.656670 0.491131" />
+		<point loc="0 -2.607342 1.552168" />
+		<point loc="0 -1.215973 5.109129" />
+		<point loc="0 -2.094727 6.277533" />
+		<point loc="0 -2.608227 5.059486" />
+		<point loc="0 0.805153 0.579519" />
+		<point loc="0 4.453690 0.020601" />
+		<point loc="0 6.596413 0.426039" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="DiveJump_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.899914 -0.286566" />
+		<point loc="0 -6.796070 -0.049858" />
+		<point loc="0 -4.109386 -0.723631" />
+		<point loc="0 -3.418541 0.601101" />
+		<point loc="0 -4.042610 2.308784" />
+		<point loc="0 -5.367508 1.866961" />
+		<point loc="0 -4.656670 0.491131" />
+		<point loc="0 -2.607342 1.552168" />
+		<point loc="0 -1.215973 5.109129" />
+		<point loc="0 -2.094727 6.277533" />
+		<point loc="0 -2.608227 5.059486" />
+		<point loc="0 0.805153 0.579519" />
+		<point loc="0 4.453690 0.020601" />
+		<point loc="0 6.596413 0.426039" />
+		<event splinePos="7.999997" distanceWindow="2.500000" type="leftarrow" />
+		<event splinePos="17.199993" distanceWindow="2.500000" type="uparrow" />
+		<event splinePos="25.400024" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="DiveJump_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.899914 -0.286566" />
+		<point loc="0 -6.796070 -0.049858" />
+		<point loc="0 -4.109386 -0.723631" />
+		<point loc="0 -3.418541 0.601101" />
+		<point loc="0 -4.042610 2.308784" />
+		<point loc="0 -5.367508 1.866961" />
+		<point loc="0 -4.656670 0.491131" />
+		<point loc="0 -2.607342 1.552168" />
+		<point loc="0 -1.215973 5.109129" />
+		<point loc="0 -2.094727 6.277533" />
+		<point loc="0 -2.608227 5.059486" />
+		<point loc="0 0.805153 0.579519" />
+		<point loc="0 4.453690 0.020601" />
+		<point loc="0 6.596413 0.426039" />
+		<event splinePos="6.599998" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="7.999997" distanceWindow="1.500000" type="leftarrow" />
+		<event splinePos="15.999990" distanceWindow="1.500000" type="rightarrow" />
+		<event splinePos="17.199993" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="18.399998" distanceWindow="1.500000" type="leftarrow" />
+		<event splinePos="25.400024" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="CorkscrewTwist_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -6.011082 0.853622" />
+		<point loc="0 -4.922009 0.286430" />
+		<point loc="0 -3.929058 0.880493" />
+		<point loc="0 -2.861664 0.187910" />
+		<point loc="0 -1.687576 0.909925" />
+		<point loc="0 -0.471680 0.303474" />
+		<point loc="0 0.743469 0.887098" />
+		<point loc="0 2.074574 0.256151" />
+		<point loc="0 3.257076 0.905806" />
+		<point loc="0 4.506474 0.271097" />
+		<point loc="0 5.857307 1.014994" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="CorkscrewTwist_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -6.011082 0.853622" />
+		<point loc="0 -4.922009 0.286430" />
+		<point loc="0 -3.929058 0.880493" />
+		<point loc="0 -2.861664 0.187910" />
+		<point loc="0 -1.687576 0.909925" />
+		<point loc="0 -0.471680 0.303474" />
+		<point loc="0 0.743469 0.887098" />
+		<point loc="0 2.074574 0.256151" />
+		<point loc="0 3.257076 0.905806" />
+		<point loc="0 4.506474 0.271097" />
+		<point loc="0 5.857307 1.014994" />
+		<event splinePos="3.800000" distanceWindow="2.500000" type="uparrow" />
+		<event splinePos="6.540380" distanceWindow="2.500000" type="uparrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="CorkscrewTwist_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -6.011082 0.853622" />
+		<point loc="0 -4.922009 0.286430" />
+		<point loc="0 -3.929058 0.880493" />
+		<point loc="0 -2.861664 0.187910" />
+		<point loc="0 -1.687576 0.909925" />
+		<point loc="0 -0.471680 0.303474" />
+		<point loc="0 0.743469 0.887098" />
+		<point loc="0 2.074574 0.256151" />
+		<point loc="0 3.257076 0.905806" />
+		<point loc="0 4.506474 0.271097" />
+		<point loc="0 5.857307 1.014994" />
+		<event splinePos="1.200000" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="3.799999" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="6.599995" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="9.340377" distanceWindow="1.500000" type="uparrow" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="FlipForward_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.195839 0.620756" />
+		<point loc="0 -6.269531 -0.010689" />
+		<point loc="0 -4.160439 0.476078" />
+		<point loc="0 -3.610241 3.926722" />
+		<point loc="0 -2.796890 6.063498" />
+		<point loc="0 -1.327415 6.438410" />
+		<point loc="0 -0.343685 4.979780" />
+		<point loc="0 -1.629868 3.305656" />
+		<point loc="0 -2.551483 4.414013" />
+		<point loc="0 -2.039764 5.404175" />
+		<point loc="0 -0.995209 4.782288" />
+		<point loc="0 1.358902 0.294546" />
+		<point loc="0 2.900444 -0.392519" />
+		<point loc="0 4.805923 0.022644" />
+		<point loc="0 6.703278 -0.362785" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="FlipForward_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.195839 0.620756" />
+		<point loc="0 -6.269531 -0.010689" />
+		<point loc="0 -4.160439 0.476078" />
+		<point loc="0 -3.610241 3.926722" />
+		<point loc="0 -2.796890 6.063498" />
+		<point loc="0 -1.327415 6.438410" />
+		<point loc="0 -0.343685 4.979780" />
+		<point loc="0 -1.629868 3.305656" />
+		<point loc="0 -2.551483 4.414013" />
+		<point loc="0 -2.039764 5.404175" />
+		<point loc="0 -0.995209 4.782288" />
+		<point loc="0 1.358902 0.294546" />
+		<point loc="0 2.900444 -0.392519" />
+		<point loc="0 4.805923 0.022644" />
+		<point loc="0 6.703278 -0.362785" />
+		<event splinePos="9.199996" distanceWindow="2.500000" type="uparrow" />
+		<event splinePos="15.399990" distanceWindow="2.500000" type="leftarrow" />
+		<event splinePos="23.000015" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="FlipForward_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.195839 0.620756" />
+		<point loc="0 -6.269531 -0.010689" />
+		<point loc="0 -4.160439 0.476078" />
+		<point loc="0 -3.610241 3.926722" />
+		<point loc="0 -2.796890 6.063498" />
+		<point loc="0 -1.327415 6.438410" />
+		<point loc="0 -0.343685 4.979780" />
+		<point loc="0 -1.629868 3.305656" />
+		<point loc="0 -2.551483 4.414013" />
+		<point loc="0 -2.039764 5.404175" />
+		<point loc="0 -0.995209 4.782288" />
+		<point loc="0 1.358902 0.294546" />
+		<point loc="0 2.900444 -0.392519" />
+		<point loc="0 4.805923 0.022644" />
+		<point loc="0 6.703278 -0.362785" />
+		<event splinePos="9.199996" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="11.199994" distanceWindow="1.500000" type="rightarrow" />
+		<event splinePos="13.799992" distanceWindow="1.500000" type="downarrow" />
+		<event splinePos="15.399990" distanceWindow="1.500000" type="leftarrow" />
+		<event splinePos="16.599991" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="23.000015" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="JumpFallSide_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -9.124844 0.113132" />
+		<point loc="0 -6.823025 0.187897" />
+		<point loc="0 -4.516670 0.463840" />
+		<point loc="0 -3.560669 3.501509" />
+		<point loc="0 -2.271648 4.796072" />
+		<point loc="0 -0.670216 3.105190" />
+		<point loc="0 0.561127 -0.285112" />
+		<point loc="0 2.545258 0.184614" />
+		<point loc="0 4.463676 0.213261" />
+		<point loc="0 5.985374 -0.114191" />
+		<event splinePos="7.399981" distanceWindow="3.000000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="JumpFallSide_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -9.124844 0.113132" />
+		<point loc="0 -6.823025 0.187897" />
+		<point loc="0 -4.516670 0.463840" />
+		<point loc="0 -3.560669 3.501509" />
+		<point loc="0 -2.271648 4.796072" />
+		<point loc="0 -0.670216 3.105190" />
+		<point loc="0 0.561127 -0.285112" />
+		<point loc="0 2.545258 0.184614" />
+		<point loc="0 4.463676 0.213261" />
+		<point loc="0 5.985374 -0.114191" />
+		<event splinePos="7.399993" distanceWindow="2.500000" type="rightarrow" />
+		<event splinePos="12.999990" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="JumpFallSide_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -9.124844 0.113132" />
+		<point loc="0 -6.823025 0.187897" />
+		<point loc="0 -4.516670 0.463840" />
+		<point loc="0 -3.560669 3.501509" />
+		<point loc="0 -2.271648 4.796072" />
+		<point loc="0 -0.670216 3.105190" />
+		<point loc="0 0.561127 -0.285112" />
+		<point loc="0 2.545258 0.184614" />
+		<point loc="0 4.463676 0.213261" />
+		<point loc="0 5.985374 -0.114191" />
+		<event splinePos="2.200002" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="7.399992" distanceWindow="1.500000" type="rightarrow" />
+		<event splinePos="12.999995" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="Spyhop_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -9.987709 0.188404" />
+		<point loc="0 -7.781582 0.206823" />
+		<point loc="0 -5.851109 0.169390" />
+		<point loc="0 -2.160046 0.375172" />
+		<point loc="0 -1.060940 2.920847" />
+		<point loc="0 -3.493992 4.702887" />
+		<point loc="0 -5.495705 3.576815" />
+		<point loc="0 -5.502781 1.308844" />
+		<point loc="0 -3.597744 0.763144" />
+		<point loc="0 -2.196255 2.436090" />
+		<point loc="0 -3.486412 3.693398" />
+		<point loc="0 -4.781841 2.412113" />
+		<point loc="0 -3.291298 1.217115" />
+		<point loc="0 -0.681595 0.320421" />
+		<point loc="0 3.924603 0.244955" />
+		<point loc="0 6.102146 -0.091885" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Spyhop_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -9.987709 0.188404" />
+		<point loc="0 -7.781582 0.206823" />
+		<point loc="0 -5.851109 0.169390" />
+		<point loc="0 -2.160046 0.375172" />
+		<point loc="0 -1.060940 2.920847" />
+		<point loc="0 -3.493992 4.702887" />
+		<point loc="0 -5.495705 3.576815" />
+		<point loc="0 -5.502781 1.308844" />
+		<point loc="0 -3.597744 0.763144" />
+		<point loc="0 -2.196255 2.436090" />
+		<point loc="0 -3.486412 3.693398" />
+		<point loc="0 -4.781841 2.412113" />
+		<point loc="0 -3.291298 1.217115" />
+		<point loc="0 -0.681595 0.320421" />
+		<point loc="0 3.924603 0.244955" />
+		<point loc="0 6.102146 -0.091885" />
+		<event splinePos="8.799996" distanceWindow="2.500000" type="rightarrow" />
+		<event splinePos="11.799994" distanceWindow="2.500000" type="uparrow" />
+		<event splinePos="14.799991" distanceWindow="2.500000" type="leftarrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Spyhop_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -9.987709 0.188404" />
+		<point loc="0 -7.781582 0.206823" />
+		<point loc="0 -5.851109 0.169390" />
+		<point loc="0 -2.160046 0.375172" />
+		<point loc="0 -1.060940 2.920847" />
+		<point loc="0 -3.493992 4.702887" />
+		<point loc="0 -5.495705 3.576815" />
+		<point loc="0 -5.502781 1.308844" />
+		<point loc="0 -3.597744 0.763144" />
+		<point loc="0 -2.196255 2.436090" />
+		<point loc="0 -3.486412 3.693398" />
+		<point loc="0 -4.781841 2.412113" />
+		<point loc="0 -3.291298 1.217115" />
+		<point loc="0 -0.681595 0.320421" />
+		<point loc="0 3.924603 0.244955" />
+		<point loc="0 6.102146 -0.091885" />
+		<event splinePos="8.799996" distanceWindow="1.500000" type="rightarrow" />
+		<event splinePos="11.799994" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="14.799991" distanceWindow="1.500000" type="leftarrow" />
+		<event splinePos="21.000008" distanceWindow="1.500000" type="rightarrow" />
+		<event splinePos="22.800014" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="24.200020" distanceWindow="1.500000" type="leftarrow" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="StraightUpJump_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.063206 -1.445143" />
+		<point loc="0 -6.485180 0.254026" />
+		<point loc="0 -5.106194 -1.088530" />
+		<point loc="0 -4.363876 0.009138" />
+		<point loc="0 -1.982986 6.018009" />
+		<point loc="0 0.859837 0.005999" />
+		<point loc="0 3.354370 0.255188" />
+		<point loc="0 4.630959 -0.433096" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="StraightUpJump_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.063206 -1.445143" />
+		<point loc="0 -6.485180 0.254026" />
+		<point loc="0 -5.106194 -1.088530" />
+		<point loc="0 -4.363876 0.009138" />
+		<point loc="0 -1.982986 6.018009" />
+		<point loc="0 0.859837 0.005999" />
+		<point loc="0 3.354370 0.255188" />
+		<point loc="0 4.630959 -0.433096" />
+		<event splinePos="9.999997" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="StraightUpJump_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.063206 -1.445143" />
+		<point loc="0 -6.485180 0.254026" />
+		<point loc="0 -5.106194 -1.088530" />
+		<point loc="0 -4.363876 0.009138" />
+		<point loc="0 -1.982986 6.018009" />
+		<point loc="0 0.859837 0.005999" />
+		<point loc="0 3.354370 0.255188" />
+		<point loc="0 4.630959 -0.433096" />
+		<event splinePos="3.700000" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="9.899996" distanceWindow="1.500000" type="leftmousebutton" />
+		<event splinePos="16.399994" distanceWindow="1.500000" type="downarrow" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="FlipBack_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -9.547104 -1.074030" />
+		<point loc="0 -6.725784 0.099960" />
+		<point loc="0 -4.237476 -0.470499" />
+		<point loc="0 -1.385670 1.441364" />
+		<point loc="0 -1.561684 3.690559" />
+		<point loc="0 -3.610706 4.519947" />
+		<point loc="0 -5.504910 3.790884" />
+		<point loc="0 -5.698093 1.779219" />
+		<point loc="0 -4.273270 0.441341" />
+		<point loc="0 -1.737663 0.136988" />
+		<point loc="0 -0.520226 0.158484" />
+		<point loc="0 4.121746 0.189728" />
+		<point loc="0 6.854794 -0.227829" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="FlipBack_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -9.547104 -1.074030" />
+		<point loc="0 -6.725784 0.099960" />
+		<point loc="0 -4.237476 -0.470499" />
+		<point loc="0 -1.385670 1.441364" />
+		<point loc="0 -1.561684 3.690559" />
+		<point loc="0 -3.610706 4.519947" />
+		<point loc="0 -5.504910 3.790884" />
+		<point loc="0 -5.698093 1.779219" />
+		<point loc="0 -4.273270 0.441341" />
+		<point loc="0 -1.737663 0.136988" />
+		<point loc="0 -0.520226 0.158484" />
+		<point loc="0 4.121746 0.189728" />
+		<point loc="0 6.854794 -0.227829" />
+		<event splinePos="10.399995" distanceWindow="2.500000" type="uparrow" />
+		<event splinePos="17.999996" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="FlipBack_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -9.547104 -1.074030" />
+		<point loc="0 -6.725784 0.099960" />
+		<point loc="0 -4.237476 -0.470499" />
+		<point loc="0 -1.385670 1.441364" />
+		<point loc="0 -1.561684 3.690559" />
+		<point loc="0 -3.610706 4.519947" />
+		<point loc="0 -5.504910 3.790884" />
+		<point loc="0 -5.698093 1.779219" />
+		<point loc="0 -4.273270 0.441341" />
+		<point loc="0 -1.737663 0.136988" />
+		<point loc="0 -0.520226 0.158484" />
+		<point loc="0 4.121746 0.189728" />
+		<point loc="0 6.854794 -0.227829" />
+		<event splinePos="7.399997" distanceWindow="1.500000" type="rightarrow" />
+		<event splinePos="10.399995" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="13.999991" distanceWindow="1.500000" type="leftarrow" />
+		<event splinePos="17.999996" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="RamOutOfWater_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.817612 -1.231186" />
+		<point loc="0 -6.776859 0.105537" />
+		<point loc="0 -5.309616 -1.112284" />
+		<point loc="0 -4.431858 -0.061392" />
+		<point loc="0 -3.156414 3.924543" />
+		<point loc="0 -3.975586 5.152914" />
+		<point loc="0 -4.831001 3.916101" />
+		<point loc="0 -3.098915 -0.091774" />
+		<point loc="0 -0.547577 0.229610" />
+		<point loc="0 4.323673 0.246487" />
+		<point loc="0 6.240139 0.136585" />
+		<event splinePos="9.399996" distanceWindow="3.000000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="RamOutOfWater_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.817612 -1.231186" />
+		<point loc="0 -6.776859 0.105537" />
+		<point loc="0 -5.309616 -1.112284" />
+		<point loc="0 -4.431858 -0.061392" />
+		<point loc="0 -3.156414 3.924543" />
+		<point loc="0 -3.975586 5.152914" />
+		<point loc="0 -4.831001 3.916101" />
+		<point loc="0 -3.098915 -0.091774" />
+		<point loc="0 -0.547577 0.229610" />
+		<point loc="0 4.323673 0.246487" />
+		<point loc="0 6.240139 0.136585" />
+		<event splinePos="9.399996" distanceWindow="2.500000" type="leftmousebutton" />
+		<event splinePos="20.000004" distanceWindow="2.500000" type="rightarrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="RamOutOfWater_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.101000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.817612 -1.231186" />
+		<point loc="0 -6.776859 0.105537" />
+		<point loc="0 -5.309616 -1.112284" />
+		<point loc="0 -4.431858 -0.061392" />
+		<point loc="0 -3.156414 3.924543" />
+		<point loc="0 -3.975586 5.152914" />
+		<point loc="0 -4.831001 3.916101" />
+		<point loc="0 -3.098915 -0.091774" />
+		<point loc="0 -0.547577 0.229610" />
+		<point loc="0 4.323673 0.246487" />
+		<point loc="0 6.240139 0.136585" />
+		<event splinePos="3.800001" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="9.399996" distanceWindow="1.500000" type="leftmousebutton" />
+		<event splinePos="14.999990" distanceWindow="1.500000" type="downarrow" />
+		<event splinePos="20.000004" distanceWindow="1.500000" type="rightarrow" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="TailSplash_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -10.137058 -0.376562" />
+		<point loc="0 -7.408634 0.059675" />
+		<point loc="0 -5.563091 -0.449957" />
+		<point loc="0 -3.456829 0.059534" />
+		<point loc="0 -2.313454 1.626925" />
+		<point loc="0 -4.909439 2.762602" />
+		<point loc="0 -2.232433 5.312878" />
+		<point loc="0 -3.571335 6.319658" />
+		<point loc="0 -5.024948 5.185238" />
+		<point loc="0 -0.710262 1.935968" />
+		<point loc="0 2.935654 -0.250490" />
+		<point loc="0 4.417625 0.198997" />
+		<point loc="0 7.928688 -0.494307" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="TailSplash_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -10.137058 -0.376562" />
+		<point loc="0 -7.408634 0.059675" />
+		<point loc="0 -5.563091 -0.449957" />
+		<point loc="0 -3.456829 0.059534" />
+		<point loc="0 -2.313454 1.626925" />
+		<point loc="0 -4.909439 2.762602" />
+		<point loc="0 -2.232433 5.312878" />
+		<point loc="0 -3.571335 6.319658" />
+		<point loc="0 -5.024948 5.185238" />
+		<point loc="0 -0.710262 1.935968" />
+		<point loc="0 2.935654 -0.250490" />
+		<point loc="0 4.417625 0.198997" />
+		<point loc="0 7.928688 -0.494307" />
+		<event splinePos="12.999992" distanceWindow="2.500000" type="rightarrow" />
+		<event splinePos="16.599991" distanceWindow="2.500000" type="leftarrow" />
+		<event splinePos="25.600025" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="TailSplash_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -10.137058 -0.376562" />
+		<point loc="0 -7.408634 0.059675" />
+		<point loc="0 -5.563091 -0.449957" />
+		<point loc="0 -3.456829 0.059534" />
+		<point loc="0 -2.313454 1.626925" />
+		<point loc="0 -4.909439 2.762602" />
+		<point loc="0 -2.232433 5.312878" />
+		<point loc="0 -3.571335 6.319658" />
+		<point loc="0 -5.024948 5.185238" />
+		<point loc="0 -0.710262 1.935968" />
+		<point loc="0 2.935654 -0.250490" />
+		<point loc="0 4.417625 0.198997" />
+		<point loc="0 7.928688 -0.494307" />
+		<event splinePos="6.199998" distanceWindow="1.500000" type="rightarrow" />
+		<event splinePos="8.999996" distanceWindow="1.500000" type="leftarrow" />
+		<event splinePos="12.999992" distanceWindow="1.500000" type="rightarrow" />
+		<event splinePos="14.799991" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="16.599991" distanceWindow="1.500000" type="leftarrow" />
+		<event splinePos="25.600025" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="JumpHoop_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -6.661915 -0.407463" />
+		<point loc="0 -5.021996 0.053068" />
+		<point loc="0 -3.733089 -0.464918" />
+		<point loc="0 -0.035393 3.826649" />
+		<point loc="0 2.271240 -0.919989" />
+		<point loc="0 3.949608 0.087063" />
+		<point loc="0 4.957905 0.162434" />
+		<point loc="0 5.818546 0.051451" />
+		<event splinePos="7.299994" distanceWindow="3.000000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="JumpHoop_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -6.661915 -0.407463" />
+		<point loc="0 -5.021996 0.053068" />
+		<point loc="0 -3.733089 -0.464918" />
+		<point loc="0 -0.035393 3.826649" />
+		<point loc="0 2.271240 -0.919989" />
+		<point loc="0 3.949608 0.087063" />
+		<point loc="0 4.957905 0.162434" />
+		<point loc="0 5.818546 0.051451" />
+		<event splinePos="2.500001" distanceWindow="2.500000" type="uparrow" />
+		<event splinePos="7.299994" distanceWindow="2.500000" type="leftmousebutton" />
+		<event splinePos="11.599991" distanceWindow="2.500000" type="downarrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="JumpHoop_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -6.661915 -0.407463" />
+		<point loc="0 -5.021996 0.053068" />
+		<point loc="0 -3.733089 -0.464918" />
+		<point loc="0 -0.035393 3.826649" />
+		<point loc="0 2.271240 -0.919989" />
+		<point loc="0 3.949608 0.087063" />
+		<point loc="0 4.957905 0.162434" />
+		<point loc="0 5.818546 0.051451" />
+		<event splinePos="2.500001" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="7.299994" distanceWindow="1.500000" type="leftmousebutton" />
+		<event splinePos="11.599991" distanceWindow="1.500000" type="downarrow" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="JumpBar_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -10.186913 -0.857466" />
+		<point loc="0 -5.097004 0.203066" />
+		<point loc="0 -3.508087 -0.239914" />
+		<point loc="0 -0.035393 3.826649" />
+		<point loc="0 2.271240 -0.919989" />
+		<point loc="0 3.724606 0.237066" />
+		<point loc="0 5.032902 0.387434" />
+		<point loc="0 6.493549 0.051451" />
+		<event splinePos="7.299995" distanceWindow="3.000000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="JumpBar_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -10.186913 -0.857466" />
+		<point loc="0 -5.097004 0.203066" />
+		<point loc="0 -3.508087 -0.239914" />
+		<point loc="0 -0.035393 3.826649" />
+		<point loc="0 2.271240 -0.919989" />
+		<point loc="0 3.724606 0.237066" />
+		<point loc="0 5.032902 0.387434" />
+		<point loc="0 6.493549 0.051451" />
+		<event splinePos="2.400001" distanceWindow="2.500000" type="uparrow" />
+		<event splinePos="7.299995" distanceWindow="2.500000" type="leftmousebutton" />
+		<event splinePos="12.999992" distanceWindow="2.500000" type="downarrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="JumpBar_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -10.186913 -0.857466" />
+		<point loc="0 -5.097004 0.203066" />
+		<point loc="0 -3.508087 -0.239914" />
+		<point loc="0 -0.035393 3.826649" />
+		<point loc="0 2.271240 -0.919989" />
+		<point loc="0 3.724606 0.237066" />
+		<point loc="0 5.032902 0.387434" />
+		<point loc="0 6.493549 0.051451" />
+		<event splinePos="2.400001" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="7.299995" distanceWindow="1.500000" type="leftmousebutton" />
+		<event splinePos="12.999992" distanceWindow="1.500000" type="downarrow" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="FlukeSwipeBall_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.391338 -1.052710" />
+		<point loc="0 -5.109001 0.279224" />
+		<point loc="0 -2.472763 -1.044315" />
+		<point loc="0 -0.188416 -0.940834" />
+		<point loc="0 -0.119926 0.899656" />
+		<point loc="0 0.033249 4.150919" />
+		<point loc="0 0.764900 5.596695" />
+		<point loc="0 1.726540 4.319345" />
+		<point loc="0 3.215599 -1.100937" />
+		<point loc="0 5.647243 0.354973" />
+		<point loc="0 7.652115 -1.291758" />
+		<event splinePos="12.199993" distanceWindow="3.000000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="FlukeSwipeBall_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.391338 -1.052710" />
+		<point loc="0 -5.109001 0.279224" />
+		<point loc="0 -2.472763 -1.044315" />
+		<point loc="0 -0.188416 -0.940834" />
+		<point loc="0 -0.119926 0.899656" />
+		<point loc="0 0.033249 4.150919" />
+		<point loc="0 0.764900 5.596695" />
+		<point loc="0 1.726540 4.319345" />
+		<point loc="0 3.215599 -1.100937" />
+		<point loc="0 5.647243 0.354973" />
+		<point loc="0 7.652115 -1.291758" />
+		<event splinePos="8.999996" distanceWindow="2.500000" type="uparrow" />
+		<event splinePos="12.199993" distanceWindow="2.500000" type="leftmousebutton" />
+		<event splinePos="15.599990" distanceWindow="2.500000" type="downarrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="FlukeSwipeBall_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.391338 -1.052710" />
+		<point loc="0 -5.109001 0.279224" />
+		<point loc="0 -2.472763 -1.044315" />
+		<point loc="0 -0.188416 -0.940834" />
+		<point loc="0 -0.119926 0.899656" />
+		<point loc="0 0.033249 4.150919" />
+		<point loc="0 0.764900 5.596695" />
+		<point loc="0 1.726540 4.319345" />
+		<point loc="0 3.215599 -1.100937" />
+		<point loc="0 5.647243 0.354973" />
+		<point loc="0 7.652115 -1.291758" />
+		<event splinePos="8.999996" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="12.199993" distanceWindow="1.500000" type="leftmousebutton" />
+		<event splinePos="15.599990" distanceWindow="1.500000" type="downarrow" />
+		<event splinePos="23.400017" distanceWindow="1.500000" type="rightarrow" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="Squirt_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="25.000000" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -6.768333 0.454567" />
+		<point loc="0 -5.515720 0.287956" />
+		<point loc="0 -4.559174 0.357409" />
+		<point loc="0 -3.104267 0.961117" />
+		<point loc="0 -1.702160 0.216248" />
+		<point loc="0 -0.323715 0.970772" />
+		<point loc="0 1.082569 0.271561" />
+		<point loc="0 2.647709 0.957703" />
+		<point loc="0 4.323307 0.364752" />
+		<point loc="0 5.161480 0.279240" />
+		<point loc="0 6.551872 0.364164" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Squirt_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="25.000000" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -6.768333 0.454567" />
+		<point loc="0 -5.515720 0.287956" />
+		<point loc="0 -4.559174 0.357409" />
+		<point loc="0 -3.104267 0.961117" />
+		<point loc="0 -1.702160 0.216248" />
+		<point loc="0 -0.323715 0.970772" />
+		<point loc="0 1.082569 0.271561" />
+		<point loc="0 2.647709 0.957703" />
+		<point loc="0 4.323307 0.364752" />
+		<point loc="0 5.161480 0.279240" />
+		<point loc="0 6.551872 0.364164" />
+		<event splinePos="5.699996" distanceWindow="2.500000" type="uparrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Squirt_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="25.000000" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -6.768333 0.454567" />
+		<point loc="0 -5.515720 0.287956" />
+		<point loc="0 -4.559174 0.357409" />
+		<point loc="0 -3.104267 0.961117" />
+		<point loc="0 -1.702160 0.216248" />
+		<point loc="0 -0.323715 0.970772" />
+		<point loc="0 1.082569 0.271561" />
+		<point loc="0 2.647709 0.957703" />
+		<point loc="0 4.323307 0.364752" />
+		<point loc="0 5.161480 0.279240" />
+		<point loc="0 6.551872 0.364164" />
+		<event splinePos="2.500001" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="5.699996" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="8.972878" distanceWindow="1.500000" type="uparrow" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="FlukeSwipeTetherBall_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -6.085773 0.082724" />
+		<point loc="0 -3.600502 0.187843" />
+		<point loc="0 -2.685863 0.094423" />
+		<point loc="0 -1.421432 -0.245377" />
+		<point loc="0 -0.873722 2.380503" />
+		<point loc="0 0.083961 1.909275" />
+		<point loc="0 0.768162 -0.612423" />
+		<point loc="0 2.211651 0.148787" />
+		<point loc="0 3.474892 0.200382" />
+		<point loc="0 5.662136 -0.027887" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="FlukeSwipeTetherBall_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -6.085773 0.082724" />
+		<point loc="0 -3.600502 0.187843" />
+		<point loc="0 -2.685863 0.094423" />
+		<point loc="0 -1.421432 -0.245377" />
+		<point loc="0 -0.873722 2.380503" />
+		<point loc="0 0.083961 1.909275" />
+		<point loc="0 0.768162 -0.612423" />
+		<point loc="0 2.211651 0.148787" />
+		<point loc="0 3.474892 0.200382" />
+		<point loc="0 5.662136 -0.027887" />
+		<event splinePos="5.199999" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="FlukeSwipeTetherBall_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -6.085773 0.082724" />
+		<point loc="0 -3.600502 0.187843" />
+		<point loc="0 -2.685863 0.094423" />
+		<point loc="0 -1.421432 -0.245377" />
+		<point loc="0 -0.873722 2.380503" />
+		<point loc="0 0.083961 1.909275" />
+		<point loc="0 0.768162 -0.612423" />
+		<point loc="0 2.211651 0.148787" />
+		<point loc="0 3.474892 0.200382" />
+		<point loc="0 5.662136 -0.027887" />
+		<event splinePos="5.199999" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="RamTetherBall_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -3.483021 0.356222" />
+		<point loc="0 -2.352367 0.262693" />
+		<point loc="0 -1.393784 0.441401" />
+		<point loc="0 0.105339 1.891979" />
+		<point loc="0 1.995884 0.303881" />
+		<point loc="0 2.978230 0.243174" />
+		<point loc="0 4.569035 0.197372" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="RamTetherBall_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -3.483021 0.356222" />
+		<point loc="0 -2.352367 0.262693" />
+		<point loc="0 -1.393784 0.441401" />
+		<point loc="0 0.105339 1.891979" />
+		<point loc="0 1.995884 0.303881" />
+		<point loc="0 2.978230 0.243174" />
+		<point loc="0 4.569035 0.197372" />
+		<event splinePos="3.000001" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="RamTetherBall_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -3.483021 0.356222" />
+		<point loc="0 -2.352367 0.262693" />
+		<point loc="0 -1.393784 0.441401" />
+		<point loc="0 0.105339 1.891979" />
+		<point loc="0 1.995884 0.303881" />
+		<point loc="0 2.978230 0.243174" />
+		<point loc="0 4.569035 0.197372" />
+		<event splinePos="3.000001" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.75" />
+		<traceScoreDistance dist="1.5" />
+		<traceScoreDistance dist="2.5" />
+	</gesture>
+	<gesture name="Slide_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 3.000088 2.424923" />
+		<point loc="0 5.609150 -0.149918" />
+		<point loc="0 6.640572 -0.586805" />
+		<point loc="0 7.498943 0.082258" />
+		<point loc="0 9.468643 -0.661491" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Slide_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 3.000088 2.424923" />
+		<point loc="0 5.609150 -0.149918" />
+		<point loc="0 6.640572 -0.586805" />
+		<point loc="0 7.498943 0.082258" />
+		<point loc="0 9.468643 -0.661491" />
+		<event splinePos="4.899998" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Slide_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 3.000088 2.424923" />
+		<point loc="0 5.609150 -0.149918" />
+		<point loc="0 6.640572 -0.586805" />
+		<point loc="0 7.498943 0.082258" />
+		<point loc="0 9.468643 -0.661491" />
+		<event splinePos="2.500001" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="4.899998" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Slide_Male_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 3.525093 2.649921" />
+		<point loc="0 5.984154 0.675087" />
+		<point loc="0 7.090569 -0.436810" />
+		<point loc="0 8.023933 0.157259" />
+		<point loc="0 9.018646 -0.511488" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Slide_Male_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 3.525093 2.649921" />
+		<point loc="0 5.984154 0.675087" />
+		<point loc="0 7.090569 -0.436810" />
+		<point loc="0 8.023933 0.157259" />
+		<point loc="0 9.018646 -0.511488" />
+		<event splinePos="5.499998" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Slide_Male_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 3.525093 2.649921" />
+		<point loc="0 5.984154 0.675087" />
+		<point loc="0 7.090569 -0.436810" />
+		<point loc="0 8.023933 0.157259" />
+		<point loc="0 9.018646 -0.511488" />
+		<event splinePos="2.500001" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="5.499998" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Swing_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 2.550083 1.749918" />
+		<point loc="0 5.609150 -0.149918" />
+		<point loc="0 6.640572 -0.586805" />
+		<point loc="0 7.498943 0.082258" />
+		<point loc="0 9.468643 -0.661491" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Swing_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 2.550083 1.749918" />
+		<point loc="0 5.609150 -0.149918" />
+		<point loc="0 6.640572 -0.586805" />
+		<point loc="0 7.498943 0.082258" />
+		<point loc="0 9.468643 -0.661491" />
+		<event splinePos="2.899999" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Swing_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 2.550083 1.749918" />
+		<point loc="0 5.609150 -0.149918" />
+		<point loc="0 6.640572 -0.586805" />
+		<point loc="0 7.498943 0.082258" />
+		<point loc="0 9.468643 -0.661491" />
+		<event splinePos="2.899999" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Swing_Male_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 2.550083 1.749918" />
+		<point loc="0 5.609150 -0.149918" />
+		<point loc="0 6.640572 -0.586805" />
+		<point loc="0 7.498943 0.082258" />
+		<point loc="0 9.468643 -0.661491" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Swing_Male_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 2.550083 1.749918" />
+		<point loc="0 5.609150 -0.149918" />
+		<point loc="0 6.640572 -0.586805" />
+		<point loc="0 7.498943 0.082258" />
+		<point loc="0 9.468643 -0.661491" />
+		<event splinePos="2.899999" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Swing_Male_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -2.876060 0.969637" />
+		<point loc="0 -1.504723 0.921167" />
+		<point loc="0 1.222668 1.063614" />
+		<point loc="0 3.150085 2.049921" />
+		<point loc="0 6.134155 0.450089" />
+		<point loc="0 7.015564 -0.361805" />
+		<point loc="0 7.948929 0.157261" />
+		<point loc="0 9.168648 -0.361492" />
+		<event splinePos="4.799999" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Seat_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 0.247654 0.913610" />
+		<point loc="0 1.833744 1.529915" />
+		<point loc="0 3.408726 0.843624" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Seat_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 0.247654 0.913610" />
+		<point loc="0 1.833744 1.529915" />
+		<point loc="0 3.408726 0.843624" />
+		<event splinePos="7.799997" distanceWindow="2.500000" type="uparrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Seat_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 0.247654 0.913610" />
+		<point loc="0 1.833744 1.529915" />
+		<point loc="0 3.408726 0.843624" />
+		<event splinePos="7.799997" distanceWindow="1.500000" type="uparrow" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Seat_Male_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 0.847660 0.913610" />
+		<point loc="0 2.883755 1.529915" />
+		<point loc="0 4.383736 0.843624" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Seat_Male_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 0.847660 0.913610" />
+		<point loc="0 2.883755 1.529915" />
+		<point loc="0 4.383736 0.843624" />
+		<event splinePos="9.069779" distanceWindow="2.500000" type="uparrow" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Seat_Male_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 0.847660 0.913610" />
+		<point loc="0 2.883755 1.529915" />
+		<point loc="0 4.383736 0.843624" />
+		<event splinePos="9.069779" distanceWindow="1.500000" type="uparrow" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Ball_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 2.722645 0.988611" />
+		<point loc="0 4.425091 0.849922" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Ball_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 2.722645 0.988611" />
+		<point loc="0 4.425091 0.849922" />
+		<event splinePos="8.232948" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Ball_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 2.722645 0.988611" />
+		<point loc="0 4.425091 0.849922" />
+		<event splinePos="8.232948" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Ball_Male_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 1.972637 0.988611" />
+		<point loc="0 3.450081 0.774921" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Ball_Male_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 1.972637 0.988611" />
+		<point loc="0 3.450081 0.774921" />
+		<event splinePos="8.865285" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Ball_Male_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 1.972637 0.988611" />
+		<point loc="0 3.450081 0.774921" />
+		<event splinePos="8.865285" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Horns_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Horns_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<event splinePos="7.116794" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Horns_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<event splinePos="7.116794" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Horns_Male_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Horns_Male_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<event splinePos="7.116794" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Horns_Male_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<event splinePos="7.116794" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Trampoline_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -5.515884 -0.811346" />
+		<point loc="0 -4.707066 0.186867" />
+		<point loc="0 -3.434513 -0.645527" />
+		<point loc="0 -1.711647 1.583454" />
+		<point loc="0 -0.621696 0.834139" />
+		<point loc="0 0.180531 3.101360" />
+		<point loc="0 1.850571 1.089539" />
+		<point loc="0 3.164333 -0.609169" />
+		<point loc="0 4.102573 0.251122" />
+		<point loc="0 5.331932 -0.707911" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Trampoline_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -5.515884 -0.811346" />
+		<point loc="0 -4.707066 0.186867" />
+		<point loc="0 -3.434513 -0.645527" />
+		<point loc="0 -1.711647 1.583454" />
+		<point loc="0 -0.621696 0.834139" />
+		<point loc="0 0.180531 3.101360" />
+		<point loc="0 1.850571 1.089539" />
+		<point loc="0 3.164333 -0.609169" />
+		<point loc="0 4.102573 0.251122" />
+		<point loc="0 5.331932 -0.707911" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Trampoline_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -5.515884 -0.811346" />
+		<point loc="0 -4.707066 0.186867" />
+		<point loc="0 -3.434513 -0.645527" />
+		<point loc="0 -1.711647 1.583454" />
+		<point loc="0 -0.621696 0.834139" />
+		<point loc="0 0.180531 3.101360" />
+		<point loc="0 1.850571 1.089539" />
+		<point loc="0 3.164333 -0.609169" />
+		<point loc="0 4.102573 0.251122" />
+		<point loc="0 5.331932 -0.707911" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Trampoline_Male_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -5.515884 -0.811346" />
+		<point loc="0 -4.707066 0.186867" />
+		<point loc="0 -3.434513 -0.645527" />
+		<point loc="0 -1.711647 1.583454" />
+		<point loc="0 -0.546696 1.059141" />
+		<point loc="0 0.255531 3.251360" />
+		<point loc="0 2.450577 1.239540" />
+		<point loc="0 3.539337 -0.684170" />
+		<point loc="0 4.477577 0.251122" />
+		<point loc="0 6.156937 -1.007912" />
+		<traceScoreDistance dist="1.250000" />
+		<traceScoreDistance dist="2.500000" />
+		<traceScoreDistance dist="3.500000" />
+	</gesture>
+	<gesture name="Trampoline_Male_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -5.515884 -0.811346" />
+		<point loc="0 -4.707066 0.186867" />
+		<point loc="0 -3.434513 -0.645527" />
+		<point loc="0 -1.711647 1.583454" />
+		<point loc="0 -0.546696 1.059141" />
+		<point loc="0 0.255531 3.251360" />
+		<point loc="0 2.450577 1.239540" />
+		<point loc="0 3.539337 -0.684170" />
+		<point loc="0 4.477577 0.251122" />
+		<point loc="0 6.156937 -1.007912" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Trampoline_Male_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -5.515884 -0.811346" />
+		<point loc="0 -4.707066 0.186867" />
+		<point loc="0 -3.434513 -0.645527" />
+		<point loc="0 -1.711647 1.583454" />
+		<point loc="0 -0.546696 1.059141" />
+		<point loc="0 0.255531 3.251360" />
+		<point loc="0 2.450577 1.239540" />
+		<point loc="0 3.539337 -0.684170" />
+		<point loc="0 4.477577 0.251122" />
+		<point loc="0 6.156937 -1.007912" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Basketball_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 -0.352352 0.988609" />
+		<point loc="0 0.434101 2.259428" />
+		<point loc="0 1.365288 2.222242" />
+		<point loc="0 2.625111 0.999916" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Basketball_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 -0.352352 0.988609" />
+		<point loc="0 0.434101 2.259428" />
+		<point loc="0 1.365288 2.222242" />
+		<point loc="0 2.625111 0.999916" />
+		<event splinePos="6.016794" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Basketball_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 -0.352352 0.988609" />
+		<point loc="0 0.434101 2.259428" />
+		<point loc="0 1.365288 2.222242" />
+		<point loc="0 2.625111 0.999916" />
+		<event splinePos="6.016794" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Basketball_Male_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.051079 0.144629" />
+		<point loc="0 -6.956608 0.104053" />
+		<point loc="0 -6.088593 0.160063" />
+		<point loc="0 -5.029732 0.996168" />
+		<point loc="0 -0.502354 1.063610" />
+		<point loc="0 0.584103 2.259428" />
+		<point loc="0 1.740292 2.522245" />
+		<point loc="0 2.850113 1.149914" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Basketball_Male_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.051079 0.144629" />
+		<point loc="0 -6.956608 0.104053" />
+		<point loc="0 -6.088593 0.160063" />
+		<point loc="0 -5.029732 0.996168" />
+		<point loc="0 -0.502354 1.063610" />
+		<point loc="0 0.584103 2.259428" />
+		<point loc="0 1.740292 2.522245" />
+		<point loc="0 2.850113 1.149914" />
+		<event splinePos="7.016795" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Basketball_Male_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.051079 0.144629" />
+		<point loc="0 -6.956608 0.104053" />
+		<point loc="0 -6.088593 0.160063" />
+		<point loc="0 -5.029732 0.996168" />
+		<point loc="0 -0.502354 1.063610" />
+		<point loc="0 0.584103 2.259428" />
+		<point loc="0 1.740292 2.522245" />
+		<point loc="0 2.850113 1.149914" />
+		<event splinePos="7.016795" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Bellow_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Bellow_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<event splinePos="7.116794" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Bellow_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -7.226070 0.219629" />
+		<point loc="0 -6.281601 0.104053" />
+		<point loc="0 -5.188583 0.235064" />
+		<point loc="0 -3.979721 0.996168" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<event splinePos="7.116794" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Bellow_Male_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Bellow_Male_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<event splinePos="7.116794" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Bellow_Male_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.351082 0.219629" />
+		<point loc="0 -7.106609 0.104053" />
+		<point loc="0 -6.238594 0.235064" />
+		<point loc="0 -5.029724 0.921167" />
+		<point loc="0 0.922661 0.988611" />
+		<point loc="0 2.400089 0.924919" />
+		<event splinePos="7.116794" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Beach_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -6.520073 0.318588" />
+		<point loc="0 -5.211452 0.224031" />
+		<point loc="0 -4.021576 0.212234" />
+		<point loc="0 -2.539104 0.447283" />
+		<point loc="0 -0.950394 0.854830" />
+		<point loc="0 0.534683 1.217245" />
+		<point loc="0 1.759521 1.312191" />
+		<point loc="0 3.644581 1.101213" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Beach_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -6.520073 0.318588" />
+		<point loc="0 -5.211452 0.224031" />
+		<point loc="0 -4.021576 0.212234" />
+		<point loc="0 -2.539104 0.447283" />
+		<point loc="0 -0.950394 0.854830" />
+		<point loc="0 0.534683 1.217245" />
+		<point loc="0 1.759521 1.312191" />
+		<point loc="0 3.644581 1.101213" />
+		<event splinePos="6.894521" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Beach_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -6.520073 0.318588" />
+		<point loc="0 -5.211452 0.224031" />
+		<point loc="0 -4.021576 0.212234" />
+		<point loc="0 -2.539104 0.447283" />
+		<point loc="0 -0.950394 0.854830" />
+		<point loc="0 0.534683 1.217245" />
+		<point loc="0 1.759521 1.312191" />
+		<point loc="0 3.644581 1.101213" />
+		<event splinePos="2.300001" distanceWindow="1.500000" type="rightarrow" />
+		<event splinePos="6.894521" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Beach_Orca_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.245090 0.318588" />
+		<point loc="0 -6.936470 0.149031" />
+		<point loc="0 -4.321579 0.362234" />
+		<point loc="0 -2.539104 0.747284" />
+		<point loc="0 -0.800392 1.229832" />
+		<point loc="0 0.534683 1.667248" />
+		<point loc="0 1.909523 1.912197" />
+		<point loc="0 3.644581 1.687195" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Beach_Orca_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.245090 0.318588" />
+		<point loc="0 -6.936470 0.149031" />
+		<point loc="0 -4.321579 0.362234" />
+		<point loc="0 -2.539104 0.747284" />
+		<point loc="0 -0.800392 1.229832" />
+		<point loc="0 0.534683 1.667248" />
+		<point loc="0 1.909523 1.912197" />
+		<point loc="0 3.644581 1.687195" />
+		<event splinePos="6.894521" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Beach_Orca_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.245090 0.318588" />
+		<point loc="0 -6.936470 0.149031" />
+		<point loc="0 -4.321579 0.362234" />
+		<point loc="0 -2.539104 0.747284" />
+		<point loc="0 -0.800392 1.229832" />
+		<point loc="0 0.534683 1.667248" />
+		<point loc="0 1.909523 1.912197" />
+		<point loc="0 3.644581 1.687195" />
+		<event splinePos="1.900001" distanceWindow="1.500000" type="rightarrow" />
+		<event splinePos="8.824522" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Basketball_Otter_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -8.149223 0.018602" />
+		<point loc="0 -6.751991 0.295105" />
+		<point loc="0 -5.481201 0.179398" />
+		<point loc="0 -3.109871 -0.611061" />
+		<point loc="0 -1.981659 1.442619" />
+		<point loc="0 -0.955280 1.581102" />
+		<point loc="0 0.501656 0.000244" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Basketball_Otter_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -8.149223 0.018602" />
+		<point loc="0 -6.751991 0.295105" />
+		<point loc="0 -5.481201 0.179398" />
+		<point loc="0 -3.109871 -0.611061" />
+		<point loc="0 -1.981659 1.442619" />
+		<point loc="0 -0.955280 1.581102" />
+		<point loc="0 0.501656 0.000244" />
+		<event splinePos="7.040457" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Basketball_Otter_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -8.149223 0.018602" />
+		<point loc="0 -6.751991 0.295105" />
+		<point loc="0 -5.481201 0.179398" />
+		<point loc="0 -3.109871 -0.611061" />
+		<point loc="0 -1.981659 1.442619" />
+		<point loc="0 -0.955280 1.581102" />
+		<point loc="0 0.501656 0.000244" />
+		<event splinePos="4.800000" distanceWindow="1.500000" type="uparrow" />
+		<event splinePos="7.040457" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="Forage_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -3.485321 4.673135" />
+		<point loc="0 -2.724628 4.351007" />
+		<point loc="0 -1.960773 3.567980" />
+		<point loc="0 -1.452782 2.711251" />
+		<point loc="0 -0.306152 1.227105" />
+		<point loc="0 0.949528 2.625230" />
+		<point loc="0 1.850388 3.711519" />
+		<point loc="0 3.231949 3.959976" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="Forage_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -3.485321 4.673135" />
+		<point loc="0 -2.724628 4.351007" />
+		<point loc="0 -1.960773 3.567980" />
+		<point loc="0 -1.452782 2.711251" />
+		<point loc="0 -0.306152 1.227105" />
+		<point loc="0 0.949528 2.625230" />
+		<point loc="0 1.850388 3.711519" />
+		<point loc="0 3.231949 3.959976" />
+		<event splinePos="4.119527" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="Forage_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -3.485321 4.673135" />
+		<point loc="0 -2.724628 4.351007" />
+		<point loc="0 -1.960773 3.567980" />
+		<point loc="0 -1.452782 2.711251" />
+		<point loc="0 -0.306152 1.227105" />
+		<point loc="0 0.949528 2.625230" />
+		<point loc="0 1.850388 3.711519" />
+		<point loc="0 3.231949 3.959976" />
+		<event splinePos="4.119527" distanceWindow="1.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+	<gesture name="ShakerToy_Easy" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="4.000000" traceScoreDistance="" splineRadius="0.300000" scoreSampleRate="25.000000" difficulty="easy">
+		<point loc="0 -4.966648 -0.238276" />
+		<point loc="0 -4.162895 0.126896" />
+		<point loc="0 -2.903362 -0.243816" />
+		<point loc="0 -1.376846 1.879295" />
+		<point loc="0 0.035458 0.100586" />
+		<point loc="0 1.345783 1.864008" />
+		<point loc="0 3.069256 -0.278271" />
+		<point loc="0 4.391830 0.153175" />
+		<point loc="0 6.116776 -0.218597" />
+		<traceScoreDistance dist="1.25" />
+		<traceScoreDistance dist="2.5" />
+		<traceScoreDistance dist="3.5" />
+	</gesture>
+	<gesture name="ShakerToy_Medium" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="5.000000" traceScoreDistance="" splineRadius="0.200000" scoreSampleRate="25.000000" difficulty="intermediate">
+		<point loc="0 -4.966648 -0.238276" />
+		<point loc="0 -4.162895 0.126896" />
+		<point loc="0 -2.903362 -0.243816" />
+		<point loc="0 -1.376846 1.879295" />
+		<point loc="0 0.035458 0.100586" />
+		<point loc="0 1.345783 1.864008" />
+		<point loc="0 3.069256 -0.278271" />
+		<point loc="0 4.391830 0.153175" />
+		<point loc="0 6.116776 -0.218597" />
+		<event splinePos="6.299997" distanceWindow="2.500000" type="leftmousebutton" />
+		<traceScoreDistance dist="1.0" />
+		<traceScoreDistance dist="2.0" />
+		<traceScoreDistance dist="3.0" />
+	</gesture>
+	<gesture name="ShakerToy_Hard" parentObj="mainObj" parentNode="Dock_Adult" cameraPos="0 0 0" planeNormal="0 1 0" BBScaleX="12.000000" BBScaleY="26.000000" BBScaleZ="18.000000" tracingSpeed="6.500000" traceScoreDistance="" splineRadius="0.100000" scoreSampleRate="25.000000" difficulty="hard">
+		<point loc="0 -4.966648 -0.238276" />
+		<point loc="0 -4.162895 0.126896" />
+		<point loc="0 -2.903362 -0.243816" />
+		<point loc="0 -1.376846 1.879295" />
+		<point loc="0 0.035458 0.100586" />
+		<point loc="0 1.345783 1.864008" />
+		<point loc="0 3.069256 -0.278271" />
+		<point loc="0 4.391830 0.153175" />
+		<point loc="0 6.116776 -0.218597" />
+		<event splinePos="4.100002" distanceWindow="1.500000" type="downarrow" />
+		<event splinePos="6.299997" distanceWindow="1.500000" type="leftmousebutton" />
+		<event splinePos="8.643302" distanceWindow="1.500000" type="downarrow" />
+		<traceScoreDistance dist="0.750000" />
+		<traceScoreDistance dist="1.500000" />
+		<traceScoreDistance dist="2.500000" />
+	</gesture>
+</gestures>

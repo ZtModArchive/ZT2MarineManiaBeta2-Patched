@@ -1,0 +1,155 @@
+<BFTypedBinder binderType="themedtankseg_opaque_mm">
+   <types>
+      <entity>
+         <fence>
+            <tankwallsegment>
+               <themedtankseg_opaque_mm/>
+            </tankwallsegment>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_opaque_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:themedtankseg_opaque_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="themedtankseg_opaque_mm"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_uisort="zz" s_Product="Marine" b_SeeThrough="false" f_Height="1.0" s_Zoopedia="zoopedia:zoopedia_marinetankwall:entry" f_FameReq="40" s_PortalSegType="themedtankseg_opaque_portal_mm" s_GameLock="marinetanklock"/>
+      <ZTPlacementData>
+         <draggableData>
+            <tfence90/>
+            <tfence45/>
+            <tfence90curve90/>
+            <tfence45curve90/>
+            <tfence90curve135/>
+            <tfence45curve135/>
+            <fence90/>
+            <fence45/>
+            <fence90curve90/>
+            <fence45curve90/>
+            <fence90curve135/>
+            <fence45curve135/>
+         </draggableData>
+      </ZTPlacementData>
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTTankSegment support="themedtankpost_mm" middleSupport="themedtanksupport_mm" maxUnsupportedSpan="3" maxUnsupportedDiagSpan="2" hasCurves="true" gate="themedtankseg_opaque_gate_mm" skipPostsOnStraight="true" opaqueMat="themedopaquewall"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\paths\sand\curb_sand_post" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_curb_vert" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_curb_diag" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\paths\sand\curb_sand_post" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90curve90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_curb_curve90" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45curve90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_curb_curve90_diag" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90curve135">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_curb_curve135_short" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45curve135">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_curb_curve135_long" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="tfence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_top_vert" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="tfence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_top_diag" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="tfence90curve90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_top_curve90" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="tfence45curve90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_top_curve90_diag" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="tfence90curve135">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_top_curve135_short" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="tfence45curve135">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_top_curve135_long" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="100">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,89 @@
+<BFTypedBinder binderType="Narwhal_Adult_F2">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Monodontidae>
+                        <Narwhal>
+                           <Narwhal_Adult>
+                              <Narwhal_Adult_F>
+                                 <Narwhal_Adult_F2/>
+                              </Narwhal_Adult_F>
+                           </Narwhal_Adult>
+                        </Narwhal>
+                     </Monodontidae>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\Narwhal\Narwhal_Adult_M_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Narwhal_Adult_F"/>
+         </on>
+      </UIToggleButton>
+      <ZTDevComponent/>
+      <BFAIEntityDataShared b_Male="0" f_viewBonus="55"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/units/animals/Narwhal/Narwhal_Adult_M.bfm" scale="1.1" switch="0 15 30 60"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="texController" required="1">
+         <instance>
+            <BFAITextureController currState="well" defaultState="well">
+               <attribList>
+                  <health/>
+                  <hygiene/>
+               </attribList>
+               <stateList>
+                  <sickanddirty>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                        <hygiene minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData mergeKey="material">
+                        <mainObj material="Narwhal_Adult_M" image="entities\units\animals\Narwhal\Narwhal_Adult_M_SickDirty.dds"/>
+                     </textureData>
+                  </sickanddirty>
+                  <sick>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData mergeKey="material">
+                        <mainObj material="Narwhal_Adult_M" image="entities\units\animals\Narwhal\Narwhal_Adult_M_Sick.dds"/>
+                     </textureData>
+                  </sick>
+                  <dirty>
+                     <attribData>
+                        <hygiene minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData mergeKey="material">
+                        <mainObj material="Narwhal_Adult_M" image="entities\units\animals\Narwhal\Narwhal_Adult_M_Dirty.dds"/>
+                     </textureData>
+                  </dirty>
+                  <well>
+                     <textureData mergeKey="material">
+                        <mainObj material="Narwhal_Adult_M" image="entities\units\animals\Narwhal\Narwhal_Adult_M.dds"/>
+                     </textureData>
+                  </well>
+               </stateList>
+            </BFAITextureController>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

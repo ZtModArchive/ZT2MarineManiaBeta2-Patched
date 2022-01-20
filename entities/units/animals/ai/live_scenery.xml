@@ -1,0 +1,86 @@
+<BFTypedBinder binderType="live_scenery" abstract="true">
+   <types>
+      <entity>
+         <scenery>
+            <live_scenery/>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_ValidateDockingPosition="false" b_ReceiveUpdates="1" f_InterpolationDistance="6" f_InterpolationConeBegin="45" f_InterpolationConeEnd="180"/>
+      <ZTPlacementData iconAnim="Stand_Idle" gridSnap="false" selectable="true" deletable="true">
+         <stompData>
+            <allow>
+               <treat/>
+               <TerrainFood/>
+               <bush/>
+               <grass/>
+               <wildflowers/>
+               <thicket/>
+               <fungi/>
+               <watersurfacefoliage/>
+            </allow>
+         </stompData>
+      </ZTPlacementData>
+      <ZTEntitySelector parentName="mainObj" nodeName="Bip01 Spine2" animationTime="0.4" useFootprint="false" size="2.0">
+         <BFPhysObj>
+            <BFTerrainDecalComponent imageName="UI/fx/selection/unit.tga" alphaBlend="true">
+               <lighting emmisiveColor="255 255 255" specularColor="255 255 255" diffuseColor="255 255 255" ambientColor="255 255 255"/>
+            </BFTerrainDecalComponent>
+         </BFPhysObj>
+      </ZTEntitySelector>
+      <BFGCollisionData isTraversable="false" isPassable="true"/>
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFLocomotionMgr/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFSteeringMgr/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAICognitiveMgr>
+               <Sensors/>
+               <StateThinkers/>
+               <TaskThinkers/>
+            </BFAICognitiveMgr>
+         </instance>
+         <shared>
+            <BFAICogShared/>
+         </shared>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester radius="1" motionClass="mover" maxSlope=".75"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1" repopulateMethod="byType">
+         <instance>
+            <BFGCollisionHandler factorMin="0.1" factorStepUp="0.1" factorStepDown="0.05"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFBoundedObjectComponent useModelBounds="true"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="true"/>
+         </shared>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

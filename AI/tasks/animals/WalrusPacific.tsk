@@ -1,0 +1,2679 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="GoToWater" UniqueID="WalrusPacific:GoToWater">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <water/>
+            <Qualifiers inSight="25"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="0.2"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingInWater"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="Idle"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Idle" UniqueID="WalrusPacific:Idle">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="0.002"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Idle"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Idle_Happy" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WalrusPacific:Idle_Happy">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_7"/>
+      <BFBehPlaySet behSet="LookExcited"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Idle_Angry" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WalrusPacific:Idle_Angry">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="20">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_7"/>
+      <BFBehPlaySet behSet="AngryBark"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Surface" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WalrusPacific:Surface">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers_AND isSwimming="true" breath="GE 70"/>
+      </Subjects>
+      <Targets>
+        <water/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap breath="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Surface"/>
+      <BFBehPlaySet behSet="Breath"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap breath="-100"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Submerge" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WalrusPacific:Submerge">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="0.5"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Submerge"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WalrusPacific:Wander">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".002"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Slow"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="5" exercise="-10"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_1"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander_Slow" UniqueID="WalrusPacific:Wander_Slow">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers_AND rest="GE 70" inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Slow"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="5" exercise="-100"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_5"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander_Medium" UniqueID="WalrusPacific:Wander_Medium">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers_AND rest="LE 69" inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="5" exercise="-100"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_6"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander_Fast" UniqueID="WalrusPacific:Wander_Fast">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers_AND rest="LE 29" inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="10" exercise="-100"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_7">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalSwimGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+   <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="WalrusPacific:OffspringCheck">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="WalrusPacific:CantReproduce">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_Pregnant="E false" hasMate="false"/>
+         </Subjects>
+         <Targets>
+            <WalrusPacific_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true"  inHabitat="true" canMate="false"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-27"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="WantReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="WalrusPacific:WantReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_Pregnant="E false"/>
+         </Subjects>
+         <Targets>
+            <shore/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLand"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehDockWater targetAnim="Stand_Idle" subjectNode="Node_Mouth"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehWander minPlayTime="3" maxPlayTime="5" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteReproduction_OnLand" TaskDelayMin="60" TaskDelayMax="180" UniqueID="WalrusPacific:InviteReproduction_OnLand">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_F/>
+            <Qualifiers_AND onLand="true" b_Pregnant="E false"/>
+         </Subjects>
+         <Targets>
+            <WalrusPacific_Adult_M/>
+            <Qualifiers_AND  inWater_OR_onLand="true" inHabitat="true" canMate="true"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="MatingCall_F"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="35"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteReproduction_Water" TaskDelayMin="60" TaskDelayMax="180" UniqueID="WalrusPacific:InviteReproduction_Water">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_Pregnant="E false"/>
+         </Subjects>
+         <Targets>
+            <WalrusPacific_Adult_M/>
+            <Qualifiers_AND  inWater_OR_onLand="true" inHabitat="true" canMate="true"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Surface"/>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="MatingCall_F"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehPlaySet behSet="Idle_35"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="WalrusPacific:RespondReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_M/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers_AND inWater_OR_onLand="true" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Reproduce/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_7"/>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="MatingCall_M"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehSyncSet subjectBehSet="Mate" targetBehSet="Mate"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="75"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-50" rest="-10"/>
+         <BFAITargetData rest="-10"/>
+         <BFBehExecTask>
+            <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Pregnant" UniqueID="WalrusPacific:Pregnant">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Pregnant1/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="50"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+               <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData b_Pregnant="true"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="1040.65" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BirthShade" UniqueID="WalrusPacific:BirthShade">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isInShow="false"/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBirth"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Birthing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+         <BFBehPlaySet behSet="Birth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBornGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BirthLand" UniqueID="WalrusPacific:BirthLand">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isInShow="false"/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <ground_cover/>
+            <shore/>
+            <dirt/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2003">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBirth"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Birthing"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+         <BFBehPlaySet behSet="Birth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBornGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Birth" UniqueID="WalrusPacific:Birth">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" isInShow="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Birthing"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Birth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBornGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="WalrusPacific:Born">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="LE 1"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Born"/>
+               <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_ShakeHead"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="WalrusPacific:Puberty">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 4.8"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_F" UniqueID="WalrusPacific:Age_F">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Young_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="WalrusPacific_Adult_F" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_M" UniqueID="WalrusPacific:Age_M">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Young_M/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="WalrusPacific_Adult_M" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Old_F" TaskDelayMin="60" TaskDelayMax="60" UniqueID="WalrusPacific:Old_F">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_F/>
+            <Qualifiers lifespan="GE 28.89"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap lifespan="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_1"/>
+         <BFBehPlaySet behSet="Sleep"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Old_M" TaskDelayMin="60" TaskDelayMax="60" UniqueID="WalrusPacific:Old_M">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult_M/>
+            <Qualifiers lifespan="GE 24.89"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap lifespan="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_1"/>
+         <BFBehPlaySet behSet="Sleep"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die" UniqueID="WalrusPacific:Die">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Die/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_OldAge"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Die_Sick" Priority="3" UniqueID="WalrusPacific:Die_Sick">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers_AND inWater_OR_onLand="true" health="GE 99"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="15000"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Die_Sick"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteFight" TaskDelayMin="60" TaskDelayMax="180" UniqueID="WalrusPacific:InviteFight">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult_M/>
+        <Qualifiers_AND onLand="true" reproduction="GE 70" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <WalrusPacific_Adult_M/>
+        <Qualifiers_AND onLand="true" isSwimming="false" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="20">
+      <BFAIAttributeFloatMap reproduction="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Fight" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Bark"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteFight_NoFamily" TaskDelayMin="60" TaskDelayMax="180" UniqueID="WalrusPacific:InviteFight_NoFamily">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult_M/>
+        <Qualifiers_AND onLand="true" isSwimming="false" reproduction="GE 70"/>
+      </Subjects>
+      <Targets>
+        <WalrusPacific_Adult_M/>
+        <Qualifiers_AND onLand="true" isSwimming="false" isFamily="false" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap reproduction="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Fight" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Bark"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondFight" reserveTag="General" UniqueID="WalrusPacific:RespondFight">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult_M/>
+        <Qualifiers_AND onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND onLand="true" isSwimming="false"/>
+      </Targets>
+      <Objects>
+        <t_Fight/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehSyncSet subjectBehSet="DockFight" targetBehSet="WaitFight"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fighting" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_7">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalFightBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap" resetPhase="true"/>
+      <BFBehSyncSet subjectBehSet="Fight" targetBehSet="DefendEqual" resetPhase="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-20"/>
+      <BFAITargetData reproduction="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SeekPrivacy" UniqueID="WalrusPacific:SeekPrivacy">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap privacy="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SeekingPrivacy" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehWander minPlayTime="4" maxPlayTime="7" locoSpeed="fast" avoidEntityRadius="10">
+         <avoidEntityTypes>
+            <Guest/>
+         </avoidEntityTypes>
+      </BFBehWander>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Hide" GiveTo="subject" Timeout="30" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SeekPrivacy_Evade" UniqueID="WalrusPacific:SeekPrivacy_Evade">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Hide/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap privacy="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SeekingPrivacy" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehWander minPlayTime="4" maxPlayTime="7" locoSpeed="fast" avoidEntityRadius="10">
+         <avoidEntityTypes>
+            <Guest/>
+         </avoidEntityTypes>
+      </BFBehWander>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAISubjectData rest="-20" privacy="-50"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="HideShade" UniqueID="WalrusPacific:HideShade">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <shade/>
+        <Qualifiers_AND onLand="true" inHabitat="true" inSight="15"/>
+      </Targets>
+      <Objects>
+        <t_Hide/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100">
+      <BFAIAttributeFloatMap privacy="-25"/>
+      <BFAIBiomeMap alpine=".25" borealforest=".50" temperateforest=".75" desert=".50" grassland=".50" savannah="1.00" tropicalrainforest=".50" scrub=".75" tundra=".25" wetlands=".25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAISubjectData rest="-20" privacy="-50"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_2">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <BFBehPlaySet behSet="Idle_15"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Hide" UniqueID="WalrusPacific:Hide">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <marineplant/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Hide/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100">
+      <BFAIAttributeFloatMap privacy="-25"/>
+      <BFAIBiomeMap alpine=".25" borealforest=".50" temperateforest=".75" desert=".50" grassland=".50" savannah="1.00" tropicalrainforest=".50" scrub=".75" tundra=".25" wetlands=".25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAISubjectData rest="-20" privacy="-50"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_1">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <BFBehPlaySet behSet="Idle_15"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DrinkWaterTerrain" UniqueID="WalrusPacific:DrinkWaterTerrain">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <shore/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap thirst="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingDrink"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockWater targetAnim="EatLand_Drink" subjectNode="Node_Mouth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Drinking"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehAnimate targetAnim="EatLand_Drink"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap thirst="-40" bathroom="30"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DrinkTankWater" UniqueID="WalrusPacific:DrinkTankWater">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers inWater="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap thirst="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingDrink"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="4" maxPlayTime="7" avoidLand="true" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Drinking"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehAnimate targetAnim="EatWater_ChewGulp"/>
+            <BFBehAnimate targetAnim="EatWater_ChewGulp"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap thirst="-25" bathroom="30" health="5"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Attacked" UniqueID="WalrusPacific:Attacked">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Attack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="evade" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Flee" GiveTo="b_LargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EvadeAttack" UniqueID="WalrusPacific:EvadeAttack">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Flee/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="evade" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EvadeAttack" UniqueID="WalrusPacific:EvadeAttack:2">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Young/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Flee/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="25" locoSpeed="evade" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PlayChase_Adult" TaskDelayMin="60" TaskDelayMax="120" UniqueID="WalrusPacific:PlayChase_Adult">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <WalrusPacific_Adult/>
+            <Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" notInSight="6"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EvadeAdultPlay" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPursuit hitRadius="6" pursuitRadius="15" locoSpeed="fast"/>
+         <BFBehPlaySet behSet="Swipe"/>
+         <BFBehPlaySet behSet="Swipe"/>
+         <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData rest="20" social="-25" exercise="-20" stimulation="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AdultEvade" UniqueID="WalrusPacific:AdultEvade">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_EvadeAdultPlay/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehEvasion evasionRadius="10" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData rest="10" stimulation="-20" social="-20" exercise="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PlayChase_Young" TaskDelayMin="60" TaskDelayMax="120" UniqueID="WalrusPacific:PlayChase_Young">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Young/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <WalrusPacific_Young/>
+            <Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" notInSight="6"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EvadeYoungPlay" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPursuit hitRadius="6" pursuitRadius="15" locoSpeed="fast"/>
+         <BFBehPlaySet behSet="Swipe"/>
+         <BFBehPlaySet behSet="Swipe"/>
+         <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData rest="20" social="-25" exercise="-20" stimulation="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="YoungEvade" UniqueID="WalrusPacific:YoungEvade">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Young/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_EvadeYoungPlay/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehEvasion evasionRadius="10" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData rest="10" stimulation="-20" social="-20" exercise="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PlayChase" TaskDelayMin="60" TaskDelayMax="120" UniqueID="WalrusPacific:PlayChase">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <WalrusPacific/>
+            <Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" notInSight="6"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EvadePlayChase" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPursuit hitRadius="6" pursuitRadius="15" locoSpeed="fast"/>
+         <BFBehPlaySet behSet="Swipe"/>
+         <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData rest="20" social="-25" exercise="-20" stimulation="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PlayEvade" UniqueID="WalrusPacific:PlayEvade">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_EvadePlayChase/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehEvasion evasionRadius="10" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData rest="10" stimulation="-20" social="-20" exercise="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SniffOther" TaskDelayMin="60" TaskDelayMax="180" UniqueID="WalrusPacific:SniffOther">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <WalrusPacific/>
+            <Qualifiers_AND inHabitat="true" onLand="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sniff"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPursuit hitRadius="3" pursuitRadius="15" locoSpeed="fast"/>
+         <ZTBehViewEvent viewKey="Pos_7"/>
+         <BFBehPlaySet behSet="SniffOther"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20" stimulation="-10" reproduction="15"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Sniff" TaskDelayMin="30" TaskDelayMax="90" UniqueID="WalrusPacific:Sniff">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sniffing" />
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <ZTBehViewEvent viewKey="Pos_7"/>
+         <BFBehPlaySet behSet="Sniff"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Bark_Call" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WalrusPacific:Bark_Call">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers onLand="true"/>
+         </Subjects>
+         <Targets>
+            <WalrusPacific/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData >
+         <BFAIAttributeFloatMap reproduction="-20" social="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BarkAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalBarkBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Bark"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Listen" GiveTo="WalrusPacific" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Bark" GiveTo="target" Payload="subject" Timeout="30"/>
+         </BFAITokenList>
+         <BFAIAttributeFloatMap social="-40"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Bark_Answer" UniqueID="WalrusPacific:Bark_Answer">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Bark/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BarkAnswer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalBarkGood" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Bark"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-30"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="BarkAngry_Call" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WalrusPacific:BarkAngry_Call">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult/>
+            <Qualifiers onLand="true"/>
+         </Subjects>
+         <Targets>
+            <WalrusPacific_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="20">
+         <BFAIAttributeFloatMap social="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BarkAngryAt"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalBarkBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="AngryBark"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Listen" GiveTo="WalrusPacific" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_BarkAngry" GiveTo="target" Payload="subject" Timeout="30"/>
+         </BFAITokenList>
+         <BFAIAttributeFloatMap social="-30"/>
+        <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BarkAngry_Answer" UniqueID="WalrusPacific:BarkAngry_Answer">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult/>
+            <Qualifiers onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_BarkAngry/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="20">
+         <BFAIAttributeFloatMap social="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BarkAngryAnswer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalBarkBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="AngryBark"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-30"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="GroomSelf" UniqueID="WalrusPacific:GroomSelf">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap hygiene="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="GroomSelf"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Sneeze" GiveTo="subject" Chance="25" Radius="60" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Bathe" UniqueID="WalrusPacific:Bathe">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers_AND inWater="true" hygiene="GE 50" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hygiene="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Bathe"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-40"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Sneeze" UniqueID="WalrusPacific:Sneeze">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Yawn/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sneeze"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5"/>
+         <BFBehPlaySet behSet="Sneeze"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Yawn" UniqueID="WalrusPacific:Yawn">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Yawn"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalYawnGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Yawn"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Sneeze" GiveTo="subject" Chance="25" Radius="60" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-15"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GoToSleepLand" UniqueID="WalrusPacific:GoToSleepLand">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <shade/>
+        <ground_cover/>
+        <shore/>
+        <dirt/>
+        <Qualifiers inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap rest="-35"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoToLand"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+      <ZTBehViewEvent viewKey="Pos_3"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SleepLand" UniqueID="WalrusPacific:SleepLand">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap rest="-35"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_6"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Sleeping"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Sleep"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="-100"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SleepWater" UniqueID="WalrusPacific:SleepWater">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+        <Qualifiers_AND depthBelowSurface="GE 2" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap rest="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" minDepth="0" maxDepth="1"/>
+      <ZTBehViewEvent viewKey="Pos_4"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Sleeping"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Sleep"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="-100"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackGuest_Ground" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WalrusPacific:AttackGuest_Ground">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest_Ground" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="AttackGuest_Ground" targetBehSet="AttackedWalrusPacific" resetPhase="true"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+               	    <ZTMessageInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackGuest_Water" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="WalrusPacific:AttackGuest_Water">
+      <BFAICreateData>
+         <Subjects>
+            <WalrusPacific_Adult/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" inWater="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest_Water" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="AttackGuest_Water" targetBehSet="AttackedWalrusPacific" resetPhase="true"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+               	    <ZTMessageInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+  <!--Show Tasks-->
+  <BFAITaskTemplate Name="EnterShowTank" UniqueID="WalrusPacific:EnterShowTank">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_EnterShowTank/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="120"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoToShowTank"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehUsePortal targetAnim="SwimSub_Ahead"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTMessageInfo locID="zoomessages:CantEnterShowTank" priority="-1" timeout="30" global="true" useEntityName="true"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ExitShowTank" UniqueID="WalrusPacific:ExitShowTank">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ExitShowTank/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="120"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoToHomeTank"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehUsePortal targetAnim="SwimSub_Ahead"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehScript context="behavior" file="scripts/CrateAnimal.lua" function="CrateAnimal"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DefaultShowBehavior" UniqueID="WalrusPacific:DefaultShowBehavior">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers_AND isInShow="true" inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_DefaultShowBehavior/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Idle"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DockPlatform" reserveTag="Animals_Waiting_Area" UniqueID="WalrusPacific:DockPlatform">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_DockPlatform/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="120"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GetTreat" reserveTag="Animals_Waiting_Area" UniqueID="WalrusPacific:GetTreat">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers_AND isInShow="true" inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_GetTreat/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="500"/>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_getApplause" GiveTo="target" Payload="subject" Timeout="20"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow1Star" UniqueID="WalrusPacific:ReactToShow1Star">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow1Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow1Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow2Star" UniqueID="WalrusPacific:ReactToShow2Star">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow2Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow2Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow3Star" UniqueID="WalrusPacific:ReactToShow3Star">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow3Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow3Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow4Star" UniqueID="WalrusPacific:ReactToShow4Star">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow4Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow4Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow5Star" UniqueID="WalrusPacific:ReactToShow5Star">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow5Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow5Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <!--First Person Training Tasks-->
+  <BFAITaskTemplate Name="DefaultFPTBehavior" Priority="80" UniqueID="WalrusPacific:DefaultFPTBehavior">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTDefaultTask/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Idle_NoWanderToStop"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Good_FPT" Priority="90" UniqueID="WalrusPacific:Feedback_Good_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTGood/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Bad_FPT" Priority="90" UniqueID="WalrusPacific:Feedback_Bad_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTBad/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehAnimate targetAnim="TreadWater_TrainingNodLeftRight"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Confused_FPT" Priority="90" UniqueID="WalrusPacific:Feedback_Confused_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTConfused/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTEmoticonInfo emoticonName="EmoteGuestUneducation" emoticonEntityNode="Bip01 Head"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="TreadWater_TrainingConfused"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GetReward_FPT" Priority="90" UniqueID="WalrusPacific:GetReward_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTEatReward/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="GetTreat_FPT"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <!--Staff Training Tasks-->
+  <BFAITaskTemplate Name="DockTrainer" reserveTag="Animal_Training_Area" Priority="90" UniqueID="WalrusPacific:DockTrainer">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers_AND isSwimming="true" f_needPointsGood="G 0"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_STSummon/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+       <BFBehPlaySet behSet="DockTrainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="StaffTrainingIdle" Priority="80" UniqueID="WalrusPacific:StaffTrainingIdle">
+    <BFAICreateData>
+      <Subjects>
+        <WalrusPacific_Adult/>
+        <Qualifiers_AND isSwimming="true" f_needPointsGood="G 0"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_STDefaultTask/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="WatchTrainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

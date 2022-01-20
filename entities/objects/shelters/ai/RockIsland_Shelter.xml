@@ -1,0 +1,110 @@
+﻿<BFTypedBinder binderType="RockIsland_Shelter">
+	<types>
+		<entity>
+			<shelters>
+				<RockIsland_Shelter />
+			</shelters>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="FitSurfacePick" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 0.73" icon3Dscale=".13" autoFootprint="true" landPlacement="false" tankPlacement="true" waterPlacement="true" minimumHeadroom="8.0">
+			<cfootprint width="3" height="3" />
+			<dfootprint width="4" height="4" />
+			<excludedIconObjs>
+				<FitSurfacePick />
+			</excludedIconObjs>
+			<stompData>
+				<delete />
+				<prevent />
+				<allow>
+					<egg />
+					<animal />
+				</allow>
+			</stompData>
+		</ZTPlacementData>
+		<BFGCollisionData isTraversable="true" isPassable="true">
+			<typeScores animal="0" />
+		</BFGCollisionData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\shelters\RockIsland\RockIsland_Shelter_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:RockIsland_Shelter" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="RockIsland_Shelter" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared s_uisort="ay" s_Product="Marine" b_HasEntityFittingSurface="true" b_GeneratesTraversabilityInfo="true" s_Zoopedia="zoopedia:zoopedia_desertisland:entry" f_FameReq="30" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/shelters/RockIsland/RockIsland" scale="1" switch="0 20 40" />
+					<BFGroundFitComponent heightOffset="0.16" floatOnWater="true" waterOffset="-0.4" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Exit1 parentNode="AutoRoot" x="2" y="-4.5" z="0.4" yaw="-45" />
+						<Dock_Exit2 parentNode="AutoRoot" x="3.75" y="-2.5" z="0.4" yaw="-90" />
+						<Dock_Exit3 parentNode="AutoRoot" x="5.50" y="1" z="0.4" yaw="-90" />
+						<Dock_Exit4 parentNode="AutoRoot" x="2.75" y="4.75" z="0.4" yaw="-135" />
+						<Dock_Enter1 parentNode="AutoRoot" x="2.5" y="-5" z="0.4" yaw="135" />
+						<Dock_Enter2 parentNode="AutoRoot" x="4.5" y="-2.5" z="0.4" yaw="90" />
+						<Dock_Enter3 parentNode="AutoRoot" x="6.25" y="1" z="0.4" yaw="90" />
+						<Dock_Enter4 parentNode="AutoRoot" x="3.75" y="5.25" z="0.4" yaw="45" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Rest">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterRockIsland" useBehSet="UseRockIsland" exitBehSet="ExitRockIsland1" targetNode="Dock_Enter1" capacity="1" exclusiveID="RockIsland1" />
+						<BFGEntityContainerSlot enterBehSet="EnterRockIsland" useBehSet="UseRockIsland" exitBehSet="ExitRockIsland2" targetNode="Dock_Enter2" capacity="1" exclusiveID="RockIsland2" />
+						<BFGEntityContainerSlot enterBehSet="EnterRockIsland" useBehSet="UseRockIsland" exitBehSet="ExitRockIsland3" targetNode="Dock_Enter3" capacity="1" exclusiveID="RockIsland3" />
+						<BFGEntityContainerSlot enterBehSet="EnterRockIsland" useBehSet="UseRockIsland" exitBehSet="ExitRockIsland4" targetNode="Dock_Enter4" capacity="1" exclusiveID="RockIsland4" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Birth">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterRockIsland" useBehSet="BirthRockIsland" exitBehSet="ExitRockIsland1" targetNode="Dock_Enter1" capacity="1" exclusiveID="RockIsland1" />
+						<BFGEntityContainerSlot enterBehSet="EnterRockIsland" useBehSet="BirthRockIsland" exitBehSet="ExitRockIsland2" targetNode="Dock_Enter2" capacity="1" exclusiveID="RockIsland2" />
+						<BFGEntityContainerSlot enterBehSet="EnterRockIsland" useBehSet="BirthRockIsland" exitBehSet="ExitRockIsland3" targetNode="Dock_Enter3" capacity="1" exclusiveID="RockIsland3" />
+						<BFGEntityContainerSlot enterBehSet="EnterRockIsland" useBehSet="BirthRockIsland" exitBehSet="ExitRockIsland4" targetNode="Dock_Enter4" capacity="1" exclusiveID="RockIsland4" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FitSurfacePick">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/shelters/RockIsland/RockIsland_PathGeometry.bfb" />
+					<BFGFittingSurfaceComponent heightOffset="0.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="700">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

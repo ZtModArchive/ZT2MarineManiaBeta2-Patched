@@ -1,0 +1,2349 @@
+<BehaviorSets>
+<!--Basic Behaviors-->
+   <Idle>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehWander locoSpeed="stop"/>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="TreadWater"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle>
+   <Idle_NoWanderToStop>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="TreadWater"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_NoWanderToStop>
+   <Idle_15>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehWander locoSpeed="stop"/>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="TreadWater_15"/>
+               <underwater behSet="TreadWaterSub_15"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_15>
+   <Idle_35>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehWander locoSpeed="stop"/>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="TreadWater_35"/>
+               <underwater behSet="TreadWaterSub_35"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_35>
+   <Idle_Loop>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehWander locoSpeed="stop"/>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="TreadWater_Loop"/>
+               <underwater behSet="TreadWaterSub_Loop"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_Loop>
+   <TreadWater>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </TreadWater>
+   <TreadWater_15>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="15"/>
+      </behaviors>
+   </TreadWater_15>
+   <TreadWater_35>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="35"/>
+      </behaviors>
+   </TreadWater_35>
+   <TreadWater_Loop>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true"/>
+      </behaviors>
+   </TreadWater_Loop>
+   <TreadWater_180>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Turn180"/>
+      </behaviors>
+   </TreadWater_180>
+   <TreadWaterSub>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </TreadWaterSub>
+   <TreadWaterSub_15>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="15"/>
+      </behaviors>
+   </TreadWaterSub_15>
+   <TreadWaterSub_35>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="35"/>
+      </behaviors>
+   </TreadWaterSub_35>
+   <TreadWaterSub_Loop>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" loopFlag="true"/>
+      </behaviors>
+   </TreadWaterSub_Loop>
+   <TreadWaterSub_180>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Turn180"/>
+      </behaviors>
+   </TreadWaterSub_180>
+   <FailureSet>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Squawk"/>
+      </behaviors>
+   </FailureSet>
+   <Think>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Investigate>
+   <Sick>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle_35"/>
+      </behaviors>
+   </VerySick>
+   <Die_OldAge>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Dying>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Idle"/>
+               <underwater behSet="Idle"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Dying>
+   <Die_Fight>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Chum_mm" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Beached>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Beached>   
+   <Squawk>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Squawk"/>
+      </behaviors>
+   </Squawk>
+   <Whistle>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Whistle"/>
+      </behaviors>
+   </Whistle>
+   <CallMother>
+      <subjects>
+         <Beluga_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom minPlays="4" maxPlays="6">
+            <randomAnims>
+               <TreadWater_Idle weight="60"/>
+               <TreadWater_Squawk weight="40"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </CallMother>
+   <Sleep>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle_35"/>
+      </behaviors>
+   </Sleep>
+   <WaitCarryYoung>
+      <subjects>
+         <Beluga_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitingToBeClimbed" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle_Loop"/>
+      </behaviors>
+   </WaitCarryYoung>
+   <BoardMom>
+      <subjects>
+         <Beluga_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Node_Carried" targetNode="Node_Carry" targetAnim="SwimSub_2HoldMother"/>
+      </behaviors>
+   </BoardMom>
+   <PickUpYoung>
+      <subjects>
+         <Beluga_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PickingUp" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAttachObject targetNode="Node_Carried" targetAnim="TreadWaterSub_2TreadWaterSubHugYoung" locoMod="carryback" detachAction="dropitem" detachBehSet="DropYoung" targetBehSet="Carried"/>
+      </behaviors>
+   </PickUpYoung>
+   <Carried>
+      <subjects>
+         <Beluga_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingCarried" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="HoldMother_Idle" loopFlag="true"/>
+      </behaviors>
+   </Carried>
+   <GrabMom>
+      <subjects>
+         <Beluga_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Climbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="SwimSub_2HoldMother"/>
+      </behaviors>
+   </GrabMom>
+   <MommaLetYoungOff>
+      <subjects>
+         <Beluga_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dropping" useObjectName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWaterSubHugYoung_2TreadWaterSub"/>
+      </behaviors>
+   </MommaLetYoungOff>
+   <DebarkMom>
+      <subjects>
+         <Beluga_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="HoldMother_2SwimSub"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DebarkMom>
+   <DropYoung>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSubHugYoung_Idle"/>
+         <BFBehSyncSet syncEntity="object" subjectBehSet="MommaLetYoungOff" targetBehSet="DebarkMom"/>
+      </behaviors>
+   </DropYoung>
+<!--Wander behavior sets for randomized wandering-->
+   <Wander>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="WanderSurf"/>
+               <underwater behSet="WanderSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander>
+   <Wander_Fast>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="WanderSurf_Fast"/>
+               <underwater behSet="WanderSub_Fast"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander_Fast>
+   <Wander_Medium>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="WanderSurf_Med"/>
+               <underwater behSet="WanderSub_Med"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander_Medium>
+   <Wander_Slow>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="WanderSurf_Slow"/>
+               <underwater behSet="WanderSurf_Slow"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander_Slow>
+   <Wander_Glide>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="WanderSurf_Glide"/>
+               <underwater behSet="WanderSurf_Glide"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander_Glide>
+   <WanderSurf>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="25"/>
+               <WanderSurf_Med weight="25"/>
+               <WanderSurf_Slow weight="25"/>
+               <WanderSurf_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSurf_Glide>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Glide>
+   <WanderSub>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="25"/>
+               <WanderSub_Med weight="25"/>
+               <WanderSub_Slow weight="25"/>
+               <WanderSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="20" maxPlayTime="30" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="20" maxPlayTime="30" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="20" maxPlayTime="30" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Slow>
+   <WanderSub_Glide>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="20" maxPlayTime="30" avoidLand="true" locoSpeed="glide" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Glide>
+<!--General Behaviors-->
+   <Rendezvous>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit/>
+      </behaviors>
+   </Rendezvous>
+   <SyncSwimLead>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet loopFlag="true">
+            <randomSets>
+               <WanderSurf_Fast weight="50"/>
+               <WanderSub_Fast weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </SyncSwimLead>
+   <SyncSwimFollow>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehFollowEntity locoSpeed="fast" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </SyncSwimFollow>
+   <ReproductionSwimLead>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet loopFlag="true">
+            <randomSets>
+               <WanderSurf_Fast weight="50"/>
+               <WanderSub_Fast weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </ReproductionSwimLead>
+   <ReproductionSwimFollow>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFollowEntity locoSpeed="fast" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </ReproductionSwimFollow>
+   <DockWallScareGuest>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehDockTankWall subjectNode="Node_RamWall" locoSpeed="fast" heightAboveGround="1"/>
+      </behaviors>
+   </DockWallScareGuest>
+   <SplashGuest_Right>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToSplash" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehTargetFence behSet="DockTankWall_Splash_Right" fenceType="tankwallsegment" searchDistance="6"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SplashingAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehSplashGuest targetAnim="TreadWater_FlipperSlapRight" interruptFlag="true">
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </SplashGuest_Right>
+   <SplashGuest_Left>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToSplash" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehTargetFence behSet="DockTankWall_Splash_Left" fenceType="tankwallsegment" searchDistance="6"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SplashingAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehSplashGuest targetAnim="TreadWater_FlipperSlapLeft" interruptFlag="true">
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </SplashGuest_Left>
+   <DockTankWall_Splash_Right>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehDockTankWall subjectNode="Node_TankWallRight" depthBelowWater="1"/>
+      </behaviors>
+   </DockTankWall_Splash_Right>
+   <DockTankWall_Splash_Left>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehDockTankWall subjectNode="Node_TankWallLeft" depthBelowWater="1"/>
+      </behaviors>
+   </DockTankWall_Splash_Left>
+   <CorkscrewTwist>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_CorkscrewTwist"/>
+      </behaviors>
+   </CorkscrewTwist>
+   <Porpoise>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Porpoise"/>
+      </behaviors>
+   </Porpoise>
+   <Echolocate>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Echolocate"/>
+      </behaviors>
+   </Echolocate>
+   <Birth>
+      <subjects>
+         <Beluga_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth>
+   <SpawnF>
+      <subjects>
+         <Beluga_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Beluga_Young_F" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <Beluga_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Beluga_Young_M" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM>
+   <Surface_Submerge>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="3" maxDepth="10"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="0" maxDepth="0"/>
+      </behaviors>
+   </Surface>
+   <Poop>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop_Sick>
+   <DockRub>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_RubOther" targetNode="Node_RubOther"/>
+      </behaviors>
+   </DockRub>
+   <GreetingRub>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_RubOther"/>
+      </behaviors>
+   </GreetingRub>
+   <DockAttackGuest>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Guest" targetNode="p_TalkOffset" targetAnim="TreadWater_Idle" locoSpeed="fast"/>
+      </behaviors>
+   </DockAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_GuestAttack" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest>
+   <Eat>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Eat" />
+      </behaviors>
+   </Eat>
+   <EnterTerrainFood>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterTerrainFood>
+   <UseTerrainFood>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Eat" />
+      </behaviors>
+   </UseTerrainFood>
+   <ExitTerrainFood>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TurnLeft90"/>
+      </behaviors>
+   </ExitTerrainFood>
+   <EnterBuoyLure>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterBuoyLure>
+   <UseBuoyLure>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_2TreadWater" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Eat" />
+      </behaviors>
+   </UseBuoyLure>
+   <ExitBuoyLure>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TurnLeft90"/>
+      </behaviors>
+   </ExitBuoyLure>
+   <EnterArtificialReef>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="SwimSub_Ahead"/>
+      </behaviors>
+   </EnterArtificialReef>
+   <UseArtificialReef>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Eat" interruptFlag="true"/>
+      </behaviors>
+   </UseArtificialReef>
+   <ExitArtificialReef>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitArtificialReef>
+   <EnterFoodBox>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterFoodBox>
+   <UseFoodBox>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Eat" interruptFlag="true"/>
+      </behaviors>
+   </UseFoodBox>
+   <ExitFoodBox>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitFoodBox>
+   <EnterMarineCarcass>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterMarineCarcass>
+   <UseMarineCarcass>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Eat" interruptFlag="true"/>
+      </behaviors>
+   </UseMarineCarcass>
+   <ExitMarineCarcass>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitMarineCarcass>
+   <EnterIceBlock>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </EnterIceBlock>
+   <UseIceBlock>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_2TreadWater" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Eat" />
+      </behaviors>
+   </UseIceBlock>
+   <ExitIceBlock>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TurnLeft90"/>
+      </behaviors>
+   </ExitIceBlock>
+   <HappyExpression>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_ExpressionHappy" playTime="10"/>
+      </behaviors>
+   </HappyExpression>
+   <AngryExpression>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_ExpressionAngry" playTime="10"/>
+      </behaviors>
+   </AngryExpression>
+   <ConfusedExpression>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingConfused" playTime="10"/>
+      </behaviors>
+   </ConfusedExpression>   
+   <EnterKelpBed>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="Node_KelpBed" locospeed="medium"/>
+      </behaviors>
+   </EnterKelpBed>
+   <UseKelpBed>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_2TreadWaterSub" interruptFlag="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+      </behaviors>
+   </UseKelpBed>
+   <ExitKelpBed>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitKelpBed>
+   <ChasePrey>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="stalk"/>
+      </behaviors>
+   </ChasePrey> 
+   <MissPrey>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Chew"/>
+      </behaviors>
+   </MissPrey> 	
+   <AttackPrey>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </AttackPrey>
+   <Roar>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Squawk"/>
+               <underwater behSet="Echolocate"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Roar> 
+   <SwipeMed>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </SwipeMed>
+   <HitMediumEqual>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <HitMed>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </HitMed>
+   <HitMed_Ground>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <OnLand_Idle weight="70"/>
+               <OnLand_SquirmLeft weight="15"/>
+               <OnLand_SquirmRight weight="15"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Ground> 
+   <HitMed_Water>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_TurnLeft90 weight="40"/>
+               <Swim_TurnRight90 weight="40"/>
+               <Swim_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Water> 
+   <HitMed_Underwater>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnLeft90 weight="40"/>
+               <SwimSub_TurnRight90 weight="40"/>
+               <SwimSub_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Underwater> 
+   <HitMedDie>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie> 
+   <BiteMed>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </BiteMed>
+   <BitMed>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie> 
+   <WaitFight>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="SwimSub_BiteVicious"/>
+      </behaviors>
+   </WaitFight> 
+   <DockFight>
+      <subjects>
+         <Beluga_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="SwimSub_BiteVicious"/>
+      </behaviors>
+   </DockFight> 
+   <Die_Ground>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_SquirmAhead" />
+      </behaviors>
+   </Die_Ground> 
+   <Die_Water>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Water> 
+   <Die_Underwater>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Underwater> 
+   <DockAttacked>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <OnLand>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <OnLand_Idle weight="70"/>
+               <OnLand_SquirmLeft weight="15"/>
+               <OnLand_SquirmRight weight="15"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </OnLand> 
+   <EnterBubbleEmitter>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterBubbleEmitter>
+   <UseBubbleEmitter>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnRight180" interruptFlag="true"/>
+      </behaviors>
+   </UseBubbleEmitter>
+   <ExitBubbleEmitter>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnRight180"/>
+      </behaviors>
+   </ExitBubbleEmitter>
+   <EnterPirateMast>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterPirateMast>
+   <UsePirateMast>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Ahead" interruptFlag="true"/>
+      </behaviors>
+   </UsePirateMast>
+   <EnterPirateShip>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterPirateShip>
+   <UsePirateShip>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Ahead" interruptFlag="true"/>
+      </behaviors>
+   </UsePirateShip> 
+   <ExitPirateShipPort>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnRight90" interruptFlag="true"/>
+      </behaviors>
+   </ExitPirateShipPort> 
+   <ExitPirateShipStarboard>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitPirateShipStarboard>
+<!--Trick Behaviors-->
+   <DockTrickArea_Jump>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_Jump"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+      </behaviors>
+   </DockTrickArea_Jump>
+   <DockTrickArea_FlipperSplash>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_FlipperSplash"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTrickArea_FlipperSplash>
+   <DockTrickArea_Spyhop>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_Spyhop"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTrickArea_Spyhop>
+   <DockTrickArea_TailSplash>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_TailSplash"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTrickArea_TailSplash>
+   <DockTrickArea_Squirt>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_Squirt"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTrickArea_Squirt>
+   <Jump_Failure>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="SwimSub_JumpFailure" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Failure>
+   <Jump_Success>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="SwimSub_JumpSuccess" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Success>
+   <Jump_Critical>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="SwimSub_JumpSuperSuccess" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Critical>
+   <FlipperSplash_Failure>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SplashingFlipper"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="TreadWater_FlipperSplashFailure">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </FlipperSplash_Failure>
+   <FlipperSplash_Success>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SplashingFlipper"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="TreadWater_FlipperSplashSuccess">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </FlipperSplash_Success>
+   <FlipperSplash_Critical>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SplashingFlipper"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="TreadWater_FlipperSplashSuperSuccess">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </FlipperSplash_Critical>
+   <Spyhop_Failure>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Spyhopping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="TreadWater_SpyhopFailure"/>
+      </behaviors>
+   </Spyhop_Failure>
+   <Spyhop_Success>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Spyhopping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="TreadWater_SpyhopSuccess"/>
+      </behaviors>
+   </Spyhop_Success>
+   <Spyhop_Critical>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Spyhopping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="TreadWater_SpyhopSuperSuccess"/>
+      </behaviors>
+   </Spyhop_Critical>
+   <TailSplash_Failure>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SplashingTail"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="TreadWater_TailSplashFailure">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </TailSplash_Failure>
+   <TailSplash_Success>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SplashingTail"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="TreadWater_TailSplashSuccess">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </TailSplash_Success>
+   <TailSplash_Critical>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SplashingTail"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="TreadWater_TailSplashSuperSuccess">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </TailSplash_Critical>
+   <Squirt_Failure>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Squirting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="TreadWater_SquirtWaterFailure" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Squirt_Failure>
+   <Squirt_Success>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Squirting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="TreadWater_SquirtWaterSuccess" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Squirt_Success>
+   <Squirt_Critical>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Squirting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="TreadWater_SquirtWaterSuperSuccess" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Squirt_Critical>
+   <DockBall_FlukeSwipeBall>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToTrick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+      </behaviors>
+   </DockBall_FlukeSwipeBall>
+   <DockBall_RamBallOutOfWater>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_RamAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+      </behaviors>
+   </DockBall_RamBallOutOfWater>
+   <FlukeSwipeBall_Failure>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Swiping" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehSplashGuest targetAnim="SwimSub_FlukeSwipeJumpFailure" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </FlukeSwipeBall_Failure>
+   <FlukeSwipeBall_Success>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Swiping" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWhap targetAnim="SwimSub_FlukeSwipeJumpSuccess" interruptFlag="true" groundFit="false"/>
+         <ZTBehSplashGuest splashName="directed_medium">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </FlukeSwipeBall_Success>
+   <FlukeSwipeBall_Critical>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Swiping" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWhap targetAnim="SwimSub_FlukeSwipeJumpSuperSuccess" interruptFlag="true" groundFit="false"/>
+         <ZTBehSplashGuest splashName="directed_large">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </FlukeSwipeBall_Critical>
+   <RamBallOutOfWater_Failure>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RamAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="SwimSub_RamFailure" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </RamBallOutOfWater_Failure>
+   <RamBallOutOfWater_Success>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RamAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehWhap targetAnim="SwimSub_RamSuccess" interruptFlag="true" groundFit="false"/>
+         <ZTBehSplashGuest splashName="directed_medium">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </RamBallOutOfWater_Success>
+   <RamBallOutOfWater_Critical>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RamAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehWhap targetAnim="SwimSub_RamSuperSuccess" interruptFlag="true" groundFit="false"/>
+         <ZTBehSplashGuest splashName="directed_large">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </RamBallOutOfWater_Critical>
+<!--Staff Training Behavior Sets-->
+   <DockTrainer>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTActionInfo locID="animalactions:GoToGetTrained" useTargetName="true"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTrainer>
+   <WatchTrainer>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="WatchTrainer_Water"/>
+               <underwater behSet="WatchTrainer_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </WatchTrainer>
+   <WatchTrainer_Water>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Watching" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehAnimateRandom loopFlag="true">
+            <randomAnims>
+               <TreadWater_Idle weight="50"/>
+               <TreadWater_TrainingNodUpDown weight="30"/>
+               <TreadWater_Squawk weight="20"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </WatchTrainer_Water>
+   <WatchTrainer_Underwater>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Watching" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" loopFlag="true"/>
+      </behaviors>
+   </WatchTrainer_Underwater>
+<!--Trick Learning Behaviors-->
+   <WatchAnimal>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Watching" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehAnimateRandom minPlays="2" maxPlays="4">
+            <randomAnims>
+               <TreadWater_Idle weight="50"/>
+               <TreadWater_TrainingNodUpDown weight="30"/>
+               <TreadWater_Squawk weight="20"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </WatchAnimal>
+   <Jump_Natural>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehSplashGuest targetAnim="SwimSub_JumpSuccess" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Natural>
+   <BelugaJump_Learn10>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehSetAttribute>
+            <BFAISubjectData>
+               <TrickLearning>
+                  <BelugaJump learn="10" cap="70"/>
+               </TrickLearning>
+            </BFAISubjectData>
+         </BFBehSetAttribute>
+      </behaviors>
+   </BelugaJump_Learn10>
+   <Spyhop_Natural>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Spyhopping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_SpyhopSuccess"/>
+      </behaviors>
+   </Spyhop_Natural>
+   <BelugaSpyhop_Learn10>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehSetAttribute>
+            <BFAISubjectData>
+               <TrickLearning>
+                  <BelugaSpyhop learn="10" cap="70"/>
+               </TrickLearning>
+            </BFAISubjectData>
+         </BFBehSetAttribute>
+      </behaviors>
+   </BelugaSpyhop_Learn10>
+<!--Show Behaviors-->
+   <DockMC>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToWait" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline ignoreCollisionWithTarget="false" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockMC>
+   <ShowIdle>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitTrick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </ShowIdle>
+   <ShowIdle_Treat>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_GiveTreat" Payload="subject" GiveTo="target" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="10"/>
+      </behaviors>
+   </ShowIdle_Treat>
+   <GetTreat>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GetTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TreadWater_EatTreat" detachAction="killitem" container="foodprop"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-5" bathroom="5"/>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </GetTreat>
+   <GetTreat_Loop>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GetTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TreadWater_EatTreat" detachAction="killitem"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-5" bathroom="5"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTEmoticonInfo emoticonName="EmoteGuestEducation" emoticonEntityNode="Bip01 Head"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true"/>
+      </behaviors>
+   </GetTreat_Loop>
+   <ReactToShow1Star>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodLeftRight"/>
+      </behaviors>
+   </ReactToShow1Star>
+   <ReactToShow2Star>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodLeftRight"/>
+      </behaviors>
+   </ReactToShow2Star>
+   <ReactToShow3Star>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+      </behaviors>
+   </ReactToShow3Star>
+   <ReactToShow4Star>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+      </behaviors>
+   </ReactToShow4Star>
+   <ReactToShow5Star>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+      </behaviors>
+   </ReactToShow5Star>
+<!--First Person Training Behavior Sets-->
+   <GetTreat_FPT>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GetTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TreadWater_EatTreat" detachAction="killitem" interruptFlag="true"/>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTEmoticonInfo emoticonName="EmoteGuestEducation" emoticonEntityNode="Bip01 Head"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-5"/>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </GetTreat_FPT>
+   <DockTraining>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="veryfast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTraining>
+   <DockTraining_Teleport>
+      <subjects>
+         <Beluga/>
+      </subjects>
+      <behaviors>
+         <BFBehDockNow/>
+      </behaviors>
+   </DockTraining_Teleport>
+</BehaviorSets>

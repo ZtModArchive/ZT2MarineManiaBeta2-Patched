@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Lamnidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Chondrichthyes>
+                  <Lamniformes>
+                     <Lamnidae/>
+                  </Lamniformes>
+               </Chondrichthyes>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

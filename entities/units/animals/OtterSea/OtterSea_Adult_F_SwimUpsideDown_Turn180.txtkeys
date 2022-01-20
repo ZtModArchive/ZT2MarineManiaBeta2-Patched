@@ -1,0 +1,11 @@
+<TEXTKEY> 
+   <key time=".1" text="{Bip01 Head} runspl strength=.1"/> 
+   <key time=".4" text="{Bip01 Head} runspl strength=.1"/> 
+   <key time=".8" text="{Bip01 Head} runspl strength=.1"/> 
+   <key time="1.2" text="{Bip01 Head} runspl strength=.1"/> 
+   <key time="1.6" text="{Bip01 Head} runspl strength=.1"/> 
+   <key time="2.0" text="{Bip01 Head} runspl strength=.1"/> 
+   <key time="2.4" text="{Bip01 Head} runspl strength=.1"/> 
+   <key time="2.8" text="{Bip01 Head} runspl strength=.1"/> 
+   <key time="3.2" text="{Bip01 Head} runspl strength=.1"/> 
+</TEXTKEY>

@@ -1,0 +1,18 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Squirt" UniqueID="FountainSplash_mm:Squirt">
+      <BFAICreateData>
+         <Subjects>
+            <FountainSplash_mm/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Squirt"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

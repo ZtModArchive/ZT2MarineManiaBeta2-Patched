@@ -1,0 +1,3179 @@
+<BehaviorSets>
+<!--Wander behavior sets for randomized wandering-->
+   <Wander>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WanderGround"/>
+               <water behSet="WanderSurf"/>
+               <underwater behSet="WanderSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander>
+   <Wander_Fast>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WanderGround_Fast"/>
+               <water behSet="WanderSurf_Fast"/>
+               <underwater behSet="WanderSub_Fast"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander_Fast>
+   <Wander_Medium>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WanderGround_Med"/>
+               <water behSet="WanderSurf_Med"/>
+               <underwater behSet="WanderSub_Med"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander_Medium>
+   <Wander_Slow>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WanderGround_Slow"/>
+               <water behSet="WanderSurf_Slow"/>
+               <underwater behSet="WanderSurf_Slow"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander_Slow>
+   <WanderGround>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderGround_Fast weight="33"/>
+               <WanderGround_Med weight="33"/>
+               <WanderGround_Slow weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderGround>
+   <WanderGround_Fast>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidWater="true" locoSpeed="fast"/>
+      </behaviors>
+   </WanderGround_Fast>
+   <WanderGround_Med>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidWater="true" locoSpeed="medium"/>
+      </behaviors>
+   </WanderGround_Med>
+   <WanderGround_Slow>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidWater="true" locoSpeed="slow"/>
+      </behaviors>
+   </WanderGround_Slow>
+   <WanderSurf>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="25"/>
+               <WanderSurf_Med weight="25"/>
+               <WanderSurf_Slow weight="25"/>
+               <WanderSurf_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast"/>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium"/>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow"/>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSurf_Glide>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide"/>
+      </behaviors>
+   </WanderSurf_Glide>
+   <WanderSub>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="25"/>
+               <WanderSub_Med weight="25"/>
+               <WanderSub_Slow weight="25"/>
+               <WanderSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </WanderSub_Slow>
+   <WanderSub_Glide>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </WanderSub_Glide>
+   <Surface_Submerge>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="0" maxDepth="0"/>
+      </behaviors>
+   </Surface>
+<!--End Wander behavior sets for randomized wandering-->
+   <Idle>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand"/>
+               <water behSet="TreadWater"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle>
+   <Idle_NoWanderToStop>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="TreadWater"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_NoWanderToStop>
+   <Idle_15>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_15"/>
+               <water behSet="TreadWater_15"/>
+               <underwater behSet="TreadWaterSub_15"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_15>
+   <Idle_35>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_35"/>
+               <water behSet="TreadWater_35"/>
+               <underwater behSet="TreadWaterSub_35"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_35>
+   <Idle_Loop>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_Loop"/>
+               <water behSet="TreadWater_Loop"/>
+               <underwater behSet="TreadWaterSub_Loop"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle_Loop>
+   <TreadWater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </TreadWater>
+   <TreadWater_15>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="15"/>
+      </behaviors>
+   </TreadWater_15>
+   <TreadWater_35>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="35"/>
+      </behaviors>
+   </TreadWater_35>
+   <TreadWater_Loop>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true"/>
+      </behaviors>
+   </TreadWater_Loop>
+   <TreadWater_180>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Turn180"/>
+      </behaviors>
+   </TreadWater_180>
+   <TreadWaterSub>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </TreadWaterSub>
+   <TreadWaterSub_15>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="15"/>
+      </behaviors>
+   </TreadWaterSub_15>
+   <TreadWaterSub_35>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" playTime="35"/>
+      </behaviors>
+   </TreadWaterSub_35>
+   <TreadWaterSub_Loop>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" loopFlag="true"/>
+      </behaviors>
+   </TreadWaterSub_Loop>
+   <TreadWaterSub_180>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Turn180"/>
+      </behaviors>
+   </TreadWaterSub_180>
+   <Stand>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand>
+   <Stand_15>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="15"/>
+      </behaviors>
+   </Stand_15>
+   <Stand_35>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="35"/>
+      </behaviors>
+   </Stand_35>
+   <Stand_Loop>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </Stand_Loop>
+   <Stand_180>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </Stand_180>
+   <TreadWater_Idle>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </TreadWater_Idle>
+   <Stand_Idle>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand_Idle>
+   <FailureSet>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Cry"/>
+               <water behSet="TreadWater"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <Think>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Investigate>
+   <Float>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Float_Idle" playTime="4"/>
+         <BFBehAnimate targetAnim="Float_Breath"/>
+         <BFBehAnimate targetAnim="Float_Idle" playTime="4"/>
+      </behaviors>
+   </Float>
+   <Breath>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Float_Breath"/>
+         <BFBehAnimate targetAnim="Float_Idle" playTime="4"/>
+         <BFBehAnimate targetAnim="Float_Breath"/>
+      </behaviors>
+   </Breath>
+   <Lie>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="8"/>
+      </behaviors>
+   </Lie>
+   <Sleep>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="SleepLand"/>
+               <water behSet="SleepWater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Sleep>
+   <SleepLand>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="8"/>
+      </behaviors>
+   </SleepLand>
+   <SleepWater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SleepWater_Idle" playTime="8"/>
+      </behaviors>
+   </SleepWater>
+   <SleepKelpBed>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SleepKelpBed_Idle" playTime="8"/>
+      </behaviors>
+   </SleepKelpBed>
+   <Die_OldAge>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="DefaultLie"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Fight_Ground"/>
+               <water behSet="Die_Fight_Water"/>
+               <underwater behSet="Die_Fight_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Die_Fight>
+   <Die_Fight_Ground>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight_Ground>
+   <Die_Fight_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Chum_mm" NameIt="true"/>
+      </behaviors>
+   </Die_Fight_Water>
+   <Yawn>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Lie behSet="Yawn_Lie"/>
+               <Stand behSet="Yawn_Stand"/>
+               <TreadWater behSet="Yawn_TreadWater"/>
+               <default behSet="Yawn_Lie"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Yawn>
+   <Yawn_Lie>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Yawn"/>
+      </behaviors>
+   </Yawn_Lie>
+   <Yawn_Stand>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Yawn"/>
+      </behaviors>
+   </Yawn_Stand>
+   <Yawn_TreadWater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Yawn"/>
+      </behaviors>
+   </Yawn_TreadWater>
+   <Pee>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Pee_Land"/>
+               <water behSet="Pee_Water"/>
+               <underwater behSet="Pee_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Pee>
+   <Pee_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Pee"/>
+      </behaviors>
+   </Pee_Land>
+   <Pee_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </Pee_Water>
+   <Pee_Underwater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </Pee_Underwater>
+   <Poop>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="PoopLand"/>
+               <water behSet="PoopWater"/>
+               <underwater behSet="PoopUnderwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Poop>
+   <PoopLand>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Small" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </PoopLand>
+   <PoopWater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </PoopWater>
+   <PoopUnderwater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </PoopUnderwater>
+   <Poop_Sick>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="PoopLand_Sick"/>
+               <water behSet="PoopWater"/>
+               <underwater behSet="PoopUnderwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Poop_Sick>
+   <PoopLand_Sick>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Small_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </PoopLand_Sick>
+   <Sneeze>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Lie behSet="Sneeze_Lie"/>
+               <Stand behSet="Sneeze_Stand"/>
+               <default behSet="Sneeze_Lie"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sneeze>
+   <Sneeze_Lie>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Sneeze"/>
+      </behaviors>
+   </Sneeze_Lie>
+   <Sneeze_Stand>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sneeze"/>
+      </behaviors>
+   </Sneeze_Stand>
+   <Quiver>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Quiver_Land"/>
+               <water behSet="Quiver_Water"/>
+               <underwater behSet="Quiver_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Quiver>
+   <Quiver_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Quiver"/>
+      </behaviors>
+   </Quiver_Land>
+   <Quiver_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Quiver"/>
+      </behaviors>
+   </Quiver_Water>
+   <Quiver_Underwater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Quiver"/>
+      </behaviors>
+   </Quiver_Underwater>
+   <Attacked>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Attacked_Land"/>
+               <water behSet="Attacked_Water"/>
+               <underwater behSet="Attacked_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Attacked>
+   <Attacked_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Attacked"/>
+      </behaviors>
+   </Attacked_Land>
+   <Attacked_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Attacked"/>
+      </behaviors>
+   </Attacked_Water>
+   <Attacked_Underwater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Attacked"/>
+      </behaviors>
+   </Attacked_Underwater>
+   <GroomSelf>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="4">
+            <randomSets>
+               <GroomSelf_PickFur weight="33"/>
+               <GroomSelf_ChewPaw weight="33"/>
+               <GroomSelf_BlowFur weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </GroomSelf>
+   <GroomSelf_PickFur>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_PickFur"/>
+      </behaviors>
+   </GroomSelf_PickFur>
+   <GroomSelf_ChewPaw>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_ChewPaw"/>
+      </behaviors>
+   </GroomSelf_ChewPaw>
+   <GroomSelf_BlowFur>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_BlowFur"/>
+      </behaviors>
+   </GroomSelf_BlowFur>
+   <Somersault>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Somersault"/>
+      </behaviors>
+   </Somersault>
+   <GroomYoung>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="4">
+            <randomSets>
+               <GroomYoung_PickFur weight="50"/>
+               <GroomYoung_BlowFur weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </GroomYoung>
+   <GroomYoung_PickFur>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterYoung_PickFurYoung"/>
+      </behaviors>
+   </GroomYoung_PickFur>
+   <GroomYoung_BlowFur>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterYoung_BlowFurYoung"/>
+      </behaviors>
+   </GroomYoung_BlowFur>
+   <BiteNose>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="BiteNose_Land"/>
+               <water behSet="BiteNose_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BiteNose>
+   <BiteNose_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BiteNose"/>
+      </behaviors>
+   </BiteNose_Land>
+   <BiteNose_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_BiteNose"/>
+      </behaviors>
+   </BiteNose_Water>
+   <BiteNose_Whap>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="BiteNose_Whap_Land"/>
+               <water behSet="BiteNose_Whap_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BiteNose_Whap>
+   <BiteNose_Whap_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BiteNose"/>
+      </behaviors>
+   </BiteNose_Whap_Land>
+   <BiteNose_Whap_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_BiteNose"/>
+      </behaviors>
+   </BiteNose_Whap_Water>
+   <Swipe>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="BiteNose_Land"/>
+               <water behSet="BiteNose_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Swipe>
+   <NoseBitten>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="NoseBitten_Land"/>
+               <water behSet="NoseBitten_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </NoseBitten>
+   <NoseBitten_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_NoseBitten"/>
+      </behaviors>
+   </NoseBitten_Land>
+   <NoseBitten_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_NoseBitten"/>
+      </behaviors>
+   </NoseBitten_Water>
+   <Cry>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Cry_Land"/>
+               <water behSet="Cry_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Cry>
+   <Cry_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Cry"/>
+      </behaviors>
+   </Cry_Land>
+   <Cry_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Cry"/>
+      </behaviors>
+   </Cry_Water>
+   <VocalDisplay>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="VocalDisplay_Land"/>
+               <water behSet="VocalDisplay_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </VocalDisplay>
+   <VocalDisplay_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_VocalDisplay"/>
+      </behaviors>
+   </VocalDisplay_Land>
+   <VocalDisplay_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_VocalDisplay"/>
+      </behaviors>
+   </VocalDisplay_Water>
+   <Sniff>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Lie behSet="Sniff_Lie"/>
+               <Stand behSet="Sniff_Stand"/>
+               <TreadWater behSet="Sniff_TreadWater"/>
+               <Swim behSet="Sniff_Swim"/>
+               <default behSet="Sniff_Lie"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sniff>
+   <Sniff_Lie>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Sniff"/>
+      </behaviors>
+   </Sniff_Lie>
+   <Sniff_Stand>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sniff"/>
+      </behaviors>
+   </Sniff_Stand>
+   <Sniff_TreadWater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Sniff"/>
+      </behaviors>
+   </Sniff_TreadWater>
+   <Sniff_Swim>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Sniff"/>
+      </behaviors>
+   </Sniff_Swim>
+   <SniffOther>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Lie behSet="Sniff_Lie"/>
+               <Stand behSet="Sniff_Stand"/>
+               <TreadWater behSet="Sniff_TreadWater"/>
+               <Swim behSet="Sniff_Swim"/>
+               <default behSet="Sniff_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </SniffOther>
+   <Forage>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="4">
+            <randomSets>
+               <Forage_Idle weight="50"/>
+               <Forage_Dig weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Forage>
+   <Forage_Idle>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Forage_Idle"/>
+      </behaviors>
+   </Forage_Idle>
+   <Forage_Dig>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Forage_Dig"/>
+      </behaviors>
+   </Forage_Dig>   
+   <Eat>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="EatLand"/>
+               <water behSet="EatWater"/>
+               <underwater behSet="EatWater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Eat>
+   <EatLand>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatLand_Sniff"/>
+         <BFBehAnimate targetAnim="EatLand_BiteA"/>
+         <BFBehAnimate targetAnim="EatLand_ChewGulp"/>
+      </behaviors>
+   </EatLand>
+   <EatWater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatWater_Sniff"/>
+         <BFBehAnimate targetAnim="EatWater_BiteA"/>
+         <BFBehAnimate targetAnim="EatWater_SmashShell"/>
+         <BFBehAnimate targetAnim="EatWater_WashFood"/>
+         <BFBehAnimate targetAnim="EatWater_ChewGulp"/>
+      </behaviors>
+   </EatWater>
+   <Drink>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatLand_Drink"/>
+      </behaviors>
+   </Drink>
+   <MatingCall_F>
+      <subjects>
+         <OtterSea_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="VocalDisplay"/>
+               <water behSet="VocalDisplay"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </MatingCall_F>
+   <MatingCall_M>
+      <subjects>
+         <OtterSea_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingCallAnswer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="VocalDisplay"/>
+               <water behSet="VocalDisplay"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </MatingCall_M>
+   <Mate>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="10"/>
+      </behaviors>
+   </Mate>
+   <Birth>
+      <subjects>
+         <OtterSea_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth>
+   <SpawnF>
+      <subjects>
+         <OtterSea_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="OtterSea_Young_F" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <OtterSea_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="OtterSea_Young_M" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM>
+   <DockAttackGuest_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Guest" targetNode="p_TalkOffset" targetAnim="TreadWater_Idle" locoSpeed="fast"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockAttackGuest_Water>
+   <AttackGuest_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_2TreadWater" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="TreadWater_GuestAttack"/>
+      </behaviors>
+   </AttackGuest_Water>
+   <DockAttackGuest_Ground>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Node_Guest" targetNode="p_TalkOffset" targetAnim="Stand_Idle" locoSpeed="fast"/>
+      </behaviors>
+   </DockAttackGuest_Ground>
+   <AttackGuest_Ground>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GuestAttack" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest_Ground>
+
+   <ChasePrey>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="stalk"/>
+      </behaviors>
+   </ChasePrey> 
+   <MissPrey>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="VocalDisplay"/>
+      </behaviors>
+   </MissPrey> 	
+   <AttackPrey>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehFollowEntity locoSpeed="attack" subjectNode="Node_Predator" targetNode="Node_Attacked" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </AttackPrey>
+   <Roar>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+	       <ground behSet="VocalDisplay"/>
+               <water behSet="VocalDisplay"/>
+               <underwater behSet="TreadWaterSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Roar> 
+   <SwipeMed>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="BiteNose"/>
+      </behaviors>
+   </SwipeMed>
+   <HitMediumEqual>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <HitMed>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </HitMed>
+   <HitMed_Ground>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <OnLand_Idle weight="70"/>
+               <OnLand_SquirmLeft weight="15"/>
+               <OnLand_SquirmRight weight="15"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Ground> 
+   <HitMed_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_TurnLeft90 weight="40"/>
+               <Swim_TurnRight90 weight="40"/>
+               <Swim_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Water> 
+   <HitMed_Underwater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnLeft90 weight="40"/>
+               <SwimSub_TurnRight90 weight="40"/>
+               <SwimSub_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Underwater> 
+   <HitMedDie>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie> 
+   <BiteMed>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="BiteNose"/>
+      </behaviors>
+   </BiteMed>
+   <BitMed>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie> 
+   <WaitFight>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </WaitFight> 
+   <DockFight>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockFight> 
+   <Die_Ground>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Attacked" />
+      </behaviors>
+   </Die_Ground> 
+   <Die_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+         <BFBehAnimate targetAnim="TreadWater_Attacked" interruptFlag="true"/>
+      </behaviors>
+   </Die_Water> 
+   <Die_Underwater>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+         <BFBehAnimate targetAnim="TreadWaterSub_Attacked" interruptFlag="true" />
+      </behaviors>
+   </Die_Underwater> 
+   <DockAttacked>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <EnterFoodDish>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="EnterFoodDish_Land"/>
+               <water behSet="EnterFoodDish_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </EnterFoodDish>
+   <EnterFoodDish_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Node_Dish" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </EnterFoodDish_Land>
+   <EnterFoodDish_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Dish" locoSpeed="medium" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" />
+      </behaviors>
+   </EnterFoodDish_Water>
+   <UseFoodDish>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseFoodDish>
+   <DrinkFoodDish>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Drink"/>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="ExitFoodDish_Land"/>
+               <water behSet="ExitFoodDish_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </ExitFoodDish>
+   <ExitFoodDish_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitFoodDish_Land>
+   <ExitFoodDish_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Turn180"/>
+      </behaviors>
+   </ExitFoodDish_Water>
+   <EnterIceBlock>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="EnterIceBlock_Land"/>
+               <water behSet="EnterIceBlock_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </EnterIceBlock>
+   <EnterIceBlock_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceBlock_Land>
+   <EnterIceBlock_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" />
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceBlock_Water>
+   <UseIceBlock>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseIceBlock>
+   <ExitIceBlock>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="ExitIceBlock_Land"/>
+               <water behSet="ExitIceBlock_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </ExitIceBlock>
+   <ExitIceBlock_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitIceBlock_Land>
+   <ExitIceBlock_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Turn180"/>
+      </behaviors>
+   </ExitIceBlock_Water>
+   <EnterBuoyLure>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" />
+      </behaviors>
+   </EnterBuoyLure>
+   <UseBuoyLure>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseBuoyLure>
+   <ExitBuoyLure>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TurnLeft90"/>
+      </behaviors>
+   </ExitBuoyLure>
+   <EnterArtificialReef>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" />
+      </behaviors>
+   </EnterArtificialReef>
+   <UseArtificialReef>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseArtificialReef>
+   <ExitArtificialReef>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitArtificialReef>
+   <EnterFoodBox>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" />
+      </behaviors>
+   </EnterFoodBox>
+   <UseFoodBox>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseFoodBox>
+   <ExitFoodBox>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitFoodBox>
+   <EnterMarineCarcass>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" />
+      </behaviors>
+   </EnterMarineCarcass>
+   <UseMarineCarcass>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseMarineCarcass>
+   <ExitMarineCarcass>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitMarineCarcass>
+   <EnterRockIsland>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="medium" targetAnim="Swim_2Slide"/>
+      </behaviors>
+   </EnterRockIsland>
+   <UseRockIsland>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sleep"/>
+      </behaviors>
+   </UseRockIsland>
+   <BirthRockIsland>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Birth"/>
+      </behaviors>
+   </BirthRockIsland>
+   <ExitRockIsland1>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit1" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland1>
+   <ExitRockIsland2>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit2" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland2>
+   <ExitRockIsland3>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit3" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland3>
+   <ExitRockIsland4>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit4" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland4>
+   <ChaseBall>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="EnterBall_Land"/>
+               <water behSet="EnterBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </ChaseBall>
+   <EnterBall>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="EnterBall_Land"/>
+               <water behSet="EnterBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </EnterBall>
+   <EnterBall_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockRadial subjectNode="Node_Ball" locoSpeed="medium" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterBall_Land>
+   <EnterBall_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Ball" locoSpeed="medium" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </EnterBall_Water>
+   <GrabBall>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="GrabBall_Land"/>
+               <water behSet="GrabBall_Water"/>
+               <underwater behSet="GrabBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </GrabBall>
+   <GrabBall_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockRadial subjectNode="Node_Ball" locoSpeed="medium" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </GrabBall_Land>
+   <GrabBall_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Ball" locoSpeed="medium" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </GrabBall_Water>
+   <PickUpBall>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="PickUpBall_Land"/>
+               <water behSet="PickUpBall_Water"/>
+               <underwater behSet="PickUpBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </PickUpBall>
+   <PickUpBall_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_Pickup" targetAnim="Stand_2StandObject" locoMod="carry" detachAction="dropitem" container="mouth"/>
+      </behaviors>
+   </PickUpBall_Land>
+   <PickUpBall_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_Pickup" targetAnim="TreadWater_2TreadWaterObject" locoMod="carry" detachAction="dropitem" container="mouth"/>
+      </behaviors>
+   </PickUpBall_Water>
+   <PickUpRubberToy>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="PickUpRubberToy_Land"/>
+               <water behSet="PickUpRubberToy_Water"/>
+               <underwater behSet="PickUpRubberToy_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </PickUpRubberToy>
+   <PickUpRubberToy_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_PickUp01" targetAnim="Stand_2StandObject" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpRubberToy_Land>
+   <PickUpRubberToy_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_PickUp01" targetAnim="TreadWater_2TreadWaterObject" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpRubberToy_Water>
+   <PickUpBone>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="PickUpBone_Land"/>
+               <water behSet="PickUpBone_Water"/>
+               <underwater behSet="PickUpBone_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </PickUpBone>
+   <PickUpBone_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_PickUp" targetAnim="Stand_2StandObject" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpBone_Land>
+   <PickUpBone_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_PickUp" targetAnim="TreadWater_2TreadWaterObject" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpBone_Water>
+   <PickUpFeederBall>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="PickUpFeederBall_Land"/>
+               <water behSet="PickUpFeederBall_Water"/>
+               <underwater behSet="PickUpFeederBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </PickUpFeederBall>
+   <PickUpFeederBall_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_Pickup" targetAnim="Stand_2StandObject" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpFeederBall_Land>
+   <PickUpFeederBall_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Dock_Pickup" targetAnim="TreadWater_2TreadWaterObject" locoMod="carry" detachAction="dropitem"/>
+      </behaviors>
+   </PickUpFeederBall_Water>
+   <UseBall_Whap>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+        <BFBehPlaySet behSet="BiteNose_Whap"/>
+      </behaviors>
+   </UseBall_Whap>
+   <UsePursuitBall_Whap>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+        <BFBehPlaySet behSet="BiteNose_Whap"/>
+      </behaviors>
+   </UsePursuitBall_Whap>
+   <UseCarTire_Whap>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+        <BFBehPlaySet behSet="BiteNose_Whap"/>
+      </behaviors>
+   </UseCarTire_Whap>
+   <UseBall>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+        <BFBehPlaySet behSet="BiteNose_Whap"/>
+      </behaviors>
+   </UseBall>
+   <ExitBall>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="ExitBall_Land"/>
+               <water behSet="ExitBall_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </ExitBall>
+   <ExitBall_Land>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitBall_Land>
+   <ExitBall_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TurnRight180"/>
+      </behaviors>
+   </ExitBall_Water>
+   <DropObject>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <groundcarry behSet="DropObject_Ground"/>
+               <watercarry behSet="DropObject_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </DropObject>
+   <DropObject_Ground>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+      </behaviors>
+   </DropObject_Ground>
+   <DropObject_Water>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterObject_2TreadWater"/>
+      </behaviors>
+   </DropObject_Water>
+   <EnterKelpBed>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="Node_KelpBed" locospeed="medium" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </EnterKelpBed>
+   <UseKelpBed>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="SleepKelpBed"/>
+      </behaviors>
+   </UseKelpBed>
+   <ExitKelpBed>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitKelpBed>
+   <EnterRockIsland>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="medium" targetAnim="Swim_2Walk_Platform"/>
+      </behaviors>
+   </EnterRockIsland>
+   <UseRockIsland>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sleep"/>
+      </behaviors>
+   </UseRockIsland>
+   <BirthRockIsland>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTActionInfo locID="animalactions:Birthing"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehPlaySet behSet="Birth"/>
+      </behaviors>
+   </BirthRockIsland>
+   <ExitRockIsland1>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit1" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland1>
+   <ExitRockIsland2>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit2" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland2>
+   <ExitRockIsland3>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit3" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland3>
+   <ExitRockIsland4>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="medium" targetNode="Dock_Exit4" targetAnim="Walk_2Swim"/>
+      </behaviors>
+   </ExitRockIsland4>
+<!--Trick Behavior Sets-->
+   <DockTrickArea_Jump>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_Jump"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+      </behaviors>
+   </DockTrickArea_Jump>
+   <Jump_Failure>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="Swim_JumpFailure" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Failure>
+   <Jump_Success>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="Swim_JumpSuccess" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Success>
+   <Jump_Critical>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <ZTBehSplashGuest targetAnim="Swim_JumpSuperSuccess" interruptFlag="true" groundFit="false">
+            <ZTAIShowEvent Name="Splashed" Interrupt="true" ExpireWithTask="false"/>
+            <BFAITokenList>
+               <BFAIToken Name="t_Splashed" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </ZTBehSplashGuest>
+      </behaviors>
+   </Jump_Critical>
+   <DockShakerToy>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToTrick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockShakerToy>
+   <ShakerToy_Failure>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehPlaySet behSet="GrabShakerToy_Failure"/>
+         <BFBehAnimate targetAnim="TreadWaterObject_UseShakerToyFailure"/>
+         <BFBehDetachObject targetAnim="TreadWaterObject_2TreadWater"/>
+      </behaviors>
+   </ShakerToy_Failure>
+   <ShakerToy_Success>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehPlaySet behSet="GrabShakerToy"/>
+         <BFBehDetachObject detachEntity="ShakerToy" targetAnim="TreadWaterObject_UseShakerToySuccess"/>
+         <BFBehAttachObject attachEntity="ShakerToy_Open" detachAction="dropitem" container="mouth"/>
+         <BFBehPlaySet behSet="DropShakerToy"/>
+         <BFBehKill radiusKillType="ShakerToy_Open" radius="6"/>
+      </behaviors>
+   </ShakerToy_Success>
+   <ShakerToy_Critical>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehPlaySet behSet="GrabShakerToy"/>
+         <BFBehDetachObject detachEntity="ShakerToy" targetAnim="TreadWaterObject_UseShakerToySuperSuccess"/>
+         <BFBehAttachObject attachEntity="ShakerToy_Open" detachAction="dropitem" container="mouth"/>
+         <BFBehPlaySet behSet="DropShakerToy"/>
+         <BFBehKill radiusKillType="ShakerToy_Open" radius="6"/>
+      </behaviors>
+   </ShakerToy_Critical>
+   <GrabShakerToy_Failure>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetAnim="TreadWater_2TreadWaterObject" detachAction="dropitem" container="mouth">
+            <textkeys>
+               <attachobject text="{Bip01 R Hand} attach object"/>
+            </textkeys>
+         </BFBehAttachObject>
+      </behaviors>
+   </GrabShakerToy_Failure>
+   <GrabShakerToy>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="ShakerToy" targetAnim="TreadWater_2TreadWaterObject" detachAction="killitem" container="mouth">
+            <textkeys>
+               <attachobject text="{Bip01 R Hand} attach object"/>
+            </textkeys>
+         </BFBehAttachObject>
+      </behaviors>
+   </GrabShakerToy>
+   <DropShakerToy>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDetachObject detachEntity="ShakerToy_Open">
+            <textkeys>
+               <detachobject text="{Bip01 R Hand} detach object"/>
+            </textkeys>
+         </BFBehDetachObject>
+      </behaviors>
+   </DropShakerToy>
+   <DockSeat>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_SeatOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast"/>
+         <BFBehAnimate targetAnim="Swim_2Walk_Platform" interruptFlag="true"/>
+      </behaviors>
+   </DockSeat>
+   <Seat_Failure>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Seat_Failure" redock="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SittingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="SealSeat_Idle"/>
+      </behaviors>
+   </Seat_Failure>
+   <Seat_Success>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Seat_Success" redock="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SittingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="SealSeat_LookCute"/>
+         <BFBehAnimate targetAnim="SealSeat_Idle"/>
+      </behaviors>
+   </Seat_Success>
+   <Seat_Critical>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetNode="Node_Seat_Critical" redock="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SittingOn" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="SealSeat_LookCute"/>
+         <BFBehAnimate targetAnim="SealSeat_Idle"/>
+         <BFBehAnimate targetAnim="SealSeat_LookCute"/>
+      </behaviors>
+   </Seat_Critical>
+   <DockBasketballHoop>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoToTrick_Play" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockBasketballHoop>
+   <BasketballHoop_Failure>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Playing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="GrabBasketball"/>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehPlaySet behSet="DropBasketball_Failure"/>
+      </behaviors>
+   </BasketballHoop_Failure>
+   <BasketballHoop_Success>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Playing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="GrabBasketball"/>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehPlaySet behSet="DropBasketball_Success"/>
+      </behaviors>
+   </BasketballHoop_Success>
+   <BasketballHoop_Critical>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Playing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="GrabBasketball"/>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehPlaySet behSet="DropBasketball_Critical"/>
+      </behaviors>
+   </BasketballHoop_Critical>
+   <GrabBasketball>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="SmallBall_mm" targetAnim="TreadWater_2TreadWaterObject" detachAction="killitem" container="mouth">
+            <textkeys>
+               <attachobject text="{Node_Trick} attach object"/>
+            </textkeys>
+         </BFBehAttachObject>
+      </behaviors>
+   </GrabBasketball>
+   <DropBasketball_Failure>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterObject_2TreadWater_ThrowInHoopFailure">
+            <textkeys>
+               <detachobject text="{Node_Trick} detach object"/>
+            </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </DropBasketball_Failure>
+   <DropBasketball_Success>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterObject_2TreadWater_ThrowInHoopSuccess">
+            <textkeys>
+               <detachobject text="{Node_Trick} detach object"/>
+            </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </DropBasketball_Success>
+   <DropBasketball_Critical>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterObject_2TreadWater_ThrowInHoopSuperSuccess">
+            <textkeys>
+               <detachobject text="{Node_Trick} detach object"/>
+            </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </DropBasketball_Critical>
+   <ExitTrickPlatform>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+         <BFBehDock targetNode="UnDock_TrickPlatform" redock="true"/>
+         <BFBehAnimate targetAnim="Walk_2Swim_Platform"/>
+      </behaviors>
+   </ExitTrickPlatform>
+   <DockPileOfRocks_Failure>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToTrick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="3" maxPlayTime="7" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </DockPileOfRocks_Failure>
+   <DockPileOfRocks_Success>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToTrick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="3" maxPlayTime="7" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10"/>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </DockPileOfRocks_Success>
+   <DockPileOfRocks_Critical>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehShowEvent Type="AnimalEvent" Name="WatchingAnimal" Priority="1" Interrupt="false" ExpireWithTask="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToTrick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="1" maxPlayTime="3" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10"/>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </DockPileOfRocks_Critical>
+   <PileOfRocks_Failure>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickFailure" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+      </behaviors>
+   </PileOfRocks_Failure>
+   <PileOfRocks_Success>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickSuccess" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="Forage_Dig"/>
+         <BFBehAnimate targetAnim="Forage_Dig"/>
+         <BFBehAnimate targetAnim="Forage_Idle"/>
+         <BFBehPlaySet behSet="EatForageFood"/>
+      </behaviors>
+   </PileOfRocks_Success>
+   <PileOfRocks_Critical>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Jumping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehShowEvent Type="AnimalEvent" Name="TrickCritical" Priority="2" Interrupt="true" ExpireWithTask="true" Timein="1" Timeout="3"/>
+         <BFBehAnimate targetAnim="Forage_Dig"/>
+         <BFBehAnimate targetAnim="Forage_Idle"/>
+         <BFBehPlaySet behSet="EatForageFood"/>
+      </behaviors>
+   </PileOfRocks_Critical>
+   <EatForageFood>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="Forage_2EatWater" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="EatWater_Sniff"/>
+         <BFBehAnimate targetAnim="EatWater_BiteA"/>
+         <BFBehAnimate targetAnim="EatWater_SmashShell"/>
+         <BFBehAnimate targetAnim="EatWater_WashFood"/>
+         <BFBehDetachObject detachEntity="Fish_Prop" targetAnim="EatWater_ChewGulp"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-5" bathroom="5"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </EatForageFood>
+<!--Show Behaviors-->
+   <DockMC>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToWait" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline ignoreCollisionWithTarget="false" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockMC>
+   <ShowIdle>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitTrick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </ShowIdle>
+   <ShowIdle_Treat>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_GiveTreat" Payload="subject" GiveTo="target" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="10"/>
+      </behaviors>
+   </ShowIdle_Treat>
+   <GetTreat>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GetTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TreadWater_GetTreat" detachAction="killitem" container="foodprop"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-5" bathroom="5"/>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </GetTreat>
+   <GetTreat_Loop>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GetTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TreadWater_GetTreat" detachAction="killitem"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-5" bathroom="5"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTEmoticonInfo emoticonName="EmoteGuestEducation" emoticonEntityNode="Bip01 Head"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true"/>
+      </behaviors>
+   </GetTreat_Loop>
+   <ReactToShow1Star>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodLeftRight"/>
+      </behaviors>
+   </ReactToShow1Star>
+   <ReactToShow2Star>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodLeftRight"/>
+      </behaviors>
+   </ReactToShow2Star>
+   <ReactToShow3Star>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+      </behaviors>
+   </ReactToShow3Star>
+   <ReactToShow4Star>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+      </behaviors>
+   </ReactToShow4Star>
+   <ReactToShow5Star>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+      </behaviors>
+   </ReactToShow5Star>
+<!--Staff Training Behavior Sets-->
+   <DockTrainer>
+      <subjects>
+         <OtterSea/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTActionInfo locID="animalactions:GoToGetTrained" useTargetName="true"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline locoSpeed="fast" targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTrainer>
+   <WatchTrainer>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="WatchTrainer_Water"/>
+               <underwater behSet="WatchTrainer_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </WatchTrainer>
+   <WatchTrainer_Water>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Watching" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehAnimateRandom loopFlag="true">
+            <randomAnims>
+               <TreadWater_Idle weight="70"/>
+               <TreadWater_TrainingNodUpDown weight="30"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </WatchTrainer_Water>
+   <WatchTrainer_Underwater>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Watching" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="TreadWaterSub_Loop"/>
+      </behaviors>
+   </WatchTrainer_Underwater>
+<!--First Person Training Behavior Sets-->
+   <GetTreat_FPT>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GetTreat"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="GetTreat_FPT_Surface"/>
+               <underwater behSet="GetTreat_FPT_Sub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </GetTreat_FPT>
+   <GetTreat_FPT_Surface>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TreadWater_GetTreat" detachAction="killitem" interruptFlag="true"/>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTEmoticonInfo emoticonName="EmoteGuestEducation" emoticonEntityNode="Bip01 Head"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-5"/>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </GetTreat_FPT_Surface>
+   <GetTreat_FPT_Sub>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="Fish_Prop" targetAnim="TreadWaterSub_GetTreat" detachAction="killitem" interruptFlag="true"/>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTEmoticonInfo emoticonName="EmoteGuestEducation" emoticonEntityNode="Bip01 Head"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-5"/>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </GetTreat_FPT_Sub>
+   <NodUpDown_Surface>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+      </behaviors>
+   </NodUpDown_Surface>
+   <NodUpDown_Sub>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TrainingNodUpDown"/>
+      </behaviors>
+   </NodUpDown_Sub>
+   <NodLeftRight_Surface>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingNodLeftRight"/>
+      </behaviors>
+   </NodLeftRight_Surface>
+   <NodLeftRight_Sub>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TrainingNodLeftRight"/>
+      </behaviors>
+   </NodLeftRight_Sub>
+   <Confused_Surface>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TrainingConfused"/>
+      </behaviors>
+   </Confused_Surface>
+   <Confused_Sub>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_TrainingConfused"/>
+      </behaviors>
+   </Confused_Sub>
+   <DockTraining>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="veryfast" targetAnim="TreadWater_Idle"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTraining>
+   <DockTraining_Platform>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="veryfast"/>
+         <BFBehDockSpline locoSpeed="veryfast" targetNode="Node_Training" targetAnim="TreadWater_Idle" redock="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DockTraining_Platform>
+   <DockTraining_Sub>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline locoSpeed="veryfast" targetAnim="TreadWaterSub_Idle"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </DockTraining_Sub>
+   <DockTraining_Teleport>
+      <subjects>
+         <OtterSea_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDockNow/>
+      </behaviors>
+   </DockTraining_Teleport>
+</BehaviorSets>

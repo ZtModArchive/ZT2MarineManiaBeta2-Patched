@@ -1,0 +1,1627 @@
+<BehaviorSets>
+<!--Wander behavior sets for randomized wandering-->
+   <WanderSurf>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="25"/>
+               <WanderSurf_Med weight="25"/>
+               <WanderSurf_Slow weight="25"/>
+               <WanderSurf_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSurf_Glide>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Glide>
+   <WanderSub>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="25"/>
+               <WanderSub_Med weight="25"/>
+               <WanderSub_Slow weight="25"/>
+               <WanderSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Slow>
+   <WanderSub_Glide>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Glide>
+   <WanderRest>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderRest>
+   <WanderStalk>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="2" maxPlayTime="4" avoidLand="true" locoSpeed="stalk" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderStalk>
+   
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Unhappy>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultSwim>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="70"/>
+               <WanderSub weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultSwim>
+   <DefaultSwimSurface>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="WanderSurf"/>
+      </behaviors>
+   </DefaultSwimSurface>
+   <DefaultSwimSub>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="WanderSub"/>
+      </behaviors>
+   </DefaultSwimSub>
+   <DefaultLie>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehPlaySet behSet="WanderSub_Slow"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultRest>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehPlaySet behSet="WanderSub_Glide"/>
+      </behaviors>
+   </DefaultRest>
+   <DefaultHappy>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="70"/>
+               <WanderSub weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultHappy>
+   <DefaultUnhappy>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Bolt weight="50"/>
+               <Frenzy weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="DefaultSwimSurface"/>
+               <SwimSub behSet="DefaultSwimSub"/>
+               <default behSet="DefaultSwimSub"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>
+   <FailureSet>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="SurfaceFailure"/>
+               <underwater behSet="SubFailure"/>
+               <default behSet="SubFailure"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <SurfaceFailure>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+            <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </SurfaceFailure>
+   <SubFailure>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+            <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </SubFailure>
+   <Think>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Swim behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <Investigate>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="3"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Dying>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="OnLand"/>
+               <water behSet="WanderSurf_Slow"/>
+               <underwater behSet="WanderSub_Slow"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Dying>
+   <Die_Fight>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Chum_mm" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Beached>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Beached>   
+   <Rendezvous>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit/>
+      </behaviors>
+   </Rendezvous>
+   <SyncSwimLead>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </SyncSwimLead>
+   <SyncSwimFollow>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFollowEntity locoSpeed="slow" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </SyncSwimFollow>
+   <WaitReproduction>
+      <subjects>
+         <SharkGoblin_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </WaitReproduction>
+   <ReproductionSwimLead>
+      <subjects>
+         <SharkGoblin_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </ReproductionSwimLead>
+   <ReproductionSwimFollow>
+      <subjects>
+         <SharkGoblin_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFollowEntity locoSpeed="fast" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </ReproductionSwimFollow>
+   <Birth>
+      <subjects>
+         <SharkGoblin_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="4">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth>
+   <SpawnF>
+      <subjects>
+         <SharkGoblin_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="SharkGoblin_Young_F" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <SharkGoblin_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="SharkGoblin_Young_M" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM>
+   <Surface_Submerge>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="3" maxDepth="10"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="0" maxDepth="0"/>
+      </behaviors>
+   </Surface>
+   <Eat>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <EatNibble weight="25"/>
+               <EatTear weight="50"/>
+               <EatVoracious weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Eat>
+   <EatNibble>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_EatNibble"/>
+      </behaviors>
+   </EatNibble>
+   <EatTear>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_EatTear"/>
+      </behaviors>
+   </EatTear>
+   <EatVoracious>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_EatVoracious"/>
+      </behaviors>
+   </EatVoracious>
+   <Chew>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Chew"/>
+      </behaviors>
+   </Chew>
+   <RubFloor>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_RubGround"/>
+      </behaviors>
+   </RubFloor>   
+   <Bite>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="BiteSurf"/>
+               <underwater behSet="BiteSub"/>
+               <default behSet="BiteSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Bite>
+   <BiteSurf>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_BiteVicious"/>
+      </behaviors>
+   </BiteSurf>
+   <BiteSub>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_BiteVicious"/>
+      </behaviors>
+   </BiteSub>
+   <BiteLunge>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="BiteLungeSurf"/>
+               <underwater behSet="BiteLungeSub"/>
+               <default behSet="BiteLungeSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BiteLunge>
+   <BiteLungeSurf>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_BiteLunge"/>
+      </behaviors>
+   </BiteLungeSurf>
+   <BiteLungeSub>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_BiteLunge"/>
+      </behaviors>
+   </BiteLungeSub>
+   <Frenzy>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="FrenzySurf"/>
+               <underwater behSet="FrenzySub"/>
+               <default behSet="FrenzySub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Frenzy>
+   <FrenzySurf>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Charge_FrenzyA"/>
+      </behaviors>
+   </FrenzySurf>
+   <FrenzySub>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="ChargeSub_FrenzyA"/>
+      </behaviors>
+   </FrenzySub>
+   <InvestigateBite>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="InvestigateBiteSurf"/>
+               <underwater behSet="InvestigateBiteSub"/>
+               <default behSet="InvestigateBiteSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </InvestigateBite>
+   <InvestigateBiteSurf>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_InvestigateBite"/>
+      </behaviors>
+   </InvestigateBiteSurf>
+   <InvestigateBiteSub>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_InvestigateBite"/>
+      </behaviors>
+   </InvestigateBiteSub>
+   <DefensivePosture>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="WanderStalk"/>
+      </behaviors>
+   </DefensivePosture>
+   <RubObject>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="RubObjectSurf"/>
+               <underwater behSet="RubObjectSub"/>
+               <default behSet="RubObjectSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </RubObject>
+   <RubObjectSurf>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_RubObject"/>
+      </behaviors>
+   </RubObjectSurf>
+   <RubObjectSub>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_RubObject"/>
+      </behaviors>
+   </RubObjectSub>
+   <ChargeChomp>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="ChargeChompSurf"/>
+               <underwater behSet="ChargeChompSub"/>
+               <default behSet="ChargeChompSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </ChargeChomp>
+   <ChargeChompSurf>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_ChargeChomp"/>
+      </behaviors>
+   </ChargeChompSurf>
+   <ChargeChompSub>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_ChargeChomp"/>
+      </behaviors>
+   </ChargeChompSub>
+   <ShakeObject>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Chew"/>
+      </behaviors>
+   </ShakeObject>
+   <Nibble>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="NibbleSurf"/>
+               <underwater behSet="NibbleSub"/>
+               <default behSet="NibbleSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Nibble>
+   <NibbleSurf>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Nibble"/>
+      </behaviors>
+   </NibbleSurf>
+   <NibbleSub>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Nibble"/>
+      </behaviors>
+   </NibbleSub>
+   <MouthShark>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="MouthSharkSurf"/>
+               <underwater behSet="MouthSharkSub"/>
+               <default behSet="MouthSharkSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </MouthShark>
+   <MouthSharkSurf>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_MouthShark"/>
+      </behaviors>
+   </MouthSharkSurf>
+   <MouthSharkSub>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_MouthShark"/>
+      </behaviors>
+   </MouthSharkSub>
+   
+   <DockAttackGuest>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehDockNow subjectNode="Node_Eat" targetNode="Bip01" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetNode="Bip01" targetAnim="SwimSub_GuestAttack" detachAction="dropitem" targetBehSet="AttackedSharkGoblin"/>
+      </behaviors>
+   </AttackGuest>
+   
+   <EnterBuoyLure>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Lure" targetAnim="SwimSub_EatTear"/>
+      </behaviors>
+   </EnterBuoyLure>
+   <UseBuoyLure>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_EatTear" interruptFlag="true" />
+      </behaviors>
+   </UseBuoyLure>
+   <ExitBuoyLure>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitBuoyLure>
+   <EnterArtificialReef>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="SwimSub_EatTear"/>
+      </behaviors>
+   </EnterArtificialReef>
+   <UseArtificialReef>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_EatTear" interruptFlag="true" />
+      </behaviors>
+   </UseArtificialReef>
+   <ExitArtificialReef>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitArtificialReef>
+   <EnterFoodBox>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="SwimSub_EatNibble"/>
+      </behaviors>
+   </EnterFoodBox>
+   <UseFoodBox>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_EatNibble" interruptFlag="true" />
+      </behaviors>
+   </UseFoodBox>
+   <ExitFoodBox>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitFoodBox>
+   <EnterMarineCarcass>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="SwimSub_EatNibble"/>
+      </behaviors>
+   </EnterMarineCarcass>
+   <UseMarineCarcass>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_EatNibble" interruptFlag="true" />
+      </behaviors>
+   </UseMarineCarcass>
+   <ExitMarineCarcass>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitMarineCarcass>
+   <Poop>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop_Sick>
+   <OnLand>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Dying"/>
+      </behaviors>
+   </OnLand>
+   <EnterSealPreyDummy>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locoSpeed="medium"/>
+      </behaviors>
+   </EnterSealPreyDummy>
+   <UseSealPreyDummy>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="SwimSub_BiteVicious" interruptFlag="true"/>
+      </behaviors>
+   </UseSealPreyDummy>
+   <ExitSealPreyDummy>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180"/>
+      </behaviors>
+   </ExitSealPreyDummy>
+   <EnterIceBlock>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetAnim="SwimSub_EatTear"/>
+      </behaviors>
+   </EnterIceBlock>
+   <UseIceBlock>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_EatTear" interruptFlag="true"/>
+      </behaviors>
+   </UseIceBlock>
+   <ExitIceBlock>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_TurnLeft90"/>
+      </behaviors>
+   </ExitIceBlock>
+   <ChasePrey>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="stalk"/>
+      </behaviors>
+   </ChasePrey> 
+   <MissPrey>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Chew"/>
+      </behaviors>
+   </MissPrey> 	
+   <AttackPrey>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehFollowEntity locoSpeed="attack" subjectNode="Node_Predator" targetNode="Node_Attacked" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </AttackPrey>
+   <Roar>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Chomp weight="25"/>
+               <Bite weight="25"/>
+               <InvestigativeBite weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Roar> 
+   <SwipeMed>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="SwipeMed_Water"/>
+               <underwater behSet="SwipeMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </SwipeMed>
+   <SwipeMed_Water>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_BiteLungeVicious weight="50"/>
+               <Charge_ChompA weight="25"/>
+               <Charge_ChompB weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </SwipeMed_Water>
+   <SwipeMed_Underwater>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_BiteLungeVicious weight="50"/>
+               <ChargeSub_ChompA weight="25"/>
+               <ChargeSub_ChompB weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </SwipeMed_Underwater> 
+   <HitMediumEqual>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <HitMed>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </HitMed>
+   <HitMed_Ground>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <OnLand_Twitch weight="75"/>
+               <OnLand_Dying weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Ground> 
+   <HitMed_Water>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_TurnLeft90 weight="40"/>
+               <Swim_TurnRight90 weight="40"/>
+               <SwimSub_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Water> 
+   <HitMed_Underwater>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnLeft90 weight="40"/>
+               <SwimSub_TurnRight90 weight="40"/>
+               <SwimSub_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Underwater> 
+   <HitMedDie>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie> 
+   <BiteMed>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="BiteMed_Water"/>
+               <underwater behSet="BiteMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BiteMed>
+   <BiteMed_Water>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_BiteLungeVicious weight="50"/>
+               <Charge_ChompA weight="25"/>
+               <Charge_ChompB weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </BiteMed_Water>
+   <BiteMed_Underwater>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_BiteLungeVicious weight="50"/>
+               <ChargeSub_ChompA weight="25"/>
+               <ChargeSub_ChompB weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </BiteMed_Underwater> 
+   <BitMediumEqual>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <BitMed>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie> 
+   <WaitFight>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="SwimSub_BiteVicious"/>
+      </behaviors>
+   </WaitFight> 
+   <DockFight>
+      <subjects>
+         <SharkGoblin_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="SwimSub_BiteVicious"/>
+      </behaviors>
+   </DockFight> 
+   <Die_Ground>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Twitch" />
+      </behaviors>
+   </Die_Ground> 
+   <Die_Water>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Water> 
+   <Die_Underwater>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Underwater> 
+   <DockAttacked>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <EnterBubbleEmitter>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterBubbleEmitter>
+   <UseBubbleEmitter>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180" interruptFlag="true"/>
+      </behaviors>
+   </UseBubbleEmitter>
+   <ExitBubbleEmitter>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180"/>
+      </behaviors>
+   </ExitBubbleEmitter>
+   <EnterPirateMast>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterPirateMast>
+   <UsePirateMast>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Ahead" interruptFlag="true"/>
+      </behaviors>
+   </UsePirateMast>
+   <EnterPirateShip>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterPirateShip>
+   <UsePirateShip>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Ahead" interruptFlag="true"/>
+      </behaviors>
+   </UsePirateShip> 
+   <ExitPirateShipPort>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnRight90" interruptFlag="true"/>
+      </behaviors>
+   </ExitPirateShipPort> 
+   <ExitPirateShipStarboard>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitPirateShipStarboard> 
+   <LoopIdle>
+      <subjects>
+         <SharkGoblin/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Swim behSet="WanderSurf_Slow"/>
+               <SwimSub behSet="WanderSurf_Slow"/>
+               <default behSet="WanderSurf_Slow"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+</BehaviorSets>

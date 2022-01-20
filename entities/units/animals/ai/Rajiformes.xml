@@ -1,0 +1,19 @@
+<BFTypedBinder binderType="Rajiformes" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Chondrichthyes>
+						<Rajiformes />
+					</Chondrichthyes>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTEntityCrater crateType="AnimalCrate_mm" crateParticleDef="EmoteReleaseToWild_mm" />
+	</shared>
+</BFTypedBinder>

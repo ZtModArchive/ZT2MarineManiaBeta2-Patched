@@ -1,0 +1,25 @@
+<BFTypedBinder binderType="Terrain_Clams" abstract="true">
+   <types>
+      <entity>
+         <food>
+            <TerrainFood>
+               <Terrain_Clams/>
+            </TerrainFood>
+         </food>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image=""/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Terrain_Clams"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Terrain_Clams"/>
+         </on>
+      </UIToggleButton>
+   </shared>
+</BFTypedBinder>

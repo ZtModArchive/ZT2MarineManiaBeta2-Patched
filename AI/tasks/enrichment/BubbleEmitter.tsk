@@ -1,0 +1,461 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Idle" UniqueID="BubbleEmitter:Idle">
+      <BFAICreateData>
+         <Subjects>
+            <BubbleEmitter/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="900"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Open" TaskDelayMin="15" TaskDelayMax="45" UniqueID="BubbleEmitter:Open">
+      <BFAICreateData>
+         <Subjects>
+            <BubbleEmitter/>
+            <Qualifiers inWater="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+            <Qualifiers inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_BubblesEmitted" GiveTo="b_BubbleEmitterUser" Payload="subject" radius="10" chance="75" Timeout="180" OnlyOne="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Open"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   
+   
+   <BFAITaskTemplate Name="BubbleEmitterBasic_Stimulation" reserveTag="Play" UniqueID="BubbleEmitter:BubbleEmitterBasic_Stimulation">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_BubbleEmitterUser/>
+            <b_Basic/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <fromToken/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_BubblesEmitted/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-100" stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BubbleEmitterMedium_Stimulation" reserveTag="Play" UniqueID="BubbleEmitter:BubbleEmitterMedium_Stimulation">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_BubbleEmitterUser/>
+            <b_Medium/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <fromToken/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_BubblesEmitted/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-100" stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BubbleEmitterAdvanced_Stimulation" reserveTag="Play" UniqueID="BubbleEmitter:BubbleEmitterAdvanced_Stimulation">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_BubbleEmitterUser/>
+            <b_Advanced/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <fromToken/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_BubblesEmitted/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-100" stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BubbleEmitterElite_Stimulation" reserveTag="Play" UniqueID="BubbleEmitter:BubbleEmitterElite_Stimulation">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_BubbleEmitterUser/>
+            <b_Elite/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <fromToken/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_BubblesEmitted/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-100" stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BubbleEmitterBasic_Hygiene" reserveTag="Play" UniqueID="BubbleEmitter:BubbleEmitterBasic_Hygiene">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_BubbleEmitterUser/>
+            <b_Basic/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <BubbleEmitter/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hygiene="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Using" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="useContainer" targetBehSet="Open"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-100" stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BubbleEmitterMedium_Hygiene" reserveTag="Play" UniqueID="BubbleEmitter:BubbleEmitterMedium_Hygiene">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_BubbleEmitterUser/>
+            <b_Medium/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <BubbleEmitter/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hygiene="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Using" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="useContainer" targetBehSet="Open"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-100" stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BubbleEmitterAdvanced_Hygiene" reserveTag="Play" UniqueID="BubbleEmitter:BubbleEmitterAdvanced_Hygiene">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_BubbleEmitterUser/>
+            <b_Advanced/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <BubbleEmitter/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hygiene="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Using" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="useContainer" targetBehSet="Open"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-100" stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BubbleEmitterElite_Hygiene" reserveTag="Play" UniqueID="BubbleEmitter:BubbleEmitterElite_Hygiene">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_BubbleEmitterUser/>
+            <b_Elite/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <BubbleEmitter/>
+            <Qualifiers_AND inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hygiene="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Using" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="useContainer" targetBehSet="Open"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-100" stimulation="-50" privacy="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

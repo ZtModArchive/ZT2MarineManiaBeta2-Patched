@@ -1,0 +1,61 @@
+<BFTypedBinder binderType="Rock_Benthic_Small">
+	<types>
+		<entity>
+			<rock>
+				<Rock_Benthic_Small />
+			</rock>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\rocks\benthic\Rock_Benthic_Small_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:Rock_Benthic_Small" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Rock_Benthic_Small" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData icon3Doffset="0 0 0.645628" icon3Dscale="0.211601" terrainFlatten="true" tankPlacement="true" waterPlacement="true" />
+		<BFGBiomeData location="benthic_warm_oceans_worldwide">
+			<benthic />
+		</BFGBiomeData>
+		<BFAIEntityDataShared f_FameReq="80" b_SmallRock="true" s_Zoopedia="zoopedia:zoopedia_benthicrocks:entry" b_SeeThrough="false" s_Product="Marine" />
+		<BFGInfluenceComponent defaultRadius="20.0" defaultGroupFactor="40.0" defaultRadiusDropoff="linear" defaultGroupDropoff="linear">
+			<biome />
+			<location />
+		</BFGInfluenceComponent>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFStaticBlobShadowComponent shadowTexture="world\shadows\blob\round_blob.tga" baseNode="footprint" width="5" minLength="5" maxLength="10" minOffset="0" maxOffset="3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/rocks/benthic/Rock_Benthic_Small" />
+					<BFGroundFitComponent heightOffset="0.0" /> 
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="50">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

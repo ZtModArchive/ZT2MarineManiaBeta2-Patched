@@ -1,0 +1,93 @@
+<BFTypedBinder binderType="DesertIsland_Shelter">
+	<types>
+		<entity>
+			<shelters>
+				<DesertIsland_Shelter />
+			</shelters>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="FitSurfacePick" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 .53" icon3Dscale=".18" autoFootprint="true" landPlacement="false" tankPlacement="true" waterPlacement="true" minimumHeadroom="8.0">
+			<cfootprint width="3" height="3" />
+			<dfootprint width="4" height="4" />
+			<excludedIconObjs>
+				<FitSurfacePick />
+			</excludedIconObjs>
+			<stompData>
+				<delete />
+				<prevent />
+				<allow>
+					<egg />
+					<animal />
+				</allow>
+			</stompData>
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\shelters\DesertIsland\DesertIsland_Shelter_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:DesertIsland_Shelter" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DesertIsland_Shelter" />
+			</on>
+		</UIToggleButton>
+		<UIToggleButton template="researchentity">
+			<UIAspect>
+				<default image="entities\objects\shelters\DesertIsland\DesertIsland_Shelter_icon.dds" />
+			</UIAspect>
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DesertIsland_Shelter" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared s_uisort="ay" s_Product="Marine" b_HasEntityFittingSurface="true" b_GeneratesTraversabilityInfo="true" s_Zoopedia="zoopedia:zoopedia_desertisland:entry" b_Researchable="true" f_researchUnlockTime="60" f_researchCost="400" f_FameReq="20" />
+		<BFGCollisionData isStatic="false" isTraversable="true" isPassable="true">
+			<typeScores animal="0" />
+		</BFGCollisionData>
+		<ZTTourData>
+			<shelter value="1" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/shelters/DesertIsland/DesertIsland" scale="1" switch="0 20 40" />
+					<BFTravAnimPathComponent actorfile="entities\objects\shelters\DesertIsland\DesertIsland_Shelter_TAP.bfm" />
+					<BFGroundFitComponent heightOffset="0.16" floatOnWater="true" waterOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="TAP_Island" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterDesertIsland1" exitBehSet="ExitDesertIsland1" targetNode="Left_EnterA" capacity="1" exclusiveID="DesertIsland1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FitSurfacePick">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/fences/Platform_Regular_mm/Platform_Regular_PathGeometry" />
+					<BFGFittingSurfaceComponent heightOffset="0.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="900">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

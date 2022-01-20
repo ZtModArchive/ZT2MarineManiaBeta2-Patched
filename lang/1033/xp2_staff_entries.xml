@@ -1,0 +1,23 @@
+<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_trainer:entry"  >Trainer</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_trainer:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/units/staff/Trainer/Trainer_F_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/units/staff/Trainer/Trainer_M_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>
+Trainers teach the marine animals in your zoo tricks to perform in shows. You can assign trainers to work with specific animals. Trainers without assignments choose animals to train on their own. Trainers decide which tricks to teach. They begin training animals on the easiest tricks before advancing them to more difficult ones.
+						<p/>
+Trainers require a tank entrance to train the animals in a tank. Trainers cannot train the animals in a tank without an entrance.       
+                  <p/>
+Trainers receive a salary that is deducted from your zoo account on the first of each month.			
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+
+</ZT2Strings>

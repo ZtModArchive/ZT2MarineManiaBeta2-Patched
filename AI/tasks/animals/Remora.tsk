@@ -1,0 +1,106 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="AttachRemora" attachTag="cleanerfish" TaskDelayMin="120" TaskDelayMax="180" UniqueID="remora:AttachRemora">
+      <BFAICreateData>
+         <Subjects>
+            <Cetacea/>
+            <Testudines/>
+            <Myliobatidae/>
+            <Chondrichthyes/>
+	    <Elasmobranchii/>
+            <Qualifiers_AND b_Adult="E true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <Remora/>
+            <Qualifiers_AND isSwimming="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="60"/>
+      <BFBehExecTask>
+         <BFBehSyncSet subjectBehSet="RendezvousRemora" targetBehSet="Rendezvous"/>
+         <BFBehSyncSet subjectBehSet="RemoraPickup" targetBehSet="Attach" resetPhase="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CarryRemora" TaskDelayMin="120" TaskDelayMax="180" UniqueID="remora:CarryRemora">
+      <BFAICreateData>
+         <Subjects>
+            <Cetacea/>
+            <Testudines/>
+            <Myliobatidae/>
+            <Chondrichthyes/>
+	    <Elasmobranchii/>
+            <Qualifiers_AND b_Adult="E true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <Remora/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="6000"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCarryRemora" priority="1" timeout="60" global="false" useTargetObject="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehWander minPlayTime="10" maxPlayTime="20" avoidLand="true" locoSpeed="fast" minDepth="3" maxDepth="10" avoidEntityRadius="4">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DetachRemora" UniqueID="remora:DetachRemora">
+      <BFAICreateData>
+         <Subjects>
+            <Cetacea/>
+            <Testudines/>
+            <Myliobatidae/>
+            <Chondrichthyes/>
+	    <Elasmobranchii/>
+            <Qualifiers_AND b_Adult="E true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <Remora/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="5500"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="DetachRemora"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-30" health="-100"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die" UniqueID="Remora:Die">
+      <BFAICreateData>
+         <Subjects>
+            <Remora/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 40"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="12000"/>
+      <BFBehExecTask>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

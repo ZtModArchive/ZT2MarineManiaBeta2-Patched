@@ -1,0 +1,82 @@
+<ZT2Strings>
+
+   <zoopedia_iceblock version="7">
+      <entry>Ice Block</entry>
+      <text>
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/enrichment/IceBlock/IceBlock_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/enrichment/IceBlock/IceBlock_Apples_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/enrichment/IceBlock/IceBlock_Bananas_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/enrichment/IceBlock/IceBlock_BeefShank_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/enrichment/IceBlock/IceBlock_Carrots_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>
+                  <img src="entities/objects/enrichment/IceBlock_mm/IceBlock_Clams_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>                  
+            A block of ice is a popular item with aquatic mammals, especially the 
+                  <a href="zoopedia:zoopedia_polarbear:entry">
+                     <u>
+                        <color r="255" g="231" b="135">polar bear</color>
+                     </u>
+                  </a>
+            , which enjoys playing in the water with the floating block. Food treats can be frozen into ice blocks to 
+            provide additional stimulation.
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_iceblock>
+ 
+   <zoopedia_substratepile version="7">
+      <entry>Substrate Pile</entry>
+      <text>
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <p/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Apples_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Bamboo_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Bananas_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Branches_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Hay_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Insects_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Lettuce_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Grass_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Seaweed_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/SubstratePile/SubstratePile_Shellfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <p/>
+                  
+                  
+                  A substrate pile consists of wood chips, leaves, grass clippings, small sticks, clover, dandelions, and other organic materials mixed with fruit, lettuce, hay, grass, branches, bamboo, and insects. 
+        		
+               
+               
+               
+               
+               
+               
+               
+                  
+                  
+                  <p/>
+                  
+                  
+                  Many zoo animals enjoy foraging for food in a substrate pile, because this activity closely imitates their activities in the wild. Having to work for food often increases an animal's interest in eating.
+               
+               
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_substratepile>
+   
+   
+  
+</ZT2Strings>

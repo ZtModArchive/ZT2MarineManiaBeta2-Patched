@@ -1,0 +1,524 @@
+<BehaviorSets>
+   <AttackedBeluga>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Beluga"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedBeluga>
+   <AttackedDolphinBottlenose>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Beluga"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedDolphinBottlenose>
+   <AttackedManateeWestIndian>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Manatee"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedManateeWestIndian>
+   <AttackedMarlinBlue>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Marlin"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedMarlinBlue>
+   <AttackedNarwhal>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Narwhal"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedNarwhal>
+   <AttackedOtterSea>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="AttackedOtterSea_Ground"/>
+               <water behSet="AttackedOtterSea_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </AttackedOtterSea>
+   <AttackedOtterSea_Ground>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_Touch"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedOtterSea_Ground>
+   <AttackedOtterSea_Water>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_TurtleLeatherback"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedOtterSea_Water>
+   <AttackedRayManta>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Touch"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedRayManta>
+   <AttackedSeaLionCalifornia>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="AttackedSeaLionCalifornia_Ground"/>
+               <water behSet="AttackedSeaLionCalifornia_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </AttackedSeaLionCalifornia>
+   <AttackedSeaLionCalifornia_Ground>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_SeaLion"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedSeaLionCalifornia_Ground>
+   <AttackedSeaLionCalifornia_Water>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_TurtleLeatherback"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedSeaLionCalifornia_Water>
+   <AttackedSharkGoblin>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="FastSwim_SharkHammerhead" interruptFlag="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedSharkGoblin>
+   <AttackedSharkHammerheadScalloped>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="FastSwim_SharkHammerhead" interruptFlag="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedSharkHammerheadScalloped>
+   <AttackedSharkReefBlacktip>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="FastSwim_SharkReef" interruptFlag="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedSharkReefBlacktip>
+   <AttackedSharkWhale>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Touch"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedSharkWhale>
+   <AttackedSharkWhite>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_SharkWhite" interruptFlag="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedSharkWhite>
+   <AttackedTurtleLeatherback>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="AttackedTurtleLeatherback_Ground"/>
+               <water behSet="AttackedTurtleLeatherback_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </AttackedTurtleLeatherback>
+   <AttackedTurtleLeatherback_Ground>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_TurtleLeatherback"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedTurtleLeatherback_Ground>
+   <AttackedTurtleLeatherback_Water>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_TurtleLeatherback"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedTurtleLeatherback_Water>
+   <AttackedTurtleSeaGreen>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="AttackedTurtleSeaGreen_Ground"/>
+               <water behSet="AttackedTurtleSeaGreen_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </AttackedTurtleSeaGreen>
+   <AttackedTurtleSeaGreen_Ground>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_Touch"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedTurtleSeaGreen_Ground>
+   <AttackedTurtleSeaGreen_Water>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Touch"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedTurtleSeaGreen_Water>
+   <AttackedWalrusPacific>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="AttackedWalrusPacific_Ground"/>
+               <water behSet="AttackedWalrusPacific_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </AttackedWalrusPacific>
+   <AttackedWalrusPacific_Ground>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BowledOver" interruptFlag="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedWalrusPacific_Ground>
+   <AttackedWalrusPacific_Water>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_WalrusPacific" loopFlag="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedWalrusPacific_Water>
+   <AttackedWhaleFalseKiller>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Beluga"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedWhaleFalseKiller>
+   <AttackedWhaleOrca>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_ScratchOrca"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedWhaleOrca>
+   <AttackedWhalePilotShortFinned>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Beluga"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedWhalePilotShortFinned>
+
+</BehaviorSets>

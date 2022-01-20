@@ -1,0 +1,141 @@
+<BFTypedBinder binderType="Water_Filter_Busted">
+   <types>
+      <entity>
+         <building>
+            <Water_Filter_Busted/>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting mergeKey="child">
+            <parentObj parent="mainObj" child="smoke" rottype="ignore" postype="use" attachnode="node_effects"/>
+            <parentObj parent="mainObj" child="spark" rottype="ignore" postype="use" attachnode="node_effects"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTDevComponent/>
+      <ZTPlacementData dockArrowStyle="special" dockArrowSize="1.5" icon3Doffset="0 0 0.542671" icon3Dscale="0.290000" minimumHeadroom="2.0"/>
+      <UIButton name="overviewicon">
+         <UIAspect>
+            <default image="UI\zoomap\icon_tankfilter.dds "/>
+         </UIAspect>
+      </UIButton>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\misc\Water_Filter\Water_Filter_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Water_Filter_Busted"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Water_Filter_Busted"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_ObjectType="Misc" s_Product="Marine" s_uisort="dd" s_Zoopedia="zoopedia:zoopedia_waterfilter:entry" b_DoNotDisplayUsers="true"/>
+      <ZTUserStaffAction>
+         <SetAttribute name="f_FilterDirtyLevel" value="0" threshold="20" locid="superstaff:compost" effect="SuperStaffWrench" prescript="behavior:scripts/CompostPoo.lua:sellCompost"/>
+      </ZTUserStaffAction>
+      <BFGInfluenceComponent defaultRadius="9.0" defaultGroupFactor="0.0" defaultRadiusDropoff="linear" defaultGroupDropoff="none">
+         <smell key="bad" value="0.9" scalingAttribute="f_FilterDirtyLevel"/>
+      </BFGInfluenceComponent>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/misc/Water_Filter/Water_Filter_Machine"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="clean" required="1">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/misc/Water_Filter/Water_Filter_Clean"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+               <BFHasParticleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="soiled" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/misc/Water_Filter/Water_Filter_Soiled"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+               <BFHasParticleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="dirty" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/misc/Water_Filter/Water_Filter_Dirty"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="toxic" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/misc/Water_Filter/Water_Filter_Toxic"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="smoke">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFSimpleLODComponent modelfile="entities/objects/fx/Smoke_Breakdown.nif"/>
+               <BFForceUpdateWhenVisibleComponent/>
+               <BFHasParticleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="spark">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFSimpleLODComponent modelfile="UI\fx\zoofame\star_appear.nif" scale=".05"/>
+               <BFForceUpdateWhenVisibleComponent/>
+               <BFHasParticleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance f_FilterDirtyLevel="0"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIFadeController attribName="f_FilterDirtyLevel" currState="clean" fadePeriod="1">
+               <stateList>
+                  <toxic physObj="toxic" minRange="66" maxRange="101"/>
+                  <dirty physObj="dirty" minRange="33" maxRange="66"/>
+                  <soiled physObj="soiled" minRange="1" maxRange="33"/>
+                  <clean physObj="clean" minRange="-1" maxRange="1"/>
+               </stateList>
+            </BFAIFadeController>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGInfluenceController attribName="f_FilterDirtyLevel"/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="1000">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="0" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="50" period="monthly" type="debit" category="upkeep"/>
+               <ZTTransaction name="sell" cost="0" period="monthly" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

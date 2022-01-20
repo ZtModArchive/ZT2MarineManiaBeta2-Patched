@@ -1,0 +1,35 @@
+<BFTypedBinder binderType="MarlinBlue_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Actinopterygii>
+                  <Perciformes>
+                     <Istiophoridae>
+                        <MarlinBlue>
+                           <MarlinBlue_Young>
+                              <MarlinBlue_Young_M/>
+                           </MarlinBlue_Young>
+                        </MarlinBlue>
+                     </Istiophoridae>
+                  </Perciformes>
+               </Actinopterygii>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\MarlinBlue\MarlinBlue_Adult_M_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="MarlinBlue_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

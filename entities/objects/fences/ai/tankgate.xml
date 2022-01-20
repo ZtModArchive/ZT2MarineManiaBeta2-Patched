@@ -1,0 +1,52 @@
+<BFTypedBinder binderType="tankgate" abstract="true">
+   <types>
+      <entity>
+         <fence>
+            <gate>
+               <tankgate/>
+            </gate>
+         </fence>
+      </entity>
+   </types>
+   <shared>
+      <BFGCollisionData isWaterBoundary="true">
+         <typeAttrScores>
+            <actor attr="b_Walkable" score="0" alwaysValidate="true"/>
+            <avatar attr="b_Walkable" score="0" alwaysValidate="true"/>
+         </typeAttrScores>
+      </BFGCollisionData>
+      <ZTPlacementData placeable="false" s_GatePlacementRules="staffgate" tankPlacement="true" showTankPlacement="true"/>
+      <BFAIEntityDataShared b_SeeThrough="true" s_Product="Marine" f_FenceStrength="10"/>
+      <ZTUserStaffAction>
+         <!--The f_timeToClose is set to 0 to override the action in the gate.xml file - we don't want to do this, but instead the new ClimbLadder action.-->
+         <SetAttribute name="f_timeToClose" value="0.0f"/>
+         <ClimbLadder locid="superstaff:tankgate"/>
+      </ZTUserStaffAction>
+   </shared>
+   <binder>
+      <BFBinder required="0">
+         <instance>
+            <ZTFence/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTTankGateSegment hasCurves="false"/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <BFAIEntityDataInstance b_Walkable="false"/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="90">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+     <BFNamedBinder binderName="gate_animation" required="0"/>
+     </binder>
+</BFTypedBinder>

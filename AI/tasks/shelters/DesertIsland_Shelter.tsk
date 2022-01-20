@@ -1,0 +1,502 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="DesertIslandBasic_Rest" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandBasic_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandBasic_Privacy" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandBasic_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandMedium_Rest" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandMedium_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandMedium_Privacy" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandMedium_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandAdvanced_Rest" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandAdvanced_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandAdvanced_Privacy" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandAdvanced_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandElite_Rest" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandElite_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandElite_Privacy" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandElite_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandBasic_Birth" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandBasic_Birth">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+        <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_LayEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandMedium_Birth" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandMedium_Birth">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+        <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_LayEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandAdvanced_Birth" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandAdvanced_Birth">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+        <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_LayEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DesertIslandElite_Birth" reserveTag="TAP_Island" UniqueID="DesertIsland_shelter:DesertIslandElite_Birth">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_DesertIslandUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <DesertIsland_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+        <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="UseDesertIsland_LayEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

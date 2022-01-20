@@ -1,0 +1,166 @@
+<BFTypedBinder binderType="touchpool_mm">
+        <types>
+                <entity>
+                        <building>
+                                <touchpool_mm />
+                        </building>
+                </entity>
+        </types>
+        <instance>
+                <BFGEntity entityVersion="1">
+                        <physObjParenting>
+                                <parentObj parent="mainObj" child="ShadowObj_01" rottype="use" postype="ignore" attachnode="link" />
+                                <parentObj parent="mainObj" child="biomedetail_01" rottype="ignore" postype="use" attachnode="biomedetail_01" />
+                                <parentObj parent="mainObj" child="biomedetail_02" rottype="ignore" postype="use" attachnode="biomedetail_02" />
+                                <parentObj parent="mainObj" child="biomedetail_03" rottype="ignore" postype="use" attachnode="biomedetail_03" />
+                                <parentObj parent="mainObj" child="biomedetail_04" rottype="ignore" postype="use" attachnode="biomedetail_04" />
+                                <parentObj parent="mainObj" child="biomedetail_05" rottype="ignore" postype="use" attachnode="biomedetail_05" />
+                                <parentObj parent="mainObj" child="biomedetail_06" rottype="ignore" postype="use" attachnode="biomedetail_06" />
+                                <parentObj parent="mainObj" child="biomedetail_07" rottype="ignore" postype="use" attachnode="biomedetail_07" />
+                                <parentObj parent="mainObj" child="animals" rottype="use" postype="use" />
+                        </physObjParenting>
+                </BFGEntity>
+        </instance>
+        <shared>
+                <ZTPlacementData autoFootprint="false" dockArrowStyle="standard" dockArrowSize="1.5" icon3Doffset="0 0 0.5" icon3Dscale="0.25">
+                        <cfootprint width="3" height="3" />
+                        <dfootprint width="4" height="4" />
+                </ZTPlacementData>
+                <UIToggleButton template="adopt">
+                        <UIAspect>
+                                <default image="entities\objects\buildings\touchpool_mm\touchpool_mm_icon.dds" />
+                        </UIAspect>
+                        <UIHelpInfo name="" short="" long="" help="" ids="entityname:touchpool_mm" />
+                        <on>
+                                <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="touchpool_mm" />
+                        </on>
+                </UIToggleButton>
+                <UIToggleButton template="researchentity">
+                        <UIAspect>
+                                <default image="entities\objects\buildings\touchpool_mm\touchpool_mm_icon.dds" />
+                        </UIAspect>
+                        <on>
+                                <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="touchpool_mm" />
+                        </on>
+                </UIToggleButton>
+                <UIButton name="overviewicon">
+                        <UIAspect>
+                                <default image="ui/zoomap/icon_attractions.dds" />
+                        </UIAspect>
+                </UIButton>
+		<ZTTourData>
+			<theme_marine value="5" />
+			<cool value="6"/>
+		</ZTTourData>
+                <BFAIEntityDataShared s_ObjectType="Misc" b_Researchable="true" s_Product="Marine" s_uisort="ef" b_DonationAcceptor="false" s_Zoopedia="zoopedia:zoopedia_touchpool_mm:entry" f_researchUnlockTime="80" f_researchCost="400" b_wantLifetimeUsers="true" f_FameReq="40" />
+        </shared>
+        <binder>
+                <BFNamedBinder binderName="mainObj">
+                        <instance>
+                                <BFPhysObj>
+                                        <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/touchpool_mm/touchpool_mm.nif" initialTextKey="snd &quot;TouchPool_waterflow&quot; looping"/>
+                                        <BFGroundFitComponent heightOffset="0.0" />
+                                        <BFForceUpdateWhenVisibleComponent />
+                                </BFPhysObj>
+                        </instance>
+                        <shared>
+                                <BFSharedPhysVars>
+                                        <virtualNodes>
+                                                <Dock_Guest1 parentNode="Scene Root" x="0.0" y="-4.2" z=".1" yaw="180" />
+                                                <Dock_Guest2 parentNode="Scene Root" x="0.0" y="4.2" z=".1" yaw="0" />
+                                                <Dock_Guest3 parentNode="Scene Root" x="-4.2" y="0.0" z=".1" yaw="270" />
+                                                <Dock_Guest4 parentNode="Scene Root" x="4.2" y="0.0" z=".1" yaw="90" />
+                                        </virtualNodes>
+                                </BFSharedPhysVars>
+                        </shared>
+                </BFNamedBinder>
+                <BFNamedBinder binderName="animals">
+                        <instance>
+                                <BFPhysObj>
+                                        <BFActorComponent actorfile="entities/objects/buildings/touchpool_mm/touchpool_mm.bfm" activeSequenceName="Stand_Idle" switch="0 18 36" />
+                                        <BFGroundFitComponent heightOffset="0.0" />
+                                        <BFSecondaryAnimComponent animName="Secondary_Horseshoe" frequency="1.5" chance="40" validAnims="Stand_Idle" />
+                                        <BFSecondaryAnimComponent animName="Secondary_SeaCuke" frequency="1.5" chance="40" validAnims="Stand_Idle" />
+                                </BFPhysObj>
+                        </instance>
+                </BFNamedBinder>
+                <BFNamedBinder binderName="ShadowObj_01">
+                        <instance>
+                                <BFPhysObj>
+                                        <BFStaticBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="ShadowNode_01" width="9" length="7" offwidth="1" intensity="0.3" />
+                                </BFPhysObj>
+                        </instance>
+                </BFNamedBinder>
+                <BFNamedBinder binderName="biomedetail_01">
+                        <instance>
+                                <BFPhysObj>
+                                        <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+                                </BFPhysObj>
+                        </instance>
+                </BFNamedBinder>
+                <BFNamedBinder binderName="biomedetail_02">
+                        <instance>
+                                <BFPhysObj>
+                                        <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+                                </BFPhysObj>
+                        </instance>
+                </BFNamedBinder>
+                <BFNamedBinder binderName="biomedetail_03">
+                        <instance>
+                                <BFPhysObj>
+                                        <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+                                </BFPhysObj>
+                        </instance>
+                </BFNamedBinder>
+                <BFNamedBinder binderName="biomedetail_04">
+                        <instance>
+                                <BFPhysObj>
+                                        <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+                                </BFPhysObj>
+                        </instance>
+                </BFNamedBinder>
+                <BFNamedBinder binderName="biomedetail_05">
+                        <instance>
+                                <BFPhysObj>
+                                        <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+                                </BFPhysObj>
+                        </instance>
+                </BFNamedBinder>
+                <BFNamedBinder binderName="biomedetail_06">
+                        <instance>
+                                <BFPhysObj>
+                                        <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+                                </BFPhysObj>
+                        </instance>
+                </BFNamedBinder>
+                <BFNamedBinder binderName="biomedetail_07">
+                        <instance>
+                                <BFPhysObj>
+                                        <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+                                </BFPhysObj>
+                        </instance>
+                </BFNamedBinder>
+                <BFNamedBinder binderName="Use_Touchpool">
+                        <instance>
+                                <BFGEntityContainer>
+                                        <slots>
+                                                <BFGEntityContainerSlot useBehSet="UseTouchpool_HorseshoeCrab" targetNode="Dock_Guest1" />
+                                                <BFGEntityContainerSlot useBehSet="UseTouchpool_SeaCucumber" targetNode="Dock_Guest2" />
+                                                <BFGEntityContainerSlot useBehSet="UseTouchpool_StarFish" targetNode="Dock_Guest3" />
+                                                <BFGEntityContainerSlot useBehSet="UseTouchpool_Conch" targetNode="Dock_Guest4" />
+                                        </slots>
+                                </BFGEntityContainer>                           
+                        </instance>
+                </BFNamedBinder>
+                <BFBinder>
+                        <instance>
+                                <ZTEconomyComponent cost="500">
+                                        <ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+                                        <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+                                        <ZTTransaction name="upkeep" cost="100" period="monthly" type="debit" category="upkeep" />
+                                        <ZTTransaction name="add_user" cost="1" type="addUser" category="user" />
+                                </ZTEconomyComponent>
+                        </instance>
+                </BFBinder>
+        </binder>
+</BFTypedBinder>

@@ -1,0 +1,7 @@
+<BFCampaign name="Tutoriallabels:xp2_campaignname" xpack="2" tutorial="true">
+   <entry name="Tutoriallabels:xp2_T1" short="Tutoriallabels:xp2_T1short" key="xp2_Tutorial1" scenario="scenario\goals\xp2_tutorial1.xml" map="xp2tutorialone" cash="100000" difficulty="difficulty:easy" description="Tutoriallabels:xp2_T1overviewshort" state="unlocked"/>
+	<entry name="Tutoriallabels:xp2_T2" short="Tutoriallabels:xp2_T2short" key="xp2_Tutorial2" scenario="scenario\goals\xp2_tutorial2.xml" map="xp2tutorialtwo" cash="100000" difficulty="difficulty:easy" description="Tutoriallabels:xp2_T2overviewshort" state="unlocked"/>
+   <entry name="Tutoriallabels:xp2_T3" short="Tutoriallabels:xp2_T3short" key="xp2_Tutorial3" scenario="scenario\goals\xp2_tutorial3.xml" map="xp2tutorialthree" cash="100000" difficulty="difficulty:easy" description="Tutoriallabels:xp2_T3overviewshort" state="unlocked"/>
+   <entry name="Tutoriallabels:xp2_T4" short="Tutoriallabels:xp2_T4short" key="xp2_Tutorial4" scenario="scenario\goals\xp2_tutorial4.xml" map="xp2tutorialfour" cash="100000" difficulty="difficulty:easy" description="Tutoriallabels:xp2_T4overviewshort" state="unlocked"/>
+   <entry name="Tutoriallabels:xp2_T5" short="Tutoriallabels:xp2_T5short" key="xp2_Tutorial5" scenario="scenario\goals\xp2_tutorial5.xml" map="xp2tutorialfive" cash="100000" difficulty="difficulty:easy" description="Tutoriallabels:xp2_T5overviewshort" state="unlocked"/>
+</BFCampaign>

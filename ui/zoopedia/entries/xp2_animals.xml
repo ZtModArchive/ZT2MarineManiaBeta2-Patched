@@ -1,0 +1,26 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry order="zoopedia_animal1" entry="zoopedia_animals">
+         <BFHelpEntry entry="zoopedia_beluga"/>
+         <BFHelpEntry entry="zoopedia_dolphinbottlenose"/>
+         <BFHelpEntry entry="zoopedia_manateewestindian"/>         
+         <BFHelpEntry entry="zoopedia_marlinblue"/>
+         <BFHelpEntry entry="zoopedia_narwhal"/>            
+         <BFHelpEntry entry="zoopedia_ottersea"/>
+         <BFHelpEntry entry="zoopedia_penguinrockhopper"/>         
+         <BFHelpEntry entry="zoopedia_raymanta"/>
+         <BFHelpEntry entry="zoopedia_sealioncalifornia"/>         
+         <BFHelpEntry entry="zoopedia_sharkgoblin"/>
+         <BFHelpEntry entry="zoopedia_sharkhammerheadscalloped" order="zoopedia_hammerheadscalloped"/>         
+         <BFHelpEntry entry="zoopedia_sharkreefblacktip" order="zoopedia_sharkblacktipreef"/>
+         <BFHelpEntry entry="zoopedia_sharkwhale"/>
+         <BFHelpEntry entry="zoopedia_sharkwhite" order="zoopedia_sharkgreatwhite"/>         
+         <BFHelpEntry entry="zoopedia_turtleleatherback"/>         
+         <BFHelpEntry entry="zoopedia_turtleseagreen" order="zoopedia_turlegreensea"/>
+         <BFHelpEntry entry="zoopedia_walruspacific"/>         
+         <BFHelpEntry entry="zoopedia_whalefalsekiller" order="zoopedia_falsekillerwhale"/>
+         <BFHelpEntry entry="zoopedia_whalepilotshortfinned" order="zoopedia_shortfinnedpilotwhale"/>         
+         <BFHelpEntry entry="zoopedia_whaleorca" order="zoopedia_orca"/>         
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

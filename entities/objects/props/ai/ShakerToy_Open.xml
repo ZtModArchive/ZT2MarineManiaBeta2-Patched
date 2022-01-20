@@ -1,0 +1,68 @@
+﻿<BFTypedBinder binderType="ShakerToy_Open">
+	<types>
+		<entity>
+			<prop>
+				<ShakerToy_Open />
+			</prop>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="-1.5 .5 1.22" icon3Dscale="3.67" autoFootprint="false" waterPlacement="true" landPlacement="true" tankPlacement="true">
+			<cfootprint width="0" height="0" />
+			<dfootprint width="1" height="1" />
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\props\ShakerToy\ShakerToy_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:ShakerToy" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="ShakerToy_Open" />
+			</on>
+		</UIToggleButton>
+		<BFGCollisionData isPassable="true" />
+		<BFAIEntityDataShared s_Product="Marine" s_uisort="ea" b_Sniffable="true" s_Zoopedia="zoopedia:zoopedia_shakertoy:entry" f_FameReq="90" />
+		<ZTDevComponent />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="footprint" width="1" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/props/ShakerToy/ShakerToy_Open_mm" switch="0 6 16" />
+					<BFGroundFitComponent heightOffset="0.0" maxTilt="50" floatOnWater="true" waterOffset="-.05" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Eat">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterShakerToy" useBehSet="EatShakerToy" exitBehSet="ExitShakerToy" targetNode="Dock_Eat" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="100">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

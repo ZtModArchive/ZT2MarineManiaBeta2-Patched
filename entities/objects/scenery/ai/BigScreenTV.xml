@@ -1,0 +1,134 @@
+<BFTypedBinder binderType="BigScreenTV">
+   <types>
+      <entity>
+         <scenery>
+	         <BigScreenTV/>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIButton name="overviewicon">
+         <UIAspect>
+            <default image="ui/zoomap/icon_staff.dds"/>
+         </UIAspect>
+      </UIButton>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\scenery\BigScreenTV\BigScreenTV_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:BigScreenTV"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="BigScreenTV"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Zoopedia="zoopedia:zoopedia_bigscreentv:entry" s_Product="Marine" b_Eyedropper="false"/>
+      <ZTPlacementData minimumDepth="3" icon3Doffset="0 0 0.918257" icon3Dscale="0.11" waterPlacement="false" landPlacement="false" showTankPlacement="true" randomRotate="false" gridSnap="true" terrainFlatten="false"/>
+      <ZTDevComponent/>
+   </shared>
+   <binder>
+      <!--BFNamedBinder binderName="channel1">
+         <instance>
+            <BFGPhysAnimController currState="idle1" defaultState="idle1">
+               <stateList>
+                  <idle1 parent="mainObj" child="screen1idle" rottype="use" postype="use" attachnode="Node_Screen1"/>
+                  <used1 parent="mainObj" child="screen1used" rottype="use" postype="use" attachnode="Node_Screen1"/>
+               </stateList>
+            </BFGPhysAnimController>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="channel2">
+         <instance>
+            <BFGPhysAnimController currState="idle2" defaultState="idle2">
+               <stateList>
+                  <idle2 parent="mainObj" child="screen2idle" rottype="use" postype="use" attachnode="Node_Screen2"/>
+                  <used2 parent="mainObj" child="screen2used" rottype="use" postype="use" attachnode="Node_Screen2"/>
+               </stateList>
+            </BFGPhysAnimController>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="channel3">
+         <instance>
+            <BFGPhysAnimController currState="idle3" defaultState="idle3">
+               <stateList>
+                  <idle3 parent="mainObj" child="screen3idle" rottype="use" postype="use" attachnode="Node_Screen3"/>
+                  <used3 parent="mainObj" child="screen3used" rottype="use" postype="use" attachnode="Node_Screen3"/>
+               </stateList>
+            </BFGPhysAnimController>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="screen1idle" required="1">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFSceneGraphComponent isBFR="true" modelfile="entities/objects/buildings/DiscoveryKiosk_df/DiscoveryKiosk_ScreenIdle_df" scale="1.0"/>
+               <BFForceUpdateWhenVisibleComponent controllersOnly="false"/>
+               <BFAnimatedObjectControllerComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="screen1used" required="0">
+         <instance>
+            <BFPhysObj drawLast="true" useTriShapeGroup="false">
+               <BFSceneGraphComponent modelfile="entities/objects/buildings/DiscoveryKiosk_df/DiscoveryKiosk_ScreenUsed_df.nif" scale="1.0"/>
+               <BFForceUpdateWhenVisibleComponent controllersOnly="false"/>
+               <BFAnimatedObjectControllerComponent autoStart="true" duration="26.666666667"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="screen2idle" required="1">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFSceneGraphComponent isBFR="true" modelfile="entities/objects/buildings/DiscoveryKiosk_df/DiscoveryKiosk_ScreenIdle_df" scale="1.0"/>
+               <BFForceUpdateWhenVisibleComponent controllersOnly="false"/>
+               <BFAnimatedObjectControllerComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="screen2used" required="0">
+         <instance>
+            <BFPhysObj drawLast="true" useTriShapeGroup="false">
+               <BFSceneGraphComponent modelfile="entities/objects/buildings/DiscoveryKiosk_df/DiscoveryKiosk_ScreenUsed_df.nif" scale="1.0"/>
+               <BFForceUpdateWhenVisibleComponent controllersOnly="false"/>
+               <BFAnimatedObjectControllerComponent autoStart="true" duration="26.666666667"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="screen3idle" required="1">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFSceneGraphComponent isBFR="true" modelfile="entities/objects/buildings/DiscoveryKiosk_df/DiscoveryKiosk_ScreenIdle_df" scale="1.0"/>
+               <BFForceUpdateWhenVisibleComponent controllersOnly="false"/>
+               <BFAnimatedObjectControllerComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="screen3used" required="0">
+         <instance>
+            <BFPhysObj drawLast="true" useTriShapeGroup="false">
+               <BFSceneGraphComponent modelfile="entities/objects/buildings/DiscoveryKiosk_df/DiscoveryKiosk_ScreenUsed_df.nif" scale="1.0"/>
+               <BFForceUpdateWhenVisibleComponent controllersOnly="false"/>
+               <BFAnimatedObjectControllerComponent autoStart="true" duration="26.666666667"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder-->
+     <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/scenery/BigScreenTV/BigScreenTV" switch="0 20 40" minSwitch="0 0 20"/>
+               <BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>      
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="400">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="25" period="monthly" type="debit" category="upkeep"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

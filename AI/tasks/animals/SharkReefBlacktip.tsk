@@ -1,0 +1,1097 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="Idle" UniqueID="SharkReefBlacktip:Idle">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="0.002"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Idle"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Surface" TaskDelayMin="45" TaskDelayMax="90" UniqueID="SharkReefBlacktip:Submerge">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers_AND isSwimming="true" isSwimmingUnderwater="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="10"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Surface"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-10" stimulation="-2"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="WanderWaterSurf" UniqueID="SharkReefBlacktip:WanderWaterSurf">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="5"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="WanderSurf"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="WanderWaterSub" UniqueID="SharkReefBlacktip:WanderWaterSub">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="6"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="WanderSub"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-30" stimulation="-10" rest="-10"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="WanderWaterSub_Rest" UniqueID="SharkReefBlacktip:WanderWaterSub_Rest">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap rest="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4"/>
+      <BFBehPlaySet behSet="WanderRest"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="-60" exercise="-15"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="BoltWander" TaskDelayMin="60" TaskDelayMax="240"  UniqueID="SharkReefBlacktip:BoltWander">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="30"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_7"/>
+      <BFBehPlaySet behSet="WanderBolt"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-60" rest="10"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="SharkReefBlacktip:OffspringCheck">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="1000"/>
+    <BFBehExecTask>
+      <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="SharkReefBlacktip:CantReproduce">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Adult_F/>
+        <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+      </Subjects>
+      <Targets>
+        <SharkReefBlacktip_Adult_M/>
+        <Qualifiers_AND inHabitat="true" canMate="false"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="50">
+      <BFAIAttributeFloatMap reproduction="-27"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="SharkReefBlacktip:InviteReproduction">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Adult_F/>
+        <Qualifiers_AND isSwimming="true" b_Pregnant="E false"/>
+      </Subjects>
+      <Targets>
+        <SharkReefBlacktip_Adult_M/>
+        <Qualifiers_AND isSwimming="true" canMate="true"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="50">
+      <BFAIAttributeFloatMap reproduction="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="WaitReproduction"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="SharkReefBlacktip:RespondReproduction">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Adult_M/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Reproduce/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_5"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehSyncSet subjectBehSet="Rendezvous" targetBehSet="Rendezvous"/>
+      <BFBehSyncSet subjectBehSet="ReproductionSwimLead" targetBehSet="ReproductionSwimFollow"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="75"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-50" rest="-10"/>
+      <BFAITargetData rest="-10"/>
+      <BFBehExecTask>
+        <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Pregnant" UniqueID="SharkReefBlacktip:Pregnant">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Pregnant1/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="50"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+          <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITargetData b_Pregnant="true"/>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="1080.14" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Birth" UniqueID="SharkReefBlacktip:Birth">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Adult_F/>
+        <Qualifiers_AND inWater="true" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Pregnant/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000">
+      <BFAIAttributeFloatMap reproduction="-90"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Birthing"/>
+          <ZTMessageInfo locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="Swim_Ahead"/>
+      <BFBehPlaySet behSet="Birth"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-100"/>
+      <BFAISubjectData b_Pregnant="false"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_6">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalBornGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:AnimalBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="SharkReefBlacktip:Born">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" lifespan="LE 1"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Born"/>
+          <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="DefensivePosture"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="SharkReefBlacktip:Puberty">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Young/>
+        <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 3.34"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Age_F" UniqueID="SharkReefBlacktip:Age_F">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Young_F/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Age/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehMorph morphTargetEntityType="SharkReefBlacktip_Adult_F" morphScale="true" morphPeriod="10" initScale="0.55"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Age_M" UniqueID="SharkReefBlacktip:Age_M">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Young_M/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Age/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehMorph morphTargetEntityType="SharkReefBlacktip_Adult_M" morphScale="true" morphPeriod="10" initScale="0.55"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Old" TaskDelayMin="60" TaskDelayMax="60" UniqueID="SharkReefBlacktip:Old">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers lifespan="GE 12.13"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap lifespan="-100"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Die" UniqueID="SharkReefBlacktip:Die">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Die/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="10000"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Die_OldAge"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Die_Sick" Priority="3" UniqueID="SharkReefBlacktip:Die_Sick">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers_AND inWater_OR_onLand="true" health="GE 99"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="15000"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Die_Sick"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadePrivacy" UniqueID="SharkReefBlacktip:EvadePrivacy">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap privacy="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SeekingPrivacy" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10">
+        <avoidEntityTypes>
+          <Guest/>
+        </avoidEntityTypes>
+      </BFBehEvasion>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap privacy="-40" exercise="-10" stimulation="-10" rest="-10"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SyncSwim_Invite" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="SharkReefBlacktip:SyncSwim_Invite">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <SharkReefBlacktip/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap social="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_SyncSwim" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SyncSwim_Respond" UniqueID="SharkReefBlacktip:SyncSwim_Respond">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <SharkReefBlacktip/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_SyncSwim/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="90"/>
+    <BFBehExecTask>
+      <BFBehSyncSet subjectBehSet="Rendezvous" targetBehSet="Rendezvous"/>
+      <ZTBehViewEvent viewKey="Pos_5"/>
+      <BFBehSyncSet subjectBehSet="SyncSwimLead" targetBehSet="SyncSwimFollow"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-30"/>
+      <BFAITargetData social="-30"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ChasePlay" TaskDelayMin="60" TaskDelayMax="120" UniqueID="SharkReefBlacktip:ChasePlay">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <SharkReefBlacktip/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true" notInSight="8"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="8" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_EvadePlayAdult" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Idle"/>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadePlay" UniqueID="SharkReefBlacktip:EvadePlay">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayAdult/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_5">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" stimulation="-20" social="-20" exercise="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Evade" UniqueID="SharkReefBlacktip:Evade">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Flee/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" exercise="-20"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadeAttack" UniqueID="SharkReefBlacktip:EvadeAttack">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Attack/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" exercise="-20"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Chase_OtherSpecies" TaskDelayMin="60" TaskDelayMax="120" UniqueID="SharkReefBlacktip:Chase_OtherSpecies">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <SmallPrey/>
+        <MediumPrey/>
+        <SmallPredator/>
+        <MediumPredator/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true" notInSight="8"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="8" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Idle"/>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Attack_OtherSpecies" TaskDelayMin="60" TaskDelayMax="120" UniqueID="SharkReefBlacktip:Attack_OtherSpecies">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <SmallPredator/>
+        <SmallPrey/>
+        <MediumPredator/>
+        <MediumPrey/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true" notInSight="8"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10">
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="8" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Idle"/>
+      <BFBehPursuit hitRadius="4" pursuitRadius="15" locoSpeed="fast"/>
+      <ZTBehViewEvent viewKey="Pos_5"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" exercise="-20" stimulation="-20"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_BiteAnimal" GiveTo="subject" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Bite_OtherSpecies" TaskDelayMin="60" TaskDelayMax="120" UniqueID="SharkReefBlacktip:Bite_OtherSpecies">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_BiteAnimal/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10">
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="8" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPursuit hitRadius="4" pursuitRadius="15" locoSpeed="fast"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:AttackingAnimal" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_7"/>
+      <BFBehPlaySet behSet="Bite"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+       <BFAITargetData health="20"/>
+       <BFAITokenList>
+         <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+       </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Breach" TaskDelayMin="180" TaskDelayMax="240" UniqueID="SharkReefBlacktip:Breach">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="20">
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalJumpGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="Surface"/>
+      <BFBehPlaySet behSet="Breach"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-50" stimulation="-10" rest="10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="JumpTankWall" sensorTag="habitat" UseForKeeperPanel="false" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="SharkReefBlacktip:JumpTankWall">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <tankwallsegment/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="60" fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToJumpTankWall"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehDockTankWall subjectNode="Node_JumpTankWall" depthBelowWater="2" locoSpeed="fast"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:JumpingTankWall"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="ChargeSub_Breach" interruptFlag="true" groundFit="false"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+          <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehFall/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadeLargerPredator" TaskDelayMin="60" TaskDelayMax="120" UniqueID="SharkReefBlacktip:EvadeLargerPredator">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+      </Subjects>
+      <Targets>
+        <b_LargePredator/>
+        <b_XLargePredator/>
+        <b_XXLargePredator/>
+        <Qualifiers_AND isSwimming="true" inSight="16"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehEvasion evasionRadius="30" locoSpeed="evade" avoidWater="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackGuest" Priority="5" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="SharkReefBlacktip:AttackGuest">
+      <BFAICreateData>
+         <Subjects>
+            <SharkReefBlacktip_Adult/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" inWater="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BroadcastAttack"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChasingGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="30" failureRadius="80" locoSpeed="bolt"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <BFBehHeadLook disengage="true"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+                  <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalAttackedGuestBad" priority="-1" timeout="60" global="true" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="AttackGuest"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-100" happiness="100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Beached" Priority="1" UniqueID="SharkReefBlacktip:Beached">
+    <BFAICreateData>
+      <Subjects>
+        <SharkReefBlacktip/>
+        <Qualifiers_AND inWater="false" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Beached"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_5">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalBeachedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehAnimate targetAnim="OnLand_Idle" interruptFlag="true"/>
+      <BFBehAnimate targetAnim="OnLand_Twitch" interruptFlag="true"/>
+      <BFBehAnimate targetAnim="OnLand_Dying" interruptFlag="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap health="5"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:AnimalBeached" priority="-1" timeout="15" global="true" useTargetName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehAnimate targetAnim="OnLand_Dying" interruptFlag="true"/>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

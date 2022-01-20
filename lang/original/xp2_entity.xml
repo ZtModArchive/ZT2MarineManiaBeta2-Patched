@@ -1,0 +1,2615 @@
+﻿<ZT2Strings>
+   <entityname>
+      <!--animals-->
+      <DolphinBottlenose>Bottlenose Dolphin</DolphinBottlenose>
+      <DolphinBottlenose_stt>Bottlenose dolphin</DolphinBottlenose_stt>
+      <DolphinBottlenose_lower>the bottlenose dolphin</DolphinBottlenose_lower>
+      <DolphinBottlenose_ltt>
+         <color r="255" g="248" b="178">
+            <b>Bottlenose Dolphin</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a bottlenose dolphin, a gregarious marine mammal. The bottlenose dolphin can perform in shows.
+      
+      
+      </DolphinBottlenose_ltt>
+      <RayManta>Manta Ray</RayManta>
+      <RayManta_stt>Manta ray</RayManta_stt>
+      <RayManta_lower>the manta ray</RayManta_lower>
+      <RayManta_ltt>
+         <color r="255" g="248" b="178">
+            <b>Manta Ray</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a manta ray, a graceful, ocean-dwelling ray.
+      
+      
+      </RayManta_ltt>
+      <WhaleOrca>Orca</WhaleOrca>
+      <WhaleOrca_stt>Orca</WhaleOrca_stt>
+      <WhaleOrca_lower>the orca</WhaleOrca_lower>
+      <WhaleOrca_ltt>
+         <color r="255" g="248" b="178">
+            <b>Orca</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an orca, the largest member of the cetacean family. The orca can perform in shows.
+      
+      
+      </WhaleOrca_ltt>
+      <TurtleSeaGreen>Green Sea Turtle</TurtleSeaGreen>
+      <TurtleSeaGreen_stt>Green sea turtle</TurtleSeaGreen_stt>
+      <TurtleSeaGreen_lower>the green sea turtle</TurtleSeaGreen_lower>
+      <TurtleSeaGreen_ltt>
+         <color r="255" g="248" b="178">
+            <b>Green Sea Turtle</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a green sea turtle, the fastest swimming turtle.
+      
+      
+      </TurtleSeaGreen_ltt>
+      <TurtleLeatherback>Leatherback Sea Turtle</TurtleLeatherback>
+      <TurtleLeatherback_stt>Leatherback sea turtle</TurtleLeatherback_stt>
+      <TurtleLeatherback_lower>the leatherback sea turtle</TurtleLeatherback_lower>
+      <TurtleLeatherback_ltt>
+         <color r="255" g="248" b="178">
+            <b>Leatherback Sea Turtle</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a leatherback sea turtle, the largest living turtle.
+      
+      
+      </TurtleLeatherback_ltt>
+      <PenguinRockhopper>Rockhopper Penguin</PenguinRockhopper>
+      <PenguinRockhopper_stt>Rockhopper penguin</PenguinRockhopper_stt>
+      <PenguinRockhopper_lower>the rockhopper penguin</PenguinRockhopper_lower>
+      <PenguinRockhopper_ltt>
+         <color r="255" g="248" b="178">
+            <b>Rockhopper Penguin</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a rockhopper penguin, a small and aggressive species of penguin.
+      
+      
+      </PenguinRockhopper_ltt>
+<!--Note that proper place names like California, West Indian, Pacific etc. should always be capitalized-->      
+      <SeaLionCalifornia>California Sea Lion</SeaLionCalifornia>
+      <SeaLionCalifornia_stt>California sea lion</SeaLionCalifornia_stt>
+      <SeaLionCalifornia_lower>the California sea lion</SeaLionCalifornia_lower>
+      <SeaLionCalifornia_ltt>
+         <color r="255" g="248" b="178">
+            <b>California Sea Lion</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a California sea lion, an intelligent, slender-bodied eared seal. The California sea lion can perform in shows.
+      
+      
+      </SeaLionCalifornia_ltt>
+      <Beluga>Beluga</Beluga>
+      <Beluga_stt>Beluga</Beluga_stt>
+      <Beluga_lower>the beluga</Beluga_lower>
+      <Beluga_ltt>
+         <color r="255" g="248" b="178">
+            <b>Beluga</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a beluga, a common sight in northern oceans. The beluga can perform in shows.
+      
+      
+      </Beluga_ltt>
+      
+      <WhaleFalseKiller>False Killer Whale</WhaleFalseKiller>
+      <WhaleFalseKiller_stt>False killer whale</WhaleFalseKiller_stt>
+      <WhaleFalseKiller_lower>the false killer whale</WhaleFalseKiller_lower>
+      <WhaleFalseKiller_ltt>
+         <color r="255" g="248" b="178">
+            <b>False Killer Whale</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a false killer whale, which is sometimes mistaken for an orca and is also known as a pseudorca. The false killer whale can perform in shows.
+      
+      
+      </WhaleFalseKiller_ltt>
+      
+      <WhalePilotShortFinned>Short Finned Pilot Whale</WhalePilotShortFinned>
+      <WhalePilotShortFinned_stt>Short finned pilot whale</WhalePilotShortFinned_stt>
+      <WhalePilotShortFinned_lower>the short finned pilot whale</WhalePilotShortFinned_lower>
+      <WhalePilotShortFinned_ltt>
+         <color r="255" g="248" b="178">
+            <b>Short Finned Pilot Whale</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a short finned pilot whale, a deep-diving cetacean. The short finned pilot whale can perform in shows.
+      
+      
+      </WhalePilotShortFinned_ltt>
+      <SharkWhale>Whale Shark</SharkWhale>
+      <SharkWhale_stt>Whale shark</SharkWhale_stt>
+      <SharkWhale_lower>the whale shark</SharkWhale_lower>
+      <SharkWhale_ltt>
+         <color r="255" g="248" b="178">
+            <b>Whale Shark</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a whale shark, the largest fish in the world.
+      
+      
+      </SharkWhale_ltt>
+      <SharkReefBlacktip>Blacktip Reef Shark</SharkReefBlacktip>
+      <SharkReefBlacktip_stt>Blacktip reef shark</SharkReefBlacktip_stt>
+      <SharkReefBlacktip_lower>the blacktip reef shark</SharkReefBlacktip_lower>
+      <SharkReefBlacktip_ltt>
+         <color r="255" g="248" b="178">
+            <b>Blacktip Reef Shark</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a blacktip reef shark, a shark that prefers shallower waters.
+      
+      
+      </SharkReefBlacktip_ltt>
+
+      <SharkWhite>White Shark</SharkWhite>
+      <SharkWhite_stt>White shark</SharkWhite_stt>
+      <SharkWhite_lower>the white shark</SharkWhite_lower>
+      <SharkWhite_ltt>
+         <color r="255" g="248" b="178">
+            <b>White Shark</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a white shark, often considered the most dangerous of sharks.
+      
+      
+      </SharkWhite_ltt>
+
+      <SharkGoblin>Goblin Shark</SharkGoblin>
+      <SharkGoblin_stt>Goblin shark</SharkGoblin_stt>
+      <SharkGoblin_lower>the goblin shark</SharkGoblin_lower>
+      <SharkGoblin_ltt>
+         <color r="255" g="248" b="178">
+            <b>Goblin Shark</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a goblin shark, a denizen of the deeps.
+      
+      
+      </SharkGoblin_ltt>
+
+      <SharkHammerheadScalloped>Scalloped Hammerhead</SharkHammerheadScalloped>
+      <SharkHammerheadScalloped_stt>Scalloped hammerhead</SharkHammerheadScalloped_stt>
+      <SharkHammerheadScalloped_lower>the scalloped hammerhead</SharkHammerheadScalloped_lower>
+      <SharkHammerheadScalloped_ltt>
+         <color r="255" g="248" b="178">
+            <b>Scalloped Hammerhead</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a scalloped hammerhead, a shark with an unusually-shaped head.
+      
+      
+      </SharkHammerheadScalloped_ltt>
+
+      <MarlinBlue>Blue Marlin</MarlinBlue>
+      <MarlinBlue_stt>Blue marlin</MarlinBlue_stt>
+      <MarlinBlue_lower>the blue marlin</MarlinBlue_lower>
+      <MarlinBlue_ltt>
+         <color r="255" g="248" b="178">
+            <b>Blue Marlin</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a blue marlin, the world's largest species of billfish.
+      
+      
+      </MarlinBlue_ltt>
+
+      <ManateeWestIndian>West Indian Manatee</ManateeWestIndian>
+      <ManateeWestIndian_stt>West Indian manatee</ManateeWestIndian_stt>
+      <ManateeWestIndian_lower>the West Indian manatee</ManateeWestIndian_lower>
+      <ManateeWestIndian_ltt>
+         <color r="255" g="248" b="178">
+            <b>West Indian Manatee</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a West Indian manatee, a gentle marine herbivore.
+      
+      
+      </ManateeWestIndian_ltt>
+
+      <OtterSea>Sea Otter</OtterSea>
+      <OtterSea_stt>Sea otter</OtterSea_stt>
+      <OtterSea_lower>the sea otter</OtterSea_lower>
+      <OtterSea_ltt>
+         <color r="255" g="248" b="178">
+            <b>Sea Otter</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a sea otter, the smallest marine mammal. The sea otter can perform in shows.
+      
+      
+      </OtterSea_ltt>
+
+      <Narwhal>Narwhal</Narwhal>
+      <Narwhal_stt>Narwhal</Narwhal_stt>
+      <Narwhal_lower>the narwhal</Narwhal_lower>
+      <Narwhal_ltt>
+         <color r="255" g="248" b="178">
+            <b>Narwhal</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a narwhal, a whale that may have inspired the legend of the unicorn.
+      
+      
+      </Narwhal_ltt>
+
+      <WalrusPacific>Pacific Walrus</WalrusPacific>
+      <WalrusPacific_stt>Pacific walrus</WalrusPacific_stt>
+      <WalrusPacific_lower>the Pacific walrus</WalrusPacific_lower>
+      <WalrusPacific_ltt>
+         <color r="255" g="248" b="178">
+            <b>Pacific Walrus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a Pacific walrus, one of the largest arctic animals. The walrus can perform in shows.
+      
+      
+      </WalrusPacific_ltt>
+      
+      <Remora>Remora</Remora>
+      <Remora_stt>Remora</Remora_stt>
+      <Remora_lower>the remora</Remora_lower>
+      <Remora_ltt>
+         <color r="255" g="248" b="178">
+            <b>Remora</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a remora, a cleanerfish that helps keep your sharks, dolphins, and turtles clean.
+      
+      
+      </Remora_ltt>
+      <!--animal gifts-->
+      
+      <RayManta_Gift>Manta Ray Backpack</RayManta_Gift>
+      <RayManta_Gift_stt>Manta ray backpack</RayManta_Gift_stt>
+      <RayManta_Gift_lower>the manta ray backpack</RayManta_Gift_lower>
+      <RayManta_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Manta Ray Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the manta ray will buy this gift.
+      </RayManta_Gift_ltt>
+      
+      <SharkWhale_Gift>Whale Shark Backpack</SharkWhale_Gift>
+      <SharkWhale_Gift_stt>Whale shark backpack</SharkWhale_Gift_stt>
+      <SharkWhale_Gift_lower>the whale shark backpack</SharkWhale_Gift_lower>
+      <SharkWhale_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Whale Shark Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the whale shark will buy this gift.
+      </SharkWhale_Gift_ltt>
+      
+      <TurtleSeaGreen_Gift>Green Sea Turtle Shirt</TurtleSeaGreen_Gift>
+      <TurtleSeaGreen_Gift_stt>Green sea turtle shirt</TurtleSeaGreen_Gift_stt>
+      <TurtleSeaGreen_Gift_lower>the green sea turtle shirt</TurtleSeaGreen_Gift_lower>
+      <TurtleSeaGreen_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Green Sea Turtle Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the green sea turtle will buy this gift.
+      </TurtleSeaGreen_Gift_ltt>
+      
+      <WhaleOrca_Gift>Orca Shirt</WhaleOrca_Gift>
+      <WhaleOrca_Gift_stt>Orca shirt</WhaleOrca_Gift_stt>
+      <WhaleOrca_Gift_lower>the orca shirt</WhaleOrca_Gift_lower>
+      <WhaleOrca_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Orca Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the orca will buy this gift.
+      </WhaleOrca_Gift_ltt>
+      
+      <MarlinBlue_Gift>Blue Marlin Shirt</MarlinBlue_Gift>
+      <MarlinBlue_Gift_stt>Blue marlin shirt</MarlinBlue_Gift_stt>
+      <MarlinBlue_Gift_lower>the blue marlin shirt</MarlinBlue_Gift_lower>
+      <MarlinBlue_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Blue Marlin Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the blue marlin will buy this gift.
+      </MarlinBlue_Gift_ltt> 
+      
+      <TurtleLeatherback_Gift>Leatherback Turtle Shirt</TurtleLeatherback_Gift>
+      <TurtleLeatherback_Gift_stt>Leatherback turtle shirt</TurtleLeatherback_Gift_stt>
+      <TurtleLeatherback_Gift_lower>the leatherback turtle shirt</TurtleLeatherback_Gift_lower>
+      <TurtleLeatherback_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Leatherback Turtle Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the leatherback turtle will buy this gift.
+      </TurtleLeatherback_Gift_ltt>
+      
+      <SharkGoblin_Gift>Goblin Shark Hat</SharkGoblin_Gift>
+      <SharkGoblin_Gift_stt>Goblin shark hat</SharkGoblin_Gift_stt>
+      <SharkGoblin_Gift_lower>the goblin shark hat</SharkGoblin_Gift_lower>
+      <SharkGoblin_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Goblin Shark Hat</b>
+         </color>
+         <br/>   
+         Guests who enjoy watching the goblin shark will buy this gift.
+      </SharkGoblin_Gift_ltt>
+      
+      <WalrusPacific_Gift>Pacific Walrus Hat</WalrusPacific_Gift>
+      <WalrusPacific_Gift_stt>Pacific walrus hat</WalrusPacific_Gift_stt>
+      <WalrusPacific_Gift_lower>the Pacific walrus hat</WalrusPacific_Gift_lower>
+      <WalrusPacific_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Pacific Walrus Hat</b>
+         </color>
+         <br/>   
+         Guests who enjoy watching the Pacific walrus will buy this gift.
+      </WalrusPacific_Gift_ltt> 
+      
+      <WhaleBeluga_Gift>Beluga Hat</WhaleBeluga_Gift>
+      <WhaleBeluga_Gift_stt>Beluga hat</WhaleBeluga_Gift_stt>
+      <WhaleBeluga_Gift_lower>the beluga hat</WhaleBeluga_Gift_lower>
+      <WhaleBeluga_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Beluga Hat</b>
+         </color>
+         <br/>   
+         Guests who enjoy watching the beluga will buy this gift.
+      </WhaleBeluga_Gift_ltt> 
+      
+      <SharkHammerheadScalloped_Gift>Scalloped Hammerhead Hat</SharkHammerheadScalloped_Gift>
+      <SharkHammerheadScalloped_Gift_stt>Scalloped hammerhead hat</SharkHammerheadScalloped_Gift_stt>
+      <SharkHammerheadScalloped_Gift_lower>the scalloped hammerhead hat</SharkHammerheadScalloped_Gift_lower>
+      <SharkHammerheadScalloped_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Scalloped Hammerhead Hat</b>
+         </color>
+         <br/>   
+         Guests who enjoy watching the scalloped hammerhead will buy this gift.
+      </SharkHammerheadScalloped_Gift_ltt>  
+      
+      <SharkReefBlackTip_Gift>Black Tip Reef Shark Puppet</SharkReefBlackTip_Gift>
+      <SharkReefBlackTip_Gift_stt>Black tip reef shark puppet</SharkReefBlackTip_Gift_stt>
+      <SharkReefBlackTip_Gift_lower>the black tip reef shark puppet</SharkReefBlackTip_Gift_lower>
+      <SharkReefBlackTip_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Black Tip Reef Shark Puppet</b>
+         </color>
+         <br/>Guests who enjoy watching the black tip reef shark will buy this gift.
+      </SharkReefBlackTip_Gift_ltt> 
+      
+      <SharkWhite_Gift>White Shark Puppet</SharkWhite_Gift>
+      <SharkWhite_Gift_stt>White shark puppet</SharkWhite_Gift_stt>
+      <SharkWhite_Gift_lower>the white shark puppet</SharkWhite_Gift_lower>
+      <SharkWhite_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>White Shark Puppet</b>
+         </color>
+         <br/>Guests who enjoy watching the white shark will buy this gift.
+      </SharkWhite_Gift_ltt> 
+      
+      <Narwhal_Gift>Narwhal Puppet</Narwhal_Gift>
+      <Narwhal_Gift_stt>Narwhal puppet</Narwhal_Gift_stt>
+      <Narwhal_Gift_lower>the narwhal puppet</Narwhal_Gift_lower>
+      <Narwhal_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Narwhal Puppet</b>
+         </color>
+         <br/>Guests who enjoy watching the narwhal will buy this gift.
+      </Narwhal_Gift_ltt> 
+      
+      <WhaleFalseKiller_Gift>False Killer Whale Hip Pack</WhaleFalseKiller_Gift>
+      <WhaleFalseKiller_Gift_stt>False killer whale hip pack</WhaleFalseKiller_Gift_stt>
+      <WhaleFalseKiller_Gift_lower>the false killer whale hip pack</WhaleFalseKiller_Gift_lower>
+      <WhaleFalseKiller_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>False Killer Whale Hip Pack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the false killer whale will buy this gift.
+      </WhaleFalseKiller_Gift_ltt> 
+      
+      <WhalePilotShortFinned_Gift>Short Finned Pilot Whale Hip Pack</WhalePilotShortFinned_Gift>
+      <WhalePilotShortFinned_Gift_stt>Short finned pilot whale hip pack</WhalePilotShortFinned_Gift_stt>
+      <WhalePilotShortFinned_Gift_lower>the short finned pilot whale hip pack</WhalePilotShortFinned_Gift_lower>
+      <WhalePilotShortFinned_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Short Finned Pilot Whale Hip Pack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the short finned pilot whale will buy this gift.
+      </WhalePilotShortFinned_Gift_ltt>  
+      
+      <ManateeWestIndian_Gift>West Indian Manatee Stuffed Animal</ManateeWestIndian_Gift>
+      <ManateeWestIndian_Gift_stt>West Indian manatee stuffed animal</ManateeWestIndian_Gift_stt>
+      <ManateeWestIndian_Gift_lower>the West Indian manatee stuffed animal</ManateeWestIndian_Gift_lower>
+      <ManateeWestIndian_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>West Indian Manatee Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the West Indian manatee will buy this gift.
+      </ManateeWestIndian_Gift_ltt>
+      
+      <OtterSea_Gift>Sea Otter Stuffed Animal</OtterSea_Gift>
+      <OtterSea_Gift_stt>Sea otter stuffed animal</OtterSea_Gift_stt>
+      <OtterSea_Gift_lower>the sea otter stuffed animal</OtterSea_Gift_lower>
+      <OtterSea_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Sea Otter Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the sea otter will buy this gift.
+      </OtterSea_Gift_ltt> 
+      
+      <SeaLionCalifornia_Gift>California Sea Lion Stuffed Animal</SeaLionCalifornia_Gift>
+      <SeaLionCalifornia_Gift_stt>California sea lion stuffed animal</SeaLionCalifornia_Gift_stt>
+      <SeaLionCalifornia_Gift_lower>the California sea lion stuffed animal</SeaLionCalifornia_Gift_lower>
+      <SeaLionCalifornia_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>California Sea Lion Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the California sea lion will buy this gift.
+      </SeaLionCalifornia_Gift_ltt> 
+      
+      <DolphinBottlenose_Gift>Bottlenose Dolphin Stuffed Animal</DolphinBottlenose_Gift>
+      <DolphinBottlenose_Gift_stt>Bottlenose dolphin stuffed animal</DolphinBottlenose_Gift_stt>
+      <DolphinBottlenose_Gift_lower>the bottlenose dolphin stuffed animal</DolphinBottlenose_Gift_lower>
+      <DolphinBottlenose_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Bottlenose Dolphin Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the bottlenose dolphin will buy this gift.
+      </DolphinBottlenose_Gift_ltt>   
+      
+      <!--food-->
+      
+      <Carcass_mm>Artifical Marine Carcass Container</Carcass_mm>
+      <Carcass_mm_stt>Artifical marine carcass container</Carcass_mm_stt>
+      <Carcass_mm_lower>the artifical marine carcass</Carcass_mm_lower>
+      <Carcass_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Artifical Marine Carcass Container</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the artifical marine carcass container, which is used to feed meat to marine carnivores.
+      
+      
+      </Carcass_mm_ltt>
+      <Carcass_Chum_mm>Artifical Marine Carcass Container with Chum</Carcass_Chum_mm>
+      <Carcass_Chum_mm_stt>Artifical Marine carcass container with chum</Carcass_Chum_mm_stt>
+      <Carcass_Chum_mm_lower>the artifical marine carcass</Carcass_Chum_mm_lower>
+      <Carcass_Chum_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Artifical Marine Carcass Container with Chum</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the artifical marine carcass container with chum, which is used to feed chum to marine carnivores.
+      
+      
+      </Carcass_Chum_mm_ltt> 
+      
+      <Carcass_Fish_mm>Artifical Marine Carcass with Fish</Carcass_Fish_mm>
+      <Carcass_Fish_mm_stt>Artifical marine carcass with fish</Carcass_Fish_mm_stt>
+      <Carcass_Fish_mm_lower>the artifical marine carcass</Carcass_Fish_mm_lower>
+      <Carcass_Fish_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Artifical Marine Carcass with Fish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the artifical marine carcass with fish, which is used to feed chum to marine carnivores.
+      
+      
+      </Carcass_Fish_mm_ltt>
+
+      <Terrain_Chum>Chum</Terrain_Chum>
+      <Terrain_Chum_stt>Chum</Terrain_Chum_stt>
+      <Terrain_Chum_lower>the chum</Terrain_Chum_lower>
+      <Terrain_Chum_ltt>
+         <color r="255" g="248" b="178">
+            <b>Chum</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place chum,which consists of chopped fish and fish parts. 
+      
+      
+      </Terrain_Chum_ltt>
+      
+      <Terrain_Clams>Clams</Terrain_Clams>
+      <Terrain_Clams_stt>Clams</Terrain_Clams_stt>
+      <Terrain_Clams_lower>the clams</Terrain_Clams_lower>
+      <Terrain_Clams_ltt>
+         <color r="255" g="248" b="178">
+            <b>Clams</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place clams, a favorite food of some marine animals.
+      
+      
+      </Terrain_Clams_ltt>
+      
+      <Terrain_Jellyfish>Jellyfish</Terrain_Jellyfish>
+      <Terrain_Jellyfish_stt>Jellyfish</Terrain_Jellyfish_stt>
+      <Terrain_Jellyfish_lower>the jellyfish</Terrain_Jellyfish_lower>
+      <Terrain_Jellyfish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Jellyfish</b>
+         </color>
+         <br/>
+         Click to select and then place jellyfish, a popular food with certain sea turtles.
+      
+      
+      </Terrain_Jellyfish_ltt>
+      
+      <Terrain_Plankton>Zooplankton</Terrain_Plankton>
+      <Terrain_Plankton_stt>Zooplankton</Terrain_Plankton_stt>
+      <Terrain_Plankton_lower>the zooplankton</Terrain_Plankton_lower>
+      <Terrain_Plankton_ltt>
+         <color r="255" g="248" b="178">
+            <b>Zooplankton</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place zooplankton, tiny creatures eaten by some marine animals.
+      
+      
+      </Terrain_Plankton_ltt>
+
+      <Terrain_Seaweed>Seaweed</Terrain_Seaweed>
+      <Terrain_Seaweed_stt>Seaweed</Terrain_Seaweed_stt>
+      <Terrain_Seaweed_lower>the seaweed</Terrain_Seaweed_lower>
+      <Terrain_Seaweed_ltt>
+         <color r="255" g="248" b="178">
+            <b>Seaweed</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place seaweed, a popular food with marine herbivores like the manatee.
+      
+      
+      </Terrain_Seaweed_ltt>
+
+      <Terrain_Shellfish>Shellfish</Terrain_Shellfish>
+      <Terrain_Shellfish_stt>Shellfish</Terrain_Shellfish_stt>
+      <Terrain_Shellfish_lower>the shellfish</Terrain_Shellfish_lower>
+      <Terrain_Shellfish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Squid</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place shellfish, a favorite food of certain marine animals.
+      
+      
+      </Terrain_Shellfish_ltt>
+      
+      <Terrain_Squid>Squid</Terrain_Squid>
+      <Terrain_Squid_stt>Squid</Terrain_Squid_stt>
+      <Terrain_Squid_lower>the squid</Terrain_Squid_lower>
+      <Terrain_Squid_ltt>
+         <color r="255" g="248" b="178">
+            <b>Squid</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place squid, a favorite food of certain marine animals.
+      
+      
+      </Terrain_Squid_ltt>
+      
+      <BuoyLure_Jellyfish>Lure Buoy with Jellyfish</BuoyLure_Jellyfish>
+      <BuoyLure_Jellyfish_stt>Lure buoy with jellyfish</BuoyLure_Jellyfish_stt>
+      <BuoyLure_Jellyfish_lower>the lure buoy with jellyfish</BuoyLure_Jellyfish_lower>
+      <BuoyLure_Jellyfish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Lure Buoy with Jellyfish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a lure buoy with jellyfish, which some marine animals eat.
+      
+      
+      </BuoyLure_Jellyfish_ltt>
+      
+      <BuoyLure_Plankton>Lure Buoy with Zooplankton</BuoyLure_Plankton>
+      <BuoyLure_Plankton_stt>Lure buoy with zooplankton</BuoyLure_Plankton_stt>
+      <BuoyLure_Plankton_lower>the lure buoy with zooplankton</BuoyLure_Plankton_lower>
+      <BuoyLure_Plankton_ltt>
+         <color r="255" g="248" b="178">
+            <b>Lure Buoy with zooplankton</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a lure buoy with zooplankton, which filter-feeding marine animals eat.
+      
+      
+      </BuoyLure_Plankton_ltt>
+      
+      <BuoyLure_Fish>Lure Buoy with Fish</BuoyLure_Fish>
+      <BuoyLure_Fish_stt>Lure buoy with fish</BuoyLure_Fish_stt>
+      <BuoyLure_Fish_lower>the lure buoy with fish</BuoyLure_Fish_lower>
+      <BuoyLure_Fish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Lure Buoy with Fish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a lure buoy with fish, which filter-feeding marine animals eat.
+      
+      
+      </BuoyLure_Fish_ltt>
+      
+      <BuoyLure_Squid>Lure Buoy with Squid</BuoyLure_Squid>
+      <BuoyLure_Squid_stt>Lure buoy with squid</BuoyLure_Squid_stt>
+      <BuoyLure_Squid_lower>the lure buoy with squid</BuoyLure_Squid_lower>
+      <BuoyLure_Squid_ltt>
+         <color r="255" g="248" b="178">
+            <b>Lure Buoy with Squid</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a lure buoy with squid, which some marine animals eat.
+      
+      
+      </BuoyLure_Squid_ltt>
+      
+      <BuoyNet_Chum>Net Buoy with Chum</BuoyNet_Chum>
+      <BuoyNet_Chum_stt>Net buoy with chum</BuoyNet_Chum_stt>
+      <BuoyNet_Chum_lower>the net buoy with chum</BuoyNet_Chum_lower>
+      <BuoyNet_Chum_ltt>
+         <color r="255" g="248" b="178">
+            <b>Net Buoy with Chum</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a net buoy with chum, which certain marine carnivores eat.
+      
+      
+      </BuoyNet_Chum_ltt>  
+      
+      <BuoyNet_Shellfish>Net Buoy with Shellfish</BuoyNet_Shellfish>
+      <BuoyNet_Shellfish_stt>Net buoy with shellfish</BuoyNet_Shellfish_stt>
+      <BuoyNet_Shellfish_lower>the net buoy with shellfish</BuoyNet_Shellfish_lower>
+      <BuoyNet_Shellfish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Net Buoy with Shellfish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a net buoy with shellfish, which some marine animals eat.
+      
+      
+      </BuoyNet_Shellfish_ltt> 
+      
+      <FoodBox_Plankton>Food Box with Zooplankton</FoodBox_Plankton>
+      <FoodBox_Plankton_stt>Food box with zooplankton</FoodBox_Plankton_stt>
+      <FoodBox_Plankton_lower>the food box with zooplankton</FoodBox_Plankton_lower>
+      <FoodBox_Plankton_ltt>
+         <color r="255" g="248" b="178">
+            <b>Food Box with Zooplankton</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a food box with zooplankton, which filter-feeding marine animals eat.
+      
+      
+      </FoodBox_Plankton_ltt>
+      
+      <FoodBox_Squid>Food Box with Squid</FoodBox_Squid>
+      <FoodBox_Squid_stt>Food box with squid</FoodBox_Squid_stt>
+      <FoodBox_Squid_lower>the food box with squid</FoodBox_Squid_lower>
+      <FoodBox_Squid_ltt>
+         <color r="255" g="248" b="178">
+            <b>Food Box with Squid</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a food box with squid, which some marine animals eat.
+      
+      
+      </FoodBox_Squid_ltt>
+      
+      <FoodBox_Seaweed>Food Box with Seaweed</FoodBox_Seaweed>
+      <FoodBox_Seaweed_stt>Food box with seaweed</FoodBox_Seaweed_stt>
+      <FoodBox_Seaweed_lower>the food box with seaweed</FoodBox_Seaweed_lower>
+      <FoodBox_Seaweed_ltt>
+         <color r="255" g="248" b="178">
+            <b>Food Box with Seaweed</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a food box with seaweed, which some marine animals eat.
+      
+      
+      </FoodBox_Seaweed_ltt>
+      
+      <FoodBox_Chum>Food Box with Chum</FoodBox_Chum>
+      <FoodBox_Chum_stt>Food box with chum</FoodBox_Chum_stt>
+      <FoodBox_Chum_lower>the food box with chum</FoodBox_Chum_lower>
+      <FoodBox_Chum_ltt>
+         <color r="255" g="248" b="178">
+            <b>Food Box with Chum</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a food box with chum, which some marine carnivores eat.
+      
+      
+      </FoodBox_Chum_ltt>
+      
+      <FoodBox_Fish>Food Box with Fish</FoodBox_Fish>
+      <FoodBox_Fish_stt>Food box with fish</FoodBox_Fish_stt>
+      <FoodBox_Fish_lower>the food box with fish</FoodBox_Fish_lower>
+      <FoodBox_Fish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Food Box with Fish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a food box with fish, which marine carnivores eat.
+      
+      
+      </FoodBox_Fish_ltt>  
+      
+      <ArtificialReef_Squid>Artificial Reef with Squid</ArtificialReef_Squid>
+      <ArtificialReef_Squid_stt>Artificial reef with squid</ArtificialReef_Squid_stt>
+      <ArtificialReef_Squid_lower>the artificial reef with squid</ArtificialReef_Squid_lower>
+      <ArtificialReef_Squid_ltt>
+         <color r="255" g="248" b="178">
+            <b>Artificial Reef with Squid</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an artificial reef with squid, which some marine animals eat.
+      
+      
+      </ArtificialReef_Squid_ltt>
+      <ArtificialReef_Jellyfish>Artificial Reef with Jellyfish</ArtificialReef_Jellyfish>
+      <ArtificialReef_Jellyfish_stt>Artificial Reef with Jellyfish</ArtificialReef_Jellyfish_stt>
+      <ArtificialReef_Jellyfish_lower>the artificial reef with jellyfish</ArtificialReef_Jellyfish_lower>
+      <ArtificialReef_Jellyfish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Artificial Reef with Jellyfish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an artificial reef with jellyfish, which some marine animals eat.
+      
+      
+      </ArtificialReef_Jellyfish_ltt>
+      
+      <ArtificialReef_Plankton>Artificial Reef with Zooplankton</ArtificialReef_Plankton>
+      <ArtificialReef_Plankton_stt>Artificial reef with zooplankton</ArtificialReef_Plankton_stt>
+      <ArtificialReef_Plankton_lower>the artificial reef with zooplankton</ArtificialReef_Plankton_lower>
+      <ArtificialReef_Plankton_ltt>
+         <color r="255" g="248" b="178">
+            <b>Artificial Reef with Zooplankton</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an artificial reef with zooplankton, which filter-feeding marine animals eat.
+      
+      
+      </ArtificialReef_Plankton_ltt>
+      
+      <ArtificialReef_Shellfish>Artificial Reef with Shellfish</ArtificialReef_Shellfish>
+      <ArtificialReef_Shellfish_stt>Artificial reef with shellfish</ArtificialReef_Shellfish_stt>
+      <ArtificialReef_Shellfish_lower>the artificial reef with shellfish</ArtificialReef_Shellfish_lower>
+      <ArtificialReef_Shellfish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Artificial Reef with Shellfish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an artificial reef with shellfish, which some marine animals eat.
+      
+      
+      </ArtificialReef_Shellfish_ltt> 
+      
+      <ArtificialReef_Fish>Artificial Reef with Fish</ArtificialReef_Fish>
+      <ArtificialReef_Fish_stt>Artificial reef with fish</ArtificialReef_Fish_stt>
+      <ArtificialReef_Fish_lower>the artificial reef with fish</ArtificialReef_Fish_lower>
+      <ArtificialReef_Fish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Artificial Reef with Fish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an artificial reef with fish, which marine carnivores eat.
+      
+      
+      </ArtificialReef_Fish_ltt>  
+      
+      <SubstratePile_Seaweed>Substrate Pile with Seaweed</SubstratePile_Seaweed>
+      <SubstratePile_Seaweed_stt>Substrate pile with seaweed</SubstratePile_Seaweed_stt>
+      <SubstratePile_Seaweed_lower>the substrate pile</SubstratePile_Seaweed_lower>
+      <SubstratePile_Seaweed_ltt>
+         <color r="255" g="248" b="178">
+            <b>Substrate Pile with Seaweed</b>
+         </color>
+         <br/>
+         
+         Click to select and then place a pile of gravel, shells, and other materials mixed with seaweed.
+      
+      
+      </SubstratePile_Seaweed_ltt>
+      
+      <SubstratePile_Shellfish>Substrate Pile with Shellfish</SubstratePile_Shellfish>
+      <SubstratePile_Shellfish_stt>Substrate pile with shellfish</SubstratePile_Shellfish_stt>
+      <SubstratePile_Shellfish_lower>the substrate pile</SubstratePile_Shellfish_lower>
+      <SubstratePile_Shellfish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Substrate Pile with Shellfish</b>
+         </color>
+         <br/>
+         
+         Click to select and then place a pile of shredded gravel, shells, and other materials mixed with shellfish.
+      
+      
+      </SubstratePile_Shellfish_ltt>  
+      
+      <!--staff-->
+      
+      <Trainer>Trainer</Trainer>
+      <Trainer_stt>Trainer</Trainer_stt>
+      <Trainer_lower>the trainer</Trainer_lower>
+      <Trainer_ltt>
+         <color r="255" g="248" b="178">
+            <b>Trainer</b>
+         </color>
+         <br/>
+         
+         
+          Click to hire the trainer. Trainers teach show animals how to perform tricks in shows. Show animals are designated by a star on their icon.
+      
+      
+      </Trainer_ltt>
+      
+      <!--buildings-->
+      
+      <sharkphotobooth_mm>Shark Photo Booth</sharkphotobooth_mm>
+      <sharkphotobooth_mm_stt>Shark photo booth</sharkphotobooth_mm_stt>
+      <sharkphotobooth_mm_lower>the shark photo booth</sharkphotobooth_mm_lower>
+      <sharkphotobooth_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Shark Photo Booth</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a shark photo booth, where guests will pay to have a souvenir zoo photo taken.
+      
+      
+      </sharkphotobooth_mm_ltt>
+      <touchpool_mm>Touch Pool</touchpool_mm>
+      <touchpool_mm_stt>Touch Pool</touchpool_mm_stt>
+      <touchpool_mm_lower>the touch pool</touchpool_mm_lower>
+      <touchpool_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Touch Pool</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a touch pool, a shallow pool where guests can interact with small aquatic animals.
+      
+      
+      </touchpool_mm_ltt>
+      <giftcart_mm>Marine Gift Cart</giftcart_mm>
+      <giftcart_mm_stt>Marine Gift Cart</giftcart_mm_stt>
+      <giftcart_mm_lower>the marine gift cart</giftcart_mm_lower>
+      <giftcart_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Gift Cart</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a marine gift cart, where guests can buy marine animal souvenirs.
+      
+      
+      </giftcart_mm_ltt>
+      <BlueWhaleHall_mm>Blue Whale Hall</BlueWhaleHall_mm>
+      <BlueWhaleHall_mm_stt>Blue Whale Hall</BlueWhaleHall_mm_stt>
+      <BlueWhaleHall_mm_lower>the blue whale hall</BlueWhaleHall_mm_lower>
+      <BlueWhaleHall_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Blue Whale Hall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the blue whale hall, an educational exhibit about the largest animal on earth.
+      
+      
+      </BlueWhaleHall_mm_ltt>
+      <Grandstand_I_mm>Small Grandstand</Grandstand_I_mm>
+      <Grandstand_I_mm_stt>Small grandstand</Grandstand_I_mm_stt>
+      <Grandstand_I_mm_lower>the small grandstand</Grandstand_I_mm_lower>
+      <Grandstand_I_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Small Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the small grandstand, which seats two guests.
+      
+      
+      </Grandstand_I_mm_ltt>
+      <Grandstand_II_mm>Medium Grandstand</Grandstand_II_mm>
+      <Grandstand_II_mm_stt>Medium grandstand</Grandstand_II_mm_stt>
+      <Grandstand_II_mm_lower>the medium grandstand</Grandstand_II_mm_lower>
+      <Grandstand_II_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Medium Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the medium grandstand, which seats four guests.
+      
+      
+      </Grandstand_II_mm_ltt>
+      <Grandstand_III_mm>Large Grandstand</Grandstand_III_mm>
+      <Grandstand_III_mm_stt>Large grandstand</Grandstand_III_mm_stt>
+      <Grandstand_III_mm_lower>the large grandstand</Grandstand_III_mm_lower>
+      <Grandstand_III_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Large Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the large grandstand, ideal seating for animal shows.
+      
+      
+      </Grandstand_III_mm_ltt>
+      <Upgraded_Grandstand_I_mm>Upgraded Small Grandstand</Upgraded_Grandstand_I_mm>
+      <Upgraded_Grandstand_I_mm_stt>Upgraded small grandstand</Upgraded_Grandstand_I_mm_stt>
+      <Upgraded_Grandstand_I_mm_lower>the upgraded grandstand</Upgraded_Grandstand_I_mm_lower>
+      <Upgraded_Grandstand_I_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Upgraded Small Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the upgraded small grandstand, ideal seating for animal shows.
+      
+      
+      </Upgraded_Grandstand_I_mm_ltt>
+      <Upgraded_Grandstand_II_mm>Upgraded Medium Grandstand</Upgraded_Grandstand_II_mm>
+      <Upgraded_Grandstand_II_mm_stt>Upgraded medium grandstand</Upgraded_Grandstand_II_mm_stt>
+      <Upgraded_Grandstand_II_mm_lower>the upgraded medium grandstand</Upgraded_Grandstand_II_mm_lower>
+      <Upgraded_Grandstand_II_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Upgraded Medium Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the upgraded medium grandstand, ideal seating for animal shows.
+      
+      
+      </Upgraded_Grandstand_II_mm_ltt>
+      <Upgraded_Grandstand_III_mm>Upgraded Large Grandstand</Upgraded_Grandstand_III_mm>
+      <Upgraded_Grandstand_III_mm_stt>Upgraded large grandstand</Upgraded_Grandstand_III_mm_stt>
+      <Upgraded_Grandstand_III_mm_lower>the upgraded large grandstand</Upgraded_Grandstand_III_mm_lower>
+      <Upgraded_Grandstand_III_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Upgraded Large Grandstand</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the upgraded large grandstand, ideal seating for animal shows.
+      
+      
+      </Upgraded_Grandstand_III_mm_ltt>      
+      <Water_Filter>Water Filter</Water_Filter>
+      <Water_Filter_stt>Water Filter</Water_Filter_stt>
+      <Water_Filter_lower>the water filter</Water_Filter_lower>
+      <Water_Filter_ltt>
+         <color r="255" g="248" b="178">
+            <b>Water Filter</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the water filter. The water filter cleans the water in tanks.
+      
+      
+      </Water_Filter_ltt>
+      
+      <!--enrichment-->
+      
+      <IceBlock_Clams>Block of Ice with Clams</IceBlock_Clams>
+      <IceBlock_Clams_stt>Block of ice with clams</IceBlock_Clams_stt>
+      <IceBlock_Clams_lower>the block of ice with clams</IceBlock_Clams_lower>
+      <IceBlock_Clams_ltt>
+         <color r="255" g="248" b="178">
+            <b>Block of Ice with Clams</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the block of ice with clams. Some animals that eat clams will enjoy this frozen treat.
+      
+      
+      </IceBlock_Clams_ltt>
+      <SealPreyDummy>Seal Prey Dummy</SealPreyDummy>
+      <SealPreyDummy_stt>Seal prey dummy</SealPreyDummy_stt>
+      <SealPreyDummy_lower>the seal prey dummy</SealPreyDummy_lower>
+      <SealPreyDummy_ltt>
+         <color r="255" g="248" b="178">
+            <b>Seal Prey Dummy</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a seal prey dummy. This artificial seal look-alike will provide hours of entertainment for aggressive marine animals.
+      
+      
+      </SealPreyDummy_ltt>
+      <LargeBall_mm>Large Ball</LargeBall_mm>
+      <LargeBall_mm_stt>Large ball</LargeBall_mm_stt>
+      <LargeBall_mm_lower>the large ball</LargeBall_mm_lower>
+      <LargeBall_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Large Ball</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the large ball. This ball is useful in marine animal shows.
+      
+      
+      </LargeBall_mm_ltt>
+      <SmallBall_mm>Small Ball</SmallBall_mm>
+      <SmallBall_mm_stt>Small ball</SmallBall_mm_stt>
+      <SmallBall_mm_lower>the small ball</SmallBall_mm_lower>
+      <SmallBall_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Small Ball</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the small ball. This ball is useful in marine animal shows.
+      
+      
+      </SmallBall_mm_ltt>
+      <SealBall>Small Ball</SealBall>
+      <SealBall_stt>Small ball</SealBall_stt>
+      <SealBall_lower>the small ball</SealBall_lower>
+      <SealBall_ltt>
+         <color r="255" g="248" b="178">
+            <b>Small Ball</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the small ball. This ball is useful in marine animal shows.
+      
+      
+      </SealBall_ltt> 
+      <SealBall_Male>Sea Lion Ball</SealBall_Male>
+      <SealBall_Male_stt>Sea Lion Ball</SealBall_Male_stt>
+      <SealBall_Male_lower>the sea lion ball</SealBall_Male_lower>
+      <SealBall_Male_ltt>
+         <color r="255" g="248" b="178">
+            <b>Sea Lion Ball</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the sea lion ball. This ball on a trick platform is useful in sea lion shows.
+      
+      
+      </SealBall_Male_ltt> 
+      <JarWithFish>Jar with Fish</JarWithFish>
+      <JarWithFish_stt>Jar with fish</JarWithFish_stt>
+      <JarWithFish_lower>the jar with fish</JarWithFish_lower>
+      <JarWithFish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Jar with Fish</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the jar with fish, which sea lions enjoy.
+      
+      
+      </JarWithFish_ltt> 
+    
+      <TetherBall_mm>Tether Ball Buoy</TetherBall_mm>
+      <TetherBall_mm_stt>Tether ball buoy</TetherBall_mm_stt>
+      <TetherBall_mm_lower>the tether ball buoy</TetherBall_mm_lower>
+      <TetherBall_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tether Ball Buoy</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the tether ball buoy, which various marine animals like to use.
+      
+      
+      </TetherBall_mm_ltt>  
+      
+      <BubbleEmitter>Clam Bubbler</BubbleEmitter>
+      <BubbleEmitter_stt>Clam bubbler</BubbleEmitter_stt>
+      <BubbleEmitter_lower>the clam bubbler</BubbleEmitter_lower>
+      <BubbleEmitter_ltt>
+         <color r="255" g="248" b="178">
+            <b>Clam Bubbler</b>
+         </color>
+         <br/>
+         Click to select and then place the clam bubbler. Marine animals such as the manta ray enjoy swimming in the bubbles.     
+      </BubbleEmitter_ltt>
+      <Koi>Koi</Koi>
+      <Koi_stt>Koi</Koi_stt>
+      <Koi_lower>the koi</Koi_lower>
+      <Koi_ltt>
+         <color r="255" g="248" b="178">
+            <b>Koi</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the koi, a decorative addition to any pond or tank.
+      
+      
+      </Koi_ltt>    
+      
+      <TunaYellowfin>Yellowfin Tuna</TunaYellowfin>
+      <TunaYellowfin_stt>Yellowfin tuna</TunaYellowfin_stt>
+      <TunaYellowfin_lower>the yellowfin tuna</TunaYellowfin_lower>
+      <TunaYellowfin_ltt>
+         <color r="255" g="248" b="178">
+            <b>Yellowfin Tuna</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the yellowfin tuna, a form of live food used as an enrichment item.
+      
+      
+      </TunaYellowfin_ltt>    
+      
+      <CodArctic>Arctic Cod</CodArctic>
+      <CodArctic_stt>Arctic cod</CodArctic_stt>
+      <CodArctic_lower>the arctic cod</CodArctic_lower>
+      <CodArctic_ltt>
+         <color r="255" g="248" b="178">
+            <b>Arctic Cod</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the arctic cod, a form of live food used as an enrichment item.
+      
+      
+      </CodArctic_ltt>    
+
+		<!---- shelters -------->
+
+      <KelpBed>Kelp Bed</KelpBed>
+      <KelpBed_stt>Kelp bed</KelpBed_stt>
+      <KelpBed_lower>the kelp bed</KelpBed_lower>
+      <KelpBed_ltt>
+         <color r="255" g="248" b="178">
+            <b>Kelp Bed</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the kelp bed, which sea otters use as a resting place.
+      
+      
+      </KelpBed_ltt>
+
+      <RockIsland_Shelter>Rock Island</RockIsland_Shelter>
+      <RockIsland_Shelter_stt>Rock island</RockIsland_Shelter_stt>
+      <RockIsland_Shelter_lower>the rock island</RockIsland_Shelter_lower>
+      <RockIsland_Shelter_ltt>
+         <color r="255" g="248" b="178">
+            <b>Rock Island</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the rock island, an artificial floating island that certain marine animals can use.
+      
+      
+      </RockIsland_Shelter_ltt>
+
+      <DesertIsland_Shelter>Desert Island</DesertIsland_Shelter>
+      <DesertIsland_Shelter_stt>Desert island</DesertIsland_Shelter_stt>
+      <DesertIsland_Shelter_lower>the desert island</DesertIsland_Shelter_lower>
+      <DesertIsland_Shelter_ltt>
+         <color r="255" g="248" b="178">
+            <b>Desert Island</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the desert island, an artificial floating island that certain marine animals can use.
+      
+      
+      </DesertIsland_Shelter_ltt>
+      
+      <!--fences and tank walls-->
+      
+      <marinefence_low_mm>Low Marine Fence</marinefence_low_mm>
+      <marinefence_low_mm_stt>Low marine fence</marinefence_low_mm_stt>
+      <marinefence_low_mm_lower>the low marine fence</marinefence_low_mm_lower>
+      <marinefence_low_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Low Marine Fence</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a low marine fence.
+      
+      
+      </marinefence_low_mm_ltt>
+      <marinefence_high_mm>High Marine Fence</marinefence_high_mm>
+      <marinefence_high_mm_stt>High marine fence</marinefence_high_mm_stt>
+      <marinefence_high_mm_lower>the high marine fence</marinefence_high_mm_lower>
+      <marinefence_high_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>High Marine Fence</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a high marine fence.
+      
+      
+      </marinefence_high_mm_ltt>
+      
+      <marinefence_window_mm>Marine Window Fence</marinefence_window_mm>
+      <marinefence_window_mm_stt>Marine window fence</marinefence_window_mm_stt>
+      <marinefence_window_mm_lower>the marine window fence</marinefence_window_mm_lower>
+      <marinefence_window_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Window Marine Fence</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a marine window fence.
+      
+      
+      </marinefence_window_mm_ltt>
+
+      <showfence_mm>Show Fence</showfence_mm>
+      <showfence_mm_stt>Show fence</showfence_mm_stt>
+      <showfence_mm_lower>the show fence</showfence_mm_lower>
+      <showfence_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Show Fence</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a show fence, an attractive way to enclose show areas.
+      
+      
+      </showfence_mm_ltt>
+      
+      <tankwallseg_mm>Acrylic Tank Wall</tankwallseg_mm>
+      <tankwallseg_mm_stt>Acrylic tank wall</tankwallseg_mm_stt>
+      <tankwallseg_mm_lower>the acrylic tank wall</tankwallseg_mm_lower>
+      <tankwallseg_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Acrylic Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an acrylic tank wall.
+      
+      
+      </tankwallseg_mm_ltt>
+      <tankseg_opaque_mm>Opaque Tank Wall</tankseg_opaque_mm>
+      <tankseg_opaque_mm_stt>Opaque tank wall</tankseg_opaque_mm_stt>
+      <tankseg_opaque_mm_lower>the opaque tank wall</tankseg_opaque_mm_lower>
+      <tankseg_opaque_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Opaque Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a opaque tank wall, which can be used to contain aquatic animals.
+      
+      
+      </tankseg_opaque_mm_ltt>      
+      <themedtankseg_show>Marine Show Tank Wall</themedtankseg_show>
+      <themedtankseg_show_stt>Marine Show tank wall</themedtankseg_show_stt>
+      <themedtankseg_show_lower>the marine show tank wall</themedtankseg_show_lower>
+      <themedtankseg_show_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Show Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a marine show tank wall, which can be used to contain aquatic animals.
+      
+      
+      </themedtankseg_show_ltt>
+      
+      <themedtankseg_opaque_show>Opaque Marine Show Tank Wall</themedtankseg_opaque_show>
+      <themedtankseg_opaque_show_stt>Opaque marine show tank wall</themedtankseg_opaque_show_stt>
+      <themedtankseg_opaque_show_lower>the opaque marine show tank wall</themedtankseg_opaque_show_lower>
+      <themedtankseg_opaque_show_ltt>
+         <color r="255" g="248" b="178">
+            <b>Opaque Marine Show Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a opaque marine show tank wall, which can be used to contain aquatic animals.
+      
+      
+      </themedtankseg_opaque_show_ltt>
+
+      <themedtankseg_mm>Marine Themed Tank Wall</themedtankseg_mm>
+      <themedtankseg_mm_stt>Marine themed tank wall</themedtankseg_mm_stt>
+      <themedtankseg_mm_lower>the marine themed tank wall</themedtankseg_mm_lower>
+      <themedtankseg_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Themed Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a marine themed tank wall, which can be used to contain aquatic animals.
+      
+      
+      </themedtankseg_mm_ltt>
+      
+      <themedtankseg_opaque_mm>Opaque Marine Themed Tank Wall</themedtankseg_opaque_mm>
+      <themedtankseg_opaque_mm_stt>Opaque marine themed tank wall</themedtankseg_opaque_mm_stt>
+      <themedtankseg_opaque_mm_lower>the opaque marine themed tank wall</themedtankseg_opaque_mm_lower>
+      <themedtankseg_opaque_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Opaque Marine Themed Tank Wall</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a opaque marine themed tank wall, which can be used to contain aquatic animals.
+      
+      
+      </themedtankseg_opaque_mm_ltt>      
+      <tankuigate>Tank Entrance</tankuigate>
+      <tankuigate_stt>Tank entrance</tankuigate_stt>
+      <tankuigate_lower>the tank entrance</tankuigate_lower>
+      <tankuigate_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tank Entrance</b>
+         </color>
+         <br/>
+         
+          Click to select and then place a tank entrance, which gives member of your zoo staff a way to enter aquatic animal exhibits.
+      
+      </tankuigate_ltt>
+
+      <tankuiportal>Tank Portal</tankuiportal>
+      <tankuiportal_stt>Tank portal</tankuiportal_stt>
+      <tankuiportal_lower>the tank portal</tankuiportal_lower>
+      <tankuiportal_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tank Portal</b>
+         </color>
+         <br/>
+
+         Click to select and then place a tank portal, which is an opening between a show tank and an adjacent exhibit tank.
+
+      </tankuiportal_ltt>
+
+      <tankseg_portal_mm>Acrylic Tank Wall with Portal</tankseg_portal_mm>
+      <tankseg_portal_mm_stt>Acrylic tank wall with portal</tankseg_portal_mm_stt>
+      <tankseg_portal_mm_lower>the acrylic tank wall with portal</tankseg_portal_mm_lower>
+      <tankseg_portal_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Acrylic Tank Wall with Portal</b>
+         </color>
+         <br/>
+
+
+         Click to select and then place an acrylic tank wall with portal.
+
+
+      </tankseg_portal_mm_ltt>
+
+      <!--foliage-->
+      
+      <FireCoral_Reef>Fire Coral</FireCoral_Reef>
+      <FireCoral_Reef_stt>Fire coral</FireCoral_Reef_stt>
+      <FireCoral_Reef_lower>the fire coral</FireCoral_Reef_lower>
+      <FireCoral_Reef_ltt>
+         <color r="255" g="248" b="178">
+            <b>Fire Coral</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a fire coral, a coral-like cnidarian with nematocysts like a jellyfish.
+      
+      
+      </FireCoral_Reef_ltt>
+      
+      <MyriadFeatherStar_Reef>Feather Star</MyriadFeatherStar_Reef>
+      <MyriadFeatherStar_Reef_stt>Feather star</MyriadFeatherStar_Reef_stt>
+      <MyriadFeatherStar_Reef_lower>the feather star</MyriadFeatherStar_Reef_lower>
+      <MyriadFeatherStar_Reef_ltt>
+         <color r="255" g="248" b="178">
+            <b>Feather Star</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a feather star, a nocturnal echinoderm.
+      
+      
+      </MyriadFeatherStar_Reef_ltt>
+      
+      <Phaeophyta_Coastal>Phaeophyta</Phaeophyta_Coastal>
+      <Phaeophyta_Coastal_stt>Phaeophyta</Phaeophyta_Coastal_stt>
+      <Phaeophyta_Coastal_lower>the phaeophyta</Phaeophyta_Coastal_lower>
+      <Phaeophyta_Coastal_ltt>
+         <color r="255" g="248" b="178">
+            <b>Phaeophyta</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a phaeophyta, a type of brown algae.
+      
+      
+      </Phaeophyta_Coastal_ltt>
+      
+      <AnemoneGiantGreen_Coastal>Giant Green Anemone</AnemoneGiantGreen_Coastal>
+      <AnemoneGiantGreen_Coastal_stt>Giant green anemone</AnemoneGiantGreen_Coastal_stt>
+      <AnemoneGiantGreen_Coastal_lower>the giant green anemone</AnemoneGiantGreen_Coastal_lower>
+      <AnemoneGiantGreen_Coastal_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Green Anemone</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a giant green anemone, a filter-feeding marine animal.
+      
+      
+      </AnemoneGiantGreen_Coastal_ltt>
+      
+      <TableCoral_Reef>Table Coral</TableCoral_Reef>
+      <TableCoral_Reef_stt>Table coral</TableCoral_Reef_stt>
+      <TableCoral_Reef_lower>the table coral</TableCoral_Reef_lower>
+      <TableCoral_Reef_ltt>
+         <color r="255" g="248" b="178">
+            <b>Table Coral</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place table coral, a type of coral that grows out wide and flat.
+      
+      
+      </TableCoral_Reef_ltt>
+      
+      <BlueGreenCoral_Reef>Blue Green Coral</BlueGreenCoral_Reef>
+      <BlueGreenCoral_Reef_stt>Blue green coral</BlueGreenCoral_Reef_stt>
+      <BlueGreenCoral_Reef_lower>the blue green coral</BlueGreenCoral_Reef_lower>
+      <BlueGreenCoral_Reef_ltt>
+         <color r="255" g="248" b="178">
+            <b>Blue Green Coral</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a blue green coral, a type of coral found in tropical waters.
+      
+      
+      </BlueGreenCoral_Reef_ltt>
+      
+      <SeaStars_Benthic>Sea Star</SeaStars_Benthic>
+      <SeaStars_Benthic_stt>Sea star</SeaStars_Benthic_stt>
+      <SeaStars_Benthic_lower>the sea star</SeaStars_Benthic_lower>
+      <SeaStars_Benthic_ltt>
+         <color r="255" g="248" b="178">
+            <b>Sea Stars</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a sea star, a small star-shaped echinoderm.
+      
+      
+      </SeaStars_Benthic_ltt>
+      
+      <SeaFan_Coastal>Sea Fan</SeaFan_Coastal>
+      <SeaFan_Coastal_stt>Sea fan</SeaFan_Coastal_stt>
+      <SeaFan_Coastal_lower>the sea fan</SeaFan_Coastal_lower>
+      <SeaFan_Coastal_ltt>
+         <color r="255" g="248" b="178">
+            <b>Sea Fan</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a sea fan, a fan-shaped coral colony.
+      
+      
+      </SeaFan_Coastal_ltt>
+      
+      <KelpForest_Coastal>Kelp Forest</KelpForest_Coastal>
+      <KelpForest_Coastal_stt>Kelp forest</KelpForest_Coastal_stt>
+      <KelpForest_Coastal_lower>the kelp forest</KelpForest_Coastal_lower>
+      <KelpForest_Coastal_ltt>
+         <color r="255" g="248" b="178">
+            <b>Kelp Forest</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a kelp forest, a collection of tall algae.
+      
+      
+      </KelpForest_Coastal_ltt>
+      
+      <TussacGrass_Coastal>Tussac Grass</TussacGrass_Coastal>
+      <TussacGrass_Coastal_stt>Tussac grass</TussacGrass_Coastal_stt>
+      <TussacGrass_Coastal_lower>the tussac grass</TussacGrass_Coastal_lower>
+      <TussacGrass_Coastal_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tussac Grass</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place tussac grass, a long coastal grass.
+      
+      
+      </TussacGrass_Coastal_ltt> 
+      
+      <PlateCoral_Reef>Plate Coral</PlateCoral_Reef>
+      <PlateCoral_Reef_stt>Plate coral</PlateCoral_Reef_stt>
+      <PlateCoral_Reef_lower>the plate coral</PlateCoral_Reef_lower>
+      <PlateCoral_Reef_ltt>
+         <color r="255" g="248" b="178">
+            <b>Plate Coral</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a plate coral, a type of coral with tendril-like polyps.
+      
+      
+      </PlateCoral_Reef_ltt>
+      
+      <GiantBarrelSponge_Reef>Giant Barrel Sponge</GiantBarrelSponge_Reef>
+      <GiantBarrelSponge_Reef_stt>Giant barrel sponge</GiantBarrelSponge_Reef_stt>
+      <GiantBarrelSponge_Reef_lower>the giant barrel sponge</GiantBarrelSponge_Reef_lower>
+      <GiantBarrelSponge_Reef_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Barrel Sponge</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a giant barrel sponge, a large barrel-shaped sponge found in tropical waters.
+      
+      
+      </GiantBarrelSponge_Reef_ltt>
+      
+      <!--Rocks-->
+      
+      <Rock_Benthic_Large>Large Benthic Rock</Rock_Benthic_Large>
+      <Rock_Benthic_Large_stt>Large benthic rock</Rock_Benthic_Large_stt>
+      <Rock_Benthic_Large_lower>the large benthic rock</Rock_Benthic_Large_lower>
+      <Rock_Benthic_Large_ltt>
+         <color r="255" g="248" b="178">
+            <b>Large Benthic Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a large benthic rock, which is appropriate for benthic biome-based exhibits.
+      
+      
+      
+      
+      </Rock_Benthic_Large_ltt>
+      
+      <Rock_Benthic_Medium>Medium Benthic Rock</Rock_Benthic_Medium>
+      <Rock_Benthic_Medium_stt>Medium benthic rock</Rock_Benthic_Medium_stt>
+      <Rock_Benthic_Medium_lower>the medium benthic rock</Rock_Benthic_Medium_lower>
+      <Rock_Benthic_Medium_ltt>
+         <color r="255" g="248" b="178">
+            <b>Medium Benthic Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a medium benthic rock, which is appropriate for benthic biome-based exhibits.
+      
+      
+      
+      
+      </Rock_Benthic_Medium_ltt>
+      
+      <Rock_Benthic_Small>Small Benthic Rock</Rock_Benthic_Small>
+      <Rock_Benthic_Small_stt>Small benthic rock</Rock_Benthic_Small_stt>
+      <Rock_Benthic_Small_lower>the small benthic rock</Rock_Benthic_Small_lower>
+      <Rock_Benthic_Small_ltt>
+         <color r="255" g="248" b="178">
+            <b>Small Benthic Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a small benthic rock, which is appropriate for benthic biome-based exhibits.
+      
+      
+      
+      
+      </Rock_Benthic_Small_ltt>  
+      
+      <Rock_Reef_Large>Large Reef Rock</Rock_Reef_Large>
+      <Rock_Reef_Large_stt>Large reef rock</Rock_Reef_Large_stt>
+      <Rock_Reef_Large_lower>the large reef rock</Rock_Reef_Large_lower>
+      <Rock_Reef_Large_ltt>
+         <color r="255" g="248" b="178">
+            <b>Large Reef Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a large reef rock, which is appropriate for reef biome-based exhibits.
+      
+      
+      
+      
+      </Rock_Reef_Large_ltt>
+      
+      <Rock_Reef_Medium>Medium Reef Rock</Rock_Reef_Medium>
+      <Rock_Reef_Medium_stt>Medium reef rock</Rock_Reef_Medium_stt>
+      <Rock_Reef_Medium_lower>the medium reef rock</Rock_Reef_Medium_lower>
+      <Rock_Reef_Medium_ltt>
+         <color r="255" g="248" b="178">
+            <b>Medium Reef Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a medium reef rock, which is appropriate for reef biome-based exhibits.
+      
+      
+      
+      
+      </Rock_Reef_Medium_ltt>
+      
+      <Rock_Reef_Small>Small Reef Rock</Rock_Reef_Small>
+      <Rock_Reef_Small_stt>Small reef rock</Rock_Reef_Small_stt>
+      <Rock_Reef_Small_lower>the small reef rock</Rock_Reef_Small_lower>
+      <Rock_Reef_Small_ltt>
+         <color r="255" g="248" b="178">
+            <b>Small Reef Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a small reef rock, which is appropriate for reef biome-based exhibits.
+      
+      
+      
+      
+      </Rock_Reef_Small_ltt>  
+      
+      <Rock_Coastal_Large>Large Coastal Rock</Rock_Coastal_Large>
+      <Rock_Coastal_Large_stt>Large coastal rock</Rock_Coastal_Large_stt>
+      <Rock_Coastal_Large_lower>the large coastal rock</Rock_Coastal_Large_lower>
+      <Rock_Coastal_Large_ltt>
+         <color r="255" g="248" b="178">
+            <b>Large Coastal Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a large coastal rock, which is appropriate for coastal biome-based exhibits.
+      
+      
+      
+      
+      </Rock_Coastal_Large_ltt>
+      
+      <Rock_Coastal_Medium>Medium Coastal Rock</Rock_Coastal_Medium>
+      <Rock_Coastal_Medium_stt>Medium coastal rock</Rock_Coastal_Medium_stt>
+      <Rock_Coastal_Medium_lower>the medium coastal rock</Rock_Coastal_Medium_lower>
+      <Rock_Coastal_Medium_ltt>
+         <color r="255" g="248" b="178">
+            <b>Medium Coastal Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a medium coastal rock, which is appropriate for coastal biome-based exhibits.
+      
+      
+      
+      
+      </Rock_Coastal_Medium_ltt>
+      
+      <Rock_Coastal_Small>Small Coastal Rock</Rock_Coastal_Small>
+      <Rock_Coastal_Small_stt>Small coastal rock</Rock_Coastal_Small_stt>
+      <Rock_Coastal_Small_lower>the small coastal rock</Rock_Coastal_Small_lower>
+      <Rock_Coastal_Small_ltt>
+         <color r="255" g="248" b="178">
+            <b>Small Coastal Rock</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a small coastal rock, which is appropriate for coastal biome-based exhibits.
+      
+      
+      
+      
+      </Rock_Coastal_Small_ltt>
+      
+      <!--scenery-->
+
+      <DonationBox_pt>Pirate Donation Box</DonationBox_pt>
+      <DonationBox_pt_stt>Pirate donation box</DonationBox_pt_stt>
+      <DonationBox_pt_lower>the pirate donation box</DonationBox_pt_lower>
+      <DonationBox_pt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Pirate Donation Box</b>
+         </color>
+         <br/>
+         Click to select and then place a donation box with an pirate theme. Guests won't donate money if they can't find a donation box, so place them all over your zoo.
+      </DonationBox_pt_ltt>
+
+      <PirateShip>Pirate Ship</PirateShip>
+      <PirateShip_stt>Pirate ship</PirateShip_stt>
+      <PirateShip_lower>the pirate ship</PirateShip_lower>
+      <PirateShip_ltt>
+         <color r="255" g="248" b="178">
+            <b>Pirate Ship</b>
+         </color>
+         <br/>
+         Click to select and then place a pirate ship, a decoration that can be used in water or on land.
+      </PirateShip_ltt>
+      
+      <PirateMast>Pirate Mast</PirateMast>
+      <PirateMast_stt>Pirate mast</PirateMast_stt>
+      <PirateMast_lower>the pirate mast</PirateMast_lower>
+      <PirateMast_ltt>
+         <color r="255" g="248" b="178">
+            <b>Pirate Mast</b>
+         </color>
+         <br/>
+         Click to select and then place a pirate mast, a decoration that can be used in water or on land.
+      </PirateMast_ltt>
+
+      <TreasureChest>Treasure Chest Bubbler</TreasureChest>
+      <TreasureChest_stt>Treasure chest bubbler</TreasureChest_stt>
+      <TreasureChest_lower>the treasure chest bubbler</TreasureChest_lower>
+      <TreasureChest_ltt>
+         <color r="255" g="248" b="178">
+            <b>Treasure Chest Bubbler</b>
+         </color>
+         <br/>
+         Click to select and then place a treasure chest bubbler, which can be used as decoration either on land or in water.
+      </TreasureChest_ltt>
+      
+      <BouncyRide_SeaHorse_mm>Sea Horse Bouncy Ride</BouncyRide_SeaHorse_mm>
+      <BouncyRide_SeaHorse_mm_stt>Sea horse bouncy ride</BouncyRide_SeaHorse_mm_stt>
+      <BouncyRide_SeaHorse_mm_lower>the sea horse bouncy ride</BouncyRide_SeaHorse_mm_lower>
+      <BouncyRide_SeaHorse_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Sea Horse Bouncy Ride</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a sea horse bouncy ride, on which small children can sit and bounce.
+      
+      
+      
+      
+      </BouncyRide_SeaHorse_mm_ltt>
+      <Fountain_mm>Marine Fountain</Fountain_mm>
+      <Fountain_mm_stt>Marine fountain</Fountain_mm_stt>
+      <Fountain_mm_lower>the marine fountain</Fountain_mm_lower>
+      <Fountain_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Fountain</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         Click to select and then place a marine-themed fountain. Guests appreciate the beauty of a well-placed fountain.
+      
+      
+      
+      
+      </Fountain_mm_ltt>
+      <MusicalRock_mm>Marine Music Rock</MusicalRock_mm>
+      <MusicalRock_mm_stt>Marine music rock</MusicalRock_mm_stt>
+      <MusicalRock_mm_lower>the marine music rock</MusicalRock_mm_lower>
+      <MusicalRock_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Music Rock</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a marine-themed music rock, which plays music from speakers hidden inside of it.
+ 
+      
+      
+      </MusicalRock_mm_ltt>     
+      <drinkingfountain_mm>Nautilus Drinking Fountain</drinkingfountain_mm>
+      <drinkingfountain_mm_stt>Nautilus drinking fountain</drinkingfountain_mm_stt>
+      <drinkingfountain_mm_lower>the nautilus drinking fountain</drinkingfountain_mm_lower>
+      <drinkingfountain_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Nautilus Drinking Fountain</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a nautilus drinking fountain for guests to sip from.
+      
+      
+      </drinkingfountain_mm_ltt>
+      
+      <Fountain_Splash_mm>Beluga Splash Fountain</Fountain_Splash_mm>
+      <Fountain_Splash_mm_stt>Beluga splash fountain</Fountain_Splash_mm_stt>
+      <Fountain_Splash_mm_lower>the beluga splash fountain</Fountain_Splash_mm_lower>
+      <Fountain_Splash_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Beluga Splash Fountain</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a beluga splash fountain, a cool, wet source of amusement for children.
+      
+      
+      </Fountain_Splash_mm_ltt>
+      <Gazebo_mm>Lighthouse Gazebo</Gazebo_mm>
+      <Gazebo_mm_stt>Lighthouse gazebo</Gazebo_mm_stt>
+      <Gazebo_mm_lower>the lighthouse gazebo</Gazebo_mm_lower>
+      <Gazebo_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Lighthouse Gazebo</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a lighthouse gazebo, which offers shade and seating for guests.
+      
+      
+      </Gazebo_mm_ltt>
+
+      <Aquarium_Octopus>Aquarium with Octopus</Aquarium_Octopus>
+      <Aquarium_Octopus_stt>Aquarium with octopus</Aquarium_Octopus_stt>
+      <Aquarium_Octopus_lower>the aquarium with octopus</Aquarium_Octopus_lower>
+      <Aquarium_Octopus_ltt>
+         <color r="255" g="248" b="178">
+            <b>Aquarium with Octopus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an aquarium containing a fascinating octopus.
+      
+      
+      </Aquarium_Octopus_ltt>
+
+      <Aquarium_Jellyfish>Aquarium with Jellyfish</Aquarium_Jellyfish>
+      <Aquarium_Jellyfish_stt>Aquarium with jellyfish</Aquarium_Jellyfish_stt>
+      <Aquarium_Jellyfish_lower>the aquarium with jellyfish</Aquarium_Jellyfish_lower>
+      <Aquarium_Jellyfish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Aquarium with Jellyfish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an aquarium containing beautiful jellyfish.
+      
+      
+      </Aquarium_Jellyfish_ltt>
+      
+      <Aquarium_SeaHorse>Aquarium with Sea Horses</Aquarium_SeaHorse>
+      <Aquarium_SeaHorse_stt>Aquarium with sea horses</Aquarium_SeaHorse_stt>
+      <Aquarium_SeaHorse_lower>the aquarium with sea horses</Aquarium_SeaHorse_lower>
+      <Aquarium_SeaHorse_ltt>
+         <color r="255" g="248" b="178">
+            <b>Aquarium with Sea Horses</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an aquarium containing playful sea horses.
+      
+      
+      </Aquarium_SeaHorse_ltt>
+      
+      <Aquarium_TropicalFish>Aquarium with Tropical Fish</Aquarium_TropicalFish>
+      <Aquarium_TropicalFish_stt>Aquarium with tropical fish</Aquarium_TropicalFish_stt>
+      <Aquarium_TropicalFish_lower>the aquarium with tropical fish</Aquarium_TropicalFish_lower>
+      <Aquarium_TropicalFish_ltt>
+         <color r="255" g="248" b="178">
+            <b>Aquarium with Tropical Fish</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an aquarium containing colorful tropical fish.
+      
+      
+      </Aquarium_TropicalFish_ltt>
+      
+      <Statue_mm>Marine Statue</Statue_mm>
+      <Statue_mm_stt>Marine statue</Statue_mm_stt>
+      <Statue_mm_lower>the marine statue</Statue_mm_lower>
+      <Statue_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Statue</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the marine statue, which portrays a family of frisky sea otters.
+      
+      
+      </Statue_mm_ltt> 
+
+      <Statue_Training_mm>Marine Training Statue</Statue_Training_mm>
+      <Statue_Training_mm_stt>Marine training statue</Statue_Training_mm_stt>
+      <Statue_Training_mm_lower>the marine training statue</Statue_Training_mm_lower>
+      <Statue_Training_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Training Statue</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place the marine training statue, your reward for getting 100 perfect 100% training scores.
+      
+      
+      </Statue_Training_mm_ltt> 
+      
+      <PathArch_mm>Marine Arch</PathArch_mm>
+      <PathArch_mm_stt>Marine arch</PathArch_mm_stt>
+      <PathArch_mm_lower>the marine arch</PathArch_mm_lower>
+      <PathArch_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Arch</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place a marine arch formed by a pair of graceful dolphins.
+      
+      
+      </PathArch_mm_ltt>  
+      
+      <BigScreenTV>Big Screen TV</BigScreenTV>
+      <BigScreenTV_stt>Big screen TV</BigScreenTV_stt>
+      <BigScreenTV_lower>the big screen TV</BigScreenTV_lower>
+      <BigScreenTV_ltt>
+         <color r="255" g="248" b="178">
+            <b>Big Screen TV</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place a big screen TV, which gives your guests a great view of animal shows. 
+      
+      
+      </BigScreenTV_ltt>       
+
+      <!--paths-->
+
+      <marine>Marine Path</marine>
+      <marine_stt>Marine path</marine_stt>
+      <marine_lower>the marine path</marine_lower>
+      <marine_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Path</b>
+         </color>
+         <br/>
+         
+         
+         
+         Click to select and then place sections of marine path. 
+      
+      
+      </marine_ltt>
+
+      <!--show platform parented physobjs-->
+      <ShowPlatform_Canopy>the Canopy</ShowPlatform_Canopy>
+
+      <ShowPlatform_Canopy_Description>Canopy</ShowPlatform_Canopy_Description>
+
+      <ShowPlatform_TV>the Big Screen TV</ShowPlatform_TV>
+
+      <ShowPlatform_TV_Description>Big Screen TV</ShowPlatform_TV_Description>
+
+      <!--show objects and props-->
+      
+      <ZTAIShow>Show</ZTAIShow>
+      
+      <ShowPlatform_mm>Show Platform</ShowPlatform_mm>
+      <ShowPlatform_mm_stt>Show platform</ShowPlatform_mm_stt>
+      <ShowPlatform_mm_lower>the show platform</ShowPlatform_mm_lower>
+      <ShowPlatform_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Show Platform</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the show platform. The show platform is required for running aquatic animal shows.
+      
+      
+      </ShowPlatform_mm_ltt>
+      <TrainingArea>Training Area</TrainingArea>
+      <TrainingArea_stt>Training area</TrainingArea_stt>
+      <TrainingArea_lower>the training area</TrainingArea_lower>
+      <TrainingArea_ltt>
+         <color r="255" g="248" b="178">
+            <b>Training Area</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the training area. The training area is required for training marine animals to perform tricks.
+      
+      
+      </TrainingArea_ltt>
+      <SlidingPlatform>Beaching Platform</SlidingPlatform>
+      <SlidingPlatform_stt>Beaching platform</SlidingPlatform_stt>
+      <SlidingPlatform_lower>the beaching platform</SlidingPlatform_lower>
+      <SlidingPlatform_ltt>
+         <color r="255" g="248" b="178">
+            <b>Beaching Platform</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the beaching platform, which certain cetaceans use during marine shows.
+      
+      
+      </SlidingPlatform_ltt>      
+      <ShowPlatform_Backdrop_I_mm>Show Platform with Backdrop</ShowPlatform_Backdrop_I_mm>
+      <ShowPlatform_Backdrop_I_mm_stt>Show Platform with backdrop</ShowPlatform_Backdrop_I_mm_stt>
+      <ShowPlatform_Backdrop_I_mm_lower>the show platform with backdrop</ShowPlatform_Backdrop_I_mm_lower>
+      <ShowPlatform_Backdrop_I_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Show Platform with Backdrop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the show platform with backdrop. The show platform is required for running aquatic animal shows. The backdrop allows you to theme your shows.
+      
+      
+      </ShowPlatform_Backdrop_I_mm_ltt>
+      
+      <ShowPlatform_Backdrop_II_mm>Show Platform with Backdrop</ShowPlatform_Backdrop_II_mm>
+      <ShowPlatform_Backdrop_II_mm_stt>Show platform with backdrop</ShowPlatform_Backdrop_II_mm_stt>
+      <ShowPlatform_Backdrop_II_mm_lower>the show platform with backdrop</ShowPlatform_Backdrop_II_mm_lower>
+      <ShowPlatform_Backdrop_II_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Show Platform with Backdrop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the show platform. The show platform is required for running aquatic animal shows. The backdrop allows you to theme your shows.
+      
+      
+      </ShowPlatform_Backdrop_II_mm_ltt>
+      
+      <ShowPlatform_Upgraded_mm>Upgraded Show Platform</ShowPlatform_Upgraded_mm>
+      <ShowPlatform_Upgraded_mm_stt>Upgraded Show Platform</ShowPlatform_Upgraded_mm_stt>
+      <ShowPlatform_Upgraded_mm_lower>the upgraded show platform</ShowPlatform_Upgraded_mm_lower>
+      <ShowPlatform_Upgraded_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Upgraded Show Platform</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the upgraded show platform, which makes your shows even more impressive.
+      
+      
+      </ShowPlatform_Upgraded_mm_ltt>
+      
+      <Hoop_mm>Hoop</Hoop_mm>
+      <Hoop_mm_stt>Hoop</Hoop_mm_stt>
+      <Hoop_mm_lower>the hoop</Hoop_mm_lower>
+      <Hoop_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Hoop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the hoop. Dolphins can jump through the hoop in aquatic animal shows.
+      
+      
+      </Hoop_mm_ltt>
+      
+      <Suspension_Bar_mm>Suspension Bar</Suspension_Bar_mm>
+      <Suspension_Bar_mm_stt>Suspension bar</Suspension_Bar_mm_stt>
+      <Suspension_Bar_mm_lower>the suspension bar</Suspension_Bar_mm_lower>
+      <Suspension_Bar_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Suspension Bar</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the suspension bar, which various marine animals use to perform tricks.
+      
+      
+      </Suspension_Bar_mm_ltt>
+      
+      <Basketball_Hoop_mm>Basketball Hoop</Basketball_Hoop_mm>
+      <Basketball_Hoop_mm_stt>basketball hoop</Basketball_Hoop_mm_stt>
+      <Basketball_Hoop_mm_lower>the basketball hoop</Basketball_Hoop_mm_lower>
+      <Basketball_Hoop_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Basketball Hoop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the basketball hoop, which various marine animals use to perform tricks.
+      
+      
+      </Basketball_Hoop_mm_ltt>
+      <Basketball_Hoop_mm_Male>Basketball Hoop</Basketball_Hoop_mm_Male>
+      <Basketball_Hoop_mm_Male_stt>basketball hoop</Basketball_Hoop_mm_Male_stt>
+      <Basketball_Hoop_mm_Male_lower>the basketball hoop</Basketball_Hoop_mm_Male_lower>
+      <Basketball_Hoop_mm_Male_ltt>
+         <color r="255" g="248" b="178">
+            <b>Basketball Hoop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the basketball hoop, which various marine animals use to perform tricks.
+      
+      
+      </Basketball_Hoop_mm_Male_ltt>
+      
+      <BasketballHoop_Small_mm>Basketball Hoop</BasketballHoop_Small_mm>
+      <BasketballHoop_Small_mm_stt>basketball hoop</BasketballHoop_Small_mm_stt>
+      <BasketballHoop_Small_mm_lower>the basketball hoop</BasketballHoop_Small_mm_lower>
+      <BasketballHoop_Small_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Basketball Hoop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the basketball hoop, which various marine animals use to perform tricks.
+      
+      
+      </BasketballHoop_Small_mm_ltt> 
+      
+      <BasketballHoop_Small_mm_Male>Basketball Hoop</BasketballHoop_Small_mm_Male>
+      <BasketballHoop_Small_mm_Male_stt>basketball hoop</BasketballHoop_Small_mm_Male_stt>
+      <BasketballHoop_Small_mm_Male_lower>the basketball hoop</BasketballHoop_Small_mm_Male_lower>
+      <BasketballHoop_Small_mm_Male_ltt>
+         <color r="255" g="248" b="178">
+            <b>Basketball Hoop</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the basketball hoop, which various marine animals use to perform tricks.
+      
+      
+      </BasketballHoop_Small_mm_Male_ltt> 
+      
+      <TrickArea_mm>Trick Area</TrickArea_mm>
+      <TrickArea_mm_stt>Trick area</TrickArea_mm_stt>
+      <TrickArea_mm_lower>the trick area</TrickArea_mm_lower>
+      <TrickArea_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Trick Area</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trick area, an area designated for show animals to perform tricks.
+      
+      
+      </TrickArea_mm_ltt>  
+      <TrickArea_mm_Male>Trick Area</TrickArea_mm_Male>
+      <TrickArea_mm_Male_stt>Trick area</TrickArea_mm_Male_stt>
+      <TrickArea_mm_Male_lower>the trick area</TrickArea_mm_Male_lower>
+      <TrickArea_mm_Male_ltt>
+         <color r="255" g="248" b="178">
+            <b>Trick Area</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trick area, an area designated for show animals to perform tricks.
+      
+      
+      </TrickArea_mm_Male_ltt>  
+      
+      <TrickPlatform>Trick Platform</TrickPlatform>
+      <TrickPlatform_stt>Trick platform</TrickPlatform_stt>
+      <TrickPlatform_lower>the trick platform</TrickPlatform_lower>
+      <TrickPlatform_ltt>
+         <color r="255" g="248" b="178">
+            <b>Trick Platform</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trick platform, which the Pacific walrus uses to perform its bellow trick.
+      
+      
+      </TrickPlatform_ltt>
+      <TrickPlatform_Male>Trick Platform</TrickPlatform_Male>
+      <TrickPlatform_Male_stt>Trick platform</TrickPlatform_Male_stt>
+      <TrickPlatform_Male_lower>the trick platform</TrickPlatform_Male_lower>
+      <TrickPlatform_Male_ltt>
+         <color r="255" g="248" b="178">
+            <b>Trick Platform</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trick platform, which the Pacific walrus uses to perform its bellow trick.
+      
+      
+      </TrickPlatform_Male_ltt>
+      
+      <SealTrampoline>Trampoline</SealTrampoline>
+      <SealTrampoline_stt>Trampoline</SealTrampoline_stt>
+      <SealTrampoline_lower>the trampoline</SealTrampoline_lower>
+      <SealTrampoline_ltt>
+         <color r="255" g="248" b="178">
+            <b>Trampoline</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trampoline, which the sea lion uses when performing tricks.
+      
+      
+      </SealTrampoline_ltt> 
+      <SealTrampoline_Male>Trampoline</SealTrampoline_Male>
+      <SealTrampoline_Male_stt>Trampoline</SealTrampoline_Male_stt>
+      <SealTrampoline_Male_lower>the trampoline</SealTrampoline_Male_lower>
+      <SealTrampoline_Male_ltt>
+         <color r="255" g="248" b="178">
+            <b>Trampoline</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the trampoline, which the sea lion uses when performing tricks.
+      
+      
+      </SealTrampoline_Male_ltt> 
+      
+      <SealSlide>Slide</SealSlide>
+      <SealSlide_stt>Slide</SealSlide_stt>
+      <SealSlide_lower>the slide</SealSlide_lower>
+      <SealSlide_ltt>
+         <color r="255" g="248" b="178">
+            <b>Slide</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the slide, which sea lions and sea otters use when performing tricks.
+      
+      
+      </SealSlide_ltt> 
+      <SealSlide_Male>Slide</SealSlide_Male>
+      <SealSlide_Male_stt>Slide</SealSlide_Male_stt>
+      <SealSlide_Male_lower>the slide</SealSlide_Male_lower>
+      <SealSlide_Male_ltt>
+         <color r="255" g="248" b="178">
+            <b>Slide</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the slide, which sea lions and sea otters use when performing tricks.
+      
+      
+      </SealSlide_Male_ltt> 
+      
+      <SealSwing>Swing</SealSwing>
+      <SealSwing_stt>Swing</SealSwing_stt>
+      <SealSwing_lower>the swing</SealSwing_lower>
+      <SealSwing_ltt>
+         <color r="255" g="248" b="178">
+            <b>Swing</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the swing, which the sea lion and walrus use when performing tricks.
+      
+      
+      </SealSwing_ltt>
+      <SealSwing_Male>Swing</SealSwing_Male>
+      <SealSwing_Male_stt>Swing</SealSwing_Male_stt>
+      <SealSwing_Male_lower>the swing</SealSwing_Male_lower>
+      <SealSwing_Male_ltt>
+         <color r="255" g="248" b="178">
+            <b>Swing</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the swing, which the sea lion and walrus use when performing tricks.
+      
+      
+      </SealSwing_Male_ltt>
+      
+      <SealSeat>Seat</SealSeat>
+      <SealSeat_stt>Seat</SealSeat_stt>
+      <SealSeat_lower>the seat</SealSeat_lower>
+      <SealSeat_ltt>
+         <color r="255" g="248" b="178">
+            <b>Seat</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the seat, which the sea lion and walrus use when performing tricks.
+      
+      
+      </SealSeat_ltt>  
+      <SealSeat_Male>Seat</SealSeat_Male>
+      <SealSeat_Male_stt>Seat</SealSeat_Male_stt>
+      <SealSeat_Male_lower>the seat</SealSeat_Male_lower>
+      <SealSeat_Male_ltt>
+         <color r="255" g="248" b="178">
+            <b>Seat</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the seat, which the sea lion and walrus use when performing tricks.
+      
+      
+      </SealSeat_Male_ltt>  
+      
+      <Horns_mm>Horns</Horns_mm>
+      <Horns_mm_stt>Horns</Horns_mm_stt>
+      <Horns_mm_lower>the horns</Horns_mm_lower>
+      <Horns_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Horns</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the horns, which the sea lion and walrus use when performing tricks.
+      
+      
+      </Horns_mm_ltt> 
+      
+      <Horns_mm_Male>Horns</Horns_mm_Male>
+      <Horns_mm_Male_stt>Horns</Horns_mm_Male_stt>
+      <Horns_mm_Male_lower>the horns</Horns_mm_Male_lower>
+      <Horns_mm_Male_ltt>
+         <color r="255" g="248" b="178">
+            <b>Horns</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the horns, which the sea lion and walrus use when performing tricks.
+      
+      
+      </Horns_mm_Male_ltt> 
+      
+      <PileOfRocks>Pile of Rocks</PileOfRocks>
+      <PileOfRocks_stt>Pile of Rocks</PileOfRocks_stt>
+      <PileOfRocks_lower>the pile of rocks</PileOfRocks_lower>
+      <PileOfRocks_ltt>
+         <color r="255" g="248" b="178">
+            <b>Pile of Rocks</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the pile of rocks, which the sea otter uses when performing tricks.
+      
+      
+      </PileOfRocks_ltt>
+
+      <ShakerToy>Shaker Toy</ShakerToy>
+      <ShakerToy_stt>Shaker Toy</ShakerToy_stt>
+      <ShakerToy_lower>the shaker toy</ShakerToy_lower>
+      <ShakerToy_ltt>
+         <color r="255" g="248" b="178">
+            <b>Shaker Toy</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the shaker toy, which the sea otter uses when performing tricks.
+      
+      
+      </ShakerToy_ltt>       
+      <Light_mm>Tank Light</Light_mm>
+      <Light_mm_stt>Tank light</Light_mm_stt>
+      <Light_mm_lower>the tank light</Light_mm_lower>
+      <Light_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tank Light</b>
+         </color>
+         <br/>         
+         Click to select and then place the tank light. The tank light makes tank water brighter.
+      </Light_mm_ltt>
+      <!--pirate themed objects-->
+      <Cannon>Pirate Cannon</Cannon>
+      <Cannon_stt>Pirate cannon</Cannon_stt>
+      <Cannon_lower>the pirate cannon</Cannon_lower>
+      <Cannon_ltt>
+         <color r="255" g="248" b="178">
+            <b>Pirate Cannon</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the pirate cannon, which adds a swashbuckling touch to your exhibits.
+      
+      
+      </Cannon_ltt>     
+   </entityname>
+   
+</ZT2Strings>

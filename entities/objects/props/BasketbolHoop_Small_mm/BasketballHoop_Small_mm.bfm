@@ -1,0 +1,12 @@
+﻿<BFM modelname="entities\objects\props\BasketbolHoop_Small_mm\BasketballHoop_Small_mm.nif">
+	<animation anim="entities\objects\props\BasketballHoop_mm\Basketball_Hoop_mm_Float_Idle.bf" animName="Float_Idle" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\objects\props\BasketballHoop_mm\Basketball_Hoop_mm_Float_KnockedOver.bf" animName="Float_KnockedOver" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+</BFM>
+<Graph name="BasketballHoop_Small_mm" version="1">
+	<node name="Float">
+		<table>
+			<Float_Idle />
+			<Float_KnockedOver />
+		</table>
+	</node>
+</Graph>

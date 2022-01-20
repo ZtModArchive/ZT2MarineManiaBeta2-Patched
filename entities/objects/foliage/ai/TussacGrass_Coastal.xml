@@ -1,0 +1,53 @@
+<BFTypedBinder binderType="TussacGrass_Coastal">
+	<types>
+		<entity>
+			<foliage>
+				<plant>
+					<grass>
+						<TussacGrass_Coastal />
+					</grass>
+				</plant>
+			</foliage>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 -0.05 0.73" icon3Dscale=".43" />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\foliage\TussacGrass\TussacGrass_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:TussacGrass_Coastal" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TussacGrass_Coastal" />
+			</on>
+		</UIToggleButton>
+		<BFGBiomeData location="coastal_warm_oceans_worldwide">
+			<coastal />
+		</BFGBiomeData>
+		<BFAIEntityDataShared b_GrazeGrass="true" s_Product="Marine" s_prop="Grass_Prop" s_Zoopedia="zoopedia:zoopedia_tussacgrass:entry" f_FameReq="40" />
+		<ZTTourData>
+			<biome_coastal value="1" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/foliage/TussacGrass/TussacGrass_Coastal" />
+					<BFMultiGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="10">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

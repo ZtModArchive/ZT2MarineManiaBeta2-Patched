@@ -1,0 +1,52 @@
+<BFTypedBinder binderType="SeaFan_Coastal">
+   <types>
+      <entity>
+         <foliage>
+            <marineplant>
+              <SeaFan_Coastal/>
+            </marineplant>
+         </foliage>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTPlacementData icon3Doffset="0 -0.070264 0.523747" icon3Dscale="0.89" />
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\foliage\SeaFan\SeaFan_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:SeaFan_Coastal"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SeaFan_Coastal"/>
+         </on>
+      </UIToggleButton>
+      <BFGBiomeData location="coastal_warm_oceans_worldwide">
+         <coastal/>
+      </BFGBiomeData>
+      <BFAIEntityDataShared  s_Product="Marine" s_Zoopedia="zoopedia:zoopedia_seafan:entry" f_FameReq="60"/>
+   	  <ZTTourData>
+ 	     <biome_coastal value="1"/>
+	  </ZTTourData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\foliage\SeaFan\SeaFan" switch="0 15 30 40"/>            
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFTerrainPaintComponent/>
+			</BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="15">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

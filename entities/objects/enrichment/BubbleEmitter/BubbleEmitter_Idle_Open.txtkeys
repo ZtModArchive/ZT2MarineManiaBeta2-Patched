@@ -1,0 +1,5 @@
+<TEXTKEY>
+   <key time="1" text="{Bip01} snd 'BubbleEmitter_uw'"/>
+   <key time=".25" text="{Bone03} runpeff color_bubbles attach water=-0.10"/>
+   <key time="1" text="{Bone03} runpeff color_bubbles stop"/>	
+</TEXTKEY>

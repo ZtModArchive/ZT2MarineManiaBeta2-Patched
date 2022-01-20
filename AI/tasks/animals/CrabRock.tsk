@@ -1,0 +1,19 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="GoToShallowWater" UniqueID="CrabRock:GoToShallowWater">
+      <BFAICreateData>
+         <Subjects>
+            <CrabRock/>
+         </Subjects>
+         <Targets>
+            <water/>
+            <Qualifiers waterDepth="LE 1"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="11000"/>
+      <BFBehExecTask>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

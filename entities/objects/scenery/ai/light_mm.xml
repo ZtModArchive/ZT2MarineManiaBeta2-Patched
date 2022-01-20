@@ -1,0 +1,58 @@
+<BFTypedBinder binderType="Light_mm">
+   <types>
+      <entity>
+         <scenery>
+            <Light_mm/>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\scenery\light_mm\light_mm_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Light_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Light_mm"/>
+         </on>
+      </UIToggleButton>
+      <ZTPlacementData icon3Doffset="0 0 0.640000" waterPlacement="true" icon3Dscale="0.637260" terrainFlatten="false" tankPlacement="true" showTankPlacement="true"/>
+      <BFAIEntityDataShared s_Product="Marine" b_SmallRock="true" s_Zoopedia="zoopedia:zoopedia_light_mm:entry"s_GameLock="tanklightlock" />
+      <BFGCollisionData isPassable="false" isStatic="false"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob.tga" baseNode="footprint" width="2" minLength="2" maxLength="3.5" minOffset="0" maxOffset=".5"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities/objects/scenery/light_mm/light_mm"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars isWaterLight="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="200">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

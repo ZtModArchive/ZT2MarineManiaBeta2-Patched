@@ -1,0 +1,45 @@
+﻿<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_kelpbed:entry"  >Kelp Bed</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_kelpbed:text"  >
+			<cell pady="0" width="1000"/>
+			<p/>
+			<cell width="260"/>
+			<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+				<cell width="600" padx="20" pady="20">
+					<color r="255" g="255" b="255">
+						<img src="entities/objects/shelters/KelpBed_Shelter/KelpBed_Shelter_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+						<p/>Sea otters prefer to rest in kelp beds. They wrap themselves in the kelp before going to sleep to keep from drifting away!
+					</color>
+				</cell>
+			</cell>
+		</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_desertisland:entry"  >Desert Island</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_desertisland:text"  >
+			<cell pady="0" width="1000"/>
+			<p/>
+			<cell width="260"/>
+			<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+				<cell width="600" padx="20" pady="20">
+					<color r="255" g="255" b="255">
+						<img src="entities/objects/shelters/DesertIsland/DesertIsland_Shelter_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+						<p/>The desert island not only decorates your tank, it also gives the green sea turtle a place to lay its eggs and rest.
+					</color>
+				</cell>
+			</cell>
+		</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_rockisland:entry"  >Rock Island</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_rockisland:text"  >
+			<cell pady="0" width="1000"/>
+			<p/>
+			<cell width="260"/>
+			<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+				<cell width="600" padx="20" pady="20">
+					<color r="255" g="255" b="255">
+						<img src="entities/objects/shelters/RockIsland/RockIsland_Shelter_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+						<p/>The rock island -- actually made from high-impact plastic floats -- acts as a shelter for California sea lions, Pacific walruses, sea otters, and rockhopper penguins.
+					</color>
+				</cell>
+			</cell>
+		</LOC_STRING>
+
+</ZT2Strings>

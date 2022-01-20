@@ -1,0 +1,14 @@
+<BFTypedBinder binderType="live_enrichment_fish" abstract="true">
+   <types>
+      <entity>
+         <enrichment>
+            <live_enrichment>
+               <live_enrichment_fish/>
+            </live_enrichment>
+         </enrichment>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

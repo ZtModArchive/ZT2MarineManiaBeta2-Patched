@@ -1,0 +1,39 @@
+<BehaviorSets>
+   <!--Splash Fountain Behaviors-->
+   <Squirt>
+      <subjects>
+         <FountainSplash_mm/>
+        </subjects>
+      <behaviors>
+			<BFBehRandomSet>
+				 <randomSets>
+					 <Idle weight="50"/>
+					 <Splash weight="50"/>
+				 </randomSets>
+			</BFBehRandomSet>
+      </behaviors>
+   </Squirt>
+
+   <Idle>
+      <subjects>
+         <FountainSplash_mm/>
+        </subjects>
+      <behaviors>
+			<BFBehAnimate targetAnim="Idle_Idle"/>
+      </behaviors>
+   </Idle>
+   
+   <Splash>
+      <subjects>
+         <FountainSplash_mm/>
+        </subjects>
+      <behaviors>
+			<BFBehSendToken>
+			   <BFAITokenList>
+			      <BFAIToken Name="t_FountainSplash" GiveTo="Guest" Payload="subject" Timeout="10" Radius="3" Reconsider="true"/>
+			   </BFAITokenList>
+			</BFBehSendToken>
+			<BFBehAnimate targetAnim="Idle_Splash"/>
+      </behaviors>
+   </Splash>   
+</BehaviorSets>

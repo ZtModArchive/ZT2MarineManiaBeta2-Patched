@@ -1,0 +1,13 @@
+<TEXTKEY>
+   <key frame="0" text="{Bip01 Head} snd 'BiteLungeVicious'"/>
+   <key frame="0" text="{Bip01 Head} snd 'BiteLungeVicious_uw'"/>
+        <key time=".1" text="{Bip01 Dorsal} runspl"/>
+        <key time=".2" text="{Bip01 Dorsal} runspl"/>
+        <key time=".3" text="{Bip01 Dorsal} runspl"/>
+        <key time=".4" text="{Bip01 Dorsal} runspl"/>
+        <key time=".5" text="{Bip01 Dorsal} runspl"/>
+        <key time=".6" text="{Bip01 Dorsal} runspl"/>
+        <key time=".8" text="{Bip01 Dorsal} runspl"/>
+        <key time=".9" text="{Bip01 Dorsal} runspl"/>
+        <key time="1.0" text="{Bip01 Dorsal} runspl"/>
+</TEXTKEY>

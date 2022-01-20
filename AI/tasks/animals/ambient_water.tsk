@@ -1,0 +1,53 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Ambient" UniqueID="ambient_water:Ambient">
+      <BFAICreateData>
+         <Subjects>
+            <ambient_water/>
+            <Qualifiers inWater="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="12003"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Ambient"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die_Land" Priority="1" UniqueID="ambient_water:Die_Land">
+      <BFAICreateData>
+         <Subjects>
+            <ambient_water/>
+            <Qualifiers onLand="true" />
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="12005"/>
+      <BFBehExecTask>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die" UniqueID="ambient_water:Die">
+      <BFAICreateData>
+         <Subjects>
+            <ambient_water/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 5"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="12000"/>
+      <BFBehExecTask>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

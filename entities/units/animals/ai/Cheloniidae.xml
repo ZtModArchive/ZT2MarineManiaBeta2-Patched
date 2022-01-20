@@ -1,0 +1,22 @@
+<BFTypedBinder binderType="Cheloniidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Reptilia>
+                  <Testudines>
+                     <Cheloniidae/>
+                  </Testudines>
+               </Reptilia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_landAnimal="false"/>
+      <ZTEntityCrater crateType="AnimalCrate_mm" crateParticleDef="EmoteReleaseToWild_mm" />
+   </shared>
+</BFTypedBinder>

@@ -1,0 +1,3711 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="Idle" UniqueID="Beluga:Idle">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Floating"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Idle"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Idle_Happy" TaskDelayMin="180" TaskDelayMax="360" UniqueID="Beluga:Idle_Happy">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="30">
+      <BFAIAttributeFloatMap social="-45"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Happy"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="HappyExpression"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+        <ZTBehViewEvent viewKey="Pos_4"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Idle_Angry" TaskDelayMin="180" TaskDelayMax="360" UniqueID="Beluga:Idle_Angry">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="5">
+      <BFAIAttributeFloatMap social="-45"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Angry"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="AngryExpression"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+        <ZTBehViewEvent viewKey="Neg_2"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Idle_Confused" TaskDelayMin="60" TaskDelayMax="180" UniqueID="Beluga:Idle_Confused">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".02"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Confused"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="ConfusedExpression"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+        <ZTBehViewEvent viewKey="Pos_2"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Surface_Submerge" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Beluga:Surface_Submerge">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".002"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Surface_Submerge"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Beluga:Wander">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore=".002"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Slow"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="5" exercise="-10"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_1"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander_Slow" UniqueID="Beluga:Wander_Slow">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers_AND rest="GE 70" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Slow"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="5" exercise="-100"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_2"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander_Medium" UniqueID="Beluga:Wander_Medium">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers_AND rest="LE 69" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="5" exercise="-100"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_2"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Wander_Fast" UniqueID="Beluga:Wander_Fast">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers_AND rest="LE 29" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap exercise="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Wander_Fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="10" exercise="-100"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_3">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalSwimGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Sleep" UniqueID="Beluga:Sleep">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap rest="-35"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <BFBehPlaySet behSet="Sleep"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="-100"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Spyhop_Natural" TaskDelayMin="120" TaskDelayMax="240" UniqueID="Beluga:Spyhop_Natural">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="25">
+      <BFAIAttributeFloatMap stimulation="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSpyhopGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPlaySet behSet="Spyhop_Natural"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-50" exercise="-10" rest="10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Spyhop" TaskDelayMin="60" TaskDelayMax="60" UniqueID="Beluga:Spyhop">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers_AND isSwimming="true" hasTrick="BelugaSpyhop 70"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-35"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSpyhopGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_WatchSpyhopTrick" GiveTo="Beluga" Payload="subject" Radius="10" Timeout="20" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Spyhop_Natural"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-50" exercise="-10" rest="10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="LearnSpyhop" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Beluga:LearnSpyhop">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_WatchSpyhopTrick/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2"/>
+      <BFBehPlaySet behSet="WatchAnimal"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-20"/>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="BelugaSpyhop_Learn10"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Jump" TaskDelayMin="60" TaskDelayMax="60" UniqueID="Beluga:Jump">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers_AND isSwimming="true" hasTrick="BelugaJump 70"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap exercise="-35"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalJumpGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_WatchJumpTrick" GiveTo="Beluga" Payload="subject" Radius="10" Timeout="20" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Jump_Natural"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap exercise="-50" stimulation="-10" rest="10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="LearnJump" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Beluga:LearnJump">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_WatchJumpTrick/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2"/>
+      <BFBehPlaySet behSet="WatchAnimal"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-20"/>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="BelugaJump_Learn10"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Stalk_Young" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Beluga:Stalk_Young">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga_Young/>
+        <Qualifiers_AND notInSight="10" inHabitat="true" isRelation="sibling"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:StalkingAnimal" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_5">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPursuit hitRadius="10" pursuitRadius="30"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-5" stimulation="-5"/>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_ChasePlay" GiveTo="subject" Payload="target" Timeout="20"/>
+            <BFAIToken Name="t_EvadePlayYoung" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="YoungChasePlay" UniqueID="Beluga:YoungChasePlay">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_ChasePlay/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="30" social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Evade_Young" UniqueID="Beluga:Evade_Young">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayYoung/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="30" social="-20" exercise="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Chase_Adult" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Beluga:Chase_Adult">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga_Adult/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true" notInSight="8"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="8" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_EvadePlayAdult" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Idle"/>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_3"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Evade_Adult" UniqueID="Beluga:Evade_Adult">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayAdult/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" stimulation="-20" social="-20" exercise="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>  
+   <BFAITaskTemplate Name="AttackGuest" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Beluga:AttackGuest">
+      <BFAICreateData>
+         <Subjects>
+            <Beluga_Adult/>
+            <Qualifiers_AND inWater="true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" inWater="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:PlayGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_6"/>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedBeluga" resetPhase="true"/>
+         </BFBehExecTask>
+         <BFAITargetData amusement="-30" happiness="-10" gift="+25"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>  
+  <BFAITaskTemplate Name="Beached" Priority="1" UniqueID="Beluga:Beached">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Beached"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_8">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalBeachedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehAnimate targetAnim="OnLand_Idle" interruptFlag="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap health="3"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Neg_3"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:MarineMammalBeached" priority="-1" timeout="15" global="true" useTargetName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="FlopToWater" Priority="2" UniqueID="Beluga:FlopToWater">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingInWater"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_2"/>
+      <BFBehEscapeObstacle locoSpeed="medium" escapeTime="5" escapeRadius="5"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap health="3"/>
+    </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap health="3"/>
+      </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ScareGuest" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="Beluga:ScareGuest">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Guest/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="20" fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehTargetFence behSet="DockWallScareGuest" fenceType="tankwallsegment" searchDistance="6"/>
+      <BFBehAnimate targetAnim="TreadWater_Nudge" interruptFlag="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_Scare" GiveTo="Guest" Payload="subject" Radius="10" Timeout="30" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SplashGuest" sensorTag="habitat" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Beluga:SplashGuest">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Guest/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="40">
+      <BFAIAttributeFloatMap stimulation="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehRandomSet>
+        <randomSets>
+          <SplashGuest_Right weight="50"/>
+          <SplashGuest_Left weight="50"/>
+        </randomSets>
+      </BFBehRandomSet>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="Beluga:OffspringCheck">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="1000"/>
+    <BFBehExecTask>
+      <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Beluga:CantReproduce">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_F/>
+        <Qualifiers_AND isSwimming="true" b_Pregnant="E false" hasMate="false"/>
+      </Subjects>
+      <Targets>
+        <Beluga_Adult_M/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true" canMate="false"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="80">
+      <BFAIAttributeFloatMap reproduction="-27"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITokenList>
+        <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="Beluga:InviteReproduction">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_F/>
+        <Qualifiers_AND b_Pregnant="E false" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga_Adult_M/>
+        <Qualifiers_AND inHabitat="true" isSwimming="true" canMate="true"/>
+      </Targets>
+      <Objects>
+        <t_Childless/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="80">
+      <BFAIAttributeFloatMap reproduction="-40"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="Beluga:RespondReproduction">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_M/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Reproduce/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehSyncSet subjectBehSet="Rendezvous" targetBehSet="Rendezvous"/>
+      <BFBehSyncSet subjectBehSet="ReproductionSwimLead" targetBehSet="ReproductionSwimFollow"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="55"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-50" rest="-10"/>
+      <BFAITargetData rest="-10"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_3"/>
+        <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Pregnant" UniqueID="Beluga:Pregnant">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Pregnant1/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="50"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+          <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAITargetData b_Pregnant="true"/>
+      <BFBehExecTask>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="113.68" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Birth" UniqueID="Beluga:Birth">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_F/>
+        <Qualifiers_AND isSwimming="true" isInShow="false"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Pregnant/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000">
+      <BFAIAttributeFloatMap reproduction="-90"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Birthing"/>
+          <ZTMessageInfo locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Idle"/>
+      <BFBehPlaySet behSet="Birth"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-100"/>
+      <BFAISubjectData b_Pregnant="false"/>
+      <BFBehExecTask>
+        <ZTBehViewEvent viewKey="Pos_4">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalBornGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTMessageInfo locID="zoomessages:AnimalBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="Beluga:Born">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Young/>
+        <Qualifiers_AND isSwimming="true" lifespan="LE 1"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Born"/>
+          <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="Beluga:Puberty">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Young/>
+        <Qualifiers_AND isSwimming="true" lifespan="GE 5.22"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Age_F" UniqueID="Beluga:Age_F">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Young_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Age/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehMorph morphTargetEntityType="Beluga_Adult_F" morphScale="true" morphPeriod="10" initScale="0.4"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Age_M" UniqueID="Beluga:Age_M">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Young_M/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <t_Age/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="2000"/>
+    <BFBehExecTask>
+      <ZTBehMorph morphTargetEntityType="Beluga_Adult_M" morphScale="true" morphPeriod="10" initScale="0.4"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Old" TaskDelayMin="60" TaskDelayMax="60" UniqueID="Beluga:Old">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers_AND isSwimming="true" lifespan="GE 44.72"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap lifespan="-100"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_1"/>
+      <BFBehPlaySet behSet="Sleep"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+  </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die" UniqueID="Beluga:Die">
+      <BFAICreateData>
+         <Subjects>
+            <Beluga/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Die/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_OldAge"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die_Sick" Priority="3" UniqueID="Beluga:Die_Sick">
+      <BFAICreateData>
+         <Subjects>
+            <Beluga/>
+            <Qualifiers_AND inWater_OR_onLand="true" health="GE 99"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="15000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_Sick"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteCarry" TaskDelayMin="180" TaskDelayMax="360" UniqueID="Beluga:InviteCarry">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Young/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga_Adult_F/>
+        <Qualifiers_AND isSwimming="true" depthBelowSurface="G 0" isRelation="mother" inHabitat="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Carry" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="CallMother"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondCarry" attachTag="baby" UniqueID="Beluga:RespondCarry">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_F/>
+        <Qualifiers_AND isSwimming="true" depthBelowSurface="G 0"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_Carry/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="1000"/>
+    <BFBehExecTask>
+      <BFBehSyncSet subjectBehSet="WaitCarryYoung" targetBehSet="BoardMom"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <BFBehSyncSet subjectBehSet="PickUpYoung" targetBehSet="GrabMom" resetPhase="true"/>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CarryYoung_Wander" TaskDelayMin="180" TaskDelayMax="360" objectContainer="back" UniqueID="Beluga:CarryYoung_Wander">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects>
+        <Beluga_Young/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="1100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Carrying" useObjectName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehWander minPlayTime="10" maxPlayTime="20" avoidLand="true" avoidEntityRadius="8">
+        <avoidEntityTypes>
+          <b_XLargePredator/>
+          <b_LargePredator/>
+          <b_MediumPredator/>
+          <b_SmallPredator/>
+        </avoidEntityTypes>
+      </BFBehWander>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-40" health="-30"/>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="LetYoungOff"/>
+        <ZTBehViewEvent viewKey="Pos_5">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalCarryObjectGood" priority="1" timeout="60" global="false" useTargetObject="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAITargetData social="-40"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RubFloor" UniqueID="Beluga:RubFloor">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+        <Qualifiers_AND inSight="25" inHabitat="true" depthAboveBottom="LE 1"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap hygiene="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToRubFloor"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove heightAboveFloor="1.5"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:RubbingTankFloor"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_2">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalRubFloorGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAIAttributeFloatMap hygiene="-50"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Echolocate" UniqueID="Beluga:Echolocate">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10">
+      <BFAIAttributeFloatMap hunger="-3"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTEmoticonInfo emoticonName="EmoteAnimalHungerBad"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="animalthoughts:HungryAnimal" priority="1" timeout="30" global="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:LookingForFood"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalHungryBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="slow"/>
+      <BFBehPlaySet behSet="Echolocate"/>
+      <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="slow"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Squawk" UniqueID="Beluga:Squawk">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10" fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SquawkAngry"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSquawkSelfBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Squawk_Call" UniqueID="Beluga:Squawk_Call">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SquawkAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Listen" GiveTo="Beluga" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Whistle" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Squawk_Answer" UniqueID="Beluga:Squawk_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Whistle/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SquawkAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SharpReport" UniqueID="Beluga:SharpReport">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10" fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SharpReportAngry"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+      <ZTBehViewEvent viewKey="Neg_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSquawkSelfBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SharpReport_Call" UniqueID="Beluga:SharpReport_Call">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SharpReportAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Listen" GiveTo="Beluga" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Whistle" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Scream_Answer" UniqueID="Beluga:Scream_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Whistle/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ScreamAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Hoot" UniqueID="Beluga:Hoot">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10" fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:HootAngry"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+      <ZTBehViewEvent viewKey="Neg_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSquawkSelfBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Hoot_Call" UniqueID="Beluga:Hoot_Call">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:HootAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Listen" GiveTo="Beluga" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Whistle" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Hoot_Answer" UniqueID="Beluga:Hoot_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Whistle/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:HootAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="MysteryCall" UniqueID="Beluga:MysteryCall">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10" fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:MysteryCallAngry"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSquawkSelfBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="MysteryCall_Call" UniqueID="Beluga:MysteryCall_Call">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:MysteryCallAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Listen" GiveTo="Beluga" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Whistle" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="MysteryCall_Answer" UniqueID="Beluga:MysteryCall_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Whistle/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:MysteryCallAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Chirp" UniqueID="Beluga:Chirp">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10" fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChirpAngry"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSquawkSelfBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Chirp_Call" UniqueID="Beluga:Chirp_Call">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChirpAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Listen" GiveTo="Beluga" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Whistle" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Chirp_Answer" UniqueID="Beluga:Chirp_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Whistle/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:ChirpAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Squeal" UniqueID="Beluga:Squeal">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10" fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SquealAngry"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSquawkSelfBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Squeal_Call" UniqueID="Beluga:Squeal_Call">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SquealAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Listen" GiveTo="Beluga" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Whistle" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Squeal_Answer" UniqueID="Beluga:Squeal_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Whistle/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SquealAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Moo" UniqueID="Beluga:Moo">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10" fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:MooAngry"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSquawkSelfBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Moo_Call" UniqueID="Beluga:Moo_Call">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:MooAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Listen" GiveTo="Beluga" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Whistle" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Moo_Answer" UniqueID="Beluga:Moo_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Whistle/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:MooAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Whistle" UniqueID="Beluga:Whistle">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsBad="10" fixedScore=".002"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WhistleAngry"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Squawk"/>
+      <ZTBehViewEvent viewKey="Neg_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSquawkSelfBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Whistle_Call" UniqueID="Beluga:Whistle_Call">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WhistleAt" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Listen" GiveTo="Beluga" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Whistle" GiveTo="target" Payload="subject" Timeout="30"/>
+      </BFAITokenList>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Whistle_Answer" UniqueID="Beluga:Whistle_Answer">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Whistle/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap stimulation="-10" social="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalWhistleGood" priority="1" timeout="60" global="false" useTargetName="true" useTargetTarget="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehFaceTarget/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:WhistleAnswer" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Whistle"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap stimulation="-5" social="-15"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="YoungChase" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Beluga:YoungChase">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Young/>
+        <Qualifiers inWater="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga_Young/>
+        <Qualifiers_AND inHabitat="true" inWater="true" notInSight="6"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap social="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="6" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_EvadePlayChild" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Call"/>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" exercise="-20" stimulation="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="YoungEvade" UniqueID="Beluga:YoungEvade">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Young/>
+        <Qualifiers inWater="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayChild/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast" avoidWater="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" exercise="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AdultChase_Female" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Beluga:AdultChase_Female">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_M/>
+        <Qualifiers_AND inWater="true" reproduction="GE 30"/>
+      </Subjects>
+      <Targets>
+        <Beluga_Adult_F/>
+        <Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" notInSight="6"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap social="-30" reproduction="20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="6" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_EvadePlayAdult" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Call"/>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" exercise="-20" reproduction="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AdultChase_Male" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Beluga:AdultChase_Male">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_M/>
+        <Qualifiers_AND inWater="true" reproduction="GE 30"/>
+      </Subjects>
+      <Targets>
+        <Beluga_Adult_M/>
+        <Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" isRelation="false" notInSight="6"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap social="-30" reproduction="20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPursuit hitRadius="6" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_EvadePlayAdult" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Call"/>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" exercise="-20" reproduction="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AdultEvade_Female" UniqueID="Beluga:AdultEvade_Female">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_F/>
+        <Qualifiers inWater="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayAdult/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast" avoidLand="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="10" social="-20" exercise="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AdultEvade_Male" UniqueID="Beluga:AdultEvade_Male">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_M/>
+        <Qualifiers inWater="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_EvadePlayAdult/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast" avoidLand="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap reproduction="-20" social="-20" exercise="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehSendToken>
+          <BFAITokenList>
+            <BFAIToken Name="t_ChasePlayAdult" GiveTo="subject" Payload="target" Chance="75" Radius="30" Timeout="15" Reconsider="true"/>
+          </BFAITokenList>
+        </BFBehSendToken>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="AdultChase_MaleBack" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Beluga:AdultChase_MaleBack">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_M/>
+        <Qualifiers_AND inWater="true" reproduction="GE 30"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_ChasePlayAdult/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="15">
+      <BFAIAttributeFloatMap social="-40" reproduction="30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehPursuit hitRadius="6" pursuitRadius="15" locoSpeed="fast"/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_EvadePlayAdult" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehPlaySet behSet="Call"/>
+      <BFBehPursuit hitRadius="5" pursuitRadius="15" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" exercise="-20" reproduction="-20"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Evade" UniqueID="Beluga:Evade">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Flee/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" exercise="-20"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadeAttack" UniqueID="Beluga:EvadeAttack">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_Attack/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Neg_4">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="10" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap rest="20" exercise="-20"/>
+    </BFAICompletionData>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteCaress_Adult_F" TaskDelayMin="300" TaskDelayMax="360" UniqueID="Beluga:InviteCaress_Adult_F">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga_Adult_M/>
+        <Qualifiers_AND inHabitat="true" isSwimming="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap reproduction="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Caress" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Idle_15"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondCaress_Adult_M" reserveTag="General" UniqueID="Beluga:RespondCaress_Adult_M">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_M/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true" isSwimming="true"/>
+      </Targets>
+      <Objects>
+        <t_Caress/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalRubEachOtherGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSyncSet subjectBehSet="DockRub" targetBehSet="Idle_Loop"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Rubbing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehSyncSet subjectBehSet="GreetingRub" targetBehSet="Idle_Loop"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" stimulation="-10"/>
+      <BFAITargetData social="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="InviteCaress_Adult_M" TaskDelayMin="300" TaskDelayMax="360" UniqueID="Beluga:InviteCaress_Adult_M">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_M/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga_Adult_F/>
+        <Qualifiers_AND inHabitat="true" isSwimming="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap reproduction="-30"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehFaceTarget/>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_Caress" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="Idle_15"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="RespondCaress_Adult_M" reserveTag="General" UniqueID="Beluga:RespondCaress_Adult_F">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult_F/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true" isSwimming="true"/>
+      </Targets>
+      <Objects>
+        <t_Caress/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalRubEachOtherGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSyncSet subjectBehSet="DockRub" targetBehSet="Idle_Loop"/>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:Rubbing" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehSyncSet subjectBehSet="GreetingRub" targetBehSet="Idle_Loop"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-20" stimulation="-10"/>
+      <BFAITargetData social="-20" stimulation="-10"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SyncSwim_Invite" reserveTag="General" TaskDelayMin="60" TaskDelayMax="180" UniqueID="Beluga:SyncSwim_Invite">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <Beluga/>
+        <Qualifiers_AND isSwimming="true" inHabitat="true" isMate="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap social="-32"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_SyncSwim" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SyncSwim_Respond" UniqueID="Beluga:SyncSwim_Respond">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" isSwimming="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_SyncSwim/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="90"/>
+    <BFBehExecTask>
+      <BFBehSyncSet subjectBehSet="Rendezvous" targetBehSet="Rendezvous"/>
+      <ZTBehViewEvent viewKey="Pos_3">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalSyncSwim" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehSyncSet subjectBehSet="SyncSwimLead" targetBehSet="SyncSwimFollow"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap social="-30"/>
+      <BFAITargetData social="-30"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SeekPrivacy" UniqueID="Beluga:SeekPrivacy">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData needPointsGood="10">
+      <BFAIAttributeFloatMap privacy="-20"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:SeekingPrivacy" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehViewEvent viewKey="Pos_1">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <BFBehEvasion evasionRadius="12">
+        <avoidEntityTypes>
+          <Guest/>
+        </avoidEntityTypes>
+      </BFBehEvasion>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAIAttributeFloatMap privacy="-5"/>
+      <BFAITokenList>
+        <BFAIToken Name="t_Hide" GiveTo="subject" Timeout="30" OnlyOne="true"/>
+      </BFAITokenList>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="HideMarinePlant" UniqueID="Beluga:HideMarinePlant">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers_AND onLand="true" isSwimming="false"/>
+      </Subjects>
+      <Targets>
+        <marineplant/>
+        <Qualifiers_AND inWater="true" inHabitat="true" inSight="15"/>
+      </Targets>
+      <Objects>
+        <t_Hide/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100">
+      <BFAIAttributeFloatMap privacy="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove locoSpeed="medium"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFAISubjectData privacy="-50"/>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <ZTBehViewEvent viewKey="Pos_2">
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehViewEvent>
+        <BFBehPlaySet behSet="Idle_15"/>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="HideFloor" UniqueID="Beluga:HideFloor">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <water/>
+        <Qualifiers_AND inSight="25" inHabitat="true" depthAboveBottom="LE 3"/>
+      </Targets>
+      <Objects>
+        <t_Hide/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="90">
+      <BFAIAttributeFloatMap privacy="-25"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoingHide"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehMove heightAboveFloor="1.5"/>
+    </BFBehExecTask>
+    <BFAICompletionData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTActionInfo locID="animalactions:Hiding"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+        <BFBehPlaySet behSet="Idle_15"/>
+      <ZTBehViewEvent viewKey="Pos_2">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAIAttributeFloatMap privacy="-50"/>
+    </BFAICompletionData>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="EvadeOrca" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Beluga:EvadeOrca">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga/>
+      </Subjects>
+      <Targets>
+        <WhaleOrca_Adult/>
+        <Qualifiers_AND inSight="16" hunger="GE 30"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehViewEvent viewKey="Neg_1">
+        <ZTFeedbackData>
+          <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehViewEvent>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehEvasion evasionRadius="30" locoSpeed="evade" avoidWater="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <!--Show Tasks-->
+  <BFAITaskTemplate Name="EnterShowTank" UniqueID="Beluga:EnterShowTank">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers_AND isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_EnterShowTank/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="120"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoToShowTank"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehUsePortal targetAnim="SwimSub_Ahead" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTMessageInfo locID="zoomessages:CantEnterShowTank" priority="-1" timeout="30" global="true" useEntityName="true"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ExitShowTank" UniqueID="Beluga:ExitShowTank">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers_AND isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ExitShowTank/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="120"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTActionInfo locID="animalactions:GoToHomeTank"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <ZTBehUsePortal targetAnim="SwimSub_Ahead" locoSpeed="fast"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehScript context="behavior" file="scripts/CrateAnimal.lua" function="CrateAnimal"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DefaultShowBehavior" UniqueID="Beluga:DefaultShowBehavior">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers_AND isInShow="true" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_DefaultShowBehavior/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Idle"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DockPlatform" reserveTag="Animals_Waiting_Area" UniqueID="Beluga:DockPlatform">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_DockPlatform/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="120"/>
+    <BFBehExecTask>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GetTreat" reserveTag="Animals_Waiting_Area" UniqueID="Beluga:GetTreat">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers_AND isInShow="true" isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_GetTreat/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="500"/>
+    <BFBehExecTask>
+      <BFBehSendToken>
+        <BFAITokenList>
+          <BFAIToken Name="t_getApplause" GiveTo="target" Payload="subject" Timeout="20"/>
+        </BFAITokenList>
+      </BFBehSendToken>
+      <BFBehEnter/>
+      <BFBehPlaySet behSet="useContainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow1Star" UniqueID="Beluga:ReactToShow1Star">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow1Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow1Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow2Star" UniqueID="Beluga:ReactToShow2Star">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow2Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow2Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow3Star" UniqueID="Beluga:ReactToShow3Star">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow3Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow3Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow4Star" UniqueID="Beluga:ReactToShow4Star">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow4Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow4Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow5Star" UniqueID="Beluga:ReactToShow5Star">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <self/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow5Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="110"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow5Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <!--First Person Training Tasks-->
+  <BFAITaskTemplate Name="DefaultFPTBehavior" Priority="80" UniqueID="Beluga:DefaultFPTBehavior">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTDefaultTask/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Idle_NoWanderToStop"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Good_FPT" Priority="90" UniqueID="Beluga:Feedback_Good_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTGood/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehAnimate targetAnim="TreadWater_TrainingNodUpDown"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Bad_FPT" Priority="90" UniqueID="Beluga:Feedback_Bad_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTBad/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehAnimate targetAnim="TreadWater_TrainingNodLeftRight"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Confused_FPT" Priority="90" UniqueID="Beluga:Feedback_Confused_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTConfused/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTEmoticonInfo emoticonName="EmoteGuestUneducation" emoticonEntityNode="Bip01 Head"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehAnimate targetAnim="TreadWater_TrainingConfused"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GetReward_FPT" Priority="90" UniqueID="Beluga:GetReward_FPT">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers isSwimming="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true" inHabitat="true"/>
+      </Targets>
+      <Objects>
+        <t_FPTEatReward/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="GetTreat_FPT"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <!--Staff Training Tasks-->
+  <BFAITaskTemplate Name="DockTrainer" reserveTag="Animal_Training_Area" Priority="90" UniqueID="Beluga:DockTrainer">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers_AND isSwimming="true" f_needPointsGood="G 0"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_STSummon/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+       <BFBehPlaySet behSet="DockTrainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="StaffTrainingIdle" Priority="80" UniqueID="Beluga:StaffTrainingIdle">
+    <BFAICreateData>
+      <Subjects>
+        <Beluga_Adult/>
+        <Qualifiers_AND isSwimming="true" f_needPointsGood="G 0"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater="true"/>
+      </Targets>
+      <Objects>
+        <t_STDefaultTask/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="WatchTrainer"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <BFBehPlaySet behSet="FailureSet"/>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

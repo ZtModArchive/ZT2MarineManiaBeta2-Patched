@@ -1,0 +1,20 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry entry="zoopedia_showprops">
+         <BFHelpEntry entry="zoopedia_basketballhoop_mm" order="zoopedia_basketballhooplarge"/>
+         <BFHelpEntry entry="zoopedia_basketballhoop_small_mm" order="zoopedia_basketballhoopsmall"/>
+         <BFHelpEntry entry="zoopedia_hoop_mm"/>          
+         <BFHelpEntry entry="zoopedia_horns_mm"/>         
+         <BFHelpEntry entry="zoopedia_largeball" order="zoopedia_showballlarge"/>  
+         <BFHelpEntry entry="zoopedia_smallball" order="zoopedia_showballsmall"/>
+         <BFHelpEntry entry="zoopedia_pileofrocks" order="zoopedia_pileofrocks"/>          
+         <BFHelpEntry entry="zoopedia_sealslide" order="zoopedia_slide"/>
+         <BFHelpEntry entry="zoopedia_sealseat" order="zoopedia_seat"/>
+         <BFHelpEntry entry="zoopedia_sealswing" order="zoopedia_swing"/>
+         <BFHelpEntry entry="zoopedia_shakertoy"/>          
+         <BFHelpEntry entry="zoopedia_tetherball_mm"/>
+         <BFHelpEntry entry="zoopedia_trampoline"/>         
+         <BFHelpEntry entry="zoopedia_slidingplatform" order="zoopedia_beachingplatform"/>       
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

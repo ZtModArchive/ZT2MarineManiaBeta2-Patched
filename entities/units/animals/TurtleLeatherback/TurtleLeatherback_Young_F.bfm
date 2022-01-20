@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\animals\TurtleLeatherback\TurtleLeatherback_Young_F.nif">
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_BeachBallFloat_2TreadWater.bf" animName="BeachBallFloat_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_BeachBallFloat_BobLeft.bf" animName="BeachBallFloat_BobLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_BeachBallFloat_BobRight.bf" animName="BeachBallFloat_BobRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_BeachBallFloat_Idle.bf" animName="BeachBallFloat_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Lie_2SleepLand.bf" animName="Lie_2SleepLand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Lie_2Stand.bf" animName="Lie_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Lie_Idle.bf" animName="Lie_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Lie_ThrowSand.bf" animName="Lie_ThrowSand" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Secondary_Headlook.bf" animName="Secondary_Headlook" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Sleep_2TreadWaterSub.bf" animName="Sleep_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Sleep_Idle.bf" animName="Sleep_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SleepLand_2Lie.bf" animName="SleepLand_2Lie" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SleepLand_Idle.bf" animName="SleepLand_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Stand_2Lie.bf" animName="Stand_2Lie" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Young_F_Stand_2Walk.bf" animName="Stand_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Young_F_Stand_AttackedYoung.bf" animName="Stand_AttackedYoung" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Stand_Bite.bf" animName="Stand_Bite" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Stand_GuestAttack_Snap.bf" animName="Stand_GuestAttack_Snap" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Stand_Idle.bf" animName="Stand_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Stand_LayEggs.bf" animName="Stand_LayEggs" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Stand_TurnLeft90.bf" animName="Stand_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Stand_TurnRight180.bf" animName="Stand_TurnRight180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Stand_TurnRight90.bf" animName="Stand_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Swim_2SwimGlide.bf" animName="Swim_2SwimGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Swim_2SwimSub.bf" animName="Swim_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Swim_2TreadWater.bf" animName="Swim_2TreadWater" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Swim_2Walk.bf" animName="Swim_2Walk" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Swim_Ahead.bf" animName="Swim_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Swim_Breathe.bf" animName="Swim_Breathe" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Swim_Turn180.bf" animName="Swim_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Swim_TurnLeft90.bf" animName="Swim_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Swim_TurnRight90.bf" animName="Swim_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimGlide_2Swim.bf" animName="SwimGlide_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimGlide_Ahead.bf" animName="SwimGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_2Swim.bf" animName="SwimSub_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_2SwimSubGlide.bf" animName="SwimSub_2SwimSubGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_2TreadWaterSub.bf" animName="SwimSub_2TreadWaterSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_Ahead.bf" animName="SwimSub_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_Bite.bf" animName="SwimSub_Bite" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_Ram.bf" animName="SwimSub_Ram" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_Turn180.bf" animName="SwimSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_TurnDown90.bf" animName="SwimSub_TurnDown90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_TurnLeft90.bf" animName="SwimSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_TurnRight90.bf" animName="SwimSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSub_TurnUp90.bf" animName="SwimSub_TurnUp90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSubGlide_2SwimSub.bf" animName="SwimSubGlide_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_SwimSubGlide_Ahead.bf" animName="SwimSubGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWater_2BeachBallFloat.bf" animName="TreadWater_2BeachBallFloat" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWater_2Swim.bf" animName="TreadWater_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWater_Breathe.bf" animName="TreadWater_Breathe" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWater_GuestAttack_Snap.bf" animName="TreadWater_GuestAttack_Snap" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWater_Idle.bf" animName="TreadWater_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWater_Turn180.bf" animName="TreadWater_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWater_TurnLeft90.bf" animName="TreadWater_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWater_TurnRight90.bf" animName="TreadWater_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_2Sleep.bf" animName="TreadWaterSub_2Sleep" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_2SwimSub.bf" animName="TreadWaterSub_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Young_F_TreadWaterSub_AttackedYoung.bf" animName="TreadWaterSub_AttackedYoung" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_Bite.bf" animName="TreadWaterSub_Bite" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_Drink.bf" animName="TreadWaterSub_Drink" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_Eat.bf" animName="TreadWaterSub_Eat" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_Idle.bf" animName="TreadWaterSub_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_Ram.bf" animName="TreadWaterSub_Ram" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_Swallow.bf" animName="TreadWaterSub_Swallow" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_Turn180.bf" animName="TreadWaterSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_TurnLeft90.bf" animName="TreadWaterSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_TreadWaterSub_TurnRight90.bf" animName="TreadWaterSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Young_F_Walk_2Stand.bf" animName="Walk_2Stand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_Walk_2Swim.bf" animName="Walk_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Young_F_Walk_Ahead.bf" animName="Walk_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Young_F_Walk_LeftA.bf" animName="Walk_LeftA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Young_F_Walk_LeftB.bf" animName="Walk_LeftB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Young_F_Walk_RightA.bf" animName="Walk_RightA" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Young_F_Walk_RightB.bf" animName="Walk_RightB" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="TurtleLeatherback_Young_F" version="1">
+    <node name="BeachBallFloat">
+      <table>
+        <BeachBallFloat_BobLeft />
+        <BeachBallFloat_BobRight />
+        <BeachBallFloat_Idle />
+      </table>
+      <edge name="TreadWater">
+        <table>
+          <BeachBallFloat_2TreadWater />
+        </table>
+      </edge>
+    </node>
+    <node name="Lie">
+      <table>
+        <Lie_Idle />
+        <Lie_ThrowSand />
+      </table>
+      <edge name="Stand">
+        <table>
+          <Lie_2Stand />
+        </table>
+      </edge>
+      <edge name="SleepLand">
+        <table>
+          <Lie_2SleepLand />
+        </table>
+      </edge>
+    </node>
+    <node name="Secondary">
+      <table>
+        <Secondary_Headlook />
+      </table>
+    </node>
+    <node name="Sleep">
+      <table>
+        <Sleep_Idle />
+      </table>
+      <edge name="TreadWaterSub">
+        <table>
+          <Sleep_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SleepLand">
+      <table>
+        <SleepLand_Idle />
+      </table>
+      <edge name="Lie">
+        <table>
+          <SleepLand_2Lie />
+        </table>
+      </edge>
+    </node>
+    <node name="Stand">
+      <table>
+        <Stand_AttackedYoung />
+        <Stand_Bite />
+        <Stand_GuestAttack_Snap />
+        <Stand_Idle />
+        <Stand_LayEggs />
+        <Stand_TurnLeft90 />
+        <Stand_TurnRight180 />
+        <Stand_TurnRight90 />
+      </table>
+      <edge name="Walk">
+        <table>
+          <Stand_2Walk />
+        </table>
+      </edge>
+      <edge name="Lie">
+        <table>
+          <Stand_2Lie />
+        </table>
+      </edge>
+    </node>
+    <node name="Swim">
+      <table>
+        <Swim_Ahead />
+        <Swim_Breathe />
+        <Swim_Turn180 />
+        <Swim_TurnLeft90 />
+        <Swim_TurnRight90 />
+      </table>
+      <edge name="Walk">
+        <table>
+          <Swim_2Walk />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <Swim_2SwimSub />
+        </table>
+      </edge>
+      <edge name="SwimGlide">
+        <table>
+          <Swim_2SwimGlide />
+        </table>
+      </edge>
+      <edge name="TreadWater">
+        <table>
+          <Swim_2TreadWater />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimGlide">
+      <table>
+        <SwimGlide_Ahead />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimGlide_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSub">
+      <table>
+        <SwimSub_Ahead />
+        <SwimSub_Bite />
+        <SwimSub_Ram />
+        <SwimSub_Turn180 />
+        <SwimSub_TurnDown90 />
+        <SwimSub_TurnLeft90 />
+        <SwimSub_TurnRight90 />
+        <SwimSub_TurnUp90 />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimSub_2Swim />
+        </table>
+      </edge>
+      <edge name="SwimSubGlide">
+        <table>
+          <SwimSub_2SwimSubGlide />
+        </table>
+      </edge>
+      <edge name="TreadWaterSub">
+        <table>
+          <SwimSub_2TreadWaterSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubGlide">
+      <table>
+        <SwimSubGlide_Ahead />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <SwimSubGlide_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWater">
+      <table>
+        <TreadWater_Breathe />
+        <TreadWater_GuestAttack_Snap />
+        <TreadWater_Idle />
+        <TreadWater_Turn180 />
+        <TreadWater_TurnLeft90 />
+        <TreadWater_TurnRight90 />
+      </table>
+      <edge name="Swim">
+        <table>
+          <TreadWater_2Swim />
+        </table>
+      </edge>
+      <edge name="BeachBallFloat">
+        <table>
+          <TreadWater_2BeachBallFloat />
+        </table>
+      </edge>
+    </node>
+    <node name="TreadWaterSub">
+      <table>
+        <TreadWaterSub_AttackedYoung />
+        <TreadWaterSub_Bite />
+        <TreadWaterSub_Drink />
+        <TreadWaterSub_Eat />
+        <TreadWaterSub_Idle />
+        <TreadWaterSub_Ram />
+        <TreadWaterSub_Swallow />
+        <TreadWaterSub_Turn180 />
+        <TreadWaterSub_TurnLeft90 />
+        <TreadWaterSub_TurnRight90 />
+      </table>
+      <edge name="Sleep">
+        <table>
+          <TreadWaterSub_2Sleep />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <TreadWaterSub_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="Walk">
+      <table>
+        <Walk_Ahead />
+        <Walk_LeftA />
+        <Walk_LeftB />
+        <Walk_RightA />
+        <Walk_RightB />
+      </table>
+      <edge name="Swim">
+        <table>
+          <Walk_2Swim />
+        </table>
+      </edge>
+      <edge name="Stand">
+        <table>
+          <Walk_2Stand />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

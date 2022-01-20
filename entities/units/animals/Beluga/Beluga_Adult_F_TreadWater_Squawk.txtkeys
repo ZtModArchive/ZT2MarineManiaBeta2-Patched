@@ -1,0 +1,7 @@
+<TEXTKEY>
+   <key time="1" text="{Bip01 Ponytail1} snd 'Squawk'"/>
+   <key time="1" text="{Bip01 Ponytail1} snd 'Squawk_uw'"/>   
+   <key time="0" text="{Bip01 Head} runspl"/>
+   <key time=".80" text="{Bip01 L Forearm} runspl"/>
+   <key time=".75" text="{Bip01 R Forearm} runspl"/>
+</TEXTKEY>

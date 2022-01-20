@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Myliobatidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Chondrichthyes>
+                  <Rajiformes>
+                     <Myliobatidae/>
+                  </Rajiformes>
+               </Chondrichthyes>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

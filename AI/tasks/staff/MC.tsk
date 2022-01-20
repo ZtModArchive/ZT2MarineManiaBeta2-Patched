@@ -1,0 +1,363 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="Idle" Priority="10" UniqueID="MC:Idle">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_MCIdle/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-1"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ShowIdle"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="PreShow" reserveTag="Staff_PreShow" Priority="10" UniqueID="MC:PreShow">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_MCPrepareShow/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-.5"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="PreShow"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ConductShow" Priority="10" UniqueID="MC:ConductShow">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_MCExecuteShow/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-2"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ConductShow"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="FailureReaction" Priority="15" UniqueID="MC:FailureReaction">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_FailureReaction/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-2"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Failure"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="SuccessReaction" Priority="15" UniqueID="MC:SuccessReaction">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_SuccessReaction/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-2"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Success"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="CriticalReaction" Priority="15" UniqueID="MC:CriticalReaction">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_CriticalReaction/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-2"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="Critical"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GetApplause" Priority="15" UniqueID="MC:GetApplause">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_getApplause/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-2"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="GetApplause_Loop"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="GiveTreat" Priority="100" UniqueID="MC:GiveTreat">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_GiveTreat/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-5"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="GiveTreat"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReplaceProp" Priority="20" UniqueID="MC:ReplaceProp">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReplaceProp/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-50"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <ZTBehTeleportToLoc resetProp="true"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="PostShow" reserveTag="Staff_PostShow" Priority="10" UniqueID="MC:PostShow">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_MCCleanUpShow/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-.5"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="PostShow"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow1Star" Priority="11" UniqueID="MC:ReactToShow1Star">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow1Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-.5"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow1Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow2Star" Priority="11" UniqueID="MC:ReactToShow2Star">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow2Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-.5"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow2Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow3Star" Priority="11" UniqueID="MC:ReactToShow3Star">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow3Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-.5"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow3Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow4Star" Priority="11" UniqueID="MC:ReactToShow4Star">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow4Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-.5"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow4Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReactToShow5Star" Priority="11" UniqueID="MC:ReactToShow5Star">
+    <BFAICreateData>
+      <Subjects>
+        <MC/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects>
+        <t_ReactToShow5Star/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData>
+      <BFAIAttributeFloatMap work="-.5"/>
+    </BFAIEvalData>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="ReactToShow5Star"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>

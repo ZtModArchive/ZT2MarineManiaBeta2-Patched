@@ -1,0 +1,34 @@
+﻿<BFM modelname="entities\units\animals\Lionfish\Lionfish_Adult_F.nif">
+	<animation anim="entities\units\animals\Herring\Herring_Adult_F_SwimGlide_Ahead.bf" animName="SwimGlide_Ahead" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\units\animals\Herring\Herring_Adult_F_SwimGlide_2Swim.bf" animName="SwimGlide_2Swim" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\units\animals\Herring\Herring_Adult_F_Swim_Ahead.bf" animName="Swim_Ahead" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\units\animals\Herring\Herring_Adult_F_Swim_2SwimGlide.bf" animName="Swim_2SwimGlide" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\units\animals\Herring\Herring_Adult_F_Swim_Turn180.bf" animName="Swim_Turn180" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\units\animals\Herring\Herring_Adult_F_Swim_TurnLeft90.bf" animName="Swim_TurnLeft90" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\units\animals\Herring\Herring_Adult_F_Swim_TurnRight90.bf" animName="Swim_TurnRight90" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+</BFM>
+<Graph name="Lionfish_Adult_F" version="1">
+	<node name="Swim">
+		<table>
+			<Swim_Ahead />
+			<Swim_Turn180 />
+			<Swim_TurnLeft90 />
+			<Swim_TurnRight90 />
+		</table>
+		<edge name="SwimGlide">
+			<table>
+				<Swim_2SwimGlide />
+			</table>
+		</edge>
+	</node>
+	<node name="SwimGlide">
+		<table>
+			<SwimGlide_Ahead />
+		</table>
+		<edge name="Swim">
+			<table>
+				<SwimGlide_2Swim />
+			</table>
+		</edge>
+	</node>
+</Graph>

@@ -1,0 +1,37 @@
+************************************************************
+Date: 03/01/2006
+Time: 19:24
+************************************************************
+Compiled object 1: CoralFire_LODGroup
+Compiled object 2: CoralTable_LOD0
+Compiled object 3: Coral_Rock
+Compiled object 4: CoralTable_LOD0
+Compiled object 5: CoralTable_LOD1
+Compiled object 6: Coral_Rock01
+Compiled object 7: CoralTable_LOD1
+Compiled object 8: CoralTable_LOD2
+Compiled object 9: Coral_Rock02
+Compiled object 10: CoralTable_LOD2
+Compiled object 11: footprint
+Compiled object 13: paint_CoralTable
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 588 
+Vertex Count: 476 
+Vertex Memory: 15 kb
+Material Count: 2 
+Texture Count: 2 
+Texture Memory: 127 kb
+Num LODs: 3 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 147 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 393ms
+XML File Translation: total time = 260ms
+Data Output: total time = 4ms
+************************************************************

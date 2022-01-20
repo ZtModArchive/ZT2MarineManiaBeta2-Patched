@@ -1,0 +1,65 @@
+<BFTypedBinder binderType="prop" abstract="true">
+   <types>
+      <entity>
+       	<prop/>
+      </entity>
+   </types>
+   <shared>
+      <ZTEntitySelector parentName="mainObj" nodeName="" animationTime="0.4" useFootprint="true">
+         <BFPhysObj allowHighlight="false">
+            <BFTerrainDecalComponent imageName="UI/fx/selection/object.tga" alphaBlend="true">
+               <lighting emmisiveColor="255 255 255" specularColor="255 255 255" diffuseColor="255 255 255" ambientColor="255 255 255"/>
+            </BFTerrainDecalComponent>
+         </BFPhysObj>
+      </ZTEntitySelector>   
+      <ZTPlacementData randomRotate="false" gridSnap="true" autoFootprint="true" deletable="false" tankPlacement="true" waterPlacement="true" showTankPlacement="true" landPlacement="false">
+         <stompData>
+            <delete>
+               <Poop/>
+            </delete>
+            <allow>
+               <TrainingArea/>
+            </allow>
+         </stompData>
+      </ZTPlacementData>
+      <BFGCollisionData isTraversable="true"/>
+      <BFAIEntityDataShared f_PropRotationOffset="90" s_GenerateName="byType" b_Eyedropper="false"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFCollisionComponent/>
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="65"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <ZTPhotoAnalysisComponent/>
+         </instance>
+      </BFBinder>
+	  <BFBinder>
+	  	 <instance>
+			<BFAIEntityDataInstance s_name="Prop" />
+		 </instance>
+	  </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTGestureComponent trickName="NewTrick" stepSize="0.05" />
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="GestureLine" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFGestureSplineComponent material="GestureSpline.bfmat" diststep="0.4" distWrapU="1.0" endPiecesLen="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <ZTAITrickTargetComponent/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

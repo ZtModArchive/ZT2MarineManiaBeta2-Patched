@@ -1,0 +1,86 @@
+<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_buoynet:entry"  >Buoy, Net</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_buoynet:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/BuoyNet/BuoyNet_Chum_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/BuoyNet/BuoyNet_Shellfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>The net buoy's attached net contains food.
+            </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_buoylure:entry"  >Buoy, Lure</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_buoylure:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/BuoyLure/BuoyLure_Fish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                   
+                  <img src="entities/objects/food/BuoyLure/BuoyLure_Jellyfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/BuoyLure/BuoyLure_Plankton_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/BuoyLure/BuoyLure_Squid_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <p/>A lure buoy has a special lure that attracts live food. Zookeepers keep the area around the buoy stocked with food.
+            </color>            
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_foodbox:entry"  >Food Box</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_foodbox:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/FoodBox/FoodBox_Chum_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                   
+                  <img src="entities/objects/food/FoodBox/FoodBox_Fish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/FoodBox/FoodBox_Plankton_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/FoodBox/FoodBox_Seaweed_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <img src="entities/objects/food/FoodBox/Foodbox_Squid_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <p/>A food box is a grated box placed underwater with food floating inside it.
+            </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_marinecarcass:entry"  >Artificial Marine Carcass</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_marinecarcass:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/Carcass_mm/Carcass_Chum_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/Carcass_mm/Carcass_Fish_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>This artificially built fish carcass is used to feed large quantities of fish and even carnivorous marine animals. Guests enjoy watching animals feed from these more interesting containers.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_artificialreef:entry"  >Artificial Reef</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_artificialreef:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities/objects/food/ArtificialReef/ArtificialReef_Fish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/ArtificialReef/ArtificialReef_Jellyfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/ArtificialReef/ArtificialReef_Plankton_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/ArtificialReef/ArtificialReef_Shellfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities/objects/food/ArtificialReef/ArtificialReef_Squid_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <p/>Built from synthetic materials, this simulated reef is designed to attract food species. Zookeepers keep the artificial reef stocked with food.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING> 
+
+</ZT2Strings>

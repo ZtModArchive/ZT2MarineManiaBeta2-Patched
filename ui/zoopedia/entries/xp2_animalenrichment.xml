@@ -1,0 +1,11 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry order="zoopedia_animal2" entry="zoopedia_animalenrichment">
+         <BFHelpEntry entry="zoopedia_bubbleemitter" order="zoopedia_clambubbler"/>      
+         <BFHelpEntry entry="zoopedia_sealpreydummy"/>
+         <BFHelpEntry entry="zoopedia_jarwithfish"/>
+         <BFHelpEntry entry="zoopedia_livetunayellowfin" order="zoopedia_livefoodyellowfintuna"/>
+         <BFHelpEntry entry="zoopedia_livecodarctic" order="zoopedia_livefoodarcticcod"/>        
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

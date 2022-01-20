@@ -1,0 +1,23 @@
+<BFTypedBinder binderType="gesture_tracer_pointer_pointer">
+	<types>
+		<entity>
+			<gesture_tracer_pointer_pointer/>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1"/>
+	</instance>
+	<shared>
+		<BFGCollisionData isPassable="true"/>
+		<BFAIEntityDataShared s_Product="Marine"/>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj" required="1">
+			<instance>
+				<BFPhysObj allowHighlight="true">
+				    <BFSceneGraphComponent modelfile="UI\fx\traininggestures\gesturetracker_pointer_pointer.bfb" scale="1.0"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

@@ -1,0 +1,19 @@
+<BFTypedBinder binderType="Sirenia" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Sirenia />
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTEntityCrater crateType="AnimalCrate_mm" crateParticleDef="EmoteReleaseToWild_mm" />
+	</shared>
+</BFTypedBinder>

@@ -1,0 +1,547 @@
+<UISoundMgr>
+   <sounds>
+      <BFSoundtag>
+         <BF2DSndFactory name="placement">
+            <snd name="ui\sound\place.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="place_fence">
+            <snd name="ui\sound\ui_fence_placement.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="place_path">
+            <snd name="ui\sound\ui_path_placement.wav" volume=".85"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="place_track">
+            <snd name="ui\sound\ui_path_placement.wav" volume=".85"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="place_building">
+            <snd name="ui\sound\ui_place_ building.wav" volume=".5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="place_vehicle_ground">
+            <snd name="ui\sound\ui_place_vehicle_ground.wav" volume=".6"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="place_vehicle_sky">
+            <snd name="ui\sound\ui_place_vehicle_sky.wav" volume=".5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="recycle_building">
+            <snd name="ui\sound\ui_recycle_ building.wav" volume=".75"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="recycle_foliage">
+            <snd name="ui\sound\ui_recycle_foliage.wav" volume=".75"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="recycle_scenery">
+            <snd name="ui\sound\ui_recycle_scenery.wav" volume=".75"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="recycle_rock">
+            <snd name="ui\sound\ui_recycle_rock.wav" volume=".75"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="recycle_multi">
+            <snd name="ui\sound\ui_recycle_ building.wav" volume=".75"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="place_plant">
+            <snd name="ui\sound\ui_place_plant.wav" volume=".9"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="place_rock">
+            <snd name="ui\sound\ui_place_rock.wav" volume=".9"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="place_tree">
+            <snd name="ui\sound\ui_place_tree.wav" volume=".5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="keypress">
+            <snd name="ui\sound\ui_textfield_keypress.wav" volume=".8"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="expand">
+            <snd name="ui\sound\ui_expand.wav" volume=".55"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="collapse">
+            <snd name="ui\sound\ui_collapse.wav" volume=".55"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="noplacement">
+            <snd name="ui/sound/entity_placement_error.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="delete">
+            <snd name="ui/sound/delete.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="shutter_generic">
+            <snd name="ui/sound/shutter_generic.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="out_of_pictures">
+            <snd name="ui/sound/outoffilm.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="uiclick">
+            <snd name="ui/sound/ui_click_primary.wav" volume=".75" layer="ui"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="uihover">
+            <snd name="ui/sound/ui_rollover.wav" volume=".6" layer="ui"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="uicheck">
+            <snd name="ui/sound/ui_checkbox_check.wav" volume=".85" layer="ui"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="uitab">
+            <snd name="ui/sound/ui_checkbox_uncheck.wav" volume=".9" layer="ui"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="uiclick2">
+            <snd name="ui/sound/ui_click_secondary.wav" volume=".85" layer="ui"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="photo_challenge_completed">
+            <snd name="ui/sound/photo_challenge_met.wav" volume=".5" layer="ui"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="photo_challenges_completed">
+            <snd name="ui/sound/photo_challenge_complete.wav" volume=".5" layer="ui"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="TigerBengal_Adult_RoarA2D">
+            <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_RoarA.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="motd_arrived">
+            <snd name="ui/sound/motd.wav" volume=".9"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="motd_from_web_100">
+            <snd name="tmp/motd100.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="motd_from_web_50">
+            <snd name="tmp/motd50.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="motd_from_web_10">
+            <snd name="tmp/motd10.wav" volume="0.1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="album_prev_page">
+            <snd name="ui/sound/album_prev_page.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="album_next_page">
+            <snd name="ui/sound/album_next_page.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="album_enlarge">
+            <snd name="ui/sound/album_enlarge.wav" volume=".75"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="album_shrink">
+            <snd name="ui/sound/album_shrink.wav" volume=".75"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="terrain_flatten">
+            <snd name="ui/sound/ui_flatten_terrain.wav" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="terrain_ditch">
+            <snd name="ui/sound/ui_terrain_flatten.wav" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="terrain_cliff">
+            <snd name="ui/sound/ui_terrain_flatten.wav" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="terrain_hill">
+            <snd name="ui/sound/ui_terrain_flatten.wav" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="terrain_valley">
+            <snd name="ui/sound/ui_terrain_flatten.wav" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="terrain_smooth">
+            <snd name="ui/sound/ui_terrain_flatten.wav" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="biome_paint">
+            <snd name="ui/sound/ui_terrain_flatten.wav" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="biome_small_obj_added">
+            <snd name="ui/sound/ui_place_tree.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="biome_medium_obj_added">
+            <snd name="ui/sound/ui_place_tree.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="biome_large_obj_added">
+            <snd name="ui/sound/ui_place_tree.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="biome_small_obj_removed">
+            <snd name="ui/sound/ui_place_tree.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="biome_medium_obj_removed">
+            <snd name="ui/sound/ui_place_tree.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="biome_large_obj_removed">
+            <snd name="ui/sound/ui_place_tree.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="super_staff">
+            <snd name="ui/sound/message_alert_high_priority.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="ambient">
+            <snd name="sounds/B_BF_Loop.wav" volume="0.50" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="message_alert">
+            <snd name="ui/sound/message_alert_normal.wav" volume="0.5" layer="ui"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="cam_up">
+            <snd name="ui/sound/cam_up.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <!--ENDANGERED MISC TAGS-->
+      <BFSoundtag>
+         <BF2DSndFactory name="world_scream">
+            <snd name="ui/sound/WorldScreams.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="earthquake">
+            <snd name="sounds/earthquake.wav" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <!--BIOME LOOPS-->
+      <BFSoundtag>
+         <BF2DSndFactory name="boreal_forest_loop">
+            <snd name="sounds/B_BF_Lop.wav" volume="0.3" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="forest">
+            <snd name="sounds/B_RF_Lop.wav" volume="0.19" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="alpine_loop">
+            <snd name="sounds/B_AP_Lop.wav" volume=".1" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="desert_loop">
+            <snd name="sounds/B_DS_Lop.wav" volume=".35" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="wetlands_loop">
+            <snd name="sounds/B_WL_Lop.wav" volume="0.15" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="temperate_loop">
+            <snd name="sounds/B_TF_Lop.wav" volume=".2" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="tundra_loop">
+            <snd name="sounds/B_TD_Lop.wav" volume="0.4" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="savannah_loop">
+            <snd name="sounds/B_SV_Lop.wav" volume="0.2" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="scrub_loop">
+            <snd name="sounds/B_SR_Lop.wav" volume="0.5" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="grassland_loop">
+            <snd name="sounds/B_GL_Lop.wav" volume=".4" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <!--MARINE AMBIENT LOOPS-->
+      <BFSoundtag>
+         <BF2DSndFactory name="coastal_loop">
+            <snd name="sounds/B_CS_Lop.wav" volume=".2" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="benthic_loop">
+            <snd name="sounds/B_BN_Lop.wav" volume=".4" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="reef_loop">
+            <snd name="sounds/B_RE_Lop.wav" volume=".15" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="tank_small_loop">
+            <snd name="sounds/ambient_tank_small.wav" volume=".6" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="tank_med_loop">
+            <snd name="sounds/ambient_tank_med.wav" volume=".6" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="tank_large_loop">
+            <snd name="sounds/ambient_tank_large.wav" volume=".6" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="tank_small_natural_loop">
+            <snd name="sounds/ambient_tank_natural_small.wav" volume=".5" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="tank_med_natural_loop">
+            <snd name="sounds/ambient_tank_natural_med.wav" volume=".7" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="tank_large_natural_loop">
+            <snd name="sounds/ambient_tank_natural_large.wav" volume=".7" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="ambient_whalehall">
+            <snd name="sounds/WhaleHallTheme.mp3" volume=".5" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="mic_feedback">
+            <snd name="sounds/MicFeedback.wav" volume=".7" layer="ui"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <!--TANK SOUNDS-->
+      <BFSoundtag>
+         <BF2DSndFactory name="raise_floor">
+            <snd name="ui/sound/ui_raise_floor.wav" looping="1" volume=".6"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="lower_floor">
+            <snd name="ui/sound/ui_lower_floor.wav" looping="1" volume=".6"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="raise_wall">
+            <snd name="ui/sound/ui_raise_wall.wav" looping="1" volume=".6"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="lower_wall">
+            <snd name="ui/sound/ui_lower_wall.wav" looping="1" volume=".6"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="fill_tank">
+            <snd name="ui/sound/ui_fill_tank.wav" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="drain_tank">
+            <snd name="ui/sound/ui_drain_tank.wav" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <!--GESTURE TOOL-->
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_end_poor">
+            <snd name="ui/sound/GestureSparkles_Poor.wav" volume="0.8"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_end_bad">
+            <snd name="ui/sound/GestureSparkles_Bad.wav" volume="0.8"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_end_good">
+            <snd name="ui/sound/GestureSparkles_Good.wav" volume=".9"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_end_great">
+            <snd name="ui/sound/GestureSparkles_Great.wav" volume="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_whistle_single">
+            <snd name="ui/sound/gesturetrace_whistle_single.wav" volume="0.8"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_whistle_double">
+            <snd name="ui/sound/gesturetrace_whistle_double.wav" volume="0.8"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_eventfail">
+            <snd name="ui/sound/gesturetrace_eventfail_single.wav" volume="0.6"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_music_novice">
+            <snd name="sounds/GestureTheme_126.mp3" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_music_intermediate">
+            <snd name="sounds/GestureTheme_136.mp3" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_music_expert">
+            <snd name="sounds/GestureTheme_146.mp3" volume="1.0"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_hitpoint1">
+            <snd name="ui/sound/gesture_hitpoint1.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_hitpoint2">
+            <snd name="ui/sound/gesture_hitpoint2.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_hitpoint3">
+            <snd name="ui/sound/gesture_hitpoint3.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_hitpoint4">
+            <snd name="ui/sound/gesture_hitpoint4.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_hitpoint5">
+            <snd name="ui/sound/gesture_hitpoint5.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_hitpoint6">
+            <snd name="ui/sound/gesture_hitpoint6.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_hitpoint7">
+            <snd name="ui/sound/gesture_hitpoint7.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="gesturetrace_hitpoint8">
+            <snd name="ui/sound/gesture_hitpoint8.wav" volume="0.5"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <!--MUSIC-->
+      <BFSoundtag>
+         <BF2DSndFactory name="mainmenu_music">
+            <snd name="sounds/Marine Theme.mp3" volume="1" streamed="1" looping="1"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <!--CROWDS-->
+      <BFSoundtag>
+         <BF2DSndFactory name="crowd_cheer_failure">
+            <snd name="ui/sound/crowd_cheer_failure.wav" volume=".8"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="crowd_cheer_success">
+            <snd name="ui/sound/crowd_cheer_success.wav" volume=".8"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <BFSoundtag>
+         <BF2DSndFactory name="crowd_cheer_supersuccess">
+            <snd name="ui/sound/crowd_cheer_supersuccess.wav" volume=".8"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+      <!--MISC-->
+      <BFSoundtag>
+         <BF2DSndFactory name="powersurge">
+            <snd name="sounds/PowerSurge.wav" volume=".9"/>
+         </BF2DSndFactory>
+      </BFSoundtag>
+   </sounds>
+</UISoundMgr>

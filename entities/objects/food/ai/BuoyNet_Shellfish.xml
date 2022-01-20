@@ -1,0 +1,93 @@
+<BFTypedBinder binderType="BuoyNet_Shellfish">
+   <types>
+      <entity>
+         <food>
+            <BuoyNet>
+               <BuoyNet_Shellfish/>
+            </BuoyNet>
+         </food>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\food\BuoyNet\BuoyNet_Shellfish_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:BuoyNet_Shellfish"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="BuoyNet_Shellfish"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared f_FameReq="70" s_FoodType="Shellfish" s_contents="Terrain_Shellfish" s_Product="Marine" s_prop="Shellfish_Prop" b_Sniffable="true" b_ShellfishEaterFood="true" />
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+            	<BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/BuoyNet/BuoyNet_mm" />            
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="full" required="1">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/BuoyNet/BuoyNet_Shellfish_mm_Full"/>
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="20"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="twothird" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/BuoyNet/BuoyNet_Shellfish_mm_66" />
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="10"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="onethird" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/BuoyNet/BuoyNet_Shellfish_mm_33" />
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="5"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="empty" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities/objects/food/BuoyNet/BuoyNet_Shellfish_mm_Empty" />
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="5"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance f_FoodLevel="100"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIFadeController attribName="f_FoodLevel" currState="full" fadePeriod="1">
+               <stateList>
+                  <full physObj="full" minRange="66" maxRange="101"/>
+                  <twothird physObj="twothird" minRange="33" maxRange="66"/>
+                  <onethird physObj="onethird" minRange="1" maxRange="33"/>
+                  <empty physObj="empty" minRange="-101" maxRange="1"/>
+               </stateList>
+            </BFAIFadeController>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="750">
+               <ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="refill" cost="150" type="credit" category="animal_upkeep"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,84 @@
+<water>
+   <reflection strength="85.0" ambient="64 91 100" tint="64 91 100" mapsize="20.0" bumpiness="100.0" falloff="63.8" fresnel="50.0" />
+   <refraction ambient="41 50 51" tint="255 255 255" mapsize="20.0" bumpiness="10.0" falloff="100.0" />
+   <geometric minAmplitude="10.0" maxAmplitude="20.0" chop="10.0" />
+   <shore tint="255 255 255 200" botRate="0.01" botSize="4.0" topRate="-0.06" topSize="5.0" rippleTop="Materials/waterlayout" rippleBot="Materials/waterlayout" rippleMask="Materials/watermask" />
+   <ripple lifespan="3.0" startup="0.45" maxAmplitude="45." minAmplitude="10." chop="100." speed="0.2" rampmin="4" rampmax="15" />
+   <scummap />
+   <side color="41 50 51 100" lit="41 50 51 100" />
+   <suspense system="default_suspense2">
+      <emit minDensity="0.0" maxDensity="0.1 0.2 0.3 0.5"/>
+      <emit minDensity="0.0 0.0 0.1 0.1" maxDensity="-0.1"/>
+   </suspense>
+   <bubbles>
+      <detail level="0" system="default_bubbles" sound="ambient_bubbles" maxsounds="1" maxrange="10" >
+         <emit smallsecs="16.0" bigsecs="6.0"/>
+      </detail>
+      <detail level="1" system="default_bubbles2" sound="ambient_bubbles" maxsounds="3" maxrange="20" >
+         <emit smallsecs="8.0" bigsecs="1.0"/>
+         <emit smallsecs="1.0" bigsecs="0.1"/>
+      </detail>
+      <detail level="2" system="default_bubbles2" sound="ambient_bubbles" maxsounds="4" maxrange="30" >
+         <emit smallsecs="8.0" bigsecs="1.0"/>
+         <emit smallsecs="1.0" bigsecs="0.1"/>
+      </detail>
+   </bubbles>
+   <current windspeed="15.0" gustiness="0.2"/>
+<fog>
+	<low>
+		<unlit>
+			<dirtiness level=0>
+				<FogKeyframeArgs time="0.0" start="-0.05" end="1.0" color="20 55 67" />
+			</dirtiness>
+			<dirtiness level=1.0>
+				<FogKeyframeArgs time="0.0" start="-0.1" end="0.625" color="0 119 140" />
+			</dirtiness>
+		</unlit>
+		<lit>
+			<dirtiness level=0>
+				<FogKeyframeArgs time="0.0" start="-0.05" end="1.0" color="62 107 109" />
+			</dirtiness>
+			<dirtiness level=1.0>
+				<FogKeyframeArgs time="0.0" start="-0.1" end="0.625" color="37 176 165" />
+			</dirtiness>
+		</lit>
+	</low>
+	<medium>
+		<unlit>
+			<dirtiness level=0>
+				<FogKeyframeArgs time="0.0" start="-0.05" end=".13" color="20 55 67" />
+			</dirtiness>
+			<dirtiness level=1.0>
+				<FogKeyframeArgs time="0.0" start="-0.1" end=".12" color="0 119 140" />
+			</dirtiness>
+		</unlit>
+		<lit>
+			<dirtiness level=0>
+				<FogKeyframeArgs time="0.0" start="-0.05" end=".13" color="62 107 109" />
+			</dirtiness>
+			<dirtiness level=1.0>
+				<FogKeyframeArgs time="0.0" start="-0.1" end=".12" color="37 176 165" />
+			</dirtiness>
+		</lit>
+	</medium>
+	<high>
+		<unlit>
+			<dirtiness level=0>
+				<FogKeyframeArgs time="0.0" start="-0.05" end=".13" color="20 55 67" />
+			</dirtiness>
+			<dirtiness level=1.0>
+				<FogKeyframeArgs time="0.0" start="-0.1" end=".12" color="0 119 140" />
+			</dirtiness>
+		</unlit>
+		<lit>
+			<dirtiness level=0>
+				<FogKeyframeArgs time="0.0" start="-0.05" end=".13" color="62 107 109" />
+			</dirtiness>
+			<dirtiness level=1.0>
+				<FogKeyframeArgs time="0.0" start="-0.1" end=".12" color="37 176 165" />
+			</dirtiness>
+		</lit>
+	</high>
+</fog>
+   <light file="world/water/defaultLight.xml"/>
+</water>

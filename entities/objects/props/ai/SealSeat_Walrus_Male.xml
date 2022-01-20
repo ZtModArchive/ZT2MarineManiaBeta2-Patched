@@ -1,0 +1,124 @@
+<BFTypedBinder binderType="SealSeat_Walrus_Male">
+   <types>
+      <entity>
+         <prop>
+            <SealSeat_Walrus_Male/>
+         </prop>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="prop" rottype="use" postype="use" attachnode="node_trick"/>
+            <parentObj parent="mainObj" child="FitSurfacePick"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTDevComponent/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\props\SealSeat\SealSeat_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:SealSeat_Walrus_Male"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SealSeat_Walrus_Male"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Zoopedia="zoopedia:zoopedia_sealseat:entry" s_Product="Marine" b_HasEntityFittingSurface="true"/>
+      <ZTPlacementData icon3Doffset="0 0 0.918257" icon3Dscale="0.11" autoFootprint="false" randomRotate="false" gridSnap="true" terrainFlatten="false" dockArrowStyle="special" dockArrowSize="1.5" minimumHeadroom="3">
+         <cfootprint width="3" height="10" />
+         <dfootprint width="3" height="12" />
+         <excludedIconObjs>
+            <FitSurfacePick />
+         </excludedIconObjs>
+      </ZTPlacementData>
+      <BFGCollisionData isTraversable="false">
+         <typeScores avatar="0"/>
+      </BFGCollisionData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/props/Platform_Trick/Platform_Trick" scale="1.17" switch="0 20 40"/>
+               <BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars>
+               <virtualNodes>
+                  <Dock_TrickPlatform y="-10" yaw="180"/>
+                  <UnDock_TrickPlatform x="-0.5" z="0.65" yaw="90"/>
+                  <Node_Training x="3" y="-2" yaw="-90"/>
+                  <Node_PreTraining x="-1" y="-2" z="-3" yaw="-90"/>
+                  <Node_Seat_Failure y="-1" z="0.65" yaw="180"/>
+                  <Node_Seat_Success y="-1" z="0.65" yaw="180"/>
+                  <Node_Seat_Critical y="-1" z="0.65" yaw="180"/>
+               </virtualNodes>
+            </BFSharedPhysVars>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="prop">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\props\SealSeat\SealSeat_Walrus_mm" switch="0 20 40" scale="1.17"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Training" repopulateMethod="byName">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot targetNode="Node_PreTraining" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Seat_Failure">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockSeat" useBehSet="Seat_Failure" exitBehSet="ExitTrickPlatform" targetNode="Dock_TrickPlatform" exclusiveID="Seat1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Seat_Success">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockSeat" useBehSet="Seat_Success" exitBehSet="ExitTrickPlatform" targetNode="Dock_TrickPlatform" exclusiveID="Seat1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Seat_Critical">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockSeat" useBehSet="Seat_Critical" exitBehSet="ExitTrickPlatform" targetNode="Dock_TrickPlatform" exclusiveID="Seat1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="400">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="25" period="monthly" type="debit" category="upkeep"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="FitSurfacePick">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/props/Platform_Trick/Platform_Trick_PathGeometry" scale="1.2"/>
+               <BFGFittingSurfaceComponent heightOffset="0.78"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

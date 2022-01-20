@@ -1,0 +1,42 @@
+<BFTypedBinder binderType="gesture_event_marker">
+	<types>
+		<entity>
+			<gesture_event_marker/>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<BFGCollisionData isPassable="true" />
+		<BFAIEntityDataShared s_Product="Marine" s_uisort="ea" b_Sniffable="true" s_Zoopedia="zoopedia:zoopedia_durianfruit:entry" f_FameReq="90" />
+		<ZTDevComponent/>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="footprint" width="1" intensity="0.3"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="unfinishedEventObj" required="1">
+			<instance>
+				<BFPhysObj allowHighlight="true">
+				    <BFSceneGraphComponent modelfile="UI\fx\traininggestures\gesture_tracker_event.nif" scale="2.0"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="finishedEventObj" required="1">
+			<instance>
+				<BFPhysObj allowHighlight="true">
+				    <BFSceneGraphComponent modelfile="UI\fx\traininggestures\gesturetracker_success" scale="2.0"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

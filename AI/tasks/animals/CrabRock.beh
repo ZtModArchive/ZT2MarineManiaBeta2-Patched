@@ -1,0 +1,84 @@
+<BehaviorSets>
+   <Idle>
+      <subjects>
+         <CrabRock/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateSwitch>
+            <animTable>
+               <Walk anim="WalkLeft_Ahead"/>
+               <Run anim="WalkRight_Ahead"/>
+               <Stand anim="Stand_Idle"/>
+               <default anim="Stand_Idle"/>
+            </animTable>
+         </BFBehAnimateSwitch>
+      </behaviors>
+   </Idle>
+   <Ambient>
+      <subjects>
+         <CrabRock/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderLeft weight="40"/>
+               <WanderRight weight="30"/>
+               <Stand weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Ambient>
+   <WanderLeft>
+      <subjects>
+         <CrabRock/>
+      </subjects>
+      <behaviors>
+         <BFBehWander playTime="20" locoSpeed="medium" avoidLand="true"/>
+      </behaviors>
+   </WanderLeft>
+   <WanderRight>
+      <subjects>
+         <CrabRock/>
+      </subjects>
+      <behaviors>
+         <BFBehWander playTime="20" locoSpeed="slow" avoidLand="true"/>
+      </behaviors>
+   </WanderRight>
+   <Stand>
+      <subjects>
+         <CrabRock/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="10"/>
+      </behaviors>
+   </Stand>
+   <RunStraight>
+      <subjects>
+         <CrabRock/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <RunStraightLeft weight="50"/>
+               <RunStraightRight weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </RunStraight>
+   <RunStraightLeft>
+      <subjects>
+         <CrabRock/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="WalkLeft_Ahead" playTime="30"/>
+      </behaviors>
+   </RunStraightLeft>
+   <RunStraightRight>
+      <subjects>
+         <CrabRock/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="WalkRight_Ahead" playTime="30"/>
+      </behaviors>
+   </RunStraightRight>
+</BehaviorSets>

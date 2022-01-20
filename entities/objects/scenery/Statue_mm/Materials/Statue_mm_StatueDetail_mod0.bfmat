@@ -1,0 +1,27 @@
+<material fx="BaseDetailReflect">
+	<param name="TextureTransform1" type="matrix">6.000000, 0.000000, 0.000000, 0.000000, 0.000000, 6.000000, 0.000000, 0.000000, -2.500000, -2.500000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000</param>
+	<param name="TexCoordIndex1" type="dword">0</param>
+	<param name="AddressV1" type="dword">1</param>
+	<param name="Texture1" type="texture">BronzeDetail</param>
+	<param name="TexCoordIndex0" type="dword">0</param>
+	<param name="TextureTransformFlags1" type="dword">2</param>
+	<param name="AddressU1" type="dword">1</param>
+	<param name="AddressV0" type="dword">1</param>
+	<param name="MaterialPower" type="float">10.000000</param>
+	<param name="SpecularEnable" type="bool">false</param>
+	<param name="AlphaBlendEnable" type="bool">false</param>
+	<param name="MaterialAmbient" type="vector4">1.000000, 1.000000, 1.000000, 1.000000</param>
+	<param name="ShadeMode" type="dword">2</param>
+	<param name="MaterialEmissive" type="vector4">0.000000, 0.000000, 0.000000, 1.000000</param>
+	<param name="AlphaTestEnable" type="bool">false</param>
+	<param name="ColorApplyMode" type="dword">4</param>
+	<param name="AlphaApplyMode" type="dword">4</param>
+	<param name="CullMode" type="dword">2</param>
+	<param name="MaterialDiffuse" type="vector4">1.000000, 1.000000, 1.000000, 1.000000</param>
+	<param name="EmissiveMaterialSource" type="dword">0</param>
+	<param name="AmbientMaterialSource" type="dword">1</param>
+	<param name="DiffuseMaterialSource" type="dword">1</param>
+	<param name="Texture0" type="texture">Statue_mm</param>
+	<param name="AddressU0" type="dword">1</param>
+	<param name="Texture2" type="texture"></param>
+</material>

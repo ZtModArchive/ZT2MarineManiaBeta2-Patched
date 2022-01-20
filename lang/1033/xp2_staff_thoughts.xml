@@ -1,0 +1,11 @@
+<ZT2Strings>
+      <LOC_STRING _locID="staffthoughts:GiveTreat"  >I better give %s a treat to keep performing that trick right.</LOC_STRING>
+      <LOC_STRING _locID="staffthoughts:ConductShow"  >I hope the crowd enjoys this show.</LOC_STRING>
+      <LOC_STRING _locID="staffthoughts:FailureReaction"  >Oh no, %s messed up that trick!</LOC_STRING>
+      <LOC_STRING _locID="staffthoughts:SuccessReaction"  >I think %s did a great job on that trick!</LOC_STRING>
+      <LOC_STRING _locID="staffthoughts:CriticalReaction"  >Wow, %s did a really good job on that trick!</LOC_STRING>
+      <LOC_STRING _locID="staffthoughts:WaitShow"  >I bet the next show is going to be even better!</LOC_STRING>
+      <LOC_STRING _locID="staffthoughts:PreShow"  >I better clean up for the next show.</LOC_STRING>
+      <LOC_STRING _locID="staffthoughts:PostShow"  >Oops, that show left a bit of a mess.</LOC_STRING>
+      <LOC_STRING _locID="staffthoughts:Training"  >Before too long, %s will totally know this trick.</LOC_STRING>
+</ZT2Strings>

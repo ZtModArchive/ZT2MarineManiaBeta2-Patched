@@ -1,0 +1,101 @@
+<UIToggleButton name="Event object" toggle="0" sticky="1">
+   <UIRegion x="10" y="0" w="146" h="30"/>
+   <UIAspect alwayshit="true">
+      <default image=""/>
+      <standard>
+         <normal>
+            <BFRect x="0" y="0" w="64" h="64"/>
+         </normal>
+         <highlighted>
+            <BFRect x="0" y="64" w="64" h="64"/>
+         </highlighted>
+         <activated sound="uitab">
+            <BFRect x="64" y="0" w="64" h="64"/>
+         </activated>
+         <disabled>
+            <!--            <BFRect x="64" y="64" w="64" h="64"/> -->
+            <BFRect x="0" y="0" w="64" h="64"/>
+         </disabled>
+      </standard>
+      <alternate>
+         <normal>
+            <BFRect x="64" y="0" w="64" h="64"/>
+         </normal>
+         <highlighted>
+            <BFRect x="0" y="64" w="64" h="64"/>
+         </highlighted>
+         <activated sound="uitab">
+            <BFRect x="64" y="0" w="64" h="64"/>
+         </activated>
+         <disabled>
+            <!--            <BFRect x="64" y="64" w="64" h="64"/> -->
+            <BFRect x="0" y="0" w="64" h="64"/>
+         </disabled>
+      </alternate>
+   </UIAspect>
+   <children>
+      <UIHoverButton name="selector">
+         <UIRegion x="0" y="0" w="-12" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+         <UIAspect alwayshit="true">
+            <default/>
+         </UIAspect>
+         <enter>
+            <event msg="UI_CHILD" data="UIChildData" name="icon">
+               <child msg="UI_SET_SRC_RECT" data="BFRect" x="3" y="69" w="57" h="48"/>
+            </event>
+            <event msg="UI_CHILD" data="UIChildData" name="border">
+               <child msg="UI_SHOW"/>
+            </event>
+         </enter>
+         <leave>
+            <event msg="UI_CHILD" data="UIChildData" name="icon">
+               <child msg="UI_SET_SRC_RECT" data="BFRect" x="3" y="5" w="57" h="48"/>
+            </event>
+            <event msg="UI_CHILD" data="UIChildData" name="border">
+               <child msg="UI_HIDE"/>
+            </event>
+         </leave>
+         <children>
+            <UILayout name="border">
+               <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+               <UIState visible="hidden"/>
+               <children>
+                  <UIStatic>
+                     <UIRegion x="0" y="0" w="0" h="1" xalign="min" yalign="min" walign="max" halign="len"/>
+                     <UIAspect alwayshit="never">
+                        <default image="ui/shared/white1x1.dds">
+                           <BFColor r="0" g="255" b="0" a="255"/>
+                        </default>
+                     </UIAspect>
+                  </UIStatic>
+                  <UIStatic>
+                     <UIRegion x="-1" y="0" w="1" h="0" xalign="max" yalign="min" walign="len" halign="max"/>
+                     <UIAspect alwayshit="never">
+                        <default image="ui/shared/white1x1.dds">
+                           <BFColor r="0" g="255" b="0" a="255"/>
+                        </default>
+                     </UIAspect>
+                  </UIStatic>
+                  <UIStatic>
+                     <UIRegion x="0" y="-1" w="0" h="1" xalign="min" yalign="max" walign="max" halign="len"/>
+                     <UIAspect alwayshit="never">
+                        <default image="ui/shared/white1x1.dds">
+                           <BFColor r="0" g="255" b="0" a="255"/>
+                        </default>
+                     </UIAspect>
+                  </UIStatic>
+                  <UIStatic>
+                     <UIRegion x="0" y="0" w="1" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+                     <UIAspect alwayshit="never">
+                        <default image="ui/shared/white1x1.dds">
+                           <BFColor r="0" g="255" b="0" a="255"/>
+                        </default>
+                     </UIAspect>
+                  </UIStatic>
+               </children>
+            </UILayout>
+         </children>
+      </UIHoverButton>
+   </children>
+   <on/>
+</UIToggleButton>

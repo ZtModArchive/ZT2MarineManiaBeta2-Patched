@@ -1,0 +1,6 @@
+<BFPhysObj drawLast="true">
+   <position x="0" y="0" z="0"/>
+   <BFSceneGraphComponent modelfile="UI\fx\particles\user_actions\Clean_Filter.nif" updateBounds="false"/>
+   <BFHasParticleComponent/>
+   <BFForceUpdateWhenVisibleComponent controllersOnly="false"/>
+</BFPhysObj>

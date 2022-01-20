@@ -1,0 +1,658 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="KelpBedBasic_Rest" reserveTag="Rest" UniqueID="KelpBed_shelter:KelpBedBasic_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedBasic_Privacy" reserveTag="Rest" UniqueID="KelpBed_shelter:KelpBedBasic_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedMedium_Rest" reserveTag="Rest" UniqueID="KelpBed_shelter:KelpBedMedium_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedMedium_Privacy" reserveTag="Rest" UniqueID="KelpBed_shelter:KelpBedMedium_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedAdvanced_Rest" reserveTag="Rest" UniqueID="KelpBed_shelter:KelpBedAdvanced_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedAdvanced_Privacy" reserveTag="Rest" UniqueID="KelpBed_shelter:KelpBedAdvanced_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedElite_Rest" reserveTag="Rest" UniqueID="KelpBed_shelter:KelpBedElite_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedElite_Privacy" reserveTag="Rest" UniqueID="KelpBed_shelter:KelpBedElite_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedTopBasic_Rest" reserveTag="RestTop" UniqueID="KelpBedTop_shelter:KelpBedTopBasic_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedTopUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedTopBasic_Privacy" reserveTag="RestTop" UniqueID="KelpBedTop_shelter:KelpBedTopBasic_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedTopUser/>
+            <b_Basic/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedTopMedium_Rest" reserveTag="RestTop" UniqueID="KelpBedTop_shelter:KelpBedTopMedium_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedTopUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedTopMedium_Privacy" reserveTag="RestTop" UniqueID="KelpBedTop_shelter:KelpBedTopMedium_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedTopUser/>
+            <b_Medium/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedTopAdvanced_Rest" reserveTag="RestTop" UniqueID="KelpBedTop_shelter:KelpBedTopAdvanced_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedTopUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedTopAdvanced_Privacy" reserveTag="RestTop" UniqueID="KelpBedTop_shelter:KelpBedTopAdvanced_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedTopUser/>
+            <b_Advanced/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedTopElite_Rest" reserveTag="RestTop" UniqueID="KelpBedTop_shelter:KelpBedTopElite_Rest">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedTopUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" privacy="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="KelpBedTopElite_Privacy" reserveTag="RestTop" UniqueID="KelpBedTop_shelter:KelpBedTopElite_Privacy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_KelpBedTopUser/>
+            <b_Elite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <KelpBed_Shelter/>
+            <Qualifiers_AND inHabitat="true" inWater="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseShelterGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap privacy="-100" rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+</BFAITaskTemplateList>

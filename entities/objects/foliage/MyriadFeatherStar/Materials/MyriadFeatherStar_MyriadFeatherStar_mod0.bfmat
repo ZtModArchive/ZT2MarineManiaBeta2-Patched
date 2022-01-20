@@ -1,0 +1,14 @@
+<material fx="Base_fres_wind" name="MyriadFeatherStar">
+	<param name="AmbientMaterialSource" type="dword">0</param>
+	<param name="DiffuseMaterialSource" type="dword">0</param>
+	<param name="EmissiveMaterialSource" type="dword">0</param>
+	<param name="LUTScaleOffset" type="matrix">0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 3.592648, 0.000000, 0.000000, 0.000000, 0.500000, 0.000000, 0.000000, 1.000000</param>
+	<param name="MaterialAmbient" type="vector4">1.000000, 1.000000, 1.000000, 1.000000</param>
+	<param name="MaterialDiffuse" type="vector4">1.000000, 1.000000, 1.000000, 1.000000</param>
+	<param name="MaterialEmissive" type="vector4">0.078431, 0.078431, 0.078431, 1.000000</param>
+	<param name="MaterialPower" type="float">1.000000</param>
+	<param name="TexCoordIndexLUT" type="dword">1</param>
+	<param name="Texture0" type="texture">MyriadFeatherStar_1</param>
+	<param name="TextureLUT" type="texture">Materials/lutbiangle</param>
+	<mode name="Caustic" material="caustic_wind" />
+</material>

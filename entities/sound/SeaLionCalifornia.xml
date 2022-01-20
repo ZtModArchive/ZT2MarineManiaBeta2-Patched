@@ -1,0 +1,1064 @@
+<soundtags> 
+   <!--Horn Prop-->
+   <BFSoundtag>
+         <BF3DSndFactory name="Horns_mm_1">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/HornSeal_1.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="Horns_mm_2">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/HornSeal_2.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="Horns_mm_3">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/HornSeal_3.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="Horns_mm_4">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/HornSeal_4.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+    
+    <!--Swing Prop-->
+   <BFSoundtag>
+         <BF3DSndFactory name="SealSwing">
+            <snd name="entities/objects/props/SealSwing/sound/SealSwing.wav" volume=".7" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>           
+   
+   <!--adult sounds-->
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_AngryBark">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_AngryBark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_AngryBark1">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_ViciousBark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>             
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Attacked">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Bark">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Bark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Bark1">
+                     <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_HappyBark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Bathe">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Bathe.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_BiteEat">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_BiteEat.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_ChewGulp">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_ChewGulp.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Clap">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Clap.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_ClimbPlatform">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_ClimbPlatform.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Dig">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Dig.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_DivePlatform">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_DivePlatform.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Drink">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Drink.wav" volume=".7" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_EatLand_BiteA">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_EatLand_BiteA.wav" volume=".7" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_EatLand_BiteB">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_EatLand_BiteB.wav" volume=".8" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Echolocate">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Echolocate.wav" volume="1" mindist="6" maxdist="30" layer = "underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Forage">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Forage.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_GroomSelf">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_GroomSelf.wav" volume="1" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>           
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_HoldBallNose_2StandA">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_HoldBallNose_2StandA.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_HoldBallNose_2StandB">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_HoldBallNose_2StandB.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_HoldBallFlippers">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_HoldBallNose_HoldBallFlippers.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TossCatch">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_HoldBallNose_TossCatch.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_JumpTrampoline_2SwimSub">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_JumpTrampoline_2SwimSub.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_JumpTrampoline_FlipForward">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_JumpTrampoline_FlipForward.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_JumpTrampoline_Idle">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_JumpTrampoline_Idle.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_LookExcitedA">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_LookExcitedA.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_LookExcitedB">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_LookExcitedB.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Roar">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Roar.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Run_Slide">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Run_Slide.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_SealSeat_BarkHappy">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_SealSeat_BarkHappy.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_SealSeat_EatTreat">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_SealSeat_EatTreat.wav" volume=".7" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Sleep">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Sleep.wav" volume=".5" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Sneeze">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Sneeze.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Stand_2SwimSub_SwingSuccess">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Stand_2SwimSub_SwingSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Stand_2SwimSub_SwingSuperSuccess">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Stand_2SwimSub_SwingSuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_SwimSub_2JumpTrampoline">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_SwimSub_2JumpTrampoline.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_SwipeLeft">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_SwipeRight">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_SwipeRight.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TreadWater_Attacked">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_TreadWater_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TreadWater_GuestAttack_Friendly">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_TreadWater_GuestAttack_Friendly.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TreadWater_SwipeNose">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_TreadWater_SwipeNose.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TreadWater_SwipeTail">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_TreadWater_SwipeTail.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TreadWaterSub_Attacked">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_TreadWaterSub_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_UseSlide_2Swim_Success">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_UseSlide_2Swim_Success.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_UseSlide_2Swim_SuperSuccess">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_UseSlide_2Swim_SuperSuccess.wav" volume=".8" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_UseSlide_2Walk_Failure">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_UseSlide_2Walk_Failure.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>           
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Walk_2UseSlide">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Walk_2UseSlide.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Yawn">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Yawn.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_M_ChestSlam">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_M_ChestSlam.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_M_KnockedBack">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_M_KnockedBack.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_M_Stand_GuestAttack_Friendly">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_M_Stand_GuestAttack_Friendly.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_M_TreadWater_GuestAttack">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_M_TreadWater_GuestAttack.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>       
+     
+   <!--young sounds-->
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_AngryBark">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_AngryBark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="SeaLionCalifornia_Young_AngryBark1">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_ViciousBark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>             
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Attacked">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Bark">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Bark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Bark1">
+                     <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_HappyBark.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Bathe">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Bathe.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_BiteEat">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_BiteEat.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_ChewGulp">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_ChewGulp.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Clap">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Clap.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_ClimbPlatform">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_ClimbPlatform.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Dig">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Dig.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_DivePlatform">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_DivePlatform.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Drink">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Drink.wav" volume=".7" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_EatLand_BiteA">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_EatLand_BiteA.wav" volume=".7" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_EatLand_BiteB">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_EatLand_BiteB.wav" volume=".8" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Echolocate">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Echolocate.wav" volume="1" mindist="6" maxdist="30" layer = "underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Forage">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Forage.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_GroomSelf">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_GroomSelf.wav" volume="1" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>           
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_HoldBallNose_2StandA">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_HoldBallNose_2StandA.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_HoldBallNose_2StandB">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_HoldBallNose_2StandB.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_HoldBallFlippers">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_HoldBallNose_HoldBallFlippers.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TossCatch">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_HoldBallNose_TossCatch.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_JumpTrampoline_2SwimSub">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_JumpTrampoline_2SwimSub.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_JumpTrampoline_FlipForward">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_JumpTrampoline_FlipForward.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_JumpTrampoline_Idle">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_JumpTrampoline_Idle.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_LookExcitedA">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_LookExcitedA.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_LookExcitedB">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_LookExcitedB.wav" volume=".7" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Roar">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Roar.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Run_Slide">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Run_Slide.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_SealSeat_BarkHappy">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_SealSeat_BarkHappy.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_SealSeat_EatTreat">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_SealSeat_EatTreat.wav" volume=".7" mindist="4" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Sleep">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Sleep.wav" volume=".5" mindist="3" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Sneeze">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Sneeze.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Stand_2SwimSub_SwingSuccess">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Stand_2SwimSub_SwingSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Stand_2SwimSub_SwingSuperSuccess">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Stand_2SwimSub_SwingSuperSuccess.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_SwimSub_2JumpTrampoline">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_SwimSub_2JumpTrampoline.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_SwipeLeft">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_SwipeRight">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_SwipeRight.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TreadWater_Attacked">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_TreadWater_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TreadWater_GuestAttack_Friendly">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_TreadWater_GuestAttack_Friendly.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TreadWater_SwipeNose">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_TreadWater_SwipeNose.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TreadWater_SwipeTail">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_TreadWater_SwipeTail.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TreadWaterSub_Attacked">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_TreadWaterSub_Attacked.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_UseSlide_2Swim_Success">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_UseSlide_2Swim_Success.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_UseSlide_2Swim_SuperSuccess">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_UseSlide_2Swim_SuperSuccess.wav" volume=".8" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_UseSlide_2Walk_Failure">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_UseSlide_2Walk_Failure.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>           
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Walk_2UseSlide">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Walk_2UseSlide.wav" volume=".6" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Yawn">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Yawn.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_M_ChestSlam">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_M_ChestSlam.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_M_KnockedBack">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_M_KnockedBack.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_M_Stand_GuestAttack_Friendly">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_M_Stand_GuestAttack_Friendly.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_M_TreadWater_GuestAttack">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_M_TreadWater_GuestAttack.wav" volume="1" mindist="6" maxdist="30"/>
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   
+   <!--UNDERWATER SOUNDS-->
+ <!--adult sounds-->
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_AngryBark_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_AngryBark.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_AngryBark1_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_ViciousBark.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>             
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Attacked_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Attacked.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Bark_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Bark.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Bark1_uw">
+                     <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_HappyBark.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Bathe_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Bathe.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_BiteEat_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_BiteEat.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_ChewGulp_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_ChewGulp.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Clap_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Clap.wav" volume=".6" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_ClimbPlatform_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_ClimbPlatform.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Dig_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Dig.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_DivePlatform_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_DivePlatform.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Drink_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Drink.wav" volume=".7" mindist="4" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_EatLand_BiteA_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_EatLand_BiteA.wav" volume=".7" mindist="4" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_EatLand_BiteB_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_EatLand_BiteB.wav" volume=".8" mindist="4" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Echolocate_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Echolocate.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"  layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Forage_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Forage.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_GroomSelf_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_GroomSelf.wav" volume="1" mindist="3" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>           
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_HoldBallNose_2StandA_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_HoldBallNose_2StandA.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_HoldBallNose_2StandB_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_HoldBallNose_2StandB.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_HoldBallFlippers_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_HoldBallNose_HoldBallFlippers.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TossCatch_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_HoldBallNose_TossCatch.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_JumpTrampoline_2SwimSub_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_JumpTrampoline_2SwimSub.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_JumpTrampoline_FlipForward_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_JumpTrampoline_FlipForward.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_JumpTrampoline_Idle_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_JumpTrampoline_Idle.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_LookExcitedA_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_LookExcitedA.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_LookExcitedB_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_LookExcitedB.wav" volume=".7" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Roar_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Roar.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Run_Slide_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Run_Slide.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_SealSeat_BarkHappy_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_SealSeat_BarkHappy.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_SealSeat_EatTreat_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_SealSeat_EatTreat.wav" volume=".7" mindist="4" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Sleep_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Sleep.wav" volume=".5" mindist="3" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Sneeze_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Sneeze.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Stand_2SwimSub_SwingSuccess_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Stand_2SwimSub_SwingSuccess.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Stand_2SwimSub_SwingSuperSuccess_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Stand_2SwimSub_SwingSuperSuccess.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_SwimSub_2JumpTrampoline_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_SwimSub_2JumpTrampoline.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_SwipeLeft_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_SwipeRight_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_SwipeRight.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TreadWater_Attacked_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_TreadWater_Attacked.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TreadWater_GuestAttack_Friendly_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_TreadWater_GuestAttack_Friendly.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TreadWater_SwipeNose_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_TreadWater_SwipeNose.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TreadWater_SwipeTail_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_TreadWater_SwipeTail.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_TreadWaterSub_Attacked_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_TreadWaterSub_Attacked.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_UseSlide_2Swim_Success_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_UseSlide_2Swim_Success.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_UseSlide_2Swim_SuperSuccess_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_UseSlide_2Swim_SuperSuccess.wav" volume=".8" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_UseSlide_2Walk_Failure_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_UseSlide_2Walk_Failure.wav" volume=".6" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>           
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Walk_2UseSlide_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Walk_2UseSlide.wav" volume=".6" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_Yawn_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_F_Yawn.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_M_ChestSlam_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_M_ChestSlam.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_M_KnockedBack_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_M_KnockedBack.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_M_Stand_GuestAttack_Friendly_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_M_Stand_GuestAttack_Friendly.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Adult_M_TreadWater_GuestAttack_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Adult_M_TreadWater_GuestAttack.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>       
+     
+   <!--young sounds-->
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_AngryBark_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_AngryBark.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="SeaLionCalifornia_Young_AngryBark1_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_ViciousBark.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>             
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Attacked_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Attacked.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Bark_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Bark.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Bark1_uw">
+                     <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_HappyBark.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Bathe_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Bathe.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_BiteEat_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_BiteEat.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>      
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_ChewGulp_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_ChewGulp.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Clap_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Clap.wav" volume=".6" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_ClimbPlatform_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_ClimbPlatform.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Dig_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Dig.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_DivePlatform_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_DivePlatform.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Drink_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Drink.wav" volume=".7" mindist="4" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_EatLand_BiteA_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_EatLand_BiteA.wav" volume=".7" mindist="4" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_EatLand_BiteB_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_EatLand_BiteB.wav" volume=".8" mindist="4" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Echolocate_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Echolocate.wav" volume="1" mindist="6" maxdist="30" layer = "underwater"  layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Forage_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Forage.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_GroomSelf_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_GroomSelf.wav" volume="1" mindist="3" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>           
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_HoldBallNose_2StandA_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_HoldBallNose_2StandA.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_HoldBallNose_2StandB_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_HoldBallNose_2StandB.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_HoldBallFlippers_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_HoldBallNose_HoldBallFlippers.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TossCatch_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_HoldBallNose_TossCatch.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_JumpTrampoline_2SwimSub_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_JumpTrampoline_2SwimSub.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_JumpTrampoline_FlipForward_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_JumpTrampoline_FlipForward.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_JumpTrampoline_Idle_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_JumpTrampoline_Idle.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_LookExcitedA_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_LookExcitedA.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_LookExcitedB_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_LookExcitedB.wav" volume=".7" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Roar_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Roar.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Run_Slide_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Run_Slide.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_SealSeat_BarkHappy_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_SealSeat_BarkHappy.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_SealSeat_EatTreat_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_SealSeat_EatTreat.wav" volume=".7" mindist="4" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Sleep_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Sleep.wav" volume=".5" mindist="3" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Sneeze_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Sneeze.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Stand_2SwimSub_SwingSuccess_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Stand_2SwimSub_SwingSuccess.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Stand_2SwimSub_SwingSuperSuccess_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Stand_2SwimSub_SwingSuperSuccess.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_SwimSub_2JumpTrampoline_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_SwimSub_2JumpTrampoline.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_SwipeLeft_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_SwipeLeft.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_SwipeRight_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_SwipeRight.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TreadWater_Attacked_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_TreadWater_Attacked.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TreadWater_GuestAttack_Friendly_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_TreadWater_GuestAttack_Friendly.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TreadWater_SwipeNose_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_TreadWater_SwipeNose.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TreadWater_SwipeTail_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_TreadWater_SwipeTail.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_TreadWaterSub_Attacked_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_TreadWaterSub_Attacked.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_UseSlide_2Swim_Success_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_UseSlide_2Swim_Success.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_UseSlide_2Swim_SuperSuccess_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_UseSlide_2Swim_SuperSuccess.wav" volume=".8" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_UseSlide_2Walk_Failure_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_UseSlide_2Walk_Failure.wav" volume=".6" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>           
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Walk_2UseSlide_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Walk_2UseSlide.wav" volume=".6" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_Yawn_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_F_Yawn.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>    
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_M_ChestSlam_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_M_ChestSlam.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>     
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_M_KnockedBack_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_M_KnockedBack.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+    </BFSoundtag>   
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_M_Stand_GuestAttack_Friendly_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_M_Stand_GuestAttack_Friendly.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>          
+   <BFSoundtag>
+         <BF3DSndFactory name="SeaLionCalifornia_Young_M_TreadWater_GuestAttack_uw">
+            <snd name="entities/units/animals/SeaLionCalifornia/sound/SeaLionCalifornia_Young_M_TreadWater_GuestAttack.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+         </BF3DSndFactory>    
+   </BFSoundtag>              
+   
+   </soundtags>

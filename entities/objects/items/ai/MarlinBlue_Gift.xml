@@ -1,0 +1,21 @@
+<BFTypedBinder binderType="MarlinBlue_Gift">
+   <types>
+      <entity>
+         <item>
+            <MarlinBlue_Gift/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_MarlinBlue_Gift.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:MarlinBlue_Gift"/>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_MarineGift="true"/>
+   </shared>
+</BFTypedBinder>

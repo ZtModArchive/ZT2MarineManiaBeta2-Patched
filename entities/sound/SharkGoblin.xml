@@ -1,0 +1,619 @@
+<soundtags>
+   <!--adult sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_2OnLand">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_2OnLand.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Bite">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Bite.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_BiteLunge">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_BiteLunge.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_BiteLungeVicious">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_BiteLungeVicious.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_BiteVicious">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_BiteVicious.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Chew">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Chew.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_ChompA">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_ChompA.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_ChompB">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_ChompB.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Dying">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Dying.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_EatNibble">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_EatNibble.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="SharkGoblin_Adult_EatNibble2">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_EatNibble2.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_EatTear">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_EatTear.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_EatVoracious">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_EatVoracious.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Flap">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Flap.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_FrenzyA">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_FrenzyA.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_FrenzyB">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_FrenzyB.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_FrenzyC">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_FrenzyC.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_GuestAttack">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_GuestAttack.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_InvestigateBite">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_InvestigateBite.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_RiseBite">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_RiseBite.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_RiseBiteBreach">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_RiseBiteBreach.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_RubGround">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_RubGround.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_RubObject">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_RubObject.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_ShakeObject">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_ShakeObject.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_ShakeObjectVicious">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_ShakeObjectVicious.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_SlashFrenzy">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_SlashFrenzy.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_SlashLeft">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_SlashLeft.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_SlashRight">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_SlashRight.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Squirm">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Squirm.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_StartCharge">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_StartCharge.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Twitch">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Twitch.wav" volume="1" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--young sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_2OnLand">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_2OnLand.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Bite">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Bite.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_BiteLunge">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_BiteLunge.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_BiteLungeVicious">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_BiteLungeVicious.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_BiteVicious">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_BiteVicious.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Chew">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Chew.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_ChompA">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_ChompA.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_ChompB">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_ChompB.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Dying">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Dying.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_EatNibble">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_EatNibble.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="SharkGoblin_Young_EatNibble2">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_EatNibble2.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_EatTear">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_EatTear.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_EatVoracious">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_EatVoracious.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Flap">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Flap.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_FrenzyA">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_FrenzyA.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_FrenzyB">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_FrenzyB.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_FrenzyC">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_FrenzyC.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_GuestAttack">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_GuestAttack.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_InvestigateBite">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_InvestigateBite.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_RiseBite">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_RiseBite.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_RiseBiteBreach">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_RiseBiteBreach.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_RubGround">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_RubGround.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_RubObject">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_RubObject.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_ShakeObject">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_ShakeObject.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_ShakeObjectVicious">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_ShakeObjectVicious.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_SlashFrenzy">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_SlashFrenzy.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_SlashLeft">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_SlashLeft.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_SlashRight">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_SlashRight.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Squirm">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Squirm.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_StartCharge">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_StartCharge.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Twitch">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Twitch.wav" volume=".8" mindist="6" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--UNDERWATER VERSIONS-->
+   <!--adult sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_2OnLand_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_2OnLand_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Bite_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Bite_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_BiteLunge_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_BiteLunge_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_BiteLungeVicious_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_BiteLungeVicious_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_BiteVicious_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_BiteVicious_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Chew_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Chew_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_ChompA_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_ChompA_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_ChompB_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_ChompB_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Dying_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Dying_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_EatNibble_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_EatNibble_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="SharkGoblin_Adult_EatNibble_uw2">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_EatNibble2_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_EatTear_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_EatTear_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_EatVoracious_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_EatVoracious_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Flap_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Flap_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_FrenzyA_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_FrenzyA_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_FrenzyB_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_FrenzyB_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_FrenzyC_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_FrenzyC_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_GuestAttack_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_GuestAttack_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_InvestigateBite_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_InvestigateBite_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_RiseBite_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_RiseBite_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_RiseBiteBreach_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_RiseBiteBreach_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_RubGround_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_RubGround_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_RubObject_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_RubObject_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_ShakeObject_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_ShakeObject_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_ShakeObjectVicious_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_ShakeObjectVicious_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_SlashFrenzy_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_SlashFrenzy_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_SlashLeft_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_SlashLeft_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_SlashRight_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_SlashRight_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Squirm_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Squirm_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_StartCharge_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_StartCharge_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Adult_Twitch_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Adult_F_Twitch_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--young sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_2OnLand_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_2OnLand_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Bite_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Bite_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_BiteLunge_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_BiteLunge_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_BiteLungeVicious_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_BiteLungeVicious_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_BiteVicious_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_BiteVicious_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Chew_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Chew_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_ChompA_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_ChompA_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_ChompB_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_ChompB_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Dying_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Dying_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_EatNibble_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_EatNibble_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="SharkGoblin_Young_EatNibble_uw2">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_EatNibble2_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_EatTear_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_EatTear_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_EatVoracious_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_EatVoracious_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Flap_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Flap_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_FrenzyA_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_FrenzyA_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_FrenzyB_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_FrenzyB_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_FrenzyC_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_FrenzyC_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_GuestAttack_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_GuestAttack_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_InvestigateBite_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_InvestigateBite_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_RiseBite_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_RiseBite_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_RiseBiteBreach_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_RiseBiteBreach_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_RubGround_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_RubGround_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_RubObject_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_RubObject_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_ShakeObject_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_ShakeObject_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_ShakeObjectVicious_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_ShakeObjectVicious_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_SlashFrenzy_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_SlashFrenzy_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_SlashLeft_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_SlashLeft_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_SlashRight_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_SlashRight_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Squirm_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Squirm_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_StartCharge_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_StartCharge_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SharkGoblin_Young_Twitch_uw">
+         <snd name="entities/units/animals/SharkReefBlackTip/sound/SharkReefBlackTip_Young_F_Twitch_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

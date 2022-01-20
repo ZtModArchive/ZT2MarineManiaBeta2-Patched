@@ -1,0 +1,81 @@
+<ZT2Strings>
+
+ <zoopedia_bluewhalehall_mm>
+  <entry>Blue Whale Hall</entry>
+  <text>
+   <cell pady="0" width="1000"/>
+   <p/>
+   <cell width="260"/>
+   <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+    <cell width="600" padx="20" pady="20">
+     <color r="255" g="255" b="255">
+      <img src="entities\objects\buildings\bluewhalehall_mm\bluewhalehall_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+      <p/>
+The Blue Whale Hall is a whale-sized museum with exhibits on blue whales, the largest animals on earth. Visiting the museum amuses and educates guests, whose educational donations temporarily increase after viewing the Blue Whale Hall.
+		<p/>
+To unlock the Blue Whale Hall, complete the Marine Animals campaign.
+     </color>
+    </cell>
+   </cell>
+  </text>
+ </zoopedia_bluewhalehall_mm>
+
+ <zoopedia_giftcart_mm>
+      <entry>Gift Cart, Marine</entry>
+      <text>
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/buildings/giftcart_mm/giftcart_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <br/>
+The marine gift cart offers gifts relating to marine animals. Place a marine gift cart near your exhibit tanks and marine shows so that guests can buy souvenirs of their favorite marine species.         
+               </color>
+            </cell>
+         </cell>
+      </text>
+  </zoopedia_giftcart_mm>
+ 
+  <zoopedia_sharkphotobooth>
+      <entry>Shark Photo Booth</entry>
+      <text>
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/buildings/sharkphotobooth_mm/sharkphotobooth_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>                 
+The shark photo booth lets guests buy a fun souvenir photo of themselves with a realistic looking shark. Some enjoy getting their photo taken with the fake shark, but others find it a little scary.             
+               </color>
+            </cell>
+         </cell>
+      </text>
+   </zoopedia_sharkphotobooth>
+ 
+ <zoopedia_touchpool_mm>
+  <entry>Touch Pool</entry>
+  <text>
+   <cell pady="0" width="1000"/>
+   <p/>
+   <cell width="260"/>
+   <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+    <cell width="600" padx="20" pady="20">
+     <color r="255" g="255" b="255">
+      <img src="entities\objects\buildings\touchpool_mm\touchpool_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+      <p/>
+The touch pool gives guests a chance to see and hold small marine animals, such as conchs, horseshoe crabs, starfish and sea cucumbers. Guests like to visit the touch pool.
+     </color>
+    </cell>
+   </cell>
+  </text>
+ </zoopedia_touchpool_mm> 
+
+
+  
+</ZT2Strings>

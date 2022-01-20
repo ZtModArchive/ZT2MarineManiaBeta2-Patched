@@ -1,0 +1,172 @@
+﻿<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_aquarium:entry"  >Aquariums</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_aquarium:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\Aquarium_Jellyfish\Aquarium_Jellyfish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\Aquarium_Octopus\Aquarium_Octopus_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <img src="entities\objects\scenery\Aquarium_Seahorse\Aquarium_Seahorse_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <img src="entities\objects\scenery\Aquarium_TropicalFish\Aquarium_TropicalFish_icon.dds" sx="0" sy="0" sw="64" sh="64"/>                  
+                  <br/>Aquariums are perfect showcases for smaller marine animals. A small portable aquarium doesn't take up as much space as a full exhibit, and you can place it anywhere in your zoo. Guests like to see the animals up close.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_cannon:entry"  >Pirate Cannon</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_cannon:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/scenery/Cannon/Cannon_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <br/>This antique cannon adds an authentic pirate feel to exhibits. In a tank, it shoots streams of bubbles. On land, it decorates your zoo.	
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_koi:entry"  >Koi</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_koi:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\units\animals\Koi\Koi_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <br/>Koi, also known as nishikigoi, are an ornamental variety of the common carp specially bred for their brilliant colors and attractive patterns. Koi intrigue guests and make an interesting addition to any tank -- just don't add them to a tank with sharks or other marine predators!
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_drinkingfountain_mm:entry"  >Drinking Fountain, Nautilus</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_drinkingfountain_mm:text"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <img src="entities\objects\scenery\drinkingfountain_mm\drinkingfountain_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <p/>Though it doesn't produce revenue for the zoo, guests are grateful for a cool sip of water from the nautilus drinking fountain.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_fountain_splash_mm:entry"  >Beluga Splash Fountain</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_fountain_splash_mm:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/scenery/FountainSplash_mm/FountainSplash_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <br/>This fountain features adorable beluga whales with water jets that splash passersby. Kids love to play and splash in the fountain. Place it on a path and it forms an arch.	
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_pirate_mast:entry"  >Pirate Mast</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_pirate_mast:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/scenery/PirateMast/PirateMast_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <br/>This weathered ancient pirate ship functions underwater as a tank decoration or on ground as an interesting landmark.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_pirate_ship:entry"  >Pirate Ship</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_pirate_ship:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/scenery/PirateShip/PirateShip_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <br/>This antique shipwreck works wonderfully underwater or on land.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_seahorseride:entry"  >Seahorse Bouncy Ride</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_seahorseride:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/scenery/Playground_BouncyRide_Seahorse_mm/BouncyRide_Seahorse_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <br/>Children love to pretend they are exploring the ocean's depths on this giant-sized seahorse.	To make the seahorse bouncy ride available for purchase, win the Marine Animal Tycoon Level 2 Award.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_treasure_chest:entry"  >Treasure Chest Bubbler</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_treasure_chest:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/scenery/TreasureChest/TreasureChest_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <br/>This old sea chest bursting with pirate gold makes a great decoration on ground or in a tank.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_gazebo_mm:entry"  >Gazebo, Lighthouse</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_gazebo_mm:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities/objects/scenery/gazebo_mm/gazebo_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <br/>             
+               Guests enjoy sitting in the lighthouse gazebo. This scenic structure gives guests a place to rest and adds a marine look to your zoo.
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_marinetrainingstatue:entry"  >Statue, Marine Training</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_marinetrainingstatue:text"  >
+         <cell pady="40" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+               <color r="255" g="255" b="255">
+                  <br/>
+                  <img src="entities\objects\scenery\Statue_Training_mm\Statue_Training_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+                  <br/>
+Guests enjoy seeing statues around your zoo. To unlock the marine training statue, score 100 perfect 100% scores while training your marine animals. 
+               </color>
+            </cell>
+         </cell>
+      </LOC_STRING>   
+
+</ZT2Strings>

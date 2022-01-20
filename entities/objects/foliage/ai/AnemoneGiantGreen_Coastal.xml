@@ -1,0 +1,52 @@
+﻿<BFTypedBinder binderType="AnemoneGiantGreen_Coastal">
+   <types>
+      <entity>
+         <foliage>
+            <marineplant>
+              <AnemoneGiantGreen_Coastal/>
+            </marineplant>
+         </foliage>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTPlacementData icon3Doffset="0 -0.070264 0.523747" icon3Dscale="2.0" />
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\foliage\AnemoneGiantGreen\AnemoneGiantGreen_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:AnemoneGiantGreen_Coastal"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="AnemoneGiantGreen_Coastal"/>
+         </on>
+      </UIToggleButton>
+      <BFGBiomeData location="coastal_warm_oceans_worldwide">
+         <coastal/>
+      </BFGBiomeData>
+      <BFAIEntityDataShared s_Product="Marine" b_ReceiveUpdates="true" s_Zoopedia="zoopedia:zoopedia_greenseaanemone:entry" f_FameReq="20"/>
+   		<ZTTourData>
+ 				<biome_coastal value="1"/>
+		</ZTTourData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\foliage\AnemoneGiantGreen\AnemoneGiantGreen" switch="0 25 50"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFTerrainPaintComponent/>
+			</BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="30">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

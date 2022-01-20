@@ -1,0 +1,170 @@
+<challenges>
+	<ZTPhotoChallenge name="MantaRayBreaching" difficulty="1" script="scenario/scripts/challenge/instant/MantaPhoto.lua" function="scoreMantaRayBreaching"
+		stt="PhotoChallengetext:stt_MantaRayBreaching" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "mantaphoto" title = "">
+		<MantaRayBreaching />
+	</ZTPhotoChallengeSet>
+	
+	<ZTPhotoChallenge name="BelugaAndGuest" difficulty="1" script="scenario/scripts/challenge/instant/BelugaPhoto.lua" function="scoreGuestViewBeluga"
+		stt="PhotoChallengetext:stt_BelugaAndGuest" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "belugaphoto" title = "">
+		<BelugaAndGuest />
+	</ZTPhotoChallengeSet>	
+
+	<ZTPhotoChallenge name="ExplorerGoblinShark" difficulty="1" script="scenario/scripts/challenge/ExplorerVisit.lua" function="scoreExplorerGoblinShark"
+		stt="PhotoChallengetext:stt_ExplorerGoblinShark" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+	
+	<ZTPhotoChallenge name="ExplorerHammerheadShark" difficulty="1" script="scenario/scripts/challenge/ExplorerVisit.lua" function="scoreExplorerHammerheadShark"
+		stt="PhotoChallengetext:stt_ExplorerHammerhead" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "explorervisit" title = "">
+		<ExplorerGoblinShark />
+		<ExplorerHammerheadShark />
+	</ZTPhotoChallengeSet>	
+
+	<ZTPhotoChallenge name="WildlifeCalendarsHippo" difficulty="1" script="scenario/scripts/challenge/WildlifeCalenders.lua" function="scoreHippoUnderwaterWalk"
+		stt="PhotoChallengetext:stt_WildlifeCalendarsHippo" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="WildlifeCalendarsPenguin" difficulty="1" script="scenario/scripts/challenge/WildlifeCalenders.lua" function="scorePenguinDive"
+		stt="PhotoChallengetext:stt_WildlifeCalendarsPenguin" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="WildlifeCalendarsPolarBear" difficulty="1" script="scenario/scripts/challenge/WildlifeCalenders.lua" function="scorePolarBearFlipOrRoll"
+		stt="PhotoChallengetext:stt_WildlifeCalendarsPolarBear" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "wildlifecalendars" title = "">
+		<WildlifeCalendarsHippo />
+		<WildlifeCalendarsPenguin />
+		<WildlifeCalendarsPolarBear />
+	</ZTPhotoChallengeSet>	
+	
+	<ZTPhotoChallenge name="PeerlessPostersTrick" difficulty="1" script="scenario/scripts/challenge/PeerlessPosters.lua" function="scoreDolphinsWaterWalk"
+		stt="PhotoChallengetext:stt_PeerlessPostersTrick" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "peerlessposters" title = "">
+		<PeerlessPostersTrick />
+	</ZTPhotoChallengeSet>	
+
+	<ZTPhotoChallenge name="CetaceanDigestTrick1" difficulty="1" script="scenario/scripts/challenge/CetaceanDigest.lua" function="scoreJump"
+		stt="PhotoChallengetext:stt_CetaceanDigestTrick1" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="CetaceanDigestTrick2" difficulty="1" script="scenario/scripts/challenge/CetaceanDigest.lua" function="scoreTailSplash"
+		stt="PhotoChallengetext:stt_CetaceanDigestTrick2" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="CetaceanDigestTrick3" difficulty="1" script="scenario/scripts/challenge/CetaceanDigest.lua" function="scoreSpyhop"
+		stt="PhotoChallengetext:stt_CetaceanDigestTrick3" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "cetaceandigest" title = "">
+		<CetaceanDigestTrick1 />
+		<CetaceanDigestTrick2 />
+		<CetaceanDigestTrick3 />
+	</ZTPhotoChallengeSet>	
+	
+	<ZTPhotoChallenge name="PinnipedTrainersQuarterlyTrick1" difficulty="1" script="scenario/scripts/challenge/PinnipedTrainersQuarterly.lua" function="scoreBalenceBall"
+		stt="PhotoChallengetext:stt_PinnipedTrainersQuarterlyTrick1" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="PinnipedTrainersQuarterlyTrick2" difficulty="1" script="scenario/scripts/challenge/PinnipedTrainersQuarterly.lua" function="scoreUsingSlide"
+		stt="PhotoChallengetext:stt_PinnipedTrainersQuarterlyTrick2" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="PinnipedTrainersQuarterlyTrick3" difficulty="1" script="scenario/scripts/challenge/PinnipedTrainersQuarterly.lua" function="scoreUsingHorn"
+		stt="PhotoChallengetext:stt_PinnipedTrainersQuarterlyTrick3" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "pinnipedtrainersquarterly" title = "">
+		<PinnipedTrainersQuarterlyTrick1 />
+		<PinnipedTrainersQuarterlyTrick2 />
+		<PinnipedTrainersQuarterlyTrick3 />
+	</ZTPhotoChallengeSet>	
+
+	<ZTPhotoChallenge name="HasMarlins" difficulty="1" script="scenario/scripts/challenge/InternationalOceanographer.lua" function="scoreMarlinsUnderwater"
+		stt="PhotoChallengetext:stt_InternationalOceanographerMarlins" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="LeatherbackTurtleEating" difficulty="1" script="scenario/scripts/challenge/InternationalOceanographer.lua" function="scoreLeatherbackTurtleAndJellyfish"
+		stt="PhotoChallengetext:stt_InternationalOceanographerLeatherbackTurtle" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="hasPilotWhale" difficulty="1" script="scenario/scripts/challenge/InternationalOceanographer.lua" function="scorePilotWhaleUnderwater"
+		stt="PhotoChallengetext:stt_InternationalOceanographerPilotWhale" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "internationaloceanographer" title = "">
+		<HasMarlins />
+		<LeatherbackTurtleEating />
+		<hasPilotWhale />
+	</ZTPhotoChallengeSet>
+		
+	<ZTPhotoChallenge name="PirateVisitFountain" difficulty="1" script="scenario/scripts/challenge/PirateVisit.lua" function="scorePirateUsingFountain"
+		stt="PhotoChallengetext:stt_PirateVisitFountain" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="PirateVisitGazebo" difficulty="1" script="scenario/scripts/challenge/PirateVisit.lua" function="scorePirateInGazebo"
+		stt="PhotoChallengetext:stt_PirateVisitGazebo" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="PirateVisitAquarium" difficulty="1" script="scenario/scripts/challenge/PirateVisit.lua" function="scorePirateUsingAquarium"
+		stt="PhotoChallengetext:stt_PirateVisitAquarium" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "piratevisit" title = "">
+		<PirateVisitFountain />
+		<PirateVisitGazebo />
+		<PirateVisitAquarium />
+	</ZTPhotoChallengeSet>		
+	
+	<ZTPhotoChallenge name="WalrusBellow" difficulty="1" script="scenario/scripts/MarineShowPhotographer.lua" function="scoreWalrusBellow"
+		stt="MarineShowsCampaign:MarineShowPhotographerPart1Photo1Goal" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="WalrusJump" difficulty="1" script="scenario/scripts/MarineShowPhotographer.lua" function="scoreWalrusJump"
+		stt="MarineShowsCampaign:MarineShowPhotographerPart1Photo2Goal" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "marineshowpart1" title = "">
+		<WalrusBellow />
+		<WalrusJump />
+	</ZTPhotoChallengeSet>			
+
+	<ZTPhotoChallenge name="DolphinCorkscrew" difficulty="1" script="scenario/scripts/MarineShowPhotographer.lua" function="scoreDolphinCorkscrew"
+		stt="MarineShowsCampaign:MarineShowPhotographerPart2Photo1Goal" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="DolphinHoopJump" difficulty="1" script="scenario/scripts/MarineShowPhotographer.lua" function="scoreDolphinHoopJump"
+		stt="MarineShowsCampaign:MarineShowPhotographerPart2Photo2Goal" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "marineshowpart2" title = "">
+		<DolphinCorkscrew />
+		<DolphinHoopJump />
+	</ZTPhotoChallengeSet>			
+
+	<ZTPhotoChallenge name="SeaLionSlide" difficulty="1" script="scenario/scripts/MarineShowPhotographer.lua" function="scoreSeaLionSlide"
+		stt="MarineShowsCampaign:MarineShowPhotographerPart3Photo1Goal" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="SeaLionHorn" difficulty="1" script="scenario/scripts/MarineShowPhotographer.lua" function="scoreSeaLionHorn"
+		stt="MarineShowsCampaign:MarineShowPhotographerPart3Photo2Goal" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "marineshowpart3" title = "">
+		<SeaLionSlide />
+		<SeaLionHorn />
+	</ZTPhotoChallengeSet>	
+
+	<ZTPhotoChallenge name="OrcaJumpBar" difficulty="1" script="scenario/scripts/MarineShowPhotographer.lua" function="scoreOrcaJumpBar"
+		stt="MarineShowsCampaign:MarineShowPhotographerPart4Photo1Goal" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="OrcaSpyHopping" difficulty="1" script="scenario/scripts/MarineShowPhotographer.lua" function="scoreOrcaSpyHopping"
+		stt="MarineShowsCampaign:MarineShowPhotographerPart4Photo2Goal" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "marineshowpart4" title = "">
+		<OrcaJumpBar />
+		<OrcaSpyHopping />
+	</ZTPhotoChallengeSet>	
+	
+	<ZTPhotoChallenge name="EleanorAvusEating" difficulty="1" script="scenario/scripts/DoubleFeature.lua" function="scoreEleanorAvusEating"
+		stt="MarineShowsCampaign:DoubleFeaturePhotographerEatingGoal" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallenge name="EleanorAvusTakingPhoto" difficulty="1" script="scenario/scripts/DoubleFeature.lua" function="scoreEleanorAvusTakingPhoto"
+		stt="MarineShowsCampaign:DoubleFeaturePhotographerPhotographing" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "DoubleFeaturePhotographer" title = "">
+		<EleanorAvusEating />
+		<EleanorAvusTakingPhoto />
+	</ZTPhotoChallengeSet>	
+	
+	<ZTPhotoChallenge name="ExplorerWatchShow" difficulty="1" script="scenario/scripts/FineTuning.lua" function="scoreExplorerWatchShow"
+		stt="MarineShowsCampaign:RevampShowExplorerGoal" csst="PhotoChallengetext:cstt_genericgotphoto"/>
+
+	<ZTPhotoChallengeSet name = "FineTuningExplorer" title = "">
+		<ExplorerWatchShow />
+	</ZTPhotoChallengeSet>		
+</challenges>	

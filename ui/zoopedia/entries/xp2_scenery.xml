@@ -1,0 +1,17 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry entry="zoopedia_scenery">
+         <BFHelpEntry entry="zoopedia_aquarium"/>      
+         <BFHelpEntry entry="zoopedia_drinkingfountain_mm" order="zoopedia_drinkingfountainnautilus"/>
+			<BFHelpEntry entry="zoopedia_koi"/>
+			<BFHelpEntry entry="zoopedia_seahorseride"/>
+			<BFHelpEntry entry="zoopedia_fountain_splash_mm" order="zoopedia_belugasplashfountain"/>
+			<BFHelpEntry entry="zoopedia_cannon" order="zoopedia_piratecannon"/>
+         <BFHelpEntry entry="zoopedia_pirate_mast"/>			
+         <BFHelpEntry entry="zoopedia_pirate_ship"/>
+         <BFHelpEntry entry="zoopedia_treasure_chest"/>         
+         <BFHelpEntry entry="zoopedia_gazebo_mm"/>
+         <BFHelpEntry entry="zoopedia_marinetrainingstatue" order="zoopedia_statuemarinetraining"/>         
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

@@ -1,0 +1,139 @@
+<BFTypedBinder binderType="TetherBall_mm">
+	<types>
+		<entity>
+			<prop>
+				<TetherBall_mm />
+			</prop>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTDevComponent />	
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\props\TetherBall_mm\TetherBall_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:TetherBall_mm" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TetherBall_mm" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData moveable="true" randomRotate="false" gridSnap="true" autoFootprint="false" icon3Doffset="0 -0.05 0.31" icon3Dscale=".35">
+			<cfootprint width="1" height="3" />
+			<dfootprint width="2" height="4" />
+		</ZTPlacementData>
+		<BFAIEntityDataShared s_uisort="fa" s_Zoopedia="zoopedia:zoopedia_tetherball_mm:entry" f_FameReq="40" s_Product="Marine" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities\objects\props\TetherBall_mm\TetherBall_mm.bfm" activeSequenceName="Float_Idle" activeSequenceLoop="true" />
+					<BFFakePhysicsComponent idleAnim="Float_Idle" moveAnim="Float_Hit" escapeAnim="Float_Hit" slideRate="0.0" maxEscapeTries="5" />
+					<BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0" />
+					<BFCollisionComponent grid="Bip01" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Node_Training x="-1.5" y="1.25" yaw="-90" />
+						<Node_FlukeSwipeTetherBall_Failure y="-6" z="-1.0" yaw="180" />
+						<Node_FlukeSwipeTetherBall_Success y="-2.766" z="-1.551" pitch="55.2" yaw="180" />
+						<Node_FlukeSwipeTetherBall_Critical y="-2.966" z="-1.852" pitch="70.2" yaw="180" />
+						<Node_RamTetherBall_Failure z="-4.7" pitch="85.2" yaw="180" />
+						<Node_RamTetherBall_Success z="-4.7" pitch="85.2" yaw="180" />
+						<Node_RamTetherBall_Critical z="-5" pitch="85.2" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Training" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTraining" targetNode="Node_Training" exclusiveID="TetherBall1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Training_Teleport" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTraining_Teleport" targetNode="Node_Training" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlukeSwipeTetherBall_Failure">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTetherBall_FlukeSwipeTetherBall" useBehSet="FlukeSwipeTetherBall_Failure" targetNode="Node_FlukeSwipeTetherBall_Failure" exclusiveID="TetherBall1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlukeSwipeTetherBall_Success">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTetherBall_FlukeSwipeTetherBall" useBehSet="FlukeSwipeTetherBall_Success" targetNode="Node_FlukeSwipeTetherBall_Success" exclusiveID="TetherBall1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FlukeSwipeTetherBall_Critical">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTetherBall_FlukeSwipeTetherBall" useBehSet="FlukeSwipeTetherBall_Critical" targetNode="Node_FlukeSwipeTetherBall_Critical" exclusiveID="TetherBall1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="RamTetherBall_Failure">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTetherBall_RamTetherBall" useBehSet="RamTetherBall_Failure" targetNode="Node_RamTetherBall_Failure" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="RamTetherBall_Success">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTetherBall_RamTetherBall" useBehSet="RamTetherBall_Success" targetNode="Node_RamTetherBall_Success" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="RamTetherBall_Critical">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTetherBall_RamTetherBall" useBehSet="RamTetherBall_Critical" targetNode="Node_RamTetherBall_Critical" exclusiveID="TrickArea1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Moving="false" />
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="320">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

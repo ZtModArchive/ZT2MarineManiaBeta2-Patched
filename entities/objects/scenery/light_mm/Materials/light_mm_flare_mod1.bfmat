@@ -1,0 +1,17 @@
+<material fx="Base_fres">
+	<param name="SrcBlend" type="dword">5</param>
+	<param name="DestBlend" type="dword">2</param>
+	<param name="MaterialEmissive" type="vector4">0.501961, 0.501961, 0.501961, 1.000000</param>
+	<param name="CullMode" type="dword">1</param>
+	<param name="MaterialAmbient" type="vector4">0.000000, 0.000000, 0.000000, 1.000000</param>
+	<param name="MaterialDiffuse" type="vector4">0.000000, 0.000000, 0.000000, 1.000000</param>
+	<param name="MaterialPower" type="float">10.000000</param>
+	<param name="Texture0" type="texture">flare_sphere</param>
+	<param name="DiffuseMaterialSource" type="dword">0</param>
+	<param name="EmissiveMaterialSource" type="dword">0</param>
+	<param name="AmbientMaterialSource" type="dword">0</param>
+	<param name="ZWriteEnable" type="bool">false</param>
+	<param name="TexCoordIndexLUT" type="dword">1</param>
+	<param name="TextureLUT" type="texture">Materials/lutbiangle</param>
+	<param name="LUTScaleOffset" type="matrix">0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.333333, 0.000000, 0.000000, 0.000000, 0.500000, 0.000000, 0.000000, 1.000000</param>
+</material>

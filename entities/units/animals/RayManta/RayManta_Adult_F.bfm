@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\animals\RayManta\RayManta_Adult_F.nif">
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Defensive_2Swim.bf" animName="Defensive_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Defensive_Idle.bf" animName="Defensive_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Defensive_Slap.bf" animName="Defensive_Slap" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSurface_2EatSurfaceGlide.bf" animName="EatSurface_2EatSurfaceGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSurface_2EatSwimSub.bf" animName="EatSurface_2EatSwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSurface_2Swim.bf" animName="EatSurface_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSurface_Ahead.bf" animName="EatSurface_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSurface_Turn180.bf" animName="EatSurface_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSurface_TurnLeft90.bf" animName="EatSurface_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSurface_TurnRight90.bf" animName="EatSurface_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSurfaceGlide_2EatSurface.bf" animName="EatSurfaceGlide_2EatSurface" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSurfaceGlide_Ahead.bf" animName="EatSurfaceGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSub_2EatSurface.bf" animName="EatSwimSub_2EatSurface" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSub_2EatSwimSubGlide.bf" animName="EatSwimSub_2EatSwimSubGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSub_2SwimSub.bf" animName="EatSwimSub_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSub_Ahead.bf" animName="EatSwimSub_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSub_Turn180.bf" animName="EatSwimSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSub_TurnDown90.bf" animName="EatSwimSub_TurnDown90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSub_TurnLeft90.bf" animName="EatSwimSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSub_TurnRight90.bf" animName="EatSwimSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSub_TurnUp90.bf" animName="EatSwimSub_TurnUp90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSubGlide_2EatSwimSub.bf" animName="EatSwimSubGlide_2EatSwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_EatSwimSubGlide_Ahead.bf" animName="EatSwimSubGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_OnLand_2Swim.bf" animName="OnLand_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_OnLand_Idle.bf" animName="OnLand_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_OnLand_SquirmAhead.bf" animName="OnLand_SquirmAhead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_OnLand_SquirmLeft.bf" animName="OnLand_SquirmLeft" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_OnLand_SquirmRight.bf" animName="OnLand_SquirmRight" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Secondary_BendDown.bf" animName="Secondary_BendDown" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Secondary_BendLeft.bf" animName="Secondary_BendLeft" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Secondary_BendRight.bf" animName="Secondary_BendRight" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Secondary_BendUp.bf" animName="Secondary_BendUp" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_2Defensive.bf" animName="Swim_2Defensive" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_2EatSurface.bf" animName="Swim_2EatSurface" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_2OnLand.bf" animName="Swim_2OnLand" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_2SwimGlide.bf" animName="Swim_2SwimGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_2SwimSub.bf" animName="Swim_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_Ahead.bf" animName="Swim_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_Bite.bf" animName="Swim_Bite" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_Idle.bf" animName="Swim_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_Turn180.bf" animName="Swim_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_TurnLeft90.bf" animName="Swim_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_Swim_TurnRight90.bf" animName="Swim_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimGlide_2Swim.bf" animName="SwimGlide_2Swim" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimGlide_2SwimSub.bf" animName="SwimGlide_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimGlide_Ahead.bf" animName="SwimGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_2EatSwimSub.bf" animName="SwimSub_2EatSwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_2SwimSubGlide.bf" animName="SwimSub_2SwimSubGlide" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_Ahead.bf" animName="SwimSub_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_Bite.bf" animName="SwimSub_Bite" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_BreachLandHead.bf" animName="SwimSub_BreachLandHead" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_BreachLandTail.bf" animName="SwimSub_BreachLandTail" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_BreachSomersault.bf" animName="SwimSub_BreachSomersault" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_Idle.bf" animName="SwimSub_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_Turn180.bf" animName="SwimSub_Turn180" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_TurnDown90.bf" animName="SwimSub_TurnDown90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_TurnLeft90.bf" animName="SwimSub_TurnLeft90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_TurnRight90.bf" animName="SwimSub_TurnRight90" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSub_TurnUp90.bf" animName="SwimSub_TurnUp90" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSubGlide_2SwimSub.bf" animName="SwimSubGlide_2SwimSub" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\RayManta\RayManta_Adult_F_SwimSubGlide_Ahead.bf" animName="SwimSubGlide_Ahead" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="true" load="true" yawSpeed="60" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="RayManta_Adult_F" version="1">
+    <node name="Defensive">
+      <table>
+        <Defensive_Idle />
+        <Defensive_Slap />
+      </table>
+      <edge name="Swim">
+        <table>
+          <Defensive_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="EatSurface">
+      <table>
+        <EatSurface_Ahead />
+        <EatSurface_Turn180 />
+        <EatSurface_TurnLeft90 />
+        <EatSurface_TurnRight90 />
+      </table>
+      <edge name="Swim">
+        <table>
+          <EatSurface_2Swim />
+        </table>
+      </edge>
+      <edge name="EatSwimSub">
+        <table>
+          <EatSurface_2EatSwimSub />
+        </table>
+      </edge>
+      <edge name="EatSurfaceGlide">
+        <table>
+          <EatSurface_2EatSurfaceGlide />
+        </table>
+      </edge>
+    </node>
+    <node name="EatSurfaceGlide">
+      <table>
+        <EatSurfaceGlide_Ahead />
+      </table>
+      <edge name="EatSurface">
+        <table>
+          <EatSurfaceGlide_2EatSurface />
+        </table>
+      </edge>
+    </node>
+    <node name="EatSwimSub">
+      <table>
+        <EatSwimSub_Ahead />
+        <EatSwimSub_Turn180 />
+        <EatSwimSub_TurnDown90 />
+        <EatSwimSub_TurnLeft90 />
+        <EatSwimSub_TurnRight90 />
+        <EatSwimSub_TurnUp90 />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <EatSwimSub_2SwimSub />
+        </table>
+      </edge>
+      <edge name="EatSwimSubGlide">
+        <table>
+          <EatSwimSub_2EatSwimSubGlide />
+        </table>
+      </edge>
+      <edge name="EatSurface">
+        <table>
+          <EatSwimSub_2EatSurface />
+        </table>
+      </edge>
+    </node>
+    <node name="EatSwimSubGlide">
+      <table>
+        <EatSwimSubGlide_Ahead />
+      </table>
+      <edge name="EatSwimSub">
+        <table>
+          <EatSwimSubGlide_2EatSwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="OnLand">
+      <table>
+        <OnLand_Idle />
+        <OnLand_SquirmAhead />
+        <OnLand_SquirmLeft />
+        <OnLand_SquirmRight />
+      </table>
+      <edge name="Swim">
+        <table>
+          <OnLand_2Swim />
+        </table>
+      </edge>
+    </node>
+    <node name="Secondary">
+      <table>
+        <Secondary_BendDown />
+        <Secondary_BendLeft />
+        <Secondary_BendRight />
+        <Secondary_BendUp />
+      </table>
+    </node>
+    <node name="Swim">
+      <table>
+        <Swim_Ahead />
+        <Swim_Bite />
+        <Swim_Idle />
+        <Swim_Turn180 />
+        <Swim_TurnLeft90 />
+        <Swim_TurnRight90 />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <Swim_2SwimSub />
+        </table>
+      </edge>
+      <edge name="Defensive">
+        <table>
+          <Swim_2Defensive />
+        </table>
+      </edge>
+      <edge name="OnLand">
+        <table>
+          <Swim_2OnLand />
+        </table>
+      </edge>
+      <edge name="SwimGlide">
+        <table>
+          <Swim_2SwimGlide />
+        </table>
+      </edge>
+      <edge name="EatSurface">
+        <table>
+          <Swim_2EatSurface />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimGlide">
+      <table>
+        <SwimGlide_Ahead />
+      </table>
+      <edge name="Swim">
+        <table>
+          <SwimGlide_2Swim />
+        </table>
+      </edge>
+      <edge name="SwimSub">
+        <table>
+          <SwimGlide_2SwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSub">
+      <table>
+        <SwimSub_Ahead />
+        <SwimSub_Bite />
+        <SwimSub_BreachLandHead />
+        <SwimSub_BreachLandTail />
+        <SwimSub_BreachSomersault />
+        <SwimSub_Idle />
+        <SwimSub_Turn180 />
+        <SwimSub_TurnDown90 />
+        <SwimSub_TurnLeft90 />
+        <SwimSub_TurnRight90 />
+        <SwimSub_TurnUp90 />
+      </table>
+      <edge name="SwimSubGlide">
+        <table>
+          <SwimSub_2SwimSubGlide />
+        </table>
+      </edge>
+      <edge name="EatSwimSub">
+        <table>
+          <SwimSub_2EatSwimSub />
+        </table>
+      </edge>
+    </node>
+    <node name="SwimSubGlide">
+      <table>
+        <SwimSubGlide_Ahead />
+      </table>
+      <edge name="SwimSub">
+        <table>
+          <SwimSubGlide_2SwimSub />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

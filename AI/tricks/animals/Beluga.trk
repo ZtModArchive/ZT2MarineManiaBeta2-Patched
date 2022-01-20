@@ -1,0 +1,167 @@
+<Tricks>
+	<ZTAITrickData>
+		<Data name="BelugaJump" locname="tricknames:Jump" icon="UI/trick_icons/trick_icon_jump.dds" Difficulty="2" PopularityMult=".4"/>
+		<Animals>
+			<Beluga_Adult/>
+		</Animals>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Jump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Jump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_JumpFailure"/>
+		<Success token="t_JumpSuccess"/>
+		<Critical token="t_JumpCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="BelugaFlipperSplash" locname="tricknames:FlipperSplash" icon="UI/trick_icons/trick_icon_FlipperSplash.dds" Difficulty="2" PopularityMult=".4"/>
+		<Animals>
+			<Beluga_Adult/>
+		</Animals>
+                <Prerequisite name="BelugaJump" minScore="100"/>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="FlipperSplash_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="FlipperSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="FlipperSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="FlipperSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="FlipperSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="FlipperSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="FlipperSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="FlipperSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="FlipperSplash_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="FlipperSplash_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_FlipperSplashFailure"/>
+		<Success token="t_FlipperSplashSuccess"/>
+		<Critical token="t_FlipperSplashCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="BelugaSpyhop" locname="tricknames:Spyhop" icon="UI/trick_icons/trick_icon_Spyhop.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<Beluga_Adult/>
+		</Animals>
+                <Prerequisite name="BelugaSquirt" minScore="100"/>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Spyhop_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Spyhop_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Spyhop_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Spyhop_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Spyhop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Spyhop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Spyhop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Spyhop_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Spyhop_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Spyhop_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_SpyhopFailure"/>
+		<Success token="t_SpyhopSuccess"/>
+		<Critical token="t_SpyhopCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="BelugaTailSplash" locname="tricknames:TailSplash" icon="UI/trick_icons/trick_icon_TailSplash.dds" Difficulty="5" PopularityMult=".7"/>
+		<Animals>
+			<Beluga_Adult/>
+		</Animals>
+                <Prerequisite name="BelugaFlipperSplash" minScore="100"/>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="TailSplash_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="TailSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="TailSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="TailSplash_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="TailSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="TailSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="TailSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="TailSplash_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="TailSplash_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="TailSplash_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_TailSplashFailure"/>
+		<Success token="t_TailSplashSuccess"/>
+		<Critical token="t_TailSplashCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="BelugaSquirt" locname="tricknames:Squirt" icon="UI/trick_icons/trick_icon_Squirt.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<Beluga_Adult/>
+		</Animals>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Squirt_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Squirt_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Squirt_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Squirt_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Squirt_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Squirt_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Squirt_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Squirt_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Squirt_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Squirt_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_SquirtFailure"/>
+		<Success token="t_SquirtSuccess"/>
+		<Critical token="t_SquirtCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="BelugaFlukeSwipeBall" locname="tricknames:JumpSwipeAt" icon="UI/trick_icons/trick_icon_FlukeSwipeBall.dds" Difficulty="3" PopularityMult=".5"/>
+		<Animals>
+			<Beluga_Adult/>
+		</Animals>
+		<ZTAITrickTargetData Prop="LargeBall_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="FlukeSwipeBall_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="FlukeSwipeBall_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="FlukeSwipeBall_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="FlukeSwipeBall_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="FlukeSwipeBall_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="FlukeSwipeBall_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="FlukeSwipeBall_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="FlukeSwipeBall_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="FlukeSwipeBall_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="FlukeSwipeBall_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_FlukeSwipeBallFailure"/>
+		<Success token="t_FlukeSwipeBallSuccess"/>
+		<Critical token="t_FlukeSwipeBallCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="BelugaRamBallOutOfWater" locname="tricknames:RamAt" icon="UI/trick_icons/trick_icon_RamBallOutOfWater.dds" Difficulty="5" PopularityMult=".7"/>
+		<Animals>
+			<Beluga_Adult/>
+		</Animals>
+                <Prerequisite name="BelugaFlukeSwipeBall" minScore="100"/>
+		<ZTAITrickTargetData Prop="LargeBall_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="RamOutOfWater_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="RamOutOfWater_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="RamOutOfWater_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="RamOutOfWater_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="RamOutOfWater_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="RamOutOfWater_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="RamOutOfWater_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="RamOutOfWater_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="RamOutOfWater_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="RamOutOfWater_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_RamBallOutOfWaterFailure"/>
+		<Success token="t_RamBallOutOfWaterSuccess"/>
+		<Critical token="t_RamBallOutOfWaterCritical"/>
+	</ZTAITrickData>
+</Tricks>

@@ -1,0 +1,1430 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="CantDonate_XP2" CursorTask="false" Priority="1" UniqueID="ViewAnimal_XP2:CantDonate_XP2">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_DonateRayManta/>
+            <t_DonateBeluga/>
+            <t_DonateMarlinBlue/>
+            <t_DonateTurtleSeaGreen/>
+            <t_DonateManateeWestIndian/>
+            <t_DonateSeaLionCalifornia/>
+            <t_DonateWhalePilotShortFinned/>
+            <t_DonatePenguinRockhopper/>
+            <t_DonateTurtleLeatherback/>
+            <t_DonateOtterSea/>
+            <t_DonateSharkReefBlacktip/>
+            <t_DonateNarwhal/>
+            <t_DonateDolphinBottlenose/>
+            <t_DonateSharkHammerheadScalloped/>
+            <t_DonateSharkGoblin/>
+            <t_DonateWhaleFalseKiller/>
+            <t_DonateWalrusPacific/>
+            <t_DonateSharkWhale/>
+            <t_DonateWhaleOrca/>
+            <t_DonateSharkWhite/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-50" thirst="-50" dessert="-50" rest="-50" social="-50" amusement="-50" gift="-50" bathroom="-50" viewanimals="-50"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehAnimate targetAnim="Stand_ScratchHead"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:LookForDonationBox"/>
+               <ZTThoughtInfo locID="guestthoughts:CantFindDonationBox" priority="-1" timeout="60" global="true"/>
+               <ZTEmoticonInfo emoticonName="EmoteGuestDonateBad"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_CouldntFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateRayManta" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateRayManta">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateRayManta/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="RayMantaEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateRayMantaDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateRayMantaDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateRayManta/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="RayMantaEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateBeluga" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateBeluga">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateBeluga/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="BelugaEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateBelugaDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateBelugaDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateBeluga/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="BelugaEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateMarlinBlue" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateMarlinBlue">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateMarlinBlue/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="MarlinBlueEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateMarlinBlueDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateMarlinBlueDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateMarlinBlue/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="MarlinBlueEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateTurtleSeaGreen" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateTurtleSeaGreen">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateTurtleSeaGreen/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="TurtleSeaGreenEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateTurtleSeaGreenDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateTurtleSeaGreenDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateTurtleSeaGreen/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="TurtleSeaGreenEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateManateeWestIndian" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateManateeWestIndian">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateManateeWestIndian/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="ManateeWestIndianEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateManateeWestIndianDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateManateeWestIndianDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateManateeWestIndian/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="ManateeWestIndianEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSeaLionCalifornia" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateSeaLionCalifornia">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateSeaLionCalifornia/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SeaLionCaliforniaEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSeaLionCaliforniaDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateSeaLionCaliforniaDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateSeaLionCalifornia/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SeaLionCaliforniaEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateWhalePilotShortFinned" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateWhalePilotShortFinned">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateWhalePilotShortFinned/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="WhalePilotShortFinnedEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateWhalePilotShortFinnedDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateWhalePilotShortFinnedDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateWhalePilotShortFinned/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="WhalePilotShortFinnedEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonatePenguinRockhopper" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonatePenguinRockhopper">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonatePenguinRockhopper/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="PenguinRockhopperEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonatePenguinRockhopperDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonatePenguinRockhopperDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonatePenguinRockhopper/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="PenguinRockhopperEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateTurtleLeatherback" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateTurtleLeatherback">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateTurtleLeatherback/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="TurtleLeatherbackEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateTurtleLeatherbackDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateTurtleLeatherbackDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateTurtleLeatherback/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="TurtleLeatherbackEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateOtterSea" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateOtterSea">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateOtterSea/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="OtterSeaEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateOtterSeaDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateOtterSeaDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateOtterSea/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="OtterSeaEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSharkReefBlackTip" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateSharkReefBlackTip">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateSharkReefBlacktip/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SharkReefBlackTipEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSharkReefBlackTipDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateSharkReefBlackTipDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateSharkReefBlackTip/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SharkReefBlackTipEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateNarwhal" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateNarwhal">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateNarwhal/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="NarwhalEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateNarwhalDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateNarwhalDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateNarwhal/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="NarwhalEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateDolphinBottlenose" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateDolphinBottlenose">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateDolphinBottlenose/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="DolphinBottlenoseEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateDolphinBottlenoseDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateDolphinBottlenoseDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateDolphinBottlenose/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="DolphinBottlenoseEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSharkHammerheadScalloped" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateSharkHammerheadScalloped">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateSharkHammerheadScalloped/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SharkHammerheadScallopedEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSharkHammerheadScallopedDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateSharkHammerheadScallopedDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateSharkHammerheadScalloped/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SharkHammerheadScallopedEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSharkGoblin" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateSharkGoblin">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateSharkGoblin/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SharkGoblinEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSharkGoblinDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateSharkGoblinDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateSharkGoblin/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SharkGoblinEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateWhaleFalseKiller" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateWhaleFalseKiller">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateWhaleFalseKiller/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="WhaleFalseKillerEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateWhaleFalseKillerDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateWhaleFalseKillerDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateWhaleFalseKiller/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="WhaleFalseKillerEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateWalrusPacific" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateWalrusPacific">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateWalrusPacific/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="WalrusPacificEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateWalrusPacificDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateWalrusPacificDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateWalrusPacific/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="WalrusPacificEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSharkWhale" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateSharkWhale">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateSharkWhale/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SharkWhaleEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSharkWhaleDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateSharkWhaleDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateSharkWhale/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SharkWhaleEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateWhaleOrca" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateWhaleOrca">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateWhaleOrca/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="WhaleOrcaEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateWhaleOrcaDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateWhaleOrcaDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateWhaleOrca/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="WhaleOrcaEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSharkWhite" CursorTask="false" reserveTag="Use_DonationBox" Priority="2" UniqueID="ViewAnimal_XP2:DonateSharkWhite">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DonateSharkWhite/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDonate"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SharkWhiteEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MakeDonation"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DonateSharkWhiteDBFull" CursorTask="false" Priority="2" UniqueID="ViewAnimal_XP2:DonateSharkWhiteDBFull">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_DonationAcceptor/>
+         </Targets>
+         <Objects>
+            <t_DonateSharkWhite/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-75" thirst="-75" dessert="-75" rest="-75" social="-75" amusement="-75" gift="-75" bathroom="-75" viewanimals="-75"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:DonateMoney"/>
+               <ZTThoughtInfo locID="guestthoughts:DonateMoney" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="SharkWhiteEmote"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehEconomy transactionName="donate"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap f_DidFindDonationBox="1"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

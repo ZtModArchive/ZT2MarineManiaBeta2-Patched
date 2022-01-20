@@ -1,0 +1,14 @@
+<ZT2Strings>
+      <LOC_STRING _locID="zoonames:benthicsml"  >Benthic Zoo</LOC_STRING>
+      <LOC_STRING _locID="zoonames:benthicbig"  >Benthic Zoo</LOC_STRING>
+      <LOC_STRING _locID="zoonames:benthicmed"  >Benthic Test Zoo (M)</LOC_STRING>
+      <LOC_STRING _locID="zoonames:coastalbig"  >Coastal Zoo</LOC_STRING>
+      <LOC_STRING _locID="zoonames:coastalmed"  >Coastal Zoo</LOC_STRING>
+      <LOC_STRING _locID="zoonames:coastalsml"  >Coastal Zoo</LOC_STRING>
+      <LOC_STRING _locID="zoonames:pelagicsml"  >Pelagic Zoo</LOC_STRING>
+      <LOC_STRING _locID="zoonames:pelagicmed"  >Pelagic Zoo</LOC_STRING>
+      <LOC_STRING _locID="zoonames:pelagicbig"  >Pelagic Zoo</LOC_STRING>
+      <LOC_STRING _locID="zoonames:reefsml"  >Reef Zoo</LOC_STRING>
+      <LOC_STRING _locID="zoonames:reefmed"  >Reef Zoo</LOC_STRING>
+      <LOC_STRING _locID="zoonames:reefbig"  >Reef Zoo</LOC_STRING>
+</ZT2Strings>

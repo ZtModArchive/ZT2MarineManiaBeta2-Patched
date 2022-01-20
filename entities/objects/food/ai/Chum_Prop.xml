@@ -1,0 +1,33 @@
+<BFTypedBinder binderType="Chum_Prop">
+   <types>
+      <entity>
+         <item>
+            <Chum_Prop/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <BFGDetachInfo>
+         <detachActionTable>
+            <dropitem destination="kill"/>
+            <killitem destination="kill"/>
+            <inventory destination="inventory"/>
+         </detachActionTable>
+      </BFGDetachInfo>
+      <UIToggleButton template="adopt">
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Chum_Prop"/>
+      </UIToggleButton>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/food/FoodProps/ChumProp"  switch="0 18"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

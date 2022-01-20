@@ -1,0 +1,1627 @@
+<ZT2Strings>
+      <LOC_STRING _locID="tricknames:Add"  >Add new trick</LOC_STRING>
+      <LOC_STRING _locID="tricknames:Wait"  >Wait</LOC_STRING>
+      <LOC_STRING _locID="tricknames:Delete"  >Delete</LOC_STRING>
+      <LOC_STRING _locID="tricknames:Jump"  >Jump in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:StraightUpJump"  >Jump straight up in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:JumpFallSide"  >Fall to the side in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:DiveJump"  >Dive jump in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:FlipForward"  >Front flip in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:FlipBack"  >Backflip in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:FlipperSplash"  >Flipper splash in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:Spyhop"  >Spyhop in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:TailSplash"  >Tail splash in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:CorkscrewTwist"  >Corkscrew twist in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:WaterWalk"  >Water walk in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:Squirt"  >Squirt in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:JumpThrough"  >Jump through %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:JumpOver"  >Jump over %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:JumpOn"  >Jump on %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:JumpSwipeAt"  >Swipe %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:RamAt"  >Ram %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:SlideOn"  >Slide on %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:SwingOn"  >Swing on %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:SeatOn"  >Sit on %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:Playing"  >Play %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:BalanceOnNose"  >Balance %1s on nose</LOC_STRING>
+      <LOC_STRING _locID="tricknames:PlayingBasketball"  >Play basketball with %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:BellowOn"  >Bellow on %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:OpenUp"  >Open up %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:ForageIn"  >Forage in %1s</LOC_STRING>
+      <LOC_STRING _locID="tricknames:LookCuteOn"  >Look cute on %1s</LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to perform a jump in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinJumpFallSide_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to fall to the side in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinJumpFallSide_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The fall to the side trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinJumpFallSide_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinStraightUpJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to jump straight up in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinStraightUpJump_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The jump straight up trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinStraightUpJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinDiveJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Dive Jump in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to perform a dive jump in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinDiveJump_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Dive Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The dive jump trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinDiveJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Dive Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlipForward_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Front Flip in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to perform a front flip in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlipForward_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Front Flip in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The front flip trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlipForward_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Front Flip in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlipBack_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Backflip in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to perform a backflip in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlipBack_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Backflip in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The backflip trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlipBack_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Backflip in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlipperSplash_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to perform a flipper splash in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlipperSplash_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The flipper splash trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlipperSplash_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinSpyhop_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to perform a spyhop in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinSpyhop_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The spyhop trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinSpyhop_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinTailSplash_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to perform a tail splash in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinTailSplash_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The tail splash trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinTailSplash_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinCorkscrewTwist_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Corkscrew Twist in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to perform a corkscrew twist in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinCorkscrewTwist_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Corkscrew Twist in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The corkscrew twist trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinCorkscrewTwist_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Corkscrew Twist in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinWaterWalk_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Water Walk in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the dolphin to water walk in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinWaterWalk_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Water Walk in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinJumpHoop_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Through Hoop</b>
+         </color>
+         <br/>
+         Click to train the dolphin to jump through the hoop. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinJumpHoop_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Through Hoop</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinJumpBar_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Over Suspension Bar</b>
+         </color>
+         <br/>
+         Click to train the dolphin to jump over the suspension bar. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinJumpBar_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Over Suspension Bar</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlukeSwipeBall_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Large Ball</b>
+         </color>
+         <br/>
+         Click to train the dolphin to swipe the large ball. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlukeSwipeBall_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Large Ball</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinRamBallOutOfWater_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+         Click to train the dolphin to ram the large ball.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinRamBallOutOfWater_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The ram large ball trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinRamBallOutOfWater_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlukeSwipeTetherBall_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Tether Ball Buoy</b>
+         </color>
+         <br/>
+         Click to train the dolphin to swipe the tether ball buoy. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlukeSwipeTetherBall_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Tether Ball Buoy</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The swipe tether ball buoy trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinFlukeSwipeTetherBall_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Tether Ball Buoy</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinRamTetherBall_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Tether Ball Buoy</b>
+         </color>
+         <br/>
+         Click to train the dolphin to ram the tether ball buoy.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinRamTetherBall_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The ram tether ball buoy trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinRamTetherBall_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Tether Ball Buoy</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinBeachSlidingPlatform_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Slide on Beaching Platform</b>
+         </color>
+         <br/>
+         Click to train the dolphin to slide on the beaching platform.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:DolphinBeachSlidingPlatform_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Slide on Beaching Platform</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the beluga to perform a jump in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaFlipperSplash_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the beluga to perform a flipper splash in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaFlipperSplash_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The flipper splash trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaFlipperSplash_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaSpyhop_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the beluga to perform a spyhop in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaSpyhop_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The spyhop trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaSpyhop_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaTailSplash_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the beluga to perform a tail splash in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaTailSplash_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The tail splash trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaTailSplash_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaSquirt_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Squirt in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the beluga to squirt water in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaSquirt_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Squirt in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The squirt trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaSquirt_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Squirt in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaFlukeSwipeBall_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Large Ball</b>
+         </color>
+         <br/>
+         Click to train the beluga to swipe the large ball.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaFlukeSwipeBall_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Large Ball</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaRamBallOutOfWater_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+         Click to train the beluga to ram the large ball.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaRamBallOutOfWater_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The ram large ball trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:BelugaRamBallOutOfWater_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the orca to perform a jump in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaJumpFallSide_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the orca to fall to the side in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaJumpFallSide_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The fall to the side trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaJumpFallSide_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaStraightUpJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the orca to jump straight up in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaStraightUpJump_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The jump straight up trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaStraightUpJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaFlipForward_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Front Flip in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the orca to perform a front flip in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaFlipForward_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Front Flip in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The front flip trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaFlipForward_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Front Flip in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaFlipperSplash_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the orca to flipper splash in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaFlipperSplash_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The flipper splash trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaFlipperSplash_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaSpyhop_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the orca to perform a spyhop in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaSpyhop_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The spyhop trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaSpyhop_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaTailSplash_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the orca to perform a tail splash in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaTailSplash_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The tail splash trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaTailSplash_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaFlukeSwipeBall_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Large Ball</b>
+         </color>
+         <br/>
+         Click to train the orca to swipe the large ball. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaFlukeSwipeBall_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Large Ball</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaRamBallOutOfWater_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+         Click to train the orca to ram the large ball.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaRamBallOutOfWater_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The ram large ball trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaRamBallOutOfWater_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaBeachSlidingPlatform_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Slide on Beaching Platform</b>
+         </color>
+         <br/>
+         Click to train the orca to slide on the beaching platform.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleOrcaBeachSlidingPlatform_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Slide on Beaching Platform</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to perform a jump in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerJumpFallSide_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to fall to the side in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerJumpFallSide_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The fall to the side trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerJumpFallSide_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerStraightUpJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to jump straight up in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerStraightUpJump_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The jump straight up trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerStraightUpJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerDiveJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Dive Jump in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to perform a dive jump in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerDiveJump_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Dive Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The dive jump trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerDiveJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Dive Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerFlipperSplash_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to perform a flipper splash in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerFlipperSplash_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The flipper splash trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerFlipperSplash_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerSpyhop_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to perform a spyhop in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerSpyhop_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The spyhop trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerSpyhop_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerTailSplash_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to perform a tail splash in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerTailSplash_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The tail splash trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerTailSplash_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerJumpHoop_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Through Hoop</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to jump through the hoop. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerJumpHoop_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Through Hoop</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerJumpBar_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Over Suspension Bar</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to jump over the suspension bar.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerJumpBar_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Over Suspension Bar</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerFlukeSwipeBall_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Large Ball</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to swipe the large ball.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerFlukeSwipeBall_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Large Ball</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerRamBallOutOfWater_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to ram the large ball.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerRamBallOutOfWater_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The ram large ball trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerRamBallOutOfWater_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerBeachSlidingPlatform_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Slide on Beaching Platform</b>
+         </color>
+         <br/>
+         Click to train the false killer whale to slide on the beaching platform.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhaleFalseKillerBeachSlidingPlatform_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Slide on Beaching Platform</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the short-finned pilot whale to perform a jump in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedJumpFallSide_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the short-finned pilot whale to fall to the side in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedJumpFallSide_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The fall to the side trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedJumpFallSide_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Fall to the Side in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedStraightUpJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the short-finned pilot whale to jump straight up in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedStraightUpJump_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The jump straight up trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedStraightUpJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedFlipperSplash_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the short-finned pilot whale to perform a flipper splash in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedFlipperSplash_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Straight Up in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The jump straight up trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedFlipperSplash_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Flipper Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedSpyhop_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the short-finned pilot whale to perform a spyhop in the trick area. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedSpyhop_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The spyhop trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedSpyhop_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Spyhop in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedTailSplash_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the short-finned pilot whale to perform a tail splash in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedTailSplash_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The tail splash trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedTailSplash_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tail Splash in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedJumpHoop_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Through Hoop</b>
+         </color>
+         <br/>
+         Click to train the short-finned pilot whale to jump through the hoop. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedJumpHoop_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Through Hoop</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedJumpBar_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Over Suspension Bar</b>
+         </color>
+         <br/>
+         Click to train the short-finned pilot whale to jump over the suspension bar.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedJumpBar_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump Over Suspension Bar</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedFlukeSwipeBall_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Large Ball</b>
+         </color>
+         <br/>
+         Click to train the short-finned pilot whale to swipe the large ball. Completing this training unlocks the next trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedFlukeSwipeBall_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swipe Large Ball</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedRamBallOutOfWater_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+         Click to train the short-finned pilot whale to ram the large ball.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedRamBallOutOfWater_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The ram large ball trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WhalePilotShortFinnedRamBallOutOfWater_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Ram Large Ball</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the California sea lion to perform a jump in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaSlide_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Slide on Slide</b>
+         </color>
+         <br/>
+         Click to train the California sea lion to slide on the slide.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaSlide_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Slide on Slide</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaSwing_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swing on Swing</b>
+         </color>
+         <br/>
+         Click to train the California sea lion to swing on the swing.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaSwing_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swing on Swing</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The swing trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaSwing_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Swing on Swing</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaSeat_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sit on Seat</b>
+         </color>
+         <br/>
+         Click to train the California sea lion to sit on the seat.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaSeat_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sit on Seat</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaHorns_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Play Horns</b>
+         </color>
+         <br/>
+         Click to train the California sea lion to play the horns.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaHorns_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Play Horns</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The play horns trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaHorns_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Play Horns</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaBall_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Balance Small Ball on Nose</b>
+         </color>
+         <br/>
+         Click to train the California sea lion to balance the small ball on its nose.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaBall_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Balance Small Ball on Nose</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaTrampoline_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump on Trampoline</b>
+         </color>
+         <br/>
+         Click to train the California sea lion to jump on the trampoline.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaTrampoline_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump on Trampoline</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The jump on trampoline trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaTrampoline_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump on Trampoline</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaBasketball_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Play Basketball with Basketball Hoop</b>
+         </color>
+         <br/>
+         Click to train the California sea lion to play basketball with the basketball hoop.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaBasketball_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Play Basketball</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The play basketball trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:SeaLionCaliforniaBasketball_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Play Basketball with Basketball Hoop</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WalrusPacificJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the Pacific walrus to perform a jump in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WalrusPacificJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WalrusPacificSeat_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sit on Seat</b>
+         </color>
+         <br/>
+         Click to train the Pacific walrus to sit on the seat.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WalrusPacificSeat_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sit on Seat</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The sit on seat trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WalrusPacificSeat_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sit on Seat</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WalrusPacificBellow_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Bellow on Trick Platform</b>
+         </color>
+         <br/>
+         Click to train the Pacific walrus to bellow on the trick platform.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WalrusPacificBellow_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Bellow on Trick Platform</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The bellow trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:WalrusPacificBellow_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Bellow on Trick Platform</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaJump_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+         Click to train the sea otter to perform a jump in the trick area.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaJump_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Jump in Trick Area</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaShakerToy_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Open up Shaker Toy</b>
+         </color>
+         <br/>
+         Click to train the sea otter to open up the shaker toy.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaShakerToy_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Open up Shaker Toy</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The open up shaker toy trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaShakerToy_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Open up Shaker Toy</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaForage_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Forage in Pile of Rocks</b>
+         </color>
+         <br/>
+         Click to train the sea otter to forage in the pile of rocks.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaForage_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Forage in Pile of Rocks</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The forage trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaForage_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Forage in Pile of Rocks</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaSeat_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Look Cute on Seat</b>
+         </color>
+         <br/>
+         Click to train the sea otter to look cute on the seat.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaSeat_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Look Cute on Seat</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaBasketball_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Play Basketball with Basketball Hoop</b>
+         </color>
+         <br/>
+         Click to train the sea otter to play basketball with the basketball hoop.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaBasketball_locked_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Play Basketball with Basketball Hoop</b>
+         </color>
+         <br/>
+            <b>    Trick Locked</b>
+         <br/>
+         The play basketball trick is locked. To unlock this trick, fully train the previous trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="tricktooltips:OtterSeaBasketball_complete_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Play Basketball with Basketball Hoop</b>
+         </color>
+         <br/>
+            <b>    Training Complete</b>
+         <br/>
+         Training is complete. This animal is fully trained on this trick.
+      </LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:CreateNewProp"  >Create new prop for %1s</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:ReuseProp"  >Reuse prop for %1s</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:AppendPopularityMarkup"  >%1s - %2s</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:trick_popularity_05"  >Popularity: 1/2 star</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:trick_popularity_10"  >Popularity: 1 star</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:trick_popularity_15"  >Popularity: 1 1/2 stars</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:trick_popularity_20"  >Popularity: 2 stars</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:trick_popularity_25"  >Popularity: 2 1/2 stars</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:trick_popularity_30"  >Popularity: 3 stars</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:trick_popularity_35"  >Popularity: 3 1/2 stars</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:trick_popularity_40"  >Popularity: 4 stars</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:trick_popularity_45"  >Popularity: 4 1/2 stars</LOC_STRING>
+      <LOC_STRING _locID="trickmarkup:trick_popularity_50"  >Popularity: 5 stars</LOC_STRING>
+</ZT2Strings>

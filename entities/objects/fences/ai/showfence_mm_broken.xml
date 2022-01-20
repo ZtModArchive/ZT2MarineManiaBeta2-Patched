@@ -1,0 +1,78 @@
+<BFTypedBinder binderType="showfence_mm_broken">
+   <types>
+      <entity>
+         <fence>
+            <showfence_mm_broken/>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTDevComponent/>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\showfence_mm\showfence_mm_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:showfence_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="showfence_mm_broken"/>
+         </on>
+      </UIToggleButton>
+      <BFGCollisionData score="0"/>
+      <BFAIEntityDataShared s_Product="Marine" s_uisort="rb" f_FenceStrength="0" b_SeeThrough="true" s_Zoopedia="zoopedia:zoopedia_showfence:entry"/>
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTFence gate="showfence_gate_mm" hasCurves="false"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\showfence_mm\showfence_mm_post"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\showfence_mm\showfence_mm_vert_broken"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\showfence_mm\showfence_mm_diag_broken"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\showfence_mm\showfence_mm_post"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance f_FenceStrength="3"/>
+         </instance>
+      </BFBinder>      
+   </binder>
+</BFTypedBinder>

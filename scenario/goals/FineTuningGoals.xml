@@ -1,0 +1,97 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="false" sticky="true" optional="false">
+	<info locid="MarineShowsCampaign:RevampShowIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/FineTuning.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup name="OptionalGuestGoal" state="0" chain="true" allsuccess="true" sticky="true">
+			<children>
+				<BFScenarioRule name="AttendenceGoal" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:RevampShowPilotWhaleGoal" overview="MarineShowsCampaign:RevampShowPilotWhale"/>
+						<success locid="MarineShowsCampaign:RevampShowPilotWhaleDone" overview="MarineShowsCampaign:RevampShowPilotWhaleSuccess"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/FineTuning.lua" entry="evalShowDonation" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/FineTuning.lua" entry="completeShowDonation" />
+					</success>
+				</BFScenarioRule>				
+			</children>
+		</BFScenarioGroup>	
+		<BFScenarioGroup name="OverallGoals" state="0" chain="true" allsuccess="true" sticky="true">
+			<info type="primary">
+				<success locid="MarineShowsCampaign:RevampShowOverview" />
+			</info>
+			<children>
+				<!--BFScenarioRule name="CritticalNeeds" state="0" sticky="true">
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/FineTuning.lua" entry="evalCriticalNeeds" />
+					</evaluate>
+					<failure>
+						<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="failCriticalNeeds" />
+					</failure>					
+				</BFScenarioRule-->				
+				<BFScenarioRule name="OneStarGoal" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:RevampShowOneStarGoal" overview="MarineShowsCampaign:RevampShowOverview"/>
+						<success locid="MarineShowsCampaign:RevampShowOneStarGoalDone" overview="MarineShowsCampaign:RevampShowOverview" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/FineTuning.lua" entry="evalOneStarShow" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/FineTuning.lua" entry="completeOneStarShow" />
+					</success>
+				</BFScenarioRule>				
+				<BFScenarioRule name="TwoStarGoal" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:RevampShowTwoStarGoal" overview="MarineShowsCampaign:RevampShowTwoStars"/>
+						<success locid="MarineShowsCampaign:RevampShowTwoStarGoalDone" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/FineTuning.lua" entry="evalTwoStarShow" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/FineTuning.lua" entry="completeTwoStarShow" />
+					</success>
+				</BFScenarioRule>				
+				<BFScenarioRule name="ThreeStarGoal" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:RevampShowThreeStarGoal" overview="MarineShowsCampaign:RevampShowThreeStars"/>
+						<success locid="MarineShowsCampaign:RevampShowThreeStarGoalDone" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/FineTuning.lua" entry="evalThreeStarShow" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/FineTuning.lua" entry="completeThreeStarShow" />
+					</success>
+				</BFScenarioRule>
+			</children>
+		</BFScenarioGroup>
+		<BFScenarioGroup name="OptionalPhotoGoal" state="0" chain="true" allsuccess="true" sticky="true">
+			<children>
+				<BFScenarioRule name="ExplorerGoal" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="MarineShowsCampaign:RevampShowExplorerGoal" overview="MarineShowsCampaign:RevampShowExplorer"/>
+						<success locid="MarineShowsCampaign:RevampShowExplorerGoalDone" overview="MarineShowsCampaign:RevampShowExplorerSuccess"/>
+						<failure locid="MarineShowsCampaign:RevampShowFailureExplorer" overview="MarineShowsCampaign:RevampShowFailureExplorer"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="evalExplorerWatchShow" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="completeExplorerWatchShow" />
+					</success>
+					<failure>
+						<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="failExplorerWatchShow" />
+					</failure>						
+				</BFScenarioRule>				
+			</children>
+		</BFScenarioGroup>		
+	</children>
+</ZTScenarioMgr>		

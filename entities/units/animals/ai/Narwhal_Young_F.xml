@@ -1,0 +1,34 @@
+<BFTypedBinder binderType="Narwhal_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Monodontidae>
+                        <Narwhal>
+                           <Narwhal_Young>
+                              <Narwhal_Young_F/>
+                           </Narwhal_Young>
+                        </Narwhal>
+                     </Monodontidae>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Narwhal_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+		<ZTPlacementData icon3Doffset="0 0 .8" icon3Dscale=".6"/>      
+   </shared>
+   <binder/>
+</BFTypedBinder>

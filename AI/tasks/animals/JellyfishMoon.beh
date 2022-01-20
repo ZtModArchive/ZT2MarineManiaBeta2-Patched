@@ -1,0 +1,261 @@
+<BehaviorSets>
+   <Idle>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateSwitch>
+            <animTable>
+               <SwimSub anim="SwimSub_Ahead" minAnimSpeed="0.6" maxAnimSpeed="0.7"/>
+               <TreadWaterSub anim="TreadWaterSub_Idle" />
+               <default anim="TreadWaterSub_Idle" minAnimSpeed="0.6" maxAnimSpeed="0.7"/>
+            </animTable>
+         </BFBehAnimateSwitch>
+      </behaviors>
+   </Idle>
+   <Ambient>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehPlaySet behSet="WanderSub"/>
+      </behaviors>
+   </Ambient>
+   <Stand>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle" minAnimSpeed="0.6" maxAnimSpeed="0.7"/>
+      </behaviors>
+   </Stand>
+   <Swim_Idle>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Ahead" minAnimSpeed="0.6" maxAnimSpeed="0.7"/>
+      </behaviors>
+   </Swim_Idle>
+   <TreadWaterSub_Idle>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_Idle"/>
+      </behaviors>
+   </TreadWaterSub_Idle>
+   <RunStraight>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Ahead" playTime="30"/>
+      </behaviors>
+   </RunStraight>
+   <Wander>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub weight="80"/>
+               <WanderSurf weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Wander>
+   <WanderSurf>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="33"/>
+               <WanderSurf_Med weight="33"/>
+               <WanderSurf_Slow weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="3" avoidLand="true" locoSpeed="fast" avoidObstacleRadius="2"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_2TreadWaterSub_Down"/>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="3" avoidLand="true" locoSpeed="medium" avoidObstacleRadius="2"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_2TreadWaterSub_Down"/>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="3" avoidLand="true" locoSpeed="slow" avoidObstacleRadius="2"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_2TreadWaterSub_Down"/>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSub>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="33"/>
+               <WanderSub_Med weight="33"/>
+               <WanderSub_Slow weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidObstacleRadius="2" minDepth="4" maxDepth="12"/>
+         <BFBehPlaySet behSet="Turn"/>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidObstacleRadius="2" minDepth="4" maxDepth="12"/>
+         <BFBehPlaySet behSet="Turn"/>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidObstacleRadius="2" minDepth="4" maxDepth="12"/>
+         <BFBehPlaySet behSet="Turn"/>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidObstacleRadius="2" minDepth="4" maxDepth="12"/>
+         <BFBehPlaySet behSet="Turn"/>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidObstacleRadius="2" minDepth="4" maxDepth="12"/>
+         <BFBehPlaySet behSet="Turn"/>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidObstacleRadius="2" minDepth="4" maxDepth="12"/>
+         <BFBehPlaySet behSet="Turn"/>
+      </behaviors>
+   </WanderSub_Slow>
+   <Turn>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+   	 <BFBehAnimateRandom>
+            <randomAnims>
+               <TreadWaterSub_TurnLeft90 weight="33"/>
+               <TreadWaterSub_TurnRight90 weight="33"/>
+               <TreadWaterSub_Idle weight="34"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehRandomSet>
+            <randomSets>
+               <UpThenDown weight="50"/>
+               <DownThenUp weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Turn>
+   <UpThenDown>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_2TreadWaterSub_Up"/>
+   	 <BFBehAnimateRandom>
+            <randomAnims>
+               <TreadWaterSub_TurnLeft90 weight="33"/>
+               <TreadWaterSub_TurnRight90 weight="33"/>
+               <TreadWaterSub_Idle weight="34"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="TreadWaterSub_2TreadWaterSub_Down"/>
+      </behaviors>
+   </UpThenDown>
+   <DownThenUp>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_2TreadWaterSub_Down"/>
+   	 <BFBehAnimateRandom>
+            <randomAnims>
+               <TreadWaterSub_TurnLeft90 weight="33"/>
+               <TreadWaterSub_TurnRight90 weight="33"/>
+               <TreadWaterSub_Idle weight="34"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="TreadWaterSub_2TreadWaterSub_Up"/>
+      </behaviors>
+   </DownThenUp>
+   <Surface_Submerge>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidObstacleRadius="2" minDepth="6" maxDepth="12"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_2TreadWaterSub_Down"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_2TreadWaterSub_Down"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <JellyfishMoon/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWaterSub_2TreadWaterSub_Up"/>
+      </behaviors>
+   </Surface>
+</BehaviorSets>

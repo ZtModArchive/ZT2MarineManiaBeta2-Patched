@@ -1,0 +1,225 @@
+<BFTypedBinder binderType="TurtleSeaGreen" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Reptilia>
+						<Testudines>
+							<Cheloniidae>
+								<TurtleSeaGreen />
+							</Cheloniidae>
+						</Testudines>
+					</Reptilia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\TurtleSeaGreen\TurtleSeaGreen_Adult_F_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo ids="entityname:TurtleSeaGreen" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TurtleSeaGreen_Adult_F" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData icon3Doffset="0 -.1 1" icon3Dscale=".7" iconAnim="TreadWater_Idle" tankPlacement="true" waterPlacement="true" landPlacement="true" />
+		<BFAIEntityDataShared b_UpdateSteeringEveryFrame="true" s_Product="Marine" f_MaxTourValue="30" f_BaseDonationAmount="60" s_DonateToken="t_DonateTurtleSeaGreen" s_Species="TurtleSeaGreen" s_Endangerment="Endangered" b_Basic="true" b_MediumAnimal="true" f_adoptRarity="20" s_Zoopedia="zoopedia:zoopedia_TurtleSeaGreen:entry" f_RequiredInitialTankSpace="50" f_RequiredAdditionalTankSpace="25" f_RequiredTankDepth="3" s_KeeperEatType="FoodBox_Seaweed" p_SniffNode="0 -3.5 180" p_PreyOffset="0 -1.5 0" p_FightOffset="0 -1.5 180" b_Pees="false" b_MarineAnimal="true" b_Fucivore="true" b_CoastalAnimal="true" b_KelpBedUser="true" b_BubbleEmitterUser="true" b_DesertIslandUser="true">
+			<BFAINeedAdjusts hunger="0.25" thirst="0.1" rest="0.25" exercise="0.1" privacy="0.1" social="0.1" stimulation="0.1" />
+		</BFAIEntityDataShared>
+		<BFGBiomeData location="coastal_warm_oceans_worldwide" locationSensitivity="10">
+			<alpine sensitivity="-10" />
+			<borealforest sensitivity="-10" />
+			<benthic sensitivity="-10" />
+			<coastal sensitivity="10" primary="true" />
+			<desert sensitivity="-10" />
+			<grassland sensitivity="-5" />
+			<pelagic sensitivity="5" />
+			<reef sensitivity="5" />
+			<temperateforest sensitivity="-10" />
+			<tropicalrainforest sensitivity="-10" />
+			<tundra sensitivity="-10" />
+			<savannah sensitivity="-5" />
+			<scrub sensitivity="-5" />
+			<wetlands sensitivity="-2" />
+		</BFGBiomeData>
+		<ZTUserStaffAction>
+			<SetAttribute name="hygiene" value="0" threshold="20" locid="superstaff:animal_groom" effect="SuperStaffGroom" />
+			<SetAttribute name="health" value="0" threshold="20" locid="superstaff:animal_heal" />
+		</ZTUserStaffAction>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/TurtleSeaGreen/TurtleSeaGreen_Adult_F.bfm" scale="0.8" switch="0 15 30 60" />
+					<BFShadowLODComponent numLevels="1" switchingDists="60.0" />
+					<BF4LegsGroundFitComponent heightOffset="0" seabedOffset="1" fitRadius=".15" maxRollError=".2" maxPitchError=".1" maxHeightError=".5" pitchGain="1.0" heightGain="6.0" rollGain="1.0" bicyclePointBack="Bip01 Pelvis" bicyclePointFront="Bip01 Spine1" backBuoyancyNode="Node_Buoy_Back" frontBuoyancyNode="Node_Buoy" maxLOD="1" heightOffsetScale="0.0" allowRollOnWater="true" />
+					<BFSwimComponent waterInDistance="0.50" waterOutDistance="0.1" />
+					<BFRotYawMovingComponent />
+					<BFSpineBendComponent spineBase="Bip01 Spine" spineBone1="Bip01 Spine1" spineBone2="Bip01 Spine2" bendDegree="89" bendTime="0.5" />
+					<BFCollisionComponent grid="Bip01 Spine" />
+					<BFGridCollisionComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars floorNode="Floor" isWaterDisplacer="true" waterDisplacement="0.25 0.5 0.25">
+					<virtualNodes>
+						<Node_Floor x="0" y="-2" z="-.25" yaw="0" pitch="0" roll="0" />
+						<Node_Follow x="2" />
+						<Node_Attacked y="4" />
+						<Node_Guest y="0.25" z="0.5" x="0" yaw="90" />
+						<Node_RamWall y="-3.5" />
+						<Node_KelpBed y="-3" />
+						<Node_Lure y="-0.4" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+				<BFTextTagMacrosComponent>
+					<MACROS>
+						<macro name="Walky" text="anim &apos;Walk_Ahead&apos;" />
+						<macro name="Walky2Standy" text="anim &apos;Walk_2Stand&apos;, anim&apos;Stand_Idle&apos;" />
+						<macro name="Stand2LieBelly" text="anim &apos;Stand_2Lie&apos;, anim &apos;Lie_Idle&apos;" />
+						<macro name="LieBelly2Stand" text="anim &apos;Lie_2Stand&apos;, anim &apos;Stand_Idle&apos;" />
+						<macro name="Standy2Walky" text="anim &apos;Stand_2Walk&apos;, anim &apos;Walk_LeftA&apos;" />
+						<macro name="LieOnBelly" text="anim &apos;Lie_Idle&apos;" />
+						<macro name="TurnLeft180" text="anim &apos;Stand_TurnRight180&apos;" />
+						<macro name="TurnRight180" text="anim &apos;Stand_TurnRight180&apos;" />
+						<macro name="TurnLeft90" text="anim &apos;Stand_TurnLeft90&apos;" />
+						<macro name="TurnRight80" text="anim &apos;Stand_TurnRight90&apos;" />
+						<macro name="Stand2Swimming" text="anim &apos;Stand_2Walk&apos;,  anim &apos;Walk_Ahead&apos;, as 100 1, anim &apos;Walk_2Swim&apos;" />
+						<macro name="Swimming2Stand" text="anim &apos;Swim_2Walk&apos;, anim &apos;Walk_Ahead&apos;, as 100 1, anim &apos;Walk_2Stand&apos;" />
+					</MACROS>
+				</BFTextTagMacrosComponent>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionHandler factorStepDown="0.01" />
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<BFAICognitiveMgr>
+					<StateThinkers>
+						<ZTAIStateThinker>
+							<BFAIStateVar Name="thirst" ValueMin="0" ValueMax="0" />
+						</ZTAIStateThinker>
+					</StateThinkers>
+				</BFAICognitiveMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFBehaviorMgr behaviorVersion="1">
+					<subBehaviors>
+						<BFBehLocoSwitchSet loopFlag="true">
+							<behaviorTable>
+								<ground behSet="Stand_Idle" />
+								<water behSet="TreadWater_Idle" />
+							</behaviorTable>
+						</BFBehLocoSwitchSet>
+					</subBehaviors>
+				</BFBehaviorMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="1">
+					<instance>
+						<BFLocoAnimate version="1" stationaryAnim="Stand_Idle">
+							<stop name="Stand" />
+							<slow name="Walk" />
+							<medium name="Walk" />
+							<fast name="Walk" />
+							<glide name="Walk" />
+							<evade name="Walk" minAnimSpeed="1.0" maxAnimSpeed="1.5" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="water" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="Swim">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SwimSub_2Swim" yaw="1.0" />
+							</stop>
+							<slow name="Swim" minAnimSpeed="0.75" maxAnimSpeed="1.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SwimSub_2Swim" yaw="1.0" />
+							</slow>
+							<medium name="Swim" minAnimSpeed="0.85" maxAnimSpeed="1.25" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SwimSub_2Swim" yaw="1.0" />
+							</medium>
+							<fast name="Swim" minAnimSpeed="1.25" maxAnimSpeed="1.5" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SwimSub_2Swim" yaw="1.0" />
+							</fast>
+							<evade name="Swim" minAnimSpeed="1.25" maxAnimSpeed="1.5" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="Swim_Ahead" yaw="1.0" roll="0.5" />
+								<anim name="SwimSub_2Swim" yaw="1.0" />
+							</evade>
+							<glide name="SwimGlide" flapAnim="Swim_2SwimGlide" minFlapPeriod="4" maxFlapPeriod="6">
+								<anim name="SwimGlide_Ahead" yaw="1.0" roll="0.5" acceleration="-0.1" minSpeed="0.5" maxSpeed="1.5" />
+								<anim name="Swim_2SwimGlide" yaw="1.0" roll="0.5" />
+							</glide>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="underwater" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="SwimSub">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" />
+							</stop>
+							<slow name="SwimSub" minAnimSpeed="0.75" maxAnimSpeed="1.0" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" />
+							</slow>
+							<medium name="SwimSub" minAnimSpeed="0.85" maxAnimSpeed="1.25" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" />
+							</medium>
+							<fast name="SwimSub" minAnimSpeed="1.25" maxAnimSpeed="1.5" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" />
+							</fast>
+							<evade name="SwimSub" minAnimSpeed="1.25" maxAnimSpeed="1.5" minResetPeriod="4" maxResetPeriod="6">
+								<anim name="SwimSub_Ahead" yaw="1.0" pitch="0.5" roll="0.5" />
+								<anim name="Swim_2SwimSub" yaw="1.0" />
+							</evade>
+							<glide name="SwimSubGlide" flapAnim="SwimSub_2SwimSubGlide" minFlapPeriod="4" maxFlapPeriod="6">
+								<anim name="SwimSubGlide_Ahead" yaw="1.0" pitch="0.5" roll="0.5" acceleration="-0.1" minSpeed="0.5" maxSpeed="1.5" />
+								<anim name="SwimSub_2SwimSubGlide" yaw="1.0" pitch="0.5" />
+							</glide>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFNamedBinder binderName="foodprop" repopulateMethod="byName" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="2000">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

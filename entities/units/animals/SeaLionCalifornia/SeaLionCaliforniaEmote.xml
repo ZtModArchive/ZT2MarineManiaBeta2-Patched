@@ -1,0 +1,6 @@
+<BFPhysObj drawLast="true">
+   <position x="0" y="0" z="0"/>
+   <BFSceneGraphComponent modelfile="entities/units/animals/SeaLionCalifornia/SeaLionCalifornia_emote.nif" updateBounds="true"/>
+   <BFHasParticleComponent/>
+   <BFForceUpdateWhenVisibleComponent/>
+</BFPhysObj>

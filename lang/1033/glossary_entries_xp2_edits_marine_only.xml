@@ -1,0 +1,43 @@
+﻿<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_biomedef" version="7" />
+      <LOC_STRING _locID="zoopedia_biomedef:entry" version="7"  >Biome Defined</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_biomedef:text" version="7"  >
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="600" padx="20" pady="20">
+               Biomes, also known as life zones, are defined by all plants, animals, and other organisms -- as well as the physical environment -- in a particular area. A biome is characterized by its plant life; the types of plant life are determined by a location's climatic conditions, latitude, and altitude. For example, northern boreal forests exist in subarctic portions of North America and Asia. Farther north, though, the conditions are too harsh and the season too brief to sustain a forest. Here, in place of trees, the short vegetation of the tundra thrives. The same phenomenon occurs in high-altitude mountainous regions, where trees give way to short alpine vegetation .
+                  <br/>
+                  <br/>A biome is made up of many ecosystems -- smaller communities of plants and animals and their habitats, the physical parts of their environment that affect them. Whereas a biome's boundaries are determined by climate, the boundaries of ecosystems are determined by physical features, such as ridges or riverbanks, that separate one community from another. Each biome's ecosystems tends to contain plants with common growth forms and animals with like feeding habits.
+                  <p/>Major terrestrial biomes include alpine, 
+                  <a href="zoopedia:zoopedia_tropicalrainforest:entry">
+                     <u>
+                        <color r="255" g="231" b="135">tropical rainforest</color>
+                     </u>
+                  </a>, boreal forest, temperate forest, tundra, desert, grassland,
+                  <a href="zoopedia:zoopedia_savannah:entry">
+                     <u>
+                        <color r="255" g="231" b="135">savannah</color>
+                     </u>
+                  </a>     
+         , scrub, and wetlands. Although not necessarily associated with marine environments, the term biome is sometimes used by ecologists to 
+         describe such marine life zones as: the littoral zone, located in shallow water; the pelagic zone, located in the open ocean; and the benthic 
+         zone, located on the ocean floor.
+                  <p/>In Zoo Tycoon 2: Marine Mania the littoral zone is represented by the reef and coastal biomes.
+                  <p/>
+                  <p/>Content provided courtesy of 
+
+                  <a href="zoopedia:zoopedia_encarta:entry">
+                     <u>
+                        <color r="255" g="231" b="135">Microsoft (R) Encarta (R) Reference Library 2004.</color>
+                     </u>
+                  </a> 
+					(C) 1993-2003 Microsoft Corporation. All rights reserved.
+               </cell>
+            </cell>
+         </color>
+      </LOC_STRING>
+
+</ZT2Strings>

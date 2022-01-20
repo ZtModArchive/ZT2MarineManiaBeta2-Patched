@@ -1,0 +1,122 @@
+<Tricks>
+	<ZTAITrickData>
+		<Data name="WalrusPacificJump" locname="tricknames:Jump" icon="UI/trick_icons/trick_icon_jump_SeaLion.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<WalrusPacific_Adult_F/>
+		</Animals>
+		<ZTAITrickTargetData Prop="TrickArea_mm"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Jump_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Jump_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Jump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Jump_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_JumpFailure"/>
+		<Success token="t_JumpSuccess"/>
+		<Critical token="t_JumpCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WalrusPacificJump_Male" locname="tricknames:Jump" defaultTrick="WalrusPacificJump" icon="UI/trick_icons/trick_icon_jump_SeaLion.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<WalrusPacific_Adult_M/>
+		</Animals>
+		<ZTAITrickTargetData Prop="TrickArea_mm_Male"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WalrusPacificSeat" locname="tricknames:SeatOn" icon="UI/trick_icons/trick_icon_SitOnSealSeat.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<WalrusPacific_Adult_F/>
+		</Animals>
+                <Prerequisite name="WalrusPacificBellow" minScore="100"/>
+		<ZTAITrickTargetData Prop="SealSeat"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Seat_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Seat_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Seat_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_SeatFailure"/>
+		<Success token="t_SeatSuccess"/>
+		<Critical token="t_SeatCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WalrusPacificSeat_Male" locname="tricknames:SeatOn" defaultTrick="WalrusPacificSeat" icon="UI/trick_icons/trick_icon_SitOnSealSeat.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<WalrusPacific_Adult_M/>
+		</Animals>
+                <Prerequisite name="WalrusPacificBellow_Male" minScore="100"/>
+		<ZTAITrickTargetData Prop="SealSeat_Male"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Seat_Male_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Seat_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Seat_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Seat_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Seat_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Seat_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Seat_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Seat_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Seat_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Seat_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WalrusPacificBellow" locname="tricknames:BellowOn" icon="UI/trick_icons/trick_icon_Bellow.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<WalrusPacific_Adult_F/>
+		</Animals>
+                <Prerequisite name="WalrusPacificJump" minScore="100"/>
+		<ZTAITrickTargetData Prop="TrickPlatform"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Bellow_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Bellow_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Bellow_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Bellow_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Bellow_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Bellow_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Bellow_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Bellow_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Bellow_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Bellow_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+		<Failure token="t_BellowFailure"/>
+		<Success token="t_BellowSuccess"/>
+		<Critical token="t_BellowCritical"/>
+	</ZTAITrickData>
+	<ZTAITrickData>
+		<Data name="WalrusPacificBellow_Male" locname="tricknames:BellowOn" defaultTrick="WalrusPacificBellow" icon="UI/trick_icons/trick_icon_Bellow.dds" Difficulty="4" PopularityMult=".6"/>
+		<Animals>
+			<WalrusPacific_Adult_M/>
+		</Animals>
+                <Prerequisite name="WalrusPacificJump_Male" minScore="100"/>
+		<ZTAITrickTargetData Prop="TrickPlatform_Male"/>
+		<Levels>
+			<ZTAITrickLevel minScore="0" chanceFail="50" chanceSucceed="50" chanceCritical="0" gesture="Bellow_Male_Easy" learningDelta="10" canPerform="false"/>
+			<ZTAITrickLevel minScore="10" chanceFail="40" chanceSucceed="60" chanceCritical="0" gesture="Bellow_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="20" chanceFail="30" chanceSucceed="70" chanceCritical="0" gesture="Bellow_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="30" chanceFail="25" chanceSucceed="75" chanceCritical="0" gesture="Bellow_Male_Easy" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="40" chanceFail="20" chanceSucceed="75" chanceCritical="5" gesture="Bellow_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="50" chanceFail="15" chanceSucceed="80" chanceCritical="5" gesture="Bellow_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="60" chanceFail="10" chanceSucceed="80" chanceCritical="10" gesture="Bellow_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="70" chanceFail="5" chanceSucceed="85" chanceCritical="10" gesture="Bellow_Male_Medium" learningDelta="10" canPerform="true"/>
+			<ZTAITrickLevel minScore="80" chanceFail="5" chanceSucceed="80" chanceCritical="15" gesture="Bellow_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="90" chanceFail="0" chanceSucceed="80" chanceCritical="20" gesture="Bellow_Male_Hard" learningDelta="10" staffCanTrain="false" canPerform="true"/>
+			<ZTAITrickLevel minScore="100" chanceFail="0" chanceSucceed="75" chanceCritical="25" staffCanTrain="false" canPerform="true"/>
+		</Levels>
+	</ZTAITrickData>
+</Tricks>

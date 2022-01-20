@@ -1,0 +1,49 @@
+<soundtags>
+        <!--adult sounds-->
+        <BFSoundtag>
+                <BF3DSndFactory name="RayManta_Adult_Squirm">
+                <snd name="entities/units/animals/RayManta/sound/RayManta_Adult_F_Squirm.wav" volume="1" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="RayManta_Adult_SquirmAhead">
+                <snd name="entities/units/animals/RayManta/sound/RayManta_Adult_F_SquirmAhead.wav" volume="1" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+                <BFSoundtag>
+                <BF3DSndFactory name="RayManta_Adult_FinSlap">
+                <snd name="entities/units/animals/RayManta/sound/RayManta_Adult_F_FinSlap.wav" volume="1" mindist="6" maxdist="30" />
+        </BF3DSndFactory>
+        </BFSoundtag>
+
+        <!--young sounds-->
+        <BFSoundtag>
+                <BF3DSndFactory name="RayManta_Young_Squirm">
+                <snd name="entities/units/animals/RayManta/sound/RayManta_Adult_F_Squirm.wav" volume="1" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="RayManta_Young_SquirmAhead">
+                <snd name="entities/units/animals/RayManta/sound/RayManta_Adult_F_SquirmAhead.wav" volume="1" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+        <BFSoundtag>
+                <BF3DSndFactory name="RayManta_Young_FinSlap">
+                <snd name="entities/units/animals/RayManta/sound/RayManta_Adult_F_FinSlap.wav" volume="1" mindist="6" maxdist="30" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+
+        <!--UNDERWATER: adult sounds-->
+        <BFSoundtag>
+                <BF3DSndFactory name="RayManta_Adult_FinSlap_uw">
+                <snd name="entities/units/animals/RayManta/sound/RayManta_Adult_F_FinSlap_uw.wav" volume="1" mindist="6" maxdist="30" layer="underwater" />
+                </BF3DSndFactory>
+        </BFSoundtag>
+
+        <!--UNDERWATER: young sounds-->
+        <BFSoundtag>
+                <BF3DSndFactory name="RayManta_Young_FinSlap_uw">
+                <snd name="entities/units/animals/RayManta/sound/RayManta_Adult_F_FinSlap_uw.wav" volume="1" mindist="6" maxdist="30"  layer="underwater"/>
+                </BF3DSndFactory>
+        </BFSoundtag>
+</soundtags>

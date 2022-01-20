@@ -1,0 +1,94 @@
+<BFTypedBinder binderType="themedtankseg_gate_show">
+   <types>
+      <entity>
+         <fence>
+            <gate>
+               <tankgate>
+                  <themedtankseg_gate_show/>
+               </tankgate>
+            </gate>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\Tank_Gate\Tank_Gate_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:tankuigate"/>
+         <on>
+            <event msg="ZT_SETFENCEPLACEMENTMODE" data="BFString" string="gate"/>
+            <event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="staffgate"/>
+         </on>
+      </UIToggleButton>   
+      <ZTPlacementData>
+         <draggableData>
+            <tfence90/>
+            <tfence45/>
+            <fence90/>
+            <fence45/>
+         </draggableData>
+      </ZTPlacementData>
+      <BFAIEntityDataShared s_uisort="tb" s_Zoopedia="zoopedia:zoopedia_tankentrance:entry"/>
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTTankGateSegment ladderType="tankladder_show" platformType="TankPlatform_show" support="tankpost_show" middleSupport="tanksupport_show" maxUnsupportedSpan="3" maxUnsupportedDiagSpan="2" skipPostsOnStraight="false"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\paths\sand\curb_sand_post" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_show\ThemedTank_show_curb_vert" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_show\ThemedTank_show_curb_diag" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\paths\sand\curb_sand_post" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="tfence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_show\ThemedTank_show_top_vert" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="tfence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_show\ThemedTank_show_top_diag" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="160">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

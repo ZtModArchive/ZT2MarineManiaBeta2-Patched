@@ -1,0 +1,130 @@
+<BFTypedBinder binderType="zoowall_mm">
+   <types>
+      <entity>
+         <fence>
+			<zooboundary>
+				<zoowall_mm/>
+			</zooboundary>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTDevComponent/>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\zoowall_df\zoowall_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:zoowall_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="zoowall_mm"/>
+         </on>
+      </UIToggleButton>
+      <ZTPlacementData deletable="false" selectable="false"/>
+      <BFAIEntityDataShared s_uisort="z" s_Product="Marine" f_FenceStrength="11" f_Height="2.3"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\fences\enhancedzoowall_mm\zoowall_mm_post" switch="0 15 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\enhancedzoowall_mm\zoowall_mm_vert"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\enhancedzoowall_mm\zoowall_mm_diag"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\fences\enhancedzoowall_mm\zoowall_mm_post" switch="0 15 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90curve90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\enhancedzoowall_mm\zoowall_mm_curve90down"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <ZTFenceSegmentInfo>
+               <segmentLocs>
+                  <clear/>
+                  <point x="3.0" y="0.0" z="0.0"/>
+                  <point x="0.0" y="0.0" z="0.0"/>
+                  <point x="1.4" y="-0.05" z="0.0"/>
+                  <point x="2.3" y="-0.8" z="0.0"/>
+               </segmentLocs>
+            </ZTFenceSegmentInfo>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45curve90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\enhancedzoowall_mm\zoowall_mm_curve90diag_down"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <ZTFenceSegmentInfo>
+               <segmentLocs>
+                  <clear/>
+                  <point x="4.2426" y="0" z="0"/>
+                  <point x="0" y="0" z="0"/>
+                  <point x="2.0" y="-0.05" z="0"/>
+                  <point x="3.6" y="-0.7" z="0"/>
+               </segmentLocs>
+            </ZTFenceSegmentInfo>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90curve135">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\enhancedzoowall_mm\zoowall_mm_curve135down_short"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <ZTFenceSegmentInfo>
+               <segmentLocs>
+                  <clear/>
+                  <point x="3.0" y="0" z="0"/>
+                  <point x="0" y="0" z="0"/>
+                  <point x="1.4" y="-0.5" z="0"/>
+                  <point x="3.05" y="-0.8" z="0"/>
+               </segmentLocs>
+            </ZTFenceSegmentInfo>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45curve135">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\enhancedzoowall_mm\zoowall_mm_curve135down_long"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <ZTFenceSegmentInfo>
+               <segmentLocs>
+                  <clear/>
+                  <point x="4.2426" y="0" z="0"/>
+                  <point x="0" y="0" z="0"/>
+                  <point x="2.12132" y="0" z="0"/>
+                  <point x="3.71231" y="0.53033" z="0"/>
+               </segmentLocs>
+            </ZTFenceSegmentInfo>
+         </shared>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

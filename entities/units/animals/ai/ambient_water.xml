@@ -1,0 +1,47 @@
+<BFTypedBinder binderType="ambient_water" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <ambient>
+               <ambient_water/>
+            </ambient>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_diesOnLand="true" b_UpdateSteeringEveryFrame="true"/>
+      <ZTPlacementData waterPlacement="true" landPlacement="false" tankPlacement="true" showTankPlacement="false" minimumDepth="2" iconAnim="Swim_Ahead"/>
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFAICognitiveMgr>
+               <Sensors>
+                  <ZTAISensor/>
+                  <BFAISensorSelf/>
+		  <ZTAISensorLand />
+	       </Sensors>
+               <StateThinkers>
+                  <ZTAIStateThinker>
+                     <BFAIStateVar Name="lifespan" Value="" ValueMin="0" ValueMax="0" CessationThreshold="0" TriggerThreshold="90" CriticalThreshold="90" Advanced="true"/>
+                  </ZTAIStateThinker>
+               </StateThinkers>
+               <TaskThinkers>
+                  <ZTAITaskThinker/>
+               </TaskThinkers>
+            </BFAICognitiveMgr>
+         </instance>
+         <shared>
+            <BFAICogShared>
+               <BFAINoPerceive>
+                  <animal/>
+                  <Guest/>
+               </BFAINoPerceive>
+            </BFAICogShared>
+         </shared>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

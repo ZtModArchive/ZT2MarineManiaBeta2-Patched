@@ -1,0 +1,28 @@
+************************************************************
+Date: 04/03/2006
+Time: 21:08
+************************************************************
+Compiled object 1: FishFood_LODGroup
+Compiled object 2: FishFood_mm_LOD0
+Compiled object 3: FishFood_mm_LOD1
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 131 
+Vertex Count: 92 
+Vertex Memory: 2 kb
+Material Count: 2 
+Texture Count: 1 
+Texture Memory: 85 kb
+Num LODs: 2 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 131 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 146ms
+XML File Translation: total time = 51ms
+Data Output: total time = 1ms
+************************************************************

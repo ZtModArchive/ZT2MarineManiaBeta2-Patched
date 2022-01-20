@@ -1,0 +1,17 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01} runspl"/>
+   <key time="0" text="{Bip01 Ponytail1} snd 'WaterWalk_IdleSuccess'"/>
+   <key time="0" text="{Bip01 Ponytail1} snd 'WaterWalk_IdleSuccess_uw'"/>
+   <key time=".10" text="{Bip01} runsns"/>
+   <key time=".15" text="{Bip01} runsns"/>
+   <key time=".20" text="{Bip01} runsns"/>
+   <key time=".25" text="{Bip01} runsns"/>
+   <key time=".30" text="{Bip01} runsns"/>
+   <key time=".35" text="{Bip01} runsns"/>
+   <key time=".40" text="{Bip01} runsns"/>
+   <key time=".45" text="{Bip01} runsns"/>
+   <key time=".50" text="{Bip01} runsns"/>
+   <key time=".55" text="{Bip01} runsns"/>
+   <key time=".60" text="{Bip01} runsns"/>
+   <key time=".65" text="{Bip01} runsns"/>
+</TEXTKEY>

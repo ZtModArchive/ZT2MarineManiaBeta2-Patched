@@ -1,0 +1,39 @@
+<BFTypedBinder binderType="TankPlatform_mm">
+   <types>
+      <entity>
+         <building>
+            <TankPlatform>
+               <TankPlatform_mm/>
+            </TankPlatform>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_DoNotSave="true" s_ObjectType="Misc" s_uisort="bf" s_Zoopedia="zoopedia:zoopedia_tankplatform_mm:entry" b_SeeThrough="true" b_DoNotDisplayUsers="true" s_Product="Marine"/>
+      <ZTPlacementData>
+         <cfootprint width="1" height="1"/>
+         <dfootprint width="2" height="2"/>
+      </ZTPlacementData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/fences/Platform_Regular_mm/Platform_Regular_mm" switch="0 20 40"/>
+               <BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="200">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

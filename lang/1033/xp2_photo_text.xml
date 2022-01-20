@@ -1,0 +1,187 @@
+﻿<ZT2Strings>
+      <LOC_STRING _locID="PhotoChallengetext:PHMantaPhotoPhotos"  >Manta Ray Photo</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHMantaPhoto"  >Very little is known about manta rays, so the scientists at Marine Oceanic University are studying them. The want to learn why these magnificent creatures sometimes breach, or jump out of the ocean and into the air, while swimming.
+			<p/>
+The researchers at the university will pay you $1,250 if you take a photo of a manta ray breaching.
+			<p/>
+   			Difficulty: Easy
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHMantaPhotoShort"  >Take a photo of a manta ray breaching.
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHMantaPhotoSuccess"  >Your photo of a manta ray breaching may help scientists learn more about these mysterious creatures. The university paid you $1,250 for your picture.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHMantaPhotoSuccessShort"  >You earned $1,250 for your photo of a manta ray breaching.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_MantaRayBreaching"  >Take a photo of a manta ray breaching.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHBelugaPhotoPhotos"  >Beluga Photo</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHBelugaPhoto"  >The editors at Zoo News Monthly magazine are putting together a special issue on Arctic whales. If you provide them with a photo of a guest viewing a beluga, they'll pay you $750.
+			<p/>Difficulty: Easy
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHBelugaPhotoShort"  >Take a photo of a zoo guest viewing a beluga.
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHBelugaPhotoSuccess"  >Your photo of a guest viewing a beluga is going to be in Zoo News Monthly's next issue. You received $750 for it.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHBelugaPhotoSuccessShort"  >You earned $750 for your photo of a guest viewing a beluga.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_BelugaAndGuest"  >Take a photo of a zoo guest viewing a beluga.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHExplorerVisitPhotos"  >Explorer Visit</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHExplorerVisit"  >Renowed undersea explorer St&#xE9;phane Baleine is going to visit your zoo! Baleine is world-famous for his television shows and research on shark behaviors. He's interested in seeing two particular species at your zoo. He'd like to see the rare and mysterious goblin shark, a species known to live as deep as 4,000 ft beneath the ocean's surface. He'd also like to see the scalloped hammerhead shark, an aggressive species with uniquely shaped head projections.
+					<p/>If you photograph St&#xE9;phane Baleine viewing a goblin shark and a scalloped hammerhead shark at your zoo, the photos will generate positive publicity for the zoo, attracting more guests and reducing unhappiness. Everyone should be happy when they learn a celebrity visited your zoo!
+					<br/>
+   			Difficulty: Moderate.			
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHExplorerVisitShort"  >Take the following photos:
+					<br/>
+*  Undersea explorer St&#xE9;phane Baleine viewing a goblin shark.  
+					<br/>
+*  Undersea explorer St&#xE9;phane Baleine viewing a scalloped hammerhead shark.
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHExplorerVisitSuccess"  >You rushed your photos of St&#xE9;phane Baleine visiting your zoo to the local newspaper. Not only did the publicity attract more guests, but your guest are slightly happier. Everyone's thrilled to be at the famous undersea explorer's favorite zoo!</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHExplorerVisitSuccessShort"  >The publicity from your photos of St&#xE9;phane Baleine made your guests happier and attracted even more to your zoo.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHExplorerVisitFailure"  >St&#xE9;phane Baleine left your zoo before you could take the photos you needed. You missed a chance to attract more guests to your zoo.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHExplorerVisitFailureShort"  >St&#xE9;phane Baleine left your zoo before you could photograph him.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHExplorerVisitExplorerName"  >St&#xE9;phane Baleine</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_ExplorerVisitArrival"  >St&#xE9;phane Baleine just entered your zoo!</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_ExplorerGoblinShark"  >Take a photo of St&#xE9;phane Baleine viewing a goblin shark.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_ExplorerHammerhead"  >Take a photo of St&#xE9;phane Baleine viewing a scalloped hammerhead shark.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHWildlifeCalendarsPhotos"  >Worldwide Wildlife Calendars</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHWildlifeCalendars"  >(Marine Animals Challenge) Worldwide Wildlife Calendars publishes stunning wall calendars of wild animals. The company is paying you $7,000 if you provide the following three photos for next year's "Wild Waters" calendar: 
+					<br/>
+*  A hippopotamus walking underwater. 
+					<br/>
+*  An emperor penguin diving into the water.
+					<br/>
+*  A polar bear doing a barrel roll or a flip in the water.
+<br/>
+Difficulty: Moderate.			
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHWildlifeCalendarsShort"  >Take the following photos:
+					<br/>
+*  A hippopotamus walking underwater.  
+					<br/>
+*  An emperor penguin diving into the water. 
+					<br/>
+*  A polar bear doing a barrel roll or a flip in the water.		
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHWildlifeCalendarsSuccess"  >Worldwide Wildlife Calendars paid you $7,000 for your photos, which are going to look great in next year's calendar!</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHWildlifeCalendarsSuccessShort"  >You took a series of photos of animals underwater for Worldwide Wildlife Calendars.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_WildlifeCalendarsHippo"  >Take a photo of a hippopotamus walking underwater.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_WildlifeCalendarsPenguin"  >Take a photo of an emperor penguin diving into the water.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_WildlifeCalendarsPolarBear"  >Take a photo of a polar bear doing a barrel roll or a flip in the water.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPeerlessPostersPhotos"  >Peerless Posters</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPeerlessPosters"  >(Marine Show Challenge) Peerless Posters Ltd. produces high-quality wildlife posters and art prints. The company is looking for a photo of two bottlenose dolphins performing the water walk trick together. If you provide Peerless Posters with this photo, you'll receive $4,500. 
+					<br/>
+Difficulty: Moderate.			
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPeerlessPostersShort"  >Take a photo of two bottlenose dolphins performing the water walk together.	
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPeerlessPostersSuccess"  >Excellent work! Your photo of two bottlenose dolphins performing the water walk together is going to make an excellent poster. Peerless Posters paid you $4,500 for your photo.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPeerlessPostersSuccessShort"  >You took a photo of two bottlenose dolphins performing the water walk trick together.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_PeerlessPostersTrick"  >Take a photo of two bottlenose dolphins performing the water walk trick at the same time.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHCetaceanDigestPhotos"  >Cetacean Digest</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHCetaceanDigest"  >(Marine Show Challenge) Cetacean Digest magazine would like to buy some photos of trained cetaceans -- dolphins and whales. The magazine wants three particular photos: 
+					<br/>
+*  Any animal performing the jump trick. 
+					<br/>
+*  Any animal performing the flipper splash trick.
+					<br/>
+*  Any animal performing the spyhop trick.
+					<br/>
+Cetacean Digest's cash award is based on the star ratings of the animals in the photos -- the higher the rating, the higher the award. You're guaranteed a cash award of at least $2,000, but you could earn much, much more!
+<br/>
+Difficulty: Moderate.			
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHCetaceanDigestShort"  >Take the following photos:
+					<br/>
+*  A photo of any animal performing the jump trick.  
+					<br/>
+*  A photo of any animal performing the flipper splash trick. 
+					<br/>
+*  A photo of any animal performing the spyhop trick.		
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHCetaceanDigestSuccess"  >Cetacean Digest is thrilled with your work! The magazine gave you a cash award for your photos based on the animals' star ratings.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHCetaceanDigestSuccessShort"  >You took a series of photos of animals performing tricks for Cetacean Digest.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_CetaceanDigestTrick1"  >Take a photo of an animal performing the jump trick.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_CetaceanDigestTrick2"  >Take a photo of an animal performing the flipper splash trick.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_CetaceanDigestTrick3"  >Take a photo of an animal performing the spyhop trick.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPinnipedTrainersQuarterlyPhotos"  >Pinniped Trainers Quarterly</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPinnipedTrainersQuarterly"  >(Marine Show Challenge) Pinniped Trainers Quarterly would like some photos of pinnipeds (seals, sea lions, and walruses) performing particular tricks for their next issue. They are looking for the following photos: 
+					<br/>
+*  Any animal performing the balance ball on nose trick. 
+					<br/>
+*  Any animal performing the slide trick.
+					<br/>
+*  Any animal performing the horn trick.
+					<br/>
+Pinniped Trainers Quarterly promises to pay you a cash award based on the star ratings of the animals in the photos -- -- the higher the rating, the higher the award. You're guaranteed a cash award of at least $2,000, but you could earn much, much more!
+<br/>
+Difficulty: Moderate.			
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPinnipedTrainersQuarterlyShort"  >Take the following photos:
+					<br/>
+*  A photo of any animal performing the balance ball on nose trick.  
+					<br/>
+*  A photo of any animal performing the slide trick. 
+					<br/>
+*  A photo of any animal performing the horn trick.		
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPinnipedTrainersQuarterlySuccess"  >Pinniped Trainers Quarterly accepted your photos for publication! The magazine gave you a cash award for your photos based on the animals' star ratings.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPinnipedTrainersQuarterlySuccessShort"  >You took a series of photos of animals performing tricks for Pinniped Trainers Quarterly.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_PinnipedTrainersQuarterlyTrick1"  >Take a photo of an animal performing the balance ball on nose trick.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_PinnipedTrainersQuarterlyTrick2"  >Take a photo of an animal performing the slide trick.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_PinnipedTrainersQuarterlyTrick3"  >Take a photo of an animal performing the horn trick.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHInternationalOceanographerPhotos"  >International Oceanographer</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHInternationalOceanographer"  >(Marine Animal Challenge) International Oceanographer magazine wants to promote both their magazine and your zoo. If you take underwater photos of certain marine animals, the magazine plans to sponsor a poster campaign featuring your photos. The magazine is looking for photos of these animals: 
+					<br/>
+*  A photo of two marlins underwater. 
+					<br/>
+*  A photo of a leatherback turtle eating jellyfish underwater.
+					<br/>
+*  A photo of a pilot whale underwater.
+					<br/>
+If you provide these photos to International Oceanographer, the magazine will sponsor an advertising campaign featuring the photos in posters and print ads. The resulting publicity may attract more guests to your zoo and make it a little more famous.
+<br/>
+Difficulty: Easy.			
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHInternationalOceanographerShort"  >Take the following photos:
+					<br/>
+*  A photo of two marlins underwater.  
+					<br/>
+*  A photo of a leatherback turtle eating jellyfish underwater. 
+					<br/>
+*  A photo of a pilot whale underwater.		
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHInternationalOceanographerSuccess"  >International Oceanographer magazine used your underwater animal photos in its nationwide advertising campaign. The publicity from the ads made the public curious about your zoo and attracted new guests!</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHInternationalOceanographerSuccessShort"  >Your photos for International Oceanographer magazine attracted extra guests to your zoo.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_InternationalOceanographerMarlins"  >Take a photo of two marlins underwater.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_InternationalOceanographerLeatherbackTurtle"  >Take a photo of a leatherback turtle eating jellyfish underwater.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_InternationalOceanographerPilotWhale"  >Take a photo of a pilot whale underwater.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPirateVisitPhotos"  >Pirate Visit</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPirateVisit"  >You just heard that Pirate Parker is about to visit your zoo! Pirate Parker is the famous and eccentric founder of the world-famous Pirate Parker's Seafood Palace restaurant chain. If you take the right photos of him during his visit, you can sell them to the news media for cash. The world's most famous pirate is also known for being generous to those he likes. Maybe, Pirate Parker is going to give you a gift before he leaves your zoo.
+		<p/>
+<!-- Note that you should get paid for each photo when you take it.-->	
+		You receive $2,000 for each of the following photos:
+					<br/>
+*  A photo of Pirate Parker playing in the marine splash fountain.  
+					<br/>
+*  A photo of the lighthouse gazebo with Pirate Parker resting in it. 
+					<br/>
+*  A photo of Pirate Parker looking at an aquarium.
+					<br/>
+   			Difficulty: Moderate.			
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPirateVisitShort"  >Take the following photos:
+					<br/>
+*  A photo of Pirate Parker playing in the marine splash fountain.  
+					<br/>
+*  A photo of the lighthouse gazebo with Pirate Parker resting in it. 
+					<br/>
+*  A photo of Pirate Parker looking at an aquarium.		
+		</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPirateVisitPhotoTaken"  >Well done! You received $2,000 for your photo of Pirate Parker.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPirateVisitSuccess"  >Not only did you sell three of your photos for a tidy sum, but your zoo greatly impressed Pirate Parker. As a reward for entertaining him so well, he gave you a present "for all of yer spare plunder." You can find Pirate Parker's gift in a crate near your zoo's entrance.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPirateVisitSuccessShort"  >You sold three photos of Pirate Parker and received a gift from him, too!</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPirateVisitFailure"  >Pirate Parker left your zoo! Although he left before you took all the photos, he enjoyed his visit. In fact, he had so much fun that he gave you a present before he left -- "a little somethin' to keep yer spare doubloons in!" You can find it crated near your zoo's entrance.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPirateVisitFailureShort"  >Pirate Parker left the zoo before you finished taking photos.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:PHPirateVisitPirateName"  >Pirate Parker</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_PirateVisitFountain"  >Take a photo of Pirate Parker playing in the marine splash fountain.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_PirateVisitGazebo"  >Take a photo of the lighthouse gazebo with Pirate Parker resting in it.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_PirateVisitAquarium"  >Take a photo of Pirate Parker viewing an aquarium.</LOC_STRING>
+      <LOC_STRING _locID="PhotoChallengetext:stt_PirateVisitArrival"  >Pirate Parker just entered your zoo!</LOC_STRING>
+</ZT2Strings>

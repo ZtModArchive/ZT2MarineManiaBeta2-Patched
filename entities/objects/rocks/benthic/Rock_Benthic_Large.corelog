@@ -1,0 +1,38 @@
+************************************************************
+Date: 03/01/2006
+Time: 19:28
+************************************************************
+Compiled object 1: Lights
+Compiled object 2: Omni01
+Compiled object 3: Omni02
+Compiled object 4: Omni03
+Compiled object 5: Omni04
+Compiled object 6: Omni05
+Compiled object 7: Omni06
+Compiled object 8: Rock_Benthic_L_LODGroup
+Compiled object 9: Rock_Benthic_L_LOD0
+Compiled object 10: Rock_Benthic_L_LOD1
+Compiled object 11: Rock_Benthic_L_LOD2
+Compiled object 12: footprint
+Compiled object 14: paint_BlueGreenCoral
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 323 
+Vertex Count: 197 
+Vertex Memory: 6 kb
+Material Count: 1 
+Texture Count: 1 
+Texture Memory: 42 kb
+Num LODs: 3 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 40 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 261ms
+XML File Translation: total time = 181ms
+Data Output: total time = 2ms
+************************************************************

@@ -1,0 +1,53 @@
+<BFTypedBinder binderType="AnimalCrate_mm">
+   <types>
+      <entity>
+      	<Crate>
+      	   <AnimalCrate>
+      	      <AnimalCrate_mm/>
+      	   </AnimalCrate>
+      	 </Crate>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="AnimalCrate" rottype="use" postype="use" attachnode="MoveNode"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="ui/zoomap/icon_crate.dds">
+               <BFRect x="0" y="0" w="64" h="64"/>
+            </default>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:AnimalCrate_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="AnimalCrate_mm"/>
+         </on>
+      </UIToggleButton>
+      <ZTPlacementData autoFootprint="false" icon3Dscale=".55" waterPlacement="true" tankPlacement="true">
+         <cfootprint width="1.5" height="2"/>
+         <dfootprint width="1.5" height="2"/>
+      </ZTPlacementData>
+      <BFAIEntityDataShared b_SeeThrough="false"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="AnimalCrate">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities/objects/crates/AnimalCrate_mm/AnimalCrate_mm.nif" scale="1.0" switch="0 18 36"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/objects/crates/AnimalCrate_df/AnimalCrate_MoveNode_Large.bfm" activeSequenceName="MoveNode" activeSequenceAccumulate="false" scale="1.0"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

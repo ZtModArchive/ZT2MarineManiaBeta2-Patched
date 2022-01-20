@@ -1,0 +1,364 @@
+<soundtags>
+   <!--SHOW SPECIFIC-->
+   <BFSoundtag>
+      <BF3DSndFactory name="announcement_start">
+         <snd name="sounds/announcement_start.wav" volume=".8" mindist="20" maxdist="300" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="showtone_1">
+         <snd name="sounds/tone_1.wav" volume=".8" mindist="20" maxdist="300" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="showtone_2">
+         <snd name="sounds/tone_2.wav" volume=".8" mindist="20" maxdist="300" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="fireworks_announcement_1star">
+         <snd name="entities/objects/buildings/Platform_Show_mm/sound/fireworks_announcement_2star.wav" volume=".8" mindist="10" maxdist="300" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="fireworks_announcement_2star">
+         <snd name="entities/objects/buildings/Platform_Show_mm/sound/fireworks_announcement_2star.wav" volume=".8" mindist="10" maxdist="300" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="fireworks_announcement_3star">
+         <snd name="entities/objects/buildings/Platform_Show_mm/sound/fireworks_announcement_3star.wav" volume=".8" mindist="10" maxdist="300" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="fireworks_announcement_4star">
+         <snd name="entities/objects/buildings/Platform_Show_mm/sound/fireworks_announcement_4star.wav" volume=".8" mindist="10" maxdist="300" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="fireworks_announcement_5star ">
+         <snd name="entities/objects/buildings/Platform_Show_mm/sound/fireworks_announcement_5star.wav" volume=".8" mindist="10" maxdist="300" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--MUSIC-->
+   <BFSoundtag>
+      <BF3DSndFactory name="show_music">
+         <snd name="sounds/Show Surf Theme.wav" volume=".8" mindist="20" maxdist="100" streamed="1" looping="1" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="marine_music_frontgatetheme">
+         <snd name="sounds/Show Surf Theme.wav" volume=".8" mindist="4" maxdist="40" streamed="1" looping="1"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="show_start_sound">
+         <snd name="ui/sound/GestureSparkles_Great.wav" volume="1" mindist="20" maxdist="100" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="show_end_sound">
+         <snd name="ui/sound/crowd_cheer_supersuccess.wav" volume=".8" mindist="20" maxdist="100" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--FILTERS, FOUNTAINS, AQUARIUMS, and WATER FX-->
+   <BFSoundtag>
+      <BF3DSndFactory name="water_filter">
+         <snd name="sounds/water_filter.wav" volume=".5" looping="1" streamed="1" mindist="4" maxdist="20"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="whalehall_spray">
+         <snd name="entities/objects/buildings/bluewhalehall_mm/sound/WhaleHallSpray.wav" volume=".5" looping="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="FountainSplash_burst">
+         <snd name="entities/objects/scenery/FountainSplash_mm/sound/FountainSplash_burst.wav" volume=".5" mindist="2" maxdist="40" minpitch=".7" maxpitch="1.5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="aquarium_pump">
+         <snd name="sounds/aquarium.wav" volume=".5" looping="1" streamed="1" mindist="2" maxdist="10"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="aquarium_pump2">
+         <snd name="sounds/aquarium2.wav" volume=".4" looping="1" streamed="1" mindist="2" maxdist="10"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="aquarium_pump3">
+         <snd name="sounds/aquarium3.wav" volume=".5" looping="1" streamed="1" mindist="2" maxdist="10"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--BUBBLES-->
+   <BFSoundtag>
+      <BF3DSndFactory name="ambient_bubbles">
+         <snd name="sounds/water/ambient_bubbles01.wav" volume=".7" mindist="2" maxdist="20" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="ambient_bubbles2">
+         <snd name="sounds/water/ambient_bubbles02.wav" volume=".7" mindist="2" maxdist="20" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="ambient_bubbles3">
+         <snd name="sounds/water/ambient_bubbles03.wav" volume=".7" mindist="2" maxdist="20" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--SPLASHES-->
+   <BFSoundtag>
+      <BF3DSndFactory name="splash_tiny">
+         <snd name="sounds/water/splash_tiny01.wav" volume=".8" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny2">
+         <snd name="sounds/water/splash_tiny02.wav" volume=".8" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny3">
+         <snd name="sounds/water/splash_tiny03.wav" volume=".8" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny4">
+         <snd name="sounds/water/splash_tiny04.wav" volume=".8" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny5">
+         <snd name="sounds/water/splash_tiny05.wav" volume=".8" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny6">
+         <snd name="sounds/water/splash_tiny06.wav" volume=".8" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny7">
+         <snd name="sounds/water/splash_tiny07.wav" volume=".8" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="splash_tiny_uw">
+         <snd name="sounds/water/splash_tiny01_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny_uw2">
+         <snd name="sounds/water/splash_tiny02_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny_uw3">
+         <snd name="sounds/water/splash_tiny03_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny_uw4">
+         <snd name="sounds/water/splash_tiny04_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny_uw5">
+         <snd name="sounds/water/splash_tiny05_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny_uw6">
+         <snd name="sounds/water/splash_tiny06_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_tiny_uw7">
+         <snd name="sounds/water/splash_tiny07_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="splash_small">
+         <snd name="sounds/water/splash_small01.wav" volume="1" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small2">
+         <snd name="sounds/water/splash_small02.wav" volume="1" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small3">
+         <snd name="sounds/water/splash_small03.wav" volume="1" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small4">
+         <snd name="sounds/water/splash_small04.wav" volume="1" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small5">
+         <snd name="sounds/water/splash_small05.wav" volume="1" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small6">
+         <snd name="sounds/water/splash_small06.wav" volume="1" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small7">
+         <snd name="sounds/water/splash_small07.wav" volume="1" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small8">
+         <snd name="sounds/water/splash_small08.wav" volume="1" mindist="4" maxdist="50" looping="0"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="splash_small_uw">
+         <snd name="sounds/water/splash_small01_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small_uw2">
+         <snd name="sounds/water/splash_small02_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small_uw3">
+         <snd name="sounds/water/splash_small03_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small_uw4">
+         <snd name="sounds/water/splash_small04_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small_uw5">
+         <snd name="sounds/water/splash_small05_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small_uw6">
+         <snd name="sounds/water/splash_small06_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small_uw7">
+         <snd name="sounds/water/splash_small07_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_small_uw8">
+         <snd name="sounds/water/splash_small08_uw.wav" volume=".8" mindist="4" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="splash_med">
+         <snd name="sounds/water/splash_med01.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med2">
+         <snd name="sounds/water/splash_med02.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med3">
+         <snd name="sounds/water/splash_med03.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med4">
+         <snd name="sounds/water/splash_med04.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med5">
+         <snd name="sounds/water/splash_med05.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med6">
+         <snd name="sounds/water/splash_med06.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med7">
+         <snd name="sounds/water/splash_med07.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med8">
+         <snd name="sounds/water/splash_med08.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med9">
+         <snd name="sounds/water/splash_med09.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med10">
+         <snd name="sounds/water/splash_med10.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med11">
+         <snd name="sounds/water/splash_med11.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med12">
+         <snd name="sounds/water/splash_med12.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med13">
+         <snd name="sounds/water/splash_med13.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="splash_med_uw">
+         <snd name="sounds/water/splash_med01_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw2">
+         <snd name="sounds/water/splash_med02_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw3">
+         <snd name="sounds/water/splash_med03_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw4">
+         <snd name="sounds/water/splash_med04_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw5">
+         <snd name="sounds/water/splash_med05_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw6">
+         <snd name="sounds/water/splash_med06_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw7">
+         <snd name="sounds/water/splash_med07_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw8">
+         <snd name="sounds/water/splash_med08_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw9">
+         <snd name="sounds/water/splash_med09_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw10">
+         <snd name="sounds/water/splash_med10_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw11">
+         <snd name="sounds/water/splash_med11_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw12">
+         <snd name="sounds/water/splash_med12_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_med_uw13">
+         <snd name="sounds/water/splash_med13_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="splash_large">
+         <snd name="sounds/water/splash_large01.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_large2">
+         <snd name="sounds/water/splash_large02.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_large3">
+         <snd name="sounds/water/splash_large03.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_large4">
+         <snd name="sounds/water/splash_large04.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_large5">
+         <snd name="sounds/water/splash_large05.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_large6">
+         <snd name="sounds/water/splash_large06.wav" volume="1.0" mindist="10" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="splash_large_uw">
+         <snd name="sounds/water/splash_large01_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_large_uw2">
+         <snd name="sounds/water/splash_large02_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_large_uw3">
+         <snd name="sounds/water/splash_large03_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_large_uw4">
+         <snd name="sounds/water/splash_large04_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_large_uw5">
+         <snd name="sounds/water/splash_large05_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_large_uw6">
+         <snd name="sounds/water/splash_large06_uw.wav" volume=".8" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="splash_huge">
+         <snd name="sounds/water/splash_huge01.wav" volume="1.0" mindist="20" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_huge2">
+         <snd name="sounds/water/splash_huge02.wav" volume="1.0" mindist="20" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_huge3">
+         <snd name="sounds/water/splash_huge03.wav" volume="1.0" mindist="20" maxdist="100" looping="0"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="splash_huge_uw">
+         <snd name="sounds/water/splash_huge01_uw.wav" volume="1" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_huge_uw2">
+         <snd name="sounds/water/splash_huge02_uw.wav" volume="1" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="splash_huge_uw3">
+         <snd name="sounds/water/splash_huge03_uw.wav" volume="1" mindist="8" maxdist="50" looping="0" layer="underwater"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--CAMERA EMERGE-->
+   <BFSoundtag>
+      <BF3DSndFactory name="camera_emerge">
+         <snd name="sounds/water/emerge01.wav" volume="1" mindist="4" maxdist="30" looping="0" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="camera_emerge2">
+         <snd name="sounds/water/emerge02.wav" volume="1" mindist="4" maxdist="30" looping="0" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--CAMERA DIVE-->
+   <BFSoundtag>
+      <BF3DSndFactory name="camera_dive">
+         <snd name="sounds/water/emerge01.wav" volume="1" mindist="4" maxdist="30" looping="0" layer="underwater" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="camera_dive2">
+         <snd name="sounds/water/emerge02.wav" volume="1" mindist="4" maxdist="30" looping="0" layer="underwater" alwaysKeepSoundHandle="true"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

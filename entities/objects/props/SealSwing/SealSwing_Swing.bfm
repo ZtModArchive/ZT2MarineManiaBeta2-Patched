@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\props\SealSwing\SealSwing_Swing.nif">
+  <animation anim="entities\objects\props\SealSwing\SealSwing_Swing_Idle.bf" animName="Swing_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\props\SealSwing\SealSwing_Swing_Used.bf" animName="Swing_Used" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="SealSwing_Swing" version="1">
+    <node name="Swing">
+      <table>
+        <Swing_Idle />
+        <Swing_Used />
+      </table>
+    </node>
+  </Graph>
+</BFM>

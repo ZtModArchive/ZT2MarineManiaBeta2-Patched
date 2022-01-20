@@ -1,0 +1,128 @@
+<BFTypedBinder binderType="Beluga_Adult" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Monodontidae>
+                        <Beluga>
+                           <Beluga_Adult/>
+                        </Beluga>
+                     </Monodontidae>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="shadowObj2" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+		<ZTEntitySelector>
+			<BFPhysObj>
+				<BFTerrainDecalComponent imageName="UI/fx/selection/showanimal.dds" alphaBlend="true"/>
+			</BFPhysObj>
+      </ZTEntitySelector>   
+      <BFAIEntityDataShared b_Adult="1" f_viewBonus="15" b_ShowAnimal="true" s_showIcon="MarineShow" f_adoptCount="rand(1,1)" s_MorphMessage="zoomessages:AnimalPuberty" f_MorphMessagePriority="1" f_MorphMessageDuration="30" b_LargePrey="true">
+	 <BFAINeedAdjusts hunger="0.25" thirst="0" rest="0.25" bathroom="0" hygiene="0" exercise="0.5" lifespan="0.0075" privacy="0.1" reproduction="0.25" social="0.5" stimulation="0.1" breath="-0.50"/>
+         <BFAINeedAdjusts Name="firstPersonTraining" hunger="0" thirst="0" rest="0" bathroom="0" hygiene="0" exercise="0" lifespan="0" privacy="0" reproduction="0" social="0" stimulation="0" breath="0"/>
+      </BFAIEntityDataShared>
+      <ZTUserCameraData parentingZOffset="0.4" swimmingUI="true" photoModeProhibited="false">
+         <FPCameraNodes>
+            <entry nodeName="Bip01_Dorsal_Node" />
+         </FPCameraNodes>
+      </ZTUserCameraData>
+      <ZTUserStaffAction>
+         <BoardObject locid="superstaff:swimwith" />
+         <DisembarkObject locid="superstaff:getoffanimal" showSelection="false" />
+      </ZTUserStaffAction>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Head" width="0.75" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj2">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Spine2" width="2.2" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester escapeBuffer="0.375" radius=".75" motionClass="swimonly" waterScore="0" landScore="10000" maxSlope=".75"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="texController" required="1">
+         <instance>
+            <BFAITextureController currState="well" defaultState="well">
+               <attribList>
+                  <health/>
+                  <hygiene/>
+               </attribList>
+               <stateList>
+                  <sickanddirty>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                        <hygiene minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData mergeKey="material">
+                        <mainObj material="Beluga_Adult_F" image="entities\units\animals\Beluga\Beluga_Adult_F_Sick_Dirty.dds"/>
+                     </textureData>
+                  </sickanddirty>
+                  <sick>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData mergeKey="material">
+                        <mainObj material="Beluga_Adult_F" image="entities\units\animals\Beluga\Beluga_Adult_F_Sick.dds"/>
+                     </textureData>
+                  </sick>
+                  <dirty>
+                     <attribData>
+                        <hygiene minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData mergeKey="material">
+                        <mainObj material="Beluga_Adult_F" image="entities\units\animals\Beluga\Beluga_Adult_F_Dirty.dds"/>
+                     </textureData>
+                  </dirty>
+                  <well>
+                     <textureData mergeKey="material">
+                        <mainObj material="Beluga_Adult_F" image="entities\units\animals\Beluga\Beluga_Adult_F.dds"/>
+                     </textureData>
+                  </well>
+               </stateList>
+            </BFAITextureController>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <ZTAITrickComponent/>
+         </instance>
+         <shared>
+            <ZTAITrickComponentData>
+               <Knowledge>
+                  <BelugaJump minScore="10" maxScore="10"/>
+                  <BelugaFlipperSplash minScore="0" maxScore="0"/>
+                  <BelugaSpyhop minScore="0" maxScore="0"/>
+                  <BelugaTailSplash minScore="0" maxScore="0"/>
+                  <BelugaRamBallOutOfWater minScore="0" maxScore="0"/>
+                  <BelugaSquirt minScore="0" maxScore="0"/>
+                  <BelugaFlukeSwipeBall minScore="0" maxScore="0"/>
+               </Knowledge>
+            </ZTAITrickComponentData>
+         </shared>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

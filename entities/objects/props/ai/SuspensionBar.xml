@@ -1,0 +1,139 @@
+<BFTypedBinder binderType="Suspension_Bar_mm">
+	<types>
+		<entity>
+			<prop>
+				<Suspension_Bar_mm />
+			</prop>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTDevComponent />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\props\SuspensionBar\Suspension_Bar_mm_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:Suspension_Bar_mm" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Suspension_Bar_mm" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData moveable="true" randomRotate="false" gridSnap="true" autoFootprint="false" icon3Doffset="0 -0.05 0.25" icon3Dscale=".31">
+			<cfootprint width="1" height="3" />
+			<dfootprint width="2" height="4" />
+		</ZTPlacementData>
+		<BFAIEntityDataShared s_uisort="fa" s_Zoopedia="zoopedia:zoopedia_hoop_mm:entry" f_FameReq="40" s_Product="Marine" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities\objects\props\SuspensionBar\Suspension_Bar_mm.bfm" activeSequenceName="Float_Idle" activeSequenceLoop="true" minSwitch="0 5000 5001"/>
+					<BFFakePhysicsComponent idleAnim="Float_Idle" moveAnim="Float_2KnockedOver" escapeAnim="KnockedOver_2Float" slideRate="0.0" maxEscapeTries="5" />
+					<BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0" />
+					<BFCollisionComponent grid="Bip01,Bip02" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Node_Training x="1.5" y="1.5" yaw="-90" />
+						<Node_JumpBar_Failure y="-4" z="-1.624" pitch="56.106" yaw="180" />
+						<Node_JumpBar_WhalePilotShortFinned_Failure y="-2" z="-1.624" pitch="56.106" yaw="180" />
+						<Node_JumpBar_Success y="-2.5" z="-1.624" pitch="60" yaw="180" />
+						<Node_JumpBar_WhalePilotShortFinned_Success y="-1.7122" pitch="60" yaw="180" />
+						<Node_JumpBar_Critical y="-2.5" z="-1.624" pitch="57.151" yaw="180" />
+						<Node_JumpBar_WhalePilotShortFinned_Critical y="-1.743" z="-0.0553" pitch="62" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Training" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTraining" targetNode="Node_Training" exclusiveID="Bar1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Training_Teleport" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockTraining_Teleport" targetNode="Node_Training" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>		
+		<BFNamedBinder binderName="JumpBar_Failure">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockBar" useBehSet="JumpBar_Failure" targetNode="Node_JumpBar_Failure" exclusiveID="Bar1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpBar_WhalePilotShortFinned_Failure">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockBar" useBehSet="JumpBar_Failure" targetNode="Node_JumpBar_WhalePilotShortFinned_Failure" exclusiveID="Bar1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpBar_Success">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockBar" useBehSet="JumpBar_Success" targetNode="Node_JumpBar_Success" exclusiveID="Bar1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpBar_WhalePilotShortFinned_Success">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockBar" useBehSet="JumpBar_Success" targetNode="Node_JumpBar_WhalePilotShortFinned_Success" exclusiveID="Bar1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpBar_Critical">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockBar" useBehSet="JumpBar_Critical" targetNode="Node_JumpBar_Success" exclusiveID="Bar1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="JumpBar_WhalePilotShortFinned_Critical">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockBar" useBehSet="JumpBar_Critical" targetNode="Node_JumpBar_WhalePilotShortFinned_Critical" exclusiveID="Bar1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Moving="false" />
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="320">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

@@ -1,0 +1,31 @@
+************************************************************
+Date: 02/27/2006
+Time: 12:45
+************************************************************
+Compiled object 1: footprint
+Compiled object 3: paint_ground
+Compiled object 5: billboard glow03
+Compiled object 6: ShadowNode_01
+Compiled object 7: LODGroup01
+Compiled object 8: Object01
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 182 
+Vertex Count: 313 
+Vertex Memory: 13 kb
+Material Count: 4 
+Texture Count: 2 
+Texture Memory: 42 kb
+Num LODs: 0 
+Has Billboards: true
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 182 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 6s 710ms
+XML File Translation: total time = 6s 491ms
+Data Output: total time = 4ms
+************************************************************

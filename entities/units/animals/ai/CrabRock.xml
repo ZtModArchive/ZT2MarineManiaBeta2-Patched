@@ -1,0 +1,102 @@
+<BFTypedBinder binderType="CrabRock">
+   <types>
+      <entity>
+         <actor>
+            <ambient>
+               <ambient_water>
+                  <CrabRock/>
+               </ambient_water>
+            </ambient>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTPlacementData waterPlacement="true" landPlacement="false" tankPlacement="true" showTankPlacement="false" minimumDepth=".2" iconAnim="Stand_Idle"/>
+      <BFAIEntityDataShared s_Species="CrabRock"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <position x="0" y="0" z="0"/>
+               <BFActorComponent actorfile="entities/units/animals/CrabRock/CrabRock_Adult_F.bfm" scale="1.5"/>
+               <BF4LegsGroundFitComponent heightOffset="0" maxRollError="0.2" maxPitchError="0.1" maxHeightError="0.5" pitchGain="2.00" heightGain="6.0" rollGain="1.0" bicyclePointBack="bp2" bicyclePointFront="bp1"/>
+               <BFForwardMovingComponent/>
+               <BFRotYawMovingComponent/>
+               <BFCollisionComponent grid="Bip01 Spine"/>
+	            <BFGridCollisionComponent/>
+               <BFBoundedObjectComponent worldBounded="0">
+                  <minPoint x="-1000000" y="-100000" z="-100000"/>
+                  <maxPoint x="1000000" y="100000" z="100000"/>
+               </BFBoundedObjectComponent>
+            </BFPhysObj>
+         </instance>
+	 <shared>
+	    <BFSharedRandomTextureInfo>
+		<replacementSet>
+		   <group weight="20">
+		      <item material="CrabRock_Adult_F" image="entities\units\animals\CrabRock\CrabRock_Adult_F.dds" layer="base" />
+	 	   </group>
+		   <group weight="20">
+		      <item material="CrabRock_Adult_F" image="entities\units\animals\CrabRock\CrabRock_Adult_F_1.dds" layer="base" />
+		   </group>
+		   <group weight="20">
+		      <item material="CrabRock_Adult_F" image="entities\units\animals\CrabRock\CrabRock_Adult_F_2.dds" layer="base" />
+	 	   </group>
+		   <group weight="20">
+		      <item material="CrabRock_Adult_F" image="entities\units\animals\CrabRock\CrabRock_Adult_F_3.dds" layer="base" />
+		   </group>
+		   <group weight="20">
+		      <item material="CrabRock_Adult_F" image="entities\units\animals\CrabRock\CrabRock_Adult_F_4.dds" layer="base" />
+	 	   </group>
+		</replacementSet>
+	    </BFSharedRandomTextureInfo>
+	 </shared>  
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\blob_animal_final.tga" baseNode="Bip01 Head" width="0.5" minLength="0.5" maxLength="1.0" minOffset="0" maxOffset="0.75"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr behaviorVersion="1">
+               <subBehaviors>
+                  <BFBehAnimate interruptible="true" targetAnim="Stand_Idle" interruptFlag="true" loopFlag="true"/>
+               </subBehaviors>
+            </BFBehaviorMgr>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFLocomotionMgr/>
+         </instance>
+         <binder>
+            <BFNamedBinder binderName="ground" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="Stand"/>
+                     <slow name="WalkLeft"/>
+                     <medium name="WalkRight" />
+                     <fast name="WalkLeft"/>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+         </binder>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester radius="0.25" motionClass="mover" maxSlope="0.75" wadeDepth="2" landScore="100"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

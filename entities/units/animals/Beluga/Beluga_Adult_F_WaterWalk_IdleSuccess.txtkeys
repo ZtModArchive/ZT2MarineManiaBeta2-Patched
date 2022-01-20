@@ -1,0 +1,11 @@
+<TEXTKEY>
+   <key time="0.0" text="{Bip01 Ponytail1} snd 'WaterWalk_IdleSuccess'"/>
+   <key time="0.0" text="{Bip01 Ponytail1} snd 'WaterWalk_IdleSuccess_uw'"/>   
+   <key time="0.0" text="{Bip01} runspl"/>
+   <key time="0.12" text="{Bip01} runspl"/>
+   <key time="0.22" text="{Bip01} runspl"/>
+   <key time="0.32" text="{Bip01} runspl"/>
+   <key time="0.42" text="{Bip01} runspl"/>
+   <key time="0.52" text="{Bip01} runspl"/>
+   <key time="0.62" text="{Bip01} runspl"/>
+</TEXTKEY>

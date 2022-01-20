@@ -1,0 +1,130 @@
+<BFTypedBinder binderType="SealSlide">
+   <types>
+      <entity>
+         <prop>
+            <SealSlide/>
+         </prop>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="prop" rottype="use" postype="use" attachnode="node_trick"/>
+            <parentObj parent="mainObj" child="FitSurfacePick"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTDevComponent/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\props\SealSlide\SealSlide_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:SealSlide"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SealSlide"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Zoopedia="zoopedia:zoopedia_sealslide:entry" s_Product="Marine" b_HasEntityFittingSurface="true"/>
+      <ZTPlacementData icon3Doffset="0 0 0.918257" icon3Dscale="0.11" autoFootprint="false" randomRotate="false" gridSnap="true" terrainFlatten="false">
+         <cfootprint width="1" height="5" />
+         <dfootprint width="3" height="6" />
+         <excludedIconObjs>
+            <FitSurfacePick />
+         </excludedIconObjs>
+      </ZTPlacementData>
+      <BFGCollisionData isTraversable="false"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/props/Platform_Trick/Platform_Trick" switch="0 20 40"/>
+               <BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars>
+               <virtualNodes>
+                  <Dock_TrickPlatform y="-8" z="-1.45" yaw="180"/>
+                  <Node_Training x="3" y="-2" yaw="-90"/>
+                  <Node_PreTraining x="-1" y="-2" z="-3" yaw="-90"/>
+                  <Node_Slide_Failure y="0.75" z="0.65" yaw="180"/>
+                  <Node_Slide_Success y="0.75" z="0.65" yaw="180"/>
+                  <Node_Slide_Critical y="0.75" z="0.65" yaw="180"/>
+               </virtualNodes>
+            </BFSharedPhysVars>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="prop">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\props\SealSlide\SealSlide" switch="0 20 40"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Training" repopulateMethod="byName">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTraining_Platform" targetNode="Node_PreTraining" exclusiveID="Slide1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Training_Teleport" repopulateMethod="byName">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockTraining_Teleport" targetNode="Node_Training" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Slide_Failure">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockSlide" useBehSet="Slide_Failure" targetNode="Dock_TrickPlatform" exclusiveID="Slide1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Slide_Success">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockSlide" useBehSet="Slide_Success" targetNode="Dock_TrickPlatform" exclusiveID="Slide1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Slide_Critical">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockSlide" useBehSet="Slide_Critical" targetNode="Dock_TrickPlatform" exclusiveID="Slide1" capacity="1" />
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="400">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="25" period="monthly" type="debit" category="upkeep"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="FitSurfacePick">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/props/Platform_Trick/Platform_Trick_PathGeometry"/>
+               <BFGFittingSurfaceComponent heightOffset="0.65"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

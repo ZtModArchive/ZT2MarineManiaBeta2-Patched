@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\scenery\Playground_BouncyRide_SeaHorse_mm\BouncyRide_Base_mm.nif">
+  <animation anim="entities\objects\scenery\Playground_BouncyRide_Lion_df\BouncyRide_Idle.bf" animName="BouncyRide_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\scenery\Playground_BouncyRide_Lion_df\BouncyRide_Used.bf" animName="BouncyRide_Used" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="BouncyRide_Base_mm" version="1">
+    <node name="BouncyRide">
+      <table>
+        <BouncyRide_Idle />
+        <BouncyRide_Used />
+      </table>
+    </node>
+  </Graph>
+</BFM>

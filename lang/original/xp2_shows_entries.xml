@@ -1,0 +1,204 @@
+﻿<ZT2Strings>
+
+	 <zoopedia_shows>
+	  <entry>Show and Tank Objects</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<p/>To create a show, place a show platform in a tank containing show animals, or place a show platform in a tank that connects to another one with show animals in it. Place grandstands to face the show tank, and then start scheduling tricks!
+			<p/>To find out about a specific show or a tank object, click the show name or tank object in the list on the left.	  
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_shows>
+	 
+<!--Big Screen TV is no longer a placeable item.
+	 <zoopedia_bigscreentv>
+	  <entry>Big Screen TV</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/scenery/BigScreenTV/BigScreenTV_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>The big-screen TV gives your guests a close-up view of your marine shows, making them even more exciting to watch.
+			<p/>To unlock the big-screen TV, complete any two marine show challenges in Challenge mode.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_bigscreentv>
+-->
+
+	 <zoopedia_showplatform>
+	  <entry>Show Platform</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/buildings/Platform_Show_mm/Platform_Show_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>The MC, or master of ceremonies, hosts marine shows from the show platform. Animals, like the California sea lion, perform their tricks on it. Place a show platform in a tank to create a show, and then, click the show platform to open the Show Scheduler.
+			<p/>Complete two marine show challenges in Challenge mode to unlock the big-screen TV for your show platform. Complete the Marine Shows campaign to unlock the colorful upgraded show platform with canopy.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_showplatform>
+
+<!--
+Upgraded Show Platform is no longer a placeable item.
+
+	 <zoopedia_showplatform_upgraded>
+	  <entry>Show Platform, Upgraded</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/buildings/Platform_Show_mm/Platform_Show_Upgraded_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>You must place a show platform in a tank before you can create a show. The MC runs the marine show from the show platform, and animals like the California sea lion perform tricks on it. Click the show platform to open the Show Scheduler.
+			<p/>Complete the Marine Shows campaign to unlock the upgraded show platform with canopy.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_showplatform_upgraded>
+-->
+	 <zoopedia_grandstand_mm>
+	  <entry>Grandstands</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/scenery/Grandstand_I_mm/Grandstand_I_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<img src="entities/objects/scenery/Grandstand_II_mm/Grandstand_II_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<img src="entities/objects/scenery/Grandstand_III_mm/Grandstand_III_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>			
+			<p/>Grandstands give guests a comfortable place to sit when watching marine shows. Guests in grandstands enjoy the show much more.
+			<p/>The small grandstand seats two guests, the medium grandstand seats four, and the large grandstand seats six.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_grandstand_mm>
+
+	 <zoopedia_grandstand_upgraded_mm>
+	  <entry>Grandstands, Upgraded</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/scenery/Upgraded_Grandstand_I_mm/Upgraded_Grandstand_I_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<img src="entities/objects/scenery/Upgraded_Grandstand_II_mm/Upgraded_Grandstand_II_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<img src="entities/objects/scenery/Upgraded_Grandstand_III_mm/Upgraded_Grandstand_III_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Upgraded grandstands add color and comfort to show areas. Win the Show Donation Level 1 Award to unlock the medium upgraded grandstand. Win the Show Donation Level 2 Award to unlock the large upgraded grandstand.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_grandstand_upgraded_mm>
+	 
+	 <zoopedia_light_mm>
+	  <entry>Tank Light</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/scenery/light_mm/light_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Tank lights illuminate the water inside marine tanks. You can also use them to light murky benthic or wetlands exhibits.
+			<p/>The tank light is available for purchase after winning the Show Tycoon Level 1 Award.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_light_mm>
+	 
+	 <zoopedia_tankportal>
+	  <entry>Tank Portal</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/fences/AnimalTank_Gate/AnimalTank_Gate_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Tank portals connect marine show tanks to regular exhibit tanks. Show animals cannot live all the time in a show tank. You must create an exhibit tank for show animals to live in when they finish performing. Place an exhibit tank adjacent to a show tank and connect them with a tank portal. When it's time for a show, animals travel from the exhibit tank to the show tank via the tank portal.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_tankportal>
+	 
+	 <zoopedia_trainingarea>
+	  <entry>Training Area</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/TrainingArea/TrainingArea_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Training areas are used for training marine animals tricks to perform in marine shows. You must place a training area and a tank entrance in a tank to train the animals in it.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_trainingarea>
+	 
+	 <zoopedia_trickarea_mm>
+	  <entry>Trick Area</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/TrickArea_mm/TrickArea_mm_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Animals in marine shows perform in trick areas. To move a trick area, select the trick area and then move it to the desired location.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_trickarea_mm>	 
+
+	 <zoopedia_trickplatform>
+	  <entry>Trick Platform</entry>
+	 <text>
+		<cell pady="0" width="1000"/>
+		<p/>
+		<cell width="260"/>
+		<cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+		 <cell width="600" padx="20" pady="20">
+		  <color r="255" g="255" b="255">
+			<img src="entities/objects/props/Platform_Trick/Platform_Trick_icon.dds" sx="0" sy="0" sw="64" sh="64"/>
+			<p/>Animals such as the Pacific walrus and California sea lion perform on trick platforms. To move a trick platform, select the trick platform and then move it to the desired location.
+		  </color>
+		 </cell>
+		</cell>
+	  </text>  
+	 </zoopedia_trickplatform>	
+
+</ZT2Strings>

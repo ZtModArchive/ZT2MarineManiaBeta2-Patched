@@ -1,0 +1,113 @@
+<BFTypedBinder binderType="SubstratePile_Seaweed">
+	<types>
+		<entity>
+			<food>
+				<SubstratePile>
+					<SubstratePile_Seaweed />
+				</SubstratePile>
+			</food>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTDevComponent />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\food\SubstratePile\SubstratePile_Seaweed_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:SubstratePile_Seaweed" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SubstratePile_Seaweed" />
+			</on>
+		</UIToggleButton>
+		<ZTUserStaffAction>
+			<SetAttribute name="f_FoodLevel" value="100" locid="superstaff:food" />
+		</ZTUserStaffAction>
+		<ZTPlacementData randomRotate="false" gridSnap="true" autoFootprint="true" terrainFlatten="true" minimumDepth="1" />
+		<BFAIEntityDataShared f_FameReq="80" s_Product="Marine" b_Sniffable="true" b_GranivoreFood="true" s_contents="Terrain_Seaweed" s_prop="Seaweed_Prop" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/food/SubstratePile/SubstratePile.nif" switch="0 36" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_01 parentNode="AutoRoot" x="-1" y="0" z="1.25" yaw="-90" />
+						<Dock_02 parentNode="AutoRoot" x="0" y="1" z="1.25" yaw="0" />
+						<Dock_03 parentNode="AutoRoot" x="1" y="0" z="1.25" yaw="90" />
+						<Dock_04 parentNode="AutoRoot" x="0" y="-1" z="1.25" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="full" required="1">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/food/SubstratePile/SubstratePile_Grass_Full.nif" switch="0 36" />
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="twothird" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/food/SubstratePile/SubstratePile_Grass_66.nif" switch="0 36" />
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="onethird" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/food/SubstratePile/SubstratePile_Grass_33.nif" switch="0 36" />
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="empty" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/food/SubstratePile/SubstratePile_Grass_Empty.nif" switch="0 36" />
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance f_FoodLevel="100" />
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIFadeController attribName="f_FoodLevel" currState="full" fadePeriod="1">
+					<stateList>
+						<full physObj="full" minRange="66" maxRange="1000" />
+						<twothird physObj="twothird" minRange="33" maxRange="66" />
+						<onethird physObj="onethird" minRange="0" maxRange="33" />
+						<empty physObj="empty" minRange="-1000" maxRange="0" />
+					</stateList>
+				</BFAIFadeController>
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="350">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="refill" cost="150" type="credit" category="animal_upkeep" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

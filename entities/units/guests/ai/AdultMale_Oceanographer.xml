@@ -1,0 +1,55 @@
+<BFTypedBinder binderType="Guest_Adult_M_Oceanographer">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Guest>
+                  <Guest_Adult>
+                     <Guest_Adult_M>
+                        <Guest_Adult_M_Oceanographer/>
+                     </Guest_Adult_M>
+                  </Guest_Adult>
+               </Guest>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="headObj" rottype="use" postype="use" attachnode="Link_Head"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared s_Rarity="unique"/>
+	   <ZTPlacementData icon3Doffset="0 0 .62" icon3Dscale="4.09"/>      
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFShadowLODComponent numLevels="1" switchingDists="30.0"/>
+               <BFActorComponent actorfile="entities\units\guests\AdultMale\Guest_Adult_M_Oceanographer.bfm" scale="1.0" switch="0 20 50 5002 5003 5004"/>
+               <BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 1" ankleRotVectorRight="0 0 1" heightOffset="0" fitRadius=".15"/>
+               <BFForwardMovingComponent/>
+               <BFRotYawMovingComponent/>
+               <BFBoundedObjectComponent>
+                  <minPoint x="0" y="0" z="-100"/>
+                  <maxPoint x="300" y="300" z="100"/>
+               </BFBoundedObjectComponent>
+               <BFCollisionComponent grid="Grid"/>
+               <BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="headObj">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\units\guests\AdultMale\Head_Adult_M_Oceanographer" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

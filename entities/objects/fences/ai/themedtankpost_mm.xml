@@ -1,0 +1,53 @@
+<BFTypedBinder binderType="themedtankpost_mm">
+   <types>
+      <entity>
+         <scenery>
+            <tankwallsupport>
+               <themedtankpost_mm/>
+            </tankwallsupport>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_post_base" switch="0 30"/>
+               <BFGroundFitComponent heightOffset="0"/>
+               <BFCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="top" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true"  modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_post_top" switch="0 30"/>
+               <BFForceUpdateWhenVisibleComponent />
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="expandoPiece1" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\ThemedTank_mm\ThemedTank_mm_post_middle" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+       </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTTankSupport height="10" heightAbsolute="true" rotateTop="true">
+               <Base binderName="mainObj" height="1.36f" attachSelfNode="" attachOthersNode="Link_Base01"/>
+               <Top>
+                  <TopPiece1 binderName="top" height="1.5f" attachSelfNode="Link_Pole" attachOthersNode=""/>
+               </Top>
+               <Expando>
+                  <Piece1 binderName="expandoPiece1" height="1.5f" attachSelfNode="Link_Segment01" attachOthersNode="Link_Segment02"/>
+               </Expando>
+            </ZTTankSupport>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

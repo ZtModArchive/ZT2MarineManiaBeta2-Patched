@@ -1,0 +1,123 @@
+﻿<BFTypedBinder binderType="marinefence_high_mm">
+   <types>
+      <entity>
+         <fence>
+            <marinefence_high_mm/>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\marinefence_high_mm\marinefence_high_mm_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:marinefence_high_mm"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="marinefence_high_mm"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Product="Marine" s_uisort="tb" f_FenceStrength="8" b_highfence="true" s_Zoopedia="zoopedia:zoopedia_marinefence:entry" s_Broken="marinefence_high_mm_broken" f_FameReq="40"/>
+   		<ZTTourData>
+	 	 	<theme_marine value="8"/>
+		</ZTTourData>       
+      <ZTPlacementData minimumHeadroom="2.0"/>
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTFence gate="marinefence_gate_mm"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\marinefence_high_mm\marinefence_high_mm_post" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\marinefence_high_mm\marinefence_high_mm_vert" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\marinefence_high_mm\marinefence_high_mm_diag" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\marinefence_high_mm\marinefence_high_mm_post" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90curve90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\marinefence_high_mm\marinefence_high_mm_curve90down" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45curve90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\marinefence_high_mm\marinefence_high_mm_curve90diag_down" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90curve135">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\marinefence_high_mm\marinefence_high_mm_curve135down_short" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45curve135">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\marinefence_high_mm\marinefence_high_mm_curve135down_long" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="false"/>
+         </shared>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="100">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

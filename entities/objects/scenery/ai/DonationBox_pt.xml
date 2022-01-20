@@ -1,0 +1,56 @@
+﻿<BFTypedBinder binderType="DonationBox_pt">
+	<types>
+		<entity>
+			<scenery>
+				<donationbox>
+					<DonationBox_pt />
+				</donationbox>
+			</scenery>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\scenery\donationbox_pt\donationbox_pt_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:DonationBox_pt" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DonationBox_pt" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData terrainFlatten="true" dockArrowSize="1.0" icon3Doffset="0 0.009851 0.366036" icon3Dscale="0.977818" dockArrowStyle="special" />
+		<BFAIEntityDataShared s_uisort="b" s_Product="Marine" b_DonationAcceptor="true" s_Zoopedia="zoopedia:zoopedia_donationbox:entry" />
+		<ZTTourData>
+			<theme_marine value="3" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/scenery/donationbox_pt/donationbox_pt" switch="0 18 45" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="200">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="donate" cost="10" type="debit" category="donations_income" nextTransaction="add_user" />
+					<ZTTransaction name="add_user" cost="1" type="addUser" category="user" />
+					<BFGTransactionTracker>
+						<ignore>
+							<build />
+							<add_user />
+						</ignore>
+					</BFGTransactionTracker>
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

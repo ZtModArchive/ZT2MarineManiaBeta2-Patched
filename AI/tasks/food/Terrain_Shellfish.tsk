@@ -1,0 +1,422 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="EatKeeper" UniqueID="terrain_Shellfish:EatKeeper">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Cancrivorous/>
+            <b_Basic/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Terrain_Shellfish/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial dockRadius=".3" subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="30" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <BFBehPlaySet behSet="Eat"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITargetData f_FoodLevel="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EatKeeper" UniqueID="terrain_Shellfish:EatKeeper:1">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Cancrivorous/>
+            <b_Medium/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Terrain_Shellfish/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial dockRadius=".3" subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="30" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_3">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalEatGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Eat"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITargetData f_FoodLevel="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EatKeeper" UniqueID="terrain_Shellfish:EatKeeper:2">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Cancrivorous/>
+            <b_Advanced/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Terrain_Shellfish/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial dockRadius=".3" subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="30" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_4">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalEatGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Eat"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITargetData f_FoodLevel="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EatKeeper" UniqueID="terrain_Shellfish:EatKeeper:3">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_Cancrivorous/>
+            <b_Elite/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Terrain_Shellfish/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial dockRadius=".3" subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="30" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalEatGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Eat"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITargetData f_FoodLevel="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EatKeeper_Aves_Basic" UniqueID="terrain_Shellfish:EatKeeper_Aves_Basic">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Aves/>
+            <b_Cancrivorous/>
+            <b_Basic/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Terrain_Shellfish/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial dockRadius=".3" subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="15" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <BFBehPlaySet behSet="Eat"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITargetData f_FoodLevel="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EatKeeper_Aves_Medium" UniqueID="terrain_Shellfish:EatKeeper_Aves_Medium">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Aves/>
+            <b_Cancrivorous/>
+            <b_Medium/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Terrain_Shellfish/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial dockRadius=".3" subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="15" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_3">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalEatGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Eat"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITargetData f_FoodLevel="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EatKeeper_Aves_Advanced" UniqueID="terrain_Shellfish:EatKeeper_Aves_Advanced">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Aves/>
+            <b_Cancrivorous/>
+            <b_Advanced/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Terrain_Shellfish/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial dockRadius=".3" subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="30" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_4">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalEatGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Eat"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITargetData f_FoodLevel="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EatKeeper_Aves_Elite" UniqueID="terrain_Shellfish:EatKeeper_Aves_Elite">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Aves/>
+            <b_Cancrivorous/>
+            <b_Elite/>
+            <Qualifiers isSwimming="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Terrain_Shellfish/>
+            <Qualifiers_AND f_FoodLevel="GE 1" inWater="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToEat" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial dockRadius=".3" subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-100" bathroom="30" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Eating" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalEatGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Eat"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITargetData f_FoodLevel="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

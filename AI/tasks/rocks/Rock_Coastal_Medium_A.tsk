@@ -1,0 +1,43 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="MediumCoastalRock_Native" TaskDelayMin="60" TaskDelayMax="120" reserveTag="TAP" UniqueID="rock_Coastal_medium_a:MediumCoastalRock_Native">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_ClimbsMediumCoastalRock/>
+            <b_CoastalAnimal/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Rock_Coastal_Medium/>
+            <Qualifiers_AND inHabitat="true" inSight="15"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <ZTBehViewEvent viewKey="Pos_1">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUseNativeRockGood" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-20" rest="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

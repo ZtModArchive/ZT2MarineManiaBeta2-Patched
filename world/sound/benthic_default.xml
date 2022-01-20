@@ -1,0 +1,7 @@
+<ambient loop="benthic_loop">
+   <ambients>
+      <snds>
+         <snd name="b_animals01"/>
+      </snds>
+   </ambients>
+</ambient>

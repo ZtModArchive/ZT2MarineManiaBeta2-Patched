@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="ManateeWestIndian_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Sirenia>
+                     <Trichechidae>
+                        <ManateeWestIndian>
+                           <ManateeWestIndian_Young>
+                              <ManateeWestIndian_Young_M/>
+                           </ManateeWestIndian_Young>
+                        </ManateeWestIndian>
+                     </Trichechidae>
+                  </Sirenia>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="ManateeWestIndian_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

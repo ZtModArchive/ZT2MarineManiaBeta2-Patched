@@ -1,0 +1,118 @@
+<BFTypedBinder binderType="Trainer" abstract="true">
+  <types>
+    <entity>
+      <actor>
+        <people>
+          <Staff>
+            <Trainer/>
+          </Staff>
+        </people>
+      </actor>
+    </entity>
+  </types>
+  <instance>
+    <BFGEntity/>
+  </instance>
+  <shared>
+    <UIToggleButton template="adopt">
+      <UIAspect>
+        <default image="entities\units\staff\Trainer\Trainer_M_icon.dds"/>
+      </UIAspect>
+      <UIHelpInfo ids="entityname:Trainer"/>
+      <on>
+        <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Trainer"/>
+      </on>
+    </UIToggleButton>
+  </shared>
+  <binder>
+    <BFBinder required="1">
+      <instance>
+        <BFAICognitiveMgr>
+          <Sensors>
+            <ZTAIStaffSensorSelf/>
+            <ZTAIStaffSensor/>
+          </Sensors>
+          <TaskThinkers>
+            <ZTAIStaffTaskThinker/>
+          </TaskThinkers>
+        </BFAICognitiveMgr>
+      </instance>
+    </BFBinder>
+    <BFNamedBinder binderName="mainObj">
+       <shared>
+          <BFSharedPhysVars>
+             <virtualNodes>
+                <Dock_Animal x="0" y="-4" yaw="180"/>
+             </virtualNodes>
+          </BFSharedPhysVars>
+       </shared>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Baton" required="0">
+       <instance>
+          <BFPhysObj>
+             <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\Items\TrainingBaton\TrainingBaton" scale="1.0" switch="0 9"/>
+          </BFPhysObj>
+       </instance>
+    </BFNamedBinder>
+    <BFBinder required="1">
+      <instance>
+        <BFLocomotionMgr/>
+      </instance>
+      <binder>
+        <BFNamedBinder binderName="ground" required="1">
+          <instance>
+            <BFLocoAnimate version="1">
+              <stop name="Stand"/>
+              <slow name="Walk" minAnimSpeed="1.0" maxAnimSpeed="1.4">
+                <waggle name="Walk_Ahead" wag="0.1"/>
+              </slow>
+              <medium name="Walk" minAnimSpeed="1.4" maxAnimSpeed="1.6"/>
+              <fast name="Run"/>
+            </BFLocoAnimate>
+          </instance>
+        </BFNamedBinder>
+        <BFNamedBinder binderName="groundcarry" required="1">
+          <instance>
+            <BFLocoAnimate version="1" stationaryAnim="StandItem_Idle">
+              <stop name="StandItem"/>
+              <slow name="WalkItem" minAnimSpeed="1.0" maxAnimSpeed="1.4">
+                <waggle name="WalkItem_Ahead" wag="0.1"/>
+              </slow>
+              <med name="WalkItem" minAnimSpeed="1.4" maxAnimSpeed="1.6"/>
+              <fast name="WalkItem" minAnimSpeed="1.6" maxAnimSpeed="1.8"/>
+            </BFLocoAnimate>
+          </instance>
+        </BFNamedBinder>
+        <BFNamedBinder binderName="water" required="1">
+          <instance>
+            <BFLocoAnimate version="1" stationaryAnim="TreadWater_Idle">
+              <stop name="TreadWater"/>
+              <slow name="Swim"/>
+              <medium name="Swim"/>
+              <fast name="Swim"/>
+            </BFLocoAnimate>
+          </instance>
+        </BFNamedBinder>
+      </binder>
+    </BFBinder>
+    <BFNamedBinder binderName="Animal_Training_Area" repopulateMethod="byName">
+       <instance>
+          <BFGEntityContainer>
+             <slots>
+                <BFGEntityContainerSlot targetNode="Dock_Animal" exclusiveID="Trainer1" capacity="1"/>
+             </slots>
+          </BFGEntityContainer>
+       </instance>
+    </BFNamedBinder>
+    <BFBinder required="1">
+      <instance>
+        <ZTAIStaffAssignmentComponent/>
+      </instance>
+    </BFBinder>
+    <BFBinder required="1">
+      <instance>
+        <ZTAIStaffTrainerComponent/>
+      </instance>
+    </BFBinder>
+  </binder>
+</BFTypedBinder>

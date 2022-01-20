@@ -1,0 +1,87 @@
+﻿<BFTypedBinder binderType="MyriadFeatherStar_Reef">
+	<types>
+		<entity>
+			<foliage>
+				<marineplant>
+					<MyriadFeatherStar_Reef />
+				</marineplant>
+			</foliage>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="live" rottype="use" postype="use" attachnode="autoroot" />
+				<parentObj parent="mainObj" child="dead" rottype="use" postype="use" attachnode="autoroot" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0.01 0.57" icon3Dscale="0.8" autoFootprint="false">
+			<cfootprint width="1" height="1" />
+			<dfootprint width="1" height="1" />
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\foliage\MyriadFeatherStar\MyriadFeatherStar_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:MyriadFeatherStar_Reef" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="MyriadFeatherStar_Reef" />
+			</on>
+		</UIToggleButton>
+		<BFGBiomeData location="reef_warm_oceans_worldwide">
+			<reef />
+		</BFGBiomeData>
+		<BFAIEntityDataShared b_ReceiveUpdates="true" s_Product="Marine" s_Zoopedia="zoopedia:zoopedia_featherstar:entry" />
+		<ZTTourData>
+			<biome_reef value="1" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFTerrainPaintComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="live" required="1">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities\objects\foliage\MyriadFeatherStar\MyriadFeatherStar" switch="0 25 50" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="dead" required="0">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities\objects\foliage\MyriadFeatherStar\MyriadFeatherStar_Dry" switch="0 60" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<ZTWitheredPlantComponent MinDepth="1">
+					<Underwater>
+						<live />
+					</Underwater>
+					<DryLand>
+						<dead />
+					</DryLand>
+				</ZTWitheredPlantComponent>
+			</instance>
+		</BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="15">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

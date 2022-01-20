@@ -1,0 +1,21 @@
+<BFTypedBinder binderType="TurtleSeaGreen_Gift">
+   <types>
+      <entity>
+         <item>
+            <TurtleSeaGreen_Gift/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_TurtleSeaGreen_Gift.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:TurtleSeaGreen_Gift"/>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_MarineGift="true"/>
+   </shared>
+</BFTypedBinder>

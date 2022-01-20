@@ -1,0 +1,228 @@
+﻿<ZT2Strings>
+
+   <zoopedia_coral>
+      <entry>Marine, Coral</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="150">
+                  <img src="entities/objects/foliage/BlueGreenCoral/BlueGreenCoral_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+                  <img src="entities/objects/foliage/FireCoral/FireCoral_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+                  <img src="entities/objects/foliage/PlateCoral/PlateCoral_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+                  <img src="entities/objects/foliage/TableCoral/TableCoral_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>                  
+               </cell>
+               <cell pady="15" width="400">
+The most important organisms for the development of coral reefs are, of course, corals. Corals are tiny animals with a simple tubular body known as a polyp. They have a mouth on top, surrounded by a ring of tentacles. Only some corals build reefs. These are the stony corals, or scleractinians, which live in colonies. Thousands of polyps live and grow together, laying down a shared skeleton of limestone (calcium carbonate). Over the years such skeletons may become large structures, with a living outer layer of coral animals.
+						<p/>
+Despite their importance, corals are not the only creatures involved in the building of coral reefs. Other animals such as mollusks build skeletons from limestone. A number of important groups of marine plants known as algae also lay down limestone. These include a group of pink or red coralline algae that encrust bare rock and often act like cement on a reef.
+               </cell>
+            </cell>
+            <p/>
+            <cell width="260"/>
+            <cell width="620">
+Content adapted from <a href="zoopedia:zoopedia_encarta:entry"><u><color r="255" g="231" b="135">Microsoft&#xAE; Encarta&#xAE; 2006.</color></u></a> &#xA9; 1993&#x96;2005 Microsoft Corporation. All rights reserved.
+            </cell>
+         </color>
+      </text>
+   </zoopedia_coral>
+
+   <zoopedia_featherstar>
+      <entry>Marine, Feather Star</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="150">
+                  <img src="entities/objects/foliage/MyriadFeatherStar/MyriadFeatherStar_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+               </cell>
+               <cell pady="15" width="400">
+The Feather star, also called the Sea Lily, is a common name for echinoderm native mainly to tropical seas that have a disk-shaped body covered with bony plates, and feathery arms that extend upward from the body to form a cup. Both the mouth and the anus of the animal are located on the upper side of the body disk. On the underside is a stalk with which the animal attaches itself to the sea bottom. Some sea lilies lose the attaching stalk on reaching maturity and instead swim or creep along the seafloor with their arms. Free-swimming forms are known as feather stars. The forms that remain attached to the seafloor throughout their lives live mainly in the deep ocean. The living animals are brilliantly colored.
+						<p/>
+Feather stars are generally recognized as the most primitive form of echinoderm. Only a few hundred species are now extant, but thousands of extinct species have been found in fossil form, particularly in limestones that originated in the Paleozoic era.
+               </cell>
+            </cell>
+            <p/>
+            <cell width="260"/>
+            <cell width="620">
+Content adapted from <a href="zoopedia:zoopedia_encarta:entry"><u><color r="255" g="231" b="135">Microsoft&#xAE; Encarta&#xAE; 2006.</color></u></a> &#xA9; 1993&#x96;2005 Microsoft Corporation. All rights reserved.
+            </cell>
+         </color>
+      </text>
+   </zoopedia_featherstar>
+   
+   <zoopedia_giantbarrelsponge>
+      <entry>Marine, Giant Barrel Sponge</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="150">
+                  <img src="entities/objects/foliage/GiantBarrelSponge/GiantBarrelSponge_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+               </cell>
+               <cell pady="15" width="400">
+Giant barrel sponges are one of the most spectacular species of sponges. Sponges are a very simple type of filter-feeding animal that lack muscles, nerves, or specialized organs. Sponges have a flexible skeleton made from a substance called spongin, and humans have historically used sponge skeletons as a scrubbing tool. In recent decades artificial sponges made from synthetic materials have largely replaced natural sponges for this purpose. 
+               </cell>
+            </cell>
+         </color>
+      </text>
+   </zoopedia_giantbarrelsponge>
+   
+   <zoopedia_greenseaanemone>
+      <entry>Marine, Green Sea Anemone</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="150">
+                  <img src="entities/objects/foliage/AnemoneGiantGreen/AnemoneGiantGreen_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+               </cell>
+               <cell pady="15" width="400">
+Sea anemone is the common name for marine, flowerlike polyps having a cylindrical, or vaselike, body. Many species are colored; large specimens, such as the Giant Green Sea Anemone, may attain a diameter of 1 m (3 ft). The body is closed and attached to rocks or coral at one end and, at the other end, has a central mouth surrounded by tentacles armed with nematocysts (stinging cells and thread cells that paralyze and entangle the small fish and marine animals that constitute its prey). The slitlike mouth opens into a short esophagus opening into the body cavity. At each end of the mouth, a permanent pore opens into a ciliated groove, called a siphonoglyph, in the side of the gullet, through which a continuous current of water flows, carrying oxygen to the tissues and removing waste matter. The body cavity is divided into a number of sacs by septa extending from the body wall. These septa increase the surface available for the secretion of digestive juices and the absorption of nourishment, and they contain the gonads that produce the sperm and eggs.
+               </cell>
+            </cell>
+            <p/>
+            <cell width="260"/>
+            <cell width="620">
+Content adapted from <a href="zoopedia:zoopedia_encarta:entry"><u><color r="255" g="231" b="135">Microsoft&#xAE; Encarta&#xAE; 2006.</color></u></a> &#xA9; 1993&#x96;2005 Microsoft Corporation. All rights reserved.
+            </cell>
+         </color>
+      </text>
+   </zoopedia_greenseaanemone>   
+
+   <zoopedia_kelpforest>
+      <entry>Marine, Kelp Forest</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="150">
+                  <img src="entities/objects/foliage/KelpForest/KelpForest_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+               </cell>
+               <cell pady="15" width="400">
+Kelp, common name for large, leafy brown algae, known as seaweed, that grow along colder coastlines. The principal genera of kelp are the true kelps, found in most cool seas, and the giant kelps and bladder kelps, both of which are restricted to the northern Pacific. The giant kelps grow as long as 65 m (213 ft). The kelp plant has a rootlike holdfast that fixes to rocky surfaces; a long, slender stalk, or stipe; and long, leaflike blades that manufacture food by photosynthesis. Kelps, like ferns, reproduce by alternation of generations.
+						<p/>
+Once a major source of iodine and soda, kelp is now used to manufacture algin, a substance used to make tires and to prevent ice cream from crystallizing. Kelp is rich in vitamins and minerals and is a staple, especially in the diets of the Japanese.
+               </cell>
+            </cell>
+            <p/>
+            <cell width="260"/>
+            <cell width="620">
+Content adapted from <a href="zoopedia:zoopedia_encarta:entry"><u><color r="255" g="231" b="135">Microsoft&#xAE; Encarta&#xAE; 2006.</color></u></a> &#xA9; 1993&#x96;2005 Microsoft Corporation. All rights reserved.
+            </cell>
+         </color>
+      </text>
+   </zoopedia_kelpforest>
+
+   <zoopedia_phaeophyta>
+      <entry>Marine, Phaeophyta</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="150">
+                  <img src="entities/objects/foliage/Phaeophyta/Phaeophyta_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+               </cell>
+               <cell pady="15" width="400">
+Phaeophyta, also known as brown algae or gulfweed, describes any of the several tropical marine seaweeds that drift in large floating masses. Gulfweed consists of branches with leaflike blades and numerous small air-filled sacs that keep the gulfweed afloat. One of the most widely recognized species is the common gulfweed, or Sargassum weed, a type of brown algae. The weed drifts in large masses in the Gulf Stream, which flows northeast from the Gulf of Mexico, and in the Sargasso Sea, a large area of the Atlantic Ocean between the West Indies and the Azores. 
+               </cell>
+            </cell>
+            <p/>
+            <cell width="260"/>
+            <cell width="620">
+Content adapted from <a href="zoopedia:zoopedia_encarta:entry"><u><color r="255" g="231" b="135">Microsoft&#xAE; Encarta&#xAE; 2006.</color></u></a> &#xA9; 1993&#x96;2005 Microsoft Corporation. All rights reserved.
+            </cell>
+         </color>
+      </text>
+   </zoopedia_phaeophyta>
+
+   <zoopedia_seafan>
+      <entry>Marine, Sea Fan</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="150">
+                  <img src="entities/objects/foliage/SeaFan/SeaFan_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+               </cell>
+               <cell pady="15" width="400">
+Sea fans are a type of Gorgonian, a group of plantlike animals also known as the horny corals. The gorgonians include the sea whips, sea plumes, sea rods, sea fans, and precious red coral. They live in tropical and subtropical marine environments, such as the Caribbean Sea. Several hundred species are known.
+						<p/>
+Gorgonians are similar to other corals in that their life history includes a larva that settles and becomes a polyp, a cylindrical animal with a ring of tentacles at the free end. Once established, a polyp may divide many times asexually to form the familiar tree-, antler-, or fan-shaped colony of animals typical of the gorgonians The colonies they form can take 30 years to reach full size, which can be up to 3 m (10 ft) across. The colonies spread treelike from a relatively small bottom attachment. Some, such as the sea whips, are only slightly branched, but most are extensively branched or latticed and are oriented at right angles to the flow of the current.
+						<p/>
+Gorgonians have two true body layers: an outer ectoderm and an inner endoderm. The space between these two layers, known as the coenenchyme, is made up of mesoglea, a jellylike substance, and gastrodermal canals, which connect all the polyps in the colony, enabling them to share food. Each polyp has eight feathery tentacles and eight body sections divided vertically by membranes and arranged symmetrically around a central body cavity known as the coelenteron, where digestion takes place. One opening serves as both mouth and exit for body wastes.
+               </cell>
+            </cell>
+            <p/>
+            <cell width="260"/>
+            <cell width="620">
+Content adapted from <a href="zoopedia:zoopedia_encarta:entry"><u><color r="255" g="231" b="135">Microsoft&#xAE; Encarta&#xAE; 2006.</color></u></a> &#xA9; 1993&#x96;2005 Microsoft Corporation. All rights reserved.
+            </cell>
+         </color>
+      </text>
+   </zoopedia_seafan>
+
+   <zoopedia_seastar>
+      <entry>Marine, Sea Star</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="150">
+                  <img src="entities/objects/foliage/SeaStars/SeaStars_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+               </cell>
+               <cell pady="15" width="400">
+The sea star, also known as the starfish, is the common name for five orders and about 1500 living species of marine invertebrate animals characterized by radially arranged arms bearing locomotory tube feet. Some starfish are only 1 to 2 cm (0.4 to 0.8 in) wide as adults, but others are as much as 65 cm (26 in) wide. The group is abundant at all depths of the ocean.
+						<p/>
+The starfish exhibits the internal hydraulic system particular to echinoderms. A central ring connects canals that run the length of each arm and branch into rows of tube feet. The hollow network, a modified body cavity, fills with water, creating a "skeleton" firm enough to walk on. By forcing water out through the tube feet, the starfish can extend and attach its suckers to a surface; by contracting the muscles at the base of the tube feet, it can move itself forward. 
+						<p/>
+Generally starfish are rather stiff bodied and crawl slowly. The mouth is directed downward and is surrounded by a number of arms radiating away from it, each arm bearing rows of tube feet used in crawling, attachment, and feeding. The arm length varies, and four, six, or more arms instead of the usual five are not uncommon. The anus is often lacking; if present, it is on the body's upper surface. The skin, rough and leathery, usually bears spines. The animal has a large gut, a complex system of body cavities, and a simple, brainless nervous system.
+						<p/>
+Starfish have moderately well developed senses of touch, smell, and taste and also respond to light. They feed on a wide range of items, including ocean-bottom deposits. They can eat small animals whole; they deal with larger prey by extruding their stomachs and digesting the prey outside their bodies. Some starfish eat bivalves by prying open the shells with their arms and then slipping their stomachs between the two shell valves.
+               </cell>
+            </cell>
+            <p/>
+            <cell width="260"/>
+            <cell width="620">
+Content adapted from <a href="zoopedia:zoopedia_encarta:entry"><u><color r="255" g="231" b="135">Microsoft&#xAE; Encarta&#xAE; 2006.</color></u></a> &#xA9; 1993&#x96;2005 Microsoft Corporation. All rights reserved.
+            </cell>
+         </color>
+      </text>
+   </zoopedia_seastar>
+   
+   <zoopedia_tussacgrass>
+      <entry>Plant, Tussac Grass</entry>
+      <text>
+         <color r="255" g="255" b="255">
+            <cell pady="0" width="1000"/>
+            <p/>
+            <cell width="260"/>
+            <cell width="640" bgimg="ui/zoopedia/topCellBg.dds">
+               <cell width="150">
+                  <img src="entities/objects/foliage/Papyrus/Papyrus_Wetlands_icon.dds" sx="0" sy="0" sw="64" sh="64" height="128" width="128"/>
+               </cell>
+               <cell pady="15" width="400">
+Tussac grass is a sturdy land grass native to South America, the Falkland Islands, Australia, and New Zealand. It grows in dense clumps about 2 m (6 ft) high along coastal areas and has the appearance of large tufts of hair. Because of its ability to grow in extremely hostile conditions, tussac grass was introduced into Scotland as a source of fodder .               
+               </cell>
+            </cell>
+         </color>
+      </text>
+   </zoopedia_tussacgrass>
+
+</ZT2Strings>

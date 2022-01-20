@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\enrichment\BubbleEmitter\BubbleEmitter.nif">
+  <animation anim="entities\objects\enrichment\BubbleEmitter\BubbleEmitter_Idle_Idle.bf" animName="Idle_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\enrichment\BubbleEmitter\BubbleEmitter_Idle_Open.bf" animName="Idle_Open" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="BubbleEmitter" version="1">
+    <node name="Idle">
+      <table>
+        <Idle_Idle />
+        <Idle_Open />
+      </table>
+    </node>
+  </Graph>
+</BFM>

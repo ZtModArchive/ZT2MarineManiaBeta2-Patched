@@ -1,0 +1,6 @@
+<TEXTKEY>
+   <key time="0.2" text="{Bip01 Spine} runspl strength=.09"/>
+   <key time="0.49" text="ai attachobject"/>
+   <key time="0.50" text="{Node_Carry} attach object"/>
+	<key time="0.8" text="{Bip01 Spine} runspl strength=.09"/>
+</TEXTKEY>

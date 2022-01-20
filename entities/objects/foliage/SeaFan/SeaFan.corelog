@@ -1,0 +1,44 @@
+************************************************************
+Date: 03/02/2006
+Time: 09:30
+************************************************************
+Compiled object 1: Lights
+Compiled object 2: Omni01
+Compiled object 3: Omni02
+Compiled object 4: Omni03
+Compiled object 5: Omni04
+Compiled object 6: Omni05
+Compiled object 7: Omni06
+Compiled object 8: SeaFan_LODGroup
+Compiled object 9: SeaFan_LOD0
+Compiled object 10: Coral_Rock00
+Compiled object 11: SeaFan0
+Compiled object 12: SeaFan_LOD1
+Compiled object 13: CoralFire_Rock01
+Compiled object 14: SeaFan1
+Compiled object 15: SeaFan_LOD2
+Compiled object 16: CoralFire_Rock02
+Compiled object 17: SeanFan2
+Compiled object 18: footprint
+Compiled object 20: paint_ground
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 326 
+Vertex Count: 326 
+Vertex Memory: 14 kb
+Material Count: 2 
+Texture Count: 3 
+Texture Memory: 234 kb
+Num LODs: 3 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 326 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 1s 187ms
+XML File Translation: total time = 858ms
+Data Output: total time = 10ms
+************************************************************

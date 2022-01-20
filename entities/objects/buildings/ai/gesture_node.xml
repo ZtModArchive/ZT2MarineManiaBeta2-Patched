@@ -1,0 +1,35 @@
+<BFTypedBinder binderType="gesture_node">
+	<types>
+		<entity>
+			<gesture_node/>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<BFGCollisionData isPassable="true" />
+		<BFAIEntityDataShared s_Product="Marine" s_uisort="ea" b_Sniffable="true" s_Zoopedia="zoopedia:zoopedia_durianfruit:entry" f_FameReq="90" />
+		<ZTDevComponent/>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="footprint" width="1" intensity="0.3"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj allowHighlight="true">
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/DurianFruit_df/DurianFruit_df" switch="0 8 16" scale="0.5"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

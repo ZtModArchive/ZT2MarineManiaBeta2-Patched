@@ -1,0 +1,5 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01_Dorsal} runspl"/>
+   <key frame="1" text="{Bip01 Head} snd 'TrainingConfused'"/>
+   <key frame="1" text="{Bip01 Head} snd 'TrainingConfused_uw'"/>
+</TEXTKEY>

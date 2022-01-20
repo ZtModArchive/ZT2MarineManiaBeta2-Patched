@@ -1,0 +1,9 @@
+﻿<entries>
+	<BFHelpEntry entry="zoopedia_home">
+		<BFHelpEntry entry="zoopedia_rocks">
+			<BFHelpEntry entry="zoopedia_benthicrocks" />
+			<BFHelpEntry entry="zoopedia_coastalrocks" />
+			<BFHelpEntry entry="zoopedia_reefrocks" />
+		</BFHelpEntry>
+	</BFHelpEntry>
+</entries>

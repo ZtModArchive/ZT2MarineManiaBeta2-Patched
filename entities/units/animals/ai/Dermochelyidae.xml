@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Dermochelyidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Reptilia>
+                  <Testudines>
+                     <Dermochelyidae/>
+                  </Testudines>
+               </Reptilia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

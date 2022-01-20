@@ -1,0 +1,20 @@
+<BehaviorSets>
+   <!--Bubble Emitter Behaviors-->
+   <Idle>
+      <subjects>
+         <BubbleEmitter/>
+      </subjects>
+      <behaviors>
+        <BFBehAnimate targetAnim="Idle_Idle"/>
+      </behaviors>
+   </Idle>
+   <Open>
+      <subjects>
+         <BubbleEmitter/>
+      </subjects>
+      <behaviors>
+        <BFBehAnimate targetAnim="Idle_Open"/>
+      </behaviors>
+   </Open>
+   
+</BehaviorSets>

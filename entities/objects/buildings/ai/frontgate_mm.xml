@@ -1,0 +1,135 @@
+<BFTypedBinder binderType="frontgate_mm">
+   <types>
+      <entity>
+         <building>
+            <entrance>
+               <frontgate_mm/>
+            </entrance>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="flagleft" rottype="ignore" postype="use" attachnode="Link_FlagLeft"/>
+            <parentObj parent="mainObj" child="flagcenter" rottype="ignore" postype="use" attachnode="Link_FlagCenter"/>
+            <parentObj parent="mainObj" child="flagright" rottype="ignore" postype="use" attachnode="Link_FlagRight"/>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="shadowObj2" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="shadowObj3" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="shadowObj4" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTDevComponent/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\buildings\frontgate_df\frontgate_df_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:frontgate"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="frontgate_mm"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_ReceiveUpdates="true" s_uisort="zb" s_Product="Marine" s_Zoopedia="zoopedia:zoopedia_frontgate:entry" b_lockFromCampaigns="true"/>
+      <ZTTourData>
+         <reward value="9"/>
+         <cool value="9"/>
+      </ZTTourData>
+      <ZTPlacementData autoFootprint="false" deletable="false" moveable="false" icon3Dscale="0.05">
+         <cfootprint width="8" height="4"/>
+         <dfootprint width="12" height="4"/>
+      </ZTPlacementData>
+      <BFGCollisionData>
+         <typeScores Guest="0"/>
+      </BFGCollisionData>
+      <ZTTriggeredEventsComponent>
+         <entity_selected>
+            <broadcast>
+               <event msg="UI_CHILD" data="UIChildData" name="zoo status layout">
+                  <child msg="UI_SHOW"/>
+               </event>
+               <event msg="UI_CHILD" data="UIChildData" name="zoo info tab">
+                  <child msg="UI_ACTIVATE_ON"/>
+               </event>
+               <event msg="UI_CHILD" data="UIChildData" name="Main Game Buttons">
+                  <child msg="UI_ACTIVATE_OFF"/>
+               </event>
+            </broadcast>
+         </entity_selected>
+      </ZTTriggeredEventsComponent>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob.tga" baseNode="ShadowNode_01" ignoreLights="true" width="15" minLength="12" maxLength="4" minOffset="0" maxOffset=".5"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj2">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob.tga" baseNode="ShadowNode_02" ignoreLights="true" width="15" minLength="12" maxLength="4" minOffset="0" maxOffset=".5"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj3">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob.tga" baseNode="ShadowNode_03" ignoreLights="false" width="10" minLength="10" maxLength="14" minOffset="0" maxOffset="3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj4">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob.tga" baseNode="ShadowNode_04" ignoreLights="false" width="10" minLength="10" maxLength="14" minOffset="0" maxOffset="3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/buildings/frontgate_mm/frontgate_mm.nif" switch="0 15 20 35 50" minSwitch="0 0 15 20 35" initialTextKey="snd &quot;marine_music_frontgatetheme&quot; looping snd &quot;whalehall_spray&quot; looping snd &quot;fountain&quot; looping"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFCollisionComponent/>
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="200"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="flagleft">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent modelfile="entities/objects/buildings/components/ZooFlag_df.nif"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="flagright">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent modelfile="entities/objects/buildings/components/ZooFlag_df.nif"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="flagcenter">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent modelfile="entities/objects/buildings/components/ZooFlag_df.nif"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent initialTextKey="snd &quot;frontgate_mm&quot; looping"/>
+            </BFPhysObj>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

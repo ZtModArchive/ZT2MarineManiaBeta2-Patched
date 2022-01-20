@@ -1,0 +1,109 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="false" sticky="true" optional="false">
+	<info locid="MarineShowsCampaign:DoubleFeatureIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup name="OverallGoals" state="0" chain="false" allsuccess="true" sticky="true">
+			<info type="primary">
+				<neutral locid="MarineShowsCampaign:DoubleFeatureOverallGoal" overview="MarineShowsCampaign:DoubleFeatureOverview"/>
+				<success locid="MarineShowsCampaign:DoubleFeatureOverallGoalDone" overview="MarineShowsCampaign:DoubleFeatureSuccessOverview"/>				
+			</info>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="completeOverall" />
+			</success>			
+			<children>
+				<BFScenarioGroup name="CetaceanGoals" state="0" chain="false" allsuccess="true" sticky="true">
+					<failure>
+						<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="failCetaceanGoals" />
+					</failure>					
+					<children>
+						<BFScenarioRule name="OverallCetaceanGoal" state="0" sticky="true">
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="evalCetaceanGoals" />
+							</evaluate>
+						</BFScenarioRule>						
+						<BFScenarioRule name="CetaceanSetupGoal" state="0" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineShowsCampaign:DoubleFeatureCetaceanSetupGoal" />
+								<success locid="MarineShowsCampaign:DoubleFeatureCetaceanSetupGoalDone" overview="MarineShowsCampaign:DoubleFeatureCetaceanSetup" />
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="evalCetaceanSetup" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="completeCetaceanSetup" />
+							</success>
+						</BFScenarioRule>				
+						<BFScenarioRule name="CetaceanGuestGoal" hidden="1" state="2" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineShowsCampaign:DoubleFeatureCetaceanGuestGoal" />
+								<success locid="MarineShowsCampaign:DoubleFeatureCetaceanGuestGoalDone" overview="MarineShowsCampaign:DoubleFeatureCetaceanGuests"/>
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="evalCetaceanGuest" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="completeCetaceanGuest" />
+							</success>
+						</BFScenarioRule>	
+					</children>
+				</BFScenarioGroup>	
+				<BFScenarioGroup name="PinnipedGoals" state="0" chain="false" allsuccess="true" sticky="true">
+					<failure>
+						<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="failPinnipedGoals" />
+					</failure>					
+					<children>	
+						<BFScenarioRule name="OverallPinnipedGoal" state="0" sticky="true">
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="evalPinnipedGoals" />
+							</evaluate>	
+						</BFScenarioRule>						
+						<BFScenarioRule name="PinnipedSetupGoal" hidden="0" state="0" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineShowsCampaign:DoubleFeaturePinnipedSetupGoal" />
+								<success locid="MarineShowsCampaign:DoubleFeaturePinnipedSetupGoalDone" overview="MarineShowsCampaign:DoubleFeaturePinnipedSetup"/>
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="evalPinnipedSetup" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="completePinnipedSetup" />
+							</success>
+						</BFScenarioRule>
+						<BFScenarioRule name="PinnipedGuestGoal" hidden="1" state="0" sticky="true">
+							<info type="primary" >
+								<neutral locid="MarineShowsCampaign:DoubleFeaturePinnipedGuestGoal" />
+								<success locid="MarineShowsCampaign:DoubleFeaturePinnipedGuestGoalDone" overview="MarineShowsCampaign:DoubleFeaturePinnipedGuests"/>
+							</info>
+							<evaluate>
+								<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="evalPinnipedGuest" />
+							</evaluate>
+							<success>
+								<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="completePinnipedGuest" />
+							</success>
+						</BFScenarioRule>
+					</children>
+				</BFScenarioGroup>				
+			</children>
+		</BFScenarioGroup>
+		<BFScenarioRule name="PhotographerGoal" hidden="1" state="0" sticky="true">
+			<info type="primary" >
+				<neutral locid="MarineShowsCampaign:DoubleFeaturePhotographerGoal" overview="MarineShowsCampaign:DoubleFeaturePhotographer"/>
+				<success locid="MarineShowsCampaign:DoubleFeaturePhotographerGoalDone" overview="MarineShowsCampaign:DoubleFeaturePhotographerSuccess"/>
+				<failure locid="MarineShowsCampaign:DoubleFeaturePhotographerFailure" overview="MarineShowsCampaign:DoubleFeaturePhotographerFailure"/>
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="evalEleanorAvus" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="completeEleanorAvus" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/DoubleFeature.lua" entry="failEleanorAvus" />
+			</failure>						
+		</BFScenarioRule>			
+	</children>
+</ZTScenarioMgr>		

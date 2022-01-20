@@ -1,0 +1,8 @@
+<TEXTKEY>
+   <key time="0.0" text="{Bip01 Ponytail1} snd 'WaterWalk_2SwimSub_SuperSuccess'"/>
+   <key time="0.0" text="{Bip01 Ponytail1} snd 'WaterWalk_2SwimSub_SuperSuccess_uw'"/>  
+   <key time="0.3" text="{Bip01 Tail4} runsns strength=.35"/>
+   <key time="0.43" text="{Bip01 Tail4} snd 'splash_small' "/>
+   <key time="0.43" text="{Bip01 Tail4} snd 'splash_small_uw' "/>       
+   <key time="0.43" text="{Bip01 Head} splash directed_medium"/>
+</TEXTKEY>

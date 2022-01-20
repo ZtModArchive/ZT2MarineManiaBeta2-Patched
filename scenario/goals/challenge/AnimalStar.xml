@@ -1,0 +1,20 @@
+<BFScenarioGroup name="animalstarrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="animalstar" state="0" sticky="true" optional="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHAnimalStarShort" overview="Challengetext:CHAnimalStar" />
+				<success locid="Challengetext:CHAnimalStarSuccessShort" overview="Challengetext:CHAnimalAssistanceSuccess" />
+				<failure locid="Challengetext:CHAnimalStarFailureShort" overview="Challengetext:CHAnimalStarFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/AnimalStar.lua" entry="evalAnimalStar" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/AnimalStar.lua" entry="completeAnimalStar" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/AnimalStar.lua" entry="failAnimalStar" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

@@ -1,0 +1,75 @@
+************************************************************
+Date: 04/03/2006
+Time: 02:24
+************************************************************
+Compiled object 1: FishBox_Full_LODGroup
+Compiled object 2: LOD0
+Compiled object 3: FishFood_mm_LOD02
+Compiled object 4: FishFood_mm_LOD12
+Compiled object 5: FishFood_mm_LOD22
+Compiled object 6: FishFood_mm_LOD04
+Compiled object 7: FishFood_mm_LOD26
+Compiled object 8: FishFood_mm_LOD08
+Compiled object 9: FishFood_mm_LOD30
+Compiled object 10: FishFood_mm_LOD10
+Compiled object 11: FishFood_mm_LOD35
+Compiled object 12: LOD1
+Compiled object 13: FishFood_mm_LOD03
+Compiled object 14: FishFood_mm_LOD13
+Compiled object 15: FishFood_mm_LOD23
+Compiled object 16: FishFood_mm_LOD25
+Compiled object 17: FishFood_mm_LOD27
+Compiled object 18: FishFood_mm_LOD06
+Compiled object 19: FishFood_mm_LOD07
+Compiled object 20: FishFood_mm_LOD34
+Compiled object 21: FishFood_mm_LOD36
+Compiled object 22: FishBox_66_LODGroup
+Compiled object 23: LOD0
+Compiled object 24: FishFood_mm_LOD48
+Compiled object 25: FishFood_mm_LOD51
+Compiled object 26: FishFood_mm_LOD52
+Compiled object 27: FishFood_mm_LOD55
+Compiled object 28: FishFood_mm_LOD56
+Compiled object 29: LOD1
+Compiled object 30: FishFood_mm_LOD57
+Compiled object 31: FishFood_mm_LOD60
+Compiled object 32: FishFood_mm_LOD61
+Compiled object 33: FishFood_mm_LOD64
+Compiled object 34: FishFood_mm_LOD65
+Compiled object 35: FishBox_33_LODGroup
+Compiled object 36: LOD0
+Compiled object 37: FishFood_mm_LOD73
+Compiled object 38: FishFood_mm_LOD75
+Compiled object 39: FishFood_mm_LOD78
+Compiled object 40: LOD1
+Compiled object 41: FishFood_mm_LOD80
+Compiled object 42: FishFood_mm_LOD82
+Compiled object 43: FishFood_mm_LOD85
+Compiled object 44: FishBox_Empty_LODGroup
+Compiled object 45: LOD0
+Compiled object 46: FishFood_mm_LOD88
+Compiled object 47: Box_mm_LODGroup
+Compiled object 48: Box_mm_LOD0
+Compiled object 49: Box_mm_LOD1
+Compiled object 50: footprint
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 833 
+Vertex Count: 967 
+Vertex Memory: 30 kb
+Material Count: 3 
+Texture Count: 2 
+Texture Memory: 170 kb
+Num LODs: 2 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 416 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 379ms
+XML File Translation: total time = 239ms
+Data Output: total time = 5ms
+************************************************************

@@ -1,0 +1,48 @@
+<BFTypedBinder binderType="WhalePilotShortFinned_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Cetacea>
+                     <Delphinidae>
+                        <WhalePilotShortFinned>
+                           <WhalePilotShortFinned_Adult>
+                              <WhalePilotShortFinned_Adult_F/>
+                           </WhalePilotShortFinned_Adult>
+                        </WhalePilotShortFinned>
+                     </Delphinidae>
+                  </Cetacea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0"/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\WhalePilotShortFinned\WhalePilotShortFinned_Adult_F_icon.dds" />
+         </UIAspect>
+      </UIToggleButton>
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="baby" required="1">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

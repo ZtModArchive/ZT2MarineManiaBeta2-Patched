@@ -1,0 +1,23 @@
+<BFTypedBinder binderType="Otariidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Carnivora>
+                     <Otariidae/>
+                  </Carnivora>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTPlacementData waterPlacement="true" tankPlacement="true" />
+      <BFAIEntityDataShared b_landAnimal="false" b_MarineAnimal="true" b_Pees="false" />
+      <ZTEntityCrater crateType="AnimalCrate_mm" crateParticleDef="EmoteReleaseToWild_mm" />
+   </shared>
+</BFTypedBinder>

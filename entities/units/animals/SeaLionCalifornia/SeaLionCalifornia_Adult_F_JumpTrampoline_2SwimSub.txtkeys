@@ -1,0 +1,8 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01} snd 'JumpTrampoline_2SwimSub'"/>
+   <key time="0" text="{Bip01} snd 'JumpTrampoline_2SwimSub_uw'"/>   
+   <key time="1.47" text="{Bip01 Head} snd 'splash_small'"/>
+   <key time="1.47" text="{Bip01 Head} snd 'splash_small_uw'"/>
+   <key time="1.47" text="{Bip01 Head} splash directed_small"/>
+   <key time="2.1" text="{Bip01 Head} runspl"/>
+</TEXTKEY>

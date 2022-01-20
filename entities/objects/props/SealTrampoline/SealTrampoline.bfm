@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\props\SealTrampoline\SealTrampoline.nif">
+  <animation anim="entities\objects\props\SealTrampoline\SealTrampoline_Jump_Idle.bf" animName="Jump_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\props\SealTrampoline\SealTrampoline_Jump_Used.bf" animName="Jump_Used" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="SealTrampoline" version="1">
+    <node name="Jump">
+      <table>
+        <Jump_Idle />
+        <Jump_Used />
+      </table>
+    </node>
+  </Graph>
+</BFM>

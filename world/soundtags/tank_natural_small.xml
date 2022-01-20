@@ -1,0 +1,10 @@
+<soundtags>
+
+   <BFSoundtag>
+      <BFAmbient2DSndFactory name="a_tank_natural_small">
+         <snds>
+         
+         </snds>
+      </BFAmbient2DSndFactory>
+   </BFSoundtag>
+</soundtags>

@@ -1,0 +1,51 @@
+<BFTypedBinder binderType="tankuigate">
+   <types>
+      <entity>
+         <fence>
+            <gate>
+               <tankuigate/>
+            </gate>
+         </fence>
+      </entity>
+   </types>
+   <shared>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\Tank_Gate\Tank_Gate_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:tankuigate"/>
+         <on>
+            <event msg="ZT_SETFENCEPLACEMENTMODE" data="BFString" string="gate"/>
+            <event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="tankseg_gate_mm"/>
+         </on>
+      </UIToggleButton>
+      <BFGCollisionData isWaterBoundary="true"/>
+      <ZTPlacementData placeable="true" s_GatePlacementRules="staffgate"/>
+      <BFAIEntityDataShared s_Product="Marine" s_uisort="a"/>
+   </shared>
+   <binder>
+      <BFBinder required="0">
+         <instance>
+            <ZTFence/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTTankGateSegment hasCurves="false" gate="tankgate" isGate="true"/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <BFAIEntityDataInstance b_Walkable="false"/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="90">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

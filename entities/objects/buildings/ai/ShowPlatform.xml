@@ -1,0 +1,177 @@
+<BFTypedBinder binderType="ShowPlatform" abstract="true">
+   <types>
+      <entity>
+         <building>
+            <ShowPlatform/>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="FitSurfacePick"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_GeneratesTraversabilityInfo="true" s_ObjectType="Misc" s_uisort="bf" b_SeeThrough="true" b_DoNotDisplayUsers="true" s_Product="Marine" s_showIcon="MarineShow" b_HasEntityFittingSurface="true"/>
+      <ZTPlacementData minimumDepth="3" waterPlacement="false" landPlacement="false" tankPlacement="true" randomRotate="false" gridSnap="true" terrainFlatten="false" adjacentToTank="true" orientToTankWall="true">
+         <cfootprint width="6" height="2"/>
+         <dfootprint width="8" height="3"/>
+         <stompData>
+            <prevent>
+               <animal/>
+            </prevent>
+         </stompData>
+         <excludedIconObjs>
+            <FitSurfacePick/>
+         </excludedIconObjs>
+      </ZTPlacementData>
+      <BFGCollisionData isTraversable="true">
+         <typeScores MC="0"/>
+      </BFGCollisionData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFGroundFitComponent heightOffset="0.0" floatOnWater="true" waterOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars noCaustics="true">
+               <virtualNodes>
+                  <Dock_Animal1 x="0" y="-7" yaw="180"/>
+                  <Dock_Animal2 x="3" y="-7" yaw="195"/>
+                  <Dock_Animal3 x="-3" y="-7" yaw="165"/>
+                  <Dock_Animal4 x="6" y="-6" yaw="225"/>
+                  <Dock_Animal5 x="-6" y="-6" yaw="135"/>
+                  <Dock_Animal6 x="1.5" y="-10" yaw="195"/>
+                  <Dock_Animal7 x="-1.5" y="-10" yaw="165"/>
+                  <Dock_Animal8 x="4.5" y="-9" yaw="225"/>
+                  <Dock_Animal9 x="-4.5" y="-9" yaw="135"/>
+                  <Dock_Animal10 x="7.5" y="-8" yaw="225"/>
+                  <Dock_Animal11 x="-7.5" y="-8" yaw="135"/>
+                  <Dock_Animal12 x="9" y="-6" yaw="240"/>
+                  <Node_PreShow y="-2" z="0.65"/>
+                  <Node_PreShow_Capn x="-2" y="2.25" z="0.65"/>
+                  <Node_PostShow z="0.65" yaw="180"/>
+                  <Node_PostShow_PreCapn x="2" y="2.25" z="0.65" yaw="180"/>
+                  <Node_PostShow_Capn y="2.25" z="0.65"/>
+                  <Node_Fireworks_Left x="6" z="0.65"/>
+                  <Node_Fireworks_Right x="-6" z="0.65"/>
+               </virtualNodes>
+            </BFSharedPhysVars>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="backdrop" required="0">
+         <shared>
+            <BFSharedPhysVars noCaustics="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Staff_PreShow">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot targetNode="Node_PreShow" capacity="1"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Staff_PostShow">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot targetNode="Node_PostShow" capacity="1"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Animals_Waiting_Area" repopulateMethod="byName">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal1" exclusiveID="Platform1" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal2" exclusiveID="Platform2" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal3" exclusiveID="Platform3" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal4" exclusiveID="Platform4" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal5" exclusiveID="Platform5" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal6" exclusiveID="Platform6" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal7" exclusiveID="Platform7" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal8" exclusiveID="Platform8" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal9" exclusiveID="Platform9" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal10" exclusiveID="Platform10" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal11" exclusiveID="Platform11" capacity="1"/>
+                  <BFGEntityContainerSlot enterBehSet="DockMC" useBehSet="ShowIdle" targetNode="Dock_Animal12" exclusiveID="Platform12" capacity="1"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTAIShowComponent>
+               <EndShowFX>
+                  <EffectSet MinScore="0" Sound="fireworks_announcement_1star">
+                     <Effect Name="fireworks_1star" Node="Node_Fireworks_Left"/>
+                     <Effect Name="fireworks_1star" Node="Node_Fireworks_Right"/>
+                  </EffectSet>
+               </EndShowFX>
+               <EndShowFX>
+                  <EffectSet MinScore="2" Sound="fireworks_announcement_2star">
+                     <Effect Name="fireworks_2star" Node="Node_Fireworks_Left"/>
+                     <Effect Name="fireworks_2star" Node="Node_Fireworks_Right"/>
+                  </EffectSet>
+               </EndShowFX>
+               <EndShowFX>
+                  <EffectSet MinScore="3" Sound="fireworks_announcement_3star">
+                     <Effect Name="fireworks_2star" Node="Node_Fireworks_Left"/>
+                     <Effect Name="fireworks_2star" Node="Node_Fireworks_Right"/>
+                  </EffectSet>
+               </EndShowFX>
+               <EndShowFX>
+                  <EffectSet MinScore="4" Sound="fireworks_announcement_4star">
+                     <Effect Name="fireworks_4star" Node="Node_Fireworks_Left"/>
+                     <Effect Name="fireworks_4star" Node="Node_Fireworks_Right"/>
+                  </EffectSet>
+               </EndShowFX>
+               <EndShowFX>
+                  <EffectSet MinScore="5" Sound="fireworks_announcement_5star">
+                     <Effect Name="fireworks_5star" Node="Node_Fireworks_Left"/>
+                     <Effect Name="fireworks_5star" Node="Node_Fireworks_Right"/>
+                  </EffectSet>
+               </EndShowFX>
+            </ZTAIShowComponent>
+         </instance>
+         <binder>
+            <BFNamedBinder binderName="showFeedback" required="0">
+               <instance>
+                  <ZTFeedbackComponent/>
+               </instance>
+            </BFNamedBinder>
+         </binder>
+      </BFBinder>
+      <BFNamedBinder binderName="PropContainer">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot ownContents="false" hideContents="true" capacity="120"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester motionClass="showplatform" waterScore="0" landScore="10000" maxSlope=".75"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="FitSurfacePick">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/buildings/Platform_Show_mm/Platform_Show_PathGeometry"/>
+               <BFGFittingSurfaceComponent heightOffset="0.65"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>
